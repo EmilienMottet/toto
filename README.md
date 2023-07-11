@@ -13,3 +13,21 @@ Bienvenue sur le repository pour le jeu de piste pour le FEEL Ensimag !
 | TBD-5   | TBD-6        | TBD-Auteur | TBD |
 | TBD-6   | TBD-7        | TBD-Auteur | TBD |
 | TBD-7   | TBD-FINAL       | Paul | TBD |
+
+## Comment lancer le projet ?
+
+Assez simple, premièrement se créer un environnement virtuel Python3 :
+
+```bash
+python3 -m venv .venv```
+
+Ensuite, installer les dépendances :
+
+```bash
+pip install -r requirements.txt```
+
+Puis lancer le projet :
+
+```bash
+uvicorn main:app --reload
+```
