@@ -4,10 +4,10 @@ Bienvenue sur le repository pour le jeu de piste pour le FEEL Ensimag !
 
 | Syntax      | Description | Auteur | Solution
 | ----------- | ----------- | ----------- |  ----------- |
-| readme.html      | 01-t3rm1n4l.html       | Paul | TBD |
-| 01-t3rm1n4l.html   | TBD-1        | TBD-Auteur | TBD |
-| TBD-1   | TBD-2        | TBD-Auteur | TBD |
-| TBD-2   | TBD-3        | TBD-Auteur | TBD |
+| readme.html      | 01-t3rm1n4l.html       | Paul | check the CSS and find the file |
+| 01-t3rm1n4l.html   | 02-m4r10-n3v3r-d13d.html        | Paul | Check the JS and find the file |
+| 02-m4r10-n3v3r-d13d.html   | 03-h3110-y0u-4r3-4w350m3.html        | Paul | Check HTTP Headers and find the `X-Flag` |
+| 03-h3110-y0u-4r3-4w350m3.html   | TBD        | TBD-Auteur | TBD |
 | TBD-3   | TBD-4        | TBD-Auteur | TBD |
 | TBD-4   | TBD-5        | TBD-Auteur | TBD |
 | TBD-5   | TBD-6        | TBD-Auteur | TBD |

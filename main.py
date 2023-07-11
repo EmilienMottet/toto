@@ -22,6 +22,10 @@ def read_root(request: Request, challenge: str):
     # return the template response where the template is from the user parameter
     try:
         var = templates.TemplateResponse(challenge, {'request': request})
+        if challenge == "02-m4r10-n3v3r-d13d.html":
+            # add new header to response
+            var.headers["X-Flag"] = "03-h3110-y0u-4r3-4w350m3.html"
+            var.status_code = 418
         return var
     except Exception as e:
         return templates.TemplateResponse('404.html', {'request': request})

@@ -2,8 +2,8 @@ $(function() {
     var data = [
     { 
       action: 'type',
-      strings: ["npm install -g mimik^400"],
-      output: '<span class="gray">+mimik@0.10.2 installed</span><br>&nbsp;',
+      strings: ["npm install -g michelin^400"],
+      output: '<span class="gray">+michelin@1.3.3.7 installed</span><br>&nbsp;',
       postDelay: 1000
     },
     { 
@@ -15,15 +15,19 @@ $(function() {
     { 
       action: 'type',
       //clear: true,
-      strings: ['mimik run^400'],
+      strings: ['michelin run^400'],
       output: $('.mimik-run-output').html()
     },
     { 
       action: 'type',
       strings: ["that was easy!", ''],
       postDelay: 2000
-    }
-    
+    },
+    // { 
+    //   action: 'type confidential data',
+    //   strings: ["02-m4r10-n3v3r-d13d.html", 'This is the way'],
+    //   postDelay: 2000
+    // },    
   ];
     runScripts(data, 0);
   });
