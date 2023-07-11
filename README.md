@@ -19,12 +19,14 @@ Bienvenue sur le repository pour le jeu de piste pour le FEEL Ensimag !
 Assez simple, premièrement se créer un environnement virtuel Python3 :
 
 ```bash
-python3 -m venv .venv```
+python3 -m venv .venv
+```
 
 Ensuite, installer les dépendances :
 
 ```bash
-pip install -r requirements.txt```
+pip install -r requirements.txt
+```
 
 Puis lancer le projet :
 
