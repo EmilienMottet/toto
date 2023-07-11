@@ -33,3 +33,15 @@ Puis lancer le projet :
 ```bash
 uvicorn main:app --reload
 ```
+
+## Comment rajouter un scénario ?
+
+- Créez votre fichier html dans le dossier `templates/` (eg. `02-th15-15-fun.html`) - un nom pas facilement trouvable
+- Rajoutez vos scripts/feuilles de style CSS dans le dossier `static`
+- Faites références dans vos fichiers HTML à vos scripts JS ou feuilles de style de la manière suivante : 
+
+```html
+<link rel="stylesheet" href="{{ url_for('static', path='/readme.css') }}">
+```
+
+- L'indice de votre scénario/challenge doit amener sur la page suivante (eg. la solution de `02-th15-15-fun.html` doit amener sur `03-wh04-th15-w45-cr4zy.html`)
