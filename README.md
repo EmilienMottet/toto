@@ -1,5 +1,7 @@
 Bienvenue sur le repository pour le jeu de piste pour le FEEL Ensimag !
 
+> le jeu est disponible à l'adresse suivante : https://jeu-de-piste-ensimag.vercel.app/ 🚀🔥
+
 ## Presentation des épreuves
 
 | Syntax      | Description | Auteur | Solution
