@@ -31,7 +31,7 @@ pip install -r requirements.txt
 Puis lancer le projet :
 
 ```bash
-uvicorn main:app --reload
+python main.py
 ```
 
 ## Comment rajouter un scénario ?
