@@ -10,8 +10,8 @@ Bienvenue sur le repository pour le jeu de piste pour le FEEL Ensimag !
 | `01-t3rm1n4l.html`   | `02-m4r10-n3v3r-d13d.html`        | Paul | Check the JS and find the file |
 | `02-m4r10-n3v3r-d13d.html`   | `03-h3110-y0u-4r3-4w350m3.html`        | Paul | Check HTTP Headers and find the `X-Flag` |
 | `03-h3110-y0u-4r3-4w350m3.html`   | `04-7h3-4n5w3r-15-4-5h4m3.html`        | Paul | Solve the equation and send the result in the `result` variable |
-| `04-7h3-4n5w3r-15-4-5h4m3.html`   | TBD-4        | TBD-Auteur | TBD |
-| TBD-4   | TBD-5        | TBD-Auteur | TBD |
+| `04-7h3-4n5w3r-15-4-5h4m3.html`   | `05-x0r-15-n0t-m1l1t4ry-gr4d3-3ncrypt10n.html`        | Paul | retrieve the Javascript and XOR the bytes with the defined function |
+| `05-x0r-15-n0t-m1l1t4ry-gr4d3-3ncrypt10n.html`   | TBD-5        | TBD-Auteur | TBD |
 | TBD-5   | TBD-6        | TBD-Auteur | TBD |
 | TBD-6   | TBD-7        | TBD-Auteur | TBD |
 | TBD-7   | TBD-FINAL       | Paul | TBD |
