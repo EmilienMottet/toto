@@ -86,6 +86,12 @@ def read_root(request: Request, challenge: str):
             equations[current_timestamp] = eval((random_equation))
             data['data'] = f"{random_equation} = ???"
             var = templates.TemplateResponse(challenge, data)
+        elif challenge == "05-x0r-15-n0t-m1l1t4ry-gr4d3-3ncrypt10n.html":
+            my_header = request.headers.get('user-agent')
+            if 'ensimag' in my_header.lower():
+                my_header = "06-us3r-4g3n7-15-4n-1n73rn4710n4l-574nd4rd.html"
+            data["user_agent"] = my_header
+            var = templates.TemplateResponse(challenge, data)
         return var
     except Exception as e:
         print(e)
