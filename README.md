@@ -12,8 +12,8 @@ Bienvenue sur le repository pour le jeu de piste pour le FEEL Ensimag !
 | `03-h3110-y0u-4r3-4w350m3.html`   | `04-7h3-4n5w3r-15-4-5h4m3.html`        | Paul | Solve the equation and send the result in the `result` variable |
 | `04-7h3-4n5w3r-15-4-5h4m3.html`   | `05-x0r-15-n0t-m1l1t4ry-gr4d3-3ncrypt10n.html`        | Paul | retrieve the Javascript and XOR the bytes with the defined function |
 | `05-x0r-15-n0t-m1l1t4ry-gr4d3-3ncrypt10n.html`   | `06-us3r-4g3n7-15-4n-1n73rn4710n4l-574nd4rd.html`        | Paul | Change the `User-Agent` to anything with `Ensimag` in it (both lowercase/uppercase works) |
-| `06-us3r-4g3n7-15-4n-1n73rn4710n4l-574nd4rd.html`   | TBD-6        | TBD-Auteur | TBD |
-| TBD-6   | TBD-7        | TBD-Auteur | TBD |
+| `06-us3r-4g3n7-15-4n-1n73rn4710n4l-574nd4rd.html`   | `07-Y0u-c4n-b3-pr0ud-0f-y0ur53lf.html`       | Paul | Follow the instructions and create a small program to find the right number between 0 and 1000000 with only 25 tries + 25 seconds (dichotomy powa) |
+| `07-Y0u-c4n-b3-pr0ud-0f-y0ur53lf.html`   | TBD-7        | TBD-Auteur | TBD |
 | TBD-7   | TBD-FINAL       | Paul | TBD |
 
 ## Comment lancer le projet ?
