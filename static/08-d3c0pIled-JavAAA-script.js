@@ -53,6 +53,7 @@ StarWars = (function() {
       // Start the animation on click
       this.start.bind('click', $.proxy(function() {
         this.start.hide();
+        // this.audio.muted = true;
         this.audio.play();
         this.el.append(this.animation);
       }, this));
@@ -87,5 +88,5 @@ StarWars = (function() {
   });
 
   $( document ).ready(function() {
-    $('.start').click();
+    // $('.start').click();
 });
