@@ -49,4 +49,4 @@ python main.py
 - L'indice de votre scénario/challenge doit amener sur la page suivante (eg. la solution de `02-th15-15-fun.html` doit amener sur `03-wh04-th15-w45-cr4zy.html`)
 
 ## Déployer une instance
-[![Deploy avec Vercel](https://vercel.com/button)](https://vercel.com/import/git?s=https%3A%2F%2Fgithub.com%2FEmilienMottet%2Fjeu-de-piste-ensimag.git%26env%3DTARGET_NAME)
+[![Deploy avec Vercel](https://vercel.com/button)](https://vercel.com/import/git?s=https%3A%2F%2Fgithub.com%2FEmilienMottet%2Fjeu-de-piste-ensimag.git&env=TARGET_NAME&env=DISPLAY_NAME)

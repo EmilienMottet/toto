@@ -14,6 +14,7 @@ import os
 equations = {}
 numbers = {}
 target_name = os.getenv("TARGET_NAME", 'ensimag')
+display_name = os.getenv("DISPLAY_NAME", 'ensimag')
 user_agent = target_name
 
 def generate_random_equation():
@@ -134,7 +135,7 @@ def read_root(request: Request, challenge: str):
     # return templates.TemplateResponse("readme.html", {"request": request, "id": id})
     # return the template response where the template is from the user parameter
     try:
-        data = {"request": request, "target_name":target_name}
+        data = {"request": request, "target_name":target_name, "display_name": display_name}
         var = templates.TemplateResponse(challenge, data)
         if challenge == "02-m4r10-n3v3r-d13d.html":
             # add new header to response
