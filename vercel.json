@@ -13,6 +13,7 @@
         }
     ],
     "env": {
-        "TARGET_NAME": "ensimag"
+        "TARGET_NAME": "ensimag",
+        "DISPLAY_NAME": "Ensimag"
     }
 }
