@@ -1,6 +1,6 @@
 Bienvenue sur le repository pour de template pour jeu de piste !
 
-> le jeu est disponible à l'adresse suivante : https://jeu-de-piste-${TARGET_NAME}.vercel.app/ 🚀🔥
+> le jeu est disponible à l'adresse suivante : https://jeu-de-piste-ensimag.vercel.app/ 🚀🔥
 
 ## Presentation des épreuves
 
