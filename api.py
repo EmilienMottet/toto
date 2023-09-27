@@ -42,7 +42,8 @@ templates = Jinja2Templates(directory="templates")
 def read_root(request: Request):
     # return templates.TemplateResponse("readme.html", {"request": request, "id": id})
     # return the template response where the template is from the user parameter
-    return templates.TemplateResponse("readme.html", {'request': request})
+    data = {"request": request, "target_name":target_name, "display_name": display_name}
+    return templates.TemplateResponse("readme.html", data)
 
 async def get_body(request: Request):
     return await request.body()
