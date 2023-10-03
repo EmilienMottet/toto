@@ -38,6 +38,13 @@ app.mount("/static", StaticFiles(directory="static"), name="static")
 templates = Jinja2Templates(directory="templates")
 # Instrumentator().instrument(app).expose(app)
 
+@app.middleware("http")
+async def log_requests(request: Request, call_next):
+    client_ip = request.client.host
+    print(f"Client IP: {client_ip}")  # ou utiliser logger
+    response = await call_next(request)
+    return response
+
 @app.get("/")
 def read_root(request: Request):
     # return templates.TemplateResponse("readme.html", {"request": request, "id": id})
