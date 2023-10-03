@@ -9,9 +9,13 @@ import random
 import uuid
 from datetime import datetime, timedelta
 from prometheus_fastapi_instrumentator import Instrumentator
+import os
 
 equations = {}
 numbers = {}
+target_name = os.getenv("TARGET_NAME", 'ensimag')
+display_name = os.getenv("DISPLAY_NAME", 'ensimag')
+user_agent = target_name
 
 def generate_random_equation():
     # Generate two random operands
@@ -38,7 +42,8 @@ templates = Jinja2Templates(directory="templates")
 def read_root(request: Request):
     # return templates.TemplateResponse("readme.html", {"request": request, "id": id})
     # return the template response where the template is from the user parameter
-    return templates.TemplateResponse("readme.html", {'request': request})
+    data = {"request": request, "target_name":target_name, "display_name": display_name}
+    return templates.TemplateResponse("readme.html", data)
 
 async def get_body(request: Request):
     return await request.body()
@@ -131,7 +136,7 @@ def read_root(request: Request, challenge: str):
     # return templates.TemplateResponse("readme.html", {"request": request, "id": id})
     # return the template response where the template is from the user parameter
     try:
-        data = {"request": request}
+        data = {"request": request, "target_name":target_name, "display_name": display_name}
         var = templates.TemplateResponse(challenge, data)
         if challenge == "02-m4r10-n3v3r-d13d.html":
             # add new header to response
@@ -151,7 +156,7 @@ def read_root(request: Request, challenge: str):
             var = templates.TemplateResponse(challenge, data)
         elif challenge == "05-x0r-15-n0t-m1l1t4ry-gr4d3-3ncrypt10n.html":
             my_header = request.headers.get('user-agent')
-            if 'ensimag' in my_header.lower():
+            if user_agent in my_header.lower():
                 my_header = "06-us3r-4g3n7-15-4n-1n73rn4710n4l-574nd4rd.html"
             data["user_agent"] = my_header
             var = templates.TemplateResponse(challenge, data)

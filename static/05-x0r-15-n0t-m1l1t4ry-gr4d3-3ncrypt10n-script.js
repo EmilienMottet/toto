@@ -3,7 +3,7 @@ var $ = function(id) {
   };
   var el = $("str");
   var s = "--ERROR: 401_[UNAUTHORIZED]-- "; 
-  var s1 = "YOU ARE NOT USING 'ENSIMAG' BROWSER BUT :";
+  var s1 = "YOU ARE NOT USING '"+ window.targetName +"' BROWSER BUT :";
   setInterval("shuffle(s  + s1 )",50);
   var t = 0;
   var o = 0.5;

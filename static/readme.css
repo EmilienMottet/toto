@@ -124,3 +124,8 @@ a::after {
 .errorcode {
   color: white;
 }
+
+.errorcode::first-letter {
+  font-size: 2em;
+  font-weight: bold;
+}
