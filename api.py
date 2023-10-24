@@ -15,7 +15,7 @@ equations = {}
 numbers = {}
 target_name = os.getenv("TARGET_NAME", 'ensimag')
 display_name = os.getenv("DISPLAY_NAME", 'ensimag')
-user_agent = target_name
+user_agent = target_name.lower()
 
 def generate_random_equation():
     # Generate two random operands
