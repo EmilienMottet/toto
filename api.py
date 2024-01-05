@@ -8,6 +8,7 @@ from fastapi.templating import Jinja2Templates
 import random
 import uuid
 from datetime import datetime, timedelta
+import time
 from prometheus_fastapi_instrumentator import Instrumentator
 import os
 
@@ -54,6 +55,35 @@ def read_root(request: Request):
 
 async def get_body(request: Request):
     return await request.body()
+
+
+@app.post("/challenges/09-s3nd-cheKsuMm.html")
+def checksum_date(body: bytes = Depends(get_body)):
+    payload = body.decode("utf-8")
+    current_timestamp = datetime.utcnow()
+    current_timestamp = time.time()
+    
+    print(payload)
+    payload_stripped = payload.split("&")
+    data = {}
+    print(payload_stripped)
+    for item in payload_stripped:
+        data[item.split("=")[0]] = item.split("=")[1]
+
+    if "date" not in data:
+        return {"message": "You are either missing the `date`. Try again!"}
+
+
+    sended_timestamp = int( data["date"] )
+    if current_timestamp - 1 < sended_timestamp and current_timestamp > sended_timestamp:
+        return {"message": "You can go to the next flag, TODO: give next flag"}
+    if current_timestamp - 1 > sended_timestamp:
+        return {"message": "too slow stay in past"}
+    if current_timestamp < sended_timestamp:
+        return {"message": "too quick, you are in future !"}
+
+    return {"message": "I have no idea how you arrived there lol, you should not see this \o/"}
+
 
 @app.put("/challenges/06-us3r-4g3n7-15-4n-1n73rn4710n4l-574nd4rd.html")
 def generate_number(request: Request):
