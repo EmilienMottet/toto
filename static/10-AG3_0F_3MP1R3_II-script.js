@@ -10,7 +10,7 @@
         "https://i.postimg.cc/C5NMN512/steam-card-2.jpg",
         "https://i.postimg.cc/prxXzz28/steam-card-1.jpg",
         "https://i.postimg.cc/rFfFRD70/steam-card-4.jpg",
-        "../static/10-AG&_0F_3MP1R3_II.bmp",
+        "../static/10-AG3_0F_3MP1R3_II.bmp",
         "https://i.postimg.cc/SsbybCY5/steam-card-5.jpg",
         "https://i.postimg.cc/YSWpPb0Y/steam-card-6.jpg",
         "https://i.postimg.cc/W1KNSQNs/steam-card-8.jpg",
