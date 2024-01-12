@@ -9,6 +9,8 @@ Bienvenue sur le repository pour de template pour jeu de piste !
 | `readme.html`      | `01-ch00Z3-uR-PASS.html`       | Paul | check the CSS and find the file TODO: Update readme with the new Next | 
 
 ### Chemin Dev `/dev`
+| Syntax      | Next | Auteur | Solution
+| ----------- | ----------- | ----------- |  ----------- |
 | `01-t3rm1n4l.html`   | `02-m4r10-n3v3r-d13d.html`        | Paul | Check the JS and find the file TODO: update New flag |
 | `02-m4r10-n3v3r-d13d.html`   | `03-h3110-y0u-4r3-4w350m3.html`        | Paul | Check HTTP Headers and find the `X-Flag` |
 | `03-h3110-y0u-4r3-4w350m3.html`   | `04-7h3-4n5w3r-15-4-5h4m3.html`        | Paul | Solve the equation and send the result in the `result` variable |
@@ -19,6 +21,8 @@ Bienvenue sur le repository pour de template pour jeu de piste !
 | 08 à renommer `13-1m4g1n3_Y0u_f1Nd_P4r4d153.html`   | 08_45.78,3.093.html challenge ?   | Jeremy | coordonate Michelin Carmes : @45.78,3.093, TODO: on dit d'encoder les coordonerr en base 64 et les mettres dans l'url |
 
 ### Chemin Ops `ops`
+| Syntax      | Next | Auteur | Solution
+| ----------- | ----------- | ----------- |  ----------- |
 | `01-t3rm1n4l.html`   | `02-m4r10-n3v3r-d13d.html`        | Paul | Check the JS and find the file |
 | `02-m4r10-n3v3r-d13d.html`   | `03-h3110-y0u-4r3-4w350m3.html`        | Paul | Check HTTP Headers and find the `X-Flag` |
 | 03 à renommer `05-x0r-15-n0t-m1l1t4ry-gr4d3-3ncrypt10n.html`   | `06-us3r-4g3n7-15-4n-1n73rn4710n4l-574nd4rd.html`        | Paul | Change the `User-Agent` to anything with `${TARGET_NAME}` in it (both lowercase/uppercase works) |
@@ -29,6 +33,8 @@ Bienvenue sur le repository pour de template pour jeu de piste !
 | 08 à renommer `13-1m4g1n3_Y0u_f1Nd_P4r4d153.html`   | 08_45.78,3.093.html challenge ?   | Jeremy | coordonate Michelin Carmes : @45.78,3.093, TODO: on dit d'encoder les coordonerr en base 64 et les mettres dans l'url |
 
 ### Chemin Sec `sec`
+| Syntax      | Next | Auteur | Solution
+| ----------- | ----------- | ----------- |  ----------- |
 | `01-t3rm1n4l.html`   | `02-m4r10-n3v3r-d13d.html`        | Paul | Check the JS and find the file |
 | `02-m4r10-n3v3r-d13d.html`   | `03-h3110-y0u-4r3-4w350m3.html`        | Paul | Check HTTP Headers and find the `X-Flag` |
 |03 à renommer `05-x0r-15-n0t-m1l1t4ry-gr4d3-3ncrypt10n.html`   | `06-us3r-4g3n7-15-4n-1n73rn4710n4l-574nd4rd.html`        | Paul | Change the `User-Agent` to anything with `${TARGET_NAME}` in it (both lowercase/uppercase works) |
