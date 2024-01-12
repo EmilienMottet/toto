@@ -39,13 +39,6 @@ app.mount("/static", StaticFiles(directory="static"), name="static")
 templates = Jinja2Templates(directory="templates")
 # Instrumentator().instrument(app).expose(app)
 
-@app.middleware("http")
-async def log_requests(request: Request, call_next):
-    client_ip = request.client.host
-    print(f"Client IP: {client_ip}")  # ou utiliser logger
-    response = await call_next(request)
-    return response
-
 @app.get("/")
 def read_root(request: Request):
     # return templates.TemplateResponse("readme.html", {"request": request, "id": id})
@@ -167,6 +160,11 @@ def resolve_challenge(body: bytes = Depends(get_body)):
     except Exception as e:
         print(e)
     return {"message": "4r3 y0u 53r10u5?"}
+
+@app.get("/challenges/{sub}/{challenge}")
+def challenges_sub(request: Request,sub: str ,challenge: str):
+    return read_root(request, "./"+ sub + "/"+challenge)
+
 
 @app.get("/challenges/{challenge}")
 def read_root(request: Request, challenge: str):
