@@ -14,8 +14,8 @@ import os
 
 equations = {}
 numbers = {}
-target_name = os.getenv("TARGET_NAME", 'ensimag')
-display_name = os.getenv("DISPLAY_NAME", 'ensimag')
+target_name = os.getenv("TARGET_NAME", 'michelin')
+display_name = os.getenv("DISPLAY_NAME", 'Michelin')
 user_agent = target_name.lower()
 
 def generate_random_equation():
