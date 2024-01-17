@@ -1,0 +1,155 @@
+import subprocess
+import yaml
+import uvicorn
+import os
+from os import getenv
+from paths_config import PATHS
+from typing import Optional, Dict
+from jinja2 import Environment, FileSystemLoader
+import shutil
+
+def clean_build_directory(build_path: str) -> None:
+    """
+    Cleans the build directory by removing its contents.
+
+    :param build_path: The path to the build directory.
+    """
+    if os.path.exists(build_path):
+        shutil.rmtree(build_path)
+    os.makedirs(build_path, exist_ok=True)
+
+def dummy_url_for(endpoint: str, path: str) -> str:
+    """
+    Dummy 'url_for' function to mimic URL generation in templates.
+    """
+    if endpoint != 'static':
+        raise InvalidEndpointError(f"Invalid endpoint '{endpoint}' used in dummy_url_for.")
+
+    return "{{ url_for('"+endpoint+"', path='"+path+"') }}"
+
+def render_template(template_path: str, context: Dict[str, str]) -> str:
+    """
+    Renders a template with the given context.
+
+    :param template_path: Path to the template file.
+    :param context: A dictionary of context variables for the template.
+    :return: Rendered template as a string.
+    """
+    env = Environment(loader=FileSystemLoader('.'))
+    template = env.get_template(template_path)
+    context['url_for'] = dummy_url_for  # Add the dummy 'url_for' to the context
+    return template.render(context)
+
+def generate_challenge(current_config: Dict, next_config: Optional[Dict], config_dir: str, index: int, path: str) -> None:
+    """
+    Generates a challenge based on the given configuration.
+    Renders and saves CSS and JavaScript files using templates, and copies the HTML template file.
+    Generates a flag based on the next challenge's template and the current index.
+
+    :param current_config: Dictionary containing the current challenge configuration.
+    :param next_config: Optional dictionary containing the next challenge configuration.
+    :param index: Index of the current challenge.
+    :param config_dir: Directory path of the current challenge configuration.
+    :param build_dir: Directory path where the build files should be saved.
+    :param path: Path of the challenge.
+    """
+    # Generate flag based on the next challenge's template, prefixed with the next index
+    flag = f"{index + 1}_{next_config['template']}" if next_config and "template" in next_config else None
+    
+    name = f"{index}_{current_config['template']}"
+
+    # Execute the encoding script if specified
+    if "encoding_script" in current_config:
+        result = subprocess.run(
+            [os.path.join(config_dir, current_config["encoding_script"]), flag],
+            capture_output=True,
+            text=True
+        )
+        flag = result.stdout.strip()
+
+    # Prepare context for rendering templates
+    context = {"flag": flag, "chall_name": name, "user_agent": "michelin"}
+
+    # Render and save CSS file
+    css_content = render_template(os.path.join(config_dir, current_config["css"]), context)
+    css_output_path = os.path.join(BUILD_DIR, path, current_config["css"])
+    save_rendered_content(css_content, css_output_path)
+
+    # Render and save api file
+    if "api" in current_config:
+        api_content = render_template(os.path.join(config_dir, current_config["api"]), context)
+        api_name = name.replace(".html",".py")
+        api_output_path = os.path.join(BUILD_DIR, path,"api" , api_name)
+        save_rendered_content(api_content, api_output_path)
+
+    # Render and save JavaScript file
+    js_content = render_template(os.path.join(config_dir, current_config["javascript"]), context)
+    js_output_path = os.path.join(BUILD_DIR, path, current_config["javascript"])
+    save_rendered_content(js_content, js_output_path)
+
+    # Copy HTML template file
+    html_template_path = os.path.join(config_dir, current_config["template"])
+    html_content = render_template(html_template_path, context)
+    html_output_path = os.path.join(BUILD_DIR, path, 'template', f"{index}_{current_config['template']}")
+    save_rendered_content(html_content,html_output_path)
+
+
+def handle_last_challenge(config: Dict) -> None:
+    """
+    Handles the last challenge of a path.
+
+    :param config: Dictionary containing the last challenge configuration.
+    """
+    None
+
+
+
+def read_challenge_config(file_path: str) -> Dict:
+    """
+    Reads the challenge configuration from a YAML file.
+
+    :param file_path: Path to the YAML configuration file.
+    :return: Dictionary containing the configuration.
+    """
+    full_path = file_path
+    with open(full_path, 'r') as file:
+        return yaml.safe_load(file)
+
+
+def save_rendered_content(content: str, output_path: str) -> None:
+    """
+    Saves rendered content to a file.
+
+    :param content: The rendered content to save.
+    :param output_path: The file path to save the content to.
+    """
+    os.makedirs(os.path.dirname(output_path), exist_ok=True)
+    with open(output_path, 'w') as file:
+        file.write(content)
+
+
+def prepare_static_files(build_dir: str, paths: Dict[str, list]) -> None:
+    """
+    Prepares static files for each challenge based on their configurations.
+    Iterates over each path and challenge, reads the configuration, and generates the challenge.
+    """
+    # Clean the build directory first
+    clean_build_directory(build_dir)
+
+    for path_name, challenges in paths.items():
+        for index, challenge_config_file in enumerate(challenges):
+            config_path = challenge_config_file
+            config_dir = os.path.dirname(config_path)
+            current_config = read_challenge_config(config_path)
+
+            next_config: Optional[Dict] = None
+            if index + 1 < len(challenges):
+                next_challenge_config_file = challenges[index + 1]
+                next_config_path = next_challenge_config_file
+                next_config = read_challenge_config(next_config_path)
+
+            generate_challenge(current_config, next_config, config_dir, index, path_name)
+
+if __name__ == "__main__":
+    BUILD_DIR = "./build"
+    prepare_static_files(BUILD_DIR, PATHS)

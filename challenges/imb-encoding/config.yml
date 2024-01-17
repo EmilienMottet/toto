@@ -1,0 +1,7 @@
+title: "IBM Encoding"
+description: "UTF-8 is something new !"
+hint: "$ENCODED | base64 -d | iconv -f IBM-1047 -t ISO8859-1"
+template: "Y0u-c4n-b3-pr0ud-0f-y0ur53lf.html"
+css: "./static/Y0u-c4n-b3-pr0ud-0f-y0ur53lf-style.css"
+javascript: "./static/Y0u-c4n-b3-pr0ud-0f-y0ur53lf-script.js"
+encoding_script: "./ibm-encoder.sh"

@@ -1,0 +1,7 @@
+title: "Take a coffee of Java"
+description: "Java is too easy !"
+hint: "decode base64 then use any java decompiler (like http://www.javadecompilers.com/)"
+template: "1BM-3ncOd1ng-t0-1s0.html"
+css: "./static/1BM-3ncOd1ng-t0-1s0-style.css"
+javascript: "./static/1BM-3ncOd1ng-t0-1s0-script.js"
+encoding_script: "./javac-encoder.sh"

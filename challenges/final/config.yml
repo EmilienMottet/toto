@@ -1,0 +1,6 @@
+title: "Final"
+description: "You have kill the game"
+hint: "stop, you are the boss"
+template: "final.html"
+css: "./static/final-style.css"
+javascript: "./static/final-script.js"

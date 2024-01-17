@@ -1,0 +1,7 @@
+title: "m4r10-n3v3r-d13d"
+description: "Explore the Mario World"
+hint: "Check HTTP Headers and find the X-Flag"
+template: "m4r10-n3v3r-d13d.html"
+css: "./static/m4r10-n3v3r-d13d-style.css"
+javascript: "./static/m4r10-n3v3r-d13d-script.js"
+api: "api.py"

@@ -1,0 +1,6 @@
+title: "t3rm1n4l"
+description: "Explore the code source of your Michelin terminal"
+hint: "Check the JS and find the flag"
+template: "t3rm1n4l.html"
+css: "./static/t3rm1n4l-style.css"
+javascript: "./static/t3rm1n4l-script.js"
