@@ -20,9 +20,6 @@ import glob
 app = FastAPI()
 app.mount("/static", StaticFiles(directory="static"), name="static_base")
 base_templates = Jinja2Templates(directory="templates")
-# test_app = FastAPI()
-# test_app.mount("/static_test", StaticFiles(directory="static"), name="static")
-# test_templates = Jinja2Templates(directory="./build/dev/template")
 
 BUILD_DIR = "./build"
 
@@ -62,8 +59,6 @@ for path in PATHS.keys():
     router_directory = os.path.join(BUILD_DIR, path, "api")
     router_modules = find_router_modules(router_directory)
     api_routers = load_routers(f"build.{ path }.api", router_modules)
-
-    print(api_routers)
 
     # Create a Jinja2Templates instance
     templates = Jinja2Templates(directory=template_dir)

@@ -1,11 +1,5 @@
-import subprocess
-import yaml
 import uvicorn
-import os
 from os import getenv
-from paths_config import PATHS
-from typing import Optional, Dict
-from jinja2 import Environment, FileSystemLoader
 
 # Import the `configure_azure_monitor()` function from the
 # `azure.monitor.opentelemetry` package.
