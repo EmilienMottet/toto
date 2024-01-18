@@ -93,6 +93,11 @@ def generate_challenge(current_config: Dict, next_config: Optional[Dict], config
     html_output_path = os.path.join(BUILD_DIR, path, 'template', f"{index}_{current_config['template']}")
     save_rendered_content(html_content,html_output_path)
 
+    if "static_file" in current_config:
+        for static_file in current_config["static_file"]:
+            source_file = os.path.join(config_dir, static_file)
+            destination_file = os.path.join(BUILD_DIR, path, static_file)
+            shutil.copy(source_file, destination_file)
 
 def handle_last_challenge(config: Dict) -> None:
     """
