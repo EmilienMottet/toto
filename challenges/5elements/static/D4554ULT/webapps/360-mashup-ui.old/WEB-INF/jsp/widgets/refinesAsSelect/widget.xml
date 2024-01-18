@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<Widget name="Drop-down Lists" group="Navigation" premium="true">
+
+	<Description>This widget allows you to add a drop-down list on a form.</Description>
+	
+	<Preview>
+		<![CDATA[
+			<img src="/resources/widgets/refinesAsSelect/images/preview.png" alt="Drop-down Lists" />
+		]]>
+	</Preview>
+
+	<Includes>
+		<Include type="css" path="css/style.less" />
+		<Include type="js" path="/resources/javascript/buildUrl.js" />
+		<Include type="js" path="js/refinesAsSelect.js" />
+	</Includes>
+
+	<SupportWidgetsId arity="ZERO" />
+	<SupportFeedsId arity="MANY" />
+	<SupportI18N supported="false" />
+
+	<OptionsGroup name="Facets">
+		<Option id="facetPageName" name="Destination page on click" isUrlEncoded="true" isEvaluated="true">
+			<Description>Indicates the URL that should be accessed for a refinement option. If blank, you stay on the same page.</Description>
+			<Functions>
+				<ContextMenu>Pages()</ContextMenu>
+			</Functions>
+		</Option>
+		<Option id="showEmptyFacets" name="Display empty facet">
+			<Description>Displays empty facets, that is to say, facets that do not have any categories.</Description>
+			<Values>
+				<Value>false</Value>
+				<Value>true</Value>
+			</Values>
+		</Option>
+		<Option id="facetsListMode" name="Facet root list mode" arity="ONE">
+			<Description>
+				<![CDATA[
+					Specifies the facet list filtering mode.<br />
+					For the 'Exclude' and 'Include' modes, the 'Facet list' field allows to specify the metas to include or exclude.<br />
+					Leaving facet root list empty forces iteration over all the facets independent of what mode is chosen.
+				]]>
+			</Description>
+			<Values>
+				<Value>No filtering</Value>
+				<Value>Include</Value>
+				<Value>Exclude</Value>
+			</Values>
+			<Functions>
+				<Display>PARAMETER_dependsOn('No filtering', ['facetsList'], false)</Display>
+			</Functions>
+		</Option>
+		<Option id="facetsList" name="Facets list">
+			<Description>The specified facets, separated by commas, will be either the only ones displayed ('Include' mode) or the only ones hidden ('Exclude' mode). Leaving the facet list empty iterates over all facets.</Description>
+			<Functions>
+				<ContextMenu>Facets()</ContextMenu>
+				<ContextMenu>COMMON_appendOnChange(', ')</ContextMenu>
+			</Functions>
+		</Option>
+		<Option id="nbSubFacets" name="Max number of categories">
+			<Description>Specifies the maximum number of categories to display. You must enter an integer.</Description>
+			<Functions>
+				<Check>isInteger</Check>
+			</Functions>
+		</Option>
+		<Option id="sortModeFacets" name="Sort facets by">
+			<Description>
+				Sorts the facets using the selected method. Selecting anything but 'default' impacts performance.
+			</Description>
+			<Values>
+				<Value>default</Value>
+				<Value>description-asc</Value>
+				<Value>description-desc</Value>
+				<Value>shuffle</Value>
+			</Values>
+		</Option>
+		<Option id="sortMode" name="Sort categories by" arity="ONE">
+			<Description>
+				<![CDATA[
+					Sorts the categories using the selected method. Selecting anything but 'default' impacts performance.<br />
+					<ul>
+						<li>'default' requires no processing.</li>
+						<li>'shuffle', 'desc*', 'score*', 'count*' and 'range*' impact performance on the server side.</li>
+					</ul>
+				]]>
+			</Description>
+			<Values>
+				<Value>default</Value>
+				<Value>description-asc</Value>
+				<Value>description-desc</Value>
+				<Value>score-asc</Value>
+				<Value>score-desc</Value>
+				<Value>count-asc</Value>
+				<Value>count-desc</Value>
+				<Value>range-asc</Value>
+				<Value>range-desc</Value>
+				<Value>shuffle</Value>
+			</Values>
+		</Option>
+		<Option id="values" name="Aggregation" arity="ZERO_OR_ONE">
+			<Description>Specifies the type of aggregation that will be displayed next to the facet name.</Description>
+			<Functions>
+				<ContextMenu>Aggregations()</ContextMenu>
+				<ContextMenu>COMMON_emptyOnChange()</ContextMenu>
+			</Functions>
+		</Option>
+		<Option id="filterNullAggregation" name="Filter null aggregations" arity="ONE">
+			<Description>Display or not the categories if the given aggregation is null (except count).
+			Can reduce performance in case of facet with lots of categories.
+			Default false.</Description>
+			<Functions>
+				<Display>PARAMETER_doHide('false', [], ['defaultValue'])</Display>
+			</Functions>
+			<Values>
+				<Value>false</Value>
+				<Value>true</Value>
+			</Values>
+		</Option>
+		<Option id="defaultValue" name="Default aggregation value" arity="ZERO_OR_ONE">
+			<Description>If no filter null aggregations, specify default aggregation value</Description>
+		</Option>
+	</OptionsGroup>
+
+	<OptionsGroup name="General">
+		<Option id="title" name="Widget Title" isEvaluated="true">
+			<Description>Widget title. If blank, no name is displayed.</Description>
+		</Option>
+		<Option id="displayFeed" name="Display feed row">
+			<Description>Enables the "feed" row display.</Description>
+			<Values>
+				<Value>false</Value>
+				<Value>true</Value>
+			</Values>
+		</Option>
+	</OptionsGroup>
+
+	<OptionsGroup name="Advanced">
+		<Option id="noResultsJspPathHit" name="JSP path to use if no results" arity="ONE">
+			<Description>If there are no results, the widget is either hidden using a trigger, or a message is displayed using the content of a JSP file.</Description>
+			<Functions>
+				<Check>isJspPath</Check>
+			</Functions>
+		</Option>
+		<Option id="forceRefineOnFeeds" name="Force refinement for feeds" arity="ZERO_OR_MANY">
+			<Description>Forces refinements on the specified feeds.</Description>
+			<Functions>
+				<ContextMenu>WIDGET_getFeeds(true)</ContextMenu>
+				<ContextMenu>COMMON_emptyOnChange()</ContextMenu>
+			</Functions>
+		</Option>
+	</OptionsGroup>
+
+	<DefaultValues>
+		<DefaultValue name="showEmptyFacets">false</DefaultValue>
+		<DefaultValue name="facetsListMode">No filtering</DefaultValue>
+		<DefaultValue name="sortModeFacets">default</DefaultValue>
+		<DefaultValue name="sortMode">default</DefaultValue>
+		<DefaultValue name="values">count</DefaultValue>
+		<DefaultValue name="displayFeed">true</DefaultValue>
+		<DefaultValue name="noResultsJspPathHit">/WEB-INF/jsp/commons/noFacets.jsp</DefaultValue>
+		<DefaultValue name="filterNullAggregation">false</DefaultValue>
+		<DefaultValue name="defaultValue">0</DefaultValue>
+	</DefaultValues>
+
+</Widget>

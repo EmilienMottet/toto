@@ -1,0 +1,6 @@
+<master:ProductSecurity login="admin" password="cZZOpOljpStMjV1YIfD3tYw7QMs5m3fMJLnqvRacZchPZjj8nVGLGvjWhJ41zutITYOwWwLPWTVezgDjq/BkkaqP+vxUv18SkvUOnj/YvG9nVguw7PVXVUf0JEC9QEEnz8XtWwQej/wDxTzGG2inGYvsksVYJ9BOYwgPYgxYB9DfCx00fdGRiUprYS5Dsv1BsfhjiUJatmFyj1SkWK0qOCXZyWMlEPRzH34tIRLWvlvBoaeyhtOHDZYDA163HrhHghjEQvitVsDINHEPK46Ig2CS/kc/XslCHKTdRczW1UcIrDDR+JlLOQ92Y11V0evWBhsowByqu6z6XPdB4Lmqhw==" secureInternalConnections="false" version="1570546422000" xmlns:bee="exa:exa.bee" xmlns:cdesc="exa:com.exalead.mercury.component.config.descriptor" xmlns:secs="exa:com.exalead.security.sources.common" xmlns:config="exa:exa.bee.config" xmlns:master="exa:com.exalead.mercury.mami.master.v10">
+    <master:IdentityProviderConfig name="ip0" sessionInactivityTimeoutS="21600"/>
+    <master:trustedHost>
+        <bee:StringValue value="*"/>
+    </master:trustedHost>
+</master:ProductSecurity>

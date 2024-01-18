@@ -1,0 +1,6 @@
+<s2:SearchTargetList version="1570546421000" xmlns:s3="exa:com.exalead.search.v30" xmlns:bee="exa:exa.bee" xmlns:ling="exa:com.exalead.linguistic.v10" xmlns:ana="exa:com.exalead.indexing.analysis.v10" xmlns:config="exa:exa.bee.config" xmlns:s2="exa:com.exalead.mercury.mami.search.v20">
+    <s2:SimpleSearchTarget targetName="st0" watchDogConnectTimeoutMS="1000" watchDogReadTimeoutMS="5000" nbVirtualPartitionPerSlice="1">
+        <s2:TargetSlices instances="i0" power="0"/>
+        <s2:TargetSlices power="1"/>
+    </s2:SimpleSearchTarget>
+</s2:SearchTargetList>

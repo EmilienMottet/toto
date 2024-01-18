@@ -1,0 +1,3 @@
+<io:MountingConfig version="0" xmlns:io="exa:com.exalead.io.v10" xmlns:config="exa:exa.bee.config">
+    <io:MountingPoint path="data://mnt/bg0" buildGroup="bg0" mountAtStartup="true" flatten="false"/>
+</io:MountingConfig>

@@ -1,0 +1,90 @@
+.mashup {
+	.savedQueries {
+	
+		.widgetHeader {
+			position: relative;
+			text-align: left;			
+	
+			a {
+				color: white;
+	
+				&.show {
+					background: url('../img/expand.png') no-repeat top left;
+					padding-left: 20px;
+				}
+	
+				&.hide {
+					background: url('../img/de-expand.png') no-repeat top left;
+					padding-left: 20px;
+					display: none;
+				}
+	
+				&.save {
+					position: absolute;
+					right: 5px;
+					top: 0px;
+				}
+	
+			}
+		}
+	
+		.widgetContent {
+			display: none;
+			padding: 5px 5px 5px 10px;
+			border-top: 1px @cblock-border solid;
+	
+			li {
+				.delete {
+					padding: 0 1px;
+					margin-left: 5px;
+					color: red;
+					display: none;
+					&:hover {
+						text-decoration: none;
+						background: red;
+						color: white;
+					}
+				}
+	
+				&:hover {
+					.delete {
+						display: inline;
+					}
+				}
+			}
+		}
+		
+		.overlay-form {
+			padding: 10px;
+			position: absolute;
+			background-color: #ffffff;
+			border: 1px solid #cccccc;
+			width: 300px;
+			z-index: 10;
+			
+			input[type=text] {
+				width: 100%;
+			}
+			
+			.form-rigth {
+				float:right;
+			}
+			
+			.arrow-top-right
+			{
+				position:absolute;
+				top:-9px;
+				right:42px;
+				width:19px;
+				height:9px;
+				z-index:11;
+				background:url('../img/popup_arrow.png') 0 0 no-repeat;
+			}
+		}
+	}
+	
+	// IE fixes
+	&.ie6 .savedQueries .widgetContent li .delete {
+		display: inline;
+	}
+}

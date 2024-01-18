@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?><bee:Hive xmlns:bee="exa:exa.bee">
+  <bee:DirectoryExtract bee:key="DIRECTORY" xmlns:bee="exa:exa.bee">
+    <bee:Product>
+      <bee:BeeHost install="cvdefault" name="mpllnx4032.mpl.michelin.com">
+        <bee:BeeProcess name="hostagent" runtime="exa">
+          <bee:BeeServer name="default" port="16009" protocol="http" startRank="0">
+            <bee:BeeService beeKey="services.mercuryhost.mpllnx4032.mpl.michelin.com-cvdefault" inDirectory="true" name="/mercuryhost/mpllnx4032.mpl.michelin.com-cvdefault" schemaName="com.exalead.mercury.hostagent.MercuryHostAgent" type="exa_bee"/>
+            <bee:BeeService beeKey="ken.agent" inDirectory="true" name="/ken/mpllnx4032.mpl.michelin.com-cvdefault" schemaName="exa.bee.ken2.KenAgent" type="exa_bee"/>
+            <bee:BeeService beeKey="hostStatus" inDirectory="true" name="/hostStatus/mpllnx4032.mpl.michelin.com-cvdefault" schemaName="exa.bee.deploy.HostStatusGatherer"/>
+            <bee:BeeService beeKey="ken.agent" inDirectory="false" name="/ken" schemaName="exa.bee.ken2.KenAgent"/>
+            <bee:BeeService beeKey="exascript" inDirectory="false" name="exascript"/>
+            <bee:BeeService beeKey="profiler" inDirectory="false" name="profiler"/>
+            <bee:BeeService beeKey="dynamicData" inDirectory="false" name="dynamicData"/>
+            <bee:BeeService beeKey="log4e" inDirectory="true" name="/log4e/mpllnx4032.mpl.michelin.com-cvdefault/hostagent" schemaName="com.exalead.bee.services.Log4EService" type="exa_bee"/>
+            <bee:BeeService beeKey="beegistryUpdate" inDirectory="true" name="/beegistry/mpllnx4032.mpl.michelin.com-cvdefault/hostagent" schemaName="exa.bee.BeegistryUpdateService" type="exa_bee"/>
+          </bee:BeeServer>
+        </bee:BeeProcess>
+        <bee:BeeProcess name="gateway" options="httpMinThreads=5/httpMaxThreads=500/httpMaxStopTime=100" runtime="java">
+          <bee:BeeServer name="default" options="maxGETQuerySize=32768/maxFormPOSTQuerySize=10000000/maxIdleTimeMS=86400000/acceptorThreads=1/acceptQueueSize=1200" port="16003" protocol="http" startRank="0">
+            <bee:BeeService beeKey="services.reporting.sqlite" inDirectory="true" name="/reporting/sqlite" schemaName="com.exalead.cloudview.reporting.SQLiteConfiguredServer" type="flis"/>
+            <bee:BeeService beeKey="services.rta-handler" inDirectory="true" name="/rta-handler" schemaName="com.exalead.cloudview.indexing.realtime.RealTimeAlertingHandlerService" type="flis"/>
+            <bee:BeeService beeKey="java" inDirectory="false" name="java" schemaName="com.exalead.bee.JavaRuntimeServlet"/>
+            <bee:BeeService beeKey="profiler" inDirectory="false" name="profiler" schemaName="com.exalead.bee.services.ProfilingServlet"/>
+            <bee:BeeService beeKey="isAlive" inDirectory="false" name="isAlive" schemaName="com.exalead.bee.services.IsAliveServlet"/>
+            <bee:BeeService beeKey="log4e" inDirectory="true" name="/log4e/mpllnx4032.mpl.michelin.com-cvdefault/gateway" schemaName="com.exalead.bee.services.Log4EService" type="java_bee"/>
+            <bee:BeeService beeKey="beegistryUpdate" inDirectory="true" name="/beegistry/mpllnx4032.mpl.michelin.com-cvdefault/gateway" schemaName="com.exalead.bee.services.BeegistryUpdater" type="java_bee"/>
+          </bee:BeeServer>
+          <bee:BeeServer name="startables_0" options="maxGETQuerySize=32768/maxFormPOSTQuerySize=10000000/maxIdleTimeMS=86400000/acceptorThreads=1/acceptQueueSize=1200" port="16004" protocol="NONE" startRank="0">
+            <bee:BeeService beeKey="services.scheduledJobsHandler" inDirectory="false" name="scheduledJobsHandler" schemaName="com.exalead.cloudview.master.ScheduledJobsHandler"/>
+            <bee:BeeService beeKey="scheduler" inDirectory="false" name="/scheduler" schemaName="com.exalead.mercury.scheduler.SchedulerHandler"/>
+            <bee:BeeService beeKey="services.loggingMasterHandler" inDirectory="false" name="/loggingMasterHandler" schemaName="com.exalead.cloudview.master.LoggingMasterHandler"/>
+          </bee:BeeServer>
+          <bee:BeeServer name="installui" options="maxGETQuerySize=32768/maxFormPOSTQuerySize=10000000/maxIdleTimeMS=86400000/acceptorThreads=1/acceptQueueSize=1200" port="16001" protocol="http" startRank="0">
+            <bee:BeeService beeKey="setup-ui" inDirectory="false" name="/setup"/>
+          </bee:BeeServer>
+          <bee:BeeServer name="resourcemanager" options="maxGETQuerySize=32768/maxFormPOSTQuerySize=10000000/maxIdleTimeMS=86400000/acceptorThreads=1/acceptQueueSize=1200" port="16005" protocol="http" startRank="6">
+            <bee:BeeService beeKey="services.resourcemanager" inDirectory="true" name="/resourcemanager" schemaName="com.exalead.mercury.resources.ResourceManager" type="java_bee"/>
+          </bee:BeeServer>
+          <bee:BeeServer name="resourceshare" options="maxGETQuerySize=32768/maxFormPOSTQuerySize=10000000/maxIdleTimeMS=86400000/acceptorThreads=1/acceptQueueSize=1200" port="16006" protocol="http" startRank="5">
+            <bee:BeeService beeKey="resourceshareservice" inDirectory="false" name="/" schemaName="com.exalead.ds.share2.http.ShareFLIS" type="flis"/>
+          </bee:BeeServer>
+          <bee:BeeServer name="hostagent" options="maxGETQuerySize=32768/maxFormPOSTQuerySize=10000000/maxIdleTimeMS=86400000/acceptorThreads=1/acceptQueueSize=1200" port="16008" protocol="http" startRank="0">
+            <bee:BeeService beeKey="services.hostagent" inDirectory="false" name="hostagent" schemaName="com.exalead.cloudview.hostagent.HostagentService"/>
+          </bee:BeeServer>
+          <bee:BeeServer name="gateway" options="gateway=/maxGETQuerySize=32768/maxFormPOSTQuerySize=10000000/maxIdleTimeMS=86400000/acceptorThreads=1/acceptQueueSize=1200" port="16011" protocol="http" startRank="0">
+            <bee:BeeService beeKey="command" inDirectory="false" name="command" schemaName="com.exalead.mercury.mami.command.CommandServlet"/>
+            <bee:BeeService beeKey="cvinspect" inDirectory="false" name="cvinspect" schemaName="com.exalead.mercury.mami.command.CommandServlet"/>
+            <bee:BeeService beeKey="reportingmanager" inDirectory="true" name="/reportingmanager" schemaName="com.exalead.mercury.reporting.ReportingManager" type="java_bee"/>
+            <bee:BeeService beeKey="mami.alerting" inDirectory="true" name="/mami/alerting" schemaName="com.exalead.cloudview.alerting.AlertingManager" type="java_bee"/>
+            <bee:BeeService beeKey="360-administration-service" inDirectory="false" name="/360-admin-service"/>
+            <bee:BeeService beeKey="mami.datamodel" inDirectory="true" name="/mami/datamodel" schemaName="com.exalead.datamodel.mami.DataModelManager" type="java_bee"/>
+            <bee:BeeService beeKey="mami.resourcemanager" inDirectory="true" name="/mami/resourcemanager" schemaName="com.exalead.mercury.mami.resources.ResourceManager" type="java_bee"/>
+            <bee:BeeService beeKey="mami.adminui" inDirectory="true" name="/mami/adminui" schemaName="com.exalead.mercury.mami.adminui.AdminUIManager" type="java_bee"/>
+            <bee:BeeService beeKey="mami.linguistic" inDirectory="true" name="/mami/linguistic" schemaName="com.exalead.mercury.mami.linguistic.LinguisticManager" type="java_bee"/>
+            <bee:BeeService beeKey="mami.indexing" inDirectory="true" name="/mami/indexing" schemaName="com.exalead.mercury.mami.indexing.IndexingManager" type="java_bee"/>
+            <bee:BeeService beeKey="mami.indexingha" inDirectory="true" name="/mami/indexingha" schemaName="com.exalead.mercury.mami.indexing.IndexingManagerHA" type="java_bee"/>
+            <bee:BeeService beeKey="mami.consolidation" inDirectory="true" name="/mami/consolidation" schemaName="com.exalead.mercury.mami.consolidation.ConsolidationManager" type="java_bee"/>
+            <bee:BeeService beeKey="mami.master" inDirectory="true" name="/mami/master" schemaName="com.exalead.mercury.mami.master.MasterManager" type="java_bee"/>
+            <bee:BeeService beeKey="mami.search" inDirectory="true" name="/mami/search" schemaName="com.exalead.mercury.mami.search.SearchManager" type="java_bee"/>
+            <bee:BeeService beeKey="mami.thumbnails" inDirectory="true" name="/mami/thumbnails" schemaName="com.exalead.mercury.mami.thumbnails.ThumbnailsManager" type="java_bee"/>
+            <bee:BeeService beeKey="mami.convert" inDirectory="true" name="/mami/convert" schemaName="com.exalead.mercury.mami.convert.ConvertManager" type="java_bee"/>
+            <bee:BeeService beeKey="mami.connect" inDirectory="true" name="/mami/connect" schemaName="com.exalead.mercury.mami.connect.ConnectManager" type="java_bee"/>
+            <bee:BeeService beeKey="mami.replayserver" inDirectory="true" name="/mami/replay" schemaName="com.exalead.analyticsserver.mami.replay.ReplayManager" type="java_bee"/>
+          </bee:BeeServer>
+          <bee:BeeServer name="resourceshare_slave" options="maxGETQuerySize=32768/maxFormPOSTQuerySize=10000000/maxIdleTimeMS=86400000/acceptorThreads=1/acceptQueueSize=1200" port="16007" protocol="NONE" startRank="4">
+            <bee:BeeService beeKey="resourceshare" inDirectory="false" name="/__internal" schemaName="NONE"/>
+          </bee:BeeServer>
+        </bee:BeeProcess>
+        <bee:BeeProcess name="master" runtime="exa">
+          <bee:BeeServer name="default" port="16000" protocol="http+pb" startRank="0">
+            <bee:BeeService beeKey="directoryService" inDirectory="true" name="/directory" schemaName="exa.bee.DirectoryService"/>
+            <bee:BeeService beeKey="mami.deploy" inDirectory="true" name="/mami/deploy" schemaName="com.exalead.mercury.mami.deploy.MercuryDeploymentManager" type="exa_bee"/>
+            <bee:BeeService beeKey="mami.crawl" inDirectory="true" name="/mami/crawl" schemaName="com.exalead.mercury.mami.crawl.CrawlManager" type="exa_bee"/>
+            <bee:BeeService beeKey="mami.fetch" inDirectory="true" name="/mami/fetch" schemaName="com.exalead.mercury.mami.fetch.FetchManager" type="exa_bee"/>
+            <bee:BeeService beeKey="exascript" inDirectory="false" name="exascript"/>
+            <bee:BeeService beeKey="profiler" inDirectory="false" name="profiler"/>
+            <bee:BeeService beeKey="dynamicData" inDirectory="false" name="dynamicData"/>
+            <bee:BeeService beeKey="log4e" inDirectory="true" name="/log4e/mpllnx4032.mpl.michelin.com-cvdefault/master" schemaName="com.exalead.bee.services.Log4EService" type="exa_bee"/>
+            <bee:BeeService beeKey="beegistryUpdate" inDirectory="true" name="/beegistry/mpllnx4032.mpl.michelin.com-cvdefault/master" schemaName="exa.bee.BeegistryUpdateService" type="exa_bee"/>
+            <bee:BeeService beeKey="services.GL" inDirectory="true" name="/GL" schemaName="exa.log.server.GlobalLog" type="exa_bee"/>
+          </bee:BeeServer>
+        </bee:BeeProcess>
+      </bee:BeeHost>
+    </bee:Product>
+  </bee:DirectoryExtract>
+</bee:Hive>

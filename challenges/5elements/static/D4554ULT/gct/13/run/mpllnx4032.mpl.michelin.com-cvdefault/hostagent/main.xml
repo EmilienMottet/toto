@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="UTF-8"?><bee:Hive xmlns:bee="exa:exa.bee">
+  <bee:include filename="config:///13/run/global.xml"/>
+  <bee:include filename="config:///13/run/directory.xml"/>
+  <MercuryKenReporter xmlns="exa:com.exalead.mercury.hostagent" bee:key="ken.agent.report"/>
+  <ns2:KenProcessList xmlns:ns2="exa:exa.bee.ken2" bee:key="ken.agent.process" xmlns:bee="exa:exa.bee">
+    <ns2:KenProcessDescription autoStart="true" executable="java" killIfNotResponding="true" monitoringURL="http://__LOCAL__:16023/java" name="searchserver-ss0" noOutput="true" pingDelay="300000" startDelay="0" startTimeout="300000" stopTimeout="30000">
+      <ns2:args>
+        <bee:StringValue value="-Dcvprocess=searchserver-ss0"/>
+        <bee:StringValue value="-Dfile.encoding=UTF-8"/>
+        <bee:StringValue value="-XX:+UseParallelGC"/>
+        <bee:StringValue value="-Xms32m"/>
+        <bee:StringValue value="-Djava.awt.headless=true"/>
+        <bee:StringValue value="-XX:+HeapDumpOnOutOfMemoryError"/>
+        <bee:StringValue value="-Dhttp.keepAlive=true"/>
+        <bee:StringValue value="-Dhttp.maxConnections=32"/>
+        <bee:StringValue value="-Dmmap_threshold=262144"/>
+        <bee:StringValue value="-Xmx2048m"/>
+        <bee:StringValue value="-Dcom.sun.management.jmxremote"/>
+        <bee:StringValue value="-Dcom.sun.management.jmxremote.port=16032"/>
+        <bee:StringValue value="-Dcom.sun.management.jmxremote.authenticate=false"/>
+        <bee:StringValue value="-Dcom.sun.management.jmxremote.ssl=false"/>
+        <bee:StringValue value="-Djava.rmi.server.hostname=mpllnx4032.mpl.michelin.com"/>
+        <bee:StringValue value="-XX:OnOutOfMemoryError=kill -9 %p"/>
+        <bee:StringValue value="com.exalead.bee.Queen"/>
+        <bee:StringValue value="--key"/>
+        <bee:StringValue value="processName"/>
+        <bee:StringValue value="searchserver-ss0"/>
+        <bee:StringValue value="--key"/>
+        <bee:StringValue value="hostname"/>
+        <bee:StringValue value="mpllnx4032.mpl.michelin.com"/>
+        <bee:StringValue value="--key"/>
+        <bee:StringValue value="installName"/>
+        <bee:StringValue value="cvdefault"/>
+        <bee:StringValue value="--key"/>
+        <bee:StringValue value="id"/>
+        <bee:StringValue value="-2830956"/>
+        <bee:StringValue value="--ppid"/>
+        <bee:StringValue value="__PARENT_PID__"/>
+        <bee:StringValue value="--configuration"/>
+        <bee:StringValue value="config:///version.xml"/>
+        <bee:StringValue value="--configuration"/>
+        <bee:StringValue value="config:///mercury.xml"/>
+        <bee:StringValue value="--key"/>
+        <bee:StringValue value="logToRunDir"/>
+        <bee:StringValue value="true"/>
+      </ns2:args>
+      <ns2:envOverride/>
+      <ns2:envAppend>
+        <bee:KeyValue key="LD_LIBRARY_PATH" value="/busapps/dpmu/gbl0/3DSpaceIndex/linux_a64/cv/tools/../amd64-linux/lib/dscore-index/dscore-index"/>
+      </ns2:envAppend>
+      <ns2:envPrepend>
+        <bee:KeyValue key="LD_PRELOAD" value="${java.libjsig}"/>
+      </ns2:envPrepend>
+    </ns2:KenProcessDescription>
+    <ns2:KenProcessDescription autoStart="true" executable="java" killIfNotResponding="false" monitoringURL="http://__LOCAL__:16013/java" name="indexingserver-sxibg0" noOutput="true" pingDelay="300000" startDelay="0" startTimeout="300000" stopTimeout="30000">
+      <ns2:args>
+        <bee:StringValue value="-Dcvprocess=indexingserver-sxibg0"/>
+        <bee:StringValue value="-Dfile.encoding=UTF-8"/>
+        <bee:StringValue value="-XX:+UseParallelGC"/>
+        <bee:StringValue value="-Xms512M"/>
+        <bee:StringValue value="-Djava.awt.headless=true"/>
+        <bee:StringValue value="-XX:+HeapDumpOnOutOfMemoryError"/>
+        <bee:StringValue value="-Dhttp.keepAlive=true"/>
+        <bee:StringValue value="-Dhttp.maxConnections=32"/>
+        <bee:StringValue value="-Dmmap_threshold=262144"/>
+        <bee:StringValue value="-Xmx2048m"/>
+        <bee:StringValue value="-Dcom.sun.management.jmxremote"/>
+        <bee:StringValue value="-Dcom.sun.management.jmxremote.port=16033"/>
+        <bee:StringValue value="-Dcom.sun.management.jmxremote.authenticate=false"/>
+        <bee:StringValue value="-Dcom.sun.management.jmxremote.ssl=false"/>
+        <bee:StringValue value="-Djava.rmi.server.hostname=mpllnx4032.mpl.michelin.com"/>
+        <bee:StringValue value="-XX:OnOutOfMemoryError=kill -9 %p"/>
+        <bee:StringValue value="com.exalead.bee.Queen"/>
+        <bee:StringValue value="--key"/>
+        <bee:StringValue value="processName"/>
+        <bee:StringValue value="indexingserver-sxibg0"/>
+        <bee:StringValue value="--key"/>
+        <bee:StringValue value="hostname"/>
+        <bee:StringValue value="mpllnx4032.mpl.michelin.com"/>
+        <bee:StringValue value="--key"/>
+        <bee:StringValue value="installName"/>
+        <bee:StringValue value="cvdefault"/>
+        <bee:StringValue value="--key"/>
+        <bee:StringValue value="id"/>
+        <bee:StringValue value="247016361"/>
+        <bee:StringValue value="--ppid"/>
+        <bee:StringValue value="__PARENT_PID__"/>
+        <bee:StringValue value="--configuration"/>
+        <bee:StringValue value="config:///version.xml"/>
+        <bee:StringValue value="--configuration"/>
+        <bee:StringValue value="config:///mercury.xml"/>
+        <bee:StringValue value="--key"/>
+        <bee:StringValue value="logToRunDir"/>
+        <bee:StringValue value="true"/>
+      </ns2:args>
+      <ns2:envOverride/>
+      <ns2:envAppend>
+        <bee:KeyValue key="LD_LIBRARY_PATH" value="/busapps/dpmu/gbl0/3DSpaceIndex/linux_a64/cv/tools/../amd64-linux/lib/dscore-index/dscore-index"/>
+      </ns2:envAppend>
+      <ns2:envPrepend>
+        <bee:KeyValue key="LD_PRELOAD" value="${java.libjsig}"/>
+      </ns2:envPrepend>
+    </ns2:KenProcessDescription>
+    <ns2:KenProcessDescription autoStart="true" executable="java" is32Bits="false" killIfNotResponding="false" monitoringURL="http://__LOCAL__:16028/java" name="connectors-java0" noOutput="true" pingDelay="300000" startDelay="0" startTimeout="300000" stopTimeout="30000">
+      <ns2:args>
+        <bee:StringValue value="-Dcvprocess=connectors-java0"/>
+        <bee:StringValue value="-Dfile.encoding=UTF-8"/>
+        <bee:StringValue value="-XX:+UseParallelGC"/>
+        <bee:StringValue value="-Xms32m"/>
+        <bee:StringValue value="-Djava.awt.headless=true"/>
+        <bee:StringValue value="-XX:+HeapDumpOnOutOfMemoryError"/>
+        <bee:StringValue value="-Dhttp.keepAlive=true"/>
+        <bee:StringValue value="-Dhttp.maxConnections=32"/>
+        <bee:StringValue value="-Dmmap_threshold=262144"/>
+        <bee:StringValue value="-Xmx512m"/>
+        <bee:StringValue value="-Dcom.sun.management.jmxremote"/>
+        <bee:StringValue value="-Dcom.sun.management.jmxremote.port=16034"/>
+        <bee:StringValue value="-Dcom.sun.management.jmxremote.authenticate=false"/>
+        <bee:StringValue value="-Dcom.sun.management.jmxremote.ssl=false"/>
+        <bee:StringValue value="-Djava.rmi.server.hostname=mpllnx4032.mpl.michelin.com"/>
+        <bee:StringValue value="-XX:OnOutOfMemoryError=kill -9 %p"/>
+        <bee:StringValue value="com.exalead.bee.Queen"/>
+        <bee:StringValue value="--key"/>
+        <bee:StringValue value="processName"/>
+        <bee:StringValue value="connectors-java0"/>
+        <bee:StringValue value="--key"/>
+        <bee:StringValue value="hostname"/>
+        <bee:StringValue value="mpllnx4032.mpl.michelin.com"/>
+        <bee:StringValue value="--key"/>
+        <bee:StringValue value="installName"/>
+        <bee:StringValue value="cvdefault"/>
+        <bee:StringValue value="--key"/>
+        <bee:StringValue value="id"/>
+        <bee:StringValue value="-397421971"/>
+        <bee:StringValue value="--ppid"/>
+        <bee:StringValue value="__PARENT_PID__"/>
+        <bee:StringValue value="--configuration"/>
+        <bee:StringValue value="config:///version.xml"/>
+        <bee:StringValue value="--configuration"/>
+        <bee:StringValue value="config:///mercury.xml"/>
+        <bee:StringValue value="--key"/>
+        <bee:StringValue value="logToRunDir"/>
+        <bee:StringValue value="true"/>
+      </ns2:args>
+      <ns2:envOverride/>
+      <ns2:envAppend/>
+      <ns2:envPrepend>
+        <bee:KeyValue key="LD_PRELOAD" value="${java.libjsig}"/>
+      </ns2:envPrepend>
+    </ns2:KenProcessDescription>
+    <ns2:KenProcessDescription autoStart="true" executable="exa" killIfNotResponding="false" monitoringURL="http://__LOCAL__:16009/exascript" name="hostagent" noOutput="true" pingDelay="300000" startDelay="0" startTimeout="300000" stopTimeout="30000">
+      <ns2:args>
+        <bee:StringValue value="-info"/>
+        <bee:StringValue value="hostagent"/>
+        <bee:StringValue value="-mlock"/>
+        <bee:StringValue value="-buddySize"/>
+        <bee:StringValue value="19"/>
+        <bee:StringValue value="-allocSize"/>
+        <bee:StringValue value="19"/>
+        <bee:StringValue value="-b"/>
+        <bee:StringValue value="${dataDir}/exabin/mercury.bin"/>
+        <bee:StringValue value="-rundir"/>
+        <bee:StringValue value="${runDir}/hostagent"/>
+        <bee:StringValue value="exa.bee.Queen.main"/>
+        <bee:StringValue value="--key"/>
+        <bee:StringValue value="processName"/>
+        <bee:StringValue value="hostagent"/>
+        <bee:StringValue value="--key"/>
+        <bee:StringValue value="hostname"/>
+        <bee:StringValue value="mpllnx4032.mpl.michelin.com"/>
+        <bee:StringValue value="--key"/>
+        <bee:StringValue value="installName"/>
+        <bee:StringValue value="cvdefault"/>
+        <bee:StringValue value="--key"/>
+        <bee:StringValue value="id"/>
+        <bee:StringValue value="1851346213"/>
+        <bee:StringValue value="--ppid"/>
+        <bee:StringValue value="__PARENT_PID__"/>
+        <bee:StringValue value="--configuration"/>
+        <bee:StringValue value="config:///version.xml"/>
+        <bee:StringValue value="--configuration"/>
+        <bee:StringValue value="config:///mercury.xml"/>
+      </ns2:args>
+      <ns2:envOverride/>
+      <ns2:envAppend/>
+      <ns2:envPrepend/>
+    </ns2:KenProcessDescription>
+    <ns2:KenProcessDescription autoStart="true" executable="java" killIfNotResponding="false" monitoringURL="http://__LOCAL__:16018/java" name="consolidationserver-sxiconsolidation0" noOutput="true" pingDelay="300000" startDelay="0" startTimeout="300000" stopTimeout="30000">
+      <ns2:args>
+        <bee:StringValue value="-Dcvprocess=consolidationserver-sxiconsolidation0"/>
+        <bee:StringValue value="-Dfile.encoding=UTF-8"/>
+        <bee:StringValue value="-XX:+UseParallelGC"/>
+        <bee:StringValue value="-Xms32m"/>
+        <bee:StringValue value="-Djava.awt.headless=true"/>
+        <bee:StringValue value="-XX:+HeapDumpOnOutOfMemoryError"/>
+        <bee:StringValue value="-Dhttp.keepAlive=true"/>
+        <bee:StringValue value="-Dhttp.maxConnections=32"/>
+        <bee:StringValue value="-Dmmap_threshold=262144"/>
+        <bee:StringValue value="-Xmx4096m"/>
+        <bee:StringValue value="-Dcom.sun.xml.bind.v2.bytecode.ClassTailor.noOptimize=true"/>
+        <bee:StringValue value="-Dcom.sun.management.jmxremote"/>
+        <bee:StringValue value="-Dcom.sun.management.jmxremote.port=16035"/>
+        <bee:StringValue value="-Dcom.sun.management.jmxremote.authenticate=false"/>
+        <bee:StringValue value="-Dcom.sun.management.jmxremote.ssl=false"/>
+        <bee:StringValue value="-Djava.rmi.server.hostname=mpllnx4032.mpl.michelin.com"/>
+        <bee:StringValue value="-XX:OnOutOfMemoryError=kill -9 %p"/>
+        <bee:StringValue value="com.exalead.bee.Queen"/>
+        <bee:StringValue value="--key"/>
+        <bee:StringValue value="processName"/>
+        <bee:StringValue value="consolidationserver-sxiconsolidation0"/>
+        <bee:StringValue value="--key"/>
+        <bee:StringValue value="hostname"/>
+        <bee:StringValue value="mpllnx4032.mpl.michelin.com"/>
+        <bee:StringValue value="--key"/>
+        <bee:StringValue value="installName"/>
+        <bee:StringValue value="cvdefault"/>
+        <bee:StringValue value="--key"/>
+        <bee:StringValue value="id"/>
+        <bee:StringValue value="1236720338"/>
+        <bee:StringValue value="--ppid"/>
+        <bee:StringValue value="__PARENT_PID__"/>
+        <bee:StringValue value="--configuration"/>
+        <bee:StringValue value="config:///version.xml"/>
+        <bee:StringValue value="--configuration"/>
+        <bee:StringValue value="config:///mercury.xml"/>
+        <bee:StringValue value="--key"/>
+        <bee:StringValue value="logToRunDir"/>
+        <bee:StringValue value="true"/>
+      </ns2:args>
+      <ns2:envOverride/>
+      <ns2:envAppend/>
+      <ns2:envPrepend>
+        <bee:KeyValue key="LD_PRELOAD" value="${java.libjsig}"/>
+      </ns2:envPrepend>
+    </ns2:KenProcessDescription>
+    <ns2:KenProcessDescription autoStart="true" executable="java" killIfNotResponding="true" monitoringURL="http://__LOCAL__:16005/java" name="gateway" noOutput="true" pingDelay="300000" startDelay="0" startTimeout="300000" stopTimeout="30000">
+      <ns2:args>
+        <bee:StringValue value="-Dcvprocess=gateway"/>
+        <bee:StringValue value="-Dfile.encoding=UTF-8"/>
+        <bee:StringValue value="-XX:+UseParallelGC"/>
+        <bee:StringValue value="-Xms32m"/>
+        <bee:StringValue value="-Djava.awt.headless=true"/>
+        <bee:StringValue value="-XX:+HeapDumpOnOutOfMemoryError"/>
+        <bee:StringValue value="-Dhttp.keepAlive=true"/>
+        <bee:StringValue value="-Dhttp.maxConnections=32"/>
+        <bee:StringValue value="-Dmmap_threshold=262144"/>
+        <bee:StringValue value="-Xmx2048m"/>
+        <bee:StringValue value="-Dcom.sun.management.jmxremote"/>
+        <bee:StringValue value="-Dcom.sun.management.jmxremote.port=16036"/>
+        <bee:StringValue value="-Dcom.sun.management.jmxremote.authenticate=false"/>
+        <bee:StringValue value="-Dcom.sun.management.jmxremote.ssl=false"/>
+        <bee:StringValue value="-Djava.rmi.server.hostname=mpllnx4032.mpl.michelin.com"/>
+        <bee:StringValue value="-XX:OnOutOfMemoryError=kill -9 %p"/>
+        <bee:StringValue value="com.exalead.bee.Queen"/>
+        <bee:StringValue value="--key"/>
+        <bee:StringValue value="processName"/>
+        <bee:StringValue value="gateway"/>
+        <bee:StringValue value="--key"/>
+        <bee:StringValue value="hostname"/>
+        <bee:StringValue value="mpllnx4032.mpl.michelin.com"/>
+        <bee:StringValue value="--key"/>
+        <bee:StringValue value="installName"/>
+        <bee:StringValue value="cvdefault"/>
+        <bee:StringValue value="--key"/>
+        <bee:StringValue value="id"/>
+        <bee:StringValue value="861235212"/>
+        <bee:StringValue value="--ppid"/>
+        <bee:StringValue value="__PARENT_PID__"/>
+        <bee:StringValue value="--configuration"/>
+        <bee:StringValue value="config:///version.xml"/>
+        <bee:StringValue value="--configuration"/>
+        <bee:StringValue value="config:///mercury.xml"/>
+        <bee:StringValue value="--key"/>
+        <bee:StringValue value="logToRunDir"/>
+        <bee:StringValue value="true"/>
+      </ns2:args>
+      <ns2:envOverride/>
+      <ns2:envAppend/>
+      <ns2:envPrepend>
+        <bee:KeyValue key="LD_PRELOAD" value="${java.libjsig}"/>
+      </ns2:envPrepend>
+    </ns2:KenProcessDescription>
+    <ns2:KenProcessDescription autoStart="true" executable="java" killIfNotResponding="true" monitoringURL="http://__LOCAL__:16016/java" name="index6-sxibg0-sxii0" noOutput="true" pingDelay="300000" startDelay="0" startTimeout="300000" stopTimeout="30000">
+      <ns2:args>
+        <bee:StringValue value="-Dcvprocess=index6-sxibg0-sxii0"/>
+        <bee:StringValue value="-Dfile.encoding=UTF-8"/>
+        <bee:StringValue value="-XX:+UseParallelGC"/>
+        <bee:StringValue value="-Xms32m"/>
+        <bee:StringValue value="-Djava.awt.headless=true"/>
+        <bee:StringValue value="-XX:+HeapDumpOnOutOfMemoryError"/>
+        <bee:StringValue value="-Dhttp.keepAlive=true"/>
+        <bee:StringValue value="-Dhttp.maxConnections=32"/>
+        <bee:StringValue value="-Dmmap_threshold=262144"/>
+        <bee:StringValue value="-Xmx1024m"/>
+        <bee:StringValue value="-Dcom.sun.management.jmxremote"/>
+        <bee:StringValue value="-Dcom.sun.management.jmxremote.port=16037"/>
+        <bee:StringValue value="-Dcom.sun.management.jmxremote.authenticate=false"/>
+        <bee:StringValue value="-Dcom.sun.management.jmxremote.ssl=false"/>
+        <bee:StringValue value="-Djava.rmi.server.hostname=mpllnx4032.mpl.michelin.com"/>
+        <bee:StringValue value="-XX:OnOutOfMemoryError=kill -9 %p"/>
+        <bee:StringValue value="com.exalead.bee.Queen"/>
+        <bee:StringValue value="--key"/>
+        <bee:StringValue value="processName"/>
+        <bee:StringValue value="index6-sxibg0-sxii0"/>
+        <bee:StringValue value="--key"/>
+        <bee:StringValue value="hostname"/>
+        <bee:StringValue value="mpllnx4032.mpl.michelin.com"/>
+        <bee:StringValue value="--key"/>
+        <bee:StringValue value="installName"/>
+        <bee:StringValue value="cvdefault"/>
+        <bee:StringValue value="--key"/>
+        <bee:StringValue value="id"/>
+        <bee:StringValue value="-1319852298"/>
+        <bee:StringValue value="--ppid"/>
+        <bee:StringValue value="__PARENT_PID__"/>
+        <bee:StringValue value="--configuration"/>
+        <bee:StringValue value="config:///version.xml"/>
+        <bee:StringValue value="--configuration"/>
+        <bee:StringValue value="config:///mercury.xml"/>
+        <bee:StringValue value="--key"/>
+        <bee:StringValue value="logToRunDir"/>
+        <bee:StringValue value="true"/>
+      </ns2:args>
+      <ns2:envOverride/>
+      <ns2:envAppend>
+        <bee:KeyValue key="LD_LIBRARY_PATH" value="/busapps/dpmu/gbl0/3DSpaceIndex/linux_a64/cv/tools/../amd64-linux/lib/dscore-index/dscore-index"/>
+      </ns2:envAppend>
+      <ns2:envPrepend>
+        <bee:KeyValue key="LD_PRELOAD" value="${java.libjsig}"/>
+      </ns2:envPrepend>
+    </ns2:KenProcessDescription>
+    <ns2:KenProcessDescription autoStart="true" executable="exa" killIfNotResponding="false" monitoringURL="http://__LOCAL__:16004/exascript" name="master" noOutput="true" pingDelay="300000" startDelay="0" startTimeout="300000" stopTimeout="30000">
+      <ns2:args>
+        <bee:StringValue value="-info"/>
+        <bee:StringValue value="master"/>
+        <bee:StringValue value="-mlock"/>
+        <bee:StringValue value="-buddySize"/>
+        <bee:StringValue value="19"/>
+        <bee:StringValue value="-allocSize"/>
+        <bee:StringValue value="19"/>
+        <bee:StringValue value="-b"/>
+        <bee:StringValue value="${dataDir}/exabin/mercury.bin"/>
+        <bee:StringValue value="-rundir"/>
+        <bee:StringValue value="${runDir}/master"/>
+        <bee:StringValue value="exa.bee.Queen.main"/>
+        <bee:StringValue value="--key"/>
+        <bee:StringValue value="processName"/>
+        <bee:StringValue value="master"/>
+        <bee:StringValue value="--key"/>
+        <bee:StringValue value="hostname"/>
+        <bee:StringValue value="mpllnx4032.mpl.michelin.com"/>
+        <bee:StringValue value="--key"/>
+        <bee:StringValue value="installName"/>
+        <bee:StringValue value="cvdefault"/>
+        <bee:StringValue value="--key"/>
+        <bee:StringValue value="id"/>
+        <bee:StringValue value="321308616"/>
+        <bee:StringValue value="--ppid"/>
+        <bee:StringValue value="__PARENT_PID__"/>
+        <bee:StringValue value="--configuration"/>
+        <bee:StringValue value="config:///version.xml"/>
+        <bee:StringValue value="--configuration"/>
+        <bee:StringValue value="config:///mercury.xml"/>
+      </ns2:args>
+      <ns2:envOverride/>
+      <ns2:envAppend/>
+      <ns2:envPrepend/>
+    </ns2:KenProcessDescription>
+    <ns2:KenProcessDescription autoStart="true" executable="java" killIfNotResponding="true" monitoringURL="http://__LOCAL__:16038/java" name="convert-c0" noOutput="true" pingDelay="300000" startDelay="0" startTimeout="300000" stopTimeout="30000">
+      <ns2:args>
+        <bee:StringValue value="-Dcvprocess=convert-c0"/>
+        <bee:StringValue value="-Dfile.encoding=UTF-8"/>
+        <bee:StringValue value="-XX:+UseParallelGC"/>
+        <bee:StringValue value="-Xms32m"/>
+        <bee:StringValue value="-Djava.awt.headless=true"/>
+        <bee:StringValue value="-XX:+HeapDumpOnOutOfMemoryError"/>
+        <bee:StringValue value="-Dhttp.keepAlive=true"/>
+        <bee:StringValue value="-Dhttp.maxConnections=32"/>
+        <bee:StringValue value="-Dmmap_threshold=262144"/>
+        <bee:StringValue value="-Xmx128m"/>
+        <bee:StringValue value="-Dulimit.core=0"/>
+        <bee:StringValue value="-Dcom.sun.management.jmxremote"/>
+        <bee:StringValue value="-Dcom.sun.management.jmxremote.port=16039"/>
+        <bee:StringValue value="-Dcom.sun.management.jmxremote.authenticate=false"/>
+        <bee:StringValue value="-Dcom.sun.management.jmxremote.ssl=false"/>
+        <bee:StringValue value="-Djava.rmi.server.hostname=mpllnx4032.mpl.michelin.com"/>
+        <bee:StringValue value="-XX:OnOutOfMemoryError=kill -9 %p"/>
+        <bee:StringValue value="com.exalead.bee.Queen"/>
+        <bee:StringValue value="--key"/>
+        <bee:StringValue value="processName"/>
+        <bee:StringValue value="convert-c0"/>
+        <bee:StringValue value="--key"/>
+        <bee:StringValue value="hostname"/>
+        <bee:StringValue value="mpllnx4032.mpl.michelin.com"/>
+        <bee:StringValue value="--key"/>
+        <bee:StringValue value="installName"/>
+        <bee:StringValue value="cvdefault"/>
+        <bee:StringValue value="--key"/>
+        <bee:StringValue value="id"/>
+        <bee:StringValue value="1238854829"/>
+        <bee:StringValue value="--ppid"/>
+        <bee:StringValue value="__PARENT_PID__"/>
+        <bee:StringValue value="--configuration"/>
+        <bee:StringValue value="config:///version.xml"/>
+        <bee:StringValue value="--configuration"/>
+        <bee:StringValue value="config:///mercury.xml"/>
+        <bee:StringValue value="--key"/>
+        <bee:StringValue value="logToRunDir"/>
+        <bee:StringValue value="true"/>
+      </ns2:args>
+      <ns2:envOverride/>
+      <ns2:envAppend/>
+      <ns2:envPrepend>
+        <bee:KeyValue key="LD_PRELOAD" value="${java.libjsig}"/>
+        <bee:KeyValue key="CONVERTLOADDYNAMICMODULES" value="1"/>
+      </ns2:envPrepend>
+    </ns2:KenProcessDescription>
+  </ns2:KenProcessList>
+  <AppenderSpec xmlns="exa:exa.bee" bee:key="log4e.GL.APPEND.1" classId="exa.log.append.GlobalLogAppender">
+    <KeyValue key="publicName" value="/GL"/>
+  </AppenderSpec>
+  <bee:key name="services.mercuryhost.mpllnx4032.mpl.michelin.com-cvdefault">
+    <MercuryHostAgent xmlns="exa:com.exalead.mercury.hostagent" bee:key=""/>
+  </bee:key>
+  <bee:key name="ken.agent">
+    <KenAgent xmlns="exa:exa.bee.ken2" bee:key=""/>
+  </bee:key>
+  <bee:key name="hostStatus">
+    <HostStatusGatherer xmlns="exa:exa.bee.deploy" bee:key=""/>
+  </bee:key>
+  <bee:key name="ken.agent"/>
+  <bee:key name="exascript"/>
+  <bee:key name="profiler"/>
+  <bee:key name="dynamicData"/>
+  <bee:key name="log4e"/>
+  <bee:key name="beegistryUpdate"/>
+  <DirectoryPoolsReloader xmlns="exa:exa.bee" bee:key="directoryPoolsReloader"/>
+  <Sequence xmlns="exa:exa.bee" bee:key="main">
+    <bee:DirectoryLoader/>
+  </Sequence>
+</bee:Hive>

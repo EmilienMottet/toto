@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ModulesPermissions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="">
+    <Groups>
+        <Group id="admin">
+            <User id="admin"/>
+        </Group>
+    </Groups>
+    <Sections>
+        <Section id="modules">
+            <Section id="dashboard" permission="READ">
+                <Group id="admin" permission="WRITE"/>
+            </Section>
+            <Section id="applications" permission="NONE">
+                <Group id="admin" permission="WRITE"/>
+            </Section>
+            <Section id="permissions" permission="NONE">
+                <Group id="admin" permission="WRITE"/>
+            </Section>
+            <Section id="mashupbuilder" permission="WRITE"/>
+        </Section>
+    </Sections>
+</ModulesPermissions>

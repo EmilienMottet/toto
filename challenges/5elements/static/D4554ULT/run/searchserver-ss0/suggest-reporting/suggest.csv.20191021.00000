@@ -1,0 +1,10 @@
+#timestamp;apiclient_ip;query_service;query_querystring;query_output;answer_status;answer_blacklisted;answer_nhits;time_total;query_full
+"2019/10/21 09:24:14.127";"10.139.251.236";"OnPremise_securedSuggest_ds6w_58_label";"par";"json";"0";"0";"8";"40338";""
+"2019/10/21 09:24:14.257";"10.139.251.236";"OnPremise_securedSuggest_ds6w_58_label";"part";"json";"0";"0";"1";"5455";""
+"2019/10/21 09:24:22.844";"10.139.251.236";"OnPremise_securedSuggest_ds6w_58_label";"MFD";"json";"0";"0";"0";"5126";""
+"2019/10/21 09:24:25.207";"10.139.251.236";"OnPremise_securedSuggest_ds6w_58_label";"CAR";"json";"0";"0";"6";"3914";""
+"2019/10/21 09:24:29.056";"10.139.251.236";"OnPremise_securedSuggest_ds6w_58_label";"crea";"json";"0";"0";"6";"1968";""
+"2019/10/21 09:24:29.387";"10.139.251.236";"OnPremise_securedSuggest_ds6w_58_label";"create";"json";"0";"0";"6";"4683";""
+"2019/10/21 10:22:20.313";"10.139.251.236";"OnPremise_securedSuggest_ds6w_58_label";"Requirement";"json";"0";"0";"0";"5016";""
+"2019/10/21 10:22:20.330";"10.139.251.236";"OnPremise_securedSuggest_ds6w_58_label";"Require";"json";"0";"0";"0";"14673";""
+"2019/10/21 10:22:20.334";"10.139.251.236";"OnPremise_securedSuggest_ds6w_58_label";"Requi";"json";"0";"0";"0";"17453";""

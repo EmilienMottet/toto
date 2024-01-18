@@ -1,0 +1,44 @@
+.mashup {
+	a.tc-tag {
+		display: inline-block;
+		margin: 1px;
+	}
+
+	a.tc-tag-1 {
+		color:#216BCB;
+	}
+	a.tc-tag-2 {
+		color:#7B0099;
+	}
+	a.tc-tag-3 {
+		color:#439922;
+	}
+	a.tc-tag-4 {
+		color:#942A2A;
+	}
+	a.tc-tag-5 {
+		color:#2180CB;
+	}
+
+	.tc-wrapper-outer {
+		// when 'organic looks' are enabled
+		.tc-randdisp-true a {
+			margin: 6px 5px;
+			display: block;
+			float: left;
+			position: relative;
+		}
+		
+		.clear {
+			clear: both;
+		}
+	}
+	
+	&.ie6,
+	&.ie7 {
+		a.tc-tag {
+			float: left;
+			display: block;
+		}
+	}
+}

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<Widget name="Radio Buttons" group="Form Controls">
+
+	<Description>This widget allows you to add a control with radio buttons on a form.</Description>
+	
+	<Preview>
+		<![CDATA[
+			<img src="/resources/widgets/formRadioButtons/img/preview.png" alt="Radio Buttons Preview" />
+		]]>
+	</Preview>
+
+	<Includes>
+		<Include type="js" path="/resources/javascript/jquery.validate.js" />
+	</Includes>
+
+	<Dependencies>
+		<Widget name="formForm" />
+	</Dependencies>
+
+	<Interactions>
+		<Interaction type="in" id="exa.io.FormInterface"></Interaction>
+	</Interactions>
+	
+	<SupportFeedsId arity="ZERO_OR_MANY" />
+	<SupportI18N supported="true" />
+
+	<OptionsGroup name="General">
+		<Option id="name" name="Name" arity="ONE">
+			<Description>Defines the name of this control.</Description>
+		</Option>
+		<Option id="value" name="Value" arity="ZERO_OR_ONE" isEvaluated="true">
+			<Description>Defines the type of value used by this control.</Description>
+		</Option>
+		<OptionComposite id="items" name="Items" arity="ZERO_OR_MANY">
+			<Description>Specifies the items displayed in the control.</Description>
+			<Option id="label" name="Label" isEvaluated="true"></Option>
+			<Option id="value" name="Value" isEvaluated="true"></Option>
+		</OptionComposite>
+	</OptionsGroup>
+
+	<OptionsGroup name="Validation">
+		<Option id="enableValidation" name="Enable Validation" arity="ONE">
+			<Description>Specifies whether to enable validation for this control.</Description>		
+			<Values>
+				<Value>false</Value>
+				<Value>true</Value>
+			</Values>
+			<Functions>
+				<Display>PARAMETER_doHide('false',['validationMessage'], [], true, false)</Display>
+			</Functions>
+		</Option>
+		<Option id="validationMessage" name="Validation message" arity="ZERO_OR_ONE">
+			<Description>Specifies the message that will be displayed when validation fails for this field.</Description>
+		</Option>
+	</OptionsGroup>
+	
+	<DefaultValues>
+		<DefaultValue name="enableValidation">false</DefaultValue>
+	</DefaultValues>
+</Widget> 

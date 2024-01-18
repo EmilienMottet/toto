@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<MashupDefinition>
+	<MashupPageDefinition>
+		<OptionsGroup name="General">
+			<Option id="title" name="Title">
+				<Description>Parametric page title (to display the query for example).</Description>
+				<Functions>
+					<ContextMenu>PageVariables()</ContextMenu>
+					<ContextMenu>PageParameters()</ContextMenu>
+					<ContextMenu>Request()</ContextMenu>
+					<ContextMenu>Session()</ContextMenu>
+					<ContextMenu>Security()</ContextMenu>
+					<ContextMenu>I18N()</ContextMenu>
+				</Functions>
+			</Option>
+			<Option id="description" name="Description">
+				<Description>Fills the Meta Description header of the page.</Description>
+				<Functions>
+					<Display>SetType('textarea')</Display>
+					<ContextMenu>PageVariables()</ContextMenu>
+					<ContextMenu>PageParameters()</ContextMenu>
+					<ContextMenu>Request()</ContextMenu>
+					<ContextMenu>Session()</ContextMenu>
+					<ContextMenu>Security()</ContextMenu>
+					<ContextMenu>I18N()</ContextMenu>
+				</Functions>
+			</Option>
+			<Option id="metasHeader" name="Meta headers" arity="ZERO_OR_MANY">
+				<Description>You can set additional meta headers using the syntax name=content (for example copyright=ACME corp).</Description>
+				<Functions>
+					<ContextMenu>PageVariables()</ContextMenu>
+					<ContextMenu>PageParameters()</ContextMenu>
+					<ContextMenu>Request()</ContextMenu>
+					<ContextMenu>Session()</ContextMenu>
+					<ContextMenu>Security()</ContextMenu>
+					<ContextMenu>I18N()</ContextMenu>
+				</Functions>
+			</Option>
+			<Option id="customLayout" name="Custom Layout" arity="ZERO_OR_ONE">
+               <Description>Set the name of the plugin containing your custom layout.</Description>
+               <Functions>
+              		<ContextMenu>Layouts()</ContextMenu>
+               </Functions>
+      		</Option>
+		</OptionsGroup>
+
+		<OptionsGroup name="Resources">
+			<Option id="cssFile" name="Style files" arity="ZERO_OR_MANY">
+				<Description>
+<![CDATA[
+Enter the path(s) of the CSS files that you want to use on your application.<br />
+This can be:<br />
+<ul>
+	<li>relative to the webapps directory, for example /resources/css/mycssfile.css,</li>
+	<li>or absolute using a URL, for example, http://www.mysite/style.css.</li>
+</ul>
+]]>
+				</Description>
+			</Option>
+			<Option id="jsFile" name="JavaScript files" arity="ZERO_OR_MANY">
+				<Description>
+<![CDATA[
+Enter the path(s) of the JavaScript files that you want to use on your application.<br />
+This can be:<br />
+<ul>
+	<li>relative to the webapps directory, for example /resources/js/myjsfile.js,</li>
+	<li>or absolute using a URL, for example, http://www.mysite/file.js.</li>
+</ul>
+]]>
+				</Description>
+			</Option>
+		</OptionsGroup>
+
+		<OptionsGroup name="Security">
+			<Option id="enableSecurity" name="Enable security on this page">
+				<Description>A secured page will require the user to be authenticated or will redirect him on a login page otherwise. (If you enable the security, you will need to provide a security class name).</Description>
+				<Values>
+					<Value>false</Value>
+					<Value>true</Value>
+				</Values>
+			</Option>
+		</OptionsGroup>
+
+		<OptionsGroup name="Style">
+			<Option id="theme" name="Theme of the page">
+				<Values>
+					<Value></Value>
+					<Value>a</Value>
+					<Value>b</Value>
+					<Value>c</Value>
+					<Value>d</Value>
+					<Value>e</Value>
+				</Values>
+			</Option>
+			<Option id="cssId" name="CSS 'id=' of the page" />
+			<Option id="cssClass" name="CSS 'class=' of the page" />
+		</OptionsGroup>
+
+		<!-- @see IncludeResources (ResourcePacker) -->
+		<OptionsGroup name="Styles">
+			<Option id="cssStyle" name="Styles inlined" arity="ZERO_OR_ONE">
+				<Functions>
+					<Display>SetType('code', { mode: 'css', fullscreen: true })</Display>
+				</Functions>
+			</Option>
+		</OptionsGroup>
+
+		<!-- @see IncludeResources (ResourcePacker) -->
+		<OptionsGroup name="JavaScript">
+			<Option id="jsCode" name="JavaScript inlined" arity="ZERO_OR_ONE">
+				<Functions>
+					<Display>SetType('code', { mode: 'js', fullscreen: true })</Display>
+				</Functions>
+			</Option>
+		</OptionsGroup>
+	</MashupPageDefinition>
+
+	<RowDefinition>
+		<OptionsGroup name="CSS">
+			<Option id="cssId" name="CSS 'id=' of the row" />
+			<Option id="cssClass" name="CSS 'class=' of the row" />
+		</OptionsGroup>
+	</RowDefinition>
+
+	<CellDefinition>
+		<OptionsGroup name="Style">
+			<Option id="align" name="Horizontal alignment">
+				<Description>Horizontal alignment of the column content (may depend on each widget).</Description>
+				<Values>
+					<Value>center</Value>
+					<Value>left</Value>
+					<Value>right</Value>
+				</Values>
+			</Option>
+			<Option id="valign" name="Vertical alignment">
+				<Description>Vertical alignment of the column content (may depend on each widget).</Description>
+				<Values>
+					<Value>top</Value>
+					<Value>middle</Value>
+					<Value>bottom</Value>
+				</Values>
+			</Option>
+		</OptionsGroup>
+		<OptionsGroup name="CSS">
+			<Option id="cssId" name="CSS 'id=' of the column" />
+			<Option id="cssClass" name="CSS 'class=' of the column" />
+		</OptionsGroup>
+	</CellDefinition>
+
+	<ApplicationDefinition>
+
+		<OptionsGroup name="General">
+			<Option id="cssTheme" name="Theme">
+				<Description>Specifies the theme used by the Mashup UI application. 'theme_enterprise' is the default theme.</Description>
+			</Option>
+			<Option id="applicationIcon" name="Application icon path">
+				<Description>Specifies the visible icon when a user add the Mashup UI as a web application on its smartphone.</Description>
+			</Option>
+			<Option id="favicon" name="Favicon path">
+				<Description>Specifies the URL of the favicon of your website (the favicon is the little icon displayed in the URL bar).</Description>
+			</Option>
+			<Option id="defaultHomePage" name="Default home page">
+				<Description>Specifies the name of the default home page. If empty, the default page is 'index'.</Description>
+			</Option>
+			<Option id="sessionMaxInactiveInterval" name="Session timeout">
+				<Description>Specifies the session timeout in seconds for the application. Default is 5 days (432 000 seconds).</Description>
+				<Functions>
+					<Check>isInteger</Check>
+				</Functions>
+			</Option>
+		</OptionsGroup>
+
+		<OptionsGroup name="Reporting">
+			<Description>Before enabling a reporter, make sure it is correctly configured in the 'Administration Console > Reporting' menu.</Description>
+			<Option id="reportingEnabled" name="Enable reporting">
+				<Description>Enables reporting for the Mashup UI application.</Description>
+				<Values>
+					<Value>false</Value>
+					<Value>true</Value>
+				</Values>
+				<Functions>
+					<Display>ToggleDisplay({ valueToMatch: 'true', showOptions: ['reporterName'] })</Display>
+				</Functions>
+			</Option>
+			<Option id="reporterName" name="Reporter">
+				<Description>Specifies the reporter to use for the Mashup UI reporting. Choose the default 'mashup-ui-reporting' reporter, unless you want to use a custom reporter. It collects data relative to task execution and to CPU activity on the Mashup UI. For example, when a user queries a page, the reporter retrieves data such as the execution and CPU time of pages, widgets and triggers.</Description>
+				<Functions>
+					<ContextMenu>Reporters()</ContextMenu>
+					<ContextMenu>emptyOnChange()</ContextMenu>
+				</Functions>
+			</Option>
+		</OptionsGroup>
+
+		<OptionsGroup name="Mashup API client">
+			<Option id="http.max_number_of_connections_per_server" name="Max number of connections">
+				<Description>Specifies the maximum number of simultaneous connections to the application (on the Mashup UI). Leave blank to keep default configuration (default is ‘6’).</Description>
+			</Option>
+			<Option id="http.commons-httpclient.stale_checking_enabled" name="Enable stale checking">
+				<Description>Defines whether stale connection check is to be used. Disabling stale connection check may result in slight performance improvement at the risk of getting an I/O error when executing a request over a connection that has been closed at the server side. Defaults is 'true'.</Description>
+				<Values>
+					<Value></Value>
+					<Value>true</Value>
+					<Value>false</Value>
+				</Values>
+			</Option>
+			<Option id="http.use_commons_if_available" name="Use commons if available">
+				<Description>Enables the use of a custom HTTP connection. Leave blank to keep default configuration (default is true).</Description>
+				<Values>
+					<Value></Value>
+					<Value>true</Value>
+					<Value>false</Value>
+				</Values>
+			</Option>
+			<Option id="http.socket.timeout" name="Read timeout">
+				<Description>Specifies the timeout, in milliseconds, when reading from a stream when a connection is established to a resource. Leave blank to keep default configuration (default is ‘600000’). A timeout of zero is interpreted as an infinite timeout.</Description>
+			</Option>
+		</OptionsGroup>
+
+<OptionsGroup name="CSRF protection">
+            <Option id="csrf" name="Enable CSRF protection">
+                <Description>If enabled, a CSRF token will be generated for the USER and matched for every POST request sent.</Description>
+                <Values>
+                    <Value>false</Value>
+                    <Value>true</Value>
+                </Values>
+                <Functions>
+                    <Display>PARAMETER_doHide('false', ['csrfTimeout'], [])</Display>
+                </Functions>
+            </Option>
+            <Option id="csrfTimeout" name="CSRF Token lifetime">
+                <Description>The lifetime in minute of a CSRF token. An empty value means no expiration.</Description>
+            </Option>
+    </OptionsGroup>
+
+		<OptionsGroup name="robots.txt">
+			<Option id="robotsEnabled" name="Enable robots.txt">
+				<Description>Enables the robots.txt file to restrict the access to your application by the search engine robots that crawl the web.</Description>
+				<Values>
+					<Value>true</Value>
+					<Value>false</Value>
+				</Values>
+				<Functions>
+					<Display>PARAMETER_doHide('false', ['robotsRules'], [])</Display>
+				</Functions>
+				<!-- Common bots: http://www.robotstxt.org/db.html -->
+				<!-- robots.txt grammar: http://www.google.com/support/webmasters/bin/answer.py?hl=en&answer=156449 -->
+			</Option>
+			<Option id="robotsRules" name="Rules" arity="ZERO_OR_ONE">
+				<Description><![CDATA[
+Specifies the rules used by the robots.txt file.<br /><br />
+Each rule must have ONE 'User-agent' line and one or several 'Disallow' lines.<br />
+‘User-agent’ specifies the bots on which the rule will apply to (specify either a specific bot by listing its name or all bots by listing an asterisk ‘*’).<br />
+'Disallow' specifies the server resource that must not be accessed by the bot. It can be a directory, a page, a file, etc.<br />
+<br />
+List of common bots: http://www.robotstxt.org/db.html<br />
+Robots.txt rule grammar: http://www.google.com/support/webmasters/bin/answer.py?hl=en&answer=156449
+				]]></Description>
+				<Functions>
+					<Display>SetType('textarea')</Display>
+				</Functions>
+			</Option>
+		</OptionsGroup>
+
+		<OptionsGroup name="Sitemap/Landing Pages">
+			<Option id="sitemapEnabled" name="Enable sitemap">
+				<Description>Enables the serving of sitemap.xml/sitemap.gz. It also injects a link to the sitemap in the robots.txt file.</Description>
+				<Values>
+					<Value>false</Value>
+					<Value>true</Value>
+				</Values>
+				<Functions>
+					<Display>PARAMETER_doHide('false', ['sitemapMode', 'sitemapDefaultPage', 'sitemapQueryParam', 'sitemapRoots', 'sitemapPageOverrides', 'sitemapManual', 'sitemapFullUrl'], [], true, false)</Display>
+				</Functions>
+			</Option>
+			<Option id="sitemapMode" name="Mode">
+				<Description>
+<![CDATA[
+Can operate in either one of two modes:
+<ul>
+	<li><strong>Facet-based</strong>: Dynamically generates a Sitamap based on the Category hierarchy of a 
+	specific page. Allows you to specify specific landing pages for subcategories. Updates automatically as new content is added to index.</li>
+	<li><strong>Manual</strong>: Allows for uploading of own-specific XML document, has to comply with standard 
+	as outlined on <a href="http://www.sitemaps.org">http://www.sitemaps.org</a></li>
+</ul>
+The sitemap is served as /sitemap.xml and /sitemap.gz, an entry is added in robots.txt to link to the map. Note that the Sitemap option exists for SEO purposes only, 
+and is not embedded in the user-facing portion of the site.  
+]]>
+				</Description>
+				<Values>
+					<Value>Facet-based</Value>
+					<Value>Manual</Value>
+				</Values>
+				<Functions>
+					<Display>PARAMETER_doHide('Manual', ['sitemapDefaultPage', 'sitemapQueryParam', 'sitemapRoots', 'sitemapPageOverrides', 'sitemapFullUrl'], ['sitemapManual'], true, false)</Display>
+				</Functions>
+				<!-- Common bots: http://www.robotstxt.org/db.html -->
+				<!-- robots.txt grammar: http://www.google.com/support/webmasters/bin/answer.py?hl=en&answer=156449 -->
+			</Option>
+			<Option id="sitemapFullUrl" name="Full application URL" arity="ZERO_OR_ONE">
+				<Description>Provides the full URL to the application without trailing slash. For example http://example.com/mashup-ui</Description>
+			</Option>
+			<Option id="sitemapDefaultPage" name="Default landing page" arity="ONE">
+				<Description>Used if no 'Landing page override' is specified for a specific sub-category.</Description>
+				<Functions>
+					<Check>isPageName</Check>
+					<ContextMenu>Pages()</ContextMenu>
+					<ContextMenu>emptyOnChange()</ContextMenu>
+				</Functions>
+			</Option>
+			<Option id="sitemapQueryParam" name="Default query parameter" arity="ONE">
+				<Description>
+					The query-parameter to use on the landing pages (Please verify the parameters existance by visiting the "Feeds" section of the respective landing pages)
+				</Description>
+				<Functions>
+					<ContextMenu>PageParameters('sitemapDefaultPage')</ContextMenu>
+					<ContextMenu>emptyOnChange()</ContextMenu>
+				</Functions>
+			</Option>
+			<Option id="sitemapRoots" name="Include facet-roots" arity="ONE_OR_MANY">
+				<Description>
+					Facet-roots to include in the Sitemap. Subcategories will be automatically included.
+				</Description>
+			</Option>
+			<Option id="sitemapPageOverrides" name="Category landing pages" arity="ZERO_OR_MANY">
+				<Description>
+					Override the Default landing page: All entries have to be on the /Top/Facet/Category##landingpage format. Rules are evaluated in no particular order,
+					More specific rules take prescedence.
+				</Description>
+				<Functions>
+					<ContextMenu>Pages()</ContextMenu>
+				</Functions>
+			</Option>
+			<Option id="sitemapManual" name="Manual sitemap" arity="ZERO_OR_ONE">
+				<Description><![CDATA[
+					Provide the XML document for your own sitemap here: Make sure 
+					that the document follow the specifications at <a href="http:/www.sitemaps.org">http:/www.sitemaps.org</a>
+				]]></Description>
+				<Functions>
+					<Display>SetType('code', 'xml')</Display>
+				</Functions>
+			</Option>
+		</OptionsGroup>
+		<OptionsGroup name="Advanced">
+			<Option id="displayStackTrace" name="Display StackTrace in the MashupUI">
+				<Description>Displays StackTrace in the MashupUI. It is useful in development mode but it should not be enabled in production for security reasons.</Description>
+				<Values>
+					<Value>true</Value>
+					<Value>false</Value>
+				</Values>
+			</Option>
+			<Option id="packResources" name="Pack resources in a single file">
+				<Description>Resource packing is an advanced and experimental feature. It gathers all the CSS and the Javascript of a given page into two single files to speed up page rendering.</Description>
+				<Values>
+					<Value>false</Value>
+					<Value>true</Value>
+				</Values>
+				<Functions>
+					<Display>PARAMETER_doHide('false', ['optimizeResources'], [])</Display>
+				</Functions>
+			</Option>
+			<Option id="optimizeResources" name="Optimize JS code">
+				<Description>Experimental: Tries to optimize javascript code in a single file.</Description>
+				<Values>
+					<Value>false</Value>
+					<Value>true</Value>
+				</Values>
+			</Option>
+            <Option id="warmUpQuery" name="Warm up query">
+                <Description>Specifies a basic query that will be sent when the application starts, to ensure that all components are ready to respond quickly. Do not work on secured page.</Description>
+            </Option>
+			<Option id="isAliveQuery" name="isAlive query" arity="ZERO_OR_MANY">
+                <Description>
+<![CDATA[
+Enter a list of queries that are executed when the "/isAlive" URI is accessed.<br />
+This is used for high-availability deployments.<br />
+The queries are relative to the context path (ex: '/mashup-ui').<br />
+Exemple of valid queries:<br />
+<ul>
+    <li>/page/index</li>
+    <li>/page/search?q=myQuery</li>
+</ul>
+]]>
+                </Description>
+            </Option>
+		</OptionsGroup>
+
+		<!-- @see IncludeResources (ResourcePacker) -->
+		<OptionsGroup name="Styles">
+			<Option id="cssFile" name="Style files" arity="ZERO_OR_MANY">
+				<Description>
+<![CDATA[
+Enter the path(s) of the CSS files that you want to use on your application.<br />
+This can be:<br />
+<ul>
+	<li>relative to the webapps directory, for example /resources/css/mycssfile.css,</li>
+	<li>or absolute using a URL, for example, http://www.mysite/style.css.</li>
+</ul>
+]]>
+				</Description>
+			</Option>
+			<Option id="cssStyle" name="Inline CSS" arity="ZERO_OR_ONE">
+				<Description>Enter the inlined CSS code that you want to use on your application (to use CSS directly within your HTML code).</Description>
+				<Functions>
+					<Display>SetType('code', 'css')</Display>
+				</Functions>
+			</Option>
+		</OptionsGroup>
+
+		<!-- @see IncludeResources (ResourcePacker) -->
+		<OptionsGroup name="JavaScript">
+			<Option id="jsFile" name="JavaScript files" arity="ZERO_OR_MANY">
+				<Description>
+<![CDATA[
+Enter the path(s) of the JavaScript files that you want to use on your application.<br />
+This can be:<br />
+<ul>
+	<li>relative to the webapps directory, for example /resources/js/myjsfile.js,</li>
+	<li>or absolute using a URL, for example, http://www.mysite/file.js.</li>
+</ul>
+]]>
+				</Description>
+			</Option>
+			<Option id="jsCode" name="Inline JavaScript" arity="ZERO_OR_ONE">
+				<Description>Enter the inlined JavaScript code that you want to use on your application (to use JavaScript directly within your HTML code).</Description>
+				<Functions>
+					<Display>SetType('code', 'js')</Display>
+				</Functions>
+			</Option>
+		</OptionsGroup>
+
+		<!-- Synchronized with confgen, not used by the MashupBuilder -->
+		<DefaultValues>
+			<DefaultValue name="applicationIcon">/resources/logo/images/cvlogo_mobile.png</DefaultValue>
+			<DefaultValue name="reporterName">mashup-ui-reporting</DefaultValue>
+			<DefaultValue name="cssFile">/resources/mobile/jquery.mobile.structure.css</DefaultValue>
+			<DefaultValue name="cssFile">/resources/mobile/jquery.mobile.theme.css</DefaultValue>
+			<DefaultValue name="cssFile">/resources/mobile/mashup.mobile.less</DefaultValue>
+			<DefaultValue name="jsFile">/resources/javascript/jquery-1.12.3.min.js</DefaultValue>
+			<DefaultValue name="jsFile">/resources/javascript/jquery-migrate-1.4.0.min.js</DefaultValue>
+			<DefaultValue name="jsFile">/resources/mobile/jquery.mobile.js</DefaultValue>
+			<DefaultValue name="jsFile">/resources/javascript/jquery.spinner.js</DefaultValue>
+			<DefaultValue name="jsFile">/resources/javascript/buildUrl.js</DefaultValue>
+			<DefaultValue name="jsFile">/resources/javascript/oop.js</DefaultValue>
+			<DefaultValue name="jsFile">/resources/javascript/mashupAjaxClient.js</DefaultValue>
+			<DefaultValue name="jsFile">/resources/javascript/mashupI18N.js</DefaultValue>
+			<DefaultValue name="sitemapManual"><![CDATA[
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset>
+	<url>
+		<loc>http://sitename.com/contact</loc>
+		<changefreq>weekly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>http://sitename.com/products</loc>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+</urlset>
+	]]></DefaultValue>
+			<DefaultValue name="sitemapQueryParam">q</DefaultValue>
+			<DefaultValue name="sitemapDefaultPage">search</DefaultValue>
+			<DefaultValue name="robotsRules"><![CDATA[
+User-agent: *
+Disallow: /resources/
+]]></DefaultValue>
+		</DefaultValues>
+	</ApplicationDefinition>
+
+</MashupDefinition>

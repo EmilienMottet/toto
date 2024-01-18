@@ -1,0 +1,19 @@
+[2019/10/10-00:00:00.010] [info] [1821215584@jtp-default-1] [exa.log.rotation]	Rotating additional logs
+[2019/10/10-04:00:04.954] [info] [Waiting next query] [exa.search.api]	Slow query ! 2990003
+[2019/10/10-04:00:10.769] [info] [140107775006464] [exa.tick.server]	Starting processing thread
+[2019/10/10-04:00:11.080] [info] [Preprocessing for query collapsing=&group=&hf=-1&limits=max_fetched_hits%3A0%2Cmax_fetched_hits_per_slice%3A0%2Cmax_kept_hits%3A0%2Chits_sampling%3A100&logic=sxisl&of=flea&q=availability%3Aaclfts&relevance=false&rt=disabled& ...[74 chars remaining]] [exa.search.runnerpool]	Created a new runner for logic sxisl ( 0 idle runner and 0 working runner) in 2396ms
+[2019/10/10-04:00:11.676] [info] [140107775006464] [exa.tick.dest]	G64: S128: creating remote connection to 127.0.0.1:16017-part-0
+[2019/10/10-04:00:12.294] [warn] [140107775006464] [search.snippet.builder]	G64: S128: No language facet id set, will process with unknown language
+[2019/10/10-04:00:12.847] [info] [ReportingConsumer-183] [reporting.file-publisher]	Reporting file rotation to: /busdata/dpmu/gbl0/data/cv/bin/../run/searchserver-ss0/search-reporting/search.csv.20191008.00000
+[2019/10/10-04:00:13.382] [info] [818481122@jtp-resourceshare-5] [datashare]	share: Started datashare session on autosuggest_OnPremise_securedSuggest_ds6w_58_label
+[2019/10/10-04:00:13.422] [info] [485117922@jtp-resourceshare-8] [exa.io.datashare]	share: Switching DataShare to version 1
+[2019/10/10-04:00:13.426] [info] [485117922@jtp-resourceshare-8] [datashare]	share: Committed datashare session
+[2019/10/10-04:21:56.097] [info] [794482437@jtp-resourceshare-9] [datashare]	share: Started datashare session on dictionary-sxidict
+[2019/10/10-04:21:56.139] [info] [1511761308@jtp-resourceshare-14] [exa.io.datashare]	share: Switching DataShare to version 1
+[2019/10/10-04:21:56.217] [info] [1511761308@jtp-resourceshare-14] [datashare]	share: Committed datashare session
+[2019/10/10-15:09:21.498] [info] [1285706437@jtp-resourceshare-19] [datashare]	share: Started datashare session on dictionary-sxidict
+[2019/10/10-15:09:21.533] [info] [717198013@jtp-resourceshare-24] [exa.io.datashare]	share: Switching DataShare to version 2
+[2019/10/10-15:09:21.557] [info] [717198013@jtp-resourceshare-24] [exa.io.datashare]	share: Garbage collecting datashare version 1
+[2019/10/10-15:09:21.626] [info] [717198013@jtp-resourceshare-24] [datashare]	share: Committed datashare session
+[2019/10/11-00:00:00.009] [info] [1821215584@jtp-default-1] [exa.log.rotation]	Rotating standard log
+Log4NG: rotating logs now

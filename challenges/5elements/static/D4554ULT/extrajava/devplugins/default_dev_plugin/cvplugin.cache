@@ -1,0 +1,8 @@
+#Plugin properties
+#Mon Nov 04 10:26:59 CET 2019
+plugin.reverse-classloading=false
+debug.jar.count=0
+debug.classes.count=0
+lastmodified=1572859619047
+debug.destination.path=/busdata/dpmu/gbl0/data/cv/bin/../extrajava/devplugins/default_dev_plugin
+timestamp=-1

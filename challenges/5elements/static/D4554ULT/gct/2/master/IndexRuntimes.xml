@@ -1,0 +1,12 @@
+<index:IndexRuntimeConfigList version="1570546421000" xmlns:s3="exa:com.exalead.search.v30" xmlns:bee="exa:exa.bee" xmlns:ana="exa:com.exalead.indexing.analysis.v10" xmlns:index="exa:com.exalead.mercury.mami.indexing.v10" xmlns:ndoc="exa:com.exalead.ndoc.v10" xmlns:config="exa:exa.bee.config">
+    <index:IndexRuntimeConfig name="system_io_caching" newGenerationBandwidthLimitKB="0" compactBandwidthLimitKB="0" ramBasedAttrGroupLoadPolicy="copyAndPatch">
+        <index:FieldRuntimeConfig dictType="mmap" type="mmap" preload="false" mlock="false"/>
+        <index:AttributeGroupAccess groupId="1" runType="mmap" preload="false" mlock="true"/>
+        <index:AttributeGroupAccess groupId="2" runType="mmap" preload="false" mlock="false"/>
+        <index:QueryAutocacheConfig totalCacheSizeMB="20" queryCacheSizeMB="5" maxCachedQueries="20"/>
+        <index:ReplicationConfig>
+            <index:FieldReplicationConfig type="directio" dictType="directio"/>
+            <index:AttributeReplicationConfig type="directio"/>
+        </index:ReplicationConfig>
+    </index:IndexRuntimeConfig>
+</index:IndexRuntimeConfigList>

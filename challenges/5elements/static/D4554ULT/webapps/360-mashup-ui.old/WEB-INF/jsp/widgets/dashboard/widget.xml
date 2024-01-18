@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<Widget name="User Configurable Dashboard" group="Visualizations/Charts" premium="true">
+
+	<Description>An end-user configurable dashboard that lets people create and organize their own charts and reports.</Description>
+
+	<Preview>
+	<![CDATA[
+		<img src="/resources/widgets/dashboard/images/dashboard.png" alt="Dashboard" />
+	]]>
+	</Preview>
+
+	<Includes>
+		<Include type="css" path="css/style.less" />
+
+		<Include type="js" path="/resources/javascript/storage/storage-client-0.2.js" />
+		<Include type="js" path="/resources/jquery-ui-1.11.4.custom/jquery-ui.min.js" />
+		<Include type="js" path="/resources/javascript/jquery.cookie.js" />
+		<Include type="js" path="/resources/javascript/jquery.json-2.2.js" />
+		<Include type="js" path="js/dashboard.js" />
+
+		<Include type="js" path="/resources/javascript/jquery.spinner.js" />
+	</Includes>
+	
+	<Dependencies>
+		<Widget name="pieChart" />
+		<Widget name="lineChart" />
+		<Widget name="stackedColumnChart" />
+		<Widget name="timeChart" />
+		<Widget name="tableChart" />
+	</Dependencies>
+
+	<SupportWidgetsId arity="ZERO" />
+	<SupportFeedsId arity="MANY" />
+	<SupportI18N supported="true" />
+
+	<DefaultValues>
+		<DefaultValue name="facetType">normal</DefaultValue>
+		<DefaultValue name="strategy">compare</DefaultValue>
+		<DefaultValue name="sortMode">default</DefaultValue>
+		<DefaultValue name="basedOn">count######${facet.description} (count)</DefaultValue>
+		<DefaultValue name="showOthers">true</DefaultValue>
+		<DefaultValue name="defaultYValue">0</DefaultValue>
+		<DefaultValue name="chartHeight">400</DefaultValue>
+		<DefaultValue name="nbColumns">3</DefaultValue>
+	</DefaultValues>
+
+	<OptionsGroup name="General">
+		<Option id="title" name="Widget title" arity="ONE" isEvaluated="true">
+			<Description>(required) Specifies the widget title.</Description>		
+		</Option>
+		<OptionComposite id="facets" name="Facets" arity="MANY" glue="##">
+			<Option id="facetsList" name="Name" arity="ONE">
+				<Functions>
+					<ContextMenu>Facets()</ContextMenu>
+				</Functions>
+			</Option>
+			<Option id="facetType" name="Type" arity="ONE">
+				<Description>Specifies the facet type.</Description>
+				<Values>
+				<Value>normal</Value>
+				<Value>multi_dimension</Value>
+				<Value>hierarchical_2d</Value>
+				<Value>legacy_2d</Value>
+				</Values>
+			</Option>
+		</OptionComposite>
+		<OptionComposite id="basedOn" name="Y" arity="ZERO_OR_MANY" glue="##">
+			<Option id="aggregations" name="Aggregation">
+				<Description>Specifies the type of aggregations that will be used by the chart.</Description>
+				<Functions>
+					<ContextMenu>Aggregations('facets_facetsList')</ContextMenu>
+					<ContextMenu>COMMON_emptyOnChange()</ContextMenu>
+					<Check>isEmpty</Check>
+				</Functions>
+			</Option>
+			<Option id="representation" name="Series type">
+				<Description>The default series type for the chart.</Description>
+				<Values>
+					<Value></Value>
+					<Value>area</Value>
+					<Value>areaspline</Value>
+					<Value>bar</Value>
+					<Value>column</Value>
+					<Value>line</Value>
+					<Value>spline</Value>
+				</Values>
+			</Option>
+			<Option id="axis" name="Axis">
+				<Description>Choose the Y axis. The Y axis can be configured in the javascript tab</Description>
+				<Functions>
+					<Check>isInteger</Check>
+				</Functions>
+				<Values>
+					<Value></Value>
+					<Value>0</Value>
+					<Value>1</Value>
+					<Value>2</Value>
+					<Value>3</Value>
+				</Values>
+			</Option>
+			<Option id="legend" name="Legend">
+				<Description>Legend for the series</Description>
+				<Functions>
+					<ContextMenu>WIDGET_EvalFacet()</ContextMenu>
+					<ContextMenu>WIDGET_EvalCategory()</ContextMenu>
+				</Functions>
+			</Option>
+		</OptionComposite>
+		<Option id="strategy" name="Merge or compare feeds" arity="ONE">
+			<Description>The chart can gather several feeds using the same facets. You can either choose to 'merge' or 'compare' feed values.</Description>		
+			<Values>
+				<Value>compare</Value>
+				<Value>merge</Value>
+			</Values>
+		</Option>
+	</OptionsGroup>
+
+	<OptionsGroup name="Advanced">
+		<Option id="dashboardId" name="unique dashboard ID" arity="ZERO_OR_ONE" isEvaluated="true">
+			<Description>Specifies the unique dashboard ID to identify the dashboard on the page. By default the WUID is used.</Description>
+		</Option>
+		<Option id="storage" name="Storage" arity="ONE">
+			<Description>Specifies the type of storage. Only connected users can use the dashboard widget in 'storage' mode.</Description>
+			<Values>
+				<Value>cookie</Value>
+				<Value>storage</Value>
+			</Values>
+		</Option>
+		<Option id="sortMode" name="Sort categories by" arity="ONE">
+			<Description>
+				Sorts facet categories using the selected method. Selecting anything but 'default' impacts performance.
+			</Description>
+			<Values>
+				<Value>default</Value>
+				<Value>description-asc</Value>
+				<Value>description-desc</Value>
+				<Value>description-num-asc</Value>
+				<Value>description-num-desc</Value>
+				<Value>description-range-asc</Value>
+				<Value>description-range-desc</Value>
+				<Value>value-asc</Value>
+				<Value>value-desc</Value>
+			</Values>
+		</Option>
+		<Option id="nbSubFacets" name="Max number of categories">
+			<Description>Specifies the maximum number of facet categories to display. You must enter an integer.</Description>
+			<Functions>
+				<Check>isInteger</Check>
+			</Functions>
+		</Option>
+		<Option id="showOthers" name="Show 'Others' group">
+			<Description>Display or not the 'Others' category group.</Description>
+			<Values>
+				<Value>false</Value>
+				<Value>true</Value>
+			</Values>
+		</Option>
+		<Option id="defaultYValue" name="Default Y value">
+			<Description>Specifies the default Y value. You must enter an integer or leave it empty.</Description>
+			<Functions>
+				<Check>isInteger</Check>
+			</Functions>
+		</Option>
+		<Option id="noResultsJspPathHit" name="JSP path to use if no results" arity="ONE">
+			<Description>If there are no results, the widget is either hidden using a trigger, or a message is displayed using the content of a JSP file.</Description>
+			<Functions>
+				<Check>isJspPath</Check>
+			</Functions>
+			<Values>
+				<Value>/WEB-INF/jsp/commons/noFacets.jsp</Value>
+			</Values>
+		</Option>
+		<Option id="facetPageName" name="Destination page on click" isUrlEncoded="true" isEvaluated="true">
+			<Description>Indicates the URL that must be accessed for a refinement option. If blank, you stay on the same page.</Description>
+			<Functions>
+				<ContextMenu>Pages()</ContextMenu>
+			</Functions>
+		</Option>
+		<Option id="forceRefineOnFeeds" name="Force refinement for feeds" arity="ZERO_OR_MANY">
+			<Description>Forces refinements on the specified feeds.</Description>
+			<Functions>
+				<ContextMenu>Feeds()</ContextMenu>
+				<ContextMenu>COMMON_emptyOnChange()</ContextMenu>
+			</Functions>
+		</Option>
+	</OptionsGroup>
+
+	<OptionsGroup name="JavaScript">
+		<Option id="opts" name="JavaScript options" arity="ONE" isEvaluated="true">
+			<Values>
+				<Value><![CDATA[
+{
+	/*colors: ['#4572A7', '#AA4643', '#89A54E', '#80699B', '#3D96AE', '#DB843D', '#92A8CD', '#A47D7C', '#B5CA92'],*/
+	/*colors: ['#058DC7', '#50B432', '#ED561B', '#DDDF00', '#24CBE5'],*/
+	chart: {
+		zoomType: 'xy'
+	},
+	title: {
+		text: ''
+	},
+	credits: {
+		enabled: false
+	},
+	legend: {
+		margin: 20,
+		borderWidth: 0,
+		layout: 'horizontal',
+		itemWidth: 150
+	},
+	xAxis: {
+		title: {
+			text: null
+		},
+		labels: {
+			rotation: -45,
+			align: 'right'
+		},
+		tickInterval: ((data != null && data.xAxis != null && data.xAxis.categories != null) ? Math.floor(data.xAxis.categories.length / 15, 0) + 1 : null),
+		categories: [],
+		min:0
+	},
+	yAxis: [{
+		title: {
+			text: null
+		},
+		min:0
+	}],
+	tooltip: {
+		formatter: function() {
+			var percentage = (this.percentage ? ' (' + (Math.round(this.percentage * 100) / 100).toFixed(2) + '%)' : '');
+			var name = (this.point && this.point.name ? this.point.name : this.series.name);
+			var x = (this.x ? this.x + ':' : '');
+			return '<b>'+ name +'</b><br/>' + x + this.y + percentage;
+		},
+		style: {
+			fontSize: '10px'
+		}
+	},
+	plotOptions: {
+		series: {
+			stickyTracking: false
+		},
+		spline: {
+			marker: {
+				enabled: false
+			},
+			events: {
+				click: function(e) {
+					if (e.point.url) {
+						exa.redirect(buildUrl(e.target.chart.options.facetPageName, e.target.chart.options.facetPageNameQueryString, e.point.url));
+					}
+				}
+			}
+		},
+		column: {
+			/*stacking: 'normal',*/
+			events: {
+				click: function(e) {
+					if (e.point.url) {
+						exa.redirect(buildUrl(e.target.chart.options.facetPageName, e.target.chart.options.facetPageNameQueryString, e.point.url));
+					}
+				}
+			}
+		},
+		pie: {
+			dataLabels: {
+				enabled: false
+				/*
+				enabled: true,
+				formatter: function() {
+					if (this.percentage > 8) { return this.point.name; }
+					else { return '' };
+				},
+				color: 'white'
+				*/
+			},
+			showInLegend: true,
+			point: {
+				events: {
+					legendItemClick: function(e) {
+						/*
+						if (e.target.url != null) {
+							var chart = e.target.series.chart;
+							exa.redirect(buildUrl(chart.options.facetPageName, chart.options.facetPageNameQueryString, e.target.url));
+							return false;
+						}
+						*/
+
+						if (this.visible) {
+							this['y_old'] = this.y;
+							this.update(0);
+						} else {
+							this.update( this.y_old );
+						}
+					}
+				}
+			},
+			events: {
+				click: function(e) {
+					if (e.point.url) {
+						exa.redirect(buildUrl(e.target.chart.options.facetPageName, e.target.chart.options.facetPageNameQueryString, e.point.url));
+					}
+				}
+			}
+		}
+	}
+}
+]]></Value>
+			</Values>
+			<Functions>
+				<Display>SetType('code', 'js')</Display>
+			</Functions>
+		</Option>
+	</OptionsGroup>
+	
+	<OptionsGroup name="Data processor">
+		<Description>The Data Processor allows you to manipulate the json before its execution. Be careful, some properties of the data object may be overridden by the ones set in the Javascript tab.</Description>
+		<Option id="dataProcessor" name="Javascript function">
+			<Description>Lets you define the Javascript function that will be executed on data  before the Highcharts processing. </Description>
+			<Functions>
+				<Display>SetType('code', 'js')</Display>
+			</Functions>
+		</Option>
+	</OptionsGroup>
+
+	<OptionsGroup name="Style">
+		<Option id="chartWidth" name="Chart width">
+			<Description>Specifies the width of the charts contained in the dashboard. If your dashboard is in a tab, you can set the width of the chart (in pixels), otherwise let it be empty. Charts will optimize the size to fill the column.</Description>
+			<Functions>
+				<Check>isInteger</Check>
+			</Functions>
+		</Option>
+		<Option id="chartHeight" name="Chart height" arity="ONE">
+			<Description>Specifies the height of the charts contained in the dashboard.</Description>
+			<Functions>
+				<Check>isInteger</Check>
+			</Functions>
+		</Option>
+		<Option id="nbColumns" name="Number of columns" arity="ONE">
+			<Description>Specifies the number of columns to display in the dashboard.</Description>
+			<Functions>
+				<Check>isInteger</Check>
+			</Functions>
+		</Option>
+	</OptionsGroup>
+</Widget>

@@ -1,0 +1,5 @@
+[2019/10/13-00:00:00.064] [info] [exa.bee.BeeJob 6] [legacy]	Rotating additional logs
+[2019/10/13-00:00:00.140] [info] [exa.bee.BeeJob 8] [GLcomponent.index.replication]	0: slice=0 instance=sxii0 is ready for reload
+[2019/10/13-04:00:00.195] [info] [exa.bee.BeeJob 8] [GLcomponent.suggest]	0: build starting
+[2019/10/13-04:00:01.023] [info] [exa.bee.BeeJob 8] [GLcomponent.suggest]	0: Suggest OnPremise_securedSuggest_ds6w_58_label successfully built
+[2019/10/14-00:00:00.064] [info] [exa.bee.BeeJob 6] [legacy]	Rotating standard log

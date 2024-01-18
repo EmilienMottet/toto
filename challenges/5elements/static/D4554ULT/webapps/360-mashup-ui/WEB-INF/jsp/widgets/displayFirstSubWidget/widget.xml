@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<Widget name="Display First Widget" group="Miscellaneous" premium="true">
+
+	<Description>A widget wrapper that will only display the first widget that renders something. Do not forget to add the appropriate triggers on your sub-widgets to cancel their rendering.</Description>
+
+	<SupportWidgetsId arity="ZERO_OR_MANY" />
+	<SupportFeedsId arity="ZERO" />
+
+</Widget>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+	<!-- COMMON TEMPLATES -->
+	<definition name="tableLayout" template="/WEB-INF/jsp/commons/components/tableLayout.jsp" />
+	<definition name="composite" template="/WEB-INF/jsp/commons/components/composite.jsp" />
+
+	<definition name="TestProductionTrimFilter" template="/WEB-INF/jsp/commons/services/trimFilter.jsp" />
+	<definition name="packagedAjax" template="/WEB-INF/jsp/commons/services/packagedAjax.jsp" />
+	<definition name="packagedAjaxUWA" template="/WEB-INF/jsp/commons/services/packagedAjaxUWA.jsp" />
+
+	<definition name="debug" template="/WEB-INF/jsp/commons/includes/debug.jsp" />
+	<definition name="resources" template="/WEB-INF/jsp/commons/includes/resources.jsp" />
+
+	<!--  WEB: Pages -->
+	<definition name="mashup" template="/WEB-INF/jsp/web/mashup.jsp" />
+
+	<!-- WEB: Widget errors -->
+	<definition name="noFacets" template="/WEB-INF/jsp/commons/noFacets.jsp" />
+	<definition name="noFeeds" template="/WEB-INF/jsp/commons/noFeeds.jsp" />
+	<definition name="noResults" template="/WEB-INF/jsp/commons/noResults.jsp" />
+
+	<!-- WEB: HTTP errors / Exceptions -->
+	<definition name="errorsLayout" template="/WEB-INF/jsp/web/errors/layout.jsp" />
+	<definition name="404" extends="errorsLayout">
+		<put-attribute name="body" value="/WEB-INF/jsp/web/errors/404.jsp" />
+	</definition>
+	<definition name="AccessException" extends="errorsLayout">
+		<put-attribute name="body" value="/WEB-INF/jsp/web/errors/AccessException.jsp" />
+	</definition>
+	<definition name="ConnectionRefused" extends="errorsLayout">
+		<put-attribute name="body" value="/WEB-INF/jsp/web/errors/ConnectionRefused.jsp" />
+	</definition>
+	<definition name="Exception" extends="errorsLayout">
+		<put-attribute name="body" value="/WEB-INF/jsp/web/errors/Exception.jsp" />
+	</definition>
+	<definition name="PreviewNotAvailable" extends="errorsLayout">
+		<put-attribute name="body" value="/WEB-INF/jsp/web/errors/PreviewNotAvailable.jsp" />
+	</definition>
+	<definition name="RawNotAvailable" extends="errorsLayout">
+		<put-attribute name="body" value="/WEB-INF/jsp/web/errors/RawNotAvailable.jsp" />
+	</definition>
+
+	<!-- MOBILE: Pages -->
+	<definition name="mashup.mobile" template="/WEB-INF/jsp/mobile/mashup.jsp" />
+
+	<!-- MOBILE: Widget errors -->
+	<definition name="noFacets.mobile" template="/WEB-INF/jsp/mobile/commons/noFacets.jsp" />
+	<definition name="noFeeds.mobile" template="/WEB-INF/jsp/commons/noFeeds.jsp" />
+	<definition name="noResults.mobile" template="/WEB-INF/jsp/mobile/commons/noResults.jsp" />
+
+	<!-- MOBILE: HTTP errors / Exceptions -->
+	<definition name="errorsLayout.mobile" template="/WEB-INF/jsp/mobile/errors/layout.jsp" />
+	<definition name="404.mobile" extends="errorsLayout.mobile">
+		<put-attribute name="body" value="/WEB-INF/jsp/mobile/errors/404.jsp" />
+	</definition>
+	<definition name="AccessException.mobile" extends="errorsLayout.mobile">
+		<put-attribute name="body" value="/WEB-INF/jsp/mobile/errors/AccessException.jsp" />
+	</definition>
+	<definition name="ConnectionRefused.mobile" extends="errorsLayout.mobile">
+		<put-attribute name="body" value="/WEB-INF/jsp/mobile/errors/ConnectionRefused.jsp" />
+	</definition>
+	<definition name="Exception.mobile" extends="errorsLayout.mobile">
+		<put-attribute name="body" value="/WEB-INF/jsp/mobile/errors/Exception.jsp" />
+	</definition>
+	<definition name="PreviewNotAvailable.mobile" extends="errorsLayout.mobile">
+		<put-attribute name="body" value="/WEB-INF/jsp/mobile/errors/PreviewNotAvailable.jsp" />
+	</definition>
+	<definition name="RawNotAvailable.mobile" extends="errorsLayout.mobile">
+		<put-attribute name="body" value="/WEB-INF/jsp/mobile/errors/RawNotAvailable.jsp" />
+	</definition>
+
+</tiles-definitions>

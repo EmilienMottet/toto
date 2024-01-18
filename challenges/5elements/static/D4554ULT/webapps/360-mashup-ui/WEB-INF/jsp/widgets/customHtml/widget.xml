@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<Widget name="HTML" group="Layout">
+
+	<Description>Link to a JSP file or just enter HTML code to include in your page.</Description>
+
+	<Preview>
+		<![CDATA[
+			<span style="font-size:30px; color:#DDD;">&lt;HTML/&gt;</span>
+		]]>
+	</Preview>
+
+	<Platforms>
+		<Platform type="web" supported="true" />
+		<Platform type="mobile" supported="true" />
+	</Platforms>
+
+	<SupportWidgetsId arity="ZERO" />
+	<SupportFeedsId arity="ZERO_OR_MANY" />
+
+	<OptionsGroup name="HTML">
+		<Option id="htmlRules" name="HTML code" isEvaluated="true">
+			<Description>HTML code to append to the document.</Description>
+			<Functions>
+				<Display>SetType('code', { mode: 'html', fullscreen: true })</Display>
+			</Functions>
+		</Option>
+	</OptionsGroup>
+
+	<OptionsGroup name="Advanced">
+		<Option id="htmlFile" name="JSP file path" isEvaluated="true">
+			<Functions>
+				<Check>isJspPath</Check>
+			</Functions>
+			<Description>You can either include HTML directly in the &lt;i&gt;HTML Code&lt;/i&gt; text area, or include a JSP file that must be in the /WEB-INF/jsp directory of your web application. The path is defined including the root of the web application, for example, /WEB-INF/jsp/custom.jsp</Description>
+		</Option>
+		<Option id="disableWidgetTag" name="Disable Widget Tag">
+			<Description>Disabling the WidgetTag can be useful if you have some inconsistent HTML code which does not close all its tags</Description>
+			<Values>
+				<Value>false</Value>
+				<Value>true</Value>
+			</Values>
+		</Option>
+	</OptionsGroup>
+
+	<Interactions>
+		<Interaction type="in" id="exa.io.HitDecorationInterface">
+			<Description>Decorate your html.</Description>
+			<Option id="hitDecorationCssSelector" name="Css path" arity="ONE">
+				<Description>
+				<![CDATA[
+					CSS path where the decoration will be appended in the html.
+				]]>
+				</Description>
+				<Functions>
+					<ContextMenu>COMMON_add('Default template', [{display:'Header left',value:'li.${entry:cleanId(entry)} .rounded-top'}, ])</ContextMenu>
+					<ContextMenu>Eval()</ContextMenu>
+				</Functions>
+			</Option>
+			<Option id="hitDecorationPosition" name="Decoration position" arity="ONE">
+				<Description>
+				<![CDATA[
+					The decoration will be appended or prepended.
+				]]>
+				</Description>
+				<Values>
+					<Value></Value>
+					<Value>append</Value>
+					<Value>prepend</Value>
+				</Values>
+			</Option>
+		</Interaction>
+	</Interactions>
+	
+	<DefaultValues>
+		<DefaultValue name="disableWidgetTag">false</DefaultValue>
+	</DefaultValues>
+</Widget>

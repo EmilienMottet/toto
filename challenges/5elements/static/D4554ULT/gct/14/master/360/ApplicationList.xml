@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ApplicationList xmlns:deploy="exa:exa.bee.deploy.v10" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="">
+    <Application id="template_web">
+        <contextPath>/web-not-deployed</contextPath>
+        <description>This is the default template used for every new web application.</description>
+        <type>web</type>
+        <warPath>data:///webapps/360-mashup-ui</warPath>
+    </Application>
+    <Application id="undefined_appid">
+        <contextPath>/undefined-app-id-not-deployed</contextPath>
+        <description></description>
+        <type>web</type>
+        <warPath>data:///webapps/360-mashup-ui</warPath>
+    </Application>
+    <Application id="default">
+        <contextPath>/mashup-ui</contextPath>
+        <description>Mashup User Interface</description>
+        <type>web</type>
+        <warPath>data:///webapps/360-mashup-ui</warPath>
+    </Application>
+</ApplicationList>

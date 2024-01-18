@@ -1,0 +1,6 @@
+%{JAVA_HOME}/bin/java
+-Xmx1024m
+-Dcom.sun.xml.bind.v2.runtime.JAXBContextImpl.fastBoot=true
+-classpath
+%{NG_RECURSIVE_CLASSPATH}
+com.exalead.mercury.mami.gct.BuildGCT

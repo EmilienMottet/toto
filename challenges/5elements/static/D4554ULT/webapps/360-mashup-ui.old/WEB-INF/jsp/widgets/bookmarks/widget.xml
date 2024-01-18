@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<Widget name="Bookmarks" group="Collaborative" premium="true">
+
+	<Description>This widget allows users to bookmark documents.</Description>
+
+	<Preview>
+		<![CDATA[
+			<img src="/resources/widgets/bookmarks/img/preview.png" alt="Bookmarks Preview" />
+		]]>
+	</Preview>
+	
+	<SupportI18N supported="true">
+		<JsKeys>
+			<JsKey>no-bookmark</JsKey>
+		</JsKeys>
+	</SupportI18N>
+
+	<Includes>
+		<Include type="js" path="/resources/javascript/exa/io/io.js" />
+		<Include type="js" path="/resources/javascript/exa/io/HitDecorationInterface.js" />
+		<Include type="js" path="/resources/javascript/storage/storage-client-0.2.js" />
+		<Include type="js" path="/resources/javascript/jquery.json-2.2.js" />
+		<Include type="js" path="js/bookmarks.js" />
+		<Include type="css" path="css/style.less" />
+	</Includes>
+
+	<SupportFeedsId arity="MANY" />
+
+	<StorageKeys>
+		<StorageKey optionId="dbKey" resource="global" />
+		<StorageKey optionId="dbKey" resource="user" />
+	</StorageKeys>
+	
+	<Interactions>
+		<Interaction type="out" id="exa.io.HitDecorationInterface"></Interaction>
+	</Interactions>
+
+	<OptionsGroup name="General">
+		<Description>Use "Interactions" to attach stars to other widgets (ie:Result List).</Description>
+		<Option id="title" name="Title" isEvaluated="true">
+			<Description>Widget title. If blank, no name is displayed.</Description>		
+		</Option>
+		<Option id="displayExpression" name="Data to display" arity="ZERO_OR_ONE" isEvaluated="true" isHighlighted="false">
+			<Description>
+				Specifies the meta that will be displayed in the bookmark list.
+			</Description>
+		</Option>
+		<OptionComposite id="dataExpression" name="Data to bookmark" arity="ZERO_OR_MANY" isEvaluated="true" isHighlighted="false">
+			<Description>
+				Specifies the data that will be stored in the bookmark list and that will be present in the url
+			</Description>
+			<Option id="label" name="Name">
+			</Option>
+			<Option id="value" name="Value">
+			</Option>
+		</OptionComposite>
+		<Option id="action" name="Action" arity="ZERO_OR_ONE">
+			<Description>Specifies the URL of the bookmark page</Description>
+			<Functions>
+				<ContextMenu>Pages()</ContextMenu>
+				<ContextMenu>COMMON_emptyOnChange()</ContextMenu>
+			</Functions>
+		</Option>
+		<Option id="countSelector" name="Count selector" arity="ONE">
+			<Description>
+				Specifies the jquery selector of the element where you want to attach the number of bookmarks.
+			</Description>
+		</Option>
+	</OptionsGroup>
+
+	<OptionsGroup name="Storage">
+		<Option id="dbKey" name="Storage Key Name" arity="ONE">
+			<Description>Specifies the storage key name.</Description>
+			<Functions>
+				<Check>isBagKey</Check>
+			</Functions>
+		</Option>
+		<Option id="type" name="Type" arity="ONE">
+			<Description>
+				Specifies the access type. 'user' requires the user to be logged in (and security enabled).
+			</Description>
+			<Values>
+				<Value>user</Value>
+				<Value>shared</Value>
+			</Values>
+		</Option>
+	</OptionsGroup>
+
+	<DefaultValues>
+		<DefaultValue name="dbKey">BookmarksWidget[]</DefaultValue>
+		<DefaultValue name="title">Bookmarks</DefaultValue>
+		<DefaultValue name="type">shared</DefaultValue>
+		<DefaultValue name="selector">h3.rounded-top</DefaultValue>
+		<DefaultValue name="displayExpression">${entry.title}</DefaultValue>
+		<DefaultValue name="dataExpression">title##${entry.title}</DefaultValue>
+		<DefaultValue name="countSelector">.bookmarks-count</DefaultValue>
+	</DefaultValues>
+</Widget>

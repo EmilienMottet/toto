@@ -1,0 +1,114 @@
+.mashup {
+	.starRating-wrapper {
+		margin: 10px 0;
+	
+		&:last-child {
+			margin-bottom: 0;
+		}
+	
+		// Where the score is stored in the DOM (for auto-testing etc)
+		div.rating { display: none; }
+	
+		// Content wrapper for the stars
+		.starRating {
+	
+			position: relative;
+			height: 24px; // Change this if you have switched out the star sprites
+	
+			// Holds the star sprites
+			div.stars {
+				position: absolute;
+				top: 0;
+				left: 0;
+				height: 24px;
+	
+				&.full {
+					.opacity(0.7);
+					background: url("../img/full.png") repeat-x;
+					z-index: 2;
+					&.highlight {
+						.opacity(1);
+					}
+				}
+	
+				&.empty {
+					background: url("../img/empty.png") repeat-x;
+					z-index: 1;
+				}
+			}
+	
+			// Contains the rants and totalVotes
+			.offsetLeft { position: absolute; }
+	
+			// Holds the total number of votes cast
+			.totalVotes {
+				float: left;
+				color: @ctext-weak;
+				line-height: 24px;
+				margin-left: 5px;
+			}
+	
+			// Contains the hover texts "Great!", "Bad" and so on
+			div.rant {
+				float: left;
+				line-height: 24px;
+				font-size: 14px;
+				font-weight: bold;
+				color: darken(@cmeta, 10%);
+				display: none;
+				margin-left: 5px;
+			}
+	
+			// Holds the click / hover handler links
+			div.sections {
+				position: absolute;
+				top: 0;
+				left: 0;
+				height: 24px; // Change this if you have switched out the star sprites
+				width: 96px; // Change this if you have switched out the star sprites
+				z-index: 10;
+	
+				// (numStars / increment) links are positioned next to each other
+				// over the stars. Each sections is bound to an onClick or onHover handler,
+				// they catch the user clicking / hovering the mouse over the stars
+				a {
+					height: 24px;
+					display: block;
+					float: left;
+					margin: 0;
+					padding: 0;
+				}
+			}
+	
+			// Shows 'unrated' text over stars if no votes have been cast
+			// Needs to be enabled in widget options
+			div.unrated {
+				.opacity(0.6);
+				z-index: 3;
+				color: black;
+				position: absolute;
+				font-weight: bold;
+				font-size: 12px;
+				line-height: 24px;
+				text-align: center;
+				top: 0;
+				left: 0;
+				height: 24px;
+				display: none;
+			}
+	
+			.loadingSpinner {
+				position: absolute;
+				background: url('../img/spinner.gif');
+				height: 24px;
+				width: 24px;
+			}
+		}
+	}
+	
+	// IE fixes
+	&.ie6 .starRating div.stars {
+		&.full { background: url("../img/full.gif") repeat-x; }
+		&.empty { background: url("../img/empty.gif") repeat-x; }
+	}
+}

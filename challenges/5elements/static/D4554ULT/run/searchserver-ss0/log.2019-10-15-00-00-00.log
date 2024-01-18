@@ -1,0 +1,15 @@
+[2019/10/14-00:00:00.014] [info] [1821215584@jtp-default-1] [exa.log.rotation]	Rotating additional logs
+[2019/10/14-04:00:00.208] [info] [Waiting next query] [exa.search.api]	Slow query ! 184056
+[2019/10/14-04:00:00.542] [info] [Preprocessing for query collapsing=&group=&hf=-1&limits=max_fetched_hits%3A0%2Cmax_fetched_hits_per_slice%3A0%2Cmax_kept_hits%3A0%2Chits_sampling%3A100&logic=sxisl&of=flea&q=availability%3Aaclfts&relevance=false&rt=disabled& ...[74 chars remaining]] [exa.search.runnerpool]	Created a new runner for logic sxisl ( 0 idle runner and 0 working runner) in 135ms
+[2019/10/14-04:00:00.890] [warn] [140108189267712] [search.snippet.builder]	G576: S640: No language facet id set, will process with unknown language
+[2019/10/14-04:00:00.903] [info] [ReportingConsumer-183] [reporting.file-publisher]	Reporting file rotation to: /busdata/dpmu/gbl0/data/cv/bin/../run/searchserver-ss0/search-reporting/search.csv.20191013.00000
+[2019/10/14-04:00:01.230] [info] [1217526162@jtp-resourceshare-36] [datashare]	share: Started datashare session on autosuggest_OnPremise_securedSuggest_ds6w_58_label
+[2019/10/14-04:00:01.338] [info] [1448584279@jtp-resourceshare-43] [exa.io.datashare]	share: Switching DataShare to version 5
+[2019/10/14-04:00:01.339] [info] [1448584279@jtp-resourceshare-43] [exa.io.datashare]	share: Garbage collecting datashare version 4
+[2019/10/14-04:00:01.340] [info] [1448584279@jtp-resourceshare-43] [datashare]	share: Committed datashare session
+[2019/10/14-17:18:37.672] [info] [1448584279@jtp-resourceshare-43] [datashare]	share: Started datashare session on dictionary-sxidict
+[2019/10/14-17:18:37.742] [info] [1190643212@jtp-resourceshare-50] [exa.io.datashare]	share: Switching DataShare to version 4
+[2019/10/14-17:18:37.765] [info] [1190643212@jtp-resourceshare-50] [exa.io.datashare]	share: Garbage collecting datashare version 3
+[2019/10/14-17:18:37.897] [info] [1190643212@jtp-resourceshare-50] [datashare]	share: Committed datashare session
+[2019/10/15-00:00:00.009] [info] [1821215584@jtp-default-1] [exa.log.rotation]	Rotating standard log
+Log4NG: rotating logs now

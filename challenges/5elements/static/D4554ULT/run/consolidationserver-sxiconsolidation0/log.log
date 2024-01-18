@@ -1,0 +1,30 @@
+[2019/11/06-00:00:00.104] [info] [752011518@jtp-default-1] [exa.log.rotation]	Rotating additional logs
+[2019/11/06-08:24:37.488] [info] [752011518@jtp-default-1] [bee.runtime]	Exiting on StopRuntime request
+[2019/11/06-08:24:37.491] [info] [shutdown-45787] [jaxb]	JAXB cache contains :sun.misc.Launcher$AppClassLoader@764c12b6__com.exalead.mercury.mami.resources.v10 (creation=1230ms, hits=1)
+[2019/11/06-08:24:37.491] [info] [shutdown-45787] [jaxb]	JAXB cache contains :sun.misc.Launcher$AppClassLoader@764c12b6__com.exalead.mercury.mami.consolidation.v10 (creation=210ms, hits=48058)
+[2019/11/06-08:24:37.491] [info] [shutdown-45787] [jaxb]	JAXB cache contains :SGLoader@null__exa.bee (creation=115ms, hits=1381)
+[2019/11/06-08:24:37.491] [info] [shutdown-45787] [jaxb]	JAXB cache contains :sun.misc.Launcher$AppClassLoader@764c12b6__com.exalead.mercury.mami.master.v10 (creation=2145ms, hits=1838)
+[2019/11/06-08:24:38.499] [info] [shutdown-45787] [bee.directory]	Stopping server 'default': HTTP server
+[2019/11/06-08:24:38.572] [info] [shutdown-45787] [org.eclipse.jetty.server.AbstractConnector]	Stopped 16018@1b58ff9e{HTTP/1.1,[http/1.1]}{0.0.0.0:16018}
+[2019/11/06-08:24:38.586] [info] [shutdown-45787] [org.eclipse.jetty.server.handler.ContextHandler]	Stopped o.e.j.s.ServletContextHandler@5ebd56e9{/,resource:/exa/bee/net/http2/htdocs,UNAVAILABLE}
+[2019/11/06-08:24:38.597] [info] [shutdown-45787] [org.eclipse.jetty.server.session]	node0 Stopped scavenging
+[2019/11/06-08:24:38.611] [info] [shutdown-45787] [bee.directory]	Stopping server 'default': service 'services.consolidationserver.sxiconsolidation0'
+[2019/11/06-08:24:38.612] [info] [shutdown-45787] [consolidationserver]	Stopping...
+[2019/11/06-08:24:38.622] [info] [shutdown-45787] [consolidationserver.cdih]	Stopping...
+[2019/11/06-08:24:38.623] [info] [shutdown-45787] [consolidationserver.cdih]	Stopped
+[2019/11/06-08:24:38.644] [info] [shutdown-45787] [consolidationserver]	Stopped
+[2019/11/06-08:24:38.644] [info] [shutdown-45787] [bee.directory]	Stopping server 'consolidation-sxiconsolidation0-monitoring': HTTP server
+[2019/11/06-08:24:38.648] [info] [shutdown-45787] [org.eclipse.jetty.server.AbstractConnector]	Stopped 16053@6399551e{HTTP/1.1,[http/1.1]}{0.0.0.0:16053}
+[2019/11/06-08:24:38.696] [info] [shutdown-45787] [org.eclipse.jetty.server.handler.ContextHandler]	Stopped o.e.j.w.WebAppContext@6c2c1385{/introspection,null,UNAVAILABLE,@16053}{/busdata/dpmu/gbl0/data/cv/webapps-tmp/consolidationserver-sxiconsolidation0/consolidation-sxiconsolidation0-monitoring_16053/introspection}
+[2019/11/06-08:24:38.716] [info] [shutdown-45787] [org.eclipse.jetty.server.handler.ContextHandler]	Stopped o.e.j.s.ServletContextHandler@67545b57{/,resource:/exa/bee/net/http2/htdocs,UNAVAILABLE}
+[2019/11/06-08:24:38.727] [info] [shutdown-45787] [org.eclipse.jetty.server.session]	node0 Stopped scavenging
+[2019/11/06-08:24:38.733] [info] [shutdown-45787] [bee.directory]	Stopping server 'resourceshare_slave': service 'resourceshare'
+[2019/11/06-08:24:38.733] [info] [shutdown-45787] [bee.directory]	Stopping server 'resourceshare': HTTP server
+[2019/11/06-08:24:38.734] [info] [shutdown-45787] [org.eclipse.jetty.server.AbstractConnector]	Stopped 16019@7a419da4{HTTP/1.1,[http/1.1]}{0.0.0.0:16019}
+[2019/11/06-08:24:38.734] [info] [shutdown-45787] [org.eclipse.jetty.server.handler.ContextHandler]	Stopped o.e.j.s.ServletContextHandler@140c9f39{/,null,UNAVAILABLE}
+[2019/11/06-08:24:38.737] [info] [shutdown-45787] [org.eclipse.jetty.server.session]	node0 Stopped scavenging
+[2019/11/06-08:24:38.739] [info] [shutdown-45787] [bee.directory]	Stopping server 'resourceshare': service 'resourceshareservice'
+[2019/11/06-08:24:38.739] [info] [shutdown-45787] [bee.directory]	Directory stopped
+[2019/11/06-08:24:38.739] [info] [shutdown-45787] [bee]	Runtime stopped
+[2019/11/06-08:24:38.739] [fatal] [shutdown-45787] [bee]	Exiting process
+Exiting process now (Queen.java)

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<Widget name="Simple Search Form" group="Search Forms">
+
+	<Description>Very basic Search Form with no particular style, just an search box and a submit button.</Description>
+
+	<Preview>
+		<![CDATA[
+			<img src="/resources/widgets/basicSearchForm/images/preview.png" alt="Basic Search Form" />
+		]]>
+	</Preview>
+
+	<SupportWidgetsId arity="ZERO" />
+	<SupportFeedsId arity="ZERO" />
+
+	<OptionsGroup name="General">
+		<Option id="inputName" name="Input parameter" arity="ONE">
+		<Description>Defines the parameter name associated with the input submitted in the search box.</Description>
+			<Functions>
+				<ContextMenu>PageParameters()</ContextMenu>
+				<ContextMenu>COMMON_emptyOnChange()</ContextMenu>
+			</Functions>
+		</Option>
+		<Option id="buttonContent" name="Button label" isEvaluated="true">
+			<Description>Defines the label displayed in the form's submit button. For example, 'Search'.</Description>
+		</Option>
+		<Option id="action" name="Action" arity="ZERO_OR_ONE">
+			<Description>Specifies the page on which the query results are displayed. If empty, query results are displayed on the current page.</Description>
+			<Functions>
+				<ContextMenu>Pages()</ContextMenu>
+				<ContextMenu>COMMON_emptyOnChange()</ContextMenu>
+			</Functions>
+		</Option>
+		<Option id="focus" name="Autofocus" arity="ONE">
+			<Description>Places the keyboard focus on the query input when the page is loaded.</Description>
+			<Values>
+				<Value>false</Value>
+				<Value>true</Value>
+			</Values>
+		</Option>
+	</OptionsGroup>
+
+	<DefaultValues>
+		<DefaultValue name="inputName">q</DefaultValue>
+		<DefaultValue name="buttonContent">Search</DefaultValue>
+		<DefaultValue name="focus">true</DefaultValue>
+	</DefaultValues>
+</Widget>

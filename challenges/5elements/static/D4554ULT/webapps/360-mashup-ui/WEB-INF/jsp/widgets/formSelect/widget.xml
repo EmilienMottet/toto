@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<Widget name="Select" group="Form Controls">
+
+	<Description>This widget allows you to add a combo box on a form.</Description>
+	
+	<Preview>
+		<![CDATA[
+			<img src="/resources/widgets/formSelect/img/preview.png" alt="Select Preview" />
+		]]>
+	</Preview>
+
+	<Includes>
+		<Include type="js" path="/resources/javascript/jquery.validate.js" />
+	</Includes>
+
+	<Dependencies>
+		<Widget name="formForm" />
+	</Dependencies>
+	
+	<Interactions>
+		<Interaction type="in" id="exa.io.FormInterface"></Interaction>
+	</Interactions>
+
+	<SupportFeedsId arity="ZERO_OR_MANY" />
+	<SupportI18N supported="true" />
+
+	<OptionsGroup name="General">
+		<Option id="name" name="Name" arity="ONE">
+			<Description>Defines the name of this control.</Description>
+		</Option>
+		<Option id="value" name="Value" arity="ZERO_OR_ONE" isEvaluated="true">
+			<Description>Defines the type of value used by this control.</Description>
+		</Option>
+		<OptionComposite id="items" name="Items" arity="ZERO_OR_MANY">
+			<Description>Specifies the items displayed in the control.</Description>
+			<Option id="label" name="Label"></Option>
+			<Option id="value" name="Value"></Option>
+		</OptionComposite>
+		<Option id="multipleSelect" name="Multiple select" arity="ONE">
+			<Description>This attribute allows multiple selections.</Description>
+			<Values>
+				<Value>false</Value>
+				<Value>true</Value>
+			</Values>
+			<Functions>
+				<Display>PARAMETER_doHide('false',['multipleValuesSeparator'], [], true, false)</Display>
+			</Functions>
+		</Option>
+		<Option id="multipleValuesSeparator" name="Multiple values separator" arity="ONE">
+			<Description>Sets the string separator for multiple values.</Description>
+		</Option>
+		<Option id="inputwidth" name="Width" arity="ONE">
+			<Description>Specifies the width of this control.</Description>
+			<Functions>
+				<Check>isInteger</Check>
+			</Functions>
+		</Option>
+		<Option id="widthFormat" name="width format">
+			<Description>Specifies the width format of the control (pixels or page percentage).</Description>		
+			<Values>
+				<Value>px</Value>
+				<Value>%</Value>
+			</Values>
+		</Option>
+	</OptionsGroup>
+
+	<OptionsGroup name="Validation">
+		<Option id="enableValidation" name="Enable Validation" arity="ONE">
+			<Description>Specifies whether to enable validation for this control.</Description>
+			<Values>
+				<Value>false</Value>
+				<Value>true</Value>
+			</Values>
+			<Functions>
+				<Display>PARAMETER_doHide('false',['validationMessage'], [], true, false)</Display>
+			</Functions>
+		</Option>
+		<Option id="validationMessage" name="Validation message" arity="ZERO_OR_ONE">
+			<Description>Specifies the message that will be displayed when validation fails for this control.</Description>
+		</Option>
+	</OptionsGroup>
+
+	<DefaultValues>
+		<DefaultValue name="multipleValuesSeparator">;</DefaultValue>
+		<DefaultValue name="multipleSelect">false</DefaultValue>
+		<DefaultValue name="inputwidth">100</DefaultValue>
+		<DefaultValue name="widthFormat">px</DefaultValue>
+		<DefaultValue name="enableValidation">false</DefaultValue>
+	</DefaultValues>
+</Widget> 

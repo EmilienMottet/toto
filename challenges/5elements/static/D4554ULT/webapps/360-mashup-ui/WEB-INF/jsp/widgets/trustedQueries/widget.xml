@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<Widget name="Trusted Queries" group="Search Forms" premium="true">
+
+	<Description>Trusted Queries is an advanced search form which guides the user through the content. Your data must be indexed using structured indexing. Based on the data structure, the user is guided to access data efficiently.</Description>
+
+	<Preview>
+		<![CDATA[
+			<img src="/resources/widgets/trustedQueries/images/preview.png" alt="Trusted Queries" />
+		]]>
+	</Preview>
+
+	<Includes>
+		<Include type="js" path="/resources/javascript/jquery.cookie.js" />
+		<Include type="js" path="/resources/javascript/jquery.json-2.2.js" />
+
+		<Include type="js" path="/resources/javascript/exa/io/io.js" />
+		<Include type="js" path="/resources/javascript/exa/geo/geo.js" />
+
+		<Include type="css" path="css/trustedQuery.less" />
+		<Include type="css" path="css/trustedQuery.theme.less" />
+		<Include type="js" path="js/trustedQuery.js" />
+	</Includes>
+
+	<SupportWidgetsId arity="ZERO" />
+	<SupportFeedsId arity="ZERO" />
+
+	<Interactions>
+		<Interaction type="in" id="exa.io.GeoInterface">
+			<Description>Restrict the search in this area</Description>
+			<Option id="geoDataInputName" name="Input parameter" arity="ONE">
+				<Description>Specifies the geographic Parameter Name associated with the input submitted for the entry box.</Description>
+				<Functions>
+					<ContextMenu>PageParameters()</ContextMenu>
+					<ContextMenu>emptyOnChange()</ContextMenu>
+				</Functions>
+			</Option>
+			<Option id="geoMetaName" name="Geographical index field" arity="ONE">
+				<Description>Specifies the name of the geographic index field to search with.</Description>
+				<Functions>
+					<ContextMenu>Metas()</ContextMenu>
+					<ContextMenu>emptyOnChange()</ContextMenu>
+				</Functions>
+			</Option>
+		</Interaction>
+	</Interactions>
+
+	<OptionsGroup name="General">
+		<Option id="queryParameter" name="Query parameter" arity="ONE">
+			<Description>Specifies the parameter name associated with the submitted user query.</Description>
+			<Functions>
+				<ContextMenu>PageParameters()</ContextMenu>
+			</Functions>
+		</Option>
+		<Option id="refineFeeds" name="Feeds to refine" arity="MANY">
+			<Description>Specifies the feeds that should be refined when the user query is submitted.</Description>
+			<Functions>
+				<ContextMenu>Feeds()</ContextMenu>
+			</Functions>
+		</Option>
+		<Option id="inputSize" name="Input size" arity="ONE">
+			<Description>Specifies the width of the query input field.</Description>
+			<Functions>
+				<Check>isInteger</Check>
+			</Functions>
+		</Option>
+		<Option id="action" name="Action" arity="ZERO_OR_ONE">
+			<Description> Specifies the page on which the query results are displayed. If empty, query results are displayed on the current page.</Description>
+			<Functions>
+				<ContextMenu>Pages()</ContextMenu>
+			</Functions>
+		</Option>
+	</OptionsGroup>
+
+	<OptionsGroup name="Search API">
+		<Option id="command" name="Search command" arity="ONE">
+			<Description>Specifies the search API command name that will be appended to the 'Search API URL'.</Description>
+			<Placeholder>search-api</Placeholder>
+			<Functions>
+				<ContextMenu>ApiCommand()</ContextMenu>
+			</Functions>
+		</Option>
+		<Option id="apiConfig" name="Config" arity="ZERO_OR_ONE">
+			<Description>
+				<![CDATA[
+					Indicates the name of the default Search API, for example, <code>sapi0</code>.
+				]]>
+			</Description>
+			<Placeholder>sapi0</Placeholder>
+			<Functions>
+				<ContextMenu>ApiConfig()</ContextMenu>
+			</Functions>
+		</Option>
+		<Option id="searchapi" name="Search API URL" arity="ZERO_OR_MANY">
+			<Description>Defines the URL that will be used by the Search API.</Description>
+			<Placeholder>http://HOST:PORT/</Placeholder>
+		</Option>
+		<Option id="searchlogic" name="Search Logic" arity="ZERO_OR_ONE">
+			<Description>
+				<![CDATA[
+					Specifies the search logic, for example, <code>sl0</code>.<br/>Search logics are defined in the Administration Console.
+				]]>
+			</Description>
+			<Functions>
+				<ContextMenu>SearchLogics()</ContextMenu>
+				<ContextMenu>emptyOnChange()</ContextMenu>
+			</Functions>
+		</Option>
+		<OptionComposite id="extraParameters" name="Extra parameters" arity="ZERO_OR_MANY">
+			<Description>Specifies extra key/value parameters for the search logic.</Description>
+			<Option id="key" arity="ONE" />
+			<Option id="value" arity="ONE" />
+		</OptionComposite>
+	</OptionsGroup>
+
+	<OptionsGroup name="Suggestions">
+		<Option id="aggregation" name="Aggregation" arity="ONE">
+			<Description>Specifies the type of aggregation that will be used by the trusted queries.</Description>
+			<Functions>
+				<ContextMenu>Aggregations()</ContextMenu>
+				<ContextMenu>COMMON_emptyOnChange()</ContextMenu>
+			</Functions>
+		</Option>
+		<Option id="maxSuggestionsOneGroup" name="Suggestions for one group" arity="ONE">
+			<Description>Specifies the maximum number of suggestions when displaying a single group.</Description>
+			<Functions>
+				<Check>isInteger</Check>
+			</Functions>
+		</Option>
+		<Option id="maxSuggestionsManyGroup" name="Suggestions for many groups" arity="ONE">
+			<Description>Specifies the maximum number of suggestions when displaying several groups.</Description>
+			<Functions>
+				<Check>isInteger</Check>
+			</Functions>
+		</Option>
+	</OptionsGroup>
+
+	<OptionsGroup name="Restrictions">
+		<Option id="includeDataModelClasses" name="Data Model Class" arity="ZERO_OR_MANY">
+			<Description>Specifies the data model class that will be used. Data models are specified in the Administration Console. By default they all will be used.</Description>
+		</Option>
+		<Option id="excludeFacets" name="Exclude facets" arity="ZERO_OR_MANY">
+			<Description>Specifies the facets you do not want to display.</Description>
+		</Option>
+		<Option id="excludePatterns" name="Exclusion patterns" arity="ZERO_OR_MANY">
+			<Description>Specifies exclusion patterns to filter some results.</Description>
+		</Option>
+	</OptionsGroup>
+
+	<OptionsGroup name="Advanced">
+		<Option id="enableCache" name="Enable Search API cache" arity="ONE">
+			<Description>Specifies if cache should be activated. We strongly recommend to enable it.</Description>
+			<Values>
+				<Value>false</Value>
+				<Value>true</Value>
+			</Values>
+		</Option>
+		<Option id="engine" name="Engine" arity="ONE">
+			<Description>Specifies the trusted queries engine to use.</Description>
+		</Option>
+		<Option id="prefixHandler" name="Prefix handler" arity="ONE">
+			<Description>Specifies the prefix handler to use for the search.</Description>
+		</Option>
+		<Option id="cookieName" name="Cookie name" arity="ZERO_OR_ONE" isEvaluated="true">
+			<Description>Specifies a cookie name to store the widget state. Defaults to 'trustedqueries'.</Description>
+		</Option>
+	</OptionsGroup>
+
+	<DefaultValues>
+		<DefaultValue name="queryParameter">q</DefaultValue>
+		<DefaultValue name="inputSize">800</DefaultValue>
+		<DefaultValue name="command">search-api</DefaultValue>
+		<DefaultValue name="apiConfig">sapi0</DefaultValue>
+		<DefaultValue name="aggregation">count</DefaultValue>
+		<DefaultValue name="maxSuggestionsOneGroup">10</DefaultValue>
+		<DefaultValue name="maxSuggestionsManyGroup">3</DefaultValue>
+		<DefaultValue name="enableCache">true</DefaultValue>
+		<DefaultValue name="engine">com.exalead.cv360.searchui.view.widgets.controller.trustedqueries.TQCloudview</DefaultValue>
+		<DefaultValue name="prefixHandler">trustedqueries</DefaultValue>
+	</DefaultValues>
+</Widget>

@@ -1,0 +1,6 @@
+<conso:SDCStoreStatus lastSynchronizedSerial="1572965659167" xmlns:bee="exa:exa.bee" xmlns:edit="exa:com.exalead.editor.v10" xmlns:index="exa:com.exalead.mercury.mami.indexing.v10" xmlns:conso="exa:com.exalead.mercury.mami.consolidation.v10" xmlns:config="exa:exa.bee.config">
+    <conso:SDCSerialStatus serial="1572965659167" nbDocs="0">
+        <conso:SDCOldGenerationStatus arcTableGeneration="-1" vertexTableGeneration="-1" checkpointTableGeneration="149861" objectGraphTableGeneration="28089" documentTableGeneration="28089" attributeTableGeneration="-1"/>
+        <conso:SDCNewGenerationStatus arcTableGeneration="-1" vertexTableGeneration="-1" checkpointTableGeneration="149862" objectGraphTableGeneration="28089" documentTableGeneration="28089" attributeTableGeneration="-1"/>
+    </conso:SDCSerialStatus>
+</conso:SDCStoreStatus>

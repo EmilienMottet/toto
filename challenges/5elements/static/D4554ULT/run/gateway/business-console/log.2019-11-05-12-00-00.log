@@ -1,0 +1,6 @@
+[2019-11-04 10:27:03,142] [WARN ] [main] [org.eclipse.jetty.security.SecurityHandler] ServletContext@o.e.j.w.WebAppContext@2cab9998{/business-console,file:///busdata/dpmu/gbl0/data/cv/webapps-tmp/gateway/adminui_16001/business-console/,STARTING,@16001}{/busdata/dpmu/gbl0/data/cv/webapps-tmp/gateway/adminui_16001/business-console} has uncovered http methods for path: /
+[2019-11-04 10:27:03,162] [INFO ] [main] [com.exalead.cv360.config.ConfigurationManager] Configuration Top Directory: /busdata/dpmu/gbl0/data/cv/bin/../gct
+[2019-11-04 10:27:03,162] [INFO ] [main] [com.exalead.cv360.config.ConfigurationManager] Configuration Last Revision Repository: /busdata/dpmu/gbl0/data/cv/bin/../gct/22/master/360
+[2019-11-04 10:27:03,162] [INFO ] [main] [com.exalead.cv360.config.ConfigurationManager] Configuration Store Directory: /busdata/dpmu/gbl0/data/cv/bin/../config/360
+[2019-11-04 10:27:03,162] [INFO ] [main] [com.exalead.cv360.config.ConfigurationManager] Data Directory: /busdata/dpmu/gbl0/data/cv/bin/..
+[2019-11-04 10:27:03,267] [INFO ] [main] [org.eclipse.jetty.server.handler.ContextHandler] Started o.e.j.w.WebAppContext@2cab9998{/business-console,file:///busdata/dpmu/gbl0/data/cv/webapps-tmp/gateway/adminui_16001/business-console/,AVAILABLE,@16001}{/busdata/dpmu/gbl0/data/cv/webapps-tmp/gateway/adminui_16001/business-console}

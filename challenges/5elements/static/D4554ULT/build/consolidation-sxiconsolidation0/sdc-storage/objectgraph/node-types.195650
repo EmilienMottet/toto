@@ -1,0 +1,91 @@
+eno:acl
+eno:bo
+eno:bo:Affinity
+eno:bo:Business Role
+eno:bo:Cache Manager
+eno:bo:Characteristic Master
+eno:bo:Computing Environment
+eno:bo:CreateAssembly
+eno:bo:Criteria
+eno:bo:DELAsmProcessCanUseCnx
+eno:bo:DELFmiDiscreteFunctionReference
+eno:bo:DELFmiFunctionPPRCreateReference
+eno:bo:DELFmiFunctionPPRDiscreteReference
+eno:bo:DELFmiFunctionReference
+eno:bo:DELFmiProcessPrerequisitePort
+eno:bo:DELLmiAbstractProductionEntity
+eno:bo:DELLmiGeneralOperationReference
+eno:bo:DELLmiGeneralSystemReference
+eno:bo:DELLmiLoadingOperationReference
+eno:bo:DELLmiOperationPPRReference
+eno:bo:DELLmiOperationReference
+eno:bo:DELLmiPPROperationReference
+eno:bo:DELLmiPPRSystemReference
+eno:bo:DELLmiProdSystemIOPort
+eno:bo:DELLmiProductionSystemIOCnxAbstract
+eno:bo:DELLmiProductionSystemOutputCnxAbstract
+eno:bo:DELLmiProductionSystemOutputCnxToMBOM
+eno:bo:DELLmiProductionSystemReference
+eno:bo:ErgoHuman
+eno:bo:HistorizationLinkRefRef
+eno:bo:LPAbstractReference
+eno:bo:MfgProductionPlanning
+eno:bo:PARParameter
+eno:bo:PHYSICALAbstractReference
+eno:bo:PLMConnection
+eno:bo:PLMCoreReference
+eno:bo:PLMEntity
+eno:bo:PLMHistoLinkCnx
+eno:bo:PLMPort
+eno:bo:PLMPosProjectResourceMngtRef
+eno:bo:PLMPosResourceCoreRef
+eno:bo:PLMPosResourceRef
+eno:bo:PLMPosSettingsEnvironmentRef
+eno:bo:PLMPosSettingsRef
+eno:bo:PLMReference
+eno:bo:Part
+eno:bo:Part Master
+eno:bo:Person
+eno:bo:Personal Workspace
+eno:bo:PlmParameter
+eno:bo:PnOProject
+eno:bo:Provide
+eno:bo:Push
+eno:bo:RFLPLMImplementConnection
+eno:bo:Security Context
+eno:bo:VPLMCounter
+eno:bo:VPLMDataMigration
+eno:bo:VPMReference
+eno:bo:eService Number Generator
+eno:co
+eno:co:Assigned Security Context
+eno:co:Criteria Output
+eno:co:DELFmiFunctionIdentifiedInstance
+eno:co:DELFmiFunctionInstance
+eno:co:DELLmiGeneralOperationInstance
+eno:co:DELLmiGeneralSystemInstance
+eno:co:DELLmiLoadingOperationInstance
+eno:co:DELLmiOperationInstance
+eno:co:DELLmiOperationPPRInstance
+eno:co:DELLmiPPROperationInstance
+eno:co:DELLmiPPRSystemInstance
+eno:co:DELLmiProductionSystemInstance
+eno:co:Derived Characteristic
+eno:co:Design Responsibility
+eno:co:EBOM
+eno:co:Employee
+eno:co:Has Members
+eno:co:Member
+eno:co:MfgProcessAlternate
+eno:co:PLMCoreInstance
+eno:co:PLMInstance
+eno:co:ParameterAggregation
+eno:co:Part Revision
+eno:co:ProcessInstanceSet
+eno:co:Security Context Organization
+eno:co:Security Context Project
+eno:co:Security Context Role
+eno:co:VPLMrel_slash_PLMConnection_slash_V_underscore_Owner
+eno:co:VPLMrel_slash_PLMPort_slash_V_underscore_Owner
+eno:custo:aggrPLMParameter
+eno:internal

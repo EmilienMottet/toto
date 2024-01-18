@@ -1,0 +1,37 @@
+<FetchConfig xmlns="exa:com.exalead.mercury.mami.fetch.v21" version="1570546421118" defaultFetcher="fetcher_http_default" defaultMaxSizeKB="32" defaultTruncate="true" fullDocumentMaxSizeKB="32768" crawlCacheRequestTimeoutMS="10000" globalProxyPort="0">
+ <Fetcher name="fetcher_http_default" type="http" readTimeoutS="15" writeTimeoutS="15" connectTimeoutS="30" maxDownloadTimeS="600" userAgent="Mozilla/5.0 (compatible; ExaleadCloudview/6;)" cookies="false" useConnectForHttpsOverProxy="true" useCrawlCache="false" maxAgeS="2592000">
+  <headers>
+   <Header name="Accept" value="*/*"/>
+  </headers>
+  <parameters>
+  </parameters>
+  <configRules>
+  </configRules>
+ </Fetcher>
+
+ <mimes>
+  <MimeConfig mime="text/plain" maxSizeKB="16384" truncate="true"/>
+  <MimeConfig mime="text/html" maxSizeKB="16384" truncate="true"/>
+  <MimeConfig mime="application/xml" maxSizeKB="16384" truncate="false"/>
+  <MimeConfig mime="application/x-gzip" maxSizeKB="16384" truncate="false"/>
+  <MimeConfig mime="text/rtf" maxSizeKB="32768" truncate="true"/>
+  <MimeConfig mime="application/x-shockwave-flash" maxSizeKB="16384" truncate="false"/>
+  <MimeConfig mime="application/pdf" maxSizeKB="32768" truncate="false"/>
+  <MimeConfig mime="application/x-msoffice" maxSizeKB="32768" truncate="false"/>
+  <MimeConfig mime="application/msword" maxSizeKB="32768" truncate="false"/>
+  <MimeConfig mime="application/vnd.ms-excel" maxSizeKB="32768" truncate="false"/>
+  <MimeConfig mime="application/vnd.ms-powerpoint" maxSizeKB="32768" truncate="false"/>
+  <MimeConfig mime="application/vnd.oasis.opendocument.text" maxSizeKB="32768" truncate="false"/>
+  <MimeConfig mime="application/vnd.oasis.opendocument.spreadsheet" maxSizeKB="32768" truncate="false"/>
+  <MimeConfig mime="application/vnd.oasis.opendocument.presentation" maxSizeKB="32768" truncate="false"/>
+  <MimeConfig mime="application/vnd.oasis.opendocument.graphics" maxSizeKB="32768" truncate="false"/>
+  <MimeConfig mime="application/vnd.sun.xml.writer" maxSizeKB="32768" truncate="false"/>
+  <MimeConfig mime="application/vnd.sun.xml.calc" maxSizeKB="32768" truncate="false"/>
+  <MimeConfig mime="application/vnd.sun.xml.impress" maxSizeKB="32768" truncate="false"/>
+  <MimeConfig mime="application/vnd.sun.xml.draw" maxSizeKB="32768" truncate="false"/>
+  <MimeConfig mime="application/vnd.openxmlformats-officedocument.wordprocessingml.document" maxSizeKB="32768" truncate="false"/>
+  <MimeConfig mime="application/vnd.openxmlformats-officedocument.presentationml.presentation" maxSizeKB="32768" truncate="false"/>
+  <MimeConfig mime="application/vnd.openxmlformats-officedocument.presentationml.slideshow" maxSizeKB="32768" truncate="false"/>
+  <MimeConfig mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" maxSizeKB="32768" truncate="false"/>
+ </mimes>
+</FetchConfig>

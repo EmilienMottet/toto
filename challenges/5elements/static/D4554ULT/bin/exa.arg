@@ -1,0 +1,5 @@
+${NGINSTALLDIR}/${NGARCH}/bin/exa
+-lib
+${NGINSTALLDIR}/exabin/mercury.lib
+-srcpath
+${NGDATADIR}/src/exa

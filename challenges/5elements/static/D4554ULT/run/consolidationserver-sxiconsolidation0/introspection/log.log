@@ -1,0 +1,1 @@
+[2019-11-06 08:24:38,696] [INFO ] [shutdown-45787] [org.eclipse.jetty.server.handler.ContextHandler] Stopped o.e.j.w.WebAppContext@6c2c1385{/introspection,null,UNAVAILABLE,@16053}{/busdata/dpmu/gbl0/data/cv/webapps-tmp/consolidationserver-sxiconsolidation0/consolidation-sxiconsolidation0-monitoring_16053/introspection}

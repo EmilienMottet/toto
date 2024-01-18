@@ -1,0 +1,42 @@
+.mashup {
+	#light-box-page-overlay {
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		height: 100%;
+		width: 100%;
+		z-index: 1000;
+
+		background-color: #000;
+		.opacity(0.8);
+		display: none;
+	}
+
+	#light-box-page-iframe {
+		position: fixed;
+		top: 0px; /* set by css to be centered in the screen */
+		left: 0px; /* set by css to be centered in the screen */
+		z-index: 1001;
+		background-color: #fff;
+		
+		span.closeButton {
+			line-height: 20px;
+			color: #666;
+			padding: 2px 5px;
+			font-size: 20px;
+			position: absolute;
+			top: 0px;
+			right: -25px;
+			background-color: #fff;
+			width: 15px;
+			height: 20px;
+
+			&:hover {
+				cursor: pointer;
+				text-decoration: none;
+				color: #000;
+				background-color: #f5f5f5;
+			}
+		}
+	}
+}

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<Widget name="List view" group="Layout/List" premium="true">
+
+	<Description>For creating a list that can be used for data display, navigation, result list, data entry, etc.</Description>
+
+	<Platforms>
+		<Platform type="mobile" supported="true" />
+	</Platforms>
+
+	<Includes>
+		<Include type="css" path="css/style.less" />
+	</Includes>
+
+	<SupportWidgetsId arity="ZERO_OR_MANY">
+		<WidgetId>mobileListItem</WidgetId>
+		<WidgetId>forEachHit</WidgetId>
+	</SupportWidgetsId>
+
+	<OptionsGroup name="General">
+		<Option id="title" name="Widget Title" isEvaluated="true">
+			<Description>Widget title. If blank, no name is displayed.</Description>
+		</Option>
+		<Option id="listType" name="List type" arity="ONE">
+			<Description>Specifies the type of list to create. An ordered list will use the tag (ol) instead of (ul).</Description>
+			<Values>
+				<Value>unordered</Value>
+				<Value>ordered</Value>
+			</Values>
+		</Option>
+	</OptionsGroup>
+
+</Widget>

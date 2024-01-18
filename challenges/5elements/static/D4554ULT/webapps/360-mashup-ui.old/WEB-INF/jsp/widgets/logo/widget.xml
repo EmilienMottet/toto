@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<Widget name="Image" group="Layout">
+
+	<Description>This widget allows you to add an image on your page. You can link this image to a page if necessary.</Description>
+	
+	<Preview>
+		<![CDATA[
+			<img src="/resources/logo/images/cvlogo_small.png" />
+		]]>
+	</Preview>
+
+	<Platforms>
+		<Platform type="web" supported="true" />
+		<Platform type="mobile" supported="true" />
+	</Platforms>
+
+	<SupportWidgetsId arity="ZERO" />
+	<SupportFeedsId arity="ZERO" />
+
+	<OptionsGroup name="URL">
+		<Option id="urlImage" name="Image URL" arity="ONE" isEvaluated="true">
+			<Description>
+				<![CDATA[
+					Specifies the URL of the image to display.<br />
+					The URL can be:<br />
+					<ul>
+					  <li>relative (Example: /resources/logo/images/cvlogo_medium.png is rewritten to /mashup-ui/resources/logo/images/cvlogo_big.png)</li>
+					  <li>or absolute (http://...).</li>
+					</ul>
+				]]>			
+			  </Description>
+		</Option>
+		<Option id="urlLink" name="Image link"  isEvaluated="true">
+			<Description>Specifies the page to access when you click on the image. If blank, no link is added.</Description>
+			<Functions>
+				<ContextMenu>Pages()</ContextMenu>
+				<Display>PARAMETER_doHide('', ['urlTarget'], [], true, false)</Display>
+			</Functions>
+		</Option>		
+		<Option id="urlTarget" name="URL Target">
+			<Description>Specifies where to open the page when clicking the link.</Description>
+			<Values>
+				<Value>Current Page</Value>
+				<Value>New Page</Value>
+			</Values>
+		</Option>
+		<Option id="alt" name="Alternative text" isEvaluated="true">
+			<Description>Alternative text for semantic purpose and disabled people.</Description>
+		</Option>
+	</OptionsGroup>
+
+	<OptionsGroup name="Style">
+		<Option id="width" name="Width">
+			<Description>
+				<![CDATA[
+					Specifies the width of the image.<br />
+					You must enter an integer.<br />
+					If blank, the default image width is used.
+				]]>				
+			</Description>
+			<Functions>
+				<Check>isInteger</Check>
+			</Functions>
+		</Option>
+		<Option id="height" name="Height">
+			<Description>
+				<![CDATA[
+					Specifies the height of the image.<br />
+					You must enter an integer.<br />
+					If blank, the default image height is used.
+				]]>				
+			</Description>
+			<Functions>
+				<Check>isInteger</Check>
+			</Functions>
+		</Option>
+	</OptionsGroup>
+	
+	<DefaultValues>
+		<DefaultValue name="urlImage">/resources/logo/images/cvlogo_medium.png</DefaultValue>
+		<DefaultValue name="alt">${i18n['logo.alt']}</DefaultValue>
+	</DefaultValues>
+</Widget>

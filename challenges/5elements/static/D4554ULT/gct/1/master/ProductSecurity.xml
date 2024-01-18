@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<master:ProductSecurity xmlns:cdesc="exa:com.exalead.mercury.component.config.descriptor" xmlns:secs="exa:com.exalead.security.sources.common" xmlns:bee="exa:exa.bee" xmlns:master="exa:com.exalead.mercury.mami.master.v10" xmlns:config="exa:exa.bee.config" login="admin" password="AHr0SyMZq9tE92ht+s9dpJUFcA4r0vB2l4Eyf53zMY9mQl4/LM9eEUzY1ovnOSd2gI3Q9xWVp+M2XBv9g7EG9kX5Dz4JEWZwQXnckfq2QTXvB5pEeGMojSWEqwti9MrIywkMya4wxtxJhuBMIbLEoVoIaPtpp44+r41z1klQFnuzGT7ZWtchIbpcyb0Dkfy8/lcum8C6V/46wTLJlBavKRmAtSUJjFVhTzfypnl/WFSTYP4PHrg5o3CDKgmmzJEuLI6I840Rhbq45+1voTrwI2fMGLTqlHsGFIPk/mxOjRVdVAarsz+laQCW6pYdS77Xvd5lRraF1vn7zog0oGwzYQ==" secureInternalConnections="false" version="0">
+    <master:trustedHost>
+        <bee:StringValue value="*"/>
+    </master:trustedHost>
+</master:ProductSecurity>

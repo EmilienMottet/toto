@@ -1,0 +1,111 @@
+[2019/10/28-00:00:00.099] [info] [1994525744@jtp-default-7] [exa.log.rotation]	Rotating additional logs
+[2019/10/28-14:58:10.840] [error] [139920269469440] [parsectx]	slice 0: inst sxii0: 1.1: syntax error, unexpected end of file
+[2019/10/28-14:58:10.886] [info] [139920269469440] [attrgraph.VolumeGraphBase]	slice 0: inst sxii0: PopulateEntitiesMajor Ok (79 valid entities and 0 invalid entities)
+[2019/10/28-14:58:10.886] [info] [139920269469440] [attrgraph.VolumeGraphBase]	slice 0: inst sxii0: Populate octree..
+[2019/10/28-14:58:10.886] [info] [139920269469440] [attrgraph.VolumeGraphBase]	slice 0: inst sxii0: PopulateOctrees Ok (0 valid octrees and 0 invalid octrees)
+[2019/10/28-14:58:10.886] [info] [139920269469440] [attrgraph.VolumeGraphBase]	slice 0: inst sxii0: Using tree order during graph establishment. Values of ro_46_plminstance_46_v_95_treeorder from sxiclass_nofacet_dblreal_nofts_ram are used to maintain order of instances.
+[2019/10/28-14:58:10.886] [info] [139920269469440] [attrgraph.VolumeGraphBase]	slice 0: inst sxii0: VolumeGraphBase : PopulateRelations Ok (46 valid relations (with 0 direct instances) and 0 invalid relations)
+[2019/10/28-14:58:10.886] [info] [139920269469440] [attrgraph.IndexData]	slice 0: inst sxii0: IndexReader::getGraphForQuery : Graph successfuly built (graphs in memory : 1, global size:718kB, self size for last :714kB, primaryKey:graph###Or(
+[2019/10/28-14:58:10.886] [info] [139920269469440] [attrgraph.IndexData]	slice 0: inst sxii0:   Num(sxiclass_nofacet_num_nofts_ram:0(==)
+[2019/10/28-14:58:10.886] [info] [139920269469440] [attrgraph.IndexData]	slice 0: inst sxii0:   Num(sxiclass_nofacet_num_nofts_ram:1(==)
+[2019/10/28-14:58:10.886] [info] [139920269469440] [attrgraph.IndexData]	slice 0: inst sxii0: )###Num(sxiclass_nofacet_num_nofts_ram:2(==)###Num(sxiclass_nofacet_num_nofts_ram:3(==))
+[2019/10/28-14:58:10.901] [info] [139920269469440] [attrgraph.VolumeGraphBase]	slice 0: inst sxii0: PopulateEntitiesMajor Ok (79 valid entities and 0 invalid entities)
+[2019/10/28-14:58:10.901] [info] [139920269469440] [attrgraph.VolumeGraphBase]	slice 0: inst sxii0: Using tree order during graph establishment. Values of ro_46_plminstance_46_v_95_treeorder from sxiclass_nofacet_dblreal_nofts_ram are used to maintain order of instances.
+[2019/10/28-14:58:10.901] [info] [139920269469440] [attrgraph.VolumeGraphBase]	slice 0: inst sxii0: VolumeGraphBase : PopulateRelations Ok (46 valid relations (with 0 direct instances) and 0 invalid relations)
+[2019/10/28-14:58:10.902] [info] [139920269469440] [attrgraph.IndexData]	slice 0: inst sxii0: IndexReader::getGraphForQuery : Graph successfuly built (graphs in memory : 2, global size:728kB, self size for last :10kB, primaryKey:graph###Or(
+[2019/10/28-14:58:10.902] [info] [139920269469440] [attrgraph.IndexData]	slice 0: inst sxii0:   Num(sxiclass_nofacet_num_nofts_ram:0(==)
+[2019/10/28-14:58:10.902] [info] [139920269469440] [attrgraph.IndexData]	slice 0: inst sxii0:   Num(sxiclass_nofacet_num_nofts_ram:1(==)
+[2019/10/28-14:58:10.902] [info] [139920269469440] [attrgraph.IndexData]	slice 0: inst sxii0: )###Num(sxiclass_nofacet_num_nofts_ram:2(==)###)
+[2019/10/28-14:58:10.902] [info] [1781649017@jtp-default-10] [index.generations]	slice 0: inst sxii0: Switch to generation '42917' done in 78.966ms
+[2019/10/28-14:58:10.930] [error] [139920269469440] [parsectx]	slice 0: inst sxii0: 1.1: syntax error, unexpected end of file
+[2019/10/28-14:58:10.972] [info] [139920269469440] [attrgraph.VolumeGraphBase]	slice 0: inst sxii0: PopulateEntitiesMajor Ok (79 valid entities and 0 invalid entities)
+[2019/10/28-14:58:10.972] [info] [139920269469440] [attrgraph.VolumeGraphBase]	slice 0: inst sxii0: Populate octree..
+[2019/10/28-14:58:10.972] [info] [139920269469440] [attrgraph.VolumeGraphBase]	slice 0: inst sxii0: PopulateOctrees Ok (0 valid octrees and 0 invalid octrees)
+[2019/10/28-14:58:10.972] [info] [139920269469440] [attrgraph.VolumeGraphBase]	slice 0: inst sxii0: Using tree order during graph establishment. Values of ro_46_plminstance_46_v_95_treeorder from sxiclass_nofacet_dblreal_nofts_ram are used to maintain order of instances.
+[2019/10/28-14:58:10.972] [info] [139920269469440] [attrgraph.VolumeGraphBase]	slice 0: inst sxii0: VolumeGraphBase : PopulateRelations Ok (46 valid relations (with 0 direct instances) and 0 invalid relations)
+[2019/10/28-14:58:10.972] [info] [139920269469440] [attrgraph.IndexData]	slice 0: inst sxii0: IndexReader::getGraphForQuery : Graph successfuly built (graphs in memory : 1, global size:718kB, self size for last :714kB, primaryKey:graph###Or(
+[2019/10/28-14:58:10.972] [info] [139920269469440] [attrgraph.IndexData]	slice 0: inst sxii0:   Num(sxiclass_nofacet_num_nofts_ram:0(==)
+[2019/10/28-14:58:10.972] [info] [139920269469440] [attrgraph.IndexData]	slice 0: inst sxii0:   Num(sxiclass_nofacet_num_nofts_ram:1(==)
+[2019/10/28-14:58:10.972] [info] [139920269469440] [attrgraph.IndexData]	slice 0: inst sxii0: )###Num(sxiclass_nofacet_num_nofts_ram:2(==)###Num(sxiclass_nofacet_num_nofts_ram:3(==))
+[2019/10/28-14:58:11.003] [info] [139920269469440] [attrgraph.VolumeGraphBase]	slice 0: inst sxii0: PopulateEntitiesMajor Ok (79 valid entities and 0 invalid entities)
+[2019/10/28-14:58:11.003] [info] [139920269469440] [attrgraph.VolumeGraphBase]	slice 0: inst sxii0: Using tree order during graph establishment. Values of ro_46_plminstance_46_v_95_treeorder from sxiclass_nofacet_dblreal_nofts_ram are used to maintain order of instances.
+[2019/10/28-14:58:11.003] [info] [139920269469440] [attrgraph.VolumeGraphBase]	slice 0: inst sxii0: VolumeGraphBase : PopulateRelations Ok (46 valid relations (with 0 direct instances) and 0 invalid relations)
+[2019/10/28-14:58:11.003] [info] [139920269469440] [attrgraph.IndexData]	slice 0: inst sxii0: IndexReader::getGraphForQuery : Graph successfuly built (graphs in memory : 2, global size:728kB, self size for last :10kB, primaryKey:graph###Or(
+[2019/10/28-14:58:11.003] [info] [139920269469440] [attrgraph.IndexData]	slice 0: inst sxii0:   Num(sxiclass_nofacet_num_nofts_ram:0(==)
+[2019/10/28-14:58:11.003] [info] [139920269469440] [attrgraph.IndexData]	slice 0: inst sxii0:   Num(sxiclass_nofacet_num_nofts_ram:1(==)
+[2019/10/28-14:58:11.003] [info] [139920269469440] [attrgraph.IndexData]	slice 0: inst sxii0: )###Num(sxiclass_nofacet_num_nofts_ram:2(==)###)
+[2019/10/28-14:58:11.004] [info] [1781649017@jtp-default-10] [index.generations]	slice 0: inst sxii0: Switch to generation '42918' done in 83.850ms
+[2019/10/28-16:30:39.812] [error] [139920270522112] [parsectx]	slice 0: inst sxii0: 1.1: syntax error, unexpected end of file
+[2019/10/28-16:30:39.877] [info] [139920270522112] [attrgraph.VolumeGraphBase]	slice 0: inst sxii0: PopulateEntitiesMajor Ok (80 valid entities and 0 invalid entities)
+[2019/10/28-16:30:39.877] [info] [139920270522112] [attrgraph.VolumeGraphBase]	slice 0: inst sxii0: Populate octree..
+[2019/10/28-16:30:39.877] [info] [139920270522112] [attrgraph.VolumeGraphBase]	slice 0: inst sxii0: PopulateOctrees Ok (0 valid octrees and 0 invalid octrees)
+[2019/10/28-16:30:39.877] [info] [139920270522112] [attrgraph.VolumeGraphBase]	slice 0: inst sxii0: Using tree order during graph establishment. Values of ro_46_plminstance_46_v_95_treeorder from sxiclass_nofacet_dblreal_nofts_ram are used to maintain order of instances.
+[2019/10/28-16:30:39.877] [info] [139920270522112] [attrgraph.VolumeGraphBase]	slice 0: inst sxii0: VolumeGraphBase : PopulateRelations Ok (46 valid relations (with 0 direct instances) and 0 invalid relations)
+[2019/10/28-16:30:39.877] [info] [139920270522112] [attrgraph.IndexData]	slice 0: inst sxii0: IndexReader::getGraphForQuery : Graph successfuly built (graphs in memory : 1, global size:718kB, self size for last :714kB, primaryKey:graph###Or(
+[2019/10/28-16:30:39.877] [info] [139920270522112] [attrgraph.IndexData]	slice 0: inst sxii0:   Num(sxiclass_nofacet_num_nofts_ram:0(==)
+[2019/10/28-16:30:39.877] [info] [139920270522112] [attrgraph.IndexData]	slice 0: inst sxii0:   Num(sxiclass_nofacet_num_nofts_ram:1(==)
+[2019/10/28-16:30:39.877] [info] [139920270522112] [attrgraph.IndexData]	slice 0: inst sxii0: )###Num(sxiclass_nofacet_num_nofts_ram:2(==)###Num(sxiclass_nofacet_num_nofts_ram:3(==))
+[2019/10/28-16:30:39.918] [info] [139920270522112] [attrgraph.VolumeGraphBase]	slice 0: inst sxii0: PopulateEntitiesMajor Ok (80 valid entities and 0 invalid entities)
+[2019/10/28-16:30:39.918] [info] [139920270522112] [attrgraph.VolumeGraphBase]	slice 0: inst sxii0: Using tree order during graph establishment. Values of ro_46_plminstance_46_v_95_treeorder from sxiclass_nofacet_dblreal_nofts_ram are used to maintain order of instances.
+[2019/10/28-16:30:39.918] [info] [139920270522112] [attrgraph.VolumeGraphBase]	slice 0: inst sxii0: VolumeGraphBase : PopulateRelations Ok (46 valid relations (with 0 direct instances) and 0 invalid relations)
+[2019/10/28-16:30:39.918] [info] [139920270522112] [attrgraph.IndexData]	slice 0: inst sxii0: IndexReader::getGraphForQuery : Graph successfuly built (graphs in memory : 2, global size:728kB, self size for last :10kB, primaryKey:graph###Or(
+[2019/10/28-16:30:39.918] [info] [139920270522112] [attrgraph.IndexData]	slice 0: inst sxii0:   Num(sxiclass_nofacet_num_nofts_ram:0(==)
+[2019/10/28-16:30:39.918] [info] [139920270522112] [attrgraph.IndexData]	slice 0: inst sxii0:   Num(sxiclass_nofacet_num_nofts_ram:1(==)
+[2019/10/28-16:30:39.918] [info] [139920270522112] [attrgraph.IndexData]	slice 0: inst sxii0: )###Num(sxiclass_nofacet_num_nofts_ram:2(==)###)
+[2019/10/28-16:30:39.918] [info] [1994525744@jtp-default-7] [index.generations]	slice 0: inst sxii0: Switch to generation '42919' done in 133.963ms
+[2019/10/28-16:30:39.929] [error] [139920270522112] [parsectx]	slice 0: inst sxii0: 1.1: syntax error, unexpected end of file
+[2019/10/28-16:30:39.984] [info] [139920270522112] [attrgraph.VolumeGraphBase]	slice 0: inst sxii0: PopulateEntitiesMajor Ok (80 valid entities and 0 invalid entities)
+[2019/10/28-16:30:39.984] [info] [139920270522112] [attrgraph.VolumeGraphBase]	slice 0: inst sxii0: Populate octree..
+[2019/10/28-16:30:39.984] [info] [139920270522112] [attrgraph.VolumeGraphBase]	slice 0: inst sxii0: PopulateOctrees Ok (0 valid octrees and 0 invalid octrees)
+[2019/10/28-16:30:39.984] [info] [139920270522112] [attrgraph.VolumeGraphBase]	slice 0: inst sxii0: Using tree order during graph establishment. Values of ro_46_plminstance_46_v_95_treeorder from sxiclass_nofacet_dblreal_nofts_ram are used to maintain order of instances.
+[2019/10/28-16:30:39.984] [info] [139920270522112] [attrgraph.VolumeGraphBase]	slice 0: inst sxii0: VolumeGraphBase : PopulateRelations Ok (46 valid relations (with 0 direct instances) and 0 invalid relations)
+[2019/10/28-16:30:39.984] [info] [139920270522112] [attrgraph.IndexData]	slice 0: inst sxii0: IndexReader::getGraphForQuery : Graph successfuly built (graphs in memory : 1, global size:718kB, self size for last :714kB, primaryKey:graph###Or(
+[2019/10/28-16:30:39.984] [info] [139920270522112] [attrgraph.IndexData]	slice 0: inst sxii0:   Num(sxiclass_nofacet_num_nofts_ram:0(==)
+[2019/10/28-16:30:39.984] [info] [139920270522112] [attrgraph.IndexData]	slice 0: inst sxii0:   Num(sxiclass_nofacet_num_nofts_ram:1(==)
+[2019/10/28-16:30:39.984] [info] [139920270522112] [attrgraph.IndexData]	slice 0: inst sxii0: )###Num(sxiclass_nofacet_num_nofts_ram:2(==)###Num(sxiclass_nofacet_num_nofts_ram:3(==))
+[2019/10/28-16:30:40.020] [info] [139920270522112] [attrgraph.VolumeGraphBase]	slice 0: inst sxii0: PopulateEntitiesMajor Ok (80 valid entities and 0 invalid entities)
+[2019/10/28-16:30:40.020] [info] [139920270522112] [attrgraph.VolumeGraphBase]	slice 0: inst sxii0: Using tree order during graph establishment. Values of ro_46_plminstance_46_v_95_treeorder from sxiclass_nofacet_dblreal_nofts_ram are used to maintain order of instances.
+[2019/10/28-16:30:40.020] [info] [139920270522112] [attrgraph.VolumeGraphBase]	slice 0: inst sxii0: VolumeGraphBase : PopulateRelations Ok (46 valid relations (with 0 direct instances) and 0 invalid relations)
+[2019/10/28-16:30:40.020] [info] [139920270522112] [attrgraph.IndexData]	slice 0: inst sxii0: IndexReader::getGraphForQuery : Graph successfuly built (graphs in memory : 2, global size:728kB, self size for last :10kB, primaryKey:graph###Or(
+[2019/10/28-16:30:40.020] [info] [139920270522112] [attrgraph.IndexData]	slice 0: inst sxii0:   Num(sxiclass_nofacet_num_nofts_ram:0(==)
+[2019/10/28-16:30:40.020] [info] [139920270522112] [attrgraph.IndexData]	slice 0: inst sxii0:   Num(sxiclass_nofacet_num_nofts_ram:1(==)
+[2019/10/28-16:30:40.020] [info] [139920270522112] [attrgraph.IndexData]	slice 0: inst sxii0: )###Num(sxiclass_nofacet_num_nofts_ram:2(==)###)
+[2019/10/28-16:30:40.021] [info] [1994525744@jtp-default-7] [index.generations]	slice 0: inst sxii0: Switch to generation '42920' done in 99.095ms
+[2019/10/28-16:30:48.273] [error] [139920270522112] [parsectx]	slice 0: inst sxii0: 1.1: syntax error, unexpected end of file
+[2019/10/28-16:30:48.348] [info] [139920270522112] [attrgraph.VolumeGraphBase]	slice 0: inst sxii0: PopulateEntitiesMajor Ok (80 valid entities and 0 invalid entities)
+[2019/10/28-16:30:48.348] [info] [139920270522112] [attrgraph.VolumeGraphBase]	slice 0: inst sxii0: Populate octree..
+[2019/10/28-16:30:48.348] [info] [139920270522112] [attrgraph.VolumeGraphBase]	slice 0: inst sxii0: PopulateOctrees Ok (0 valid octrees and 0 invalid octrees)
+[2019/10/28-16:30:48.348] [info] [139920270522112] [attrgraph.VolumeGraphBase]	slice 0: inst sxii0: Using tree order during graph establishment. Values of ro_46_plminstance_46_v_95_treeorder from sxiclass_nofacet_dblreal_nofts_ram are used to maintain order of instances.
+[2019/10/28-16:30:48.348] [info] [139920270522112] [attrgraph.VolumeGraphBase]	slice 0: inst sxii0: VolumeGraphBase : PopulateRelations Ok (46 valid relations (with 0 direct instances) and 0 invalid relations)
+[2019/10/28-16:30:48.348] [info] [139920270522112] [attrgraph.IndexData]	slice 0: inst sxii0: IndexReader::getGraphForQuery : Graph successfuly built (graphs in memory : 1, global size:718kB, self size for last :714kB, primaryKey:graph###Or(
+[2019/10/28-16:30:48.348] [info] [139920270522112] [attrgraph.IndexData]	slice 0: inst sxii0:   Num(sxiclass_nofacet_num_nofts_ram:0(==)
+[2019/10/28-16:30:48.348] [info] [139920270522112] [attrgraph.IndexData]	slice 0: inst sxii0:   Num(sxiclass_nofacet_num_nofts_ram:1(==)
+[2019/10/28-16:30:48.348] [info] [139920270522112] [attrgraph.IndexData]	slice 0: inst sxii0: )###Num(sxiclass_nofacet_num_nofts_ram:2(==)###Num(sxiclass_nofacet_num_nofts_ram:3(==))
+[2019/10/28-16:30:48.407] [info] [139920270522112] [attrgraph.VolumeGraphBase]	slice 0: inst sxii0: PopulateEntitiesMajor Ok (80 valid entities and 0 invalid entities)
+[2019/10/28-16:30:48.407] [info] [139920270522112] [attrgraph.VolumeGraphBase]	slice 0: inst sxii0: Using tree order during graph establishment. Values of ro_46_plminstance_46_v_95_treeorder from sxiclass_nofacet_dblreal_nofts_ram are used to maintain order of instances.
+[2019/10/28-16:30:48.407] [info] [139920270522112] [attrgraph.VolumeGraphBase]	slice 0: inst sxii0: VolumeGraphBase : PopulateRelations Ok (46 valid relations (with 0 direct instances) and 0 invalid relations)
+[2019/10/28-16:30:48.407] [info] [139920270522112] [attrgraph.IndexData]	slice 0: inst sxii0: IndexReader::getGraphForQuery : Graph successfuly built (graphs in memory : 2, global size:728kB, self size for last :10kB, primaryKey:graph###Or(
+[2019/10/28-16:30:48.407] [info] [139920270522112] [attrgraph.IndexData]	slice 0: inst sxii0:   Num(sxiclass_nofacet_num_nofts_ram:0(==)
+[2019/10/28-16:30:48.407] [info] [139920270522112] [attrgraph.IndexData]	slice 0: inst sxii0:   Num(sxiclass_nofacet_num_nofts_ram:1(==)
+[2019/10/28-16:30:48.407] [info] [139920270522112] [attrgraph.IndexData]	slice 0: inst sxii0: )###Num(sxiclass_nofacet_num_nofts_ram:2(==)###)
+[2019/10/28-16:30:48.408] [info] [1994525744@jtp-default-7] [index.generations]	slice 0: inst sxii0: Switch to generation '42921' done in 150.520ms
+[2019/10/28-16:30:48.424] [error] [139920270522112] [parsectx]	slice 0: inst sxii0: 1.1: syntax error, unexpected end of file
+[2019/10/28-16:30:48.484] [info] [139920270522112] [attrgraph.VolumeGraphBase]	slice 0: inst sxii0: PopulateEntitiesMajor Ok (80 valid entities and 0 invalid entities)
+[2019/10/28-16:30:48.484] [info] [139920270522112] [attrgraph.VolumeGraphBase]	slice 0: inst sxii0: Populate octree..
+[2019/10/28-16:30:48.484] [info] [139920270522112] [attrgraph.VolumeGraphBase]	slice 0: inst sxii0: PopulateOctrees Ok (0 valid octrees and 0 invalid octrees)
+[2019/10/28-16:30:48.484] [info] [139920270522112] [attrgraph.VolumeGraphBase]	slice 0: inst sxii0: Using tree order during graph establishment. Values of ro_46_plminstance_46_v_95_treeorder from sxiclass_nofacet_dblreal_nofts_ram are used to maintain order of instances.
+[2019/10/28-16:30:48.484] [info] [139920270522112] [attrgraph.VolumeGraphBase]	slice 0: inst sxii0: VolumeGraphBase : PopulateRelations Ok (46 valid relations (with 0 direct instances) and 0 invalid relations)
+[2019/10/28-16:30:48.484] [info] [139920270522112] [attrgraph.IndexData]	slice 0: inst sxii0: IndexReader::getGraphForQuery : Graph successfuly built (graphs in memory : 1, global size:718kB, self size for last :714kB, primaryKey:graph###Or(
+[2019/10/28-16:30:48.484] [info] [139920270522112] [attrgraph.IndexData]	slice 0: inst sxii0:   Num(sxiclass_nofacet_num_nofts_ram:0(==)
+[2019/10/28-16:30:48.484] [info] [139920270522112] [attrgraph.IndexData]	slice 0: inst sxii0:   Num(sxiclass_nofacet_num_nofts_ram:1(==)
+[2019/10/28-16:30:48.484] [info] [139920270522112] [attrgraph.IndexData]	slice 0: inst sxii0: )###Num(sxiclass_nofacet_num_nofts_ram:2(==)###Num(sxiclass_nofacet_num_nofts_ram:3(==))
+[2019/10/28-16:30:48.519] [info] [139920270522112] [attrgraph.VolumeGraphBase]	slice 0: inst sxii0: PopulateEntitiesMajor Ok (80 valid entities and 0 invalid entities)
+[2019/10/28-16:30:48.519] [info] [139920270522112] [attrgraph.VolumeGraphBase]	slice 0: inst sxii0: Using tree order during graph establishment. Values of ro_46_plminstance_46_v_95_treeorder from sxiclass_nofacet_dblreal_nofts_ram are used to maintain order of instances.
+[2019/10/28-16:30:48.519] [info] [139920270522112] [attrgraph.VolumeGraphBase]	slice 0: inst sxii0: VolumeGraphBase : PopulateRelations Ok (46 valid relations (with 0 direct instances) and 0 invalid relations)
+[2019/10/28-16:30:48.519] [info] [139920270522112] [attrgraph.IndexData]	slice 0: inst sxii0: IndexReader::getGraphForQuery : Graph successfuly built (graphs in memory : 2, global size:728kB, self size for last :10kB, primaryKey:graph###Or(
+[2019/10/28-16:30:48.519] [info] [139920270522112] [attrgraph.IndexData]	slice 0: inst sxii0:   Num(sxiclass_nofacet_num_nofts_ram:0(==)
+[2019/10/28-16:30:48.519] [info] [139920270522112] [attrgraph.IndexData]	slice 0: inst sxii0:   Num(sxiclass_nofacet_num_nofts_ram:1(==)
+[2019/10/28-16:30:48.519] [info] [139920270522112] [attrgraph.IndexData]	slice 0: inst sxii0: )###Num(sxiclass_nofacet_num_nofts_ram:2(==)###)
+[2019/10/28-16:30:48.520] [info] [1994525744@jtp-default-7] [index.generations]	slice 0: inst sxii0: Switch to generation '42922' done in 107.026ms
+[2019/10/29-00:00:00.102] [info] [1781649017@jtp-default-10] [exa.log.rotation]	Rotating standard log
+Log4NG: rotating logs now

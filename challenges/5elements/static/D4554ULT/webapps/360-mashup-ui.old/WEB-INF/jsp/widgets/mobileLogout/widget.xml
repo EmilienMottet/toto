@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<Widget name="Logout" group="Navigation/User" premium="true">
+
+	<Preview>
+		<![CDATA[
+			<span style="font-size:30px; color:#DDD;">Logout</span>
+		]]>
+	</Preview>
+
+	<Platforms>
+		<Platform type="mobile" supported="true" />
+	</Platforms>
+
+	<SupportWidgetsId arity="ZERO" />
+	<SupportFeedsId arity="ZERO" />
+
+	<OptionsGroup name="General">
+		<Option id="btnAction" name="Action" arity="ONE">
+			<Description>Specifies the page to which the user will be redirected.</Description>
+			<Functions>
+				<ContextMenu>Pages()</ContextMenu>
+				<ContextMenu>COMMON_emptyOnChange()</ContextMenu>
+			</Functions>
+		</Option>
+		<Option id="btnText" name="Button label">
+			<Description>Specifies the text to display on the button.</Description>		
+		</Option>			
+		<Option id="btnIcon" name="Button icon">
+			<Description>Specifies the icon that must be used for this button.</Description>		
+			<Functions>
+				<ContextMenu>COMMON_add("Icons", ["arrow-l", "arrow-r", "arrow-u", "arrow-d", "delete", "plus", "minus", "check", "gear", "refresh", "forward", "back", "grid", "star", "alert", "info", "home", "search"])</ContextMenu>
+				<ContextMenu>COMMON_emptyOnChange()</ContextMenu>
+			</Functions>
+		</Option>
+		<Option id="btnIconPosition" name="Icon position">
+			<Description>Specifies the position of the icon compared to the button's label. If "notext" is selected, then only the icon will be displayed.</Description>
+			<Values>
+				<Value>left</Value>
+				<Value>right</Value>
+				<Value>top</Value>
+				<Value>bottom</Value>
+				<Value>notext</Value>
+			</Values>
+		</Option>
+	</OptionsGroup>
+
+	<OptionsGroup name="Style">
+		<Option id="btnTheme" name="Button theme">
+			<Description>Specifies the theme to use for this button.</Description>
+			<Values>
+				<Value></Value>
+				<Value>a</Value>
+				<Value>b</Value>
+				<Value>c</Value>
+				<Value>d</Value>
+				<Value>e</Value>
+			</Values>
+		</Option>
+		<Option id="btnInline" name="Button inlined">
+			<Description>Creates a more compact button that is as wide as the text and icon inside.</Description>
+			<Values>
+				<Value>false</Value>
+				<Value>true</Value>
+			</Values>
+		</Option>
+	</OptionsGroup>
+
+	<DefaultValues>
+		<DefaultValue name="btnInline">true</DefaultValue>
+	</DefaultValues>
+</Widget>

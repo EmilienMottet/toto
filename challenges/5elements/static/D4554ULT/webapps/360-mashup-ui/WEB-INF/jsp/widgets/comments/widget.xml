@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<Widget name="Comments" group="Collaborative" premium="true">
+
+	<Description>This widget allows users (anonymous or logged in) to see and contribute to comments about a given result in the page.</Description>
+
+	<Preview>
+	<![CDATA[
+		<img src="/resources/widgets/comments/img/preview.png" alt="Comments Preview" />
+	]]>
+	</Preview>
+
+	<SupportWidgetsId arity="ZERO" />
+	<SupportFeedsId arity="ONE" />
+
+	<Includes>
+		<Include type="js" path="/resources/javascript/storage/storage-client-0.2.js" />
+		<Include type="js" path="/resources/javascript/jquery.json-2.2.js" />
+		<Include type="js" path="js/comments.js" />
+		<Include type="css" path="css/style.less" />
+	</Includes>
+
+	<StorageKeys>
+		<StorageKey optionId="storageKey" resource="document" />
+		<StorageKey optionId="commentMetaName" resource="document" />
+		<StorageKey optionId="commentCountMetaName" resource="document" />
+	</StorageKeys>
+
+	<OptionsGroup name="General">
+		<Option id="title" name="Title" arity="ZERO_OR_ONE" isEvaluated="true">
+			<Description>Widget title. If blank, no title is displayed.</Description>
+		</Option>
+		<Option id="who" name="Who can comment?" arity="ONE">
+			<Description>Specifies who can make comments.</Description>
+			<Values>
+				<Value>Anonymous</Value>
+				<Value>Logged-in</Value>
+				<Value>None</Value>
+			</Values>
+		</Option>
+		<Option id="displayPhoto" name="Display Photo" arity="ONE">
+			<Description>
+				Specifies if the a photo is displayed
+			</Description>
+			<Values>
+				<Value>false</Value>
+				<Value>true</Value>
+			</Values>
+			<Functions>
+				<Display>PARAMETER_doHide('false', [], ['photoUrl'], false, false)</Display>
+			</Functions>
+		</Option>
+		<Option id="photoUrl" name="Photo url" arity="ZERO_OR_ONE">
+			<Description>
+				The url of the user's photo
+			</Description>
+			<Functions>
+				<ContextMenu>Metas()</ContextMenu>
+			</Functions>
+		</Option>
+		<Option id="commentTemplate" name="Display option" arity="ONE">
+			<Description>
+				Display template
+			</Description>
+			<Values>
+				<Value>basic</Value>
+				<Value>multiline</Value>
+			</Values>
+		</Option>
+		<Option id="maxDisplay" name="Display # comments" arity="ONE">
+			<Description>
+				Specifies the number of comments to display before showing "Show more comments"?
+			</Description>
+			<Functions>
+				<Check>isInteger</Check>
+			</Functions>
+		</Option>
+		<Option id="maxStore" name="Store # comments" arity="ONE">
+			<Description>
+				Specifies the maximum number of comments to store. Old comments are purged.
+			</Description>
+			<Functions>
+				<Check>isInteger</Check>
+			</Functions>
+		</Option>
+	</OptionsGroup>
+	
+	<OptionsGroup name="Storage">
+		<Option id="storageKey" name="Storage key" arity="ONE">
+			<Description>Specifies the storageKey used to save the comments into the storage.</Description>
+			<Functions>
+				<Check>isBagKey</Check>
+			</Functions>
+		</Option>
+		<Option id="metaName" name="Identifying meta name" arity="ZERO_OR_ONE">
+			<Description>
+			<![CDATA[
+				Specifies a uniquely identifiable meta that will be used as storage key for the document (Good candidates: url, id).<br />
+				If no meta name is set, the default value is 'url' from Hit Info.
+			]]>
+			</Description>
+			<Functions>
+				<ContextMenu>Metas()</ContextMenu>
+			</Functions>
+		</Option>
+		<Option id="commentMetaName" name="Comments meta name" arity="ZERO_OR_ONE">
+			<Description>
+				Specifies the name of the meta under which comments are exported for indexing. This storage key must end by [], ex: "comments[]". Leave blank to disable.
+			</Description>
+			<Functions>
+				<Check>isBagKey</Check>
+			</Functions>
+		</Option>
+		<Option id="commentCountMetaName" name="Comments count meta name" arity="ZERO_OR_ONE">
+			<Description>
+				Meta name under which comments count are exported for indexing (Storage key). ex: "num_comments". Leave blank to disable.
+			</Description>
+		</Option>
+	</OptionsGroup>
+	
+	<DefaultValues displayName="Basic" previewUrl="">
+		<DefaultValue name="storageKey">Comments360Entry[]</DefaultValue>
+		<DefaultValue name="title">Comments</DefaultValue>
+		<DefaultValue name="who">Anonymous</DefaultValue>
+		<DefaultValue name="commentTemplate">basic</DefaultValue>
+		<DefaultValue name="displayPhoto">false</DefaultValue>
+		<DefaultValue name="maxDisplay">10</DefaultValue>
+		<DefaultValue name="maxStore">100</DefaultValue>
+	</DefaultValues>
+	
+	<DefaultValues displayName="Social" previewUrl="">
+		<DefaultValue name="storageKey">Comments360Entry[]</DefaultValue>
+		<DefaultValue name="title"></DefaultValue>
+		<DefaultValue name="who">Anonymous</DefaultValue>
+		<DefaultValue name="commentTemplate">multiline</DefaultValue>
+		<DefaultValue name="displayPhoto">true</DefaultValue>
+		<DefaultValue name="maxDisplay">10</DefaultValue>
+		<DefaultValue name="maxStore">100</DefaultValue>
+	</DefaultValues>
+
+</Widget>

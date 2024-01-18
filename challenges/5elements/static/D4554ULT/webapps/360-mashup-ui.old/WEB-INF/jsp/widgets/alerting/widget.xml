@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<Widget name="Save as alert" group="Collaborative">
+
+	<Description>
+	<![CDATA[
+This widget allows logged users to save their current search (including refinements) as alerts. Alerts are defined with names, descriptions and predefined alert groups. Once saved,
+users will periodically get notified of new or updated documents matching their alerts.
+Note: Add the "Alert manager" widget to enable users to execute, edit and delete their saved alerts.
+	]]>
+	</Description>
+
+	<Preview>
+	<![CDATA[
+		<img src="/resources/widgets/alerting/img/preview.png" />
+	]]>
+	</Preview>
+
+	<Platforms>
+		<Platform type="web" supported="true" />
+		<Platform type="mobile" supported="true" />
+	</Platforms>
+
+	<Includes>
+		<Include type="js" path="/resources/javascript/exa/ui/forms.js" />
+		<Include type="js" path="/resources/javascript/exa/util/Context.js" />
+		<Include type="js" path="/resources/javascript/exa/util/KVOObject.js" />
+		<Include type="js" path="js/AlertingForm.js" />
+		<Include type="js" path="js/AlertingModel.js" />
+		<Include type="css" path="css/alerting.less" />
+		<Include type="css" path="css/alerting-form.less" />		
+	</Includes>
+
+	<SupportWidgetsId arity="ZERO" />
+	<SupportFeedsId arity="ZERO" />
+	<SupportI18N supported="true" />
+		
+</Widget>

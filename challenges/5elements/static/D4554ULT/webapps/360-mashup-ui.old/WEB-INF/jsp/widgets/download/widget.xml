@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<Widget name="Document Download" group="Results Rendering">
+
+	<Description>
+		Displays a download link for the first entry of the given Feed.
+	</Description>
+
+	<Preview>
+		<![CDATA[
+			Download
+		]]>
+	</Preview>
+
+	<SupportWidgetsId arity="ZERO" />
+	<SupportFeedsId arity="ONE" />
+	<SupportI18N supported="true" />
+
+	<OptionsGroup name="General">
+		<Option id="title" name="Widget title" isEvaluated="true">
+			<Description>Widget title. If blank, no name is displayed.</Description>
+		</Option>
+		<Option id="inline" name="Inlined download" isEvaluated="false">
+			<Description>Sets to "true" if it is intended to be displayed automatically by the browser.</Description>
+			<Values>
+				<Value>false</Value>
+				<Value>true</Value>
+			</Values>
+		</Option>
+	</OptionsGroup>
+
+	<OptionsGroup name="Advanced">
+		<Option id="noResultsJspPathHit" name="JSP path to use if no results" arity="ONE">
+			<Description>If there are no results, this widget is hidden using a Trigger or a message is displayed.</Description>
+			<Functions>
+				<Check>isJspPath</Check>
+			</Functions>
+		</Option>
+	</OptionsGroup>
+
+	<DefaultValues>
+		<DefaultValue name="noResultsJspPathHit">/WEB-INF/jsp/commons/noResults.jsp</DefaultValue>
+	</DefaultValues>
+</Widget>

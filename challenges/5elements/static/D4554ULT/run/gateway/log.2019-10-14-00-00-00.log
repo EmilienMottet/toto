@@ -1,0 +1,58 @@
+[2019/10/13-00:00:00.035] [info] [190220174@jtp-default-19] [exa.log.rotation]	Rotating additional logs
+[2019/10/13-00:10:00.001] [info] [DefaultQuartzScheduler_Worker-6] [exa.scheduling]	Triggering scheduled generation of static application report job for application 'null'
+[2019/10/13-00:10:00.004] [info] [445930422@jtp-gateway-4935] [reporting.manager]	Generating static application report
+[2019/10/13-00:10:00.006] [info] [910993884@jtp-default-16] [exa.reporting.sqlite.server]	rotating collection: queries
+[2019/10/13-00:10:00.029] [info] [910993884@jtp-default-16] [exa.reporting.sqlite.server]	rotating collection: opendocs
+[2019/10/13-00:10:00.043] [info] [pool-1-thread-1] [reporting.manager]	Generating static report for application undefined_appid
+[2019/10/13-00:10:00.049] [info] [984016193@jtp-resourcemanager-5] [resourcemanager]	Add an internal resource undefined_appid in group staticreport_undefined_appid
+[2019/10/13-00:10:00.109] [info] [984016193@jtp-resourcemanager-5] [resourcemanager]	Comitting prepared version of resource: undefined_appid
+[2019/10/13-00:10:00.112] [info] [984016193@jtp-resourcemanager-5] [resourcemanager]	Publishing group staticreport_undefined_appid
+[2019/10/13-00:10:00.112] [info] [984016193@jtp-resourcemanager-5] [resourcemanager]	Building resource undefined_appid
+[2019/10/13-00:10:00.114] [info] [984016193@jtp-resourcemanager-5] [resourcemanager]	Resource undefined_appid (version 4) successfully compiled
+[2019/10/13-00:10:00.114] [info] [984016193@jtp-resourcemanager-5] [resourcemanager]	Will publish to: resourceshare.urls.gateway.gateway -> http://mpllnx4032.mpl.michelin.com:16008/
+[2019/10/13-00:10:00.117] [info] [450515017@jtp-resourceshare-90] [datashare]	share: Started datashare session on staticreport_undefined_appid
+[2019/10/13-00:10:00.119] [info] [984016193@jtp-resourcemanager-5] [resourcemanager]	Publishing undefined_appid...
+[2019/10/13-00:10:00.177] [info] [126888713@jtp-resourceshare-88] [exa.io.datashare]	share: Switching DataShare to version 5
+[2019/10/13-00:10:00.177] [info] [126888713@jtp-resourceshare-88] [exa.io.datashare]	share: Garbage collecting datashare version 4
+[2019/10/13-00:10:00.178] [info] [126888713@jtp-resourceshare-88] [datashare]	share: Committed datashare session
+[2019/10/13-00:10:00.188] [info] [984016193@jtp-resourcemanager-5] [resourcemanager]	staticreport_undefined_appid sucessfully published
+[2019/10/13-00:10:00.195] [info] [pool-1-thread-1] [reporting.manager]	Generating static report for application default
+[2019/10/13-00:10:00.201] [info] [984016193@jtp-resourcemanager-5] [resourcemanager]	Add an internal resource default in group staticreport_default
+[2019/10/13-00:10:00.263] [info] [984016193@jtp-resourcemanager-5] [resourcemanager]	Comitting prepared version of resource: default
+[2019/10/13-00:10:00.266] [info] [984016193@jtp-resourcemanager-5] [resourcemanager]	Publishing group staticreport_default
+[2019/10/13-00:10:00.266] [info] [984016193@jtp-resourcemanager-5] [resourcemanager]	Building resource default
+[2019/10/13-00:10:00.267] [info] [984016193@jtp-resourcemanager-5] [resourcemanager]	Resource default (version 4) successfully compiled
+[2019/10/13-00:10:00.267] [info] [984016193@jtp-resourcemanager-5] [resourcemanager]	Will publish to: resourceshare.urls.gateway.gateway -> http://mpllnx4032.mpl.michelin.com:16008/
+[2019/10/13-00:10:00.279] [info] [126888713@jtp-resourceshare-88] [datashare]	share: Started datashare session on staticreport_default
+[2019/10/13-00:10:00.280] [info] [984016193@jtp-resourcemanager-5] [resourcemanager]	Publishing default...
+[2019/10/13-00:10:00.332] [info] [450515017@jtp-resourceshare-90] [exa.io.datashare]	share: Switching DataShare to version 5
+[2019/10/13-00:10:00.333] [info] [450515017@jtp-resourceshare-90] [exa.io.datashare]	share: Garbage collecting datashare version 4
+[2019/10/13-00:10:00.333] [info] [450515017@jtp-resourceshare-90] [datashare]	share: Committed datashare session
+[2019/10/13-00:10:00.333] [info] [984016193@jtp-resourcemanager-5] [resourcemanager]	staticreport_default sucessfully published
+[2019/10/13-04:00:00.001] [info] [DefaultQuartzScheduler_Worker-6] [exa.scheduling]	Triggering scheduled build of suggest 'OnPremise_securedSuggest_ds6w_58_label'
+[2019/10/13-04:00:00.009] [info] [984016193@jtp-resourcemanager-5] [resourcemanager]	Add an internal resource OnPremise_securedSuggest_ds6w_58_label in group autosuggest_OnPremise_securedSuggest_ds6w_58_label
+[2019/10/13-04:00:01.018] [info] [984016193@jtp-resourcemanager-5] [resourcemanager]	Comitting prepared version of resource: OnPremise_securedSuggest_ds6w_58_label
+[2019/10/13-04:00:01.025] [info] [984016193@jtp-resourcemanager-5] [resourcemanager]	Publishing group autosuggest_OnPremise_securedSuggest_ds6w_58_label
+[2019/10/13-04:00:01.025] [info] [984016193@jtp-resourcemanager-5] [resourcemanager]	Building resource OnPremise_securedSuggest_ds6w_58_label
+[2019/10/13-04:00:01.028] [info] [984016193@jtp-resourcemanager-5] [resourcemanager]	Resource OnPremise_securedSuggest_ds6w_58_label (version 3) successfully compiled
+[2019/10/13-04:00:01.028] [info] [984016193@jtp-resourcemanager-5] [resourcemanager]	Will publish to: resourceshare.urls.searcher.searchserver-ss0 -> http://mpllnx4032.mpl.michelin.com:16024/
+[2019/10/13-04:00:01.032] [info] [984016193@jtp-resourcemanager-5] [resourcemanager]	Will publish to: resourceshare.urls.gateway.gateway -> http://mpllnx4032.mpl.michelin.com:16008/
+[2019/10/13-04:00:01.036] [info] [1181059562@jtp-resourceshare-99] [datashare]	share: Started datashare session on autosuggest_OnPremise_securedSuggest_ds6w_58_label
+[2019/10/13-04:00:01.038] [info] [984016193@jtp-resourcemanager-5] [resourcemanager]	Publishing OnPremise_securedSuggest_ds6w_58_label...
+[2019/10/13-04:00:01.188] [info] [1561844465@jtp-resourceshare-100] [exa.io.datashare]	share: Switching DataShare to version 4
+[2019/10/13-04:00:01.189] [info] [1561844465@jtp-resourceshare-100] [exa.io.datashare]	share: Garbage collecting datashare version 3
+[2019/10/13-04:00:01.189] [info] [1561844465@jtp-resourceshare-100] [datashare]	share: Committed datashare session
+[2019/10/13-04:00:01.195] [info] [984016193@jtp-resourcemanager-5] [resourcemanager]	autosuggest_OnPremise_securedSuggest_ds6w_58_label sucessfully published
+[2019/10/14-00:00:00.001] [info] [DefaultQuartzScheduler_Worker-6] [exa.logging]	Rotating logs (scheduled)
+[2019/10/14-00:00:00.001] [info] [DefaultQuartzScheduler_Worker-4] [exa.scheduling]	Triggering scheduled rotation job of schema 'queries'
+[2019/10/14-00:00:00.001] [info] [DefaultQuartzScheduler_Worker-1] [exa.scheduling]	Triggering scheduled rotation job of schema 'mashup-ui'
+[2019/10/14-00:00:00.001] [info] [DefaultQuartzScheduler_Worker-7] [exa.scheduling]	Triggering scheduled rotation job of schema 'suggests'
+[2019/10/14-00:00:00.002] [info] [DefaultQuartzScheduler_Worker-8] [exa.scheduling]	Triggering scheduled rotation job of schema 'mashup-api'
+[2019/10/14-00:00:00.003] [info] [DefaultQuartzScheduler_Worker-10] [exa.scheduling]	Triggering scheduled rotation job of schema 'opendocs'
+[2019/10/14-00:00:00.005] [info] [1956826195@jtp-default-8] [exa.reporting.sqlite.server]	rotating collection: suggests
+[2019/10/14-00:00:00.009] [info] [910993884@jtp-default-16] [exa.reporting.sqlite.server]	rotating collection: mashup-api
+[2019/10/14-00:00:00.009] [info] [1863207185@jtp-default-21] [exa.reporting.sqlite.server]	rotating collection: queries
+[2019/10/14-00:00:00.011] [info] [1012864271@jtp-default-20] [exa.reporting.sqlite.server]	rotating collection: opendocs
+[2019/10/14-00:00:00.017] [info] [510724395@jtp-default-22] [exa.reporting.sqlite.server]	rotating collection: mashup-ui
+[2019/10/14-00:00:00.045] [info] [781442404@jtp-default-23] [exa.log.rotation]	Rotating standard log
+Log4NG: rotating logs now

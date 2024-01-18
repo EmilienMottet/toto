@@ -1,0 +1,72 @@
+[2019/11/05-00:00:00.094] [info] [984138551@jtp-default-1] [exa.log.rotation]	Rotating additional logs
+[2019/11/05-03:00:06.895] [info] [Waiting next query] [exa.search.api]	Slow query ! 5192471
+[2019/11/05-03:00:14.672] [info] [139838851278592] [exa.tick.server]	Starting processing thread
+[2019/11/05-03:00:14.766] [info] [Preprocessing for query collapsing=&group=&hf=-1&limits=max_fetched_hits%3A0%2Cmax_fetched_hits_per_slice%3A0%2Cmax_kept_hits%3A0%2Chits_sampling%3A100&logic=sxisl&of=flea&q=availability%3Aaclfts&relevance=false&rt=disabled& ...[74 chars remaining]] [exa.search.runnerpool]	Created a new runner for logic sxisl ( 0 idle runner and 0 working runner) in 2491ms
+[2019/11/05-03:00:15.573] [info] [139838851278592] [exa.tick.dest]	G64: S128: creating remote connection to 127.0.0.1:16017-part-0
+[2019/11/05-03:00:16.783] [warn] [139838851278592] [search.snippet.builder]	G64: S128: No language facet id set, will process with unknown language
+[2019/11/05-03:00:16.784] [warn] [139838851278592] [search.snippet.builder]	G64: S128: No language facet id set, will process with unknown language
+[2019/11/05-03:00:16.784] [warn] [139838851278592] [search.snippet.builder]	G64: S128: No language facet id set, will process with unknown language
+[2019/11/05-03:00:16.784] [warn] [139838851278592] [search.snippet.builder]	G64: S128: No language facet id set, will process with unknown language
+[2019/11/05-03:00:16.784] [warn] [139838851278592] [search.snippet.builder]	G64: S128: No language facet id set, will process with unknown language
+[2019/11/05-03:00:16.784] [warn] [139838851278592] [search.snippet.builder]	G64: S128: No language facet id set, will process with unknown language
+[2019/11/05-03:00:16.784] [warn] [139838851278592] [search.snippet.builder]	G64: S128: No language facet id set, will process with unknown language
+[2019/11/05-03:00:16.784] [warn] [139838851278592] [search.snippet.builder]	G64: S128: No language facet id set, will process with unknown language
+[2019/11/05-03:00:16.784] [warn] [139838851278592] [search.snippet.builder]	G64: S128: No language facet id set, will process with unknown language
+[2019/11/05-03:00:16.784] [warn] [139838851278592] [search.snippet.builder]	G64: S128: No language facet id set, will process with unknown language
+[2019/11/05-03:00:16.785] [warn] [139838851278592] [search.snippet.builder]	G64: S128: No language facet id set, will process with unknown language
+[2019/11/05-03:00:16.785] [warn] [139838851278592] [search.snippet.builder]	G64: S128: No language facet id set, will process with unknown language
+[2019/11/05-03:00:16.785] [warn] [139838851278592] [search.snippet.builder]	G64: S128: No language facet id set, will process with unknown language
+[2019/11/05-03:00:16.785] [warn] [139838851278592] [search.snippet.builder]	G64: S128: No language facet id set, will process with unknown language
+[2019/11/05-03:00:16.785] [warn] [139838851278592] [search.snippet.builder]	G64: S128: No language facet id set, will process with unknown language
+[2019/11/05-03:00:16.785] [warn] [139838851278592] [search.snippet.builder]	G64: S128: No language facet id set, will process with unknown language
+[2019/11/05-03:00:16.785] [warn] [139838851278592] [search.snippet.builder]	G64: S128: No language facet id set, will process with unknown language
+[2019/11/05-03:00:16.786] [warn] [139838851278592] [search.snippet.builder]	G64: S128: No language facet id set, will process with unknown language
+[2019/11/05-03:00:16.786] [warn] [139838851278592] [search.snippet.builder]	G64: S128: No language facet id set, will process with unknown language
+[2019/11/05-03:00:16.786] [warn] [139838851278592] [search.snippet.builder]	G64: S128: No language facet id set, will process with unknown language
+[2019/11/05-03:00:16.786] [warn] [139838851278592] [search.snippet.builder]	G64: S128: No language facet id set, will process with unknown language
+[2019/11/05-03:00:16.786] [warn] [139838851278592] [search.snippet.builder]	G64: S128: No language facet id set, will process with unknown language
+[2019/11/05-03:00:16.786] [warn] [139838851278592] [search.snippet.builder]	G64: S128: No language facet id set, will process with unknown language
+[2019/11/05-03:00:16.786] [warn] [139838851278592] [search.snippet.builder]	G64: S128: No language facet id set, will process with unknown language
+[2019/11/05-03:00:16.786] [warn] [139838851278592] [search.snippet.builder]	G64: S128: No language facet id set, will process with unknown language
+[2019/11/05-03:00:16.786] [warn] [139838851278592] [search.snippet.builder]	G64: S128: No language facet id set, will process with unknown language
+[2019/11/05-03:00:16.787] [warn] [139838851278592] [search.snippet.builder]	G64: S128: No language facet id set, will process with unknown language
+[2019/11/05-03:00:16.787] [warn] [139838851278592] [search.snippet.builder]	G64: S128: No language facet id set, will process with unknown language
+[2019/11/05-03:00:16.787] [warn] [139838851278592] [search.snippet.builder]	G64: S128: No language facet id set, will process with unknown language
+[2019/11/05-03:00:16.787] [warn] [139838851278592] [search.snippet.builder]	G64: S128: No language facet id set, will process with unknown language
+[2019/11/05-03:00:16.787] [warn] [139838851278592] [search.snippet.builder]	G64: S128: No language facet id set, will process with unknown language
+[2019/11/05-03:00:16.787] [warn] [139838851278592] [search.snippet.builder]	G64: S128: No language facet id set, will process with unknown language
+[2019/11/05-03:00:16.787] [warn] [139838851278592] [search.snippet.builder]	G64: S128: No language facet id set, will process with unknown language
+[2019/11/05-03:00:16.787] [warn] [139838851278592] [search.snippet.builder]	G64: S128: No language facet id set, will process with unknown language
+[2019/11/05-03:00:16.787] [warn] [139838851278592] [search.snippet.builder]	G64: S128: No language facet id set, will process with unknown language
+[2019/11/05-03:00:16.788] [warn] [139838851278592] [search.snippet.builder]	G64: S128: No language facet id set, will process with unknown language
+[2019/11/05-03:00:16.788] [warn] [139838851278592] [search.snippet.builder]	G64: S128: No language facet id set, will process with unknown language
+[2019/11/05-03:00:16.788] [warn] [139838851278592] [search.snippet.builder]	G64: S128: No language facet id set, will process with unknown language
+[2019/11/05-03:00:16.788] [warn] [139838851278592] [search.snippet.builder]	G64: S128: No language facet id set, will process with unknown language
+[2019/11/05-03:00:16.788] [warn] [139838851278592] [search.snippet.builder]	G64: S128: No language facet id set, will process with unknown language
+[2019/11/05-03:00:16.788] [warn] [139838851278592] [search.snippet.builder]	G64: S128: No language facet id set, will process with unknown language
+[2019/11/05-03:00:16.788] [warn] [139838851278592] [search.snippet.builder]	G64: S128: No language facet id set, will process with unknown language
+[2019/11/05-03:00:16.788] [warn] [139838851278592] [search.snippet.builder]	G64: S128: No language facet id set, will process with unknown language
+[2019/11/05-03:00:16.788] [warn] [139838851278592] [search.snippet.builder]	G64: S128: No language facet id set, will process with unknown language
+[2019/11/05-03:00:16.788] [warn] [139838851278592] [search.snippet.builder]	G64: S128: No language facet id set, will process with unknown language
+[2019/11/05-03:00:16.788] [warn] [139838851278592] [search.snippet.builder]	G64: S128: No language facet id set, will process with unknown language
+[2019/11/05-03:00:16.789] [warn] [139838851278592] [search.snippet.builder]	G64: S128: No language facet id set, will process with unknown language
+[2019/11/05-03:00:16.789] [warn] [139838851278592] [search.snippet.builder]	G64: S128: No language facet id set, will process with unknown language
+[2019/11/05-03:00:16.789] [warn] [139838851278592] [search.snippet.builder]	G64: S128: No language facet id set, will process with unknown language
+[2019/11/05-03:00:16.789] [warn] [139838851278592] [search.snippet.builder]	G64: S128: No language facet id set, will process with unknown language
+[2019/11/05-03:00:16.790] [warn] [139838851278592] [search.snippet.builder]	G64: S128: No language facet id set, will process with unknown language
+[2019/11/05-03:00:16.790] [warn] [139838851278592] [search.snippet.builder]	G64: S128: No language facet id set, will process with unknown language
+[2019/11/05-03:00:16.790] [warn] [139838851278592] [search.snippet.builder]	G64: S128: No language facet id set, will process with unknown language
+[2019/11/05-03:00:16.790] [warn] [139838851278592] [search.snippet.builder]	G64: S128: No language facet id set, will process with unknown language
+[2019/11/05-03:00:16.790] [warn] [139838851278592] [search.snippet.builder]	G64: S128: No language facet id set, will process with unknown language
+[2019/11/05-03:00:17.688] [info] [ReportingConsumer-37] [reporting.file-publisher]	Reporting file rotation to: /busdata/dpmu/gbl0/data/cv/bin/../run/searchserver-ss0/search-reporting/search.csv.20191101.00000
+[2019/11/05-03:00:17.694] [info] [ReportingConsumer-37] [reporting.file-publisher]	delete file /busdata/dpmu/gbl0/data/cv/bin/../run/searchserver-ss0/search-reporting/search.csv.20191019.00000
+[2019/11/05-03:00:17.926] [info] [1184459298@jtp-resourceshare-7] [datashare]	share: Started datashare session on autosuggest_OnPremise_securedSuggest_ds6w_58_label
+[2019/11/05-03:00:18.148] [info] [1376125468@jtp-resourceshare-11] [exa.io.datashare]	share: Switching DataShare to version 24
+[2019/11/05-03:00:18.148] [info] [1376125468@jtp-resourceshare-11] [exa.io.datashare]	share: Garbage collecting datashare version 23
+[2019/11/05-03:00:18.150] [info] [1376125468@jtp-resourceshare-11] [datashare]	share: Committed datashare session
+[2019/11/05-08:56:08.796] [info] [1094501293@jtp-resourceshare-10] [datashare]	share: Started datashare session on dictionary-sxidict
+[2019/11/05-08:56:08.899] [info] [1376125468@jtp-resourceshare-11] [exa.io.datashare]	share: Switching DataShare to version 23
+[2019/11/05-08:56:08.916] [info] [1376125468@jtp-resourceshare-11] [exa.io.datashare]	share: Garbage collecting datashare version 22
+[2019/11/05-08:56:09.062] [info] [1376125468@jtp-resourceshare-11] [datashare]	share: Committed datashare session
+[2019/11/06-00:00:00.018] [info] [984138551@jtp-default-1] [exa.log.rotation]	Rotating standard log
+Log4NG: rotating logs now

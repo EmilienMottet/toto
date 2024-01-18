@@ -1,0 +1,3 @@
+[2019/10/11-00:00:00.025] [info] [1196963249@jtp-default-1] [exa.log.rotation]	Rotating additional logs
+[2019/10/12-00:00:00.029] [info] [1196963249@jtp-default-1] [exa.log.rotation]	Rotating standard log
+Log4NG: rotating logs now

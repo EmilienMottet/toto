@@ -1,0 +1,22 @@
+[2019/10/30-00:00:00.050] [info] [151157436@jtp-default-196] [exa.log.rotation]	Rotating additional logs
+[2019/10/30-03:00:00.017] [info] [151157436@jtp-default-196] [suggest.manager]	Scheduling build job for suggest OnPremise_securedSuggest_ds6w_58_label
+[2019/10/30-03:00:00.018] [info] [pool-1-thread-1] [suggest.build.OnPremise_securedSuggest_ds6w_58_label]	Building suggest OnPremise_securedSuggest_ds6w_58_label
+[2019/10/30-03:00:00.291] [info] [pool-1-thread-1] [GL.suggest]	[0] build starting
+[2019/10/30-03:00:00.291] [info] [pool-1-thread-1] [suggest.build.OnPremise_securedSuggest_ds6w_58_label]	Exporting suggest entries...
+[2019/10/30-03:00:00.670] [info] [pool-1-thread-1] [suggest.stream.builder]	processing slice 0 of sxibg0
+[2019/10/30-03:00:00.671] [info] [pool-1-thread-1] [index.generations]	Starting...
+[2019/10/30-03:00:00.728] [info] [pool-1-thread-1] [index.generations]	Switch to generation '42922' done in 56.139ms
+[2019/10/30-03:00:00.748] [info] [pool-1-thread-1] [suggest.stream.builder]	exported 45 hits for slice 0 of sxibg0
+[2019/10/30-03:00:00.750] [info] [pool-1-thread-1] [suggest.stream.builder]	total exported hit count 45
+[2019/10/30-03:00:00.757] [info] [pool-1-thread-1] [suggest.build.OnPremise_securedSuggest_ds6w_58_label]	Suggest entries exported (466 ms, 45 entries, 0 truncated, 0 dropped)
+[2019/10/30-03:00:00.758] [info] [pool-1-thread-1] [suggest.build.OnPremise_securedSuggest_ds6w_58_label]	Sorting suggest entries...
+[2019/10/30-03:00:00.767] [info] [pool-1-thread-1] [suggest.build.OnPremise_securedSuggest_ds6w_58_label]	Suggest entries sorted (9 ms)
+[2019/10/30-03:00:00.821] [info] [pool-1-thread-1] [suggest.build.OnPremise_securedSuggest_ds6w_58_label]	Compiling entries...
+[2019/10/30-03:00:00.834] [info] [pool-1-thread-1] [suggest.build.OnPremise_securedSuggest_ds6w_58_label]	Entries compiled (13 ms)
+[2019/10/30-03:00:00.834] [info] [pool-1-thread-1] [suggest.build.OnPremise_securedSuggest_ds6w_58_label]	Building lookup structure...
+[2019/10/30-03:00:00.837] [info] [pool-1-thread-1] [suggest.build.OnPremise_securedSuggest_ds6w_58_label]	Lookup structure built (3 ms)
+[2019/10/30-03:00:00.844] [info] [pool-1-thread-1] [suggest.build.OnPremise_securedSuggest_ds6w_58_label]	OnPremise_securedSuggest_ds6w_58_label successfully built (39 entries compiled in 546 ms)
+[2019/10/30-03:00:00.844] [info] [pool-1-thread-1] [GL.suggest]	[0] Suggest OnPremise_securedSuggest_ds6w_58_label successfully built
+[2019/10/30-03:00:00.948] [info] [pool-1-thread-1] [suggest.build.OnPremise_securedSuggest_ds6w_58_label]	OnPremise_securedSuggest_ds6w_58_label successfully published
+[2019/10/31-00:00:00.035] [info] [1273057159@jtp-default-200] [exa.log.rotation]	Rotating standard log
+Log4NG: rotating logs now

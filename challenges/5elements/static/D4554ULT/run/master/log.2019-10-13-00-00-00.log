@@ -1,0 +1,4 @@
+[2019/10/12-00:00:00.057] [info] [exa.bee.BeeJob 6] [legacy]	Rotating additional logs
+[2019/10/12-04:00:00.234] [info] [exa.bee.BeeJob 8] [GLcomponent.suggest]	0: build starting
+[2019/10/12-04:00:01.349] [info] [exa.bee.BeeJob 8] [GLcomponent.suggest]	0: Suggest OnPremise_securedSuggest_ds6w_58_label successfully built
+[2019/10/13-00:00:00.064] [info] [exa.bee.BeeJob 6] [legacy]	Rotating standard log

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<Widget name="Page parameter selector" group="Miscellaneous" premium="true">
+
+	<Description>Set a page parameter from a select input.</Description>
+
+	<Preview>
+		Page parameter selector
+	</Preview>
+
+	<Platforms>
+		<Platform type="web" supported="true" />
+		<Platform type="mobile" supported="true" />
+	</Platforms>
+
+	<SupportWidgetsId arity="ZERO" />
+	<SupportFeedsId arity="ZERO" />
+	<SupportI18N supported="true" />
+
+	<OptionsGroup name="General">
+		<Option id="title" name="Widget title" arity="ZERO_OR_ONE" isEvaluated="true">
+			<Description>(required) Specifies the widget title.</Description>		
+		</Option>
+		<Option id="pageParameter" name="Page parameter" arity="ONE">
+			<Description>Name of the page parameter.</Description>		
+			<Functions>
+				<ContextMenu>PageParameters()</ContextMenu>
+				<ContextMenu>COMMON_emptyOnChange()</ContextMenu>
+			</Functions>
+		</Option>		
+		<OptionComposite id="items" name="Items" arity="MANY">
+			<Description>Specifies the items displayed in the control.</Description>
+			<Option id="label" name="Label" isEvaluated="true">
+				<Functions>
+					<Check>isEmpty</Check>
+				</Functions>
+			</Option>
+			<Option id="value" name="Value" isEvaluated="true">
+				<Functions>
+					<ContextMenu>Facets()</ContextMenu>
+					<ContextMenu>COMMON_emptyOnChange()</ContextMenu>
+					<Check>isEmpty</Check>				
+				</Functions>
+			</Option>
+		</OptionComposite>
+		<Option id="submitLabel" name="Submit label" arity="ZERO_OR_ONE" isEvaluated="true">
+		</Option>
+	</OptionsGroup>
+</Widget>

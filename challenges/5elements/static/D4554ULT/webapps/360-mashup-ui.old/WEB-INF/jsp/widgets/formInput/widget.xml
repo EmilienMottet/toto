@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<Widget name="Input" group="Form Controls">
+
+	<Description>This widget allows you to add an input field on a form.</Description>
+
+	<Preview>
+		<![CDATA[
+			<img src="/resources/widgets/formInput/img/preview.png" alt="Input Preview" />
+		]]>
+	</Preview>
+
+	<Keywords>
+		<Keyword>text</Keyword>
+		<Keyword>password</Keyword>
+		<Keyword>date</Keyword>
+		<Keyword>datepicker</Keyword>
+	</Keywords>
+
+	<Includes>
+		<Include type="css" path="css/style.less" />
+		<Include type="js" path="js/jquery.suggest.js" includeCondition="enableSuggest=true" />
+		<Include type="js" path="js/jquery.placeholder.js" />
+		<Include type="css" path="/resources/jquery-ui-1.11.4.custom/jquery-ui.min.css" includeCondition="type=datepicker"/>
+		<Include type="js" path="/resources/jquery-ui-1.11.4.custom/jquery-ui.min.js" includeCondition="type=datepicker"/>
+	</Includes>
+
+	<Dependencies>
+		<Widget name="formForm" />
+	</Dependencies>
+	
+	<Interactions>
+		<Interaction type="in" id="exa.io.FormInterface"></Interaction>
+	</Interactions>
+
+	<SupportFeedsId arity="ZERO_OR_MANY" />
+	<SupportI18N supported="true" />
+
+	<OptionsGroup name="General">
+		<Option id="name" name="Name" arity="ONE">
+			<Description>Defines the name of this control.</Description>
+		</Option>
+		<Option id="value" name="Value" arity="ZERO_OR_ONE" isEvaluated="true">
+			<Description>Defines the input value that will be displayed in the field.</Description>
+		</Option>
+		<Option id="type" name="Type" arity="ONE_OR_MANY">
+			<Description>This attribute specifies the type of control to create.</Description>
+			<Values>
+				<Value>text</Value>
+				<Value>password</Value>
+				<Value>datepicker</Value>
+				<Value>hidden</Value>
+			</Values>
+		</Option>
+		<Option id="placeholder" name="Placeholder" arity="ZERO_OR_ONE">
+			<Description>Displays a hint when input is empty to describe the expected value.</Description>
+		</Option>
+		<Option id="inputwidth" name="Width" arity="ONE">
+			<Description>Specifies the width of this control.</Description>
+			<Functions>
+				<Check>isInteger</Check>
+			</Functions>
+		</Option>
+		<Option id="widthFormat" name="width format">
+			<Description>Specifies the width format of the control (pixels or page percentage).</Description>
+			<Values>
+				<Value>px</Value>
+				<Value>%</Value>
+			</Values>
+		</Option>
+	</OptionsGroup>
+
+	<OptionsGroup name="Suggest">
+		<Description>The Suggest service cannot work for input of type "password" or "hidden".</Description>
+		<Option id="enableSuggest" name="Enable suggest" arity="ONE">
+			<Description>Enables the suggest service on the search field. You must then select a suggest service - previously defined in the Administration Console - from 'Suggest Name'.</Description>			
+			<Values>
+				<Value>false</Value>
+				<Value>true</Value>
+			</Values>
+			<Functions>
+				<Display>PARAMETER_doHide('false',['suggestNames', 'suggestApiAction', 'suggestApiConfig', 'suggestCustomSearchAPIs', 'suggestApiCommand'],[], true, false)</Display>
+			</Functions>
+		</Option>
+		<Option id="suggestNames" name="Suggest Name" arity="MANY">
+			<Description>Suggest service name.</Description>
+			<Functions>
+				<ContextMenu>SuggestNames('suggestApiAction')</ContextMenu>
+				<ContextMenu>COMMON_emptyOnChange()</ContextMenu>
+			</Functions>
+		</Option>
+		<Option id="suggestApiAction" name="Action" arity="ONE">
+			<Description>Specifies whether the suggest should use a simple service or a suggest dispatcher which varies depending on the query input. </Description>	
+			<Values>
+				<Value>dispatcher</Value>
+				<Value>service</Value>
+			</Values>
+		</Option>
+		<Option id="suggestApiConfig" name="Config" arity="ZERO_OR_ONE">
+			<Description>
+				<![CDATA[
+					Indicates the name of the default Search API, for example, <code>sapi0</code>.
+				]]>
+			</Description>
+			<Placeholder>sapi0</Placeholder>
+			<Functions>
+				<ContextMenu>ApiConfig()</ContextMenu>
+				<ContextMenu>COMMON_emptyOnChange()</ContextMenu>
+				<Check>isSpecified('ONE', 'suggestCustomSearchAPIs')</Check>
+			</Functions>
+		</Option>
+		<Option id="suggestCustomSearchAPIs" name="Search API URL" arity="ZERO_OR_MANY">
+			<Description>Defines the URL that will be used by the Search API.</Description>
+			<Placeholder>http://HOST:PORT/</Placeholder>
+			<Functions>
+				<Check>isSpecified('ONE', 'suggestApiConfig')</Check>
+			</Functions>
+		</Option>
+		<Option id="suggestApiCommand" name="API command" arity="ONE">
+			<Description>Specifies the suggest API command name that will be appended to the 'Search API URL'.</Description>
+			<Placeholder>suggest</Placeholder>
+			<Functions>
+				<ContextMenu>ApiCommand()</ContextMenu>
+				<ContextMenu>COMMON_emptyOnChange()</ContextMenu>
+			</Functions>
+		</Option>
+	</OptionsGroup>
+
+	<OptionsGroup name="Validation">
+		<Option id="enableValidation" name="Enable Validation" arity="ONE">
+			<Description>Specifies whether to enable validation for this control.</Description>		
+			<Values>
+				<Value>false</Value>
+				<Value>true</Value>
+			</Values>
+			<Functions>
+				<Display>PARAMETER_doHide('false',['validationRules','validationMessage'],[], true, false)</Display>
+			</Functions>
+		</Option>
+		<Option id="validationRules" name="Validation rules" arity="ZERO_OR_MANY">
+			<Description>The validation rules for this input</Description>
+			<Values>
+				<Value>required</Value>
+				<Value>number</Value>
+				<Value>date</Value>
+				<Value>email</Value>
+				<Value>url</Value>
+				<Value>digits</Value>
+			</Values>
+		</Option>
+		<Option id="validationMessage" name="Validation message" arity="ZERO_OR_ONE">
+			<Description>Specifies the message that will be displayed when validation fails for this field.</Description>
+		</Option>
+	</OptionsGroup>
+
+	<DefaultValues>
+		<DefaultValue name="type">text</DefaultValue>
+		<DefaultValue name="inputwidth">100</DefaultValue>
+		<DefaultValue name="widthFormat">px</DefaultValue>
+
+		<DefaultValue name="enableSuggest">false</DefaultValue>
+		<DefaultValue name="suggestApiAction">service</DefaultValue>
+		<DefaultValue name="suggestApiConfig">sapi0</DefaultValue>
+		<DefaultValue name="suggestApiCommand">suggest</DefaultValue>
+
+		<DefaultValue name="enableValidation">false</DefaultValue>
+		<DefaultValue name="validationRules">required</DefaultValue>
+	</DefaultValues>
+</Widget>

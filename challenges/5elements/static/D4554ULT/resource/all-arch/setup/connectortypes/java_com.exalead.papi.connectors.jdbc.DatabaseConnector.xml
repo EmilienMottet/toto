@@ -1,0 +1,64 @@
+<ConnectorType xmlns="exa:com.exalead.mercury.mami.connect.v10"
+	xmlns:bee="exa:exa.bee" classId="java:com.exalead.papi.connectors.jdbc.DatabaseConnector"
+	label="Database (JDBC)">
+    <defaultForcedMeta>
+      <bee:KeyValue key="security" value="Everybody" />
+    </defaultForcedMeta>
+    <bee:KeyValue key="Mode" description="Operation mode of the connector" />
+    <bee:KeyValue key="DriverClass" description="Full class name of the JDBC Driver" />
+    <bee:KeyValue key="Url" description="The JDBC URL" />
+    <bee:KeyValue key="Login" description="Login used for connection" />
+    <bee:KeyValue key="Password" type="encrypted" description="Password used for connection" />
+    <bee:KeyValue key="InitialQuery" description="SQL query used to synchronize entire document corpus" />
+    <bee:KeyValue key="InitialPreQueries" description="List of SQL queries to execute before initial synchronization">
+      <bee:KeyValue key="0" value="" />
+    </bee:KeyValue>
+    <bee:KeyValue key="InitialPostQueries" description="List of SQL queries to execute after initial synchronization">
+      <bee:KeyValue key="0" value="" />
+    </bee:KeyValue>
+    <bee:KeyValue key="IncrementalQuery" description="SQL query performing a partial/incremental update (also see IncrementalVariable)" />
+    <bee:KeyValue key="IncrementalPreQueries" description="List of SQL queries to execute before incremental synchronization">
+      <bee:KeyValue key="0" value="" />
+    </bee:KeyValue>
+    <bee:KeyValue key="IncrementalPostQueries" description="List of SQL queries to execute after incremental synchronization">
+      <bee:KeyValue key="0" value="" />
+    </bee:KeyValue>
+    <bee:KeyValue key="IncrementalVariable" description="name of the variable substituted in the IncrementalQuery" />
+    <bee:KeyValue key="CheckpointQuery" description="SQL query used to fetch the value of the checkpoint used by the incremental update" />
+    <bee:KeyValue key="CheckpointColumn" description="name of the column used by the incremental update" />
+    <bee:KeyValue key="FetchQuery" description="SQL query used to fetch documents" />
+    <bee:KeyValue key="FetcherClass" value="" description="custom fetcher class" />
+    <bee:KeyValue key="AllUrisQuery" description="SQL query used to list every document URI in the database" />
+    <bee:KeyValue key="AllUrisPreQueries" description="List of SQL queries to execute before URI enumeration (deletion process)">
+      <bee:KeyValue key="0" value="" />
+    </bee:KeyValue>
+    <bee:KeyValue key="AllUrisPostQueries" description="List of SQL queries to execute after URI enumeration (deletion process)">
+      <bee:KeyValue key="0" value="" />
+    </bee:KeyValue>
+    <bee:KeyValue key="ResultSetType" value="" description="ResultSet type (one of FORWARD_ONLY, SCROLL_INSENSITIVE, SCROLL_SENSITIVE)" />
+    <bee:KeyValue key="ResultSetConcurrency" value="" description="ResultSet concurrency (one of READ_ONLY, UPDATABLE)" />
+    <bee:KeyValue key="MaxRowsInRAM" value="" description="maximum number of SQL rows held in RAM (0 means automatic)" />
+    <bee:KeyValue key="MaxFieldSize" value="" description="maximum size of VARCHAR/BINARY values (bigger values are truncated)" />
+    <bee:KeyValue key="FetchDirection" value="" description="fetch direction (one of UNKNOWN, FORWARD, REVERSE)" />
+    <bee:KeyValue key="QueryTimeout" value="" description="SQL query execution timeout" />
+    <bee:KeyValue key="AutoCommit" value="" description="autocommit mode" />
+    <bee:KeyValue key="ReadOnly" value="" description="read only connection mode" />
+    <bee:KeyValue key="Verbose" value="false" description="verbose execution (does not influence processors verboseness)" />
+    <bee:KeyValue key="Mappings" description="Column mappings">
+      <bee:KeyValue key="0" description="">
+        <bee:KeyValue key="ColumnName" value="" description="column label"/>
+        <bee:KeyValue key="IncludeInDocumentURI" value="false" description="should this column be part of the document URI"/>
+        <bee:KeyValue key="Processors" description="custom parameters for the column processor">
+          <bee:KeyValue key="0">
+            <bee:KeyValue key="ColumnProcessor" value="Automatic" description="name of the column processor to use : Automatic, MultipleMetas, MultipleParts, FirstValueAsMeta, LastValueAsMeta, etc.. or class name"/>
+            <bee:KeyValue key="ColumnProcessorParameters" description="custom parameters for the column processor">
+              <bee:KeyValue key="0">
+                <bee:KeyValue key="Key" value="" description=""/>
+                <bee:KeyValue key="Value" value="" description=""/>
+              </bee:KeyValue>
+            </bee:KeyValue>
+          </bee:KeyValue>
+        </bee:KeyValue>
+      </bee:KeyValue>
+    </bee:KeyValue>
+</ConnectorType>

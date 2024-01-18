@@ -1,0 +1,7 @@
+<BuildGroupConfigList xmlns="exa:com.exalead.mercury.mami.deploy.v10" version="1570546421117">
+ <BuildGroupConfig buildGroup="bg0" dataModel="default_model" indexingConfig="ic0_standard">
+  <DIHConfig compactArity="4" nbBloomBitsPerElement="20" nbElementsInLeaf="100" readMode="mmap" enumMode="mmap" compactMode="mmap"/>
+  <BasicSlicePartioningPolicy/>
+  <ContiguousDidAllocationPolicy increasing="true" startingPoint="0"/>
+ </BuildGroupConfig>
+</BuildGroupConfigList>

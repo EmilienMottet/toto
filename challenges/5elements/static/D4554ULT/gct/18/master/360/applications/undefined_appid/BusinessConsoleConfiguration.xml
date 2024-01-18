@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<BusinessConsoleConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lastModifiedDate="0" humanLastModifiedDate="0" xsi:noNamespaceSchemaLocation="">
+    <BoostedHitsConfiguration>
+        <KeyValue key="active" value="true"/>
+        <KeyValue key="documentQueryPrefix" value="rawurl"/>
+        <KeyValue key="documentMeta" value="url"/>
+    </BoostedHitsConfiguration>
+    <RelevanceTuningConfiguration>
+        <KeyValue key="active" value="true"/>
+        <KeyValue key="vField" value="text_relevance"/>
+        <KeyValue key="negativeBoostExpr" value="text_relevance / 2"/>
+        <KeyValue key="positiveBoostExpr" value="text_relevance * 2"/>
+    </RelevanceTuningConfiguration>
+    <SemanticResourcesConfiguration>
+        <KeyValue key="enableWorkflow" value="false" crypted="false"/>
+        <KeyValue key="maxGenKept" value="3" crypted="false"/>
+    </SemanticResourcesConfiguration>
+    <SynonymsConfiguration>
+        <KeyValue key="active" value="true"/>
+        <KeyValue key="weight" value="2"/>
+    </SynonymsConfiguration>
+    <PrivilegesConfiguration>
+        <KeyValue key="canApplyConfiguration" value=""/>
+        <KeyValue key="hasAccess" value="admin"/>
+    </PrivilegesConfiguration>
+    <SearchConfiguration>
+        <KeyValue key="searchAPICommand" value="search-api"/>
+        <KeyValue key="searchAPIConfig" value="sapi0"/>
+        <KeyValue key="staging-sendSecurityTokens" value="false"/>
+        <KeyValue key="searchLogic" value=""/>
+        <KeyValue key="testUI" value="{360-mashup-ui.mu0.url}"/>
+    </SearchConfiguration>
+</BusinessConsoleConfiguration>

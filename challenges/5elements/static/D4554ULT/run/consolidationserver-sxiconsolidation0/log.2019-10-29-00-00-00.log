@@ -1,0 +1,202 @@
+[2019/10/28-00:00:00.048] [info] [1443900956@jtp-default-0] [exa.log.rotation]	Rotating additional logs
+[2019/10/28-14:57:55.106] [info] [PAPI-v4-377751] [TransformationService]	Transformation job started [serial='1572271075106']
+[2019/10/28-14:57:56.978] [info] [PAPI-v4-377751] [consolidationserver]	Syncing...
+[2019/10/28-14:57:56.984] [info] [PAPI-v4-377751] [TransformationService]	Transformation job ended in '1.878s' [serial='1572271075106', transformedCount='52']
+[2019/10/28-14:57:56.984] [info] [PAPI-v4-377751] [consolidationserver]	Committing transformation job [serial='1572271075106']
+[2019/10/28-14:57:56.984] [info] [PAPI-v4-377751] [consolidationserver]	Committing graph matching expressions...
+[2019/10/28-14:57:56.985] [info] [PAPI-v4-377751] [consolidationserver]	Committing sources status...
+[2019/10/28-14:57:56.986] [info] [PAPI-v4-377751] [consolidationserver]	Committing CDIH...
+[2019/10/28-14:57:57.019] [info] [PAPI-v4-377751] [consolidationserver]	Committing SDC...
+[2019/10/28-14:57:57.220] [info] [PAPI-v4-377751] [consolidationserver]	SDC committed
+[2019/10/28-14:57:57.222] [info] [PAPI-v4-377751] [consolidationserver]	CDIH committed
+[2019/10/28-14:57:57.222] [info] [PAPI-v4-377751] [consolidationserver]	Sources status committed
+[2019/10/28-14:57:57.222] [info] [PAPI-v4-377751] [consolidationserver]	Graph matching expressions committed
+[2019/10/28-14:57:57.222] [info] [PAPI-v4-377751] [consolidationserver]	Transformation job committed [serial='1572271075106',nbDocs='52']
+[2019/10/28-14:57:57.224] [info] [Compacter-sxiconsolidation0-377757] [compacter]	Compaction task ended with no component collected in 1.248ms
+[2019/10/28-14:57:57.226] [info] [Compacter-sxiconsolidation0-377758] [compacter]	Compaction task ended with nothing to compact (after first intersect pass) in 1.488ms
+[2019/10/28-14:57:57.261] [info] [PAPI-v4-377753] [TransformationService]	Transformation job started [serial='1572271077261']
+[2019/10/28-14:57:57.261] [info] [PAPI-v4-377753] [consolidationserver]	Syncing...
+[2019/10/28-14:57:57.270] [info] [PAPI-v4-377753] [TransformationService]	Transformation job ended in '9.655ms' [serial='1572271077261', transformedCount='0']
+[2019/10/28-14:57:57.270] [info] [PAPI-v4-377753] [consolidationserver]	Committing transformation job [serial='1572271077261']
+[2019/10/28-14:57:57.270] [info] [PAPI-v4-377753] [consolidationserver]	Committing graph matching expressions...
+[2019/10/28-14:57:57.271] [info] [PAPI-v4-377753] [consolidationserver]	Committing sources status...
+[2019/10/28-14:57:57.272] [info] [PAPI-v4-377753] [consolidationserver]	Committing CDIH...
+[2019/10/28-14:57:57.273] [info] [PAPI-v4-377753] [consolidationserver]	Committing SDC...
+[2019/10/28-14:57:57.299] [info] [PAPI-v4-377753] [consolidationserver]	SDC committed
+[2019/10/28-14:57:57.300] [info] [PAPI-v4-377753] [consolidationserver]	CDIH committed
+[2019/10/28-14:57:57.300] [info] [PAPI-v4-377753] [consolidationserver]	Sources status committed
+[2019/10/28-14:57:57.300] [info] [PAPI-v4-377753] [consolidationserver]	Graph matching expressions committed
+[2019/10/28-14:57:57.300] [info] [PAPI-v4-377753] [consolidationserver]	Transformation job committed [serial='1572271077261',nbDocs='0']
+[2019/10/28-14:57:57.300] [info] [PAPI-v4-377759] [TransformationService]	Transformation job started [serial='1572271077300']
+[2019/10/28-14:57:57.303] [info] [Compacter-sxiconsolidation0-377757] [compacter]	Compaction task ended with nothing to compact (after first intersect pass) in 2.608ms
+[2019/10/28-14:57:57.306] [info] [Compacter-sxiconsolidation0-377758] [compacter]	Compaction task ended with nothing to compact (after first intersect pass) in 2.085ms
+[2019/10/28-14:58:02.371] [info] [CommitCondition-pool-1-thread-1] [consolidationserver]	Synchronize [reason='inactivity - 5 seconds, 49 tasks']
+[2019/10/28-14:58:02.371] [info] [CommitCondition-pool-1-thread-1] [consolidationserver]	Syncing...
+[2019/10/28-14:58:02.372] [info] [CommitCondition-pool-1-thread-1] [TransformationService]	Transformation job ended in '5.071s' [serial='1572271077300', transformedCount='48']
+[2019/10/28-14:58:02.373] [info] [CommitCondition-pool-1-thread-1] [consolidationserver]	Committing transformation job [serial='1572271077300']
+[2019/10/28-14:58:02.373] [info] [CommitCondition-pool-1-thread-1] [consolidationserver]	Committing graph matching expressions...
+[2019/10/28-14:58:02.374] [info] [CommitCondition-pool-1-thread-1] [consolidationserver]	Committing sources status...
+[2019/10/28-14:58:02.374] [info] [CommitCondition-pool-1-thread-1] [consolidationserver]	Committing CDIH...
+[2019/10/28-14:58:02.378] [info] [CommitCondition-pool-1-thread-1] [consolidationserver]	Committing SDC...
+[2019/10/28-14:58:02.403] [info] [CommitCondition-pool-1-thread-1] [consolidationserver]	SDC committed
+[2019/10/28-14:58:02.406] [info] [CommitCondition-pool-1-thread-1] [consolidationserver]	CDIH committed
+[2019/10/28-14:58:02.406] [info] [CommitCondition-pool-1-thread-1] [consolidationserver]	Sources status committed
+[2019/10/28-14:58:02.406] [info] [CommitCondition-pool-1-thread-1] [consolidationserver]	Graph matching expressions committed
+[2019/10/28-14:58:02.406] [info] [CommitCondition-pool-1-thread-1] [consolidationserver]	Transformation job committed [serial='1572271077300',nbDocs='48']
+[2019/10/28-14:58:02.410] [info] [Compacter-sxiconsolidation0-377757] [compacter]	Compaction task ended with nothing to compact (after first intersect pass) in 3.978ms
+[2019/10/28-14:58:02.413] [info] [Compacter-sxiconsolidation0-377758] [compacter.cdih]	Compaction started for table 'cdids' from gen '25019' to '25022'
+[2019/10/28-14:58:02.416] [info] [Compacter-sxiconsolidation0-377758] [compacter.cdih]	Compact done for table 'cdids' from gen '25019' to '25022' in 3.731ms
+[2019/10/28-14:58:02.431] [info] [Compacter-sxiconsolidation0-377758] [compacter]	Completed compaction task in '20.791ms' [minGen='25019', maxGen='25022']
+[2019/10/28-14:58:02.431] [info] [Compacter-sxiconsolidation0-377758] [compacter]	  Compacted component 'cdids' [25019-25022] range='4'
+[2019/10/28-14:58:05.370] [info] [PAPI-v4-377751] [TransformationService]	Transformation job started [serial='1572271085370']
+[2019/10/28-14:58:05.378] [info] [PAPI-v4-377751] [consolidationserver]	Syncing...
+[2019/10/28-14:58:05.379] [info] [PAPI-v4-377751] [TransformationService]	Transformation job ended in '9.536ms' [serial='1572271085370', transformedCount='0']
+[2019/10/28-14:58:05.379] [info] [PAPI-v4-377751] [consolidationserver]	Committing transformation job [serial='1572271085370']
+[2019/10/28-14:58:05.379] [info] [PAPI-v4-377751] [consolidationserver]	Committing graph matching expressions...
+[2019/10/28-14:58:05.380] [info] [PAPI-v4-377751] [consolidationserver]	Committing sources status...
+[2019/10/28-14:58:05.380] [info] [PAPI-v4-377751] [consolidationserver]	Committing CDIH...
+[2019/10/28-14:58:05.381] [info] [PAPI-v4-377751] [consolidationserver]	Committing SDC...
+[2019/10/28-14:58:05.396] [info] [PAPI-v4-377751] [consolidationserver]	SDC committed
+[2019/10/28-14:58:05.398] [info] [PAPI-v4-377751] [consolidationserver]	CDIH committed
+[2019/10/28-14:58:05.398] [info] [PAPI-v4-377751] [consolidationserver]	Sources status committed
+[2019/10/28-14:58:05.398] [info] [PAPI-v4-377751] [consolidationserver]	Graph matching expressions committed
+[2019/10/28-14:58:05.398] [info] [PAPI-v4-377751] [consolidationserver]	Transformation job committed [serial='1572271085370',nbDocs='0']
+[2019/10/28-14:58:05.402] [info] [Compacter-sxiconsolidation0-377757] [compacter.checkpoints]	Compaction started for table 'checkpoints' from gen '133288' to '133291'
+[2019/10/28-14:58:05.403] [info] [Compacter-sxiconsolidation0-377758] [compacter]	Compaction task ended with nothing to compact (after first intersect pass) in 1.082ms
+[2019/10/28-14:58:05.405] [info] [Compacter-sxiconsolidation0-377757] [compacter.checkpoints]	Compact done for table 'checkpoints' from gen '133288' to '133291' in 2.554ms
+[2019/10/28-14:58:05.412] [info] [Compacter-sxiconsolidation0-377757] [compacter]	Completed compaction task in '14.155ms' [minGen='133288', maxGen='133291']
+[2019/10/28-14:58:05.412] [info] [Compacter-sxiconsolidation0-377757] [compacter]	  Compacted component 'checkpoints' [133288-133291] range='4'
+[2019/10/28-14:58:09.011] [info] [GC-sxiconsolidation0-65] [gc.diskfiles]	Completed disk files garbage collection in 7.708ms [removedFiles='26', removedBytes='55.787KB']
+[2019/10/28-14:58:10.486] [info] [CommitCondition-pool-1-thread-2] [consolidationserver]	Trigger aggregation [reason='inactivity - 5 seconds, 105 tasks']
+[2019/10/28-14:58:10.488] [info] [AggregationService] [aggregation]	Starting aggregation [lo='1572271075106', hi='1572271085370']
+[2019/10/28-14:58:10.523] [info] [AggregationService] [aggregation]	Aggregation on old generation done in '33.820ms (33 ms)' [impactedCount='47', impactDetectionResultCount='0', aggregatedCount='47']
+[2019/10/28-14:58:10.548] [info] [AggregationService] [aggregation]	Impact Detection done in: '8.803ms' (8 ms)
+[2019/10/28-14:58:10.549] [info] [AggregationService] [aggregation]	Consolidation cache post-processing on impact detection results took 400.261us with 53 document(s) at the end
+[2019/10/28-14:58:10.558] [info] [AggregationService] [aggregation]	Aggregation on new generation done '18.746ms (18 ms)' [impactedCount='100', impactDetectionResultCount='0', aggregatedCount='100']
+[2019/10/28-14:58:10.694] [info] [AggregationService] [aggregation]	Aggregation done in '206.227ms (206ms) ' [lo='1572271075106', hi='1572271085370'] (Time spent on waiting for consolidation forward PAPI targets: 135.822ms (135ms))
+[2019/10/28-14:58:10.865] [info] [AggregationService] [consolidationserver]	Committing last synchronized serial: 1572271085370 [targets={sxibg0:1572271090711}]
+[2019/10/28-14:58:10.866] [info] [AggregationService] [consolidationserver]	Committing graph matching expressions...
+[2019/10/28-14:58:10.874] [info] [AggregationService] [consolidationserver]	Graph matching expressions committed
+[2019/10/28-14:58:10.875] [info] [AggregationService] [consolidationserver]	Committed last synchronized serial: 1572271085370 [targets={sxibg0:1572271090711}]
+[2019/10/28-14:58:10.877] [info] [Compacter-sxiconsolidation0-377758] [compacter]	Compaction task ended with nothing to compact (after first intersect pass) in 1.822ms
+[2019/10/28-14:58:10.878] [info] [Compacter-sxiconsolidation0-377757] [compacter]	Compaction task ended with nothing to compact (after first intersect pass) in 967.972us
+[2019/10/28-14:58:24.018] [info] [GC-sxiconsolidation0-65] [gc.diskfiles]	Completed disk files garbage collection in 6.534ms [removedFiles='2', removedBytes='14.916KB']
+[2019/10/28-14:59:18.753] [info] [Compacter-sxiconsolidation0-377771] [compacter]	Compaction task ended with nothing to compact (after first intersect pass) in 2.000ms
+[2019/10/28-14:59:18.754] [info] [Compacter-sxiconsolidation0-377772] [compacter]	Compaction task ended with nothing to compact (after first intersect pass) in 1.037ms
+[2019/10/28-16:30:32.507] [info] [PAPI-v4-377870] [TransformationService]	Transformation job started [serial='1572276632507']
+[2019/10/28-16:30:33.856] [info] [PAPI-v4-377870] [consolidationserver]	Syncing...
+[2019/10/28-16:30:33.857] [info] [PAPI-v4-377870] [TransformationService]	Transformation job ended in '1.349s' [serial='1572276632507', transformedCount='6']
+[2019/10/28-16:30:33.857] [info] [PAPI-v4-377870] [consolidationserver]	Committing transformation job [serial='1572276632507']
+[2019/10/28-16:30:33.857] [info] [PAPI-v4-377870] [consolidationserver]	Committing graph matching expressions...
+[2019/10/28-16:30:33.858] [info] [PAPI-v4-377870] [consolidationserver]	Committing sources status...
+[2019/10/28-16:30:33.858] [info] [PAPI-v4-377870] [consolidationserver]	Committing CDIH...
+[2019/10/28-16:30:33.862] [info] [PAPI-v4-377870] [consolidationserver]	Committing SDC...
+[2019/10/28-16:30:33.929] [info] [PAPI-v4-377870] [consolidationserver]	SDC committed
+[2019/10/28-16:30:33.931] [info] [PAPI-v4-377870] [consolidationserver]	CDIH committed
+[2019/10/28-16:30:33.931] [info] [PAPI-v4-377870] [consolidationserver]	Sources status committed
+[2019/10/28-16:30:33.931] [info] [PAPI-v4-377870] [consolidationserver]	Graph matching expressions committed
+[2019/10/28-16:30:33.931] [info] [PAPI-v4-377870] [consolidationserver]	Transformation job committed [serial='1572276632507',nbDocs='6']
+[2019/10/28-16:30:33.933] [info] [Compacter-sxiconsolidation0-377875] [compacter]	Compaction task ended with nothing to compact (after first intersect pass) in 1.801ms
+[2019/10/28-16:30:33.936] [info] [Compacter-sxiconsolidation0-377876] [compacter]	Compaction task ended with nothing to compact (after first intersect pass) in 1.981ms
+[2019/10/28-16:30:33.989] [info] [PAPI-v4-377870] [TransformationService]	Transformation job started [serial='1572276633989']
+[2019/10/28-16:30:34.412] [info] [PAPI-v4-377870] [consolidationserver]	Syncing...
+[2019/10/28-16:30:34.413] [info] [PAPI-v4-377870] [TransformationService]	Transformation job ended in '424.275ms' [serial='1572276633989', transformedCount='47']
+[2019/10/28-16:30:34.413] [info] [PAPI-v4-377870] [consolidationserver]	Committing transformation job [serial='1572276633989']
+[2019/10/28-16:30:34.413] [info] [PAPI-v4-377870] [consolidationserver]	Committing graph matching expressions...
+[2019/10/28-16:30:34.414] [info] [PAPI-v4-377870] [consolidationserver]	Committing sources status...
+[2019/10/28-16:30:34.415] [info] [PAPI-v4-377870] [consolidationserver]	Committing CDIH...
+[2019/10/28-16:30:34.419] [info] [PAPI-v4-377870] [consolidationserver]	Committing SDC...
+[2019/10/28-16:30:34.441] [info] [PAPI-v4-377870] [consolidationserver]	SDC committed
+[2019/10/28-16:30:34.443] [info] [PAPI-v4-377870] [consolidationserver]	CDIH committed
+[2019/10/28-16:30:34.443] [info] [PAPI-v4-377870] [consolidationserver]	Sources status committed
+[2019/10/28-16:30:34.443] [info] [PAPI-v4-377870] [consolidationserver]	Graph matching expressions committed
+[2019/10/28-16:30:34.443] [info] [PAPI-v4-377870] [consolidationserver]	Transformation job committed [serial='1572276633989',nbDocs='47']
+[2019/10/28-16:30:34.452] [info] [Compacter-sxiconsolidation0-377875] [compacter]	Compaction task ended with nothing to compact (after first intersect pass) in 8.319ms
+[2019/10/28-16:30:34.454] [info] [Compacter-sxiconsolidation0-377876] [compacter]	Compaction task ended with nothing to compact (after first intersect pass) in 2.497ms
+[2019/10/28-16:30:34.468] [info] [PAPI-v4-377871] [TransformationService]	Transformation job started [serial='1572276634468']
+[2019/10/28-16:30:34.468] [info] [PAPI-v4-377871] [consolidationserver]	Syncing...
+[2019/10/28-16:30:34.483] [info] [PAPI-v4-377871] [TransformationService]	Transformation job ended in '14.431ms' [serial='1572276634468', transformedCount='0']
+[2019/10/28-16:30:34.483] [info] [PAPI-v4-377871] [consolidationserver]	Committing transformation job [serial='1572276634468']
+[2019/10/28-16:30:34.483] [info] [PAPI-v4-377871] [consolidationserver]	Committing graph matching expressions...
+[2019/10/28-16:30:34.484] [info] [PAPI-v4-377871] [consolidationserver]	Committing sources status...
+[2019/10/28-16:30:34.484] [info] [PAPI-v4-377871] [consolidationserver]	Committing CDIH...
+[2019/10/28-16:30:34.486] [info] [PAPI-v4-377871] [consolidationserver]	Committing SDC...
+[2019/10/28-16:30:34.505] [info] [PAPI-v4-377871] [consolidationserver]	SDC committed
+[2019/10/28-16:30:34.506] [info] [PAPI-v4-377871] [consolidationserver]	CDIH committed
+[2019/10/28-16:30:34.506] [info] [PAPI-v4-377871] [consolidationserver]	Sources status committed
+[2019/10/28-16:30:34.506] [info] [PAPI-v4-377871] [consolidationserver]	Graph matching expressions committed
+[2019/10/28-16:30:34.506] [info] [PAPI-v4-377871] [consolidationserver]	Transformation job committed [serial='1572276634468',nbDocs='0']
+[2019/10/28-16:30:34.509] [info] [PAPI-v4-377870] [TransformationService]	Transformation job started [serial='1572276634509']
+[2019/10/28-16:30:34.510] [info] [Compacter-sxiconsolidation0-377875] [compacter]	Compaction task ended with nothing to compact (after first intersect pass) in 3.322ms
+[2019/10/28-16:30:34.514] [info] [Compacter-sxiconsolidation0-377876] [compacter]	Compaction task ended with nothing to compact (after first intersect pass) in 4.257ms
+[2019/10/28-16:30:39.541] [info] [CommitCondition-pool-1-thread-2] [consolidationserver]	Trigger aggregation [reason='inactivity - 5 seconds, 55 tasks']
+[2019/10/28-16:30:39.542] [info] [AggregationService] [aggregation]	Starting aggregation [lo='1572276632507', hi='1572276634468']
+[2019/10/28-16:30:39.573] [info] [AggregationService] [aggregation]	Aggregation on old generation done in '28.639ms (28 ms)' [impactedCount='47', impactDetectionResultCount='0', aggregatedCount='47']
+[2019/10/28-16:30:39.591] [info] [AggregationService] [aggregation]	Impact Detection done in: '2.250ms' (2 ms)
+[2019/10/28-16:30:39.591] [info] [AggregationService] [aggregation]	Consolidation cache post-processing on impact detection results took 24.057us with 6 document(s) at the end
+[2019/10/28-16:30:39.605] [info] [AggregationService] [aggregation]	Aggregation on new generation done '16.157ms (16 ms)' [impactedCount='53', impactDetectionResultCount='0', aggregatedCount='53']
+[2019/10/28-16:30:39.712] [info] [AggregationService] [aggregation]	Aggregation done in '169.324ms (169ms) ' [lo='1572276632507', hi='1572276634468'] (Time spent on waiting for consolidation forward PAPI targets: 106.293ms (106ms))
+[2019/10/28-16:30:39.809] [info] [CommitCondition-pool-1-thread-1] [consolidationserver]	Synchronize [reason='inactivity - 5 seconds, 50 tasks']
+[2019/10/28-16:30:39.809] [info] [CommitCondition-pool-1-thread-1] [consolidationserver]	Syncing...
+[2019/10/28-16:30:39.811] [info] [CommitCondition-pool-1-thread-1] [TransformationService]	Transformation job ended in '5.301s' [serial='1572276634509', transformedCount='49']
+[2019/10/28-16:30:39.811] [info] [CommitCondition-pool-1-thread-1] [consolidationserver]	Committing transformation job [serial='1572276634509']
+[2019/10/28-16:30:39.811] [info] [CommitCondition-pool-1-thread-1] [consolidationserver]	Committing graph matching expressions...
+[2019/10/28-16:30:39.811] [info] [CommitCondition-pool-1-thread-1] [consolidationserver]	Committing sources status...
+[2019/10/28-16:30:39.812] [info] [CommitCondition-pool-1-thread-1] [consolidationserver]	Committing CDIH...
+[2019/10/28-16:30:39.815] [info] [CommitCondition-pool-1-thread-1] [consolidationserver]	Committing SDC...
+[2019/10/28-16:30:39.850] [info] [CommitCondition-pool-1-thread-1] [consolidationserver]	SDC committed
+[2019/10/28-16:30:39.853] [info] [CommitCondition-pool-1-thread-1] [consolidationserver]	CDIH committed
+[2019/10/28-16:30:39.853] [info] [CommitCondition-pool-1-thread-1] [consolidationserver]	Sources status committed
+[2019/10/28-16:30:39.853] [info] [CommitCondition-pool-1-thread-1] [consolidationserver]	Graph matching expressions committed
+[2019/10/28-16:30:39.853] [info] [CommitCondition-pool-1-thread-1] [consolidationserver]	Transformation job committed [serial='1572276634509',nbDocs='49']
+[2019/10/28-16:30:39.853] [info] [AggregationService] [consolidationserver]	Committing last synchronized serial: 1572276634468 [targets={sxibg0:1572276639726}]
+[2019/10/28-16:30:39.854] [info] [AggregationService] [consolidationserver]	Committing graph matching expressions...
+[2019/10/28-16:30:39.859] [info] [Compacter-sxiconsolidation0-377875] [compacter]	Compaction task ended with nothing to compact (after first intersect pass) in 5.328ms
+[2019/10/28-16:30:39.865] [info] [AggregationService] [consolidationserver]	Graph matching expressions committed
+[2019/10/28-16:30:39.866] [info] [AggregationService] [consolidationserver]	Committed last synchronized serial: 1572276634468 [targets={sxibg0:1572276639726}]
+[2019/10/28-16:30:39.867] [info] [Compacter-sxiconsolidation0-377876] [compacter]	Compaction task ended with nothing to compact (after first intersect pass) in 4.947ms
+[2019/10/28-16:30:39.872] [info] [Compacter-sxiconsolidation0-377876] [compacter.og]	Compaction started for table 'og' from gen '25021' to '25024'
+[2019/10/28-16:30:39.875] [info] [Compacter-sxiconsolidation0-377876] [compacter.og]	Compact done for table 'og' from gen '25021' to '25024' in 2.893ms
+[2019/10/28-16:30:39.875] [info] [Compacter-sxiconsolidation0-377876] [compacter.documents]	Compaction started for table 'documents' from gen '25021' to '25024'
+[2019/10/28-16:30:39.876] [info] [Compacter-sxiconsolidation0-377875] [compacter]	Compaction task ended with nothing to compact (after first intersect pass) in 3.361ms
+[2019/10/28-16:30:39.879] [info] [Compacter-sxiconsolidation0-377876] [compacter.documents]	Compact done for table 'documents' from gen '25021' to '25024' in 4.037ms
+[2019/10/28-16:30:39.914] [info] [Compacter-sxiconsolidation0-377876] [compacter]	Completed compaction task in '46.624ms' [minGen='25021', maxGen='25024']
+[2019/10/28-16:30:39.914] [info] [Compacter-sxiconsolidation0-377876] [compacter]	  Compacted component 'og' [25021-25024] range='4'
+[2019/10/28-16:30:39.914] [info] [Compacter-sxiconsolidation0-377876] [compacter]	  Compacted component 'documents' [25021-25024] range='4'
+[2019/10/28-16:30:40.987] [info] [GC-sxiconsolidation0-65] [gc.diskfiles]	Completed disk files garbage collection in 13.530ms [removedFiles='57', removedBytes='92.149KB']
+[2019/10/28-16:30:42.567] [info] [PAPI-v4-377877] [TransformationService]	Transformation job started [serial='1572276642567']
+[2019/10/28-16:30:42.575] [info] [PAPI-v4-377877] [consolidationserver]	Syncing...
+[2019/10/28-16:30:42.577] [info] [PAPI-v4-377877] [TransformationService]	Transformation job ended in '9.182ms' [serial='1572276642567', transformedCount='0']
+[2019/10/28-16:30:42.577] [info] [PAPI-v4-377877] [consolidationserver]	Committing transformation job [serial='1572276642567']
+[2019/10/28-16:30:42.577] [info] [PAPI-v4-377877] [consolidationserver]	Committing graph matching expressions...
+[2019/10/28-16:30:42.578] [info] [PAPI-v4-377877] [consolidationserver]	Committing sources status...
+[2019/10/28-16:30:42.578] [info] [PAPI-v4-377877] [consolidationserver]	Committing CDIH...
+[2019/10/28-16:30:42.579] [info] [PAPI-v4-377877] [consolidationserver]	Committing SDC...
+[2019/10/28-16:30:42.599] [info] [PAPI-v4-377877] [consolidationserver]	SDC committed
+[2019/10/28-16:30:42.611] [info] [PAPI-v4-377877] [consolidationserver]	CDIH committed
+[2019/10/28-16:30:42.611] [info] [PAPI-v4-377877] [consolidationserver]	Sources status committed
+[2019/10/28-16:30:42.611] [info] [PAPI-v4-377877] [consolidationserver]	Graph matching expressions committed
+[2019/10/28-16:30:42.611] [info] [PAPI-v4-377877] [consolidationserver]	Transformation job committed [serial='1572276642567',nbDocs='0']
+[2019/10/28-16:30:42.617] [info] [Compacter-sxiconsolidation0-377875] [compacter]	Compaction task ended with nothing to compact (after first intersect pass) in 5.485ms
+[2019/10/28-16:30:42.619] [info] [Compacter-sxiconsolidation0-377876] [compacter]	Compaction task ended with nothing to compact (after first intersect pass) in 2.052ms
+[2019/10/28-16:30:48.059] [info] [CommitCondition-pool-1-thread-2] [consolidationserver]	Trigger aggregation [reason='inactivity - 5 seconds, 52 tasks']
+[2019/10/28-16:30:48.060] [info] [AggregationService] [aggregation]	Starting aggregation [lo='1572276634509', hi='1572276642567']
+[2019/10/28-16:30:48.074] [info] [AggregationService] [aggregation]	Aggregation on old generation done in '11.470ms (11 ms)' [impactedCount='0', impactDetectionResultCount='0', aggregatedCount='0']
+[2019/10/28-16:30:48.083] [info] [AggregationService] [aggregation]	Impact Detection done in: '7.624ms' (7 ms)
+[2019/10/28-16:30:48.083] [info] [AggregationService] [aggregation]	Consolidation cache post-processing on impact detection results took 93.036us with 49 document(s) at the end
+[2019/10/28-16:30:48.099] [info] [AggregationService] [aggregation]	Aggregation on new generation done '22.994ms (22 ms)' [impactedCount='49', impactDetectionResultCount='0', aggregatedCount='49']
+[2019/10/28-16:30:48.187] [info] [AggregationService] [aggregation]	Aggregation done in '126.721ms (126ms) ' [lo='1572276634509', hi='1572276642567'] (Time spent on waiting for consolidation forward PAPI targets: 88.061ms (88ms))
+[2019/10/28-16:30:48.303] [info] [AggregationService] [consolidationserver]	Committing last synchronized serial: 1572276642567 [targets={sxibg0:1572276648206}]
+[2019/10/28-16:30:48.303] [info] [AggregationService] [consolidationserver]	Committing graph matching expressions...
+[2019/10/28-16:30:48.324] [info] [AggregationService] [consolidationserver]	Graph matching expressions committed
+[2019/10/28-16:30:48.325] [info] [AggregationService] [consolidationserver]	Committed last synchronized serial: 1572276642567 [targets={sxibg0:1572276648206}]
+[2019/10/28-16:30:48.331] [info] [Compacter-sxiconsolidation0-377875] [compacter.checkpoints]	Compaction started for table 'checkpoints' from gen '133292' to '133295'
+[2019/10/28-16:30:48.334] [info] [Compacter-sxiconsolidation0-377876] [compacter]	Compaction task ended with nothing to compact (after first intersect pass) in 2.619ms
+[2019/10/28-16:30:48.335] [info] [Compacter-sxiconsolidation0-377875] [compacter.checkpoints]	Compact done for table 'checkpoints' from gen '133292' to '133295' in 3.612ms
+[2019/10/28-16:30:48.342] [info] [Compacter-sxiconsolidation0-377875] [compacter]	Completed compaction task in '16.614ms' [minGen='133292', maxGen='133295']
+[2019/10/28-16:30:48.342] [info] [Compacter-sxiconsolidation0-377875] [compacter]	  Compacted component 'checkpoints' [133292-133295] range='4'
+[2019/10/28-16:30:56.003] [info] [GC-sxiconsolidation0-65] [gc.diskfiles]	Completed disk files garbage collection in 16.185ms [removedFiles='17', removedBytes='28.481KB']
+[2019/10/28-16:31:48.773] [info] [Compacter-sxiconsolidation0-377899] [compacter]	Compaction task ended with nothing to compact (after first intersect pass) in 3.411ms
+[2019/10/28-16:31:48.775] [info] [Compacter-sxiconsolidation0-377900] [compacter]	Compaction task ended with nothing to compact (after first intersect pass) in 1.007ms
+[2019/10/29-00:00:00.080] [info] [1443900956@jtp-default-0] [exa.log.rotation]	Rotating standard log
+Log4NG: rotating logs now

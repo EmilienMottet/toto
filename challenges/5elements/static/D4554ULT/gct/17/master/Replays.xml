@@ -1,0 +1,1 @@
+<replay:ReplayConfig port="0" maxIdleTime="0" engineType="sqlite" overlayThreshold="100" commitSizeMbThreshold="10" commitPeriodSecThreshold="10" hasSnapshot="true" version="1570546421000" xmlns:replay="exa:com.exalead.mercury.mami.replayserver.v10" xmlns:config="exa:exa.bee.config"/>

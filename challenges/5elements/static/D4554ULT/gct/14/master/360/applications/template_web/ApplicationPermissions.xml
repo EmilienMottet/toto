@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ApplicationPermissions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="">
+    <Groups>
+        <Group id="admin">
+            <User id="admin"/>
+        </Group>
+    </Groups>
+    <Sections>
+        <Section id="mashupbuilder" permission="NONE">
+            <Section id="application_settings" permission="READ">
+                <Group id="admin" permission="WRITE"/>
+            </Section>
+            <Section id="widget_builder" permission="WRITE"/>
+            <Section id="*">
+                <Section id="ui" permission="WRITE"/>
+                <Section id="api" permission="WRITE"/>
+            </Section>
+        </Section>
+    </Sections>
+</ApplicationPermissions>

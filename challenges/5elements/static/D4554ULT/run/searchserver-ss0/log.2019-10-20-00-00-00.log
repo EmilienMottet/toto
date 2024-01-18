@@ -1,0 +1,48 @@
+[2019/10/19-00:00:00.018] [info] [1821215584@jtp-default-1] [exa.log.rotation]	Rotating additional logs
+[2019/10/19-04:00:00.198] [info] [Waiting next query] [exa.search.api]	Slow query ! 180189
+[2019/10/19-04:00:00.502] [warn] [140107486942976] [search.snippet.builder]	G43968: S44032: No language facet id set, will process with unknown language
+[2019/10/19-04:00:00.502] [warn] [140107486942976] [search.snippet.builder]	G43968: S44032: No language facet id set, will process with unknown language
+[2019/10/19-04:00:00.502] [warn] [140107486942976] [search.snippet.builder]	G43968: S44032: No language facet id set, will process with unknown language
+[2019/10/19-04:00:00.502] [warn] [140107486942976] [search.snippet.builder]	G43968: S44032: No language facet id set, will process with unknown language
+[2019/10/19-04:00:00.502] [warn] [140107486942976] [search.snippet.builder]	G43968: S44032: No language facet id set, will process with unknown language
+[2019/10/19-04:00:00.502] [warn] [140107486942976] [search.snippet.builder]	G43968: S44032: No language facet id set, will process with unknown language
+[2019/10/19-04:00:00.503] [warn] [140107486942976] [search.snippet.builder]	G43968: S44032: No language facet id set, will process with unknown language
+[2019/10/19-04:00:00.503] [warn] [140107486942976] [search.snippet.builder]	G43968: S44032: No language facet id set, will process with unknown language
+[2019/10/19-04:00:00.503] [warn] [140107486942976] [search.snippet.builder]	G43968: S44032: No language facet id set, will process with unknown language
+[2019/10/19-04:00:00.503] [warn] [140107486942976] [search.snippet.builder]	G43968: S44032: No language facet id set, will process with unknown language
+[2019/10/19-04:00:00.503] [warn] [140107486942976] [search.snippet.builder]	G43968: S44032: No language facet id set, will process with unknown language
+[2019/10/19-04:00:00.503] [warn] [140107486942976] [search.snippet.builder]	G43968: S44032: No language facet id set, will process with unknown language
+[2019/10/19-04:00:00.503] [warn] [140107486942976] [search.snippet.builder]	G43968: S44032: No language facet id set, will process with unknown language
+[2019/10/19-04:00:00.503] [warn] [140107486942976] [search.snippet.builder]	G43968: S44032: No language facet id set, will process with unknown language
+[2019/10/19-04:00:00.503] [warn] [140107486942976] [search.snippet.builder]	G43968: S44032: No language facet id set, will process with unknown language
+[2019/10/19-04:00:00.503] [warn] [140107486942976] [search.snippet.builder]	G43968: S44032: No language facet id set, will process with unknown language
+[2019/10/19-04:00:00.503] [warn] [140107486942976] [search.snippet.builder]	G43968: S44032: No language facet id set, will process with unknown language
+[2019/10/19-04:00:00.504] [warn] [140107486942976] [search.snippet.builder]	G43968: S44032: No language facet id set, will process with unknown language
+[2019/10/19-04:00:00.504] [warn] [140107486942976] [search.snippet.builder]	G43968: S44032: No language facet id set, will process with unknown language
+[2019/10/19-04:00:00.504] [warn] [140107486942976] [search.snippet.builder]	G43968: S44032: No language facet id set, will process with unknown language
+[2019/10/19-04:00:00.504] [warn] [140107486942976] [search.snippet.builder]	G43968: S44032: No language facet id set, will process with unknown language
+[2019/10/19-04:00:00.504] [warn] [140107486942976] [search.snippet.builder]	G43968: S44032: No language facet id set, will process with unknown language
+[2019/10/19-04:00:00.504] [warn] [140107486942976] [search.snippet.builder]	G43968: S44032: No language facet id set, will process with unknown language
+[2019/10/19-04:00:00.504] [warn] [140107486942976] [search.snippet.builder]	G43968: S44032: No language facet id set, will process with unknown language
+[2019/10/19-04:00:00.504] [warn] [140107486942976] [search.snippet.builder]	G43968: S44032: No language facet id set, will process with unknown language
+[2019/10/19-04:00:00.504] [warn] [140107486942976] [search.snippet.builder]	G43968: S44032: No language facet id set, will process with unknown language
+[2019/10/19-04:00:00.504] [warn] [140107486942976] [search.snippet.builder]	G43968: S44032: No language facet id set, will process with unknown language
+[2019/10/19-04:00:00.504] [warn] [140107486942976] [search.snippet.builder]	G43968: S44032: No language facet id set, will process with unknown language
+[2019/10/19-04:00:00.504] [warn] [140107486942976] [search.snippet.builder]	G43968: S44032: No language facet id set, will process with unknown language
+[2019/10/19-04:00:00.506] [info] [Processing query ST 43968 collapsing=&group=&hf=-1&limits=max_fetched_hits%3A0%2Cmax_fetched_hits_per_slice%3A0%2Cmax_kept_hits%3A0%2Chits_sampling%3A100&logic=sxisl&of=flea&q=availability%3Aaclfts&relevance=false&rt=disabled& ...[74 chars remaining]] [exa.search.runnerpool]	Release a runner that served 3 queries during 40282279s when having 0 working runner
+[2019/10/19-04:00:00.506] [info] [Processing query ST 43968 collapsing=&group=&hf=-1&limits=max_fetched_hits%3A0%2Cmax_fetched_hits_per_slice%3A0%2Cmax_kept_hits%3A0%2Chits_sampling%3A100&logic=sxisl&of=flea&q=availability%3Aaclfts&relevance=false&rt=disabled& ...[74 chars remaining]] [exa.search.runnerpool]	Dropping runner for logic sxisl: pool is destroyed
+[2019/10/19-04:00:00.897] [info] [569343866@jtp-resourceshare-115] [datashare]	share: Started datashare session on autosuggest_OnPremise_securedSuggest_ds6w_58_label
+[2019/10/19-04:00:00.986] [info] [569343866@jtp-resourceshare-115] [exa.io.datashare]	share: Switching DataShare to version 10
+[2019/10/19-04:00:00.986] [info] [569343866@jtp-resourceshare-115] [exa.io.datashare]	share: Garbage collecting datashare version 9
+[2019/10/19-04:00:00.988] [info] [569343866@jtp-resourceshare-115] [datashare]	share: Committed datashare session
+[2019/10/19-04:00:01.495] [info] [ReportingConsumer-183] [reporting.file-publisher]	Reporting file rotation to: /busdata/dpmu/gbl0/data/cv/bin/../run/searchserver-ss0/search-reporting/search.csv.20191018.00000
+[2019/10/19-07:37:03.621] [info] [569343866@jtp-resourceshare-115] [datashare]	share: Started datashare session on dictionary-sxidict
+[2019/10/19-07:37:03.710] [info] [569343866@jtp-resourceshare-115] [exa.io.datashare]	share: Switching DataShare to version 14
+[2019/10/19-07:37:03.724] [info] [569343866@jtp-resourceshare-115] [exa.io.datashare]	share: Garbage collecting datashare version 13
+[2019/10/19-07:37:03.861] [info] [569343866@jtp-resourceshare-115] [datashare]	share: Committed datashare session
+[2019/10/19-18:35:27.522] [info] [569343866@jtp-resourceshare-115] [datashare]	share: Started datashare session on dictionary-sxidict
+[2019/10/19-18:35:27.590] [info] [1018494876@jtp-resourceshare-124] [exa.io.datashare]	share: Switching DataShare to version 15
+[2019/10/19-18:35:27.603] [info] [1018494876@jtp-resourceshare-124] [exa.io.datashare]	share: Garbage collecting datashare version 14
+[2019/10/19-18:35:27.730] [info] [1018494876@jtp-resourceshare-124] [datashare]	share: Committed datashare session
+[2019/10/20-00:00:00.025] [info] [1821215584@jtp-default-1] [exa.log.rotation]	Rotating standard log
+Log4NG: rotating logs now

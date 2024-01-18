@@ -1,0 +1,3 @@
+<bee:Hive xmlns:bee="exa:exa.bee">
+  <bee:include filename="config:///${configVersion}/run/${hostname}-${installName}/${processName}/main.xml"/>
+</bee:Hive>

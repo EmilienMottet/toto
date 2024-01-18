@@ -1,0 +1,11 @@
+<convert:ConvertConfig version="0" xmlns:bee="exa:exa.bee" xmlns:convert="exa:com.exalead.mercury.mami.convert.v10" xmlns:config="exa:exa.bee.config">
+    <convert:ConvertDocumentInputSettings minSizeKB="-1" maxSizeKB="-1" maxSizeForTextDocumentsKB="-1"/>
+    <convert:ConvertDocumentOutputSettings maxSizeKB="-1" maxConvertedPagesForXmlOutput="-1" maxConvertedPagesForHtmlOutput="-1"/>
+    <convert:ConvertDocumentProcessingSettings conversionTimeoutS="-1" conversionTimeoutPerMegabyteS="-1" conversionGraceTimeoutS="-1" enableImageResizing="true" netcamMode="optional" netcamTimeoutS="-1" netcamAsyncTimeoutS="-1" netcamJobsPerMinion="-1" netcamMaxJobsPerMinion="-1" netcamJobsRetries="-1" indexSingleContainersAsOneDocument="false" singleContainersMaxRecursionDepth="1" singleContainersMaxRecursionDocuments="2147483647" singleContainersMaxRecursionDocumentsTotal="2147483647" allowUnicode32="true" allowDocumentChars="true" metaSeparator=":" excelDateFormat="0"/>
+    <convert:ConvertInternalSettings retryOnMMAPFailed="false" disableSharedMemory="false" selftestOnStartup="false" restrictUserId="false">
+        <convert:ConvertInternalCacheSettings minAgeS="-1" maxAgeS="-1" maxSizeMB="-1" maxSizePerFileKB="-1"/>
+        <convert:ConvertInternalChildrenSettings maxChildren="-1" maxIdleChildren="-1" maxIdleChildrenPerGroup="-1" childSpawnTimeoutS="-1" ChildConvertInitTimeoutS="-1" exec32Mode="disabled"/>
+        <convert:ConvertInternalPOSIXSettings maxProcessMemorySizeMB="-1" maxCoreFileSizeMB="-1" maxCreatedFileSizeKB="-1" maxNumberOfOpenedFiles="-1" maxResidentMemorySizeMB="-1"/>
+    </convert:ConvertInternalSettings>
+    <convert:ConvertJavaPluginsSettings/>
+</convert:ConvertConfig>

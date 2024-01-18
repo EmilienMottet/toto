@@ -1,0 +1,4 @@
+[2019/10/23-00:00:00.058] [info] [1443900956@jtp-default-0] [exa.log.rotation]	Rotating additional logs
+[2019/10/23-13:41:08.495] [info] [GC-sxiconsolidation0-65] [gc.diskfiles]	Completed disk files garbage collection in 1.005s [removedFiles='0', removedBytes='0B']
+[2019/10/24-00:00:00.036] [info] [1443900956@jtp-default-0] [exa.log.rotation]	Rotating standard log
+Log4NG: rotating logs now

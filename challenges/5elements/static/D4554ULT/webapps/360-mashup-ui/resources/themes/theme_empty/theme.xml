@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<MashupTheme displayName="Empty theme">
+	<Options>
+        <Option value="clink###000##links + W BG header" name="vars"></Option>
+        <Option value="cmeta###000##unused" name="vars"></Option>
+        <Option value="cblock###000##unused" name="vars"></Option>
+        <Option value="ctext###000##text color" name="vars"></Option>
+        <Option value="ctext-inverted###FFF##inverted text color" name="vars"></Option>
+        <Option value="cbody-bg###FFF##page BG" name="vars"></Option>
+        <Option value="cblock-bg###FFF##W BG content" name="vars"></Option>
+        <Option value="cblock-border###FFF##W borders" name="vars"></Option>
+        <Option value="cblock-bg-alt###FFF##W BG secondary" name="vars"></Option>
+        <Option value="cblock-text###000000##unused" name="vars"></Option>
+        <Option value="ctext-bold###222222##unused" name="vars"></Option>
+        <Option value="ctext-weak###444444##facets" name="vars"></Option>
+        <Option value="ctext-weaker###666666##metas" name="vars"></Option>
+        <Option value="line-height##20px##" name="vars"></Option>
+        <Option value="m-font##13px##" name="vars"></Option>
+        <Option value="xs-font##9px##" name="vars"></Option>
+        <Option value="s-font##11px##" name="vars"></Option>
+        <Option value="l-font##15px##" name="vars"></Option>
+        <Option value="xl-font##17px##" name="vars"></Option>
+        <Option value="xxl-font##19px##" name="vars"></Option>		
+	</Options>
+</MashupTheme>

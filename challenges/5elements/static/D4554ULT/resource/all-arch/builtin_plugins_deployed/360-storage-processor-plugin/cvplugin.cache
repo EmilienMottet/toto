@@ -1,0 +1,14 @@
+#Plugin properties
+#Wed Oct 09 09:07:46 CEST 2019
+component.0.interface.3.class=com.exalead.mercury.component.CVComponent
+component.0.interface.0.class=com.exalead.cv360.storage.analysis.StorageServiceDocumentProcessor
+debug.jar.count=1
+component.0.interface.2.class=com.exalead.pdoc.analysis.DocumentProcessor
+debug.classes.count=2
+debug.destination.path=/busapps/dpmu/gbl0/3DSpaceIndex/linux_a64/cv/data/resource/all-arch/builtin_plugins_deployed/360-storage-processor-plugin
+component.0.interface.4.class=java.lang.Object
+lastmodified=1570604866796
+timestamp=1570604866000
+plugin.reverse-classloading=false
+component.0.class=com.exalead.cv360.storage.analysis.StorageServiceDocumentProcessor
+component.0.interface.1.class=com.exalead.pdoc.analysis.CustomDocumentProcessor

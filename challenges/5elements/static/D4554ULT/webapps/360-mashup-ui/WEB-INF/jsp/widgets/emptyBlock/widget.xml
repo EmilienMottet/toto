@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<Widget name="Spacer" group="Layout">
+
+	<Description>A simple spacer to add blank spaces between widgets.</Description>
+
+	<Preview>
+		<![CDATA[
+			<span style="font-size:30px; color:#DDD;">spacer</span>
+		]]>
+	</Preview>
+
+	<Platforms>
+		<Platform type="web" supported="true" />
+		<Platform type="mobile" supported="true" />
+	</Platforms>
+
+	<SupportWidgetsId arity="ZERO" />
+	<SupportFeedsId arity="ZERO" />
+
+	<OptionsGroup name="Style">
+		<Option id="height" name="Height" arity="ONE">
+			<Description>Specifies the height of the empty block (in pixels).</Description>
+			<Functions>
+				<Check>isInteger</Check>
+			</Functions>
+		</Option>
+	</OptionsGroup>
+	
+	<DefaultValues>
+		<DefaultValue name="height">50</DefaultValue>
+	</DefaultValues>
+</Widget>

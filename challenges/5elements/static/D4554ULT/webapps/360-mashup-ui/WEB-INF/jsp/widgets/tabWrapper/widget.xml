@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<Widget name="Tabs Container" group="Layout/Tabs">
+
+	<Preview>
+		<![CDATA[
+			<img src="/resources/widgets/tabWrapper/images/preview.png" alt="Tabbed navigation" />
+		]]>
+	</Preview>
+
+	<Includes>
+		<Include type="css" path="css/style.less" />
+		<Include type="js" path="/resources/javascript/exa/string/util.js" />
+		<Include type="js" path="/resources/javascript/exa/widget/widget.js" />
+		<Include type="js" path="/resources/javascript/jquery.cookie.js" />
+		<Include type="js" path="js/tabWrapper.js" />
+	</Includes>
+
+	<Description>
+		For tabbed navigation. Drop 'Tab' widgets within this widget to create tabs.
+		Note: All tabs are preloaded on page load.
+	</Description>
+
+	<SupportWidgetsId arity="MANY">
+		<WidgetId>tabContent</WidgetId>
+	</SupportWidgetsId>
+
+	<SupportFeedsId arity="ZERO" />
+
+	<OptionsGroup name="General">
+		<Option id="title" name="Title" isEvaluated="true">
+			<Description>Specifies the widget title, that is to say, the header that will be displayed above the tabs.</Description>
+		</Option>
+		<Option id="display" name="Display style">
+			<Description>Specifies how to display the tabs.</Description>
+			<Values>
+				<Value>tabs</Value>
+				<Value>buttons</Value>
+				<Value>dropdowns</Value>
+			</Values>
+		</Option>
+		<Option id="valign" name="Vertical align">
+			<Description>Specifies the vertical alignement of the tabs.</Description>
+			<Values>
+				<Value>top</Value>
+				<Value>bottom</Value>
+			</Values>
+		</Option>
+		<Option id="defaultOpenTab" name="Default opened tab" isEvaluated="true">
+			<Description>Specifies the index (0-based) of the tab that should be opened by default. Defaults to '0'.</Description>
+		</Option>
+		<Option id="saveUserState" name="Save user opened tab" isEvaluated="true">
+			<Description>Specifies if the widget should restore the last opened page by the user.</Description>
+			<Values>
+				<Value>false</Value>
+				<Value>true</Value>
+			</Values>
+		</Option>
+	</OptionsGroup>
+
+	<OptionsGroup name="Style">
+		<Option id="height" name="Height">
+			<Description>Specifies the height of the widget (pixels). You must enter an integer.</Description>
+			<Functions>
+				<Check>isInteger</Check>
+			</Functions>
+		</Option>
+		<Option id="width" name="Width">
+			<Description>Specifies the width of the widget (pixels). You must enter an integer.</Description>
+			<Functions>
+				<Check>isInteger</Check>
+			</Functions>
+		</Option>
+	</OptionsGroup>
+</Widget>

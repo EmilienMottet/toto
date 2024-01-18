@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<Widget name="Pivot Table" group="Tables" premium="true">
+
+	<Description>In this type of table, each column represents a facet value and each row displays an associated aggregation value.</Description>
+	
+	<Preview>
+		<![CDATA[
+			<img src="/resources/widgets/pivotTable/images/preview.png" alt="PivotTable" />
+		]]>
+	</Preview>
+
+	<SupportWidgetsId arity="ZERO" />
+	<SupportFeedsId arity="MANY" />
+	<SupportI18N supported="false" />
+	
+	<Includes>
+		<Include type="css" path="css/style.less" />
+		
+	 	<Include type="js" path="/resources/javascript/jquery.cookie.js" />
+ 		<Include type="js" path="/resources/javascript/jquery.json-2.2.js" />
+	
+		<Include type="js" path="js/MultidimModel.js" />
+		<Include type="js" path="js/MultidimView.js" />
+		<Include type="js" path="js/MultidimController.js" />
+		<Include type="js" path="js/flea/Response.js" />
+		<Include type="js" path="js/flea/DimensionResponse.js" />
+		<Include type="js" path="js/flea/CategoryResponse.js" />
+		<Include type="js" path="js/flea/MeasureResponse.js" />
+	</Includes>
+
+	<OptionsGroup name="General">
+		<Option id="title" name="Widget Title" isEvaluated="true">
+			<Description>Widget title. If blank, no title is displayed.</Description>
+		</Option>
+	</OptionsGroup>
+
+	<OptionsGroup name="Search API">
+		<Option id="command" name="Search command" arity="ONE">
+			<Description>Specifies the search API command name that will be appended to the 'Search API URL'.</Description>
+			<Placeholder>search-api</Placeholder>
+			<Functions>
+				<ContextMenu>ApiCommand()</ContextMenu>
+			</Functions>
+		</Option>
+		<Option id="apiConfig" name="Config" arity="ZERO_OR_ONE">
+			<Description>
+				<![CDATA[
+					Indicates the name of the default Search API, for example, <code>sapi0</code>.
+				]]>
+			</Description>
+			<Placeholder>sapi0</Placeholder>
+			<Functions>
+				<ContextMenu>ApiConfig()</ContextMenu>
+			</Functions>
+		</Option>
+		<Option id="searchApi" name="Search API URL" arity="ZERO_OR_MANY">
+			<Description>Defines the URL that will be used by the Search API.</Description>
+			<Placeholder>http://HOST:PORT/</Placeholder>
+		</Option>
+		<Option id="searchLogic" name="Search Logic" arity="ZERO_OR_ONE">
+			<Description>
+				<![CDATA[
+					Specifies the search logic, for example, <code>sl0</code>.<br/>Search logics are defined in the Administration Console.
+				]]>
+			</Description>
+			<Functions>
+				<ContextMenu>SearchLogics()</ContextMenu>
+				<ContextMenu>emptyOnChange()</ContextMenu>
+			</Functions>
+		</Option>
+		<OptionComposite id="extraParameters" name="Extra parameters" arity="ZERO_OR_MANY">
+			<Description>Specifies extra key/value parameters for the search logic.</Description>
+			<Option id="key" arity="ONE" />
+			<Option id="value" arity="ONE" />
+		</OptionComposite>
+	</OptionsGroup>
+
+	<OptionsGroup name="Columns">
+		<OptionComposite id="columns" name="Columns" arity="MANY">
+			<Option id="columnFacet" name="Facet name" arity="ONE">
+				<Description>Specifies the facets to display in the column headers.</Description>			
+				<Functions>
+					<ContextMenu>COMMON_emptyOnChange()</ContextMenu>
+					<ContextMenu>Facets()</ContextMenu>
+				</Functions>
+			</Option>
+			<Option id="columnSort" name="Sort function" arity="ONE">
+				<Description>Specifies how to sort the categories.</Description>			
+				<Values>
+					<Value>alphanum</Value>
+					<Value>-alphanum</Value>
+					<Value>count</Value>
+					<Value>-count</Value>
+					<Value>num</Value>
+					<Value>-num</Value>
+					<Value>date</Value>
+					<Value>-date</Value>
+				</Values>
+			</Option>
+			<Option id="columnLegend" name="Legend">
+				<Description>Legend displayed on the left of the header line.</Description>			
+			</Option>
+		</OptionComposite>
+		<Option id="enableColumnDrillDown" name="Enable column drill-down">
+			<Description>Enables drill-down on column values. Users will be able to expand and/or collapse the facet levels of the pivot table columns.</Description>
+			<Values>
+				<Value>false</Value>
+				<Value>true</Value>
+			</Values>
+		</Option>
+	</OptionsGroup>
+
+	<OptionsGroup name="Rows">
+		<Option id="rowsLegend" name="Legend">
+			<Description>Legend displayed on top of the row headers.</Description>
+		</Option>
+		<OptionComposite id="rows" name="Rows" arity="MANY">
+			<Option id="rowFacet" name="Facet name" arity="ONE">
+				<Description>Specifies the facets to display in the row headers.</Description>			
+				<Functions>
+					<ContextMenu>COMMON_emptyOnChange()</ContextMenu>
+					<ContextMenu>Facets()</ContextMenu>
+				</Functions>
+			</Option>
+			<Option id="rowSort" name="Sort function" arity="ONE">
+				<Description>Specifies how to sort the categories.</Description>			
+				<Values>
+					<Value>alphanum</Value>
+					<Value>-alphanum</Value>
+					<Value>count</Value>
+					<Value>-count</Value>
+					<Value>num</Value>
+					<Value>-num</Value>
+					<Value>date</Value>
+					<Value>-date</Value>
+				</Values>
+			</Option>
+		</OptionComposite>
+		<Option id="rowPrecomputeUntil" name="No. facet levels shown by default" arity="ONE">
+			<Description>
+				<![CDATA[
+					Specifies the number of facet levels to display by default when opening the page containing the pivot table.<br/> This is also the number of facet levels that will be fully computed. To drill-down further on facet levels, one query will be performed for each drill-down. <br/>To make sure the pivot table is readable, we recommend setting a low value if the highest facet levels have many categories.
+				]]>
+			</Description>		
+			<Functions>
+				<Check>isInteger</Check>
+			</Functions>
+		</Option>
+	</OptionsGroup>
+	
+	<OptionsGroup name="Aggregations">
+		<OptionComposite id="aggregations" name="Aggregations" arity="MANY">
+			<Option id="aggType" name="Type" arity="ONE">
+				<Description>Aggregation type: COUNT, SUM, AVG, MAX, MIN, STDDEV</Description>
+				<Values>
+					<Value>COUNT</Value>
+					<Value>SUM</Value>
+					<Value>AVG</Value>
+					<Value>MAX</Value>
+					<Value>MIN</Value>
+					<Value>STDDEV</Value>
+				</Values>
+			</Option>
+			<Option id="aggExpr" name="Expression">
+				<Description>Aggregation expression. If empty, a simple count is performed.</Description>
+			</Option>
+			<Option id="aggMaxDecimals" name="Max No. decimals">
+				<Description>
+					<![CDATA[
+						If the result is a float, it will round the value at <i>n</i> decimal.<br/>If empty, all available decimals are displayed.
+					]]>
+				</Description>
+				<Functions>
+					<Check>isInteger</Check>
+				</Functions>
+			</Option>
+			<Option id="aggLegend" name="Legend">
+				<Description>Legend displayed on the top of this aggregation columns.</Description>
+			</Option>
+		</OptionComposite>
+	</OptionsGroup>
+
+	<OptionsGroup name="Advanced">
+		<Option id="noResultsJspPathHit" name="JSP path to use if no results" arity="ONE">
+			<Description>If there are no results, the widget is either hidden using a trigger, or a message is displayed using the content of a JSP file.</Description>
+			<Functions>
+				<Check>isJspPath</Check>
+			</Functions>
+		</Option>
+	</OptionsGroup>
+
+	<DefaultValues>
+		<DefaultValue name="command">/search-api</DefaultValue>
+		<DefaultValue name="apiConfig">sapi0</DefaultValue>	
+		<DefaultValue name="noResultsJspPathHit">/WEB-INF/jsp/commons/noFacets.jsp</DefaultValue>
+	</DefaultValues>
+</Widget>

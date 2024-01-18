@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<Widget name="Saved Queries" group="Collaborative" premium="true">
+
+	<Description>This widget allows users to save their queries for a quick access.</Description>
+
+	<Preview>
+		<![CDATA[
+			<img src="/resources/widgets/savedQueries/img/preview.png" alt="Saved Queries Preview" />
+		]]>
+	</Preview>
+
+	<Includes>
+		<Include type="js" path="/resources/javascript/storage/storage-client-0.2.js" />
+			<Include type="js" path="/resources/javascript/jquery.json-2.2.js" />
+		<Include type="js" path="js/savedQueries.js" />
+		<Include type="css" path="css/style.less" />
+	</Includes>
+
+	<StorageKeys>
+		<StorageKey optionId="dbKey" resource="global" />
+		<StorageKey optionId="dbKey" resource="user" />
+	</StorageKeys>
+	
+	<SupportI18N supported="true">
+		<JsKeys>
+			<JsKey>query-name</JsKey>
+			<JsKey>sample-query-name</JsKey>
+			<JsKey>cancel</JsKey>
+			<JsKey>ok</JsKey>
+			<JsKey>nothing-to-display</JsKey>
+		</JsKeys>
+	</SupportI18N>
+
+	<OptionsGroup name="General">
+		<Option id="dbKey" name="Database Key Name" arity="ONE">
+			<Description>Specifies the database key name.</Description>		
+			<Functions>
+				<Check>isBagKey</Check>
+			</Functions>
+		</Option>
+		<Option id="type" name="Type" arity="ONE">
+			<Description>
+				Specifies the access type. 'Private' requires the user to be logged in (and security enabled).
+			</Description>
+			<Values>
+				<Value>Shared</Value>
+				<Value>Private</Value>
+			</Values>
+		</Option>
+		<Option id="showSave" name="Display 'Save this page'" arity="ONE">
+			<Description>
+				Creates a 'Save this page' link on the widget header. This link opens a dialog box prompting you to enter a name for the query to save.
+			</Description>		
+			<Values>
+				<Value>false</Value>
+				<Value>true</Value>
+			</Values>
+		</Option>
+		<Option id="showDelete" name="Display 'delete'" arity="ONE">
+			<Description>
+				Creates a delete icon (small red cross) on the right of each saved query entry. You can then delete obsolete query entries. 
+			</Description>		
+			<Values>
+				<Value>false</Value>
+				<Value>true</Value>
+			</Values>
+		</Option>
+		<Option id="showExpanded" name="Expanded view by default" arity="ONE">
+			<Description>
+				Expands the widget view to display all saved query entries. 
+			</Description>			
+			<Values>
+				<Value>false</Value>
+				<Value>true</Value>
+			</Values>
+		</Option>
+	</OptionsGroup>
+
+	<DefaultValues>
+		<DefaultValue name="dbKey">SavedQueriesWidget[]</DefaultValue>
+		<DefaultValue name="type">Shared</DefaultValue>
+		<DefaultValue name="showSave">true</DefaultValue>
+		<DefaultValue name="showDelete">true</DefaultValue>
+		<DefaultValue name="showExpanded">false</DefaultValue>
+	</DefaultValues>
+</Widget>

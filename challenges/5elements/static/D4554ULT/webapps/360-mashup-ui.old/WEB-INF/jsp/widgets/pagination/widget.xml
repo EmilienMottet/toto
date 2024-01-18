@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<Widget name="Pagination" group="Navigation">
+
+	<Description>The pagination widget allows you to scroll into your result set.</Description>
+
+	<Includes>
+		<Include type="css" path="css/style.less" />
+	</Includes>
+	
+	<Platforms>
+		<Platform type="mobile" supported="true" />
+		<Platform type="web" supported="true" />
+	</Platforms>
+	
+	<Preview>
+		<![CDATA[
+			<img src="/resources/widgets/pagination/images/preview.png" alt="Pagination" />
+		]]>
+	</Preview>
+
+	<SupportWidgetsId arity="ZERO" />
+	<SupportFeedsId arity="MANY" />
+	<SupportI18N supported="true" />
+
+	<OptionsGroup name="General">
+		<Option id="jspPath" name="Pagination JSP template" arity="ONE">
+			<Description>
+				<![CDATA[
+					Specifies the Navigation header JSP template.<br />
+					Change this if you do not want to use the original template.<br />
+					Templates are located in /templates/.
+				]]>			
+			</Description>
+			<Functions>
+				<Check>isJspPath</Check>
+				<Display>PARAMETER_doHide('default.jsp', [], ['nbPageToShowInPagination', 'moreResultsUrl', 'moreResultsLabel'], true, false)</Display>
+				<ContextMenu>JAVA_listFiles('templates/', '*.jsp', 'JSP base templates')</ContextMenu>
+				<ContextMenu>COMMON_emptyOnChange()</ContextMenu>
+			</Functions>
+		</Option>
+		<Option id="nbPageToShowInPagination" name="Number of pagination pages">
+			<Description>Sets the number of pages to display in the pagination. </Description>
+			<Functions>
+				<Check>isInteger</Check>
+			</Functions>
+		</Option>
+		<Option id="moreResultsUrl" name="More results link target" isUrlEncoded="true" isEvaluated="true">
+			<Description>Specifies a link that will be displayed at the bottom of the result list to access more results.</Description>
+			<Functions>
+				<ContextMenu>Pages()</ContextMenu>
+			</Functions>
+		</Option>
+		<Option id="moreResultsLabel" name="More results link label" isEvaluated="true">
+			<Description>Specifies the label of the &lt;i&gt;More results&lt;/i&gt; link.</Description>
+			<Functions>
+				<ContextMenu>Pages()</ContextMenu>
+			</Functions>
+		</Option>
+	</OptionsGroup>
+
+	<OptionsGroup name="Advanced">
+		<Option id="templateBasePath" name="Base path of the JSP templates" arity="ONE">
+			<Description>You can replace the relative path (default: templates/) by an absolute path like /WEB-INF/jsp/mydirectory/.</Description>
+			<Functions>
+				<Check>isDirectory</Check>
+			</Functions>
+		</Option>
+	</OptionsGroup>
+
+	<DefaultValues>
+		<DefaultValue name="jspPath">default.jsp</DefaultValue>
+		<DefaultValue name="nbPageToShowInPagination">9</DefaultValue>
+		<DefaultValue name="templateBasePath">templates/</DefaultValue>
+	</DefaultValues>
+</Widget>

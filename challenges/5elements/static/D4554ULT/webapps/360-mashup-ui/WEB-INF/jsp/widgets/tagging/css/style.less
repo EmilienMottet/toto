@@ -1,0 +1,146 @@
+//
+// Tagging Widget Styles
+// 
+// More tag colors can be added by adding new classes below
+// and editing the 'tagCssColors' var in tagging.js
+//
+// Default colors
+//  #db843d orange
+//  #3d96ae light-blue
+//  #80699b purple
+//  #89a54e green
+//  #aa4643 red
+//  #4572a7 blue
+//
+.mashup {
+	.searchWidget.tagging-wrapper {
+		font-size: 12px;
+		line-height: 12px;
+		margin: 4px 0 0 0;
+	
+		span.document_id { display: none; }
+	
+		ul.taglist {
+			color: white;
+			display: inline;
+			line-height: 10px;
+	
+			a {
+				color: white;
+				text-decoration: none;
+	
+				&:hover { text-decoration: underline; }
+			}
+	
+			li {
+				display:inline;
+				float: left;
+				list-style: none;
+	
+				span.key, span.delete { display: none; }
+				span.delete a {
+					color: white;
+					font-weight: bold;
+				}
+	
+				// Tag color theme
+				// New color CSS classes can be specified by modifig tagCssColors
+				// in tagging.js
+				div.section { color: white; } // White text for all tags
+				&.orangetag div.section { background: #db843d; }
+				&.lbluetag div.section { background: #3d96ae; }
+				&.bluetag div.section { background: #4572a7; }
+				&.greentag div.section { background: #89a54e; }
+				&.purpletag div.section { background: #80699b; }
+				&.redtag div.section { background: #aa4643; }
+			}
+	
+			&.taglink li {
+				cursor: pointer;
+			}
+	
+			div {
+				display: inline;
+				float: left;
+	
+				&.tagwrapper {
+					position: relative;
+					margin: 0 4px 4px 0;
+					float: left;
+					display: inline;
+					
+				}
+				&.midsection {
+					position: static;
+					height: 11px; /* 17px incl. padding */
+					padding: 3px 6px 3px 6px;
+					font-size: 11px;
+					margin: 0 1px;
+				}
+				&.endsection {
+					position: absolute;
+					height: 15px;
+					width: 1px;
+					top: 1px;
+				}
+				&.first { left: 0; }
+				&.last { right: 0; }
+			}
+		}
+	
+		div.clearfix {
+			clear: both;
+			margin: 0;
+			padding: 0;
+			height: 0;
+		}
+	
+		// The edit / add tags link
+		a.edittags {
+			padding: 0 0 0 18px;
+			margin: 1px 0 0 0;
+			height: 16px;
+			background: url("../img/tag.png") no-repeat left center;
+			float: left;
+		}
+	
+		div.edittags-form {
+			display: none;
+			position: relative;
+			zoom: 1; // To trigger IEs hasLayout and avoid IE6 + jQuery.slideDown() bug
+	
+			input.text {
+				font-size: 13px;
+				line-height: 18px;
+				height: 20px;
+				width: 300px;
+			}
+	
+			div.input-overlay {
+				height: 18px;
+				line-height: 18px;
+				font-size: 13px;
+				color: #555;
+				position: absolute;
+	
+				// Needs to be changed if color of text input fields are changed
+				background: white;
+				top: 3px;
+				left: 5px;
+				display: inline;
+			}
+	
+			p {
+				margin: 4px 0 8px 0;
+				color: @ctext-weaker;
+				font-style: italic;
+	
+				&.error {
+					margin: 6px 0;
+					color: red;
+					font-weight: bold;
+				}
+			}
+		}
+	}
+}

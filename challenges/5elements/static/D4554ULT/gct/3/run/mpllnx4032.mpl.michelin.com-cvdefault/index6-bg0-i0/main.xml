@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><bee:Hive xmlns:bee="exa:exa.bee">
+  <bee:include filename="config:///3/run/global.xml"/>
+  <bee:include filename="config:///3/run/directory.xml"/>
+  <bee:key name="notAlivePath" value="${runDir}/${processName}/notalive"/>
+  <bee:key name="services.index6.bg0.0.i0">
+    <IndexClientService xmlns="exa:com.exalead.cloudview.indexing.index" bee:key="" buildGroup="bg0" builderPN="/index6builder/bg0/0" instance="i0" managerPN="/index6/buildgroupmanager/bg0" runtimeConfig="system_io_caching" sharedDir="true" slice="0" tickPort="16016"/>
+  </bee:key>
+  <bee:key name="java">
+    <JavaRuntimeServlet xmlns="jexa:com.exalead.bee" bee:key=""/>
+  </bee:key>
+  <bee:key name="profiler">
+    <ProfilingServlet xmlns="jexa:com.exalead.bee.services" bee:key=""/>
+  </bee:key>
+  <bee:key name="isAlive">
+    <IsAliveServlet xmlns="jexa:com.exalead.bee.services" bee:key=""/>
+  </bee:key>
+  <bee:key name="log4e">
+    <Log4EService xmlns="jexa:com.exalead.bee.services" bee:key=""/>
+  </bee:key>
+  <bee:key name="beegistryUpdate">
+    <BeegistryUpdater xmlns="jexa:com.exalead.bee.services" bee:key=""/>
+  </bee:key>
+  <DirectoryLoader xmlns="jexa:com.exalead.bee" bee:key="mainjava"/>
+</bee:Hive>

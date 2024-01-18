@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><bee:Hive xmlns:bee="exa:exa.bee">
+  <bee:include filename="config:///6/run/global.xml"/>
+  <bee:include filename="config:///6/run/directory.xml"/>
+  <bee:key name="dictionary" value="/dictionary/ss0"/>
+  <bee:key name="search.idRangeIndex" value="0"/>
+  <bee:key name="search.logics.sl0.dataModel" value="default_model"/>
+  <bee:key name="search.logics.sxisl.dataModel" value="sximodel"/>
+  <s2:SearchAPIConfig xmlns:s2="exa:com.exalead.mercury.mami.search.v20" xmlns:ana="exa:com.exalead.indexing.analysis.v10" xmlns:config="exa:exa.bee.config" xmlns:ling="exa:com.exalead.linguistic.v10" xmlns:s3="exa:com.exalead.search.v30" bee:key="search-api.config" name="sapi0" xmlns:bee="exa:exa.bee">
+    <s2:SearchCommand base="/search-api" defaultLogic="sxisl" defaultTarget="sxist0" enableSOAP="false" isAliveAsynchronousDelayS="5" isAliveSynchronous="true" maxConcurrentQueries="0" maxWaitingQueries="200" targetReporting="search-reporting">
+      <s2:customRunnerFactoryParams/>
+      <s2:isAliveQueries/>
+    </s2:SearchCommand>
+    <s2:QueryExpansionCommand base="/expansion" defaultLogic="sxisl" maxConcurrentQueries="0" maxWaitingQueries="200">
+      <s2:customRunnerFactoryParams/>
+    </s2:QueryExpansionCommand>
+    <s2:SpellCheckCommand base="/spellcheck" defaultLogic="sxisl" defaultTarget="sxist" maxConcurrentQueries="0" maxWaitingQueries="200">
+      <s2:customRunnerFactoryParams/>
+    </s2:SpellCheckCommand>
+    <s2:SuggestCommand autocomplete="false" base="/suggest" recursive="false" targetReporting="suggest-reporting" tokenizationConfig="sxitok"/>
+    <s2:DictionaryCommand base="/dictionary"/>
+    <s2:DocumentFetchCommand base="/fetch"/>
+    <s2:PreviewCommand base="/preview" defaultHighlightFacetIds="Event,Person,Place_City,Place_Country,Place_State,Place_Landform,Place_CivicStructure,Place_MiscellaneousPlace,Place_Misc,Organization_Corporation,Organization_GovernmentOrg,Organization_NGO,Organization_MiscellaneousOrg,Organization_Misc" defaultHighlightPrefixHandlers="text" defaultLogic="sxisl"/>
+    <s2:ThumbnailCommand allowUnsecurePrecomputedThumbnails="false" base="/thumbnail" defaultHeight="90" defaultWidth="120" maxConcurrentComputations="4">
+      <s2:LocalThumbnailsCache diskEntries="2000" maxHeight="120" maxWidth="120" memoryEntries="20" secure="true" timeToLiveS="7200"/>
+    </s2:ThumbnailCommand>
+    <s2:SecurityCommand base="/security"/>
+  </s2:SearchAPIConfig>
+  <bee:key name="notAlivePath" value="${runDir}/${processName}/notalive"/>
+  <bee:key name="services.dictionary.ss0">
+    <DictionaryService xmlns="exa:com.exalead.dictionary" bee:key=""/>
+  </bee:key>
+  <bee:key name="resourceshareservice">
+    <ShareFLIS xmlns="exa:com.exalead.ds.share2.http" bee:key="" rootUrl="data:///build/resourceshare/searchserver-ss0"/>
+  </bee:key>
+  <bee:key name="resourceshare">
+    <ResourceShare xmlns="exa:com.exalead.mercury.common" bee:key="" myUrl="http://mpllnx4032.mpl.michelin.com:16024/" role="searcher" rootUrl="data:///build/resourceshare/searchserver-ss0"/>
+  </bee:key>
+  <bee:key name="checkpoints">
+    <CheckpointsFetchServlet xmlns="jexaxml:com.exalead.mercury.mami.indexing" bee:key=""/>
+  </bee:key>
+  <bee:key name="search-api">
+    <SearchAPIServlet xmlns="jexa:com.exalead.search.searchapi" bee:key=""/>
+  </bee:key>
+  <bee:key name="fetcher.boxproxy">
+    <BoxFetcherProxy xmlns="exa:com.exalead.mercury.fetch" bee:key=""/>
+  </bee:key>
+  <bee:key name="access-api.ac0">
+    <WarDescriptor xmlns="jexa:com.exalead.bee" bee:key="" extraClassPath="extrajava://360-plugins/applications/default/*/VERSIONED/*.jar" warPath="libpath:///access.war">
+      <KeyValue xmlns="exa:exa.bee" key="serviceKey" value="access-api.ac0"/>
+      <KeyValue xmlns="exa:exa.bee" key="applicationId" value="default"/>
+    </WarDescriptor>
+  </bee:key>
+  <bee:key name="storage-service.sts0">
+    <WarDescriptor xmlns="jexa:com.exalead.bee" bee:key="" warPath="libpath:///360-storage-service.war">
+      <KeyValue xmlns="exa:exa.bee" key="serviceKey" value="storage-service.sts0"/>
+    </WarDescriptor>
+  </bee:key>
+  <bee:key name="360-mashup-ui.mu0">
+    <WarDescriptor xmlns="jexa:com.exalead.bee" bee:key="" description="Mashup User Interface" extraClassPath="extrajava://360-plugins/applications/default/*/VERSIONED/*.jar" thumbnailPath="resources/images/thumb-mashupui.png" warPath="data:///webapps/360-mashup-ui">
+      <KeyValue xmlns="exa:exa.bee" key="serviceKey" value="360-mashup-ui.mu0"/>
+      <KeyValue xmlns="exa:exa.bee" key="applicationId" value="default"/>
+      <KeyValue xmlns="exa:exa.bee" key="webAppRootKey" value="default"/>
+    </WarDescriptor>
+  </bee:key>
+  <bee:key name="java">
+    <JavaRuntimeServlet xmlns="jexa:com.exalead.bee" bee:key=""/>
+  </bee:key>
+  <bee:key name="profiler">
+    <ProfilingServlet xmlns="jexa:com.exalead.bee.services" bee:key=""/>
+  </bee:key>
+  <bee:key name="isAlive">
+    <IsAliveServlet xmlns="jexa:com.exalead.bee.services" bee:key=""/>
+  </bee:key>
+  <bee:key name="log4e">
+    <Log4EService xmlns="jexa:com.exalead.bee.services" bee:key=""/>
+  </bee:key>
+  <bee:key name="beegistryUpdate">
+    <BeegistryUpdater xmlns="jexa:com.exalead.bee.services" bee:key=""/>
+  </bee:key>
+  <DirectoryLoader xmlns="jexa:com.exalead.bee" bee:key="mainjava"/>
+</bee:Hive>

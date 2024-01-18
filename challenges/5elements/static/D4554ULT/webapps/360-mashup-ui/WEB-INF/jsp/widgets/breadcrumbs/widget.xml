@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Widget name="Breadcrumbs" group="Navigation"  premium="true">
+
+	<Description>This widget displays breadcrumb links allowing you to navigate through the structured hierarchy of a facet. Typical breadcrumbs look like this: Parent node > Child node > Grandchild node. </Description>
+	
+	<Includes>
+		<Include location="header" path="css/style.less" type="css" />
+	</Includes>
+
+	<Platforms>
+		<Platform supported="true" type="web" />
+	</Platforms>
+
+	<Preview>
+		<![CDATA[
+			<img src="/resources/widgets/breadcrumbs/images/preview.png" alt="Facet Breadcrumbs" />
+		]]>
+	</Preview>
+
+	<SupportFeedsId arity="ONE" consumeFeed="true" />
+	<SupportI18N supported="true" />
+	<SupportWidgetsId arity="ZERO" />
+
+	<DefaultValues>
+		<DefaultValue name="separator">&gt;</DefaultValue>
+		<DefaultValue name="showLink">true</DefaultValue>
+	</DefaultValues>
+
+	<OptionsGroup name="General">
+		<Option arity="ONE" name="Facet" id="facetId">
+			<Description>Facet used for the breadcrumbs.</Description>
+			<Functions>
+				<ContextMenu>Facets()</ContextMenu>
+			</Functions>
+		</Option>
+		<Option id="separator" name="Separator" arity="ZERO_OR_ONE">
+			<Description>Specifies the separator to use between breadcrumbs.</Description>		
+		</Option>
+	</OptionsGroup>
+
+	<OptionsGroup name="Links">
+		<Option id="showLink" name="Displays refinement links">
+			<Description>Specifies whether the breadcrumbs must be displayed as clickable links.</Description>		
+			<Values>
+				<Value>false</Value>
+				<Value>true</Value>
+			</Values>
+			<Functions>
+				<Display>PARAMETER_doHide('false', ['baseUrl', 'forceRefineOnFeeds'], [], true, false)</Display>
+			</Functions>
+		</Option>
+		<Option id="baseUrl" name="Destination page on click" isUrlEncoded="true" isEvaluated="true">
+			<Description>Indicates the URL that must be accessed for a refinement option. If blank, you stay on the same page.</Description>
+			<Functions>
+				<ContextMenu>Pages()</ContextMenu>
+			</Functions>
+		</Option>
+		<Option id="forceRefineOnFeeds" name="Force refinement for feeds" arity="ZERO_OR_MANY">
+			<Description>Forces refinements on the specified feeds.</Description>
+			<Functions>
+				<ContextMenu>Feeds()</ContextMenu>
+				<ContextMenu>COMMON_emptyOnChange()</ContextMenu>
+			</Functions>
+		</Option>
+	</OptionsGroup>
+</Widget>

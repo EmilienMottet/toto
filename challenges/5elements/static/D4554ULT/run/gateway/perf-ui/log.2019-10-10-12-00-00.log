@@ -1,0 +1,36 @@
+[2019-10-09 08:58:52,661] [INFO ] [shutdown-23539] [jrds.webapp.StartListener] Application jrds will stop
+[2019-10-09 08:58:52,663] [INFO ] [shutdown-23539] [jrds.store.RrdDbStoreFactory] Average wait time: 0.0673854447439353 ms
+[2019-10-09 08:58:52,664] [INFO ] [shutdown-23539] [jrds.StoreOpener] Average wait time: NaN ms
+[2019-10-09 08:58:52,664] [INFO ] [shutdown-23539] [jrds.webapp.StartListener] Application jrds stopped
+[2019-10-09 08:58:52,665] [INFO ] [shutdown-23539] [org.eclipse.jetty.server.handler.ContextHandler] Stopped o.e.j.w.WebAppContext@1bdf8190{/perf-ui,null,UNAVAILABLE,@16001}{/busapps/dpmu/gbl0/3DSpaceIndex/linux_a64/cv/data/webapps-tmp/gateway/adminui_16001/perf-ui}
+[2019-10-09 09:08:16,315] [WARN ] [main] [org.eclipse.jetty.security.SecurityHandler] ServletContext@o.e.j.w.WebAppContext@2f7a7219{/perf-ui,file:///busapps/dpmu/gbl0/3DSpaceIndex/linux_a64/cv/data/webapps-tmp/gateway/adminui_16001/perf-ui/,STARTING,@16001}{/busapps/dpmu/gbl0/3DSpaceIndex/linux_a64/cv/data/webapps-tmp/gateway/adminui_16001/perf-ui} has uncovered http methods for path: /
+[2019-10-09 09:10:22,958] [INFO ] [shutdown-1303] [jrds.webapp.StartListener] Application jrds will stop
+[2019-10-09 09:10:22,970] [INFO ] [shutdown-1303] [jrds.store.RrdDbStoreFactory] Average wait time: 0.28125 ms
+[2019-10-09 09:10:22,971] [INFO ] [shutdown-1303] [jrds.StoreOpener] Average wait time: NaN ms
+[2019-10-09 09:10:22,971] [INFO ] [shutdown-1303] [jrds.webapp.StartListener] Application jrds stopped
+[2019-10-09 09:10:22,971] [INFO ] [shutdown-1303] [org.eclipse.jetty.server.handler.ContextHandler] Stopped o.e.j.w.WebAppContext@2f7a7219{/perf-ui,null,UNAVAILABLE,@16001}{/busapps/dpmu/gbl0/3DSpaceIndex/linux_a64/cv/data/webapps-tmp/gateway/adminui_16001/perf-ui}
+[2019-10-09 09:10:38,263] [WARN ] [main] [org.eclipse.jetty.security.SecurityHandler] ServletContext@o.e.j.w.WebAppContext@2f94c4db{/perf-ui,file:///busapps/dpmu/gbl0/3DSpaceIndex/linux_a64/cv/data/webapps-tmp/gateway/adminui_16001/perf-ui/,STARTING,@16001}{/busapps/dpmu/gbl0/3DSpaceIndex/linux_a64/cv/data/webapps-tmp/gateway/adminui_16001/perf-ui} has uncovered http methods for path: /
+[2019-10-09 09:10:56,718] [INFO ] [shutdown-467] [jrds.webapp.StartListener] Application jrds will stop
+[2019-10-09 09:10:56,721] [INFO ] [shutdown-467] [jrds.store.RrdDbStoreFactory] Average wait time: NaN ms
+[2019-10-09 09:10:56,722] [INFO ] [shutdown-467] [jrds.StoreOpener] Average wait time: NaN ms
+[2019-10-09 09:10:56,722] [INFO ] [shutdown-467] [jrds.webapp.StartListener] Application jrds stopped
+[2019-10-09 09:10:56,722] [INFO ] [shutdown-467] [org.eclipse.jetty.server.handler.ContextHandler] Stopped o.e.j.w.WebAppContext@2f94c4db{/perf-ui,null,UNAVAILABLE,@16001}{/busapps/dpmu/gbl0/3DSpaceIndex/linux_a64/cv/data/webapps-tmp/gateway/adminui_16001/perf-ui}
+[2019-10-09 09:11:52,611] [WARN ] [main] [org.eclipse.jetty.security.SecurityHandler] ServletContext@o.e.j.w.WebAppContext@2f94c4db{/perf-ui,file:///busapps/dpmu/gbl0/3DSpaceIndex/linux_a64/cv/data/webapps-tmp/gateway/adminui_16001/perf-ui/,STARTING,@16001}{/busapps/dpmu/gbl0/3DSpaceIndex/linux_a64/cv/data/webapps-tmp/gateway/adminui_16001/perf-ui} has uncovered http methods for path: /
+[2019-10-09 09:12:11,463] [INFO ] [shutdown-469] [jrds.webapp.StartListener] Application jrds will stop
+[2019-10-09 09:12:11,466] [INFO ] [shutdown-469] [jrds.store.RrdDbStoreFactory] Average wait time: NaN ms
+[2019-10-09 09:12:11,467] [INFO ] [shutdown-469] [jrds.StoreOpener] Average wait time: NaN ms
+[2019-10-09 09:12:11,467] [INFO ] [shutdown-469] [jrds.webapp.StartListener] Application jrds stopped
+[2019-10-09 09:12:11,468] [INFO ] [shutdown-469] [org.eclipse.jetty.server.handler.ContextHandler] Stopped o.e.j.w.WebAppContext@2f94c4db{/perf-ui,null,UNAVAILABLE,@16001}{/busapps/dpmu/gbl0/3DSpaceIndex/linux_a64/cv/data/webapps-tmp/gateway/adminui_16001/perf-ui}
+[2019-10-09 09:12:38,512] [WARN ] [main] [org.eclipse.jetty.security.SecurityHandler] ServletContext@o.e.j.w.WebAppContext@2f94c4db{/perf-ui,file:///busapps/dpmu/gbl0/3DSpaceIndex/linux_a64/cv/data/webapps-tmp/gateway/adminui_16001/perf-ui/,STARTING,@16001}{/busapps/dpmu/gbl0/3DSpaceIndex/linux_a64/cv/data/webapps-tmp/gateway/adminui_16001/perf-ui} has uncovered http methods for path: /
+[2019-10-09 09:12:59,400] [INFO ] [shutdown-468] [jrds.webapp.StartListener] Application jrds will stop
+[2019-10-09 09:12:59,405] [INFO ] [shutdown-468] [jrds.store.RrdDbStoreFactory] Average wait time: NaN ms
+[2019-10-09 09:12:59,406] [INFO ] [shutdown-468] [jrds.StoreOpener] Average wait time: NaN ms
+[2019-10-09 09:12:59,406] [INFO ] [shutdown-468] [jrds.webapp.StartListener] Application jrds stopped
+[2019-10-09 09:12:59,406] [INFO ] [shutdown-468] [org.eclipse.jetty.server.handler.ContextHandler] Stopped o.e.j.w.WebAppContext@2f94c4db{/perf-ui,null,UNAVAILABLE,@16001}{/busapps/dpmu/gbl0/3DSpaceIndex/linux_a64/cv/data/webapps-tmp/gateway/adminui_16001/perf-ui}
+[2019-10-09 09:13:27,195] [WARN ] [main] [org.eclipse.jetty.security.SecurityHandler] ServletContext@o.e.j.w.WebAppContext@2f94c4db{/perf-ui,file:///busapps/dpmu/gbl0/3DSpaceIndex/linux_a64/cv/data/webapps-tmp/gateway/adminui_16001/perf-ui/,STARTING,@16001}{/busapps/dpmu/gbl0/3DSpaceIndex/linux_a64/cv/data/webapps-tmp/gateway/adminui_16001/perf-ui} has uncovered http methods for path: /
+[2019-10-09 10:04:52,865] [INFO ] [shutdown-1758] [jrds.webapp.StartListener] Application jrds will stop
+[2019-10-09 10:04:52,866] [INFO ] [shutdown-1758] [jrds.store.RrdDbStoreFactory] Average wait time: 0.09775784753363229 ms
+[2019-10-09 10:04:52,867] [INFO ] [shutdown-1758] [jrds.StoreOpener] Average wait time: NaN ms
+[2019-10-09 10:04:52,868] [INFO ] [shutdown-1758] [jrds.webapp.StartListener] Application jrds stopped
+[2019-10-09 10:04:52,868] [INFO ] [shutdown-1758] [org.eclipse.jetty.server.handler.ContextHandler] Stopped o.e.j.w.WebAppContext@2f94c4db{/perf-ui,null,UNAVAILABLE,@16001}{/busapps/dpmu/gbl0/3DSpaceIndex/linux_a64/cv/data/webapps-tmp/gateway/adminui_16001/perf-ui}
+[2019-10-09 10:07:16,667] [WARN ] [main] [org.eclipse.jetty.security.SecurityHandler] ServletContext@o.e.j.w.WebAppContext@2f94c4db{/perf-ui,file:///busdata/dpmu/gbl0/data/cv/webapps-tmp/gateway/adminui_16001/perf-ui/,STARTING,@16001}{/busdata/dpmu/gbl0/data/cv/webapps-tmp/gateway/adminui_16001/perf-ui} has uncovered http methods for path: /

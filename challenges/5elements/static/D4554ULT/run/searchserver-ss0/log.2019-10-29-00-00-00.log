@@ -1,0 +1,88 @@
+[2019/10/28-00:00:00.027] [info] [563383249@jtp-default-1] [exa.log.rotation]	Rotating additional logs
+[2019/10/28-03:00:00.255] [info] [Waiting next query] [exa.search.api]	Slow query ! 195619
+[2019/10/28-03:00:00.412] [info] [Preprocessing for query collapsing=&group=&hf=-1&limits=max_fetched_hits%3A0%2Cmax_fetched_hits_per_slice%3A0%2Cmax_kept_hits%3A0%2Chits_sampling%3A100&logic=sxisl&of=flea&q=availability%3Aaclfts&relevance=false&rt=disabled& ...[74 chars remaining]] [exa.search.runnerpool]	Created a new runner for logic sxisl ( 0 idle runner and 0 working runner) in 42ms
+[2019/10/28-03:00:00.516] [warn] [140309665445632] [search.snippet.builder]	G49728: S49792: No language facet id set, will process with unknown language
+[2019/10/28-03:00:00.516] [warn] [140309665445632] [search.snippet.builder]	G49728: S49792: No language facet id set, will process with unknown language
+[2019/10/28-03:00:00.516] [warn] [140309665445632] [search.snippet.builder]	G49728: S49792: No language facet id set, will process with unknown language
+[2019/10/28-03:00:00.516] [warn] [140309665445632] [search.snippet.builder]	G49728: S49792: No language facet id set, will process with unknown language
+[2019/10/28-03:00:00.516] [warn] [140309665445632] [search.snippet.builder]	G49728: S49792: No language facet id set, will process with unknown language
+[2019/10/28-03:00:00.517] [warn] [140309665445632] [search.snippet.builder]	G49728: S49792: No language facet id set, will process with unknown language
+[2019/10/28-03:00:00.517] [warn] [140309665445632] [search.snippet.builder]	G49728: S49792: No language facet id set, will process with unknown language
+[2019/10/28-03:00:00.517] [warn] [140309665445632] [search.snippet.builder]	G49728: S49792: No language facet id set, will process with unknown language
+[2019/10/28-03:00:00.517] [warn] [140309665445632] [search.snippet.builder]	G49728: S49792: No language facet id set, will process with unknown language
+[2019/10/28-03:00:00.517] [warn] [140309665445632] [search.snippet.builder]	G49728: S49792: No language facet id set, will process with unknown language
+[2019/10/28-03:00:00.517] [warn] [140309665445632] [search.snippet.builder]	G49728: S49792: No language facet id set, will process with unknown language
+[2019/10/28-03:00:00.517] [warn] [140309665445632] [search.snippet.builder]	G49728: S49792: No language facet id set, will process with unknown language
+[2019/10/28-03:00:00.517] [warn] [140309665445632] [search.snippet.builder]	G49728: S49792: No language facet id set, will process with unknown language
+[2019/10/28-03:00:00.518] [warn] [140309665445632] [search.snippet.builder]	G49728: S49792: No language facet id set, will process with unknown language
+[2019/10/28-03:00:00.518] [warn] [140309665445632] [search.snippet.builder]	G49728: S49792: No language facet id set, will process with unknown language
+[2019/10/28-03:00:00.518] [warn] [140309665445632] [search.snippet.builder]	G49728: S49792: No language facet id set, will process with unknown language
+[2019/10/28-03:00:00.518] [warn] [140309665445632] [search.snippet.builder]	G49728: S49792: No language facet id set, will process with unknown language
+[2019/10/28-03:00:00.518] [warn] [140309665445632] [search.snippet.builder]	G49728: S49792: No language facet id set, will process with unknown language
+[2019/10/28-03:00:00.518] [warn] [140309665445632] [search.snippet.builder]	G49728: S49792: No language facet id set, will process with unknown language
+[2019/10/28-03:00:00.518] [warn] [140309665445632] [search.snippet.builder]	G49728: S49792: No language facet id set, will process with unknown language
+[2019/10/28-03:00:00.518] [warn] [140309665445632] [search.snippet.builder]	G49728: S49792: No language facet id set, will process with unknown language
+[2019/10/28-03:00:00.518] [warn] [140309665445632] [search.snippet.builder]	G49728: S49792: No language facet id set, will process with unknown language
+[2019/10/28-03:00:00.518] [warn] [140309665445632] [search.snippet.builder]	G49728: S49792: No language facet id set, will process with unknown language
+[2019/10/28-03:00:00.518] [warn] [140309665445632] [search.snippet.builder]	G49728: S49792: No language facet id set, will process with unknown language
+[2019/10/28-03:00:00.519] [warn] [140309665445632] [search.snippet.builder]	G49728: S49792: No language facet id set, will process with unknown language
+[2019/10/28-03:00:00.519] [warn] [140309665445632] [search.snippet.builder]	G49728: S49792: No language facet id set, will process with unknown language
+[2019/10/28-03:00:00.519] [warn] [140309665445632] [search.snippet.builder]	G49728: S49792: No language facet id set, will process with unknown language
+[2019/10/28-03:00:00.519] [warn] [140309665445632] [search.snippet.builder]	G49728: S49792: No language facet id set, will process with unknown language
+[2019/10/28-03:00:00.519] [warn] [140309665445632] [search.snippet.builder]	G49728: S49792: No language facet id set, will process with unknown language
+[2019/10/28-03:00:00.519] [warn] [140309665445632] [search.snippet.builder]	G49728: S49792: No language facet id set, will process with unknown language
+[2019/10/28-03:00:00.519] [warn] [140309665445632] [search.snippet.builder]	G49728: S49792: No language facet id set, will process with unknown language
+[2019/10/28-03:00:00.519] [warn] [140309665445632] [search.snippet.builder]	G49728: S49792: No language facet id set, will process with unknown language
+[2019/10/28-03:00:00.519] [warn] [140309665445632] [search.snippet.builder]	G49728: S49792: No language facet id set, will process with unknown language
+[2019/10/28-03:00:00.519] [warn] [140309665445632] [search.snippet.builder]	G49728: S49792: No language facet id set, will process with unknown language
+[2019/10/28-03:00:00.519] [warn] [140309665445632] [search.snippet.builder]	G49728: S49792: No language facet id set, will process with unknown language
+[2019/10/28-03:00:00.520] [warn] [140309665445632] [search.snippet.builder]	G49728: S49792: No language facet id set, will process with unknown language
+[2019/10/28-03:00:00.520] [warn] [140309665445632] [search.snippet.builder]	G49728: S49792: No language facet id set, will process with unknown language
+[2019/10/28-03:00:00.520] [warn] [140309665445632] [search.snippet.builder]	G49728: S49792: No language facet id set, will process with unknown language
+[2019/10/28-03:00:00.721] [info] [243039458@jtp-resourceshare-25] [datashare]	share: Started datashare session on autosuggest_OnPremise_securedSuggest_ds6w_58_label
+[2019/10/28-03:00:00.814] [info] [1664544741@jtp-resourceshare-29] [exa.io.datashare]	share: Switching DataShare to version 19
+[2019/10/28-03:00:00.814] [info] [1664544741@jtp-resourceshare-29] [exa.io.datashare]	share: Garbage collecting datashare version 18
+[2019/10/28-03:00:00.815] [info] [1664544741@jtp-resourceshare-29] [datashare]	share: Committed datashare session
+[2019/10/28-03:00:01.362] [info] [ReportingConsumer-31] [reporting.file-publisher]	Reporting file rotation to: /busdata/dpmu/gbl0/data/cv/bin/../run/searchserver-ss0/search-reporting/search.csv.20191027.00000
+[2019/10/28-03:00:01.363] [info] [ReportingConsumer-31] [reporting.file-publisher]	delete file /busdata/dpmu/gbl0/data/cv/bin/../run/searchserver-ss0/search-reporting/search.csv.20191014.00000
+[2019/10/28-14:34:55.247] [info] [Processing query ST 49856 empty] [exa.search.runnerpool]	Release a runner that served 2 queries during 41694822s when having 0 working runner
+[2019/10/28-14:34:55.247] [info] [Processing query ST 49856 empty] [exa.search.runnerpool]	Dropping runner for logic sxisl: pool is destroyed
+[2019/10/28-14:34:55.499] [info] [Preprocessing for query empty] [exa.search.runnerpool]	Created a new runner for logic sxisl ( 0 idle runner and 0 working runner) in 86ms
+[2019/10/28-14:39:14.550] [warn] [140308668569344] [search.snippet.builder]	G50880: S50944: No language facet id set, will process with unknown language
+[2019/10/28-14:55:18.632] [warn] [140310283290368] [search.snippet.builder]	G51008: S51072: No value found in the language facet (facet id: 140), will process with unknown language
+[2019/10/28-14:55:18.633] [warn] [140310283290368] [search.snippet.builder]	G51008: S51072: No value found in the language facet (facet id: 140), will process with unknown language
+[2019/10/28-14:55:18.633] [warn] [140310283290368] [search.snippet.builder]	G51008: S51072: No value found in the language facet (facet id: 140), will process with unknown language
+[2019/10/28-14:55:18.634] [warn] [140310283290368] [search.snippet.builder]	G51008: S51072: No value found in the language facet (facet id: 140), will process with unknown language
+[2019/10/28-14:55:18.634] [warn] [140310283290368] [search.snippet.builder]	G51008: S51072: No value found in the language facet (facet id: 140), will process with unknown language
+[2019/10/28-14:55:18.636] [warn] [140310283290368] [search.snippet.builder]	G51008: S51072: No value found in the language facet (facet id: 140), will process with unknown language
+[2019/10/28-14:55:18.658] [info] [Processing query ST 51008 applicationId=default&b=0&hf=10&l=fr&of=flea&origin=mashupapi.default.search&q=CM-*&stagingMode=false&timezone=%2B01%3A00] [exa.search.runnerpool]	Release a runner that served 9 queries during 1223139s when having 0 working runner
+[2019/10/28-14:55:18.659] [info] [Processing query ST 51008 applicationId=default&b=0&hf=10&l=fr&of=flea&origin=mashupapi.default.search&q=CM-*&stagingMode=false&timezone=%2B01%3A00] [exa.search.runnerpool]	Dropping runner for logic sxisl: pool is destroyed
+[2019/10/28-14:58:16.161] [info] [Preprocessing for query applicationId=default&b=0&hf=10&l=fr&of=flea&origin=mashupapi.default.search&q=CM-*&stagingMode=false&timezone=%2B01%3A00] [exa.search.runnerpool]	Created a new runner for logic sxisl ( 0 idle runner and 0 working runner) in 78ms
+[2019/10/28-14:58:16.553] [warn] [140308668569344] [search.snippet.builder]	G51136: S51200: No value found in the language facet (facet id: 140), will process with unknown language
+[2019/10/28-14:58:16.555] [warn] [140308668569344] [search.snippet.builder]	G51136: S51200: No value found in the language facet (facet id: 140), will process with unknown language
+[2019/10/28-14:58:16.556] [warn] [140308668569344] [search.snippet.builder]	G51136: S51200: No value found in the language facet (facet id: 140), will process with unknown language
+[2019/10/28-14:58:16.557] [warn] [140308668569344] [search.snippet.builder]	G51136: S51200: No value found in the language facet (facet id: 140), will process with unknown language
+[2019/10/28-14:58:16.558] [warn] [140308668569344] [search.snippet.builder]	G51136: S51200: No value found in the language facet (facet id: 140), will process with unknown language
+[2019/10/28-14:58:16.559] [warn] [140308668569344] [search.snippet.builder]	G51136: S51200: No value found in the language facet (facet id: 140), will process with unknown language
+[2019/10/28-14:58:16.560] [warn] [140308668569344] [search.snippet.builder]	G51136: S51200: No value found in the language facet (facet id: 140), will process with unknown language
+[2019/10/28-14:58:16.561] [warn] [140308668569344] [search.snippet.builder]	G51136: S51200: No value found in the language facet (facet id: 140), will process with unknown language
+[2019/10/28-14:58:16.563] [warn] [140308668569344] [search.snippet.builder]	G51136: S51200: No value found in the language facet (facet id: 140), will process with unknown language
+[2019/10/28-14:58:16.564] [warn] [140308668569344] [search.snippet.builder]	G51136: S51200: No value found in the language facet (facet id: 140), will process with unknown language
+[2019/10/28-15:02:17.256] [warn] [140308668569344] [search.snippet.builder]	G51392: S51456: No language facet id set, will process with unknown language
+[2019/10/28-15:02:17.257] [warn] [140308668569344] [search.snippet.builder]	G51392: S51456: No language facet id set, will process with unknown language
+[2019/10/28-15:02:17.257] [warn] [140308668569344] [search.snippet.builder]	G51392: S51456: No language facet id set, will process with unknown language
+[2019/10/28-15:02:17.258] [warn] [140308668569344] [search.snippet.builder]	G51392: S51456: No language facet id set, will process with unknown language
+[2019/10/28-15:02:17.258] [warn] [140308668569344] [search.snippet.builder]	G51392: S51456: No language facet id set, will process with unknown language
+[2019/10/28-16:32:15.626] [info] [Processing query ST 51520 empty] [exa.search.runnerpool]	Release a runner that served 4 queries during 5639444s when having 0 working runner
+[2019/10/28-16:32:15.627] [info] [Processing query ST 51520 empty] [exa.search.runnerpool]	Dropping runner for logic sxisl: pool is destroyed
+[2019/10/28-16:34:12.396] [info] [Preprocessing for query allow_unknown_hit_meta=true&debug=-ellql&hf=-1&of=flea&q=indexDate_30d4e718-e33c-40de-8e3e-f8fdee156d8e_45&q.internal_date_query=availability%3AinternalDate&qt=%23and%28%23query%28internal_date_query% ...[95 chars remaining]] [exa.search.runnerpool]	Created a new runner for logic sxisl ( 0 idle runner and 0 working runner) in 93ms
+[2019/10/28-16:34:12.651] [warn] [140308668569344] [search.snippet.builder]	G51776: S51840: No language facet id set, will process with unknown language
+[2019/10/28-16:34:12.651] [warn] [140308668569344] [search.snippet.builder]	G51776: S51840: No language facet id set, will process with unknown language
+[2019/10/28-16:34:12.652] [warn] [140308668569344] [search.snippet.builder]	G51776: S51840: No language facet id set, will process with unknown language
+[2019/10/28-16:34:12.652] [warn] [140308668569344] [search.snippet.builder]	G51776: S51840: No language facet id set, will process with unknown language
+[2019/10/28-16:34:12.652] [warn] [140308668569344] [search.snippet.builder]	G51776: S51840: No language facet id set, will process with unknown language
+[2019/10/28-16:34:12.653] [warn] [140308668569344] [search.snippet.builder]	G51776: S51840: No language facet id set, will process with unknown language
+[2019/10/28-16:55:23.425] [info] [Processing query ST 52032 empty] [exa.search.runnerpool]	Release a runner that served 4 queries during 1271004s when having 0 working runner
+[2019/10/28-16:55:23.425] [info] [Processing query ST 52032 empty] [exa.search.runnerpool]	Dropping runner for logic sxisl: pool is destroyed
+[2019/10/29-00:00:00.041] [info] [667957103@jtp-default-0] [exa.log.rotation]	Rotating standard log
+Log4NG: rotating logs now

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<Widget name="Tags" group="Collaborative" premium="true">
+
+	<Description>This widget allows users to tag documents with meta-data.</Description>
+
+	<Preview>
+		<![CDATA[
+			<img src="/resources/widgets/tagging/img/preview.png" alt="Tagging Preview" />
+		]]>
+	</Preview>
+
+	<SupportWidgetsId arity="ZERO" />
+	<SupportFeedsId arity="ONE" />
+	<SupportI18N supported="true" >
+		<JsKeys>
+			<JsKey>help-text</JsKey>
+			<JsKey>add-text</JsKey>
+			<JsKey>edit-text</JsKey>
+			<JsKey>add</JsKey>
+			<JsKey>or</JsKey>
+			<JsKey>close</JsKey>
+			<JsKey>error-duplicate</JsKey>
+			<JsKey>error-invalid</JsKey>
+			<JsKey>error-twice</JsKey>
+		</JsKeys> 
+	</SupportI18N>
+
+	<Includes>
+		<Include type="js" path="/resources/javascript/storage/storage-client-0.2.js" />
+		<Include type="js" path="javascript/tagging.js" />
+		<Include type="css" path="css/style.less" />
+	</Includes>
+
+	<StorageKeys>
+		<StorageKey optionId="tagMetaName" resource="document" />
+	</StorageKeys>
+
+	<OptionsGroup name="General">		
+		<Option id="link" name="Link" arity="ZERO_OR_ONE" isEvaluated="true">
+			<Description>
+				Specifies an OnClick Link for tags. Example: "search?q=%{tag}". Leave blank to disable. 
+			</Description>
+			<Functions>
+				<ContextMenu>COMMON_add('Tag', ['%{tag}'])</ContextMenu>
+				<ContextMenu>Pages()</ContextMenu>
+				<ContextMenu>PageParameters()</ContextMenu>
+			</Functions>
+		</Option>
+		<Option id="editEnabled" name="Allow add/edit" arity="ONE">
+			<Description>
+				Allows to add/edit tags. If false, the 'Add new tags' link is not shown.
+			</Description>
+			<Values>
+				<Value>false</Value>
+				<Value>true</Value>
+			</Values>
+		</Option>
+	</OptionsGroup>
+	
+	<OptionsGroup name="Storage">
+		<Option id="metaName" name="Identifying meta name" arity="ZERO_OR_ONE">
+			<Description>
+			<![CDATA[
+				Specifies a uniquely identifiable meta that will be used as storage key for the document (Good candidates: url, id).<br />
+				if no meta name is set, the default value is 'url' from Hit Info.
+			]]>
+			</Description>
+			<Functions>
+				<ContextMenu>Metas()</ContextMenu>
+			</Functions>
+		</Option>
+		<Option id="tagMetaName" name="Tags meta name" arity="ONE">
+			<Description>
+				Specifies the meta name under which tags are stored (Storage key).
+			</Description>
+			<Functions>
+				<Check>isBagKey</Check>
+			</Functions>
+		</Option>
+	</OptionsGroup>
+
+	<DefaultValues>
+		<DefaultValue name="tagMetaName">tags[]</DefaultValue>
+		<DefaultValue name="editEnabled">true</DefaultValue>
+	</DefaultValues>
+</Widget>

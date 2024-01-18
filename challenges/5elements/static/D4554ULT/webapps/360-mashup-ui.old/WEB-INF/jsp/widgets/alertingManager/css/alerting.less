@@ -1,0 +1,85 @@
+.mashup {
+	.alerting-content
+	{
+		text-align:left;
+		font-size: 11px;
+		position:relative;
+		min-height:200px;
+	}
+	
+	body .searchWidget .alerting-loading
+	{
+		background-image:url('../img/spinner.gif');
+		background-repeat:no-repeat;
+		background-position:center center;
+	}
+	
+	.alerting-list li {
+		height:40px;
+		position:relative;
+		padding:2px 48px 2px 10px;
+		border-top:1px solid @cblock-border;
+	}
+	
+	.alerting-list li:hover a,
+	.alerting-list li .alerting-editing
+	{		
+		display:block;
+		text-decoration:none;
+	}
+	
+	.alerting-list li:first-child
+	{
+		border:none;
+	}
+	
+	.alerting-name
+	{
+		font-weight:bold;
+		color:@ctext-bold;
+	}
+	
+	.alerting-description
+	{
+		color:@ctext-weak;
+	}
+	
+	.alerting-delete,
+	.alerting-edit
+	{
+		display:none;
+		position:absolute;
+		top:50%;
+		margin-top:-14px;
+		cursor:pointer;
+		width:28px;
+		height:28px;
+	}
+	
+	.alerting-edit
+	{
+		background:url('../img/btn_edit.png') 0 0 no-repeat;
+		right:28px;
+	}
+	
+	.alerting-edit:hover,
+	.alerting-delete:hover,
+	.alerting-editing
+	{
+		background-position: 0 -32px;
+	}
+	
+	.alerting-delete
+	{
+		background:url('../img/btn_delete.png') 0 0 no-repeat;
+		right:0;
+	}
+	
+	&.ie6 .alerting-delete,
+	&.ie6 .alerting-edit
+	{
+		display:block;
+		top:10px;
+		margin-top:0;
+	}
+}

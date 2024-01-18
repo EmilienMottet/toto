@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<Widget name="Back To Top" group="Navigation" premium="true">
+
+	<Description>This widget displays a back to top button when the body is scrolled.</Description>
+
+	<SupportI18N supported="true" />
+	
+	<Includes>
+		<Include type="css" path="css/style.less" />
+	</Includes>
+	
+	<Platforms>
+		<Platform type="web" supported="true" />
+		<Platform type="mobile" supported="true" />
+	</Platforms>
+	
+	<SupportFeedsId arity="ZERO" />
+	
+</Widget>

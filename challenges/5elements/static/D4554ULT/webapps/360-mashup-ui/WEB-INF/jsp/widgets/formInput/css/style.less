@@ -1,0 +1,32 @@
+/*
+ * Warning !
+ * Cannot be in &.mashup because of Sharepoint.
+ * The .mashup-suggest-container div is append to the body.
+ */
+.mashup-suggest-container {
+	position: absolute;
+	border: 1px solid @cblock-border;
+	background-color: @cblock-bg;
+	z-index: 30000;
+
+	ul {
+		list-style-type: none;
+		li {
+			padding-left:5px;
+
+			&.highlighted {
+				background-color: @clink;
+				color: @ctext-inverted;
+				cursor:pointer;
+			}
+
+			.matched {
+				font-weight: bold;
+			}
+		}
+	}
+}
+
+#ui-datepicker-div[style] {
+	z-index: 9999999 !important;
+}

@@ -1,0 +1,743 @@
+[2019/10/22-00:00:00.014] [info] [1821215584@jtp-default-1] [exa.log.rotation]	Rotating additional logs
+[2019/10/22-00:23:08.460] [info] [960704298@jtp-resourceshare-161] [datashare]	share: Started datashare session on dictionary-sxidict
+[2019/10/22-00:23:08.545] [info] [105412415@jtp-resourceshare-160] [exa.io.datashare]	share: Switching DataShare to version 20
+[2019/10/22-00:23:08.557] [info] [105412415@jtp-resourceshare-160] [exa.io.datashare]	share: Garbage collecting datashare version 19
+[2019/10/22-00:23:08.689] [info] [105412415@jtp-resourceshare-160] [datashare]	share: Committed datashare session
+[2019/10/22-04:00:00.235] [info] [Waiting next query] [exa.search.api]	Slow query ! 217487
+[2019/10/22-04:00:00.498] [warn] [140107113002752] [search.snippet.builder]	G63680: S63744: No language facet id set, will process with unknown language
+[2019/10/22-04:00:00.499] [warn] [140107113002752] [search.snippet.builder]	G63680: S63744: No language facet id set, will process with unknown language
+[2019/10/22-04:00:00.499] [warn] [140107113002752] [search.snippet.builder]	G63680: S63744: No language facet id set, will process with unknown language
+[2019/10/22-04:00:00.499] [warn] [140107113002752] [search.snippet.builder]	G63680: S63744: No language facet id set, will process with unknown language
+[2019/10/22-04:00:00.499] [warn] [140107113002752] [search.snippet.builder]	G63680: S63744: No language facet id set, will process with unknown language
+[2019/10/22-04:00:00.499] [warn] [140107113002752] [search.snippet.builder]	G63680: S63744: No language facet id set, will process with unknown language
+[2019/10/22-04:00:00.499] [warn] [140107113002752] [search.snippet.builder]	G63680: S63744: No language facet id set, will process with unknown language
+[2019/10/22-04:00:00.499] [warn] [140107113002752] [search.snippet.builder]	G63680: S63744: No language facet id set, will process with unknown language
+[2019/10/22-04:00:00.499] [warn] [140107113002752] [search.snippet.builder]	G63680: S63744: No language facet id set, will process with unknown language
+[2019/10/22-04:00:00.500] [warn] [140107113002752] [search.snippet.builder]	G63680: S63744: No language facet id set, will process with unknown language
+[2019/10/22-04:00:00.500] [warn] [140107113002752] [search.snippet.builder]	G63680: S63744: No language facet id set, will process with unknown language
+[2019/10/22-04:00:00.500] [warn] [140107113002752] [search.snippet.builder]	G63680: S63744: No language facet id set, will process with unknown language
+[2019/10/22-04:00:00.500] [warn] [140107113002752] [search.snippet.builder]	G63680: S63744: No language facet id set, will process with unknown language
+[2019/10/22-04:00:00.500] [warn] [140107113002752] [search.snippet.builder]	G63680: S63744: No language facet id set, will process with unknown language
+[2019/10/22-04:00:00.500] [warn] [140107113002752] [search.snippet.builder]	G63680: S63744: No language facet id set, will process with unknown language
+[2019/10/22-04:00:00.500] [warn] [140107113002752] [search.snippet.builder]	G63680: S63744: No language facet id set, will process with unknown language
+[2019/10/22-04:00:00.500] [warn] [140107113002752] [search.snippet.builder]	G63680: S63744: No language facet id set, will process with unknown language
+[2019/10/22-04:00:00.500] [warn] [140107113002752] [search.snippet.builder]	G63680: S63744: No language facet id set, will process with unknown language
+[2019/10/22-04:00:00.500] [warn] [140107113002752] [search.snippet.builder]	G63680: S63744: No language facet id set, will process with unknown language
+[2019/10/22-04:00:00.500] [warn] [140107113002752] [search.snippet.builder]	G63680: S63744: No language facet id set, will process with unknown language
+[2019/10/22-04:00:00.500] [warn] [140107113002752] [search.snippet.builder]	G63680: S63744: No language facet id set, will process with unknown language
+[2019/10/22-04:00:00.500] [warn] [140107113002752] [search.snippet.builder]	G63680: S63744: No language facet id set, will process with unknown language
+[2019/10/22-04:00:00.500] [warn] [140107113002752] [search.snippet.builder]	G63680: S63744: No language facet id set, will process with unknown language
+[2019/10/22-04:00:00.501] [warn] [140107113002752] [search.snippet.builder]	G63680: S63744: No language facet id set, will process with unknown language
+[2019/10/22-04:00:00.501] [warn] [140107113002752] [search.snippet.builder]	G63680: S63744: No language facet id set, will process with unknown language
+[2019/10/22-04:00:00.501] [warn] [140107113002752] [search.snippet.builder]	G63680: S63744: No language facet id set, will process with unknown language
+[2019/10/22-04:00:00.501] [warn] [140107113002752] [search.snippet.builder]	G63680: S63744: No language facet id set, will process with unknown language
+[2019/10/22-04:00:00.501] [warn] [140107113002752] [search.snippet.builder]	G63680: S63744: No language facet id set, will process with unknown language
+[2019/10/22-04:00:00.501] [warn] [140107113002752] [search.snippet.builder]	G63680: S63744: No language facet id set, will process with unknown language
+[2019/10/22-04:00:00.501] [warn] [140107113002752] [search.snippet.builder]	G63680: S63744: No language facet id set, will process with unknown language
+[2019/10/22-04:00:00.501] [warn] [140107113002752] [search.snippet.builder]	G63680: S63744: No language facet id set, will process with unknown language
+[2019/10/22-04:00:00.501] [warn] [140107113002752] [search.snippet.builder]	G63680: S63744: No language facet id set, will process with unknown language
+[2019/10/22-04:00:00.501] [warn] [140107113002752] [search.snippet.builder]	G63680: S63744: No language facet id set, will process with unknown language
+[2019/10/22-04:00:00.502] [warn] [140107113002752] [search.snippet.builder]	G63680: S63744: No language facet id set, will process with unknown language
+[2019/10/22-04:00:00.502] [warn] [140107113002752] [search.snippet.builder]	G63680: S63744: No language facet id set, will process with unknown language
+[2019/10/22-04:00:00.505] [info] [Processing query ST 63680 collapsing=&group=&hf=-1&limits=max_fetched_hits%3A0%2Cmax_fetched_hits_per_slice%3A0%2Cmax_kept_hits%3A0%2Chits_sampling%3A100&logic=sxisl&of=flea&q=availability%3Aaclfts&relevance=false&rt=disabled& ...[74 chars remaining]] [exa.search.runnerpool]	Release a runner that served 6 queries during 39392331s when having 0 working runner
+[2019/10/22-04:00:00.505] [info] [Processing query ST 63680 collapsing=&group=&hf=-1&limits=max_fetched_hits%3A0%2Cmax_fetched_hits_per_slice%3A0%2Cmax_kept_hits%3A0%2Chits_sampling%3A100&logic=sxisl&of=flea&q=availability%3Aaclfts&relevance=false&rt=disabled& ...[74 chars remaining]] [exa.search.runnerpool]	Dropping runner for logic sxisl: pool is destroyed
+[2019/10/22-04:00:00.625] [info] [ReportingConsumer-183] [reporting.file-publisher]	Reporting file rotation to: /busdata/dpmu/gbl0/data/cv/bin/../run/searchserver-ss0/search-reporting/search.csv.20191021.00000
+[2019/10/22-04:00:00.784] [info] [368641023@jtp-resourceshare-170] [datashare]	share: Started datashare session on autosuggest_OnPremise_securedSuggest_ds6w_58_label
+[2019/10/22-04:00:00.860] [info] [622478924@jtp-resourceshare-173] [exa.io.datashare]	share: Switching DataShare to version 13
+[2019/10/22-04:00:00.860] [info] [622478924@jtp-resourceshare-173] [exa.io.datashare]	share: Garbage collecting datashare version 12
+[2019/10/22-04:00:00.862] [info] [622478924@jtp-resourceshare-173] [datashare]	share: Committed datashare session
+[2019/10/22-11:16:07.317] [info] [551367787@jtp-resourceshare-172] [datashare]	share: Started datashare session on dictionary-sxidict
+[2019/10/22-11:16:07.395] [info] [551367787@jtp-resourceshare-172] [exa.io.datashare]	share: Switching DataShare to version 21
+[2019/10/22-11:16:07.406] [info] [551367787@jtp-resourceshare-172] [exa.io.datashare]	share: Garbage collecting datashare version 20
+[2019/10/22-11:16:07.529] [info] [551367787@jtp-resourceshare-172] [datashare]	share: Committed datashare session
+[2019/10/22-15:37:56.756] [info] [Processing query ST 63808 empty] [exa.search.runnerpool]	Release a runner that served 12 queries during 81270905s when having 0 working runner
+[2019/10/22-15:37:56.756] [info] [Processing query ST 63808 empty] [exa.search.runnerpool]	Dropping runner for logic sxisl: pool is destroyed
+[2019/10/22-15:37:57.165] [info] [Preprocessing for query empty] [exa.search.runnerpool]	Created a new runner for logic sxisl ( 0 idle runner and 0 working runner) in 127ms
+[2019/10/22-15:37:59.172] [info] [Preprocessing for query empty] [exa.search.runnerpool]	Created a new runner for logic sxisl ( 0 idle runner and 1 working runner) in 74ms
+[2019/10/22-15:41:24.082] [info] [Preprocessing for query empty] [exa.search.runnerpool]	Created a new runner for logic sxisl ( 0 idle runner and 0 working runner) in 84ms
+[2019/10/22-15:41:24.325] [info] [Preprocessing for query empty] [exa.search.runnerpool]	Created a new runner for logic sxisl ( 0 idle runner and 1 working runner) in 96ms
+[2019/10/22-15:41:27.308] [info] [pool-13-thread-1] [exa.search.runnerpool]	Recycling 1 runners (totalQueries=535)
+[2019/10/22-16:23:22.958] [info] [Processing query ST 70336 empty] [exa.search.runnerpool]	Release a runner that served 16 queries during 2723765s when having 0 working runner
+[2019/10/22-16:23:22.958] [info] [Processing query ST 70336 empty] [exa.search.runnerpool]	Dropping runner for logic sxisl: pool is destroyed
+[2019/10/22-16:23:23.801] [info] [Processing query ST 70464 empty] [exa.search.runnerpool]	Release a runner that served 26 queries during 2726617s when having 0 working runner
+[2019/10/22-16:23:23.801] [info] [Processing query ST 70464 empty] [exa.search.runnerpool]	Dropping runner for logic sxisl: pool is destroyed
+[2019/10/22-16:23:24.111] [info] [Processing query ST 70592 empty] [exa.search.runnerpool]	Release a runner that served 8 queries during 2519762s when having 0 working runner
+[2019/10/22-16:23:24.112] [info] [Processing query ST 70592 empty] [exa.search.runnerpool]	Dropping runner for logic sxisl: pool is destroyed
+[2019/10/22-16:23:24.381] [info] [Preprocessing for query empty] [exa.search.runnerpool]	Created a new runner for logic sxisl ( 0 idle runner and 0 working runner) in 89ms
+[2019/10/22-16:23:26.376] [info] [Preprocessing for query empty] [exa.search.runnerpool]	Created a new runner for logic sxisl ( 0 idle runner and 1 working runner) in 191ms
+[2019/10/22-16:23:26.473] [info] [Preprocessing for query empty] [exa.search.runnerpool]	Created a new runner for logic sxisl ( 0 idle runner and 1 working runner) in 79ms
+[2019/10/22-16:27:01.904] [info] [Preprocessing for query empty] [exa.search.runnerpool]	Created a new runner for logic sxisl ( 0 idle runner and 0 working runner) in 81ms
+[2019/10/22-16:27:03.930] [info] [pool-13-thread-1] [exa.search.runnerpool]	Recycling 1 runners (totalQueries=648)
+caught segmentation violation: address not mapped to object (signal 11) at address 0xffffffffffffffff
+[2019/10/22-16:29:49.338] [info] [main] [exa.log]	Setting master level info
+**********************************************************
+[2019/10/22-16:29:49.345] [warn] [main] [bee]	Process was not responding and has been killed by hostagent, consider changing pingTimeout in DeploymentInternal.xml if occurs regularly (default is 5mn)
+[2019/10/22-16:29:49.348] [info] [main] [bee]	Process 764 starting on mpllnx4032.mpl.michelin.com (mpllnx4032.mpl.michelin.com/10.216.104.82) as user dpmugbl0 with version V6R2019x.R2.99035
+[2019/10/22-16:29:49.348] [info] [main] [bee]	 [args: java --key processName searchserver-ss0 --key hostname mpllnx4032.mpl.michelin.com --key installName cvdefault --key id -2830956 --ppid 13896 --configuration config:///version.xml --configuration config:///mercury.xml --key logToRunDir true ; directory: /busdata/dpmu/gbl0/data/cv/run/searchserver-ss0 ; architecture: amd64-linux ; kernel: "Linux version 3.10.0-1062.1.2.el7.x86_64 (mockbuild@x86-vm-27.build.eng.bos.redhat.com) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-39) (GCC) ) #1 SMP Mon Sep 16 14:19:51 EDT 2019"]
+[2019/10/22-16:29:49.349] [info] [main] [bee]	Loading root config file: config:///version.xml
+[2019/10/22-16:29:49.377] [info] [main] [bee]	Loading root config file: config:///mercury.xml
+Updating logging configuration
+[2019/10/22-16:29:50.049] [info] [main] [exa.log]	Setting master level info
+**********************************************************
+[2019/10/22-16:29:50.051] [info] [main] [bee.directory]	Directory updated, reloading
+[2019/10/22-16:29:50.053] [info] [main] [directory]	Loading directory
+[2019/10/22-16:29:50.185] [info] [main] [bee.directory]	Directory loaded
+[2019/10/22-16:29:50.185] [info] [main] [bee]	Configuration loaded, starting runtime
+[2019/10/22-16:29:50.185] [info] [main] [directory]	Loading directory
+[2019/10/22-16:29:50.209] [info] [main] [bee.directory]	Directory loaded
+[2019/10/22-16:29:50.289] [info] [main] [org.eclipse.jetty.util.log]	Logging initialized @10087ms to org.eclipse.jetty.util.log.Slf4jLog
+[2019/10/22-16:29:50.292] [info] [main] [bee.directory]	Configuring server 'resourceshare'
+[2019/10/22-16:29:50.500] [info] [main] [bee.directory]	Mounting servlet 'com.exalead.ds.share2.http.ShareFLIS' on '/*'
+[2019/10/22-16:29:50.524] [info] [main] [bee.directory]	Configuring server 'searchapi'
+[2019/10/22-16:29:50.526] [info] [main] [bee.directory]	Mounting servlet 'com.exalead.mercury.mami.indexing.CheckpointsFetchServlet' on '/checkpoints/*'
+[2019/10/22-16:29:50.526] [info] [main] [bee.directory]	Mounting servlet 'com.exalead.search.searchapi.SearchAPIServlet' on '/*'
+[2019/10/22-16:29:50.526] [info] [main] [bee.directory]	Mounting webapp '/access'
+[2019/10/22-16:29:50.547] [info] [main] [com.exalead.bee.WebAppDeployer]	Adding extraClasspath: extrajava://360-plugins/applications/default/*/VERSIONED/*.jar
+[2019/10/22-16:29:50.548] [info] [main] [bee.classloader]	Searching in /busapps/dpmu/gbl0/3DSpaceIndex/linux_a64/cv/tools/..//extrajava
+[2019/10/22-16:29:50.548] [info] [main] [bee.classloader]	Searching in /busdata/dpmu/gbl0/data/cv/bin/..//extrajava
+[2019/10/22-16:29:50.548] [info] [main] [bee.classloader]	Searching in /busdata/dpmu/gbl0/data/cv/bin/../extrajava
+[2019/10/22-16:29:50.548] [warn] [main] [bee.classloader]	Could not find "//360-plugins/applications/default/" subdir in any top-level jar folder
+[2019/10/22-16:29:50.554] [info] [main] [bee.directory]	Mounting webapp '/storage-service'
+[2019/10/22-16:29:50.557] [info] [main] [bee.directory]	Configuring server 'searchui'
+[2019/10/22-16:29:50.558] [info] [main] [bee.directory]	Mounting webapp '/mashup-ui'
+[2019/10/22-16:29:50.561] [info] [main] [com.exalead.bee.WebAppDeployer]	Adding extraClasspath: extrajava://360-plugins/applications/default/*/VERSIONED/*.jar
+[2019/10/22-16:29:50.561] [info] [main] [bee.classloader]	Searching in /busapps/dpmu/gbl0/3DSpaceIndex/linux_a64/cv/tools/..//extrajava
+[2019/10/22-16:29:50.561] [info] [main] [bee.classloader]	Searching in /busdata/dpmu/gbl0/data/cv/bin/..//extrajava
+[2019/10/22-16:29:50.561] [info] [main] [bee.classloader]	Searching in /busdata/dpmu/gbl0/data/cv/bin/../extrajava
+[2019/10/22-16:29:50.561] [warn] [main] [bee.classloader]	Could not find "//360-plugins/applications/default/" subdir in any top-level jar folder
+[2019/10/22-16:29:50.562] [info] [main] [bee.directory]	Configuring homepage
+[2019/10/22-16:29:50.679] [info] [main] [bee.directory]	Configuring server 'boxproxy'
+[2019/10/22-16:29:50.680] [info] [main] [bee.directory]	Mounting FLIS servlet 'com.exalead.mercury.fetch.BoxFetcherProxy' on '/fetchermanager/boxproxy/ss0/*'
+[2019/10/22-16:29:50.684] [info] [main] [bee.directory]	Configuring homepage
+[2019/10/22-16:29:50.686] [info] [main] [bee.directory]	Configuring server 'default'
+[2019/10/22-16:29:50.687] [info] [main] [bee.directory]	Mounting servlet 'com.exalead.dictionary.DictionaryService' on '/dictionary/ss0/*'
+[2019/10/22-16:29:50.687] [info] [main] [bee.directory]	Mounting servlet 'com.exalead.bee.JavaRuntimeServlet' on '/java/*'
+[2019/10/22-16:29:50.687] [info] [main] [bee.directory]	Mounting servlet 'com.exalead.bee.services.ProfilingServlet' on '/profiler/*'
+[2019/10/22-16:29:50.687] [info] [main] [bee.directory]	Mounting servlet 'com.exalead.bee.services.IsAliveServlet' on '/isAlive/*'
+[2019/10/22-16:29:50.687] [info] [main] [bee.directory]	Mounting Bee servlet 'com.exalead.bee.services.Log4EService' on '/log4e/mpllnx4032.mpl.michelin.com-cvdefault/searchserver-ss0/*'
+[2019/10/22-16:29:50.701] [info] [main] [bee.directory]	Mounting Bee servlet 'com.exalead.bee.services.BeegistryUpdater' on '/beegistry/mpllnx4032.mpl.michelin.com-cvdefault/searchserver-ss0/*'
+[2019/10/22-16:29:50.704] [info] [main] [bee.directory]	Configuring homepage
+[2019/10/22-16:29:50.705] [info] [main] [bee.directory]	Starting server 'resourceshare': service 'resourceshareservice'
+[2019/10/22-16:29:50.708] [info] [main] [bee.directory]	Starting server 'resourceshare': HTTP server on port 16024
+[ShutdownMonitor] Not enabled (port < 0): -1
+[2019/10/22-16:29:50.711] [info] [main] [org.eclipse.jetty.server.Server]	jetty-9.4.10.v20180503; built: 2018-05-03T15:56:21.710Z; git: daa59876e6f384329b122929e70a80934569428c; jvm 1.8.0_201-b09
+[2019/10/22-16:29:50.738] [info] [main] [org.eclipse.jetty.server.session]	DefaultSessionIdManager workerName=node0
+[2019/10/22-16:29:50.738] [info] [main] [org.eclipse.jetty.server.session]	No SessionScavenger set, using defaults
+[2019/10/22-16:29:50.742] [info] [main] [org.eclipse.jetty.server.session]	node0 Scavenging every 660000ms
+[2019/10/22-16:29:50.788] [warn] [main] [org.eclipse.jetty.security.SecurityHandler]	ServletContext@o.e.j.s.ServletContextHandler@51dcb805{/,null,STARTING} has uncovered http methods for path: /
+[2019/10/22-16:29:50.808] [info] [main] [org.eclipse.jetty.server.handler.ContextHandler]	Started o.e.j.s.ServletContextHandler@51dcb805{/,null,AVAILABLE}
+[2019/10/22-16:29:50.833] [info] [main] [org.eclipse.jetty.server.AbstractConnector]	Started 16024@6da21078{HTTP/1.1,[http/1.1]}{0.0.0.0:16024}
+[2019/10/22-16:29:50.834] [info] [main] [org.eclipse.jetty.server.Server]	Started @10634ms
+[2019/10/22-16:29:50.834] [info] [main] [bee.directory]	Starting server 'resourceshare_slave': service 'resourceshare'
+[2019/10/22-16:29:50.834] [info] [main] [resourceshare]	Starting ResourceShare
+[2019/10/22-16:29:50.918] [info] [main] [resourceshare]	Check update of group  autosuggest_OnPremise_securedSuggest_ds6w_58_label at serial 1571709600787
+[2019/10/22-16:29:50.924] [info] [main] [resourceshare]	Check update of group  plugins at serial 1570608434350
+[2019/10/22-16:29:50.925] [info] [main] [resourceshare]	Could not read serial for group dictionary-dict0: No path=/last_published.txt for version=0
+[2019/10/22-16:29:50.926] [info] [main] [resourceshare]	Check update of group  dictionary-dict0 at serial 0
+[2019/10/22-16:29:50.929] [info] [main] [resourceshare]	Check update of group  dictionary-sxidict at serial 1571735767317
+[2019/10/22-16:29:50.929] [info] [main] [resourceshare]	Syncing groups
+[2019/10/22-16:29:52.041] [info] [1607792885@jtp-resourceshare-1] [datashare]	share: Started datashare session on plugins
+[2019/10/22-16:29:53.924] [info] [362234227@jtp-resourceshare-8] [exa.io.datashare]	share: Switching DataShare to version 26
+[2019/10/22-16:29:53.924] [info] [362234227@jtp-resourceshare-8] [exa.io.datashare]	share: Garbage collecting datashare version 25
+[2019/10/22-16:29:53.935] [info] [362234227@jtp-resourceshare-8] [datashare]	share: Committed datashare session
+[2019/10/22-16:29:53.946] [info] [main] [resourceshare]	Successfully synced groups
+[2019/10/22-16:29:53.955] [info] [main] [resourceshare]	Loading plugins
+[2019/10/22-16:29:53.956] [info] [main] [exa.plugins]	Refreshing plugins list
+[2019/10/22-16:29:53.956] [info] [main] [plugins]	Listing plugins
+[2019/10/22-16:29:53.957] [info] [main] [plugins]	NGRESOURCEPATH=/busdata/dpmu/gbl0/data/cv/bin/../resource/all-arch:/busapps/dpmu/gbl0/3DSpaceIndex/linux_a64/cv/tools/..//resource//all-arch:/busapps/dpmu/gbl0/3DSpaceIndex/linux_a64/cv/tools/..//resource//amd64-linux
+[2019/10/22-16:29:53.958] [info] [main] [plugins]	scanning builtin plugins in /busdata/dpmu/gbl0/data/cv/bin/../resource/all-arch/builtin_plugins_deployed
+[2019/10/22-16:29:54.047] [info] [main] [bee.directory]	Starting server 'searchapi': service 'search-api'
+[2019/10/22-16:29:54.047] [info] [main] [bee.directory]	Starting server 'searchapi': HTTP server on port 16010
+[ShutdownMonitor] Not enabled (port < 0): -1
+[2019/10/22-16:29:54.047] [info] [main] [org.eclipse.jetty.server.Server]	jetty-9.4.10.v20180503; built: 2018-05-03T15:56:21.710Z; git: daa59876e6f384329b122929e70a80934569428c; jvm 1.8.0_201-b09
+[2019/10/22-16:29:54.052] [info] [main] [org.eclipse.jetty.server.session]	DefaultSessionIdManager workerName=node0
+[2019/10/22-16:29:54.053] [info] [main] [org.eclipse.jetty.server.session]	No SessionScavenger set, using defaults
+[2019/10/22-16:29:54.053] [info] [main] [org.eclipse.jetty.server.session]	node0 Scavenging every 600000ms
+[2019/10/22-16:29:54.054] [warn] [main] [org.eclipse.jetty.security.SecurityHandler]	ServletContext@o.e.j.s.ServletContextHandler@6ee6f53{/,null,STARTING} has uncovered http methods for path: /
+[2019/10/22-16:29:54.069] [info] [main] [directory]	Loading directory
+[2019/10/22-16:29:54.106] [info] [main] [search.api]	Search-API reconfiguration start (version = 22)
+[2019/10/22-16:29:54.106] [info] [main] [search.api]	Waiting for starting queries
+[2019/10/22-16:29:54.106] [info] [main] [search.api]	Queries started, starting actual reconfiguration
+[2019/10/22-16:29:54.109] [info] [main] [search.api]	Configuring targets
+[2019/10/22-16:29:54.132] [info] [main] [search.slicesmonitor]	Building slice list for sxist0
+[2019/10/22-16:29:54.162] [info] [main] [search.api]	Waiting for 1 search targets to be ready ...
+[2019/10/22-16:29:54.162] [info] [ICM-sxist0] [search.slicesmonitor]	Cluster manager sxist0 starting groups [cgdefault]
+[2019/10/22-16:29:54.211] [info] [ICM-sxist0] [search.slicesmonitor]	/index6/sxibg0/0/sxii0 now up
+[2019/10/22-16:29:54.212] [info] [main] [search.api]	Configuring search commands
+[2019/10/22-16:29:54.240] [info] [main] [search.api]	Configuring command /search-api
+[2019/10/22-16:30:07.138] [info] [main] [reporter.config]	Configuring CSV publishing to /busdata/dpmu/gbl0/data/cv/bin/../run/searchserver-ss0/search-reporting/search.csv
+[2019/10/22-16:30:07.188] [info] [main] [reporting.file-publisher]	Reporting file: /busdata/dpmu/gbl0/data/cv/bin/../run/searchserver-ss0/search-reporting/search.csv
+[2019/10/22-16:30:09.566] [info] [main] [search.api]	Configuring command /expansion
+[2019/10/22-16:30:09.576] [info] [main] [search.api]	Configuring command /spellcheck
+[2019/10/22-16:30:09.588] [info] [main] [search.api]	Configuring command /suggest
+[2019/10/22-16:30:09.593] [info] [main] [reporter.config]	Configuring CSV publishing to /busdata/dpmu/gbl0/data/cv/bin/../run/searchserver-ss0/suggest-reporting/suggest.csv
+[2019/10/22-16:30:09.594] [info] [main] [reporting.file-publisher]	Reporting file: /busdata/dpmu/gbl0/data/cv/bin/../run/searchserver-ss0/suggest-reporting/suggest.csv
+[2019/10/22-16:30:12.019] [info] [main] [search.api]	Configuring command /dictionary
+[2019/10/22-16:30:12.025] [info] [main] [search.api]	Configuring command /fetch
+[2019/10/22-16:30:12.050] [info] [main] [search.api]	Configuring command /preview
+log4j:ERROR Attempted to append to closed appender named [stdout].
+[2019/10/22-16:30:12.571] [warn] [main] [net.sf.ehcache.config.ConfigurationFactory]	No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/busapps/dpmu/gbl0/3DSpaceIndex/linux_a64/cv/javabin/third/ehcache-core-2.4.4.jar!/ehcache-failsafe.xml
+[2019/10/22-16:30:18.763] [info] [main] [search.api]	Configuring command /thumbnail
+[2019/10/22-16:30:18.766] [info] [main] [exa.search.api]	using internal HTTP server for producing thumbnails from HTML preview on port searchapi.instances.ss0.thumbHttpInternalPort == 16026
+[2019/10/22-16:30:18.782] [info] [main] [fetch]	opened internal thumbnail HTTP server for html-to-image processing: http://10.216.104.82:16026/
+[2019/10/22-16:30:18.784] [info] [main] [exa.search.api]	Opening local thumbnails cache
+[2019/10/22-16:30:18.811] [info] [main] [search.api]	Configuring command /security
+[2019/10/22-16:30:18.812] [info] [main] [search.api]	Search-API reconfiguration done (version = 22)
+[2019/10/22-16:30:18.813] [info] [main] [org.eclipse.jetty.server.handler.ContextHandler]	Started o.e.j.s.ServletContextHandler@6ee6f53{/,null,AVAILABLE}
+[2019/10/22-16:30:18.950] [info] [main] [org.eclipse.jetty.annotations.AnnotationConfiguration]	Scanning elapsed time=0ms
+[2019/10/22-16:30:19.026] [warn] [main] [org.eclipse.jetty.security.SecurityHandler]	ServletContext@o.e.j.w.WebAppContext@421bba99{/access,file:///busdata/dpmu/gbl0/data/cv/webapps-tmp/searchserver-ss0/searchapi_16010/access/,STARTING,@16010}{/busdata/dpmu/gbl0/data/cv/webapps-tmp/searchserver-ss0/searchapi_16010/access} has uncovered http methods for path: /
+[2019/10/22-16:30:19.029] [info] [main] [com.exalead.access.config.AccessContext]	Checking master for missing plugins for instance access-api.ac0 of application default...
+[2019/10/22-16:30:19.041] [info] [main] [com.exalead.cv360.config.ConfigurationManager]	Configuration Top Directory: /busdata/dpmu/gbl0/data/cv/bin/../gct
+[2019/10/22-16:30:19.042] [info] [main] [com.exalead.cv360.config.ConfigurationManager]	Configuration Last Revision Repository: /busdata/dpmu/gbl0/data/cv/bin/../gct/22/master/360
+[2019/10/22-16:30:19.042] [info] [main] [com.exalead.cv360.config.ConfigurationManager]	Configuration Store Directory: /busdata/dpmu/gbl0/data/cv/bin/../config/360
+[2019/10/22-16:30:19.042] [info] [main] [com.exalead.cv360.config.ConfigurationManager]	Data Directory: /busdata/dpmu/gbl0/data/cv/bin/..
+[2019/10/22-16:30:19.391] [info] [main] [plugins.deployment.local]	Found 0 deployed plugins in /busdata/dpmu/gbl0/data/cv/bin/.. for instance access-api.ac0 of application default
+[2019/10/22-16:30:19.601] [info] [main] [access.loader]	Discovering available feeds...
+[2019/10/22-16:30:20.108] [info] [main] [access.loader]	Discovering available triggers...
+[2019/10/22-16:30:20.124] [info] [main] [mel.loader]	Discovering user defined MEL...
+[2019/10/22-16:30:20.171] [info] [main] [access.loader]	Discovering available serializers...
+[2019/10/22-16:30:20.171] [info] [main] [org.eclipse.jetty.server.handler.ContextHandler]	Started o.e.j.w.WebAppContext@421bba99{/access,file:///busdata/dpmu/gbl0/data/cv/webapps-tmp/searchserver-ss0/searchapi_16010/access/,AVAILABLE,@16010}{/busdata/dpmu/gbl0/data/cv/webapps-tmp/searchserver-ss0/searchapi_16010/access}
+[2019/10/22-16:30:20.201] [warn] [main] [org.eclipse.jetty.security.SecurityHandler]	ServletContext@o.e.j.w.WebAppContext@5d12a356{/storage-service,file:///busdata/dpmu/gbl0/data/cv/webapps-tmp/searchserver-ss0/searchapi_16010/storage-service/,STARTING,@16010}{/busdata/dpmu/gbl0/data/cv/webapps-tmp/searchserver-ss0/searchapi_16010/storage-service} has uncovered http methods for path: /
+[2019/10/22-16:30:20.507] [info] [main] [com.exalead.cv360.storage.engine.StorageEngineFactory]	StorageEngine using 'com.exalead.cv360.storage.engine.jdbc.JdbcStorageEngine': successfully initalized.
+[2019/10/22-16:30:20.522] [info] [main] [org.eclipse.jetty.server.handler.ContextHandler]	Started o.e.j.w.WebAppContext@5d12a356{/storage-service,file:///busdata/dpmu/gbl0/data/cv/webapps-tmp/searchserver-ss0/searchapi_16010/storage-service/,AVAILABLE,@16010}{/busdata/dpmu/gbl0/data/cv/webapps-tmp/searchserver-ss0/searchapi_16010/storage-service}
+[2019/10/22-16:30:20.523] [info] [main] [org.eclipse.jetty.server.AbstractConnector]	Started 16010@4364863{HTTP/1.1,[http/1.1]}{0.0.0.0:16010}
+[2019/10/22-16:30:20.524] [info] [main] [org.eclipse.jetty.server.Server]	Started @40324ms
+[2019/10/22-16:30:20.524] [info] [main] [bee.directory]	Starting server 'searchui': HTTP server on port 16000
+[ShutdownMonitor] Not enabled (port < 0): -1
+[2019/10/22-16:30:20.524] [info] [main] [org.eclipse.jetty.server.Server]	jetty-9.4.10.v20180503; built: 2018-05-03T15:56:21.710Z; git: daa59876e6f384329b122929e70a80934569428c; jvm 1.8.0_201-b09
+[2019/10/22-16:30:20.526] [info] [main] [org.eclipse.jetty.server.session]	DefaultSessionIdManager workerName=node0
+[2019/10/22-16:30:20.527] [info] [main] [org.eclipse.jetty.server.session]	No SessionScavenger set, using defaults
+[2019/10/22-16:30:20.527] [info] [main] [org.eclipse.jetty.server.session]	node0 Scavenging every 600000ms
+[2019/10/22-16:30:20.527] [warn] [main] [org.eclipse.jetty.security.SecurityHandler]	ServletContext@o.e.j.s.ServletContextHandler@75b6dd5b{/,resource:/exa/bee/net/http2/htdocs,STARTING} has uncovered http methods for path: /
+[2019/10/22-16:30:20.531] [info] [main] [org.eclipse.jetty.server.handler.ContextHandler]	Started o.e.j.s.ServletContextHandler@75b6dd5b{/,resource:/exa/bee/net/http2/htdocs,AVAILABLE}
+[2019/10/22-16:30:22.895] [warn] [1457352442@jtp-searchui-3] [org.eclipse.jetty.annotations.AnnotationParser]	org.mozilla.classfile.ByteCode scanned from multiple locations: jar:file:///busdata/dpmu/gbl0/data/cv/webapps/360-mashup-ui/WEB-INF/lib/js.jar!/org/mozilla/classfile/ByteCode.class, jar:file:///busdata/dpmu/gbl0/data/cv/webapps/360-mashup-ui/WEB-INF/lib/closure-compiler.jar!/org/mozilla/classfile/ByteCode.class
+[2019/10/22-16:30:22.895] [warn] [1457352442@jtp-searchui-3] [org.eclipse.jetty.annotations.AnnotationParser]	org.mozilla.classfile.ClassFileField scanned from multiple locations: jar:file:///busdata/dpmu/gbl0/data/cv/webapps/360-mashup-ui/WEB-INF/lib/js.jar!/org/mozilla/classfile/ClassFileField.class, jar:file:///busdata/dpmu/gbl0/data/cv/webapps/360-mashup-ui/WEB-INF/lib/closure-compiler.jar!/org/mozilla/classfile/ClassFileField.class
+[2019/10/22-16:30:22.896] [warn] [1457352442@jtp-searchui-3] [org.eclipse.jetty.annotations.AnnotationParser]	org.mozilla.classfile.ClassFileMethod scanned from multiple locations: jar:file:///busdata/dpmu/gbl0/data/cv/webapps/360-mashup-ui/WEB-INF/lib/js.jar!/org/mozilla/classfile/ClassFileMethod.class, jar:file:///busdata/dpmu/gbl0/data/cv/webapps/360-mashup-ui/WEB-INF/lib/closure-compiler.jar!/org/mozilla/classfile/ClassFileMethod.class
+[2019/10/22-16:30:22.896] [warn] [1457352442@jtp-searchui-3] [org.eclipse.jetty.annotations.AnnotationParser]	org.mozilla.classfile.ClassFileWriter$ClassFileFormatException scanned from multiple locations: jar:file:///busdata/dpmu/gbl0/data/cv/webapps/360-mashup-ui/WEB-INF/lib/js.jar!/org/mozilla/classfile/ClassFileWriter$ClassFileFormatException.class, jar:file:///busdata/dpmu/gbl0/data/cv/webapps/360-mashup-ui/WEB-INF/lib/closure-compiler.jar!/org/mozilla/classfile/ClassFileWriter$ClassFileFormatException.class
+[2019/10/22-16:30:22.896] [warn] [1457352442@jtp-searchui-3] [org.eclipse.jetty.annotations.AnnotationParser]	org.mozilla.classfile.ClassFileWriter scanned from multiple locations: jar:file:///busdata/dpmu/gbl0/data/cv/webapps/360-mashup-ui/WEB-INF/lib/js.jar!/org/mozilla/classfile/ClassFileWriter.class, jar:file:///busdata/dpmu/gbl0/data/cv/webapps/360-mashup-ui/WEB-INF/lib/closure-compiler.jar!/org/mozilla/classfile/ClassFileWriter.class
+[2019/10/22-16:30:22.897] [warn] [1457352442@jtp-searchui-3] [org.eclipse.jetty.annotations.AnnotationParser]	org.mozilla.classfile.ConstantPool scanned from multiple locations: jar:file:///busdata/dpmu/gbl0/data/cv/webapps/360-mashup-ui/WEB-INF/lib/js.jar!/org/mozilla/classfile/ConstantPool.class, jar:file:///busdata/dpmu/gbl0/data/cv/webapps/360-mashup-ui/WEB-INF/lib/closure-compiler.jar!/org/mozilla/classfile/ConstantPool.class
+[2019/10/22-16:30:22.897] [warn] [1457352442@jtp-searchui-3] [org.eclipse.jetty.annotations.AnnotationParser]	org.mozilla.classfile.ExceptionTableEntry scanned from multiple locations: jar:file:///busdata/dpmu/gbl0/data/cv/webapps/360-mashup-ui/WEB-INF/lib/js.jar!/org/mozilla/classfile/ExceptionTableEntry.class, jar:file:///busdata/dpmu/gbl0/data/cv/webapps/360-mashup-ui/WEB-INF/lib/closure-compiler.jar!/org/mozilla/classfile/ExceptionTableEntry.class
+[2019/10/22-16:30:22.897] [warn] [1457352442@jtp-searchui-3] [org.eclipse.jetty.annotations.AnnotationParser]	org.mozilla.classfile.FieldOrMethodRef scanned from multiple locations: jar:file:///busdata/dpmu/gbl0/data/cv/webapps/360-mashup-ui/WEB-INF/lib/js.jar!/org/mozilla/classfile/FieldOrMethodRef.class, jar:file:///busdata/dpmu/gbl0/data/cv/webapps/360-mashup-ui/WEB-INF/lib/closure-compiler.jar!/org/mozilla/classfile/FieldOrMethodRef.class
+[2019/10/22-16:30:22.946] [info] [main] [org.eclipse.jetty.annotations.AnnotationConfiguration]	Scanning elapsed time=2257ms
+[2019/10/22-16:30:22.996] [info] [main] [org.eclipse.jetty.server.handler.ContextHandler.mashup_ui]	No Spring WebApplicationInitializer types detected on classpath
+[2019/10/22-16:30:23.332] [warn] [main] [org.eclipse.jetty.security.SecurityHandler]	ServletContext@o.e.j.w.WebAppContext@b3e86d5{/mashup-ui,file:///busdata/dpmu/gbl0/data/cv/webapps/360-mashup-ui/,STARTING,@16000}{/360-mashup-ui} has uncovered http methods for path: /
+[2019/10/22-16:30:23.338] [info] [main] [com.exalead.cv360.searchui.config.MashupConfigurationProvider]	Service name: 360-mashup-ui.mu0 application id: default
+[2019/10/22-16:30:23.341] [info] [main] [mashup.context]	Checking master for missing plugins for instance 360-mashup-ui.mu0 of application default...
+[2019/10/22-16:30:23.354] [info] [main] [plugins.deployment.local]	Found 0 deployed plugins in /busdata/dpmu/gbl0/data/cv/bin/.. for instance 360-mashup-ui.mu0 of application default
+[2019/10/22-16:30:23.366] [info] [main] [plugins.deployment.local]	Found 0 deployed plugins in /busdata/dpmu/gbl0/data/cv/bin/.. for instance 360-mashup-ui.mu0 of application default
+[2019/10/22-16:30:23.369] [info] [main] [mashup.loader]	Discovering themes...
+[2019/10/22-16:30:23.394] [info] [main] [mashup.loader]	Discovering widgets...
+[2019/10/22-16:30:23.395] [info] [main] [mashup.loader]	Discovering layouts...
+[2019/10/22-16:30:23.955] [info] [main] [mashup.context]	License - Users check is enabled
+[2019/10/22-16:30:23.957] [info] [main] [com.exalead.cv360.searchui.services.UserLicenseManager]	Starting UsersChecking Thread for instance name: mu0
+[2019/10/22-16:30:23.983] [info] [main] [org.eclipse.jetty.server.handler.ContextHandler.mashup_ui]	Initializing Spring root WebApplicationContext
+[2019/10/22-16:30:25.654] [info] [main] [mashup.loader]	Discovering available triggers...
+[2019/10/22-16:30:25.704] [info] [main] [mashup.loader]	Discovering security providers...
+[2019/10/22-16:30:25.704] [info] [main] [mashup.loader]	Discovering controllers...
+[2019/10/22-16:30:25.711] [info] [main] [mashup.loader]	Discovering JSP tags...
+[2019/10/22-16:30:25.715] [info] [main] [mel.loader]	Discovering user defined MEL...
+[2019/10/22-16:30:25.740] [info] [main] [org.eclipse.jetty.server.handler.ContextHandler.mashup_ui]	Initializing Spring FrameworkServlet '360-search-ui'
+[2019/10/22-16:30:27.325] [info] [main] [controller.isAlive]	Starting isAlive service monitoring 0 urls
+[2019/10/22-16:30:27.930] [info] [main] [org.apache.tiles.access.TilesAccess]	Publishing TilesContext for context: org.springframework.web.servlet.view.tiles3.SpringWildcardServletTilesApplicationContext
+[2019/10/22-16:30:28.688] [info] [main] [org.eclipse.jetty.server.handler.ContextHandler]	Started o.e.j.w.WebAppContext@b3e86d5{/mashup-ui,file:///busdata/dpmu/gbl0/data/cv/webapps/360-mashup-ui/,AVAILABLE,@16000}{/360-mashup-ui}
+[2019/10/22-16:30:28.691] [info] [main] [org.eclipse.jetty.server.AbstractConnector]	Started 16000@60d32006{HTTP/1.1,[http/1.1]}{0.0.0.0:16000}
+[2019/10/22-16:30:28.691] [info] [main] [org.eclipse.jetty.server.Server]	Started @48491ms
+[2019/10/22-16:30:28.691] [info] [main] [bee.directory]	Starting server 'boxproxy': HTTP server on port 16027
+[ShutdownMonitor] Not enabled (port < 0): -1
+[2019/10/22-16:30:28.691] [info] [main] [org.eclipse.jetty.server.Server]	jetty-9.4.10.v20180503; built: 2018-05-03T15:56:21.710Z; git: daa59876e6f384329b122929e70a80934569428c; jvm 1.8.0_201-b09
+[2019/10/22-16:30:28.694] [info] [main] [org.eclipse.jetty.server.session]	DefaultSessionIdManager workerName=node0
+[2019/10/22-16:30:28.694] [info] [main] [org.eclipse.jetty.server.session]	No SessionScavenger set, using defaults
+[2019/10/22-16:30:28.695] [info] [main] [org.eclipse.jetty.server.session]	node0 Scavenging every 660000ms
+[2019/10/22-16:30:28.695] [warn] [main] [org.eclipse.jetty.security.SecurityHandler]	ServletContext@o.e.j.s.ServletContextHandler@e88e14{/,resource:/exa/bee/net/http2/htdocs,STARTING} has uncovered http methods for path: /
+[2019/10/22-16:30:28.697] [info] [main] [org.eclipse.jetty.server.handler.ContextHandler]	Started o.e.j.s.ServletContextHandler@e88e14{/,resource:/exa/bee/net/http2/htdocs,AVAILABLE}
+[2019/10/22-16:30:28.700] [info] [main] [org.eclipse.jetty.server.AbstractConnector]	Started 16027@25c4f621{HTTP/1.1,[http/1.1]}{0.0.0.0:16027}
+[2019/10/22-16:30:28.700] [info] [main] [org.eclipse.jetty.server.Server]	Started @48500ms
+[2019/10/22-16:30:28.700] [info] [main] [bee.directory]	Starting server 'default': service 'services.dictionary.ss0'
+[2019/10/22-16:30:28.789] [warn] [main] [exa.dictionary.query.dict0]	No resources found at resourcemanager://dictionary-dict0/dict0
+[2019/10/22-16:30:29.644] [info] [main] [bee.directory]	Starting server 'default': HTTP server on port 16023
+[ShutdownMonitor] Not enabled (port < 0): -1
+[2019/10/22-16:30:29.645] [info] [main] [org.eclipse.jetty.server.Server]	jetty-9.4.10.v20180503; built: 2018-05-03T15:56:21.710Z; git: daa59876e6f384329b122929e70a80934569428c; jvm 1.8.0_201-b09
+[2019/10/22-16:30:29.650] [info] [main] [org.eclipse.jetty.server.session]	DefaultSessionIdManager workerName=node0
+[2019/10/22-16:30:29.650] [info] [main] [org.eclipse.jetty.server.session]	No SessionScavenger set, using defaults
+[2019/10/22-16:30:29.650] [info] [main] [org.eclipse.jetty.server.session]	node0 Scavenging every 660000ms
+[2019/10/22-16:30:29.651] [warn] [main] [org.eclipse.jetty.security.SecurityHandler]	ServletContext@o.e.j.s.ServletContextHandler@37f627d0{/,resource:/exa/bee/net/http2/htdocs,STARTING} has uncovered http methods for path: /
+[2019/10/22-16:30:29.653] [info] [main] [org.eclipse.jetty.server.handler.ContextHandler]	Started o.e.j.s.ServletContextHandler@37f627d0{/,resource:/exa/bee/net/http2/htdocs,AVAILABLE}
+[2019/10/22-16:30:29.654] [info] [main] [org.eclipse.jetty.server.AbstractConnector]	Started 16023@639cb0c8{HTTP/1.1,[http/1.1]}{0.0.0.0:16023}
+[2019/10/22-16:30:29.655] [info] [main] [org.eclipse.jetty.server.Server]	Started @49455ms
+[2019/10/22-16:30:29.662] [info] [main] [bee]	Runtime is started
+[2019/10/22-16:30:58.460] [info] [139622509201152] [exa.tick.server]	Starting processing thread
+[2019/10/22-16:30:58.530] [info] [Preprocessing for query allow_unknown_hit_meta=true&debug=-ellql&hf=-1&of=flea&q=indexDate_47624833-a4aa-4297-be89-d5c30ee643ca_232&q.internal_date_query=availability%3AinternalDate&qt=%23and%28%23query%28internal_date_query ...[96 chars remaining]] [exa.search.runnerpool]	Created a new runner for logic sxisl ( 0 idle runner and 0 working runner) in 2929ms
+[2019/10/22-16:30:59.637] [info] [139622509201152] [exa.tick.dest]	G64: S128: creating remote connection to 127.0.0.1:16017-part-0
+[2019/10/22-16:31:41.458] [info] [Preprocessing for query empty] [exa.search.runnerpool]	Created a new runner for logic sxisl ( 0 idle runner and 0 working runner) in 248ms
+[2019/10/22-16:31:42.230] [info] [139621246588672] [exa.tick.dest]	G640: S704: creating remote connection to 127.0.0.1:16017
+[2019/10/22-16:32:02.420] [warn] [139621246588672] [search.snippet.builder]	G2880: S2944: No language facet id set, will process with unknown language
+[2019/10/22-16:32:23.509] [info] [ReportingConsumer-52] [reporting.file-publisher]	Reporting file rotation to: /busdata/dpmu/gbl0/data/cv/bin/../run/searchserver-ss0/suggest-reporting/suggest.csv.20191021.00000
+[2019/10/22-16:32:25.563] [warn] [139621688059648] [search.snippet.builder]	G3520: S3584: No language facet id set, will process with unknown language
+[2019/10/22-16:32:25.564] [warn] [139621688059648] [search.snippet.builder]	G3520: S3584: No language facet id set, will process with unknown language
+[2019/10/22-16:38:54.235] [info] [Processing query ST 8128 empty] [exa.search.runnerpool]	Release a runner that served 34 queries during 475543s when having 1 working runner
+[2019/10/22-16:38:54.235] [info] [Processing query ST 8128 empty] [exa.search.runnerpool]	Dropping runner for logic sxisl: pool is destroyed
+[2019/10/22-16:38:54.254] [info] [Processing query ST 8192 empty] [exa.search.runnerpool]	Release a runner that served 31 queries during 432756s when having 0 working runner
+[2019/10/22-16:38:54.254] [info] [Processing query ST 8192 empty] [exa.search.runnerpool]	Dropping runner for logic sxisl: pool is destroyed
+[2019/10/22-16:38:54.545] [info] [Preprocessing for query empty] [exa.search.runnerpool]	Created a new runner for logic sxisl ( 0 idle runner and 0 working runner) in 84ms
+[2019/10/22-16:38:54.681] [info] [Preprocessing for query empty] [exa.search.runnerpool]	Created a new runner for logic sxisl ( 0 idle runner and 1 working runner) in 104ms
+[2019/10/22-16:39:29.240] [info] [Preprocessing for query empty] [exa.search.runnerpool]	Created a new runner for logic sxisl ( 0 idle runner and 0 working runner) in 140ms
+[2019/10/22-16:39:29.387] [info] [Preprocessing for query empty] [exa.search.runnerpool]	Created a new runner for logic sxisl ( 0 idle runner and 0 working runner) in 101ms
+[2019/10/22-16:39:33.467] [info] [pool-3-thread-1] [exa.search.runnerpool]	Recycling 1 runners (totalQueries=104)
+caught segmentation violation: address not mapped to object (signal 11) at address 0xffffffffffffffff
+[2019/10/22-16:39:45.884] [info] [main] [exa.log]	Setting master level info
+**********************************************************
+[2019/10/22-16:39:45.894] [info] [main] [bee]	Process 3298 starting on mpllnx4032.mpl.michelin.com (mpllnx4032.mpl.michelin.com/10.216.104.82) as user dpmugbl0 with version V6R2019x.R2.99035
+[2019/10/22-16:39:45.894] [info] [main] [bee]	 [args: java --key processName searchserver-ss0 --key hostname mpllnx4032.mpl.michelin.com --key installName cvdefault --key id -2830956 --ppid 13896 --configuration config:///version.xml --configuration config:///mercury.xml --key logToRunDir true ; directory: /busdata/dpmu/gbl0/data/cv/run/searchserver-ss0 ; architecture: amd64-linux ; kernel: "Linux version 3.10.0-1062.1.2.el7.x86_64 (mockbuild@x86-vm-27.build.eng.bos.redhat.com) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-39) (GCC) ) #1 SMP Mon Sep 16 14:19:51 EDT 2019"]
+[2019/10/22-16:39:45.907] [info] [main] [bee]	Loading root config file: config:///version.xml
+[2019/10/22-16:39:45.922] [info] [main] [bee]	Loading root config file: config:///mercury.xml
+Updating logging configuration
+[2019/10/22-16:39:46.760] [info] [main] [exa.log]	Setting master level info
+**********************************************************
+[2019/10/22-16:39:46.762] [info] [main] [bee.directory]	Directory updated, reloading
+[2019/10/22-16:39:46.764] [info] [main] [directory]	Loading directory
+[2019/10/22-16:39:46.956] [info] [main] [bee.directory]	Directory loaded
+[2019/10/22-16:39:46.956] [info] [main] [bee]	Configuration loaded, starting runtime
+[2019/10/22-16:39:46.956] [info] [main] [directory]	Loading directory
+[2019/10/22-16:39:47.006] [info] [main] [bee.directory]	Directory loaded
+[2019/10/22-16:39:47.083] [info] [main] [org.eclipse.jetty.util.log]	Logging initialized @2353ms to org.eclipse.jetty.util.log.Slf4jLog
+[2019/10/22-16:39:47.090] [info] [main] [bee.directory]	Configuring server 'resourceshare'
+[2019/10/22-16:39:47.334] [info] [main] [bee.directory]	Mounting servlet 'com.exalead.ds.share2.http.ShareFLIS' on '/*'
+[2019/10/22-16:39:47.367] [info] [main] [bee.directory]	Configuring server 'searchapi'
+[2019/10/22-16:39:47.370] [info] [main] [bee.directory]	Mounting servlet 'com.exalead.mercury.mami.indexing.CheckpointsFetchServlet' on '/checkpoints/*'
+[2019/10/22-16:39:47.370] [info] [main] [bee.directory]	Mounting servlet 'com.exalead.search.searchapi.SearchAPIServlet' on '/*'
+[2019/10/22-16:39:47.370] [info] [main] [bee.directory]	Mounting webapp '/access'
+[2019/10/22-16:39:47.398] [info] [main] [com.exalead.bee.WebAppDeployer]	Adding extraClasspath: extrajava://360-plugins/applications/default/*/VERSIONED/*.jar
+[2019/10/22-16:39:47.400] [info] [main] [bee.classloader]	Searching in /busapps/dpmu/gbl0/3DSpaceIndex/linux_a64/cv/tools/..//extrajava
+[2019/10/22-16:39:47.400] [info] [main] [bee.classloader]	Searching in /busdata/dpmu/gbl0/data/cv/bin/..//extrajava
+[2019/10/22-16:39:47.400] [info] [main] [bee.classloader]	Searching in /busdata/dpmu/gbl0/data/cv/bin/../extrajava
+[2019/10/22-16:39:47.400] [warn] [main] [bee.classloader]	Could not find "//360-plugins/applications/default/" subdir in any top-level jar folder
+[2019/10/22-16:39:47.408] [info] [main] [bee.directory]	Mounting webapp '/storage-service'
+[2019/10/22-16:39:47.413] [info] [main] [bee.directory]	Configuring server 'searchui'
+[2019/10/22-16:39:47.414] [info] [main] [bee.directory]	Mounting webapp '/mashup-ui'
+[2019/10/22-16:39:47.417] [info] [main] [com.exalead.bee.WebAppDeployer]	Adding extraClasspath: extrajava://360-plugins/applications/default/*/VERSIONED/*.jar
+[2019/10/22-16:39:47.418] [info] [main] [bee.classloader]	Searching in /busapps/dpmu/gbl0/3DSpaceIndex/linux_a64/cv/tools/..//extrajava
+[2019/10/22-16:39:47.418] [info] [main] [bee.classloader]	Searching in /busdata/dpmu/gbl0/data/cv/bin/..//extrajava
+[2019/10/22-16:39:47.418] [info] [main] [bee.classloader]	Searching in /busdata/dpmu/gbl0/data/cv/bin/../extrajava
+[2019/10/22-16:39:47.418] [warn] [main] [bee.classloader]	Could not find "//360-plugins/applications/default/" subdir in any top-level jar folder
+[2019/10/22-16:39:47.419] [info] [main] [bee.directory]	Configuring homepage
+[2019/10/22-16:39:47.593] [info] [main] [bee.directory]	Configuring server 'boxproxy'
+[2019/10/22-16:39:47.599] [info] [main] [bee.directory]	Mounting FLIS servlet 'com.exalead.mercury.fetch.BoxFetcherProxy' on '/fetchermanager/boxproxy/ss0/*'
+[2019/10/22-16:39:47.603] [info] [main] [bee.directory]	Configuring homepage
+[2019/10/22-16:39:47.606] [info] [main] [bee.directory]	Configuring server 'default'
+[2019/10/22-16:39:47.611] [info] [main] [bee.directory]	Mounting servlet 'com.exalead.dictionary.DictionaryService' on '/dictionary/ss0/*'
+[2019/10/22-16:39:47.611] [info] [main] [bee.directory]	Mounting servlet 'com.exalead.bee.JavaRuntimeServlet' on '/java/*'
+[2019/10/22-16:39:47.612] [info] [main] [bee.directory]	Mounting servlet 'com.exalead.bee.services.ProfilingServlet' on '/profiler/*'
+[2019/10/22-16:39:47.612] [info] [main] [bee.directory]	Mounting servlet 'com.exalead.bee.services.IsAliveServlet' on '/isAlive/*'
+[2019/10/22-16:39:47.612] [info] [main] [bee.directory]	Mounting Bee servlet 'com.exalead.bee.services.Log4EService' on '/log4e/mpllnx4032.mpl.michelin.com-cvdefault/searchserver-ss0/*'
+[2019/10/22-16:39:47.631] [info] [main] [bee.directory]	Mounting Bee servlet 'com.exalead.bee.services.BeegistryUpdater' on '/beegistry/mpllnx4032.mpl.michelin.com-cvdefault/searchserver-ss0/*'
+[2019/10/22-16:39:47.635] [info] [main] [bee.directory]	Configuring homepage
+[2019/10/22-16:39:47.638] [info] [main] [bee.directory]	Starting server 'resourceshare': service 'resourceshareservice'
+[2019/10/22-16:39:47.642] [info] [main] [bee.directory]	Starting server 'resourceshare': HTTP server on port 16024
+[ShutdownMonitor] Not enabled (port < 0): -1
+[2019/10/22-16:39:47.649] [info] [main] [org.eclipse.jetty.server.Server]	jetty-9.4.10.v20180503; built: 2018-05-03T15:56:21.710Z; git: daa59876e6f384329b122929e70a80934569428c; jvm 1.8.0_201-b09
+[2019/10/22-16:39:47.693] [info] [main] [org.eclipse.jetty.server.session]	DefaultSessionIdManager workerName=node0
+[2019/10/22-16:39:47.693] [info] [main] [org.eclipse.jetty.server.session]	No SessionScavenger set, using defaults
+[2019/10/22-16:39:47.697] [info] [main] [org.eclipse.jetty.server.session]	node0 Scavenging every 600000ms
+[2019/10/22-16:39:47.764] [warn] [main] [org.eclipse.jetty.security.SecurityHandler]	ServletContext@o.e.j.s.ServletContextHandler@51dcb805{/,null,STARTING} has uncovered http methods for path: /
+[2019/10/22-16:39:47.799] [info] [main] [org.eclipse.jetty.server.handler.ContextHandler]	Started o.e.j.s.ServletContextHandler@51dcb805{/,null,AVAILABLE}
+[2019/10/22-16:39:47.837] [info] [main] [org.eclipse.jetty.server.AbstractConnector]	Started 16024@6da21078{HTTP/1.1,[http/1.1]}{0.0.0.0:16024}
+[2019/10/22-16:39:47.838] [info] [main] [org.eclipse.jetty.server.Server]	Started @3111ms
+[2019/10/22-16:39:47.838] [info] [main] [bee.directory]	Starting server 'resourceshare_slave': service 'resourceshare'
+[2019/10/22-16:39:47.838] [info] [main] [resourceshare]	Starting ResourceShare
+[2019/10/22-16:39:47.907] [info] [main] [resourceshare]	Check update of group  autosuggest_OnPremise_securedSuggest_ds6w_58_label at serial 1571709600787
+[2019/10/22-16:39:47.913] [info] [main] [resourceshare]	Check update of group  plugins at serial 1571754592069
+[2019/10/22-16:39:47.915] [info] [main] [resourceshare]	Could not read serial for group dictionary-dict0: No path=/last_published.txt for version=0
+[2019/10/22-16:39:47.915] [info] [main] [resourceshare]	Check update of group  dictionary-dict0 at serial 0
+[2019/10/22-16:39:47.918] [info] [main] [resourceshare]	Check update of group  dictionary-sxidict at serial 1571735767317
+[2019/10/22-16:39:47.918] [info] [main] [resourceshare]	Syncing groups
+[2019/10/22-16:39:48.696] [info] [main] [resourceshare]	Successfully synced groups
+[2019/10/22-16:39:48.704] [info] [main] [resourceshare]	Loading plugins
+[2019/10/22-16:39:48.705] [info] [main] [exa.plugins]	Refreshing plugins list
+[2019/10/22-16:39:48.705] [info] [main] [plugins]	Listing plugins
+[2019/10/22-16:39:48.706] [info] [main] [plugins]	NGRESOURCEPATH=/busdata/dpmu/gbl0/data/cv/bin/../resource/all-arch:/busapps/dpmu/gbl0/3DSpaceIndex/linux_a64/cv/tools/..//resource//all-arch:/busapps/dpmu/gbl0/3DSpaceIndex/linux_a64/cv/tools/..//resource//amd64-linux
+[2019/10/22-16:39:48.706] [info] [main] [plugins]	scanning builtin plugins in /busdata/dpmu/gbl0/data/cv/bin/../resource/all-arch/builtin_plugins_deployed
+[2019/10/22-16:39:48.872] [info] [main] [bee.directory]	Starting server 'searchapi': service 'search-api'
+[2019/10/22-16:39:48.872] [info] [main] [bee.directory]	Starting server 'searchapi': HTTP server on port 16010
+[ShutdownMonitor] Not enabled (port < 0): -1
+[2019/10/22-16:39:48.872] [info] [main] [org.eclipse.jetty.server.Server]	jetty-9.4.10.v20180503; built: 2018-05-03T15:56:21.710Z; git: daa59876e6f384329b122929e70a80934569428c; jvm 1.8.0_201-b09
+[2019/10/22-16:39:48.875] [info] [main] [org.eclipse.jetty.server.session]	DefaultSessionIdManager workerName=node0
+[2019/10/22-16:39:48.875] [info] [main] [org.eclipse.jetty.server.session]	No SessionScavenger set, using defaults
+[2019/10/22-16:39:48.875] [info] [main] [org.eclipse.jetty.server.session]	node0 Scavenging every 600000ms
+[2019/10/22-16:39:48.876] [warn] [main] [org.eclipse.jetty.security.SecurityHandler]	ServletContext@o.e.j.s.ServletContextHandler@6ee6f53{/,null,STARTING} has uncovered http methods for path: /
+[2019/10/22-16:39:48.891] [info] [main] [directory]	Loading directory
+[2019/10/22-16:39:48.914] [info] [main] [search.api]	Search-API reconfiguration start (version = 22)
+[2019/10/22-16:39:48.914] [info] [main] [search.api]	Waiting for starting queries
+[2019/10/22-16:39:48.914] [info] [main] [search.api]	Queries started, starting actual reconfiguration
+[2019/10/22-16:39:48.917] [info] [main] [search.api]	Configuring targets
+[2019/10/22-16:39:48.936] [info] [main] [search.slicesmonitor]	Building slice list for sxist0
+[2019/10/22-16:39:48.966] [info] [main] [search.api]	Waiting for 1 search targets to be ready ...
+[2019/10/22-16:39:48.966] [info] [ICM-sxist0] [search.slicesmonitor]	Cluster manager sxist0 starting groups [cgdefault]
+[2019/10/22-16:39:49.020] [info] [ICM-sxist0] [search.slicesmonitor]	/index6/sxibg0/0/sxii0 now up
+[2019/10/22-16:39:49.020] [info] [main] [search.api]	Configuring search commands
+[2019/10/22-16:39:49.041] [info] [main] [search.api]	Configuring command /search-api
+[2019/10/22-16:40:01.334] [info] [main] [reporter.config]	Configuring CSV publishing to /busdata/dpmu/gbl0/data/cv/bin/../run/searchserver-ss0/search-reporting/search.csv
+[2019/10/22-16:40:01.346] [info] [main] [reporting.file-publisher]	Reporting file: /busdata/dpmu/gbl0/data/cv/bin/../run/searchserver-ss0/search-reporting/search.csv
+[2019/10/22-16:40:03.279] [info] [main] [search.api]	Configuring command /expansion
+[2019/10/22-16:40:03.289] [info] [main] [search.api]	Configuring command /spellcheck
+[2019/10/22-16:40:03.300] [info] [main] [search.api]	Configuring command /suggest
+[2019/10/22-16:40:03.306] [info] [main] [reporter.config]	Configuring CSV publishing to /busdata/dpmu/gbl0/data/cv/bin/../run/searchserver-ss0/suggest-reporting/suggest.csv
+[2019/10/22-16:40:03.307] [info] [main] [reporting.file-publisher]	Reporting file: /busdata/dpmu/gbl0/data/cv/bin/../run/searchserver-ss0/suggest-reporting/suggest.csv
+[2019/10/22-16:40:04.153] [info] [main] [search.api]	Configuring command /dictionary
+[2019/10/22-16:40:04.160] [info] [main] [search.api]	Configuring command /fetch
+[2019/10/22-16:40:04.186] [info] [main] [search.api]	Configuring command /preview
+log4j:ERROR Attempted to append to closed appender named [stdout].
+[2019/10/22-16:40:04.220] [warn] [main] [net.sf.ehcache.config.ConfigurationFactory]	No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/busapps/dpmu/gbl0/3DSpaceIndex/linux_a64/cv/javabin/third/ehcache-core-2.4.4.jar!/ehcache-failsafe.xml
+[2019/10/22-16:40:13.046] [info] [main] [search.api]	Configuring command /thumbnail
+[2019/10/22-16:40:13.048] [info] [main] [exa.search.api]	using internal HTTP server for producing thumbnails from HTML preview on port searchapi.instances.ss0.thumbHttpInternalPort == 16026
+[2019/10/22-16:40:13.062] [info] [main] [fetch]	opened internal thumbnail HTTP server for html-to-image processing: http://10.216.104.82:16026/
+[2019/10/22-16:40:13.063] [info] [main] [exa.search.api]	Opening local thumbnails cache
+[2019/10/22-16:40:13.124] [info] [main] [search.api]	Configuring command /security
+[2019/10/22-16:40:13.126] [info] [main] [search.api]	Search-API reconfiguration done (version = 22)
+[2019/10/22-16:40:13.126] [info] [main] [org.eclipse.jetty.server.handler.ContextHandler]	Started o.e.j.s.ServletContextHandler@6ee6f53{/,null,AVAILABLE}
+[2019/10/22-16:40:13.265] [info] [main] [org.eclipse.jetty.annotations.AnnotationConfiguration]	Scanning elapsed time=0ms
+[2019/10/22-16:40:13.338] [warn] [main] [org.eclipse.jetty.security.SecurityHandler]	ServletContext@o.e.j.w.WebAppContext@421bba99{/access,file:///busdata/dpmu/gbl0/data/cv/webapps-tmp/searchserver-ss0/searchapi_16010/access/,STARTING,@16010}{/busdata/dpmu/gbl0/data/cv/webapps-tmp/searchserver-ss0/searchapi_16010/access} has uncovered http methods for path: /
+[2019/10/22-16:40:13.343] [info] [main] [com.exalead.access.config.AccessContext]	Checking master for missing plugins for instance access-api.ac0 of application default...
+[2019/10/22-16:40:13.355] [info] [main] [com.exalead.cv360.config.ConfigurationManager]	Configuration Top Directory: /busdata/dpmu/gbl0/data/cv/bin/../gct
+[2019/10/22-16:40:13.355] [info] [main] [com.exalead.cv360.config.ConfigurationManager]	Configuration Last Revision Repository: /busdata/dpmu/gbl0/data/cv/bin/../gct/22/master/360
+[2019/10/22-16:40:13.355] [info] [main] [com.exalead.cv360.config.ConfigurationManager]	Configuration Store Directory: /busdata/dpmu/gbl0/data/cv/bin/../config/360
+[2019/10/22-16:40:13.355] [info] [main] [com.exalead.cv360.config.ConfigurationManager]	Data Directory: /busdata/dpmu/gbl0/data/cv/bin/..
+[2019/10/22-16:40:13.570] [info] [main] [plugins.deployment.local]	Found 0 deployed plugins in /busdata/dpmu/gbl0/data/cv/bin/.. for instance access-api.ac0 of application default
+[2019/10/22-16:40:13.780] [info] [main] [access.loader]	Discovering available feeds...
+[2019/10/22-16:40:14.263] [info] [main] [access.loader]	Discovering available triggers...
+[2019/10/22-16:40:14.277] [info] [main] [mel.loader]	Discovering user defined MEL...
+[2019/10/22-16:40:14.324] [info] [main] [access.loader]	Discovering available serializers...
+[2019/10/22-16:40:14.324] [info] [main] [org.eclipse.jetty.server.handler.ContextHandler]	Started o.e.j.w.WebAppContext@421bba99{/access,file:///busdata/dpmu/gbl0/data/cv/webapps-tmp/searchserver-ss0/searchapi_16010/access/,AVAILABLE,@16010}{/busdata/dpmu/gbl0/data/cv/webapps-tmp/searchserver-ss0/searchapi_16010/access}
+[2019/10/22-16:40:14.353] [warn] [main] [org.eclipse.jetty.security.SecurityHandler]	ServletContext@o.e.j.w.WebAppContext@5d12a356{/storage-service,file:///busdata/dpmu/gbl0/data/cv/webapps-tmp/searchserver-ss0/searchapi_16010/storage-service/,STARTING,@16010}{/busdata/dpmu/gbl0/data/cv/webapps-tmp/searchserver-ss0/searchapi_16010/storage-service} has uncovered http methods for path: /
+[2019/10/22-16:40:14.648] [info] [main] [com.exalead.cv360.storage.engine.StorageEngineFactory]	StorageEngine using 'com.exalead.cv360.storage.engine.jdbc.JdbcStorageEngine': successfully initalized.
+[2019/10/22-16:40:14.663] [info] [main] [org.eclipse.jetty.server.handler.ContextHandler]	Started o.e.j.w.WebAppContext@5d12a356{/storage-service,file:///busdata/dpmu/gbl0/data/cv/webapps-tmp/searchserver-ss0/searchapi_16010/storage-service/,AVAILABLE,@16010}{/busdata/dpmu/gbl0/data/cv/webapps-tmp/searchserver-ss0/searchapi_16010/storage-service}
+[2019/10/22-16:40:14.664] [info] [main] [org.eclipse.jetty.server.AbstractConnector]	Started 16010@1f1cddf3{HTTP/1.1,[http/1.1]}{0.0.0.0:16010}
+[2019/10/22-16:40:14.665] [info] [main] [org.eclipse.jetty.server.Server]	Started @29938ms
+[2019/10/22-16:40:14.665] [info] [main] [bee.directory]	Starting server 'searchui': HTTP server on port 16000
+[ShutdownMonitor] Not enabled (port < 0): -1
+[2019/10/22-16:40:14.666] [info] [main] [org.eclipse.jetty.server.Server]	jetty-9.4.10.v20180503; built: 2018-05-03T15:56:21.710Z; git: daa59876e6f384329b122929e70a80934569428c; jvm 1.8.0_201-b09
+[2019/10/22-16:40:14.669] [info] [main] [org.eclipse.jetty.server.session]	DefaultSessionIdManager workerName=node0
+[2019/10/22-16:40:14.669] [info] [main] [org.eclipse.jetty.server.session]	No SessionScavenger set, using defaults
+[2019/10/22-16:40:14.669] [info] [main] [org.eclipse.jetty.server.session]	node0 Scavenging every 600000ms
+[2019/10/22-16:40:14.670] [warn] [main] [org.eclipse.jetty.security.SecurityHandler]	ServletContext@o.e.j.s.ServletContextHandler@67e25252{/,resource:/exa/bee/net/http2/htdocs,STARTING} has uncovered http methods for path: /
+[2019/10/22-16:40:14.673] [info] [main] [org.eclipse.jetty.server.handler.ContextHandler]	Started o.e.j.s.ServletContextHandler@67e25252{/,resource:/exa/bee/net/http2/htdocs,AVAILABLE}
+[2019/10/22-16:40:15.591] [warn] [1924411652@jtp-searchui-3] [org.eclipse.jetty.annotations.AnnotationParser]	org.mozilla.classfile.ByteCode scanned from multiple locations: jar:file:///busdata/dpmu/gbl0/data/cv/webapps/360-mashup-ui/WEB-INF/lib/js.jar!/org/mozilla/classfile/ByteCode.class, jar:file:///busdata/dpmu/gbl0/data/cv/webapps/360-mashup-ui/WEB-INF/lib/closure-compiler.jar!/org/mozilla/classfile/ByteCode.class
+[2019/10/22-16:40:15.592] [warn] [1924411652@jtp-searchui-3] [org.eclipse.jetty.annotations.AnnotationParser]	org.mozilla.classfile.ClassFileField scanned from multiple locations: jar:file:///busdata/dpmu/gbl0/data/cv/webapps/360-mashup-ui/WEB-INF/lib/js.jar!/org/mozilla/classfile/ClassFileField.class, jar:file:///busdata/dpmu/gbl0/data/cv/webapps/360-mashup-ui/WEB-INF/lib/closure-compiler.jar!/org/mozilla/classfile/ClassFileField.class
+[2019/10/22-16:40:15.592] [warn] [1924411652@jtp-searchui-3] [org.eclipse.jetty.annotations.AnnotationParser]	org.mozilla.classfile.ClassFileMethod scanned from multiple locations: jar:file:///busdata/dpmu/gbl0/data/cv/webapps/360-mashup-ui/WEB-INF/lib/js.jar!/org/mozilla/classfile/ClassFileMethod.class, jar:file:///busdata/dpmu/gbl0/data/cv/webapps/360-mashup-ui/WEB-INF/lib/closure-compiler.jar!/org/mozilla/classfile/ClassFileMethod.class
+[2019/10/22-16:40:15.592] [warn] [1924411652@jtp-searchui-3] [org.eclipse.jetty.annotations.AnnotationParser]	org.mozilla.classfile.ClassFileWriter$ClassFileFormatException scanned from multiple locations: jar:file:///busdata/dpmu/gbl0/data/cv/webapps/360-mashup-ui/WEB-INF/lib/js.jar!/org/mozilla/classfile/ClassFileWriter$ClassFileFormatException.class, jar:file:///busdata/dpmu/gbl0/data/cv/webapps/360-mashup-ui/WEB-INF/lib/closure-compiler.jar!/org/mozilla/classfile/ClassFileWriter$ClassFileFormatException.class
+[2019/10/22-16:40:15.592] [warn] [1924411652@jtp-searchui-3] [org.eclipse.jetty.annotations.AnnotationParser]	org.mozilla.classfile.ClassFileWriter scanned from multiple locations: jar:file:///busdata/dpmu/gbl0/data/cv/webapps/360-mashup-ui/WEB-INF/lib/js.jar!/org/mozilla/classfile/ClassFileWriter.class, jar:file:///busdata/dpmu/gbl0/data/cv/webapps/360-mashup-ui/WEB-INF/lib/closure-compiler.jar!/org/mozilla/classfile/ClassFileWriter.class
+[2019/10/22-16:40:15.593] [warn] [1924411652@jtp-searchui-3] [org.eclipse.jetty.annotations.AnnotationParser]	org.mozilla.classfile.ConstantPool scanned from multiple locations: jar:file:///busdata/dpmu/gbl0/data/cv/webapps/360-mashup-ui/WEB-INF/lib/js.jar!/org/mozilla/classfile/ConstantPool.class, jar:file:///busdata/dpmu/gbl0/data/cv/webapps/360-mashup-ui/WEB-INF/lib/closure-compiler.jar!/org/mozilla/classfile/ConstantPool.class
+[2019/10/22-16:40:15.593] [warn] [1924411652@jtp-searchui-3] [org.eclipse.jetty.annotations.AnnotationParser]	org.mozilla.classfile.ExceptionTableEntry scanned from multiple locations: jar:file:///busdata/dpmu/gbl0/data/cv/webapps/360-mashup-ui/WEB-INF/lib/js.jar!/org/mozilla/classfile/ExceptionTableEntry.class, jar:file:///busdata/dpmu/gbl0/data/cv/webapps/360-mashup-ui/WEB-INF/lib/closure-compiler.jar!/org/mozilla/classfile/ExceptionTableEntry.class
+[2019/10/22-16:40:15.593] [warn] [1924411652@jtp-searchui-3] [org.eclipse.jetty.annotations.AnnotationParser]	org.mozilla.classfile.FieldOrMethodRef scanned from multiple locations: jar:file:///busdata/dpmu/gbl0/data/cv/webapps/360-mashup-ui/WEB-INF/lib/js.jar!/org/mozilla/classfile/FieldOrMethodRef.class, jar:file:///busdata/dpmu/gbl0/data/cv/webapps/360-mashup-ui/WEB-INF/lib/closure-compiler.jar!/org/mozilla/classfile/FieldOrMethodRef.class
+[2019/10/22-16:40:15.710] [info] [main] [org.eclipse.jetty.annotations.AnnotationConfiguration]	Scanning elapsed time=840ms
+[2019/10/22-16:40:15.755] [info] [main] [org.eclipse.jetty.server.handler.ContextHandler.mashup_ui]	No Spring WebApplicationInitializer types detected on classpath
+[2019/10/22-16:40:16.117] [warn] [main] [org.eclipse.jetty.security.SecurityHandler]	ServletContext@o.e.j.w.WebAppContext@58f4b31a{/mashup-ui,file:///busdata/dpmu/gbl0/data/cv/webapps/360-mashup-ui/,STARTING,@16000}{/360-mashup-ui} has uncovered http methods for path: /
+[2019/10/22-16:40:16.122] [info] [main] [com.exalead.cv360.searchui.config.MashupConfigurationProvider]	Service name: 360-mashup-ui.mu0 application id: default
+[2019/10/22-16:40:16.124] [info] [main] [mashup.context]	Checking master for missing plugins for instance 360-mashup-ui.mu0 of application default...
+[2019/10/22-16:40:16.129] [info] [main] [plugins.deployment.local]	Found 0 deployed plugins in /busdata/dpmu/gbl0/data/cv/bin/.. for instance 360-mashup-ui.mu0 of application default
+[2019/10/22-16:40:16.137] [info] [main] [plugins.deployment.local]	Found 0 deployed plugins in /busdata/dpmu/gbl0/data/cv/bin/.. for instance 360-mashup-ui.mu0 of application default
+[2019/10/22-16:40:16.139] [info] [main] [mashup.loader]	Discovering themes...
+[2019/10/22-16:40:16.140] [info] [main] [mashup.loader]	Discovering widgets...
+[2019/10/22-16:40:16.141] [info] [main] [mashup.loader]	Discovering layouts...
+[2019/10/22-16:40:16.853] [info] [main] [mashup.context]	License - Users check is enabled
+[2019/10/22-16:40:16.855] [info] [main] [com.exalead.cv360.searchui.services.UserLicenseManager]	Starting UsersChecking Thread for instance name: mu0
+[2019/10/22-16:40:16.882] [info] [main] [org.eclipse.jetty.server.handler.ContextHandler.mashup_ui]	Initializing Spring root WebApplicationContext
+[2019/10/22-16:40:19.589] [info] [main] [mashup.loader]	Discovering available triggers...
+[2019/10/22-16:40:19.638] [info] [main] [mashup.loader]	Discovering security providers...
+[2019/10/22-16:40:19.638] [info] [main] [mashup.loader]	Discovering controllers...
+[2019/10/22-16:40:19.647] [info] [main] [mashup.loader]	Discovering JSP tags...
+[2019/10/22-16:40:19.650] [info] [main] [mel.loader]	Discovering user defined MEL...
+[2019/10/22-16:40:19.677] [info] [main] [org.eclipse.jetty.server.handler.ContextHandler.mashup_ui]	Initializing Spring FrameworkServlet '360-search-ui'
+[2019/10/22-16:40:20.441] [info] [140309665445632] [exa.tick.server]	Starting processing thread
+[2019/10/22-16:40:20.557] [info] [Preprocessing for query allow_unknown_hit_meta=true&debug=-ellql&hf=-1&of=flea&q=indexDate_47624833-a4aa-4297-be89-d5c30ee643ca_312&q.internal_date_query=availability%3AinternalDate&qt=%23and%28%23query%28internal_date_query ...[96 chars remaining]] [exa.search.runnerpool]	Created a new runner for logic sxisl ( 0 idle runner and 0 working runner) in 3131ms
+[2019/10/22-16:40:20.816] [info] [main] [controller.isAlive]	Starting isAlive service monitoring 0 urls
+[2019/10/22-16:40:21.536] [info] [main] [org.apache.tiles.access.TilesAccess]	Publishing TilesContext for context: org.springframework.web.servlet.view.tiles3.SpringWildcardServletTilesApplicationContext
+[2019/10/22-16:40:21.842] [warn] [Processing query ST 64 allow_unknown_hit_meta=true&debug=-ellql&hf=-1&of=flea&q=indexDate_47624833-a4aa-4297-be89-d5c30ee643ca_312&q.internal_date_query=availability%3AinternalDate&qt=%23and%28%23query%28internal_date_query ...[96 chars remaining]] [exalead.queryprocessing.expansion]	G64: Failed to expand query: com.exalead.search.query.QueryProcessingException: [code=-1] No dictionary available
+[2019/10/22-16:40:21.842] [warn] [Processing query ST 64 allow_unknown_hit_meta=true&debug=-ellql&hf=-1&of=flea&q=indexDate_47624833-a4aa-4297-be89-d5c30ee643ca_312&q.internal_date_query=availability%3AinternalDate&qt=%23and%28%23query%28internal_date_query ...[96 chars remaining]] [exalead.queryprocessing.expansion]	G64: 	at com.exalead.search.query.linguistic.LinguisticExpander.visit(LinguisticExpander.java:140)
+[2019/10/22-16:40:21.842] [warn] [Processing query ST 64 allow_unknown_hit_meta=true&debug=-ellql&hf=-1&of=flea&q=indexDate_47624833-a4aa-4297-be89-d5c30ee643ca_312&q.internal_date_query=availability%3AinternalDate&qt=%23and%28%23query%28internal_date_query ...[96 chars remaining]] [exalead.queryprocessing.expansion]	G64: 	at com.exalead.search.query.node.RootNode.accept(RootNode.java:39)
+[2019/10/22-16:40:21.842] [warn] [Processing query ST 64 allow_unknown_hit_meta=true&debug=-ellql&hf=-1&of=flea&q=indexDate_47624833-a4aa-4297-be89-d5c30ee643ca_312&q.internal_date_query=availability%3AinternalDate&qt=%23and%28%23query%28internal_date_query ...[96 chars remaining]] [exalead.queryprocessing.expansion]	G64: 	at com.exalead.search.queryprocessing.StandardQueryRunner.handleUserQueryString(StandardQueryRunner.java:596)
+[2019/10/22-16:40:21.842] [warn] [Processing query ST 64 allow_unknown_hit_meta=true&debug=-ellql&hf=-1&of=flea&q=indexDate_47624833-a4aa-4297-be89-d5c30ee643ca_312&q.internal_date_query=availability%3AinternalDate&qt=%23and%28%23query%28internal_date_query ...[96 chars remaining]] [exalead.queryprocessing.expansion]	G64: 	at com.exalead.search.queryprocessing.StandardQueryRunner.handleUQLQuery(StandardQueryRunner.java:448)
+[2019/10/22-16:40:21.842] [warn] [Processing query ST 64 allow_unknown_hit_meta=true&debug=-ellql&hf=-1&of=flea&q=indexDate_47624833-a4aa-4297-be89-d5c30ee643ca_312&q.internal_date_query=availability%3AinternalDate&qt=%23and%28%23query%28internal_date_query ...[96 chars remaining]] [exalead.queryprocessing.expansion]	G64: 	at com.exalead.search.queryprocessing.StandardQueryRunner.handleQuery(StandardQueryRunner.java:167)
+[2019/10/22-16:40:21.842] [warn] [Processing query ST 64 allow_unknown_hit_meta=true&debug=-ellql&hf=-1&of=flea&q=indexDate_47624833-a4aa-4297-be89-d5c30ee643ca_312&q.internal_date_query=availability%3AinternalDate&qt=%23and%28%23query%28internal_date_query ...[96 chars remaining]] [exalead.queryprocessing.expansion]	G64: 	at com.exalead.search.runner.Default6Runner.parse(Default6Runner.java:880)
+[2019/10/22-16:40:21.842] [warn] [Processing query ST 64 allow_unknown_hit_meta=true&debug=-ellql&hf=-1&of=flea&q=indexDate_47624833-a4aa-4297-be89-d5c30ee643ca_312&q.internal_date_query=availability%3AinternalDate&qt=%23and%28%23query%28internal_date_query ...[96 chars remaining]] [exalead.queryprocessing.expansion]	G64: 	at com.exalead.search.runner.Default6Runner.ranked(Default6Runner.java:284)
+[2019/10/22-16:40:21.842] [warn] [Processing query ST 64 allow_unknown_hit_meta=true&debug=-ellql&hf=-1&of=flea&q=indexDate_47624833-a4aa-4297-be89-d5c30ee643ca_312&q.internal_date_query=availability%3AinternalDate&qt=%23and%28%23query%28internal_date_query ...[96 chars remaining]] [exalead.queryprocessing.expansion]	G64: 	at com.exalead.search.runner.Default6Runner.search(Default6Runner.java:207)
+[2019/10/22-16:40:21.842] [warn] [Processing query ST 64 allow_unknown_hit_meta=true&debug=-ellql&hf=-1&of=flea&q=indexDate_47624833-a4aa-4297-be89-d5c30ee643ca_312&q.internal_date_query=availability%3AinternalDate&qt=%23and%28%23query%28internal_date_query ...[96 chars remaining]] [exalead.queryprocessing.expansion]	G64: 	at com.exalead.search.Pool$PooledRunner.search(Pool.java:157)
+[2019/10/22-16:40:21.842] [warn] [Processing query ST 64 allow_unknown_hit_meta=true&debug=-ellql&hf=-1&of=flea&q=indexDate_47624833-a4aa-4297-be89-d5c30ee643ca_312&q.internal_date_query=availability%3AinternalDate&qt=%23and%28%23query%28internal_date_query ...[96 chars remaining]] [exalead.queryprocessing.expansion]	G64: 	at com.exalead.search.SearchLogicRunnerPool.search(SearchLogicRunnerPool.java:127)
+[2019/10/22-16:40:21.842] [warn] [Processing query ST 64 allow_unknown_hit_meta=true&debug=-ellql&hf=-1&of=flea&q=indexDate_47624833-a4aa-4297-be89-d5c30ee643ca_312&q.internal_date_query=availability%3AinternalDate&qt=%23and%28%23query%28internal_date_query ...[96 chars remaining]] [exalead.queryprocessing.expansion]	G64: 	at com.exalead.search.searchapi.SearchCommand.execute(SearchCommand.java:597)
+[2019/10/22-16:40:21.842] [warn] [Processing query ST 64 allow_unknown_hit_meta=true&debug=-ellql&hf=-1&of=flea&q=indexDate_47624833-a4aa-4297-be89-d5c30ee643ca_312&q.internal_date_query=availability%3AinternalDate&qt=%23and%28%23query%28internal_date_query ...[96 chars remaining]] [exalead.queryprocessing.expansion]	G64: 	at com.exalead.search.searchapi.SearchAPIDelegate.service(SearchAPIDelegate.java:299)
+[2019/10/22-16:40:21.842] [warn] [Processing query ST 64 allow_unknown_hit_meta=true&debug=-ellql&hf=-1&of=flea&q=indexDate_47624833-a4aa-4297-be89-d5c30ee643ca_312&q.internal_date_query=availability%3AinternalDate&qt=%23and%28%23query%28internal_date_query ...[96 chars remaining]] [exalead.queryprocessing.expansion]	G64: 	at com.exalead.search.searchapi.SearchAPIServlet.service(SearchAPIServlet.java:82)
+[2019/10/22-16:40:21.842] [warn] [Processing query ST 64 allow_unknown_hit_meta=true&debug=-ellql&hf=-1&of=flea&q=indexDate_47624833-a4aa-4297-be89-d5c30ee643ca_312&q.internal_date_query=availability%3AinternalDate&qt=%23and%28%23query%28internal_date_query ...[96 chars remaining]] [exalead.queryprocessing.expansion]	G64: 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+[2019/10/22-16:40:21.842] [warn] [Processing query ST 64 allow_unknown_hit_meta=true&debug=-ellql&hf=-1&of=flea&q=indexDate_47624833-a4aa-4297-be89-d5c30ee643ca_312&q.internal_date_query=availability%3AinternalDate&qt=%23and%28%23query%28internal_date_query ...[96 chars remaining]] [exalead.queryprocessing.expansion]	G64: 	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:865)
+[2019/10/22-16:40:21.842] [warn] [Processing query ST 64 allow_unknown_hit_meta=true&debug=-ellql&hf=-1&of=flea&q=indexDate_47624833-a4aa-4297-be89-d5c30ee643ca_312&q.internal_date_query=availability%3AinternalDate&qt=%23and%28%23query%28internal_date_query ...[96 chars remaining]] [exalead.queryprocessing.expansion]	G64: 	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:535)
+[2019/10/22-16:40:21.842] [warn] [Processing query ST 64 allow_unknown_hit_meta=true&debug=-ellql&hf=-1&of=flea&q=indexDate_47624833-a4aa-4297-be89-d5c30ee643ca_312&q.internal_date_query=availability%3AinternalDate&qt=%23and%28%23query%28internal_date_query ...[96 chars remaining]] [exalead.queryprocessing.expansion]	G64: 	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+[2019/10/22-16:40:21.842] [warn] [Processing query ST 64 allow_unknown_hit_meta=true&debug=-ellql&hf=-1&of=flea&q=indexDate_47624833-a4aa-4297-be89-d5c30ee643ca_312&q.internal_date_query=availability%3AinternalDate&qt=%23and%28%23query%28internal_date_query ...[96 chars remaining]] [exalead.queryprocessing.expansion]	G64: 	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+[2019/10/22-16:40:21.842] [warn] [Processing query ST 64 allow_unknown_hit_meta=true&debug=-ellql&hf=-1&of=flea&q=indexDate_47624833-a4aa-4297-be89-d5c30ee643ca_312&q.internal_date_query=availability%3AinternalDate&qt=%23and%28%23query%28internal_date_query ...[96 chars remaining]] [exalead.queryprocessing.expansion]	G64: 	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+[2019/10/22-16:40:21.842] [warn] [Processing query ST 64 allow_unknown_hit_meta=true&debug=-ellql&hf=-1&of=flea&q=indexDate_47624833-a4aa-4297-be89-d5c30ee643ca_312&q.internal_date_query=availability%3AinternalDate&qt=%23and%28%23query%28internal_date_query ...[96 chars remaining]] [exalead.queryprocessing.expansion]	G64: 	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+[2019/10/22-16:40:21.842] [warn] [Processing query ST 64 allow_unknown_hit_meta=true&debug=-ellql&hf=-1&of=flea&q=indexDate_47624833-a4aa-4297-be89-d5c30ee643ca_312&q.internal_date_query=availability%3AinternalDate&qt=%23and%28%23query%28internal_date_query ...[96 chars remaining]] [exalead.queryprocessing.expansion]	G64: 	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+[2019/10/22-16:40:21.842] [warn] [Processing query ST 64 allow_unknown_hit_meta=true&debug=-ellql&hf=-1&of=flea&q=indexDate_47624833-a4aa-4297-be89-d5c30ee643ca_312&q.internal_date_query=availability%3AinternalDate&qt=%23and%28%23query%28internal_date_query ...[96 chars remaining]] [exalead.queryprocessing.expansion]	G64: 	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+[2019/10/22-16:40:21.842] [warn] [Processing query ST 64 allow_unknown_hit_meta=true&debug=-ellql&hf=-1&of=flea&q=indexDate_47624833-a4aa-4297-be89-d5c30ee643ca_312&q.internal_date_query=availability%3AinternalDate&qt=%23and%28%23query%28internal_date_query ...[96 chars remaining]] [exalead.queryprocessing.expansion]	G64: 	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1253)
+[2019/10/22-16:40:21.842] [warn] [Processing query ST 64 allow_unknown_hit_meta=true&debug=-ellql&hf=-1&of=flea&q=indexDate_47624833-a4aa-4297-be89-d5c30ee643ca_312&q.internal_date_query=availability%3AinternalDate&qt=%23and%28%23query%28internal_date_query ...[96 chars remaining]] [exalead.queryprocessing.expansion]	G64: 	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+[2019/10/22-16:40:21.842] [warn] [Processing query ST 64 allow_unknown_hit_meta=true&debug=-ellql&hf=-1&of=flea&q=indexDate_47624833-a4aa-4297-be89-d5c30ee643ca_312&q.internal_date_query=availability%3AinternalDate&qt=%23and%28%23query%28internal_date_query ...[96 chars remaining]] [exalead.queryprocessing.expansion]	G64: 	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:473)
+[2019/10/22-16:40:21.842] [warn] [Processing query ST 64 allow_unknown_hit_meta=true&debug=-ellql&hf=-1&of=flea&q=indexDate_47624833-a4aa-4297-be89-d5c30ee643ca_312&q.internal_date_query=availability%3AinternalDate&qt=%23and%28%23query%28internal_date_query ...[96 chars remaining]] [exalead.queryprocessing.expansion]	G64: 	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+[2019/10/22-16:40:21.842] [warn] [Processing query ST 64 allow_unknown_hit_meta=true&debug=-ellql&hf=-1&of=flea&q=indexDate_47624833-a4aa-4297-be89-d5c30ee643ca_312&q.internal_date_query=availability%3AinternalDate&qt=%23and%28%23query%28internal_date_query ...[96 chars remaining]] [exalead.queryprocessing.expansion]	G64: 	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+[2019/10/22-16:40:21.842] [warn] [Processing query ST 64 allow_unknown_hit_meta=true&debug=-ellql&hf=-1&of=flea&q=indexDate_47624833-a4aa-4297-be89-d5c30ee643ca_312&q.internal_date_query=availability%3AinternalDate&qt=%23and%28%23query%28internal_date_query ...[96 chars remaining]] [exalead.queryprocessing.expansion]	G64: 	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1155)
+[2019/10/22-16:40:21.842] [warn] [Processing query ST 64 allow_unknown_hit_meta=true&debug=-ellql&hf=-1&of=flea&q=indexDate_47624833-a4aa-4297-be89-d5c30ee643ca_312&q.internal_date_query=availability%3AinternalDate&qt=%23and%28%23query%28internal_date_query ...[96 chars remaining]] [exalead.queryprocessing.expansion]	G64: 	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+[2019/10/22-16:40:21.842] [warn] [Processing query ST 64 allow_unknown_hit_meta=true&debug=-ellql&hf=-1&of=flea&q=indexDate_47624833-a4aa-4297-be89-d5c30ee643ca_312&q.internal_date_query=availability%3AinternalDate&qt=%23and%28%23query%28internal_date_query ...[96 chars remaining]] [exalead.queryprocessing.expansion]	G64: 	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:219)
+[2019/10/22-16:40:21.842] [warn] [Processing query ST 64 allow_unknown_hit_meta=true&debug=-ellql&hf=-1&of=flea&q=indexDate_47624833-a4aa-4297-be89-d5c30ee643ca_312&q.internal_date_query=availability%3AinternalDate&qt=%23and%28%23query%28internal_date_query ...[96 chars remaining]] [exalead.queryprocessing.expansion]	G64: 	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+[2019/10/22-16:40:21.842] [warn] [Processing query ST 64 allow_unknown_hit_meta=true&debug=-ellql&hf=-1&of=flea&q=indexDate_47624833-a4aa-4297-be89-d5c30ee643ca_312&q.internal_date_query=availability%3AinternalDate&qt=%23and%28%23query%28internal_date_query ...[96 chars remaining]] [exalead.queryprocessing.expansion]	G64: 	at org.eclipse.jetty.server.Server.handle(Server.java:531)
+[2019/10/22-16:40:21.842] [warn] [Processing query ST 64 allow_unknown_hit_meta=true&debug=-ellql&hf=-1&of=flea&q=indexDate_47624833-a4aa-4297-be89-d5c30ee643ca_312&q.internal_date_query=availability%3AinternalDate&qt=%23and%28%23query%28internal_date_query ...[96 chars remaining]] [exalead.queryprocessing.expansion]	G64: 	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:352)
+[2019/10/22-16:40:21.842] [warn] [Processing query ST 64 allow_unknown_hit_meta=true&debug=-ellql&hf=-1&of=flea&q=indexDate_47624833-a4aa-4297-be89-d5c30ee643ca_312&q.internal_date_query=availability%3AinternalDate&qt=%23and%28%23query%28internal_date_query ...[96 chars remaining]] [exalead.queryprocessing.expansion]	G64: 	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:260)
+[2019/10/22-16:40:21.842] [warn] [Processing query ST 64 allow_unknown_hit_meta=true&debug=-ellql&hf=-1&of=flea&q=indexDate_47624833-a4aa-4297-be89-d5c30ee643ca_312&q.internal_date_query=availability%3AinternalDate&qt=%23and%28%23query%28internal_date_query ...[96 chars remaining]] [exalead.queryprocessing.expansion]	G64: 	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:281)
+[2019/10/22-16:40:21.842] [warn] [Processing query ST 64 allow_unknown_hit_meta=true&debug=-ellql&hf=-1&of=flea&q=indexDate_47624833-a4aa-4297-be89-d5c30ee643ca_312&q.internal_date_query=availability%3AinternalDate&qt=%23and%28%23query%28internal_date_query ...[96 chars remaining]] [exalead.queryprocessing.expansion]	G64: 	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:102)
+[2019/10/22-16:40:21.842] [warn] [Processing query ST 64 allow_unknown_hit_meta=true&debug=-ellql&hf=-1&of=flea&q=indexDate_47624833-a4aa-4297-be89-d5c30ee643ca_312&q.internal_date_query=availability%3AinternalDate&qt=%23and%28%23query%28internal_date_query ...[96 chars remaining]] [exalead.queryprocessing.expansion]	G64: 	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
+[2019/10/22-16:40:21.842] [warn] [Processing query ST 64 allow_unknown_hit_meta=true&debug=-ellql&hf=-1&of=flea&q=indexDate_47624833-a4aa-4297-be89-d5c30ee643ca_312&q.internal_date_query=availability%3AinternalDate&qt=%23and%28%23query%28internal_date_query ...[96 chars remaining]] [exalead.queryprocessing.expansion]	G64: 	at com.exalead.jetty.RegularSynchronizationQueuedThreadPool$PoolThread.run(RegularSynchronizationQueuedThreadPool.java:550)
+[2019/10/22-16:40:21.844] [warn] [Processing query ST 64 allow_unknown_hit_meta=true&debug=-ellql&hf=-1&of=flea&q=indexDate_47624833-a4aa-4297-be89-d5c30ee643ca_312&q.internal_date_query=availability%3AinternalDate&qt=%23and%28%23query%28internal_date_query ...[96 chars remaining]] [GL.exalead.queryprocessing.expansion]	G64: [71053] Failed to expand query: [code=-1] No dictionary available
+[2019/10/22-16:40:21.849] [error] [Processing query ST 64 allow_unknown_hit_meta=true&debug=-ellql&hf=-1&of=flea&q=indexDate_47624833-a4aa-4297-be89-d5c30ee643ca_312&q.internal_date_query=availability%3AinternalDate&qt=%23and%28%23query%28internal_date_query ...[96 chars remaining]] [exa.search.api]	Exception while processing query (query: q=indexDate_47624833-a4aa-4297-be89-d5c30ee643ca_312&allow_unknown_hit_meta=true&hf=-1&q.internal_date_query=availability%3AinternalDate&qt=%23and%28%23query%28internal_date_query%29+%29&s=_none_&use_logic_facets=no&use_logic_hit_metas=mxindexingdate%2Cbovault%2Cmxobjecttype&debug=-ellql&of=flea): com.exalead.search.query.QueryProcessingException: [code=71053] Fatal error while trying to perform linguistic expansion
+[2019/10/22-16:40:21.849] [error] [Processing query ST 64 allow_unknown_hit_meta=true&debug=-ellql&hf=-1&of=flea&q=indexDate_47624833-a4aa-4297-be89-d5c30ee643ca_312&q.internal_date_query=availability%3AinternalDate&qt=%23and%28%23query%28internal_date_query ...[96 chars remaining]] [exa.search.api]		at com.exalead.search.query.linguistic.LinguisticExpander.visit(LinguisticExpander.java:147)
+[2019/10/22-16:40:21.849] [error] [Processing query ST 64 allow_unknown_hit_meta=true&debug=-ellql&hf=-1&of=flea&q=indexDate_47624833-a4aa-4297-be89-d5c30ee643ca_312&q.internal_date_query=availability%3AinternalDate&qt=%23and%28%23query%28internal_date_query ...[96 chars remaining]] [exa.search.api]		at com.exalead.search.query.node.RootNode.accept(RootNode.java:39)
+[2019/10/22-16:40:21.849] [error] [Processing query ST 64 allow_unknown_hit_meta=true&debug=-ellql&hf=-1&of=flea&q=indexDate_47624833-a4aa-4297-be89-d5c30ee643ca_312&q.internal_date_query=availability%3AinternalDate&qt=%23and%28%23query%28internal_date_query ...[96 chars remaining]] [exa.search.api]		at com.exalead.search.queryprocessing.StandardQueryRunner.handleUserQueryString(StandardQueryRunner.java:596)
+[2019/10/22-16:40:21.849] [error] [Processing query ST 64 allow_unknown_hit_meta=true&debug=-ellql&hf=-1&of=flea&q=indexDate_47624833-a4aa-4297-be89-d5c30ee643ca_312&q.internal_date_query=availability%3AinternalDate&qt=%23and%28%23query%28internal_date_query ...[96 chars remaining]] [exa.search.api]		at com.exalead.search.queryprocessing.StandardQueryRunner.handleUQLQuery(StandardQueryRunner.java:448)
+[2019/10/22-16:40:21.849] [error] [Processing query ST 64 allow_unknown_hit_meta=true&debug=-ellql&hf=-1&of=flea&q=indexDate_47624833-a4aa-4297-be89-d5c30ee643ca_312&q.internal_date_query=availability%3AinternalDate&qt=%23and%28%23query%28internal_date_query ...[96 chars remaining]] [exa.search.api]		at com.exalead.search.queryprocessing.StandardQueryRunner.handleQuery(StandardQueryRunner.java:167)
+[2019/10/22-16:40:21.849] [error] [Processing query ST 64 allow_unknown_hit_meta=true&debug=-ellql&hf=-1&of=flea&q=indexDate_47624833-a4aa-4297-be89-d5c30ee643ca_312&q.internal_date_query=availability%3AinternalDate&qt=%23and%28%23query%28internal_date_query ...[96 chars remaining]] [exa.search.api]		at com.exalead.search.runner.Default6Runner.parse(Default6Runner.java:880)
+[2019/10/22-16:40:21.849] [error] [Processing query ST 64 allow_unknown_hit_meta=true&debug=-ellql&hf=-1&of=flea&q=indexDate_47624833-a4aa-4297-be89-d5c30ee643ca_312&q.internal_date_query=availability%3AinternalDate&qt=%23and%28%23query%28internal_date_query ...[96 chars remaining]] [exa.search.api]		at com.exalead.search.runner.Default6Runner.ranked(Default6Runner.java:284)
+[2019/10/22-16:40:21.849] [error] [Processing query ST 64 allow_unknown_hit_meta=true&debug=-ellql&hf=-1&of=flea&q=indexDate_47624833-a4aa-4297-be89-d5c30ee643ca_312&q.internal_date_query=availability%3AinternalDate&qt=%23and%28%23query%28internal_date_query ...[96 chars remaining]] [exa.search.api]		at com.exalead.search.runner.Default6Runner.search(Default6Runner.java:207)
+[2019/10/22-16:40:21.849] [error] [Processing query ST 64 allow_unknown_hit_meta=true&debug=-ellql&hf=-1&of=flea&q=indexDate_47624833-a4aa-4297-be89-d5c30ee643ca_312&q.internal_date_query=availability%3AinternalDate&qt=%23and%28%23query%28internal_date_query ...[96 chars remaining]] [exa.search.api]		at com.exalead.search.Pool$PooledRunner.search(Pool.java:157)
+[2019/10/22-16:40:21.849] [error] [Processing query ST 64 allow_unknown_hit_meta=true&debug=-ellql&hf=-1&of=flea&q=indexDate_47624833-a4aa-4297-be89-d5c30ee643ca_312&q.internal_date_query=availability%3AinternalDate&qt=%23and%28%23query%28internal_date_query ...[96 chars remaining]] [exa.search.api]		at com.exalead.search.SearchLogicRunnerPool.search(SearchLogicRunnerPool.java:127)
+[2019/10/22-16:40:21.849] [error] [Processing query ST 64 allow_unknown_hit_meta=true&debug=-ellql&hf=-1&of=flea&q=indexDate_47624833-a4aa-4297-be89-d5c30ee643ca_312&q.internal_date_query=availability%3AinternalDate&qt=%23and%28%23query%28internal_date_query ...[96 chars remaining]] [exa.search.api]		at com.exalead.search.searchapi.SearchCommand.execute(SearchCommand.java:597)
+[2019/10/22-16:40:21.849] [error] [Processing query ST 64 allow_unknown_hit_meta=true&debug=-ellql&hf=-1&of=flea&q=indexDate_47624833-a4aa-4297-be89-d5c30ee643ca_312&q.internal_date_query=availability%3AinternalDate&qt=%23and%28%23query%28internal_date_query ...[96 chars remaining]] [exa.search.api]		at com.exalead.search.searchapi.SearchAPIDelegate.service(SearchAPIDelegate.java:299)
+[2019/10/22-16:40:21.849] [error] [Processing query ST 64 allow_unknown_hit_meta=true&debug=-ellql&hf=-1&of=flea&q=indexDate_47624833-a4aa-4297-be89-d5c30ee643ca_312&q.internal_date_query=availability%3AinternalDate&qt=%23and%28%23query%28internal_date_query ...[96 chars remaining]] [exa.search.api]		at com.exalead.search.searchapi.SearchAPIServlet.service(SearchAPIServlet.java:82)
+[2019/10/22-16:40:21.849] [error] [Processing query ST 64 allow_unknown_hit_meta=true&debug=-ellql&hf=-1&of=flea&q=indexDate_47624833-a4aa-4297-be89-d5c30ee643ca_312&q.internal_date_query=availability%3AinternalDate&qt=%23and%28%23query%28internal_date_query ...[96 chars remaining]] [exa.search.api]		at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+[2019/10/22-16:40:21.849] [error] [Processing query ST 64 allow_unknown_hit_meta=true&debug=-ellql&hf=-1&of=flea&q=indexDate_47624833-a4aa-4297-be89-d5c30ee643ca_312&q.internal_date_query=availability%3AinternalDate&qt=%23and%28%23query%28internal_date_query ...[96 chars remaining]] [exa.search.api]		at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:865)
+[2019/10/22-16:40:21.849] [error] [Processing query ST 64 allow_unknown_hit_meta=true&debug=-ellql&hf=-1&of=flea&q=indexDate_47624833-a4aa-4297-be89-d5c30ee643ca_312&q.internal_date_query=availability%3AinternalDate&qt=%23and%28%23query%28internal_date_query ...[96 chars remaining]] [exa.search.api]		at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:535)
+[2019/10/22-16:40:21.849] [error] [Processing query ST 64 allow_unknown_hit_meta=true&debug=-ellql&hf=-1&of=flea&q=indexDate_47624833-a4aa-4297-be89-d5c30ee643ca_312&q.internal_date_query=availability%3AinternalDate&qt=%23and%28%23query%28internal_date_query ...[96 chars remaining]] [exa.search.api]		at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+[2019/10/22-16:40:21.849] [error] [Processing query ST 64 allow_unknown_hit_meta=true&debug=-ellql&hf=-1&of=flea&q=indexDate_47624833-a4aa-4297-be89-d5c30ee643ca_312&q.internal_date_query=availability%3AinternalDate&qt=%23and%28%23query%28internal_date_query ...[96 chars remaining]] [exa.search.api]		at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+[2019/10/22-16:40:21.849] [error] [Processing query ST 64 allow_unknown_hit_meta=true&debug=-ellql&hf=-1&of=flea&q=indexDate_47624833-a4aa-4297-be89-d5c30ee643ca_312&q.internal_date_query=availability%3AinternalDate&qt=%23and%28%23query%28internal_date_query ...[96 chars remaining]] [exa.search.api]		at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+[2019/10/22-16:40:21.849] [error] [Processing query ST 64 allow_unknown_hit_meta=true&debug=-ellql&hf=-1&of=flea&q=indexDate_47624833-a4aa-4297-be89-d5c30ee643ca_312&q.internal_date_query=availability%3AinternalDate&qt=%23and%28%23query%28internal_date_query ...[96 chars remaining]] [exa.search.api]		at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+[2019/10/22-16:40:21.849] [error] [Processing query ST 64 allow_unknown_hit_meta=true&debug=-ellql&hf=-1&of=flea&q=indexDate_47624833-a4aa-4297-be89-d5c30ee643ca_312&q.internal_date_query=availability%3AinternalDate&qt=%23and%28%23query%28internal_date_query ...[96 chars remaining]] [exa.search.api]		at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+[2019/10/22-16:40:21.849] [error] [Processing query ST 64 allow_unknown_hit_meta=true&debug=-ellql&hf=-1&of=flea&q=indexDate_47624833-a4aa-4297-be89-d5c30ee643ca_312&q.internal_date_query=availability%3AinternalDate&qt=%23and%28%23query%28internal_date_query ...[96 chars remaining]] [exa.search.api]		at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+[2019/10/22-16:40:21.849] [error] [Processing query ST 64 allow_unknown_hit_meta=true&debug=-ellql&hf=-1&of=flea&q=indexDate_47624833-a4aa-4297-be89-d5c30ee643ca_312&q.internal_date_query=availability%3AinternalDate&qt=%23and%28%23query%28internal_date_query ...[96 chars remaining]] [exa.search.api]		at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1253)
+[2019/10/22-16:40:21.849] [error] [Processing query ST 64 allow_unknown_hit_meta=true&debug=-ellql&hf=-1&of=flea&q=indexDate_47624833-a4aa-4297-be89-d5c30ee643ca_312&q.internal_date_query=availability%3AinternalDate&qt=%23and%28%23query%28internal_date_query ...[96 chars remaining]] [exa.search.api]		at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+[2019/10/22-16:40:21.849] [error] [Processing query ST 64 allow_unknown_hit_meta=true&debug=-ellql&hf=-1&of=flea&q=indexDate_47624833-a4aa-4297-be89-d5c30ee643ca_312&q.internal_date_query=availability%3AinternalDate&qt=%23and%28%23query%28internal_date_query ...[96 chars remaining]] [exa.search.api]		at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:473)
+[2019/10/22-16:40:21.849] [error] [Processing query ST 64 allow_unknown_hit_meta=true&debug=-ellql&hf=-1&of=flea&q=indexDate_47624833-a4aa-4297-be89-d5c30ee643ca_312&q.internal_date_query=availability%3AinternalDate&qt=%23and%28%23query%28internal_date_query ...[96 chars remaining]] [exa.search.api]		at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+[2019/10/22-16:40:21.849] [error] [Processing query ST 64 allow_unknown_hit_meta=true&debug=-ellql&hf=-1&of=flea&q=indexDate_47624833-a4aa-4297-be89-d5c30ee643ca_312&q.internal_date_query=availability%3AinternalDate&qt=%23and%28%23query%28internal_date_query ...[96 chars remaining]] [exa.search.api]		at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+[2019/10/22-16:40:21.849] [error] [Processing query ST 64 allow_unknown_hit_meta=true&debug=-ellql&hf=-1&of=flea&q=indexDate_47624833-a4aa-4297-be89-d5c30ee643ca_312&q.internal_date_query=availability%3AinternalDate&qt=%23and%28%23query%28internal_date_query ...[96 chars remaining]] [exa.search.api]		at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1155)
+[2019/10/22-16:40:21.849] [error] [Processing query ST 64 allow_unknown_hit_meta=true&debug=-ellql&hf=-1&of=flea&q=indexDate_47624833-a4aa-4297-be89-d5c30ee643ca_312&q.internal_date_query=availability%3AinternalDate&qt=%23and%28%23query%28internal_date_query ...[96 chars remaining]] [exa.search.api]		at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+[2019/10/22-16:40:21.849] [error] [Processing query ST 64 allow_unknown_hit_meta=true&debug=-ellql&hf=-1&of=flea&q=indexDate_47624833-a4aa-4297-be89-d5c30ee643ca_312&q.internal_date_query=availability%3AinternalDate&qt=%23and%28%23query%28internal_date_query ...[96 chars remaining]] [exa.search.api]		at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:219)
+[2019/10/22-16:40:21.849] [error] [Processing query ST 64 allow_unknown_hit_meta=true&debug=-ellql&hf=-1&of=flea&q=indexDate_47624833-a4aa-4297-be89-d5c30ee643ca_312&q.internal_date_query=availability%3AinternalDate&qt=%23and%28%23query%28internal_date_query ...[96 chars remaining]] [exa.search.api]		at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+[2019/10/22-16:40:21.849] [error] [Processing query ST 64 allow_unknown_hit_meta=true&debug=-ellql&hf=-1&of=flea&q=indexDate_47624833-a4aa-4297-be89-d5c30ee643ca_312&q.internal_date_query=availability%3AinternalDate&qt=%23and%28%23query%28internal_date_query ...[96 chars remaining]] [exa.search.api]		at org.eclipse.jetty.server.Server.handle(Server.java:531)
+[2019/10/22-16:40:21.849] [error] [Processing query ST 64 allow_unknown_hit_meta=true&debug=-ellql&hf=-1&of=flea&q=indexDate_47624833-a4aa-4297-be89-d5c30ee643ca_312&q.internal_date_query=availability%3AinternalDate&qt=%23and%28%23query%28internal_date_query ...[96 chars remaining]] [exa.search.api]		at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:352)
+[2019/10/22-16:40:21.849] [error] [Processing query ST 64 allow_unknown_hit_meta=true&debug=-ellql&hf=-1&of=flea&q=indexDate_47624833-a4aa-4297-be89-d5c30ee643ca_312&q.internal_date_query=availability%3AinternalDate&qt=%23and%28%23query%28internal_date_query ...[96 chars remaining]] [exa.search.api]		at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:260)
+[2019/10/22-16:40:21.849] [error] [Processing query ST 64 allow_unknown_hit_meta=true&debug=-ellql&hf=-1&of=flea&q=indexDate_47624833-a4aa-4297-be89-d5c30ee643ca_312&q.internal_date_query=availability%3AinternalDate&qt=%23and%28%23query%28internal_date_query ...[96 chars remaining]] [exa.search.api]		at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:281)
+[2019/10/22-16:40:21.849] [error] [Processing query ST 64 allow_unknown_hit_meta=true&debug=-ellql&hf=-1&of=flea&q=indexDate_47624833-a4aa-4297-be89-d5c30ee643ca_312&q.internal_date_query=availability%3AinternalDate&qt=%23and%28%23query%28internal_date_query ...[96 chars remaining]] [exa.search.api]		at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:102)
+[2019/10/22-16:40:21.849] [error] [Processing query ST 64 allow_unknown_hit_meta=true&debug=-ellql&hf=-1&of=flea&q=indexDate_47624833-a4aa-4297-be89-d5c30ee643ca_312&q.internal_date_query=availability%3AinternalDate&qt=%23and%28%23query%28internal_date_query ...[96 chars remaining]] [exa.search.api]		at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
+[2019/10/22-16:40:21.849] [error] [Processing query ST 64 allow_unknown_hit_meta=true&debug=-ellql&hf=-1&of=flea&q=indexDate_47624833-a4aa-4297-be89-d5c30ee643ca_312&q.internal_date_query=availability%3AinternalDate&qt=%23and%28%23query%28internal_date_query ...[96 chars remaining]] [exa.search.api]		at com.exalead.jetty.RegularSynchronizationQueuedThreadPool$PoolThread.run(RegularSynchronizationQueuedThreadPool.java:550)
+[2019/10/22-16:40:21.849] [error] [Processing query ST 64 allow_unknown_hit_meta=true&debug=-ellql&hf=-1&of=flea&q=indexDate_47624833-a4aa-4297-be89-d5c30ee643ca_312&q.internal_date_query=availability%3AinternalDate&qt=%23and%28%23query%28internal_date_query ...[96 chars remaining]] [exa.search.api]	Caused by: com.exalead.search.query.QueryProcessingException: [code=-1] No dictionary available
+[2019/10/22-16:40:21.849] [error] [Processing query ST 64 allow_unknown_hit_meta=true&debug=-ellql&hf=-1&of=flea&q=indexDate_47624833-a4aa-4297-be89-d5c30ee643ca_312&q.internal_date_query=availability%3AinternalDate&qt=%23and%28%23query%28internal_date_query ...[96 chars remaining]] [exa.search.api]		at com.exalead.search.query.linguistic.LinguisticExpander.visit(LinguisticExpander.java:140)
+[2019/10/22-16:40:21.849] [error] [Processing query ST 64 allow_unknown_hit_meta=true&debug=-ellql&hf=-1&of=flea&q=indexDate_47624833-a4aa-4297-be89-d5c30ee643ca_312&q.internal_date_query=availability%3AinternalDate&qt=%23and%28%23query%28internal_date_query ...[96 chars remaining]] [exa.search.api]		... 37 more
+[2019/10/22-16:40:21.849] [error] [Processing query ST 64 allow_unknown_hit_meta=true&debug=-ellql&hf=-1&of=flea&q=indexDate_47624833-a4aa-4297-be89-d5c30ee643ca_312&q.internal_date_query=availability%3AinternalDate&qt=%23and%28%23query%28internal_date_query ...[96 chars remaining]] [exa.search.api]	
+[2019/10/22-16:40:22.014] [warn] [Processing query ST 128 empty] [exalead.queryprocessing.expansion]	G128: Failed to expand query: com.exalead.search.query.QueryProcessingException: [code=-1] No dictionary available
+[2019/10/22-16:40:22.014] [warn] [Processing query ST 128 empty] [exalead.queryprocessing.expansion]	G128: 	at com.exalead.search.query.linguistic.LinguisticExpander.visit(LinguisticExpander.java:140)
+[2019/10/22-16:40:22.014] [warn] [Processing query ST 128 empty] [exalead.queryprocessing.expansion]	G128: 	at com.exalead.search.query.node.RootNode.accept(RootNode.java:39)
+[2019/10/22-16:40:22.014] [warn] [Processing query ST 128 empty] [exalead.queryprocessing.expansion]	G128: 	at com.exalead.search.queryprocessing.StandardQueryRunner.handleUserQueryString(StandardQueryRunner.java:596)
+[2019/10/22-16:40:22.014] [warn] [Processing query ST 128 empty] [exalead.queryprocessing.expansion]	G128: 	at com.exalead.search.queryprocessing.StandardQueryRunner.handleUQLQuery(StandardQueryRunner.java:448)
+[2019/10/22-16:40:22.014] [warn] [Processing query ST 128 empty] [exalead.queryprocessing.expansion]	G128: 	at com.exalead.search.queryprocessing.StandardQueryRunner.handleQuery(StandardQueryRunner.java:167)
+[2019/10/22-16:40:22.014] [warn] [Processing query ST 128 empty] [exalead.queryprocessing.expansion]	G128: 	at com.exalead.search.runner.Default6Runner.parse(Default6Runner.java:880)
+[2019/10/22-16:40:22.014] [warn] [Processing query ST 128 empty] [exalead.queryprocessing.expansion]	G128: 	at com.exalead.search.runner.Default6Runner.ranked(Default6Runner.java:284)
+[2019/10/22-16:40:22.014] [warn] [Processing query ST 128 empty] [exalead.queryprocessing.expansion]	G128: 	at com.exalead.search.runner.Default6Runner.search(Default6Runner.java:207)
+[2019/10/22-16:40:22.014] [warn] [Processing query ST 128 empty] [exalead.queryprocessing.expansion]	G128: 	at com.exalead.search.Pool$PooledRunner.search(Pool.java:157)
+[2019/10/22-16:40:22.014] [warn] [Processing query ST 128 empty] [exalead.queryprocessing.expansion]	G128: 	at com.exalead.search.SearchLogicRunnerPool.search(SearchLogicRunnerPool.java:127)
+[2019/10/22-16:40:22.014] [warn] [Processing query ST 128 empty] [exalead.queryprocessing.expansion]	G128: 	at com.exalead.search.searchapi.SearchCommand.execute(SearchCommand.java:597)
+[2019/10/22-16:40:22.014] [warn] [Processing query ST 128 empty] [exalead.queryprocessing.expansion]	G128: 	at com.exalead.search.searchapi.SearchAPIDelegate.service(SearchAPIDelegate.java:299)
+[2019/10/22-16:40:22.014] [warn] [Processing query ST 128 empty] [exalead.queryprocessing.expansion]	G128: 	at com.exalead.search.searchapi.SearchAPIServlet.service(SearchAPIServlet.java:82)
+[2019/10/22-16:40:22.014] [warn] [Processing query ST 128 empty] [exalead.queryprocessing.expansion]	G128: 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+[2019/10/22-16:40:22.014] [warn] [Processing query ST 128 empty] [exalead.queryprocessing.expansion]	G128: 	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:865)
+[2019/10/22-16:40:22.014] [warn] [Processing query ST 128 empty] [exalead.queryprocessing.expansion]	G128: 	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:535)
+[2019/10/22-16:40:22.014] [warn] [Processing query ST 128 empty] [exalead.queryprocessing.expansion]	G128: 	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+[2019/10/22-16:40:22.014] [warn] [Processing query ST 128 empty] [exalead.queryprocessing.expansion]	G128: 	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+[2019/10/22-16:40:22.014] [warn] [Processing query ST 128 empty] [exalead.queryprocessing.expansion]	G128: 	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+[2019/10/22-16:40:22.014] [warn] [Processing query ST 128 empty] [exalead.queryprocessing.expansion]	G128: 	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+[2019/10/22-16:40:22.014] [warn] [Processing query ST 128 empty] [exalead.queryprocessing.expansion]	G128: 	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+[2019/10/22-16:40:22.014] [warn] [Processing query ST 128 empty] [exalead.queryprocessing.expansion]	G128: 	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+[2019/10/22-16:40:22.014] [warn] [Processing query ST 128 empty] [exalead.queryprocessing.expansion]	G128: 	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1253)
+[2019/10/22-16:40:22.014] [warn] [Processing query ST 128 empty] [exalead.queryprocessing.expansion]	G128: 	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+[2019/10/22-16:40:22.014] [warn] [Processing query ST 128 empty] [exalead.queryprocessing.expansion]	G128: 	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:473)
+[2019/10/22-16:40:22.014] [warn] [Processing query ST 128 empty] [exalead.queryprocessing.expansion]	G128: 	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+[2019/10/22-16:40:22.014] [warn] [Processing query ST 128 empty] [exalead.queryprocessing.expansion]	G128: 	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+[2019/10/22-16:40:22.014] [warn] [Processing query ST 128 empty] [exalead.queryprocessing.expansion]	G128: 	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1155)
+[2019/10/22-16:40:22.014] [warn] [Processing query ST 128 empty] [exalead.queryprocessing.expansion]	G128: 	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+[2019/10/22-16:40:22.014] [warn] [Processing query ST 128 empty] [exalead.queryprocessing.expansion]	G128: 	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:219)
+[2019/10/22-16:40:22.014] [warn] [Processing query ST 128 empty] [exalead.queryprocessing.expansion]	G128: 	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+[2019/10/22-16:40:22.014] [warn] [Processing query ST 128 empty] [exalead.queryprocessing.expansion]	G128: 	at org.eclipse.jetty.server.Server.handle(Server.java:531)
+[2019/10/22-16:40:22.014] [warn] [Processing query ST 128 empty] [exalead.queryprocessing.expansion]	G128: 	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:352)
+[2019/10/22-16:40:22.014] [warn] [Processing query ST 128 empty] [exalead.queryprocessing.expansion]	G128: 	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:260)
+[2019/10/22-16:40:22.014] [warn] [Processing query ST 128 empty] [exalead.queryprocessing.expansion]	G128: 	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:281)
+[2019/10/22-16:40:22.014] [warn] [Processing query ST 128 empty] [exalead.queryprocessing.expansion]	G128: 	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:102)
+[2019/10/22-16:40:22.014] [warn] [Processing query ST 128 empty] [exalead.queryprocessing.expansion]	G128: 	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
+[2019/10/22-16:40:22.014] [warn] [Processing query ST 128 empty] [exalead.queryprocessing.expansion]	G128: 	at com.exalead.jetty.RegularSynchronizationQueuedThreadPool$PoolThread.run(RegularSynchronizationQueuedThreadPool.java:550)
+[2019/10/22-16:40:22.014] [warn] [Processing query ST 128 empty] [GL.exalead.queryprocessing.expansion]	G128: [71053] Failed to expand query: [code=-1] No dictionary available
+[2019/10/22-16:40:22.016] [error] [Processing query ST 128 empty] [exa.search.api]	Exception while processing query (query: q=Search_3DSearch-fp11389-1571755216132_6e59e5a0-1e69-4fbb-92b9-5b5425570a7a_141_47624833-a4aa-4297-be89-d5c30ee643ca_312&add_virtual_field=text_relevance%3A-1.0*%23min%2830*86400%2C%23nsecs%28%23extract%28sxiclass_facet_datetime_nofts_ram%2C%22ds6w_58_modified%22%29%2C%23now%29%29%2B86400*%28%40term.score*%40proximity%2B%40b%29&allow_unknown_hit_meta=true&b=0&dp=starPH&eq.ds6w_refine=%23true&facet.ds6w.max_per_level=100&hf=20&hit_meta.needSecu.expr=%40needSecu&q.boOnly_query=mxobjecttype%3ABUSINESSOBJECT&q.opt_content_structure=OPT+ds6w_58_contentstructure%3ARoot%7Bb%3D10.0%7D+OPT+ds6w_58_contentstructure%3AIntermediate%7Bb%3D5.0%7D&q.opt_owner=OPT+owner%3Afp11389%7Bw%3D1.0%7D&q.search_query=%28assembly%29++AND+NOT+%28flattenedtaxonomies%3A%28%22types%2FPerson%22+OR+%22types%2FSecurity+Context%22%29%29&q.secu=%28availability%3Aaclfts+AND+%28mxentrywithcustomqph%3A%28%22any%7Cany%7Cany%7Cf%7Cany%7Cany%7Cd29c9cfe%7Eany%7C6e9a3243%7C3e183837%7Cf%7C%40%7Ca%7Cd29c9cfe%7Eany%7C6e9a3243%7Cb2272858%7Cf%7C%40%7Cc%7Cd29c9cfe%7Eany%7C6e9a3243%7Cb2272858%7Ct%7C%40%7Cc%7Cd29c9cfe%7Eany%7C6e9a3243%7Cd29ca4b2%7Cf%7C%40%7C%40%7Cd29c9cfe%7E0b0c2759%7C6e9a3243%7Cb2272858%7Cf%7C%40%7Cc%7Cd29c9cfe%7E0b0c2759%7C6e9a3243%7Cb2272858%7Ct%7C%40%7Cc%7Cd29c9cfe%7E0f3e91bd%7Cany%7Cany%7Cf%7Cany%7Cany%7Cd29c9cfe%7E2105796f%7C6e9a3243%7Cb2272858%7Cf%7C%40%7Cc%7Cd29c9cfe%7E2105796f%7C6e9a3243%7Cb2272858%7Ct%7C%40%7Cc%7Cd29c9cfe%7E6a8d35e2%7Cany%7Cany%7Cf%7Cany%7Cany%7Cd29c9cfe%7E6a8d35e2%7C6e9a3243%7C3e183837%7Cf%7C%40%7Ca%7Cd29c9cfe%7E8fa081b4%7C6e9a3243%7Cb2272858%7Cf%7C%40%7Cc%7Cd29c9cfe%7E8fa081b4%7C6e9a3243%7Cb2272858%7Ct%7C%40%7Cc%7Cd29c9cfe%7E8fa0885b%7C6e9a3243%7Cb2272858%7Cf%7C%40%7Cc%7Cd29c9cfe%7E8fa0885b%7C6e9a3243%7Cb2272858%7Ct%7C%40%7Cc%7Cd29c9cfe%7E8fa09049%7C6e9a3243%7Cb2272858%7Cf%7C%40%7Cc%7Cd29c9cfe%7E8fa09049%7C6e9a3243%7Cb2272858%7Ct%7C%40%7Cc%7Cd29c9cfe%7E8fa09931%7C6e9a3243%7Cb2272858%7Cf%7C%40%7Cc%7Cd29c9cfe%7E8fa09931%7C6e9a3243%7Cb2272858%7Ct%7C%40%7Cc%7Cd29c9cfe%7Ec5124374%7Cany%7Cany%7Cf%7Cany%7Cany%7Cd29c9cfe%7Ec5124374%7C6e9a3243%7C3e183837%7Cf%7C%40%7Ca%7Cd29c9cfe%7Ec5129979%7Cany%7Cany%7Cf%7Cany%7Cany%7Cd29c9cfe%7Ec5129979%7C6e9a3243%7C3e183837%7Cf%7C%40%7Ca%7Cd29c9cfe%7Ee6308258%7Cany%7Cany%7Cf%7Cany%7Cany%7Cd29c9cfe%7Ee6308258%7C6e9a3243%7C3e183837%7Cf%7C%40%7Ca%7Cd29c9cfe%7Efa473591%7C6e9a3243%7Cd29ca4b2%7Cf%7C%40%7C%40%7Cd29c9cfe%22%29%29%29+AND+%28mxpass%3Ano%7BneedSecu%3D1%7D+OR+mxpass%3AmaybeNo%7BneedSecu%3D3%7D+OR+mxpass%3Ayes%7BneedSecu%3D4%7D+OR+mxpass%3AmaybeYes%7BneedSecu%3D9%7D%29&q.service_query=availability%3Afts&qt=%23filter%28%22%40needSecu%3E1%22%2C%23innerjoin%7BneedSecu.policy%3DMIN%2CneedSecu.join%3DJOIN_RIGHT%7D%28mxov%2C%23and%28%23query%28search_query%29+%23query%28ds6w_refine%29+%23query%28boOnly_query%29+%23query%28service_query%29+%23query%28opt_owner%29+%23query%28opt_content_structure%29%29%2C%23query%28secu%29%29%29&s=desc%28text_relevance%29&use_logic_facets=ds6w&use_logic_hit_metas=mxobjecttype%2Cphysicalid%2Ctaxonomies%2Cds6w_58_label%2Cds6w_58_type%2Cds6w_58_description%2Cds6w_58_identifier%2Cds6w_58_modified%2Cds6w_58_created%2Cds6wg_58_revision%2Cds6w_58_status%2Cds6w_58_responsible%2Cowner%2Cds6w_58_responsibleuid%2Cds6wg_58_filesize%2Cds6w_58_project%2Cds6w_58_datasource%2Cds6w_58_community%2Cds6w_58_snippet%2Cds6w_58_label_58_snippet%2Cds6w_58_responsible_58_snippet%2Cds6w_58_community_58_snippet%2Ctaxonomies%2Cds6w_58_label%2Cds6w_58_docextension%2Cicon_95_2ddefaultthb_46_subtype%2C2dthb_46_phyid%2C2dthb_46_name%2C2dthb_46_format&debug=-ellql&of=flea): com.exalead.search.query.QueryProcessingException: [code=71053] Fatal error while trying to perform linguistic expansion
+[2019/10/22-16:40:22.016] [error] [Processing query ST 128 empty] [exa.search.api]		at com.exalead.search.query.linguistic.LinguisticExpander.visit(LinguisticExpander.java:147)
+[2019/10/22-16:40:22.016] [error] [Processing query ST 128 empty] [exa.search.api]		at com.exalead.search.query.node.RootNode.accept(RootNode.java:39)
+[2019/10/22-16:40:22.016] [error] [Processing query ST 128 empty] [exa.search.api]		at com.exalead.search.queryprocessing.StandardQueryRunner.handleUserQueryString(StandardQueryRunner.java:596)
+[2019/10/22-16:40:22.016] [error] [Processing query ST 128 empty] [exa.search.api]		at com.exalead.search.queryprocessing.StandardQueryRunner.handleUQLQuery(StandardQueryRunner.java:448)
+[2019/10/22-16:40:22.016] [error] [Processing query ST 128 empty] [exa.search.api]		at com.exalead.search.queryprocessing.StandardQueryRunner.handleQuery(StandardQueryRunner.java:167)
+[2019/10/22-16:40:22.016] [error] [Processing query ST 128 empty] [exa.search.api]		at com.exalead.search.runner.Default6Runner.parse(Default6Runner.java:880)
+[2019/10/22-16:40:22.016] [error] [Processing query ST 128 empty] [exa.search.api]		at com.exalead.search.runner.Default6Runner.ranked(Default6Runner.java:284)
+[2019/10/22-16:40:22.016] [error] [Processing query ST 128 empty] [exa.search.api]		at com.exalead.search.runner.Default6Runner.search(Default6Runner.java:207)
+[2019/10/22-16:40:22.016] [error] [Processing query ST 128 empty] [exa.search.api]		at com.exalead.search.Pool$PooledRunner.search(Pool.java:157)
+[2019/10/22-16:40:22.016] [error] [Processing query ST 128 empty] [exa.search.api]		at com.exalead.search.SearchLogicRunnerPool.search(SearchLogicRunnerPool.java:127)
+[2019/10/22-16:40:22.016] [error] [Processing query ST 128 empty] [exa.search.api]		at com.exalead.search.searchapi.SearchCommand.execute(SearchCommand.java:597)
+[2019/10/22-16:40:22.016] [error] [Processing query ST 128 empty] [exa.search.api]		at com.exalead.search.searchapi.SearchAPIDelegate.service(SearchAPIDelegate.java:299)
+[2019/10/22-16:40:22.016] [error] [Processing query ST 128 empty] [exa.search.api]		at com.exalead.search.searchapi.SearchAPIServlet.service(SearchAPIServlet.java:82)
+[2019/10/22-16:40:22.016] [error] [Processing query ST 128 empty] [exa.search.api]		at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+[2019/10/22-16:40:22.016] [error] [Processing query ST 128 empty] [exa.search.api]		at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:865)
+[2019/10/22-16:40:22.016] [error] [Processing query ST 128 empty] [exa.search.api]		at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:535)
+[2019/10/22-16:40:22.016] [error] [Processing query ST 128 empty] [exa.search.api]		at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+[2019/10/22-16:40:22.016] [error] [Processing query ST 128 empty] [exa.search.api]		at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+[2019/10/22-16:40:22.016] [error] [Processing query ST 128 empty] [exa.search.api]		at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+[2019/10/22-16:40:22.016] [error] [Processing query ST 128 empty] [exa.search.api]		at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+[2019/10/22-16:40:22.016] [error] [Processing query ST 128 empty] [exa.search.api]		at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+[2019/10/22-16:40:22.016] [error] [Processing query ST 128 empty] [exa.search.api]		at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+[2019/10/22-16:40:22.016] [error] [Processing query ST 128 empty] [exa.search.api]		at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1253)
+[2019/10/22-16:40:22.016] [error] [Processing query ST 128 empty] [exa.search.api]		at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+[2019/10/22-16:40:22.016] [error] [Processing query ST 128 empty] [exa.search.api]		at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:473)
+[2019/10/22-16:40:22.016] [error] [Processing query ST 128 empty] [exa.search.api]		at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+[2019/10/22-16:40:22.016] [error] [Processing query ST 128 empty] [exa.search.api]		at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+[2019/10/22-16:40:22.016] [error] [Processing query ST 128 empty] [exa.search.api]		at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1155)
+[2019/10/22-16:40:22.016] [error] [Processing query ST 128 empty] [exa.search.api]		at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+[2019/10/22-16:40:22.016] [error] [Processing query ST 128 empty] [exa.search.api]		at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:219)
+[2019/10/22-16:40:22.016] [error] [Processing query ST 128 empty] [exa.search.api]		at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+[2019/10/22-16:40:22.016] [error] [Processing query ST 128 empty] [exa.search.api]		at org.eclipse.jetty.server.Server.handle(Server.java:531)
+[2019/10/22-16:40:22.016] [error] [Processing query ST 128 empty] [exa.search.api]		at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:352)
+[2019/10/22-16:40:22.016] [error] [Processing query ST 128 empty] [exa.search.api]		at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:260)
+[2019/10/22-16:40:22.016] [error] [Processing query ST 128 empty] [exa.search.api]		at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:281)
+[2019/10/22-16:40:22.016] [error] [Processing query ST 128 empty] [exa.search.api]		at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:102)
+[2019/10/22-16:40:22.016] [error] [Processing query ST 128 empty] [exa.search.api]		at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
+[2019/10/22-16:40:22.016] [error] [Processing query ST 128 empty] [exa.search.api]		at com.exalead.jetty.RegularSynchronizationQueuedThreadPool$PoolThread.run(RegularSynchronizationQueuedThreadPool.java:550)
+[2019/10/22-16:40:22.016] [error] [Processing query ST 128 empty] [exa.search.api]	Caused by: com.exalead.search.query.QueryProcessingException: [code=-1] No dictionary available
+[2019/10/22-16:40:22.016] [error] [Processing query ST 128 empty] [exa.search.api]		at com.exalead.search.query.linguistic.LinguisticExpander.visit(LinguisticExpander.java:140)
+[2019/10/22-16:40:22.016] [error] [Processing query ST 128 empty] [exa.search.api]		... 37 more
+[2019/10/22-16:40:22.016] [error] [Processing query ST 128 empty] [exa.search.api]	
+[2019/10/22-16:40:22.343] [info] [main] [org.eclipse.jetty.server.handler.ContextHandler]	Started o.e.j.w.WebAppContext@58f4b31a{/mashup-ui,file:///busdata/dpmu/gbl0/data/cv/webapps/360-mashup-ui/,AVAILABLE,@16000}{/360-mashup-ui}
+[2019/10/22-16:40:22.345] [info] [main] [org.eclipse.jetty.server.AbstractConnector]	Started 16000@46c2189e{HTTP/1.1,[http/1.1]}{0.0.0.0:16000}
+[2019/10/22-16:40:22.345] [info] [main] [org.eclipse.jetty.server.Server]	Started @37618ms
+[2019/10/22-16:40:22.345] [info] [main] [bee.directory]	Starting server 'boxproxy': HTTP server on port 16027
+[ShutdownMonitor] Not enabled (port < 0): -1
+[2019/10/22-16:40:22.346] [info] [main] [org.eclipse.jetty.server.Server]	jetty-9.4.10.v20180503; built: 2018-05-03T15:56:21.710Z; git: daa59876e6f384329b122929e70a80934569428c; jvm 1.8.0_201-b09
+[2019/10/22-16:40:22.347] [info] [main] [org.eclipse.jetty.server.session]	DefaultSessionIdManager workerName=node0
+[2019/10/22-16:40:22.348] [info] [main] [org.eclipse.jetty.server.session]	No SessionScavenger set, using defaults
+[2019/10/22-16:40:22.348] [info] [main] [org.eclipse.jetty.server.session]	node0 Scavenging every 660000ms
+[2019/10/22-16:40:22.348] [warn] [main] [org.eclipse.jetty.security.SecurityHandler]	ServletContext@o.e.j.s.ServletContextHandler@6d41200c{/,resource:/exa/bee/net/http2/htdocs,STARTING} has uncovered http methods for path: /
+[2019/10/22-16:40:22.349] [info] [main] [org.eclipse.jetty.server.handler.ContextHandler]	Started o.e.j.s.ServletContextHandler@6d41200c{/,resource:/exa/bee/net/http2/htdocs,AVAILABLE}
+[2019/10/22-16:40:22.351] [info] [main] [org.eclipse.jetty.server.AbstractConnector]	Started 16027@6dfebd2a{HTTP/1.1,[http/1.1]}{0.0.0.0:16027}
+[2019/10/22-16:40:22.351] [info] [main] [org.eclipse.jetty.server.Server]	Started @37624ms
+[2019/10/22-16:40:22.351] [info] [main] [bee.directory]	Starting server 'default': service 'services.dictionary.ss0'
+[2019/10/22-16:40:22.439] [warn] [main] [exa.dictionary.query.dict0]	No resources found at resourcemanager://dictionary-dict0/dict0
+[2019/10/22-16:40:22.879] [info] [main] [bee.directory]	Starting server 'default': HTTP server on port 16023
+[ShutdownMonitor] Not enabled (port < 0): -1
+[2019/10/22-16:40:22.879] [info] [main] [org.eclipse.jetty.server.Server]	jetty-9.4.10.v20180503; built: 2018-05-03T15:56:21.710Z; git: daa59876e6f384329b122929e70a80934569428c; jvm 1.8.0_201-b09
+[2019/10/22-16:40:22.881] [info] [main] [org.eclipse.jetty.server.session]	DefaultSessionIdManager workerName=node0
+[2019/10/22-16:40:22.881] [info] [main] [org.eclipse.jetty.server.session]	No SessionScavenger set, using defaults
+[2019/10/22-16:40:22.882] [info] [main] [org.eclipse.jetty.server.session]	node0 Scavenging every 600000ms
+[2019/10/22-16:40:22.882] [warn] [main] [org.eclipse.jetty.security.SecurityHandler]	ServletContext@o.e.j.s.ServletContextHandler@2696b687{/,resource:/exa/bee/net/http2/htdocs,STARTING} has uncovered http methods for path: /
+[2019/10/22-16:40:22.884] [info] [main] [org.eclipse.jetty.server.handler.ContextHandler]	Started o.e.j.s.ServletContextHandler@2696b687{/,resource:/exa/bee/net/http2/htdocs,AVAILABLE}
+[2019/10/22-16:40:22.885] [info] [main] [org.eclipse.jetty.server.AbstractConnector]	Started 16023@7a600e21{HTTP/1.1,[http/1.1]}{0.0.0.0:16023}
+[2019/10/22-16:40:22.885] [info] [main] [org.eclipse.jetty.server.Server]	Started @38159ms
+[2019/10/22-16:40:22.888] [info] [main] [bee]	Runtime is started
+[2019/10/22-16:40:31.730] [info] [140309665445632] [exa.tick.dest]	G192: S256: creating remote connection to 127.0.0.1:16017-part-0
+[2019/10/22-16:40:32.682] [warn] [140309665445632] [search.snippet.builder]	G320: S384: No language facet id set, will process with unknown language
+[2019/10/22-16:40:32.687] [warn] [140309665445632] [search.snippet.builder]	G320: S384: No language facet id set, will process with unknown language
+[2019/10/22-16:40:32.687] [warn] [140309665445632] [search.snippet.builder]	G320: S384: No language facet id set, will process with unknown language
+[2019/10/22-16:40:32.688] [warn] [140309665445632] [search.snippet.builder]	G320: S384: No language facet id set, will process with unknown language
+[2019/10/22-16:40:32.688] [warn] [140309665445632] [search.snippet.builder]	G320: S384: No language facet id set, will process with unknown language
+[2019/10/22-16:40:32.689] [warn] [140309665445632] [search.snippet.builder]	G320: S384: No language facet id set, will process with unknown language
+[2019/10/22-16:41:43.226] [warn] [140309666498304] [search.snippet.builder]	G960: S1024: No language facet id set, will process with unknown language
+[2019/10/22-16:41:43.228] [warn] [140309666498304] [search.snippet.builder]	G960: S1024: No language facet id set, will process with unknown language
+[2019/10/22-16:41:43.228] [warn] [140309666498304] [search.snippet.builder]	G960: S1024: No language facet id set, will process with unknown language
+[2019/10/22-16:41:43.228] [warn] [140309666498304] [search.snippet.builder]	G960: S1024: No language facet id set, will process with unknown language
+[2019/10/22-16:41:43.229] [warn] [140309666498304] [search.snippet.builder]	G960: S1024: No language facet id set, will process with unknown language
+[2019/10/22-16:41:43.229] [warn] [140309666498304] [search.snippet.builder]	G960: S1024: No language facet id set, will process with unknown language
+[2019/10/22-16:43:48.827] [warn] [140309665445632] [search.snippet.builder]	G1216: S1280: No language facet id set, will process with unknown language
+[2019/10/22-16:43:48.829] [warn] [140309665445632] [search.snippet.builder]	G1216: S1280: No language facet id set, will process with unknown language
+[2019/10/22-16:43:48.829] [warn] [140309665445632] [search.snippet.builder]	G1216: S1280: No language facet id set, will process with unknown language
+[2019/10/22-16:43:48.829] [warn] [140309665445632] [search.snippet.builder]	G1216: S1280: No language facet id set, will process with unknown language
+[2019/10/22-16:43:48.830] [warn] [140309665445632] [search.snippet.builder]	G1216: S1280: No language facet id set, will process with unknown language
+[2019/10/22-16:43:48.830] [warn] [140309665445632] [search.snippet.builder]	G1216: S1280: No language facet id set, will process with unknown language
+[2019/10/22-16:44:27.687] [warn] [140309666498304] [search.snippet.builder]	G1600: S1664: No language facet id set, will process with unknown language
+[2019/10/22-16:44:27.689] [warn] [140309666498304] [search.snippet.builder]	G1600: S1664: No language facet id set, will process with unknown language
+[2019/10/22-16:44:27.689] [warn] [140309666498304] [search.snippet.builder]	G1600: S1664: No language facet id set, will process with unknown language
+[2019/10/22-16:44:27.689] [warn] [140309666498304] [search.snippet.builder]	G1600: S1664: No language facet id set, will process with unknown language
+[2019/10/22-16:44:27.690] [warn] [140309666498304] [search.snippet.builder]	G1600: S1664: No language facet id set, will process with unknown language
+[2019/10/22-16:44:27.690] [warn] [140309666498304] [search.snippet.builder]	G1600: S1664: No language facet id set, will process with unknown language
+[2019/10/22-16:45:27.649] [info] [Processing query ST 1728 empty] [exa.search.runnerpool]	Release a runner that served 15 queries during 306890s when having 0 working runner
+[2019/10/22-16:45:27.650] [info] [Processing query ST 1728 empty] [exa.search.runnerpool]	Dropping runner for logic sxisl: pool is destroyed
+[2019/10/22-16:47:40.430] [info] [Preprocessing for query empty] [exa.search.runnerpool]	Created a new runner for logic sxisl ( 0 idle runner and 0 working runner) in 129ms
+[2019/10/22-16:47:40.668] [info] [140309665445632] [exa.tick.dest]	G1856: S1920: creating remote connection to 127.0.0.1:16017
+[2019/10/22-16:47:52.671] [info] [Preprocessing for query empty] [exa.search.runnerpool]	Created a new runner for logic sxisl ( 0 idle runner and 1 working runner) in 196ms
+[2019/10/22-16:47:52.864] [info] [Preprocessing for query empty] [exa.search.runnerpool]	Created a new runner for logic sxisl ( 0 idle runner and 1 working runner) in 128ms
+[2019/10/22-16:47:53.248] [info] [Preprocessing for query empty] [exa.search.runnerpool]	Created a new runner for logic sxisl ( 0 idle runner and 1 working runner) in 320ms
+[2019/10/22-16:47:53.363] [info] [Preprocessing for query empty] [exa.search.runnerpool]	Created a new runner for logic sxisl ( 0 idle runner and 3 working runner) in 81ms
+[2019/10/22-16:47:54.526] [info] [Preprocessing for query empty] [exa.search.runnerpool]	Created a new runner for logic sxisl ( 0 idle runner and 3 working runner) in 243ms
+[2019/10/22-16:47:57.528] [info] [pool-3-thread-1] [exa.search.runnerpool]	Recycling 1 runners (totalQueries=65)
+[2019/10/22-16:47:59.626] [info] [pool-3-thread-1] [exa.search.runnerpool]	Recycling 2 runners (totalQueries=67)
+[2019/10/22-16:48:51.388] [warn] [140308229723904] [search.snippet.builder]	G9792: S9856: No language facet id set, will process with unknown language
+[2019/10/22-16:49:02.520] [warn] [140309666498304] [search.snippet.builder]	G10176: S10240: No language facet id set, will process with unknown language
+[2019/10/22-16:49:11.652] [warn] [140309666498304] [search.snippet.builder]	G10560: S10624: No value found in the language facet (facet id: 140), will process with unknown language
+[2019/10/22-16:50:14.307] [warn] [140309666498304] [search.snippet.builder]	G10816: S10880: No language facet id set, will process with unknown language
+[2019/10/22-16:50:18.835] [warn] [140309666498304] [search.snippet.builder]	G11072: S11136: No language facet id set, will process with unknown language
+[2019/10/22-16:50:22.731] [warn] [140309666498304] [search.snippet.builder]	G11328: S11392: No language facet id set, will process with unknown language
+[2019/10/22-16:50:24.745] [warn] [140309666498304] [search.snippet.builder]	G11584: S11648: No language facet id set, will process with unknown language
+[2019/10/22-16:50:40.008] [warn] [140308668569344] [search.snippet.builder]	G11840: S11904: No language facet id set, will process with unknown language
+[2019/10/22-16:53:09.274] [info] [Processing query ST 12992 empty] [exa.search.runnerpool]	Release a runner that served 24 queries during 328801s when having 1 working runner
+[2019/10/22-16:53:09.274] [info] [Processing query ST 12992 empty] [exa.search.runnerpool]	Dropping runner for logic sxisl: pool is destroyed
+[2019/10/22-16:53:09.295] [info] [Processing query ST 13056 empty] [exa.search.runnerpool]	Release a runner that served 22 queries during 316569s when having 0 working runner
+[2019/10/22-16:53:09.296] [info] [Processing query ST 13056 empty] [exa.search.runnerpool]	Dropping runner for logic sxisl: pool is destroyed
+[2019/10/22-16:53:09.827] [info] [Processing query ST 13248 empty] [exa.search.runnerpool]	Release a runner that served 22 queries during 316919s when having 0 working runner
+[2019/10/22-16:53:09.827] [info] [Processing query ST 13248 empty] [exa.search.runnerpool]	Dropping runner for logic sxisl: pool is destroyed
+[2019/10/22-16:53:10.021] [info] [Preprocessing for query empty] [exa.search.runnerpool]	Created a new runner for logic sxisl ( 0 idle runner and 0 working runner) in 85ms
+[2019/10/22-16:56:00.655] [info] [Preprocessing for query empty] [exa.search.runnerpool]	Created a new runner for logic sxisl ( 0 idle runner and 0 working runner) in 103ms
+[2019/10/22-16:56:03.811] [warn] [140308669622016] [search.snippet.builder]	G16448: S16512: No language facet id set, will process with unknown language
+[2019/10/22-16:56:03.813] [warn] [140308669622016] [search.snippet.builder]	G16448: S16512: No language facet id set, will process with unknown language
+[2019/10/22-16:56:03.813] [warn] [140308669622016] [search.snippet.builder]	G16448: S16512: No language facet id set, will process with unknown language
+[2019/10/22-16:56:03.814] [warn] [140308669622016] [search.snippet.builder]	G16448: S16512: No language facet id set, will process with unknown language
+[2019/10/22-16:56:03.814] [warn] [140308669622016] [search.snippet.builder]	G16448: S16512: No language facet id set, will process with unknown language
+[2019/10/22-16:56:03.814] [warn] [140308669622016] [search.snippet.builder]	G16448: S16512: No language facet id set, will process with unknown language
+[2019/10/22-16:59:31.502] [info] [Processing query ST 16640 empty] [exa.search.runnerpool]	Release a runner that served 16 queries during 381450s when having 0 working runner
+[2019/10/22-16:59:31.502] [info] [Processing query ST 16640 empty] [exa.search.runnerpool]	Dropping runner for logic sxisl: pool is destroyed
+[2019/10/22-16:59:32.251] [info] [Preprocessing for query empty] [exa.search.runnerpool]	Created a new runner for logic sxisl ( 0 idle runner and 1 working runner) in 160ms
+[2019/10/22-16:59:49.202] [warn] [140308253218560] [search.snippet.builder]	G19136: S19200: No language facet id set, will process with unknown language
+[2019/10/22-16:59:49.204] [warn] [140308253218560] [search.snippet.builder]	G19136: S19200: No language facet id set, will process with unknown language
+[2019/10/22-16:59:49.204] [warn] [140308253218560] [search.snippet.builder]	G19136: S19200: No language facet id set, will process with unknown language
+[2019/10/22-16:59:49.204] [warn] [140308253218560] [search.snippet.builder]	G19136: S19200: No language facet id set, will process with unknown language
+[2019/10/22-16:59:49.204] [warn] [140308253218560] [search.snippet.builder]	G19136: S19200: No language facet id set, will process with unknown language
+[2019/10/22-16:59:49.205] [warn] [140308253218560] [search.snippet.builder]	G19136: S19200: No language facet id set, will process with unknown language
+[2019/10/22-17:03:59.992] [info] [Processing query ST 19264 empty] [exa.search.runnerpool]	Release a runner that served 21 queries during 479305s when having 0 working runner
+[2019/10/22-17:03:59.992] [info] [Processing query ST 19264 empty] [exa.search.runnerpool]	Dropping runner for logic sxisl: pool is destroyed
+[2019/10/22-17:04:03.609] [info] [Preprocessing for query empty] [exa.search.runnerpool]	Created a new runner for logic sxisl ( 0 idle runner and 1 working runner) in 86ms
+[2019/10/22-17:05:02.635] [info] [Processing query ST 21568 empty] [exa.search.runnerpool]	Release a runner that served 23 queries during 330358s when having 0 working runner
+[2019/10/22-17:05:02.635] [info] [Processing query ST 21568 empty] [exa.search.runnerpool]	Dropping runner for logic sxisl: pool is destroyed
+[2019/10/22-17:05:07.145] [warn] [140308253218560] [search.snippet.builder]	G21696: S21760: No value found in the language facet (facet id: 140), will process with unknown language
+[2019/10/22-17:06:44.557] [info] [Preprocessing for query allow_unknown_hit_meta=true&debug=-ellql&hf=-1&of=flea&q=indexDate_47624833-a4aa-4297-be89-d5c30ee643ca_431&q.internal_date_query=availability%3AinternalDate&qt=%23and%28%23query%28internal_date_query ...[96 chars remaining]] [exa.search.runnerpool]	Created a new runner for logic sxisl ( 0 idle runner and 0 working runner) in 68ms
+[2019/10/22-17:11:37.181] [info] [Processing query ST 33472 empty] [exa.search.runnerpool]	Release a runner that served 59 queries during 453545s when having 0 working runner
+[2019/10/22-17:11:37.181] [info] [Processing query ST 33472 empty] [exa.search.runnerpool]	Dropping runner for logic sxisl: pool is destroyed
+[2019/10/22-17:11:42.100] [warn] [140308253218560] [search.snippet.builder]	G33728: S33792: No language facet id set, will process with unknown language
+[2019/10/22-17:11:42.104] [warn] [140308253218560] [search.snippet.builder]	G33728: S33792: No language facet id set, will process with unknown language
+[2019/10/22-17:11:47.067] [info] [Processing query ST 33856 allow_unknown_hit_meta=true&debug=-ellql&hf=-1&of=flea&q=indexDate_47624833-a4aa-4297-be89-d5c30ee643ca_471&q.internal_date_query=availability%3AinternalDate&qt=%23and%28%23query%28internal_date_query ...[96 chars remaining]] [exa.search.runnerpool]	Release a runner that served 42 queries during 302487s when having 0 working runner
+[2019/10/22-17:11:47.067] [info] [Processing query ST 33856 allow_unknown_hit_meta=true&debug=-ellql&hf=-1&of=flea&q=indexDate_47624833-a4aa-4297-be89-d5c30ee643ca_471&q.internal_date_query=availability%3AinternalDate&qt=%23and%28%23query%28internal_date_query ...[96 chars remaining]] [exa.search.runnerpool]	Dropping runner for logic sxisl: pool is destroyed
+[2019/10/22-17:11:47.263] [info] [Preprocessing for query empty] [exa.search.runnerpool]	Created a new runner for logic sxisl ( 0 idle runner and 0 working runner) in 155ms
+[2019/10/22-17:11:47.480] [warn] [140308253218560] [search.snippet.builder]	G33984: S34048: No language facet id set, will process with unknown language
+[2019/10/22-17:11:47.482] [warn] [140308253218560] [search.snippet.builder]	G33984: S34048: No language facet id set, will process with unknown language
+[2019/10/22-17:12:20.310] [warn] [140308253218560] [search.snippet.builder]	G34496: S34560: No language facet id set, will process with unknown language
+[2019/10/22-17:12:20.312] [warn] [140308253218560] [search.snippet.builder]	G34496: S34560: No language facet id set, will process with unknown language
+[2019/10/22-17:12:34.403] [warn] [140308669622016] [search.snippet.builder]	G34752: S34816: No language facet id set, will process with unknown language
+[2019/10/22-17:12:34.406] [warn] [140308669622016] [search.snippet.builder]	G34752: S34816: No language facet id set, will process with unknown language
+[2019/10/22-17:12:59.942] [info] [Preprocessing for query empty] [exa.search.runnerpool]	Created a new runner for logic sxisl ( 0 idle runner and 0 working runner) in 71ms
+[2019/10/22-17:13:00.051] [info] [Preprocessing for query empty] [exa.search.runnerpool]	Created a new runner for logic sxisl ( 0 idle runner and 0 working runner) in 78ms
+[2019/10/22-17:13:00.681] [info] [Preprocessing for query empty] [exa.search.runnerpool]	Created a new runner for logic sxisl ( 0 idle runner and 3 working runner) in 168ms
+[2019/10/22-17:13:00.820] [info] [Preprocessing for query empty] [exa.search.runnerpool]	Created a new runner for logic sxisl ( 0 idle runner and 1 working runner) in 69ms
+[2019/10/22-17:13:02.075] [info] [pool-3-thread-1] [exa.search.runnerpool]	Recycling 2 runners (totalQueries=292)
+[2019/10/22-17:13:05.580] [warn] [140308666464000] [search.snippet.builder]	G37568: S37632: No language facet id set, will process with unknown language
+[2019/10/22-17:13:05.583] [warn] [140308666464000] [search.snippet.builder]	G37568: S37632: No language facet id set, will process with unknown language
+[2019/10/22-17:13:10.331] [warn] [140308666464000] [search.snippet.builder]	G37824: S37888: No language facet id set, will process with unknown language
+[2019/10/22-17:13:10.332] [warn] [140308666464000] [search.snippet.builder]	G37824: S37888: No language facet id set, will process with unknown language
+[2019/10/23-00:00:00.018] [info] [563383249@jtp-default-1] [exa.log.rotation]	Rotating standard log
+Log4NG: rotating logs now

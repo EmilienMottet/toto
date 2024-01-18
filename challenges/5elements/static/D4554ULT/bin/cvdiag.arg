@@ -1,0 +1,4 @@
+%{JAVA_HOME}/bin/java
+-classpath
+%{NG_RECURSIVE_CLASSPATH}
+com.exalead.cloudview.reporting.cvdiag.CVDiag

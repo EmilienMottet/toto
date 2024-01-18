@@ -1,0 +1,5 @@
+<depl:PushAPIServerConfigList version="1570546421117" xmlns:bee="exa:exa.bee" xmlns:depl="exa:com.exalead.mercury.mami.deploy.v10" xmlns:config="exa:exa.bee.config" xmlns:deploy="exa:exa.bee.deploy.v10">
+    <depl:PushAPIServerConfig name="bg0" host="mpllnx4032.mpl.michelin.com" port="16002" version="V4" useHttps="false" type="buildGroup">
+        <depl:extraHttpParameters/>
+    </depl:PushAPIServerConfig>
+</depl:PushAPIServerConfigList>

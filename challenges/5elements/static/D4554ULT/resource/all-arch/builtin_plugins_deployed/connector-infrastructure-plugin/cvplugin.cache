@@ -1,0 +1,28 @@
+#Plugin properties
+#Wed Oct 09 09:07:46 CEST 2019
+component.1.interface.1.class=com.exalead.papi.datainteg.connectors.ProxyForUnmanagedConnector
+component.1.class=com.exalead.papi.datainteg.connectors.rscan.RScanConnector
+component.0.class=com.exalead.papi.datainteg.connectors.rscan.ManagedPushAPIConnector
+component.1.interface.0.class=com.exalead.papi.datainteg.connectors.rscan.RScanConnector
+component.1.description=RScan client
+timestamp=1570604866000
+component.1.interface.7.class=java.lang.Object
+debug.classes.count=2
+component.0.interface.5.class=com.exalead.mercury.component.CVComponent
+component.0.interface.4.class=com.exalead.papi.framework.connectors.v30.ConnectorInterface
+component.0.interface.3.class=com.exalead.papi.framework.connectors.v20.ConnectorInterface
+debug.jar.count=1
+component.1.interface.3.class=com.exalead.papi.framework.connectors.v10.ConnectorInterface
+component.1.interface.2.class=com.exalead.papi.framework.connectors.Connector
+component.0.interface.0.class=com.exalead.papi.datainteg.connectors.rscan.ManagedPushAPIConnector
+component.0.interface.6.class=java.lang.Object
+debug.destination.path=/busapps/dpmu/gbl0/3DSpaceIndex/linux_a64/cv/data/resource/all-arch/builtin_plugins_deployed/connector-infrastructure-plugin
+component.1.interface.6.class=com.exalead.mercury.component.CVComponent
+component.1.interface.5.class=com.exalead.papi.framework.connectors.v30.ConnectorInterface
+component.1.interface.4.class=com.exalead.papi.framework.connectors.v20.ConnectorInterface
+component.0.interface.2.class=com.exalead.papi.framework.connectors.v10.ConnectorInterface
+component.0.interface.1.class=com.exalead.papi.framework.connectors.Connector
+plugin.reverse-classloading=false
+component.0.description=Managed Push API
+lastmodified=1570604866854
+component.0.label=Managed Push API

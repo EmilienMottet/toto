@@ -1,0 +1,729 @@
+[2019/10/08-16:55:09.192] [info] [main] [exa.log]	Setting master level info
+**********************************************************
+[2019/10/08-16:55:09.197] [info] [main] [bee]	Process 35004 starting on mpllnx4032.mpl.michelin.com (mpllnx4032.mpl.michelin.com/10.216.104.82) as user dpmugbl0 with version V6R2019x.93173
+[2019/10/08-16:55:09.197] [info] [main] [bee]	 [args: java --key processName indexingserver-sxibg0 --key hostname mpllnx4032.mpl.michelin.com --key installName cvdefault --key id 247016361 --ppid 34954 --configuration config:///version.xml --configuration config:///mercury.xml --key logToRunDir true ; directory: /busapps/dpmu/gbl0/3DSpaceIndex/linux_a64/cv/data/run/indexingserver-sxibg0 ; architecture: amd64-linux ; kernel: "Linux version 3.10.0-1062.1.2.el7.x86_64 (mockbuild@x86-vm-27.build.eng.bos.redhat.com) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-39) (GCC) ) #1 SMP Mon Sep 16 14:19:51 EDT 2019"]
+[2019/10/08-16:55:09.223] [info] [main] [bee]	Loading root config file: config:///version.xml
+[2019/10/08-16:55:09.267] [info] [main] [bee]	Loading root config file: config:///mercury.xml
+Updating logging configuration
+[2019/10/08-16:55:10.281] [info] [main] [exa.log]	Setting master level info
+**********************************************************
+[2019/10/08-16:55:10.282] [info] [main] [bee.directory]	Directory updated, reloading
+[2019/10/08-16:55:10.283] [info] [main] [directory]	Loading directory
+[2019/10/08-16:55:10.613] [info] [main] [bee.directory]	Directory loaded
+[2019/10/08-16:55:10.614] [info] [main] [bee]	Configuration loaded, starting runtime
+[2019/10/08-16:55:10.614] [info] [main] [directory]	Loading directory
+[2019/10/08-16:55:10.712] [info] [main] [bee.directory]	Directory loaded
+[2019/10/08-16:55:10.967] [info] [main] [org.eclipse.jetty.util.log]	Logging initialized @3856ms to org.eclipse.jetty.util.log.Slf4jLog
+[2019/10/08-16:55:10.986] [info] [main] [bee.directory]	Configuring server 'resourceshare'
+[2019/10/08-16:55:11.275] [info] [main] [bee.directory]	Mounting servlet 'com.exalead.ds.share2.http.ShareFLIS' on '/*'
+[2019/10/08-16:55:11.310] [info] [main] [bee.directory]	Configuring server 'default'
+[2019/10/08-16:55:11.311] [info] [main] [bee.directory]	Mounting servlet 'com.exalead.cloudview.indexing.IndexingServer' on '/indexingserver/sxibg0/*'
+[2019/10/08-16:55:11.311] [info] [main] [bee.directory]	Mounting FLIS servlet 'com.exalead.cloudview.indexing.analysis.AnalyzerTesterService' on '/analyzer-tester-sxibg0/*'
+[2019/10/08-16:55:11.313] [info] [main] [bee.directory]	Mounting servlet 'com.exalead.cloudview.indexing.index.IndexBuilderService' on '/index6builder/sxibg0/0/*'
+[2019/10/08-16:55:11.313] [info] [main] [bee.directory]	Mounting FLIS servlet 'com.exalead.cloudview.indexing.index.BuildGroupManagerService' on '/index6/buildgroupmanager/sxibg0/*'
+[2019/10/08-16:55:11.314] [info] [main] [bee.directory]	Mounting servlet 'com.exalead.dictionary.build.DictionaryBuilderService' on '/dictionary/builder/*'
+[2019/10/08-16:55:11.314] [info] [main] [bee.directory]	Mounting Bee servlet 'com.exalead.search.suggest.SuggestManager' on '/suggestmanager/*'
+[2019/10/08-16:55:11.331] [info] [main] [bee.directory]	Mounting FLIS servlet 'com.exalead.cloudview.indexing.realtime.RealTimeAlertingMatchingService' on '/rta-matching-sxibg0/*'
+[2019/10/08-16:55:11.335] [info] [main] [bee.directory]	Mounting servlet 'com.exalead.bee.JavaRuntimeServlet' on '/java/*'
+[2019/10/08-16:55:11.335] [info] [main] [bee.directory]	Mounting servlet 'com.exalead.bee.services.ProfilingServlet' on '/profiler/*'
+[2019/10/08-16:55:11.335] [info] [main] [bee.directory]	Mounting servlet 'com.exalead.bee.services.IsAliveServlet' on '/isAlive/*'
+[2019/10/08-16:55:11.335] [info] [main] [bee.directory]	Mounting Bee servlet 'com.exalead.bee.services.Log4EService' on '/log4e/mpllnx4032.mpl.michelin.com-cvdefault/indexingserver-sxibg0/*'
+[2019/10/08-16:55:11.338] [info] [main] [bee.directory]	Mounting Bee servlet 'com.exalead.bee.services.BeegistryUpdater' on '/beegistry/mpllnx4032.mpl.michelin.com-cvdefault/indexingserver-sxibg0/*'
+[2019/10/08-16:55:11.339] [info] [main] [bee.directory]	Configuring homepage
+[2019/10/08-16:55:11.581] [info] [main] [bee.directory]	Starting server 'resourceshare': service 'resourceshareservice'
+[2019/10/08-16:55:11.610] [info] [main] [bee.directory]	Starting server 'resourceshare': HTTP server on port 16014
+[ShutdownMonitor] Not enabled (port < 0): -1
+[2019/10/08-16:55:11.612] [info] [main] [org.eclipse.jetty.server.Server]	jetty-9.4.10.v20180503; built: 2018-05-03T15:56:21.710Z; git: daa59876e6f384329b122929e70a80934569428c; jvm 1.8.0_152-b16
+[2019/10/08-16:55:11.705] [info] [main] [org.eclipse.jetty.server.session]	DefaultSessionIdManager workerName=node0
+[2019/10/08-16:55:11.706] [info] [main] [org.eclipse.jetty.server.session]	No SessionScavenger set, using defaults
+[2019/10/08-16:55:11.708] [info] [main] [org.eclipse.jetty.server.session]	node0 Scavenging every 600000ms
+[2019/10/08-16:55:11.751] [warn] [main] [org.eclipse.jetty.security.SecurityHandler]	ServletContext@o.e.j.s.ServletContextHandler@4d5b6aac{/,null,STARTING} has uncovered http methods for path: /
+[2019/10/08-16:55:11.779] [info] [main] [org.eclipse.jetty.server.handler.ContextHandler]	Started o.e.j.s.ServletContextHandler@4d5b6aac{/,null,AVAILABLE}
+[2019/10/08-16:55:11.794] [info] [main] [org.eclipse.jetty.server.AbstractConnector]	Started 16014@194bcebf{HTTP/1.1,[http/1.1]}{0.0.0.0:16014}
+[2019/10/08-16:55:11.795] [info] [main] [org.eclipse.jetty.server.Server]	Started @4686ms
+[2019/10/08-16:55:11.795] [info] [main] [bee.directory]	Starting server 'resourceshare_slave': service 'resourceshare'
+[2019/10/08-16:55:11.795] [info] [main] [resourceshare]	Starting ResourceShare
+[2019/10/08-16:55:11.796] [info] [main] [resourceshare]	Syncing groups
+[2019/10/08-16:55:12.049] [info] [main] [resourceshare]	Master is not yet up on http://mpllnx4032.mpl.michelin.com:16007/resourcemanager (Connection refused (Connection refused)), waiting ...
+[2019/10/08-16:55:14.326] [info] [620557167@jtp-resourceshare-1] [datashare]	share: Started datashare session on plugins
+[2019/10/08-16:55:14.478] [info] [620557167@jtp-resourceshare-1] [exa.io.datashare]	share: Switching DataShare to version 1
+[2019/10/08-16:55:14.479] [info] [620557167@jtp-resourceshare-1] [datashare]	share: Committed datashare session
+[2019/10/08-16:55:14.483] [info] [main] [resourceshare]	Successfully synced groups
+[2019/10/08-16:55:14.487] [info] [main] [resourceshare]	Loading plugins
+[2019/10/08-16:55:14.487] [info] [main] [exa.plugins]	Refreshing plugins list
+[2019/10/08-16:55:14.487] [info] [main] [plugins]	Listing plugins
+[2019/10/08-16:55:14.496] [info] [main] [plugins]	NGRESOURCEPATH=/busapps/dpmu/gbl0/3DSpaceIndex/linux_a64/cv/data/bin/../resource/all-arch:/busapps/dpmu/gbl0/3DSpaceIndex/linux_a64/cv//resource//all-arch:/busapps/dpmu/gbl0/3DSpaceIndex/linux_a64/cv//resource//amd64-linux
+[2019/10/08-16:55:14.497] [info] [main] [plugins]	scanning builtin plugins in /busapps/dpmu/gbl0/3DSpaceIndex/linux_a64/cv/data/bin/../resource/all-arch/builtin_plugins_deployed
+[2019/10/08-16:55:14.560] [info] [main] [bee.directory]	Starting server 'default': service 'services.indexingserver.sxibg0'
+[2019/10/08-16:55:14.575] [info] [main] [indexingserver]	Management WormFS for sxibg0 is file:/busapps/dpmu/gbl0/3DSpaceIndex/linux_a64/cv/data/build/index-unit/sxibg0/management/
+[2019/10/08-16:55:14.616] [info] [main] [indexingserver]	WormFS for sxibg0 is file:/busapps/dpmu/gbl0/3DSpaceIndex/linux_a64/cv/data/build/index-unit/sxibg0/slots/
+[2019/10/08-16:55:14.632] [info] [main] [indexingserver]	Temporary WormFS for sxibg0 is file:/busapps/dpmu/gbl0/3DSpaceIndex/linux_a64/cv/data/tmp/sxibg0/0/
+[2019/10/08-16:55:14.840] [info] [main] [index.builder]	slice 0: Create new index in file:/busapps/dpmu/gbl0/3DSpaceIndex/linux_a64/cv/data/build/index-unit/sxibg0/slots/index/0
+[2019/10/08-16:55:15.074] [info] [main] [index.builder]	slice 0: Setting builder UUID to '1570546514973'
+[2019/10/08-16:55:15.079] [info] [main] [index.builder]	slice 0: Slice 0: Active generation: 0
+[2019/10/08-16:55:15.085] [info] [main] [replication.manager]	Starting control thread for 0/sxii0
+[2019/10/08-16:55:15.140] [info] [ReplicaControlThread 0/sxii0] [replication.manager]	slice 0: inst sxii0: starting instance init sequence
+[2019/10/08-16:55:15.235] [info] [main] [bg-manager]	Using BasicSlicePartitionFunction
+[2019/10/08-16:55:15.237] [info] [main] [bg-manager]	Using ContiguousDidAllocationPolicy
+[2019/10/08-16:55:15.243] [info] [ReplicaControlThread 0/sxii0] [replication.manager]	slice 0: inst sxii0: initialized instance: enqueued 3 files for gen=0
+[2019/10/08-16:55:15.243] [info] [ReplicaControlThread 0/sxii0] [replication.manager]	slice 0: inst sxii0: instance initialized, entering wait loop
+[2019/10/08-16:55:15.264] [info] [main] [dih]	Starting...
+[2019/10/08-16:55:15.265] [info] [main] [dih]	Initial creation
+[2019/10/08-16:55:15.265] [info] [main] [dih]	Adding slice 0
+[2019/10/08-16:55:15.269] [info] [main] [dih]	Started
+[2019/10/08-16:55:15.352] [info] [main] [exa.indexing.status.sxibg0]	No sources status for now
+[2019/10/08-16:55:15.457] [info] [SchemaUpdater-sxibg0-28] [schema.updater]	Checking for schema update for GCT version '4'
+[2019/10/08-16:55:15.462] [info] [main] [bee.directory]	Starting server 'default': service 'services.analyzer-tester-sxibg0'
+[2019/10/08-16:55:15.463] [info] [main] [analysis.test]	Started analyzer tester service - /analyzer-tester-sxibg0
+[2019/10/08-16:55:15.463] [info] [main] [bee.directory]	Starting server 'default': service 'services.dictionary.builder'
+[2019/10/08-16:55:15.498] [info] [main] [exa.dictionary.gc]	GC started on deleted dictionaries...
+[2019/10/08-16:55:15.498] [info] [main] [exa.dictionary.gc]	GC on deleted dictionaries done: checked 0 entries (0 deleted, 2 kept) in 0ms
+[2019/10/08-16:55:15.498] [info] [main] [bee.directory]	Starting server 'default': service 'suggestmanager'
+[2019/10/08-16:55:15.547] [info] [main] [suggest.manager]	SuggestManager config updated
+[2019/10/08-16:55:15.547] [info] [main] [bee.directory]	Starting server 'default': service 'services.rta-matching-sxibg0'
+[2019/10/08-16:55:15.551] [info] [SchemaUpdater-sxibg0-35] [schema.updater.slice.0]	Starting schema update ... 
+[2019/10/08-16:55:15.568] [info] [main] [alerting.realtime.matching]	Reloaded '0' matchers definitions
+[2019/10/08-16:55:15.569] [info] [main] [bee.directory]	Starting server 'default': HTTP server on port 16013
+[ShutdownMonitor] Not enabled (port < 0): -1
+[2019/10/08-16:55:15.569] [info] [main] [org.eclipse.jetty.server.Server]	jetty-9.4.10.v20180503; built: 2018-05-03T15:56:21.710Z; git: daa59876e6f384329b122929e70a80934569428c; jvm 1.8.0_152-b16
+[2019/10/08-16:55:15.603] [info] [SchemaUpdater-sxibg0-35] [schema.updater.slice.0]	No update were performed
+[2019/10/08-16:55:15.678] [info] [main] [org.eclipse.jetty.server.session]	DefaultSessionIdManager workerName=node0
+[2019/10/08-16:55:15.678] [info] [main] [org.eclipse.jetty.server.session]	No SessionScavenger set, using defaults
+[2019/10/08-16:55:15.678] [info] [main] [org.eclipse.jetty.server.session]	node0 Scavenging every 660000ms
+[2019/10/08-16:55:15.701] [warn] [main] [org.eclipse.jetty.security.SecurityHandler]	ServletContext@o.e.j.s.ServletContextHandler@54227100{/,resource:/exa/bee/net/http2/htdocs,STARTING} has uncovered http methods for path: /
+[2019/10/08-16:55:15.709] [info] [main] [org.eclipse.jetty.server.handler.ContextHandler]	Started o.e.j.s.ServletContextHandler@54227100{/,resource:/exa/bee/net/http2/htdocs,AVAILABLE}
+[2019/10/08-16:55:15.710] [info] [main] [org.eclipse.jetty.server.AbstractConnector]	Started 16013@56f6d40b{HTTP/1.1,[http/1.1]}{0.0.0.0:16013}
+[2019/10/08-16:55:15.710] [info] [main] [org.eclipse.jetty.server.Server]	Started @8601ms
+[2019/10/08-16:55:15.710] [info] [main] [bee]	Runtime is started
+[2019/10/08-16:55:15.720] [info] [SchemaUpdater-sxibg0-28] [schema.updater]	Completed schema update of 1 slices in 263 ms
+[2019/10/08-16:55:16.367] [info] [1262237002@jtp-default-1] [GL.index.replication]	slice 0: inst sxii0: [0] slice=0 instance=sxii0 is ready for reload
+[2019/10/08-16:55:32.873] [info] [1262237002@jtp-default-1] [bee.runtime]	Exiting on StopRuntime request
+[2019/10/08-16:55:32.875] [info] [shutdown-49] [jaxb]	JAXB cache contains :sun.misc.Launcher$AppClassLoader@764c12b6__com.exalead.mercury.mami.resources.v10 (creation=750ms, hits=3)
+[2019/10/08-16:55:32.875] [info] [shutdown-49] [jaxb]	JAXB cache contains :sun.misc.Launcher$AppClassLoader@764c12b6__com.exalead.mercury.mami.master.v10 (creation=832ms, hits=2)
+[2019/10/08-16:55:33.876] [info] [shutdown-49] [bee.directory]	Stopping server 'default': HTTP server
+[2019/10/08-16:55:33.881] [info] [shutdown-49] [org.eclipse.jetty.server.AbstractConnector]	Stopped 16013@56f6d40b{HTTP/1.1,[http/1.1]}{0.0.0.0:16013}
+[2019/10/08-16:55:33.882] [info] [shutdown-49] [org.eclipse.jetty.server.handler.ContextHandler]	Stopped o.e.j.s.ServletContextHandler@54227100{/,resource:/exa/bee/net/http2/htdocs,UNAVAILABLE}
+[2019/10/08-16:55:33.883] [info] [shutdown-49] [org.eclipse.jetty.server.session]	node0 Stopped scavenging
+[2019/10/08-16:55:33.885] [info] [shutdown-49] [bee.directory]	Stopping server 'default': service 'services.rta-matching-sxibg0'
+[2019/10/08-16:55:33.885] [info] [shutdown-49] [bee.directory]	Stopping server 'default': service 'suggestmanager'
+[2019/10/08-16:55:33.885] [info] [shutdown-49] [bee.directory]	Stopping server 'default': service 'services.dictionary.builder'
+[2019/10/08-16:55:33.886] [info] [shutdown-49] [bee.directory]	Stopping server 'default': service 'services.analyzer-tester-sxibg0'
+[2019/10/08-16:55:33.886] [info] [shutdown-49] [analysis.test]	Stopped analyzer tester service - /analyzer-tester-sxibg0
+[2019/10/08-16:55:33.886] [info] [shutdown-49] [bee.directory]	Stopping server 'default': service 'services.indexingserver.sxibg0'
+[2019/10/08-16:55:33.889] [info] [ReplicaControlThread 0/sxii0] [replication.manager]	slice 0: inst sxii0: instance was stopped
+[2019/10/08-16:55:33.890] [info] [shutdown-49] [bee.directory]	Stopping server 'resourceshare_slave': service 'resourceshare'
+[2019/10/08-16:55:33.890] [info] [shutdown-49] [bee.directory]	Stopping server 'resourceshare': HTTP server
+[2019/10/08-16:55:33.891] [info] [shutdown-49] [org.eclipse.jetty.server.AbstractConnector]	Stopped 16014@194bcebf{HTTP/1.1,[http/1.1]}{0.0.0.0:16014}
+[2019/10/08-16:55:33.891] [info] [shutdown-49] [org.eclipse.jetty.server.handler.ContextHandler]	Stopped o.e.j.s.ServletContextHandler@4d5b6aac{/,null,UNAVAILABLE}
+[2019/10/08-16:55:33.891] [info] [shutdown-49] [org.eclipse.jetty.server.session]	node0 Stopped scavenging
+[2019/10/08-16:55:33.892] [info] [shutdown-49] [bee.directory]	Stopping server 'resourceshare': service 'resourceshareservice'
+[2019/10/08-16:55:33.892] [info] [shutdown-49] [bee.directory]	Directory stopped
+[2019/10/08-16:55:33.892] [info] [shutdown-49] [bee]	Runtime stopped
+[2019/10/08-16:55:33.892] [fatal] [shutdown-49] [bee]	Exiting process
+Exiting process now (Queen.java)
+[2019/10/08-16:55:43.281] [info] [main] [exa.log]	Setting master level info
+**********************************************************
+[2019/10/08-16:55:43.289] [info] [main] [bee]	Process 35843 starting on mpllnx4032.mpl.michelin.com (mpllnx4032.mpl.michelin.com/10.216.104.82) as user dpmugbl0 with version V6R2019x.93173
+[2019/10/08-16:55:43.289] [info] [main] [bee]	 [args: java --key processName indexingserver-sxibg0 --key hostname mpllnx4032.mpl.michelin.com --key installName cvdefault --key id 247016361 --ppid 35799 --configuration config:///version.xml --configuration config:///mercury.xml --key logToRunDir true ; directory: /busapps/dpmu/gbl0/3DSpaceIndex/linux_a64/cv/data/run/indexingserver-sxibg0 ; architecture: amd64-linux ; kernel: "Linux version 3.10.0-1062.1.2.el7.x86_64 (mockbuild@x86-vm-27.build.eng.bos.redhat.com) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-39) (GCC) ) #1 SMP Mon Sep 16 14:19:51 EDT 2019"]
+[2019/10/08-16:55:43.297] [info] [main] [bee]	Loading root config file: config:///version.xml
+[2019/10/08-16:55:43.350] [info] [main] [bee]	Loading root config file: config:///mercury.xml
+Updating logging configuration
+[2019/10/08-16:55:44.404] [info] [main] [exa.log]	Setting master level info
+**********************************************************
+[2019/10/08-16:55:44.405] [info] [main] [bee.directory]	Directory updated, reloading
+[2019/10/08-16:55:44.406] [info] [main] [directory]	Loading directory
+[2019/10/08-16:55:44.667] [info] [main] [bee.directory]	Directory loaded
+[2019/10/08-16:55:44.667] [info] [main] [bee]	Configuration loaded, starting runtime
+[2019/10/08-16:55:44.667] [info] [main] [directory]	Loading directory
+[2019/10/08-16:55:44.721] [info] [main] [bee.directory]	Directory loaded
+[2019/10/08-16:55:44.801] [info] [main] [org.eclipse.jetty.util.log]	Logging initialized @3077ms to org.eclipse.jetty.util.log.Slf4jLog
+[2019/10/08-16:55:44.805] [info] [main] [bee.directory]	Configuring server 'resourceshare'
+[2019/10/08-16:55:45.075] [info] [main] [bee.directory]	Mounting servlet 'com.exalead.ds.share2.http.ShareFLIS' on '/*'
+[2019/10/08-16:55:45.229] [info] [main] [bee.directory]	Configuring server 'default'
+[2019/10/08-16:55:45.230] [info] [main] [bee.directory]	Mounting servlet 'com.exalead.cloudview.indexing.IndexingServer' on '/indexingserver/sxibg0/*'
+[2019/10/08-16:55:45.231] [info] [main] [bee.directory]	Mounting FLIS servlet 'com.exalead.cloudview.indexing.analysis.AnalyzerTesterService' on '/analyzer-tester-sxibg0/*'
+[2019/10/08-16:55:45.234] [info] [main] [bee.directory]	Mounting servlet 'com.exalead.cloudview.indexing.index.IndexBuilderService' on '/index6builder/sxibg0/0/*'
+[2019/10/08-16:55:45.234] [info] [main] [bee.directory]	Mounting FLIS servlet 'com.exalead.cloudview.indexing.index.BuildGroupManagerService' on '/index6/buildgroupmanager/sxibg0/*'
+[2019/10/08-16:55:45.236] [info] [main] [bee.directory]	Mounting servlet 'com.exalead.dictionary.build.DictionaryBuilderService' on '/dictionary/builder/*'
+[2019/10/08-16:55:45.236] [info] [main] [bee.directory]	Mounting Bee servlet 'com.exalead.search.suggest.SuggestManager' on '/suggestmanager/*'
+[2019/10/08-16:55:45.287] [info] [main] [bee.directory]	Mounting FLIS servlet 'com.exalead.cloudview.indexing.realtime.RealTimeAlertingMatchingService' on '/rta-matching-sxibg0/*'
+[2019/10/08-16:55:45.288] [info] [main] [bee.directory]	Mounting servlet 'com.exalead.bee.JavaRuntimeServlet' on '/java/*'
+[2019/10/08-16:55:45.288] [info] [main] [bee.directory]	Mounting servlet 'com.exalead.bee.services.ProfilingServlet' on '/profiler/*'
+[2019/10/08-16:55:45.288] [info] [main] [bee.directory]	Mounting servlet 'com.exalead.bee.services.IsAliveServlet' on '/isAlive/*'
+[2019/10/08-16:55:45.288] [info] [main] [bee.directory]	Mounting Bee servlet 'com.exalead.bee.services.Log4EService' on '/log4e/mpllnx4032.mpl.michelin.com-cvdefault/indexingserver-sxibg0/*'
+[2019/10/08-16:55:45.333] [info] [main] [bee.directory]	Mounting Bee servlet 'com.exalead.bee.services.BeegistryUpdater' on '/beegistry/mpllnx4032.mpl.michelin.com-cvdefault/indexingserver-sxibg0/*'
+[2019/10/08-16:55:45.335] [info] [main] [bee.directory]	Configuring homepage
+[2019/10/08-16:55:45.574] [info] [main] [bee.directory]	Starting server 'resourceshare': service 'resourceshareservice'
+[2019/10/08-16:55:45.576] [info] [main] [bee.directory]	Starting server 'resourceshare': HTTP server on port 16014
+[ShutdownMonitor] Not enabled (port < 0): -1
+[2019/10/08-16:55:45.578] [info] [main] [org.eclipse.jetty.server.Server]	jetty-9.4.10.v20180503; built: 2018-05-03T15:56:21.710Z; git: daa59876e6f384329b122929e70a80934569428c; jvm 1.8.0_152-b16
+[2019/10/08-16:55:45.645] [info] [main] [org.eclipse.jetty.server.session]	DefaultSessionIdManager workerName=node0
+[2019/10/08-16:55:45.645] [info] [main] [org.eclipse.jetty.server.session]	No SessionScavenger set, using defaults
+[2019/10/08-16:55:45.647] [info] [main] [org.eclipse.jetty.server.session]	node0 Scavenging every 660000ms
+[2019/10/08-16:55:45.729] [warn] [main] [org.eclipse.jetty.security.SecurityHandler]	ServletContext@o.e.j.s.ServletContextHandler@4d5b6aac{/,null,STARTING} has uncovered http methods for path: /
+[2019/10/08-16:55:45.761] [info] [main] [org.eclipse.jetty.server.handler.ContextHandler]	Started o.e.j.s.ServletContextHandler@4d5b6aac{/,null,AVAILABLE}
+[2019/10/08-16:55:45.774] [info] [main] [org.eclipse.jetty.server.AbstractConnector]	Started 16014@194bcebf{HTTP/1.1,[http/1.1]}{0.0.0.0:16014}
+[2019/10/08-16:55:45.775] [info] [main] [org.eclipse.jetty.server.Server]	Started @4052ms
+[2019/10/08-16:55:45.775] [info] [main] [bee.directory]	Starting server 'resourceshare_slave': service 'resourceshare'
+[2019/10/08-16:55:45.775] [info] [main] [resourceshare]	Starting ResourceShare
+[2019/10/08-16:55:45.836] [info] [main] [resourceshare]	Check update of group  plugins at serial 1570546514337
+[2019/10/08-16:55:45.836] [info] [main] [resourceshare]	Syncing groups
+[2019/10/08-16:55:46.125] [info] [main] [resourceshare]	Master is not yet up on http://mpllnx4032.mpl.michelin.com:16007/resourcemanager (Connection refused (Connection refused)), waiting ...
+[2019/10/08-16:55:47.126] [info] [main] [resourceshare]	Master is not yet up on http://mpllnx4032.mpl.michelin.com:16007/resourcemanager (Connection refused (Connection refused)), waiting ...
+[2019/10/08-16:55:49.108] [info] [620557167@jtp-resourceshare-1] [datashare]	share: Started datashare session on plugins
+[2019/10/08-16:55:49.289] [info] [620557167@jtp-resourceshare-1] [exa.io.datashare]	share: Switching DataShare to version 2
+[2019/10/08-16:55:49.289] [info] [620557167@jtp-resourceshare-1] [exa.io.datashare]	share: Garbage collecting datashare version 1
+[2019/10/08-16:55:49.290] [info] [620557167@jtp-resourceshare-1] [datashare]	share: Committed datashare session
+[2019/10/08-16:55:49.358] [info] [main] [resourceshare]	Successfully synced groups
+[2019/10/08-16:55:49.362] [info] [main] [resourceshare]	Loading plugins
+[2019/10/08-16:55:49.362] [info] [main] [exa.plugins]	Refreshing plugins list
+[2019/10/08-16:55:49.362] [info] [main] [plugins]	Listing plugins
+[2019/10/08-16:55:49.363] [info] [main] [plugins]	NGRESOURCEPATH=/busapps/dpmu/gbl0/3DSpaceIndex/linux_a64/cv/data/bin/../resource/all-arch:/busapps/dpmu/gbl0/3DSpaceIndex/linux_a64/cv//resource//all-arch:/busapps/dpmu/gbl0/3DSpaceIndex/linux_a64/cv//resource//amd64-linux
+[2019/10/08-16:55:49.363] [info] [main] [plugins]	scanning builtin plugins in /busapps/dpmu/gbl0/3DSpaceIndex/linux_a64/cv/data/bin/../resource/all-arch/builtin_plugins_deployed
+[2019/10/08-16:55:49.430] [info] [main] [bee.directory]	Starting server 'default': service 'services.indexingserver.sxibg0'
+[2019/10/08-16:55:49.448] [info] [main] [indexingserver]	Management WormFS for sxibg0 is file:/busapps/dpmu/gbl0/3DSpaceIndex/linux_a64/cv/data/build/index-unit/sxibg0/management/
+[2019/10/08-16:55:49.474] [info] [main] [indexingserver]	WormFS for sxibg0 is file:/busapps/dpmu/gbl0/3DSpaceIndex/linux_a64/cv/data/build/index-unit/sxibg0/slots/
+[2019/10/08-16:55:49.474] [info] [main] [indexingserver]	Temporary WormFS for sxibg0 is file:/busapps/dpmu/gbl0/3DSpaceIndex/linux_a64/cv/data/tmp/sxibg0/0/
+[2019/10/08-16:55:49.724] [info] [main] [index.builder]	slice 0: Setting builder UUID to '1570546514973'
+[2019/10/08-16:55:49.763] [info] [main] [index.builder]	slice 0: Slice 0: Active generation: 0
+[2019/10/08-16:55:49.784] [info] [main] [replication.manager]	Starting control thread for 0/sxii0
+[2019/10/08-16:55:49.862] [info] [ReplicaControlThread 0/sxii0] [replication.manager]	slice 0: inst sxii0: starting instance init sequence
+[2019/10/08-16:55:49.925] [info] [main] [bg-manager]	Using BasicSlicePartitionFunction
+[2019/10/08-16:55:49.927] [info] [main] [bg-manager]	Using ContiguousDidAllocationPolicy
+[2019/10/08-16:55:50.047] [info] [main] [dih]	Starting...
+[2019/10/08-16:55:50.048] [info] [main] [dih]	Initial creation
+[2019/10/08-16:55:50.048] [info] [main] [dih]	Adding slice 0
+[2019/10/08-16:55:50.052] [info] [main] [dih]	Started
+[2019/10/08-16:55:50.139] [info] [ReplicaControlThread 0/sxii0] [replication.manager]	slice 0: inst sxii0: initialized instance: enqueued 3 files for gen=0
+[2019/10/08-16:55:50.139] [info] [ReplicaControlThread 0/sxii0] [replication.manager]	slice 0: inst sxii0: instance initialized, entering wait loop
+[2019/10/08-16:55:50.243] [info] [main] [exa.indexing.status.sxibg0]	No sources status for now
+[2019/10/08-16:55:50.442] [info] [SchemaUpdater-sxibg0-28] [schema.updater]	Checking for schema update for GCT version '5'
+[2019/10/08-16:55:50.516] [info] [main] [bee.directory]	Starting server 'default': service 'services.analyzer-tester-sxibg0'
+[2019/10/08-16:55:50.517] [info] [main] [analysis.test]	Started analyzer tester service - /analyzer-tester-sxibg0
+[2019/10/08-16:55:50.517] [info] [main] [bee.directory]	Starting server 'default': service 'services.dictionary.builder'
+[2019/10/08-16:55:50.551] [info] [main] [exa.dictionary.gc]	GC started on deleted dictionaries...
+[2019/10/08-16:55:50.551] [info] [main] [exa.dictionary.gc]	GC on deleted dictionaries done: checked 0 entries (0 deleted, 2 kept) in 0ms
+[2019/10/08-16:55:50.551] [info] [main] [bee.directory]	Starting server 'default': service 'suggestmanager'
+[2019/10/08-16:55:50.589] [info] [main] [suggest.manager]	SuggestManager config updated
+[2019/10/08-16:55:50.589] [info] [main] [bee.directory]	Starting server 'default': service 'services.rta-matching-sxibg0'
+[2019/10/08-16:55:50.597] [info] [main] [alerting.realtime.matching]	Reloaded '0' matchers definitions
+[2019/10/08-16:55:50.597] [info] [main] [bee.directory]	Starting server 'default': HTTP server on port 16013
+[ShutdownMonitor] Not enabled (port < 0): -1
+[2019/10/08-16:55:50.597] [info] [main] [org.eclipse.jetty.server.Server]	jetty-9.4.10.v20180503; built: 2018-05-03T15:56:21.710Z; git: daa59876e6f384329b122929e70a80934569428c; jvm 1.8.0_152-b16
+[2019/10/08-16:55:50.688] [info] [main] [org.eclipse.jetty.server.session]	DefaultSessionIdManager workerName=node0
+[2019/10/08-16:55:50.688] [info] [main] [org.eclipse.jetty.server.session]	No SessionScavenger set, using defaults
+[2019/10/08-16:55:50.688] [info] [main] [org.eclipse.jetty.server.session]	node0 Scavenging every 660000ms
+[2019/10/08-16:55:50.715] [warn] [main] [org.eclipse.jetty.security.SecurityHandler]	ServletContext@o.e.j.s.ServletContextHandler@2dbe250d{/,resource:/exa/bee/net/http2/htdocs,STARTING} has uncovered http methods for path: /
+[2019/10/08-16:55:50.719] [info] [SchemaUpdater-sxibg0-35] [schema.updater.slice.0]	Starting schema update ... 
+[2019/10/08-16:55:50.734] [info] [main] [org.eclipse.jetty.server.handler.ContextHandler]	Started o.e.j.s.ServletContextHandler@2dbe250d{/,resource:/exa/bee/net/http2/htdocs,AVAILABLE}
+[2019/10/08-16:55:50.734] [info] [main] [org.eclipse.jetty.server.AbstractConnector]	Started 16013@5ed731d0{HTTP/1.1,[http/1.1]}{0.0.0.0:16013}
+[2019/10/08-16:55:50.734] [info] [main] [org.eclipse.jetty.server.Server]	Started @9012ms
+[2019/10/08-16:55:50.735] [info] [main] [bee]	Runtime is started
+[2019/10/08-16:55:50.746] [info] [SchemaUpdater-sxibg0-35] [schema.updater.slice.0]	No update were performed
+[2019/10/08-16:55:50.751] [info] [SchemaUpdater-sxibg0-28] [schema.updater]	Completed schema update of 1 slices in 309 ms
+[2019/10/08-16:55:51.255] [info] [1269773610@jtp-default-1] [GL.index.replication]	slice 0: inst sxii0: [0] slice=0 instance=sxii0 is ready for reload
+[2019/10/08-16:56:11.335] [info] [620557167@jtp-resourceshare-1] [datashare]	share: Started datashare session on plugins
+[2019/10/08-16:56:13.510] [info] [620557167@jtp-resourceshare-1] [exa.io.datashare]	share: Switching DataShare to version 3
+[2019/10/08-16:56:13.510] [info] [620557167@jtp-resourceshare-1] [datashare]	share: Committed datashare session
+[2019/10/08-16:56:32.558] [info] [620557167@jtp-resourceshare-1] [datashare]	share: Started datashare session on plugins
+[2019/10/08-16:56:34.876] [info] [2125062626@jtp-resourceshare-0] [exa.io.datashare]	share: Switching DataShare to version 4
+[2019/10/08-16:56:34.876] [info] [2125062626@jtp-resourceshare-0] [exa.io.datashare]	share: Garbage collecting datashare version 3
+[2019/10/08-16:56:34.878] [info] [2125062626@jtp-resourceshare-0] [datashare]	share: Committed datashare session
+[2019/10/08-16:56:54.076] [info] [1269773610@jtp-default-1] [bee.runtime]	Exiting on StopRuntime request
+[2019/10/08-16:56:54.078] [info] [shutdown-58] [jaxb]	JAXB cache contains :SGLoader@null__com.exalead.mercury.mami.resources.v10 (creation=64ms, hits=2)
+[2019/10/08-16:56:54.078] [info] [shutdown-58] [jaxb]	JAXB cache contains :sun.misc.Launcher$AppClassLoader@764c12b6__com.exalead.mercury.mami.resources.v10 (creation=452ms, hits=3)
+[2019/10/08-16:56:54.078] [info] [shutdown-58] [jaxb]	JAXB cache contains :sun.misc.Launcher$AppClassLoader@764c12b6__com.exalead.mercury.mami.master.v10 (creation=922ms, hits=2)
+[2019/10/08-16:56:55.079] [info] [shutdown-58] [bee.directory]	Stopping server 'default': HTTP server
+[2019/10/08-16:56:55.083] [info] [shutdown-58] [org.eclipse.jetty.server.AbstractConnector]	Stopped 16013@5ed731d0{HTTP/1.1,[http/1.1]}{0.0.0.0:16013}
+[2019/10/08-16:56:55.086] [info] [shutdown-58] [org.eclipse.jetty.server.handler.ContextHandler]	Stopped o.e.j.s.ServletContextHandler@2dbe250d{/,resource:/exa/bee/net/http2/htdocs,UNAVAILABLE}
+[2019/10/08-16:56:55.088] [info] [shutdown-58] [org.eclipse.jetty.server.session]	node0 Stopped scavenging
+[2019/10/08-16:56:55.189] [info] [shutdown-58] [bee.directory]	Stopping server 'default': service 'services.rta-matching-sxibg0'
+[2019/10/08-16:56:55.189] [info] [shutdown-58] [bee.directory]	Stopping server 'default': service 'suggestmanager'
+[2019/10/08-16:56:55.189] [info] [shutdown-58] [bee.directory]	Stopping server 'default': service 'services.dictionary.builder'
+[2019/10/08-16:56:55.191] [info] [shutdown-58] [bee.directory]	Stopping server 'default': service 'services.analyzer-tester-sxibg0'
+[2019/10/08-16:56:55.191] [info] [shutdown-58] [analysis.test]	Stopped analyzer tester service - /analyzer-tester-sxibg0
+[2019/10/08-16:56:55.191] [info] [shutdown-58] [bee.directory]	Stopping server 'default': service 'services.indexingserver.sxibg0'
+[2019/10/08-16:56:55.194] [info] [ReplicaControlThread 0/sxii0] [replication.manager]	slice 0: inst sxii0: instance was stopped
+[2019/10/08-16:56:55.194] [info] [shutdown-58] [bee.directory]	Stopping server 'resourceshare_slave': service 'resourceshare'
+[2019/10/08-16:56:55.194] [info] [shutdown-58] [bee.directory]	Stopping server 'resourceshare': HTTP server
+[2019/10/08-16:56:55.196] [info] [shutdown-58] [org.eclipse.jetty.server.AbstractConnector]	Stopped 16014@194bcebf{HTTP/1.1,[http/1.1]}{0.0.0.0:16014}
+[2019/10/08-16:56:55.196] [info] [shutdown-58] [org.eclipse.jetty.server.handler.ContextHandler]	Stopped o.e.j.s.ServletContextHandler@4d5b6aac{/,null,UNAVAILABLE}
+[2019/10/08-16:56:55.196] [info] [shutdown-58] [org.eclipse.jetty.server.session]	node0 Stopped scavenging
+[2019/10/08-16:56:55.197] [info] [shutdown-58] [bee.directory]	Stopping server 'resourceshare': service 'resourceshareservice'
+[2019/10/08-16:56:55.197] [info] [shutdown-58] [bee.directory]	Directory stopped
+[2019/10/08-16:56:55.197] [info] [shutdown-58] [bee]	Runtime stopped
+[2019/10/08-16:56:55.197] [fatal] [shutdown-58] [bee]	Exiting process
+Exiting process now (Queen.java)
+[2019/10/08-16:57:04.128] [info] [main] [exa.log]	Setting master level info
+**********************************************************
+[2019/10/08-16:57:04.198] [info] [main] [bee]	Process 37841 starting on mpllnx4032.mpl.michelin.com (mpllnx4032.mpl.michelin.com/10.216.104.82) as user dpmugbl0 with version V6R2019x.93173
+[2019/10/08-16:57:04.198] [info] [main] [bee]	 [args: java --key processName indexingserver-sxibg0 --key hostname mpllnx4032.mpl.michelin.com --key installName cvdefault --key id 247016361 --ppid 37802 --configuration config:///version.xml --configuration config:///mercury.xml --key logToRunDir true ; directory: /busapps/dpmu/gbl0/3DSpaceIndex/linux_a64/cv/data/run/indexingserver-sxibg0 ; architecture: amd64-linux ; kernel: "Linux version 3.10.0-1062.1.2.el7.x86_64 (mockbuild@x86-vm-27.build.eng.bos.redhat.com) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-39) (GCC) ) #1 SMP Mon Sep 16 14:19:51 EDT 2019"]
+[2019/10/08-16:57:04.222] [info] [main] [bee]	Loading root config file: config:///version.xml
+[2019/10/08-16:57:04.244] [info] [main] [bee]	Loading root config file: config:///mercury.xml
+Updating logging configuration
+[2019/10/08-16:57:05.417] [info] [main] [exa.log]	Setting master level info
+**********************************************************
+[2019/10/08-16:57:05.418] [info] [main] [bee.directory]	Directory updated, reloading
+[2019/10/08-16:57:05.419] [info] [main] [directory]	Loading directory
+[2019/10/08-16:57:05.735] [info] [main] [bee.directory]	Directory loaded
+[2019/10/08-16:57:05.735] [info] [main] [bee]	Configuration loaded, starting runtime
+[2019/10/08-16:57:05.735] [info] [main] [directory]	Loading directory
+[2019/10/08-16:57:05.787] [info] [main] [bee.directory]	Directory loaded
+[2019/10/08-16:57:05.849] [info] [main] [org.eclipse.jetty.util.log]	Logging initialized @3355ms to org.eclipse.jetty.util.log.Slf4jLog
+[2019/10/08-16:57:05.864] [info] [main] [bee.directory]	Configuring server 'resourceshare'
+[2019/10/08-16:57:06.124] [info] [main] [bee.directory]	Mounting servlet 'com.exalead.ds.share2.http.ShareFLIS' on '/*'
+[2019/10/08-16:57:06.225] [info] [main] [bee.directory]	Configuring server 'default'
+[2019/10/08-16:57:06.226] [info] [main] [bee.directory]	Mounting servlet 'com.exalead.cloudview.indexing.IndexingServer' on '/indexingserver/sxibg0/*'
+[2019/10/08-16:57:06.226] [info] [main] [bee.directory]	Mounting FLIS servlet 'com.exalead.cloudview.indexing.analysis.AnalyzerTesterService' on '/analyzer-tester-sxibg0/*'
+[2019/10/08-16:57:06.261] [info] [main] [bee.directory]	Mounting servlet 'com.exalead.cloudview.indexing.index.IndexBuilderService' on '/index6builder/sxibg0/0/*'
+[2019/10/08-16:57:06.261] [info] [main] [bee.directory]	Mounting FLIS servlet 'com.exalead.cloudview.indexing.index.BuildGroupManagerService' on '/index6/buildgroupmanager/sxibg0/*'
+[2019/10/08-16:57:06.263] [info] [main] [bee.directory]	Mounting servlet 'com.exalead.dictionary.build.DictionaryBuilderService' on '/dictionary/builder/*'
+[2019/10/08-16:57:06.263] [info] [main] [bee.directory]	Mounting Bee servlet 'com.exalead.search.suggest.SuggestManager' on '/suggestmanager/*'
+[2019/10/08-16:57:06.290] [info] [main] [bee.directory]	Mounting FLIS servlet 'com.exalead.cloudview.indexing.realtime.RealTimeAlertingMatchingService' on '/rta-matching-sxibg0/*'
+[2019/10/08-16:57:06.292] [info] [main] [bee.directory]	Mounting servlet 'com.exalead.bee.JavaRuntimeServlet' on '/java/*'
+[2019/10/08-16:57:06.292] [info] [main] [bee.directory]	Mounting servlet 'com.exalead.bee.services.ProfilingServlet' on '/profiler/*'
+[2019/10/08-16:57:06.292] [info] [main] [bee.directory]	Mounting servlet 'com.exalead.bee.services.IsAliveServlet' on '/isAlive/*'
+[2019/10/08-16:57:06.292] [info] [main] [bee.directory]	Mounting Bee servlet 'com.exalead.bee.services.Log4EService' on '/log4e/mpllnx4032.mpl.michelin.com-cvdefault/indexingserver-sxibg0/*'
+[2019/10/08-16:57:06.294] [info] [main] [bee.directory]	Mounting Bee servlet 'com.exalead.bee.services.BeegistryUpdater' on '/beegistry/mpllnx4032.mpl.michelin.com-cvdefault/indexingserver-sxibg0/*'
+[2019/10/08-16:57:06.296] [info] [main] [bee.directory]	Configuring homepage
+[2019/10/08-16:57:06.577] [info] [main] [bee.directory]	Starting server 'resourceshare': service 'resourceshareservice'
+[2019/10/08-16:57:06.609] [info] [main] [bee.directory]	Starting server 'resourceshare': HTTP server on port 16014
+[ShutdownMonitor] Not enabled (port < 0): -1
+[2019/10/08-16:57:06.611] [info] [main] [org.eclipse.jetty.server.Server]	jetty-9.4.10.v20180503; built: 2018-05-03T15:56:21.710Z; git: daa59876e6f384329b122929e70a80934569428c; jvm 1.8.0_152-b16
+[2019/10/08-16:57:06.699] [info] [main] [org.eclipse.jetty.server.session]	DefaultSessionIdManager workerName=node0
+[2019/10/08-16:57:06.699] [info] [main] [org.eclipse.jetty.server.session]	No SessionScavenger set, using defaults
+[2019/10/08-16:57:06.701] [info] [main] [org.eclipse.jetty.server.session]	node0 Scavenging every 660000ms
+[2019/10/08-16:57:06.834] [warn] [main] [org.eclipse.jetty.security.SecurityHandler]	ServletContext@o.e.j.s.ServletContextHandler@4d5b6aac{/,null,STARTING} has uncovered http methods for path: /
+[2019/10/08-16:57:06.845] [info] [main] [org.eclipse.jetty.server.handler.ContextHandler]	Started o.e.j.s.ServletContextHandler@4d5b6aac{/,null,AVAILABLE}
+[2019/10/08-16:57:06.894] [info] [main] [org.eclipse.jetty.server.AbstractConnector]	Started 16014@194bcebf{HTTP/1.1,[http/1.1]}{0.0.0.0:16014}
+[2019/10/08-16:57:06.894] [info] [main] [org.eclipse.jetty.server.Server]	Started @4402ms
+[2019/10/08-16:57:06.894] [info] [main] [bee.directory]	Starting server 'resourceshare_slave': service 'resourceshare'
+[2019/10/08-16:57:06.894] [info] [main] [resourceshare]	Starting ResourceShare
+[2019/10/08-16:57:06.956] [info] [main] [exa.io.datashare]	Garbage collecting datashare version 2
+[2019/10/08-16:57:06.957] [info] [main] [resourceshare]	Check update of group  plugins at serial 1570546592566
+[2019/10/08-16:57:06.957] [info] [main] [resourceshare]	Syncing groups
+[2019/10/08-16:57:07.212] [info] [main] [resourceshare]	Master is not yet up on http://mpllnx4032.mpl.michelin.com:16007/resourcemanager (Connection refused (Connection refused)), waiting ...
+[2019/10/08-16:57:08.879] [info] [main] [resourceshare]	Successfully synced groups
+[2019/10/08-16:57:08.884] [info] [main] [resourceshare]	Loading plugins
+[2019/10/08-16:57:08.884] [info] [main] [exa.plugins]	Refreshing plugins list
+[2019/10/08-16:57:08.884] [info] [main] [plugins]	Listing plugins
+[2019/10/08-16:57:08.884] [info] [main] [plugins]	NGRESOURCEPATH=/busapps/dpmu/gbl0/3DSpaceIndex/linux_a64/cv/data/bin/../resource/all-arch:/busapps/dpmu/gbl0/3DSpaceIndex/linux_a64/cv//resource//all-arch:/busapps/dpmu/gbl0/3DSpaceIndex/linux_a64/cv//resource//amd64-linux
+[2019/10/08-16:57:08.885] [info] [main] [plugins]	scanning builtin plugins in /busapps/dpmu/gbl0/3DSpaceIndex/linux_a64/cv/data/bin/../resource/all-arch/builtin_plugins_deployed
+[2019/10/08-16:57:09.021] [info] [main] [bee.directory]	Starting server 'default': service 'services.indexingserver.sxibg0'
+[2019/10/08-16:57:09.030] [info] [main] [indexingserver]	Management WormFS for sxibg0 is file:/busapps/dpmu/gbl0/3DSpaceIndex/linux_a64/cv/data/build/index-unit/sxibg0/management/
+[2019/10/08-16:57:09.057] [info] [main] [indexingserver]	WormFS for sxibg0 is file:/busapps/dpmu/gbl0/3DSpaceIndex/linux_a64/cv/data/build/index-unit/sxibg0/slots/
+[2019/10/08-16:57:09.058] [info] [main] [indexingserver]	Temporary WormFS for sxibg0 is file:/busapps/dpmu/gbl0/3DSpaceIndex/linux_a64/cv/data/tmp/sxibg0/0/
+[2019/10/08-16:57:09.420] [info] [main] [index.builder]	slice 0: Setting builder UUID to '1570546514973'
+[2019/10/08-16:57:09.456] [info] [main] [index.builder]	slice 0: Slice 0: Active generation: 0
+[2019/10/08-16:57:09.462] [info] [main] [replication.manager]	Starting control thread for 0/sxii0
+[2019/10/08-16:57:09.480] [info] [ReplicaControlThread 0/sxii0] [replication.manager]	slice 0: inst sxii0: starting instance init sequence
+[2019/10/08-16:57:09.550] [info] [main] [bg-manager]	Using BasicSlicePartitionFunction
+[2019/10/08-16:57:09.552] [info] [main] [bg-manager]	Using ContiguousDidAllocationPolicy
+[2019/10/08-16:57:09.600] [info] [main] [dih]	Starting...
+[2019/10/08-16:57:09.601] [info] [main] [dih]	Initial creation
+[2019/10/08-16:57:09.601] [info] [main] [dih]	Adding slice 0
+[2019/10/08-16:57:09.605] [info] [main] [dih]	Started
+[2019/10/08-16:57:09.627] [info] [ReplicaControlThread 0/sxii0] [replication.manager]	slice 0: inst sxii0: initialized instance: enqueued 3 files for gen=0
+[2019/10/08-16:57:09.627] [info] [ReplicaControlThread 0/sxii0] [replication.manager]	slice 0: inst sxii0: instance initialized, entering wait loop
+[2019/10/08-16:57:09.791] [info] [main] [exa.indexing.status.sxibg0]	No sources status for now
+[2019/10/08-16:57:10.072] [info] [SchemaUpdater-sxibg0-27] [schema.updater]	Checking for schema update for GCT version '6'
+[2019/10/08-16:57:10.168] [info] [main] [bee.directory]	Starting server 'default': service 'services.analyzer-tester-sxibg0'
+[2019/10/08-16:57:10.169] [info] [main] [analysis.test]	Started analyzer tester service - /analyzer-tester-sxibg0
+[2019/10/08-16:57:10.169] [info] [main] [bee.directory]	Starting server 'default': service 'services.dictionary.builder'
+[2019/10/08-16:57:10.217] [info] [main] [exa.dictionary.gc]	GC started on deleted dictionaries...
+[2019/10/08-16:57:10.218] [info] [main] [exa.dictionary.gc]	GC on deleted dictionaries done: checked 0 entries (0 deleted, 2 kept) in 1ms
+[2019/10/08-16:57:10.218] [info] [main] [bee.directory]	Starting server 'default': service 'suggestmanager'
+[2019/10/08-16:57:10.138] [info] [SchemaUpdater-sxibg0-30] [schema.updater.slice.0]	Starting schema update ... 
+[2019/10/08-16:57:10.262] [info] [SchemaUpdater-sxibg0-30] [schema.updater.slice.0]	No update were performed
+[2019/10/08-16:57:10.275] [info] [SchemaUpdater-sxibg0-27] [schema.updater]	Completed schema update of 1 slices in 203 ms
+[2019/10/08-16:57:10.321] [info] [main] [suggest.manager]	SuggestManager config updated
+[2019/10/08-16:57:10.321] [info] [main] [bee.directory]	Starting server 'default': service 'services.rta-matching-sxibg0'
+[2019/10/08-16:57:10.330] [info] [main] [alerting.realtime.matching]	Reloaded '0' matchers definitions
+[2019/10/08-16:57:10.330] [info] [main] [bee.directory]	Starting server 'default': HTTP server on port 16013
+[ShutdownMonitor] Not enabled (port < 0): -1
+[2019/10/08-16:57:10.330] [info] [main] [org.eclipse.jetty.server.Server]	jetty-9.4.10.v20180503; built: 2018-05-03T15:56:21.710Z; git: daa59876e6f384329b122929e70a80934569428c; jvm 1.8.0_152-b16
+[2019/10/08-16:57:10.460] [info] [main] [org.eclipse.jetty.server.session]	DefaultSessionIdManager workerName=node0
+[2019/10/08-16:57:10.460] [info] [main] [org.eclipse.jetty.server.session]	No SessionScavenger set, using defaults
+[2019/10/08-16:57:10.460] [info] [main] [org.eclipse.jetty.server.session]	node0 Scavenging every 660000ms
+[2019/10/08-16:57:10.460] [warn] [main] [org.eclipse.jetty.security.SecurityHandler]	ServletContext@o.e.j.s.ServletContextHandler@5357c287{/,resource:/exa/bee/net/http2/htdocs,STARTING} has uncovered http methods for path: /
+[2019/10/08-16:57:10.470] [info] [main] [org.eclipse.jetty.server.handler.ContextHandler]	Started o.e.j.s.ServletContextHandler@5357c287{/,resource:/exa/bee/net/http2/htdocs,AVAILABLE}
+[2019/10/08-16:57:10.470] [info] [main] [org.eclipse.jetty.server.AbstractConnector]	Started 16013@2453f95d{HTTP/1.1,[http/1.1]}{0.0.0.0:16013}
+[2019/10/08-16:57:10.470] [info] [main] [org.eclipse.jetty.server.Server]	Started @7978ms
+[2019/10/08-16:57:10.472] [info] [main] [bee]	Runtime is started
+[2019/10/08-16:57:10.763] [info] [353023213@jtp-default-0] [GL.index.replication]	slice 0: inst sxii0: [0] slice=0 instance=sxii0 is ready for reload
+[2019/10/08-16:57:26.165] [info] [353023213@jtp-default-0] [bee.runtime]	Exiting on StopRuntime request
+[2019/10/08-16:57:26.167] [info] [shutdown-48] [jaxb]	JAXB cache contains :sun.misc.Launcher$AppClassLoader@764c12b6__com.exalead.mercury.mami.resources.v10 (creation=596ms, hits=3)
+[2019/10/08-16:57:27.168] [info] [shutdown-48] [bee.directory]	Stopping server 'default': HTTP server
+[2019/10/08-16:57:27.196] [info] [shutdown-48] [org.eclipse.jetty.server.AbstractConnector]	Stopped 16013@2453f95d{HTTP/1.1,[http/1.1]}{0.0.0.0:16013}
+[2019/10/08-16:57:27.198] [info] [shutdown-48] [org.eclipse.jetty.server.handler.ContextHandler]	Stopped o.e.j.s.ServletContextHandler@5357c287{/,resource:/exa/bee/net/http2/htdocs,UNAVAILABLE}
+[2019/10/08-16:57:27.199] [info] [shutdown-48] [org.eclipse.jetty.server.session]	node0 Stopped scavenging
+[2019/10/08-16:57:27.312] [info] [shutdown-48] [bee.directory]	Stopping server 'default': service 'services.rta-matching-sxibg0'
+[2019/10/08-16:57:27.312] [info] [shutdown-48] [bee.directory]	Stopping server 'default': service 'suggestmanager'
+[2019/10/08-16:57:27.312] [info] [shutdown-48] [bee.directory]	Stopping server 'default': service 'services.dictionary.builder'
+[2019/10/08-16:57:27.314] [info] [shutdown-48] [bee.directory]	Stopping server 'default': service 'services.analyzer-tester-sxibg0'
+[2019/10/08-16:57:27.314] [info] [shutdown-48] [analysis.test]	Stopped analyzer tester service - /analyzer-tester-sxibg0
+[2019/10/08-16:57:27.314] [info] [shutdown-48] [bee.directory]	Stopping server 'default': service 'services.indexingserver.sxibg0'
+[2019/10/08-16:57:27.331] [info] [ReplicaControlThread 0/sxii0] [replication.manager]	slice 0: inst sxii0: instance was stopped
+[2019/10/08-16:57:27.331] [info] [shutdown-48] [bee.directory]	Stopping server 'resourceshare_slave': service 'resourceshare'
+[2019/10/08-16:57:27.331] [info] [shutdown-48] [bee.directory]	Stopping server 'resourceshare': HTTP server
+[2019/10/08-16:57:27.333] [info] [shutdown-48] [org.eclipse.jetty.server.AbstractConnector]	Stopped 16014@194bcebf{HTTP/1.1,[http/1.1]}{0.0.0.0:16014}
+[2019/10/08-16:57:27.333] [info] [shutdown-48] [org.eclipse.jetty.server.handler.ContextHandler]	Stopped o.e.j.s.ServletContextHandler@4d5b6aac{/,null,UNAVAILABLE}
+[2019/10/08-16:57:27.333] [info] [shutdown-48] [org.eclipse.jetty.server.session]	node0 Stopped scavenging
+[2019/10/08-16:57:27.334] [info] [shutdown-48] [bee.directory]	Stopping server 'resourceshare': service 'resourceshareservice'
+[2019/10/08-16:57:27.334] [info] [shutdown-48] [bee.directory]	Directory stopped
+[2019/10/08-16:57:27.334] [info] [shutdown-48] [bee]	Runtime stopped
+[2019/10/08-16:57:27.334] [fatal] [shutdown-48] [bee]	Exiting process
+Exiting process now (Queen.java)
+[2019/10/08-16:58:09.237] [info] [main] [exa.log]	Setting master level info
+**********************************************************
+[2019/10/08-16:58:09.241] [info] [main] [bee]	Process 39905 starting on mpllnx4032.mpl.michelin.com (mpllnx4032.mpl.michelin.com/10.216.104.82) as user dpmugbl0 with version V6R2019x.93173
+[2019/10/08-16:58:09.241] [info] [main] [bee]	 [args: java --key processName indexingserver-sxibg0 --key hostname mpllnx4032.mpl.michelin.com --key installName cvdefault --key id 247016361 --ppid 39847 --configuration config:///version.xml --configuration config:///mercury.xml --key logToRunDir true ; directory: /busapps/dpmu/gbl0/3DSpaceIndex/linux_a64/cv/data/run/indexingserver-sxibg0 ; architecture: amd64-linux ; kernel: "Linux version 3.10.0-1062.1.2.el7.x86_64 (mockbuild@x86-vm-27.build.eng.bos.redhat.com) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-39) (GCC) ) #1 SMP Mon Sep 16 14:19:51 EDT 2019"]
+[2019/10/08-16:58:09.353] [info] [main] [bee]	Loading root config file: config:///version.xml
+[2019/10/08-16:58:09.372] [info] [main] [bee]	Loading root config file: config:///mercury.xml
+Updating logging configuration
+[2019/10/08-16:58:10.639] [info] [main] [exa.log]	Setting master level info
+**********************************************************
+[2019/10/08-16:58:10.640] [info] [main] [bee.directory]	Directory updated, reloading
+[2019/10/08-16:58:10.641] [info] [main] [directory]	Loading directory
+[2019/10/08-16:58:10.968] [info] [main] [bee.directory]	Directory loaded
+[2019/10/08-16:58:10.968] [info] [main] [bee]	Configuration loaded, starting runtime
+[2019/10/08-16:58:10.968] [info] [main] [directory]	Loading directory
+[2019/10/08-16:58:11.053] [info] [main] [bee.directory]	Directory loaded
+[2019/10/08-16:58:11.147] [info] [main] [org.eclipse.jetty.util.log]	Logging initialized @4465ms to org.eclipse.jetty.util.log.Slf4jLog
+[2019/10/08-16:58:11.155] [info] [main] [bee.directory]	Configuring server 'resourceshare'
+[2019/10/08-16:58:11.365] [info] [main] [bee.directory]	Mounting servlet 'com.exalead.ds.share2.http.ShareFLIS' on '/*'
+[2019/10/08-16:58:11.384] [info] [main] [bee.directory]	Configuring server 'default'
+[2019/10/08-16:58:11.384] [info] [main] [bee.directory]	Mounting servlet 'com.exalead.cloudview.indexing.IndexingServer' on '/indexingserver/sxibg0/*'
+[2019/10/08-16:58:11.385] [info] [main] [bee.directory]	Mounting FLIS servlet 'com.exalead.cloudview.indexing.analysis.AnalyzerTesterService' on '/analyzer-tester-sxibg0/*'
+[2019/10/08-16:58:11.386] [info] [main] [bee.directory]	Mounting servlet 'com.exalead.cloudview.indexing.index.IndexBuilderService' on '/index6builder/sxibg0/0/*'
+[2019/10/08-16:58:11.387] [info] [main] [bee.directory]	Mounting FLIS servlet 'com.exalead.cloudview.indexing.index.BuildGroupManagerService' on '/index6/buildgroupmanager/sxibg0/*'
+[2019/10/08-16:58:11.388] [info] [main] [bee.directory]	Mounting servlet 'com.exalead.dictionary.build.DictionaryBuilderService' on '/dictionary/builder/*'
+[2019/10/08-16:58:11.388] [info] [main] [bee.directory]	Mounting Bee servlet 'com.exalead.search.suggest.SuggestManager' on '/suggestmanager/*'
+[2019/10/08-16:58:11.397] [info] [main] [bee.directory]	Mounting FLIS servlet 'com.exalead.cloudview.indexing.realtime.RealTimeAlertingMatchingService' on '/rta-matching-sxibg0/*'
+[2019/10/08-16:58:11.398] [info] [main] [bee.directory]	Mounting servlet 'com.exalead.bee.JavaRuntimeServlet' on '/java/*'
+[2019/10/08-16:58:11.398] [info] [main] [bee.directory]	Mounting servlet 'com.exalead.bee.services.ProfilingServlet' on '/profiler/*'
+[2019/10/08-16:58:11.398] [info] [main] [bee.directory]	Mounting servlet 'com.exalead.bee.services.IsAliveServlet' on '/isAlive/*'
+[2019/10/08-16:58:11.398] [info] [main] [bee.directory]	Mounting Bee servlet 'com.exalead.bee.services.Log4EService' on '/log4e/mpllnx4032.mpl.michelin.com-cvdefault/indexingserver-sxibg0/*'
+[2019/10/08-16:58:11.401] [info] [main] [bee.directory]	Mounting Bee servlet 'com.exalead.bee.services.BeegistryUpdater' on '/beegistry/mpllnx4032.mpl.michelin.com-cvdefault/indexingserver-sxibg0/*'
+[2019/10/08-16:58:11.402] [info] [main] [bee.directory]	Configuring homepage
+[2019/10/08-16:58:11.468] [info] [main] [bee.directory]	Starting server 'resourceshare': service 'resourceshareservice'
+[2019/10/08-16:58:11.469] [info] [main] [bee.directory]	Starting server 'resourceshare': HTTP server on port 16014
+[ShutdownMonitor] Not enabled (port < 0): -1
+[2019/10/08-16:58:11.471] [info] [main] [org.eclipse.jetty.server.Server]	jetty-9.4.10.v20180503; built: 2018-05-03T15:56:21.710Z; git: daa59876e6f384329b122929e70a80934569428c; jvm 1.8.0_152-b16
+[2019/10/08-16:58:11.492] [info] [main] [org.eclipse.jetty.server.session]	DefaultSessionIdManager workerName=node0
+[2019/10/08-16:58:11.492] [info] [main] [org.eclipse.jetty.server.session]	No SessionScavenger set, using defaults
+[2019/10/08-16:58:11.494] [info] [main] [org.eclipse.jetty.server.session]	node0 Scavenging every 600000ms
+[2019/10/08-16:58:11.548] [warn] [main] [org.eclipse.jetty.security.SecurityHandler]	ServletContext@o.e.j.s.ServletContextHandler@4d5b6aac{/,null,STARTING} has uncovered http methods for path: /
+[2019/10/08-16:58:11.560] [info] [main] [org.eclipse.jetty.server.handler.ContextHandler]	Started o.e.j.s.ServletContextHandler@4d5b6aac{/,null,AVAILABLE}
+[2019/10/08-16:58:11.574] [info] [main] [org.eclipse.jetty.server.AbstractConnector]	Started 16014@194bcebf{HTTP/1.1,[http/1.1]}{0.0.0.0:16014}
+[2019/10/08-16:58:11.574] [info] [main] [org.eclipse.jetty.server.Server]	Started @4914ms
+[2019/10/08-16:58:11.574] [info] [main] [bee.directory]	Starting server 'resourceshare_slave': service 'resourceshare'
+[2019/10/08-16:58:11.574] [info] [main] [resourceshare]	Starting ResourceShare
+[2019/10/08-16:58:11.599] [info] [main] [resourceshare]	Check update of group  plugins at serial 1570546592566
+[2019/10/08-16:58:11.599] [info] [main] [resourceshare]	Syncing groups
+[2019/10/08-16:58:11.702] [info] [main] [resourceshare]	Master is not yet up on http://mpllnx4032.mpl.michelin.com:16007/resourcemanager (Connection refused (Connection refused)), waiting ...
+[2019/10/08-16:58:12.235] [info] [620557167@jtp-resourceshare-1] [datashare]	share: Started datashare session on plugins
+[2019/10/08-16:58:13.367] [info] [2125062626@jtp-resourceshare-0] [datashare]	share: Started datashare session on plugins
+[2019/10/08-16:58:15.621] [info] [620557167@jtp-resourceshare-1] [exa.io.datashare]	share: Switching DataShare to version 6
+[2019/10/08-16:58:15.621] [info] [620557167@jtp-resourceshare-1] [exa.io.datashare]	share: Garbage collecting datashare version 4
+[2019/10/08-16:58:15.624] [info] [620557167@jtp-resourceshare-1] [datashare]	share: Committed datashare session
+[2019/10/08-16:58:15.710] [info] [main] [resourceshare]	Successfully synced groups
+[2019/10/08-16:58:15.714] [info] [main] [resourceshare]	Loading plugins
+[2019/10/08-16:58:15.714] [info] [main] [exa.plugins]	Refreshing plugins list
+[2019/10/08-16:58:15.714] [info] [main] [plugins]	Listing plugins
+[2019/10/08-16:58:15.715] [info] [main] [plugins]	NGRESOURCEPATH=/busapps/dpmu/gbl0/3DSpaceIndex/linux_a64/cv/data/bin/../resource/all-arch:/busapps/dpmu/gbl0/3DSpaceIndex/linux_a64/cv//resource//all-arch:/busapps/dpmu/gbl0/3DSpaceIndex/linux_a64/cv//resource//amd64-linux
+[2019/10/08-16:58:15.715] [info] [main] [plugins]	scanning builtin plugins in /busapps/dpmu/gbl0/3DSpaceIndex/linux_a64/cv/data/bin/../resource/all-arch/builtin_plugins_deployed
+[2019/10/08-16:58:15.859] [info] [main] [bee.directory]	Starting server 'default': service 'services.indexingserver.sxibg0'
+[2019/10/08-16:58:15.879] [info] [main] [indexingserver]	Management WormFS for sxibg0 is file:/busapps/dpmu/gbl0/3DSpaceIndex/linux_a64/cv/data/build/index-unit/sxibg0/management/
+[2019/10/08-16:58:15.948] [info] [main] [indexingserver]	WormFS for sxibg0 is file:/busapps/dpmu/gbl0/3DSpaceIndex/linux_a64/cv/data/build/index-unit/sxibg0/slots/
+[2019/10/08-16:58:15.948] [info] [main] [indexingserver]	Temporary WormFS for sxibg0 is file:/busapps/dpmu/gbl0/3DSpaceIndex/linux_a64/cv/data/tmp/sxibg0/0/
+[2019/10/08-16:58:16.383] [info] [main] [index.builder]	slice 0: Setting builder UUID to '1570546514973'
+[2019/10/08-16:58:16.419] [info] [main] [index.builder]	slice 0: Slice 0: Active generation: 0
+[2019/10/08-16:58:16.425] [info] [main] [replication.manager]	Starting control thread for 0/sxii0
+[2019/10/08-16:58:16.580] [info] [ReplicaControlThread 0/sxii0] [replication.manager]	slice 0: inst sxii0: starting instance init sequence
+[2019/10/08-16:58:16.630] [info] [main] [bg-manager]	Using BasicSlicePartitionFunction
+[2019/10/08-16:58:16.632] [info] [main] [bg-manager]	Using ContiguousDidAllocationPolicy
+[2019/10/08-16:58:16.723] [info] [ReplicaControlThread 0/sxii0] [replication.manager]	slice 0: inst sxii0: initialized instance: enqueued 3 files for gen=0
+[2019/10/08-16:58:16.723] [info] [ReplicaControlThread 0/sxii0] [replication.manager]	slice 0: inst sxii0: instance initialized, entering wait loop
+[2019/10/08-16:58:16.726] [info] [main] [dih]	Starting...
+[2019/10/08-16:58:16.727] [info] [main] [dih]	Initial creation
+[2019/10/08-16:58:16.727] [info] [main] [dih]	Adding slice 0
+[2019/10/08-16:58:16.730] [info] [main] [dih]	Started
+[2019/10/08-16:58:16.876] [info] [main] [exa.indexing.status.sxibg0]	No sources status for now
+[2019/10/08-16:58:16.984] [info] [main] [bee.directory]	Starting server 'default': service 'services.analyzer-tester-sxibg0'
+[2019/10/08-16:58:16.985] [info] [main] [analysis.test]	Started analyzer tester service - /analyzer-tester-sxibg0
+[2019/10/08-16:58:16.985] [info] [main] [bee.directory]	Starting server 'default': service 'services.dictionary.builder'
+[2019/10/08-16:58:17.021] [info] [SchemaUpdater-sxibg0-31] [schema.updater]	Checking for schema update for GCT version '11'
+[2019/10/08-16:58:17.175] [info] [main] [exa.dictionary.gc]	GC started on deleted dictionaries...
+[2019/10/08-16:58:17.175] [info] [main] [exa.dictionary.gc]	GC on deleted dictionaries done: checked 0 entries (0 deleted, 2 kept) in 0ms
+[2019/10/08-16:58:17.175] [info] [main] [bee.directory]	Starting server 'default': service 'suggestmanager'
+[2019/10/08-16:58:17.169] [info] [SchemaUpdater-sxibg0-39] [schema.updater.slice.0]	Starting schema update ... 
+[2019/10/08-16:58:17.247] [info] [SchemaUpdater-sxibg0-39] [schema.updater.slice.0]	No update were performed
+[2019/10/08-16:58:17.247] [info] [main] [suggest.manager]	SuggestManager config updated
+[2019/10/08-16:58:17.247] [info] [main] [bee.directory]	Starting server 'default': service 'services.rta-matching-sxibg0'
+[2019/10/08-16:58:17.266] [info] [main] [alerting.realtime.matching]	Reloaded '0' matchers definitions
+[2019/10/08-16:58:17.266] [info] [main] [bee.directory]	Starting server 'default': HTTP server on port 16013
+[ShutdownMonitor] Not enabled (port < 0): -1
+[2019/10/08-16:58:17.266] [info] [main] [org.eclipse.jetty.server.Server]	jetty-9.4.10.v20180503; built: 2018-05-03T15:56:21.710Z; git: daa59876e6f384329b122929e70a80934569428c; jvm 1.8.0_152-b16
+[2019/10/08-16:58:17.337] [info] [main] [org.eclipse.jetty.server.session]	DefaultSessionIdManager workerName=node0
+[2019/10/08-16:58:17.337] [info] [main] [org.eclipse.jetty.server.session]	No SessionScavenger set, using defaults
+[2019/10/08-16:58:17.337] [info] [main] [org.eclipse.jetty.server.session]	node0 Scavenging every 600000ms
+[2019/10/08-16:58:17.338] [warn] [main] [org.eclipse.jetty.security.SecurityHandler]	ServletContext@o.e.j.s.ServletContextHandler@2dbe250d{/,resource:/exa/bee/net/http2/htdocs,STARTING} has uncovered http methods for path: /
+[2019/10/08-16:58:17.346] [info] [main] [org.eclipse.jetty.server.handler.ContextHandler]	Started o.e.j.s.ServletContextHandler@2dbe250d{/,resource:/exa/bee/net/http2/htdocs,AVAILABLE}
+[2019/10/08-16:58:17.347] [info] [main] [org.eclipse.jetty.server.AbstractConnector]	Started 16013@5ed731d0{HTTP/1.1,[http/1.1]}{0.0.0.0:16013}
+[2019/10/08-16:58:17.347] [info] [main] [org.eclipse.jetty.server.Server]	Started @10687ms
+[2019/10/08-16:58:17.348] [info] [main] [bee]	Runtime is started
+[2019/10/08-16:58:17.356] [info] [SchemaUpdater-sxibg0-31] [schema.updater]	Completed schema update of 1 slices in 335 ms
+[2019/10/08-16:58:17.850] [info] [1269773610@jtp-default-1] [GL.index.replication]	slice 0: inst sxii0: [0] slice=0 instance=sxii0 is ready for reload
+[2019/10/08-16:58:33.797] [info] [1269773610@jtp-default-1] [bee.runtime]	Exiting on StopRuntime request
+[2019/10/08-16:58:33.800] [info] [shutdown-57] [jaxb]	JAXB cache contains :sun.misc.Launcher$AppClassLoader@764c12b6__com.exalead.mercury.mami.resources.v10 (creation=574ms, hits=3)
+[2019/10/08-16:58:34.800] [info] [shutdown-57] [bee.directory]	Stopping server 'default': HTTP server
+[2019/10/08-16:58:34.810] [info] [shutdown-57] [org.eclipse.jetty.server.AbstractConnector]	Stopped 16013@5ed731d0{HTTP/1.1,[http/1.1]}{0.0.0.0:16013}
+[2019/10/08-16:58:34.812] [info] [shutdown-57] [org.eclipse.jetty.server.handler.ContextHandler]	Stopped o.e.j.s.ServletContextHandler@2dbe250d{/,resource:/exa/bee/net/http2/htdocs,UNAVAILABLE}
+[2019/10/08-16:58:34.813] [info] [shutdown-57] [org.eclipse.jetty.server.session]	node0 Stopped scavenging
+[2019/10/08-16:58:34.914] [info] [shutdown-57] [bee.directory]	Stopping server 'default': service 'services.rta-matching-sxibg0'
+[2019/10/08-16:58:34.915] [info] [shutdown-57] [bee.directory]	Stopping server 'default': service 'suggestmanager'
+[2019/10/08-16:58:34.915] [info] [shutdown-57] [bee.directory]	Stopping server 'default': service 'services.dictionary.builder'
+[2019/10/08-16:58:34.916] [info] [shutdown-57] [bee.directory]	Stopping server 'default': service 'services.analyzer-tester-sxibg0'
+[2019/10/08-16:58:34.916] [info] [shutdown-57] [analysis.test]	Stopped analyzer tester service - /analyzer-tester-sxibg0
+[2019/10/08-16:58:34.916] [info] [shutdown-57] [bee.directory]	Stopping server 'default': service 'services.indexingserver.sxibg0'
+[2019/10/08-16:58:34.921] [info] [ReplicaControlThread 0/sxii0] [replication.manager]	slice 0: inst sxii0: instance was stopped
+[2019/10/08-16:58:34.922] [info] [shutdown-57] [bee.directory]	Stopping server 'resourceshare_slave': service 'resourceshare'
+[2019/10/08-16:58:34.922] [info] [shutdown-57] [bee.directory]	Stopping server 'resourceshare': HTTP server
+[2019/10/08-16:58:34.924] [info] [shutdown-57] [org.eclipse.jetty.server.AbstractConnector]	Stopped 16014@194bcebf{HTTP/1.1,[http/1.1]}{0.0.0.0:16014}
+[2019/10/08-16:58:34.924] [info] [shutdown-57] [org.eclipse.jetty.server.handler.ContextHandler]	Stopped o.e.j.s.ServletContextHandler@4d5b6aac{/,null,UNAVAILABLE}
+[2019/10/08-16:58:34.925] [info] [shutdown-57] [org.eclipse.jetty.server.session]	node0 Stopped scavenging
+[2019/10/08-16:58:35.025] [info] [shutdown-57] [bee.directory]	Stopping server 'resourceshare': service 'resourceshareservice'
+[2019/10/08-16:58:35.025] [info] [shutdown-57] [bee.directory]	Directory stopped
+[2019/10/08-16:58:35.025] [info] [shutdown-57] [bee]	Runtime stopped
+[2019/10/08-16:58:35.025] [fatal] [shutdown-57] [bee]	Exiting process
+Exiting process now (Queen.java)
+[2019/10/08-16:58:53.441] [info] [main] [exa.log]	Setting master level info
+**********************************************************
+[2019/10/08-16:58:53.460] [info] [main] [bee]	Process 41351 starting on mpllnx4032.mpl.michelin.com (mpllnx4032.mpl.michelin.com/10.216.104.82) as user dpmugbl0 with version V6R2019x.93173
+[2019/10/08-16:58:53.460] [info] [main] [bee]	 [args: java --key processName indexingserver-sxibg0 --key hostname mpllnx4032.mpl.michelin.com --key installName cvdefault --key id 247016361 --ppid 41316 --configuration config:///version.xml --configuration config:///mercury.xml --key logToRunDir true ; directory: /busapps/dpmu/gbl0/3DSpaceIndex/linux_a64/cv/data/run/indexingserver-sxibg0 ; architecture: amd64-linux ; kernel: "Linux version 3.10.0-1062.1.2.el7.x86_64 (mockbuild@x86-vm-27.build.eng.bos.redhat.com) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-39) (GCC) ) #1 SMP Mon Sep 16 14:19:51 EDT 2019"]
+[2019/10/08-16:58:53.513] [info] [main] [bee]	Loading root config file: config:///version.xml
+[2019/10/08-16:58:53.551] [info] [main] [bee]	Loading root config file: config:///mercury.xml
+Updating logging configuration
+[2019/10/08-16:58:54.838] [info] [main] [exa.log]	Setting master level info
+**********************************************************
+[2019/10/08-16:58:54.839] [info] [main] [bee.directory]	Directory updated, reloading
+[2019/10/08-16:58:54.875] [info] [main] [directory]	Loading directory
+[2019/10/08-16:58:55.109] [info] [main] [bee.directory]	Directory loaded
+[2019/10/08-16:58:55.109] [info] [main] [bee]	Configuration loaded, starting runtime
+[2019/10/08-16:58:55.109] [info] [main] [directory]	Loading directory
+[2019/10/08-16:58:55.233] [info] [main] [bee.directory]	Directory loaded
+[2019/10/08-16:58:55.306] [info] [main] [org.eclipse.jetty.util.log]	Logging initialized @3763ms to org.eclipse.jetty.util.log.Slf4jLog
+[2019/10/08-16:58:55.317] [info] [main] [bee.directory]	Configuring server 'resourceshare'
+[2019/10/08-16:58:55.530] [info] [main] [bee.directory]	Mounting servlet 'com.exalead.ds.share2.http.ShareFLIS' on '/*'
+[2019/10/08-16:58:55.544] [info] [main] [bee.directory]	Configuring server 'default'
+[2019/10/08-16:58:55.545] [info] [main] [bee.directory]	Mounting servlet 'com.exalead.cloudview.indexing.IndexingServer' on '/indexingserver/sxibg0/*'
+[2019/10/08-16:58:55.546] [info] [main] [bee.directory]	Mounting FLIS servlet 'com.exalead.cloudview.indexing.analysis.AnalyzerTesterService' on '/analyzer-tester-sxibg0/*'
+[2019/10/08-16:58:55.547] [info] [main] [bee.directory]	Mounting servlet 'com.exalead.cloudview.indexing.index.IndexBuilderService' on '/index6builder/sxibg0/0/*'
+[2019/10/08-16:58:55.547] [info] [main] [bee.directory]	Mounting FLIS servlet 'com.exalead.cloudview.indexing.index.BuildGroupManagerService' on '/index6/buildgroupmanager/sxibg0/*'
+[2019/10/08-16:58:55.571] [info] [main] [bee.directory]	Mounting servlet 'com.exalead.dictionary.build.DictionaryBuilderService' on '/dictionary/builder/*'
+[2019/10/08-16:58:55.571] [info] [main] [bee.directory]	Mounting Bee servlet 'com.exalead.search.suggest.SuggestManager' on '/suggestmanager/*'
+[2019/10/08-16:58:55.594] [info] [main] [bee.directory]	Mounting FLIS servlet 'com.exalead.cloudview.indexing.realtime.RealTimeAlertingMatchingService' on '/rta-matching-sxibg0/*'
+[2019/10/08-16:58:55.595] [info] [main] [bee.directory]	Mounting servlet 'com.exalead.bee.JavaRuntimeServlet' on '/java/*'
+[2019/10/08-16:58:55.595] [info] [main] [bee.directory]	Mounting servlet 'com.exalead.bee.services.ProfilingServlet' on '/profiler/*'
+[2019/10/08-16:58:55.596] [info] [main] [bee.directory]	Mounting servlet 'com.exalead.bee.services.IsAliveServlet' on '/isAlive/*'
+[2019/10/08-16:58:55.596] [info] [main] [bee.directory]	Mounting Bee servlet 'com.exalead.bee.services.Log4EService' on '/log4e/mpllnx4032.mpl.michelin.com-cvdefault/indexingserver-sxibg0/*'
+[2019/10/08-16:58:55.598] [info] [main] [bee.directory]	Mounting Bee servlet 'com.exalead.bee.services.BeegistryUpdater' on '/beegistry/mpllnx4032.mpl.michelin.com-cvdefault/indexingserver-sxibg0/*'
+[2019/10/08-16:58:55.600] [info] [main] [bee.directory]	Configuring homepage
+[2019/10/08-16:58:55.667] [info] [main] [bee.directory]	Starting server 'resourceshare': service 'resourceshareservice'
+[2019/10/08-16:58:55.669] [info] [main] [bee.directory]	Starting server 'resourceshare': HTTP server on port 16014
+[ShutdownMonitor] Not enabled (port < 0): -1
+[2019/10/08-16:58:55.671] [info] [main] [org.eclipse.jetty.server.Server]	jetty-9.4.10.v20180503; built: 2018-05-03T15:56:21.710Z; git: daa59876e6f384329b122929e70a80934569428c; jvm 1.8.0_152-b16
+[2019/10/08-16:58:55.800] [info] [main] [org.eclipse.jetty.server.session]	DefaultSessionIdManager workerName=node0
+[2019/10/08-16:58:55.800] [info] [main] [org.eclipse.jetty.server.session]	No SessionScavenger set, using defaults
+[2019/10/08-16:58:55.802] [info] [main] [org.eclipse.jetty.server.session]	node0 Scavenging every 600000ms
+[2019/10/08-16:58:55.918] [warn] [main] [org.eclipse.jetty.security.SecurityHandler]	ServletContext@o.e.j.s.ServletContextHandler@4d5b6aac{/,null,STARTING} has uncovered http methods for path: /
+[2019/10/08-16:58:55.932] [info] [main] [org.eclipse.jetty.server.handler.ContextHandler]	Started o.e.j.s.ServletContextHandler@4d5b6aac{/,null,AVAILABLE}
+[2019/10/08-16:58:56.003] [info] [main] [org.eclipse.jetty.server.AbstractConnector]	Started 16014@194bcebf{HTTP/1.1,[http/1.1]}{0.0.0.0:16014}
+[2019/10/08-16:58:56.003] [info] [main] [org.eclipse.jetty.server.Server]	Started @4462ms
+[2019/10/08-16:58:56.003] [info] [main] [bee.directory]	Starting server 'resourceshare_slave': service 'resourceshare'
+[2019/10/08-16:58:56.003] [info] [main] [resourceshare]	Starting ResourceShare
+[2019/10/08-16:58:56.158] [info] [main] [resourceshare]	Check update of group  plugins at serial 1570546693379
+[2019/10/08-16:58:56.158] [info] [main] [resourceshare]	Syncing groups
+[2019/10/08-16:58:56.229] [info] [main] [resourceshare]	Master is not yet up on http://mpllnx4032.mpl.michelin.com:16007/resourcemanager (Connection refused (Connection refused)), waiting ...
+[2019/10/08-16:58:57.231] [info] [main] [resourceshare]	Master is not yet up on http://mpllnx4032.mpl.michelin.com:16007/resourcemanager (Connection refused (Connection refused)), waiting ...
+[2019/10/08-16:58:57.489] [info] [620557167@jtp-resourceshare-1] [datashare]	share: Started datashare session on plugins
+[2019/10/08-16:58:59.065] [info] [2125062626@jtp-resourceshare-0] [datashare]	share: Started datashare session on plugins
+[2019/10/08-16:59:01.959] [info] [1619087290@jtp-resourceshare-6] [exa.io.datashare]	share: Switching DataShare to version 8
+[2019/10/08-16:59:01.959] [info] [1619087290@jtp-resourceshare-6] [exa.io.datashare]	share: Garbage collecting datashare version 6
+[2019/10/08-16:59:01.963] [info] [1619087290@jtp-resourceshare-6] [datashare]	share: Committed datashare session
+[2019/10/08-16:59:01.979] [info] [main] [resourceshare]	Successfully synced groups
+[2019/10/08-16:59:01.984] [info] [main] [resourceshare]	Loading plugins
+[2019/10/08-16:59:01.984] [info] [main] [exa.plugins]	Refreshing plugins list
+[2019/10/08-16:59:01.984] [info] [main] [plugins]	Listing plugins
+[2019/10/08-16:59:01.985] [info] [main] [plugins]	NGRESOURCEPATH=/busapps/dpmu/gbl0/3DSpaceIndex/linux_a64/cv/data/bin/../resource/all-arch:/busapps/dpmu/gbl0/3DSpaceIndex/linux_a64/cv//resource//all-arch:/busapps/dpmu/gbl0/3DSpaceIndex/linux_a64/cv//resource//amd64-linux
+[2019/10/08-16:59:01.985] [info] [main] [plugins]	scanning builtin plugins in /busapps/dpmu/gbl0/3DSpaceIndex/linux_a64/cv/data/bin/../resource/all-arch/builtin_plugins_deployed
+[2019/10/08-16:59:02.189] [info] [main] [bee.directory]	Starting server 'default': service 'services.indexingserver.sxibg0'
+[2019/10/08-16:59:02.198] [info] [main] [indexingserver]	Management WormFS for sxibg0 is file:/busapps/dpmu/gbl0/3DSpaceIndex/linux_a64/cv/data/build/index-unit/sxibg0/management/
+[2019/10/08-16:59:02.266] [info] [main] [indexingserver]	WormFS for sxibg0 is file:/busapps/dpmu/gbl0/3DSpaceIndex/linux_a64/cv/data/build/index-unit/sxibg0/slots/
+[2019/10/08-16:59:02.266] [info] [main] [indexingserver]	Temporary WormFS for sxibg0 is file:/busapps/dpmu/gbl0/3DSpaceIndex/linux_a64/cv/data/tmp/sxibg0/0/
+[2019/10/08-16:59:02.506] [info] [main] [index.builder]	slice 0: Setting builder UUID to '1570546514973'
+[2019/10/08-16:59:02.547] [info] [main] [index.builder]	slice 0: Slice 0: Active generation: 0
+[2019/10/08-16:59:02.553] [info] [main] [replication.manager]	Starting control thread for 0/sxii0
+[2019/10/08-16:59:02.603] [info] [ReplicaControlThread 0/sxii0] [replication.manager]	slice 0: inst sxii0: starting instance init sequence
+[2019/10/08-16:59:02.640] [info] [main] [bg-manager]	Using BasicSlicePartitionFunction
+[2019/10/08-16:59:02.641] [info] [main] [bg-manager]	Using ContiguousDidAllocationPolicy
+[2019/10/08-16:59:02.724] [info] [main] [dih]	Starting...
+[2019/10/08-16:59:02.725] [info] [main] [dih]	Initial creation
+[2019/10/08-16:59:02.725] [info] [main] [dih]	Adding slice 0
+[2019/10/08-16:59:02.732] [info] [ReplicaControlThread 0/sxii0] [replication.manager]	slice 0: inst sxii0: initialized instance: enqueued 3 files for gen=0
+[2019/10/08-16:59:02.732] [info] [ReplicaControlThread 0/sxii0] [replication.manager]	slice 0: inst sxii0: instance initialized, entering wait loop
+[2019/10/08-16:59:02.734] [info] [main] [dih]	Started
+[2019/10/08-16:59:02.913] [info] [main] [exa.indexing.status.sxibg0]	No sources status for now
+[2019/10/08-16:59:03.124] [info] [main] [bee.directory]	Starting server 'default': service 'services.analyzer-tester-sxibg0'
+[2019/10/08-16:59:03.125] [info] [main] [analysis.test]	Started analyzer tester service - /analyzer-tester-sxibg0
+[2019/10/08-16:59:03.135] [info] [main] [bee.directory]	Starting server 'default': service 'services.dictionary.builder'
+[2019/10/08-16:59:03.251] [info] [SchemaUpdater-sxibg0-32] [schema.updater]	Checking for schema update for GCT version '12'
+[2019/10/08-16:59:03.331] [info] [main] [exa.dictionary.gc]	GC started on deleted dictionaries...
+[2019/10/08-16:59:03.331] [info] [main] [exa.dictionary.gc]	GC on deleted dictionaries done: checked 0 entries (0 deleted, 2 kept) in 0ms
+[2019/10/08-16:59:03.331] [info] [main] [bee.directory]	Starting server 'default': service 'suggestmanager'
+[2019/10/08-16:59:03.355] [info] [SchemaUpdater-sxibg0-39] [schema.updater.slice.0]	Starting schema update ... 
+[2019/10/08-16:59:03.397] [info] [SchemaUpdater-sxibg0-39] [schema.updater.slice.0]	No update were performed
+[2019/10/08-16:59:03.412] [info] [SchemaUpdater-sxibg0-32] [schema.updater]	Completed schema update of 1 slices in 161 ms
+[2019/10/08-16:59:03.429] [info] [main] [suggest.manager]	SuggestManager config updated
+[2019/10/08-16:59:03.429] [info] [main] [bee.directory]	Starting server 'default': service 'services.rta-matching-sxibg0'
+[2019/10/08-16:59:03.437] [info] [main] [alerting.realtime.matching]	Reloaded '0' matchers definitions
+[2019/10/08-16:59:03.437] [info] [main] [bee.directory]	Starting server 'default': HTTP server on port 16013
+[ShutdownMonitor] Not enabled (port < 0): -1
+[2019/10/08-16:59:03.438] [info] [main] [org.eclipse.jetty.server.Server]	jetty-9.4.10.v20180503; built: 2018-05-03T15:56:21.710Z; git: daa59876e6f384329b122929e70a80934569428c; jvm 1.8.0_152-b16
+[2019/10/08-16:59:03.493] [info] [main] [org.eclipse.jetty.server.session]	DefaultSessionIdManager workerName=node0
+[2019/10/08-16:59:03.493] [info] [main] [org.eclipse.jetty.server.session]	No SessionScavenger set, using defaults
+[2019/10/08-16:59:03.493] [info] [main] [org.eclipse.jetty.server.session]	node0 Scavenging every 600000ms
+[2019/10/08-16:59:03.525] [warn] [main] [org.eclipse.jetty.security.SecurityHandler]	ServletContext@o.e.j.s.ServletContextHandler@2dbe250d{/,resource:/exa/bee/net/http2/htdocs,STARTING} has uncovered http methods for path: /
+[2019/10/08-16:59:03.534] [info] [main] [org.eclipse.jetty.server.handler.ContextHandler]	Started o.e.j.s.ServletContextHandler@2dbe250d{/,resource:/exa/bee/net/http2/htdocs,AVAILABLE}
+[2019/10/08-16:59:03.535] [info] [main] [org.eclipse.jetty.server.AbstractConnector]	Started 16013@5ed731d0{HTTP/1.1,[http/1.1]}{0.0.0.0:16013}
+[2019/10/08-16:59:03.535] [info] [main] [org.eclipse.jetty.server.Server]	Started @11993ms
+[2019/10/08-16:59:03.555] [info] [main] [bee]	Runtime is started
+[2019/10/08-16:59:03.854] [info] [1269773610@jtp-default-1] [GL.index.replication]	slice 0: inst sxii0: [0] slice=0 instance=sxii0 is ready for reload
+[2019/10/08-16:59:21.622] [info] [1269773610@jtp-default-1] [bee.runtime]	Exiting on StopRuntime request
+[2019/10/08-16:59:21.624] [info] [shutdown-53] [jaxb]	JAXB cache contains :sun.misc.Launcher$AppClassLoader@764c12b6__com.exalead.mercury.mami.resources.v10 (creation=761ms, hits=3)
+[2019/10/08-16:59:22.625] [info] [shutdown-53] [bee.directory]	Stopping server 'default': HTTP server
+[2019/10/08-16:59:22.639] [info] [shutdown-53] [org.eclipse.jetty.server.AbstractConnector]	Stopped 16013@5ed731d0{HTTP/1.1,[http/1.1]}{0.0.0.0:16013}
+[2019/10/08-16:59:22.641] [info] [shutdown-53] [org.eclipse.jetty.server.handler.ContextHandler]	Stopped o.e.j.s.ServletContextHandler@2dbe250d{/,resource:/exa/bee/net/http2/htdocs,UNAVAILABLE}
+[2019/10/08-16:59:22.643] [info] [shutdown-53] [org.eclipse.jetty.server.session]	node0 Stopped scavenging
+[2019/10/08-16:59:22.651] [info] [shutdown-53] [bee.directory]	Stopping server 'default': service 'services.rta-matching-sxibg0'
+[2019/10/08-16:59:22.651] [info] [shutdown-53] [bee.directory]	Stopping server 'default': service 'suggestmanager'
+[2019/10/08-16:59:22.651] [info] [shutdown-53] [bee.directory]	Stopping server 'default': service 'services.dictionary.builder'
+[2019/10/08-16:59:22.652] [info] [shutdown-53] [bee.directory]	Stopping server 'default': service 'services.analyzer-tester-sxibg0'
+[2019/10/08-16:59:22.652] [info] [shutdown-53] [analysis.test]	Stopped analyzer tester service - /analyzer-tester-sxibg0
+[2019/10/08-16:59:22.652] [info] [shutdown-53] [bee.directory]	Stopping server 'default': service 'services.indexingserver.sxibg0'
+[2019/10/08-16:59:22.686] [info] [ReplicaControlThread 0/sxii0] [replication.manager]	slice 0: inst sxii0: instance was stopped
+[2019/10/08-16:59:22.687] [info] [shutdown-53] [bee.directory]	Stopping server 'resourceshare_slave': service 'resourceshare'
+[2019/10/08-16:59:22.687] [info] [shutdown-53] [bee.directory]	Stopping server 'resourceshare': HTTP server
+[2019/10/08-16:59:22.689] [info] [shutdown-53] [org.eclipse.jetty.server.AbstractConnector]	Stopped 16014@194bcebf{HTTP/1.1,[http/1.1]}{0.0.0.0:16014}
+[2019/10/08-16:59:22.689] [info] [shutdown-53] [org.eclipse.jetty.server.handler.ContextHandler]	Stopped o.e.j.s.ServletContextHandler@4d5b6aac{/,null,UNAVAILABLE}
+[2019/10/08-16:59:22.689] [info] [shutdown-53] [org.eclipse.jetty.server.session]	node0 Stopped scavenging
+[2019/10/08-16:59:22.791] [info] [shutdown-53] [bee.directory]	Stopping server 'resourceshare': service 'resourceshareservice'
+[2019/10/08-16:59:22.791] [info] [shutdown-53] [bee.directory]	Directory stopped
+[2019/10/08-16:59:22.791] [info] [shutdown-53] [bee]	Runtime stopped
+[2019/10/08-16:59:22.791] [fatal] [shutdown-53] [bee]	Exiting process
+Exiting process now (Queen.java)
+[2019/10/08-16:59:36.965] [info] [main] [exa.log]	Setting master level info
+**********************************************************
+[2019/10/08-16:59:37.006] [info] [main] [bee]	Process 42799 starting on mpllnx4032.mpl.michelin.com (mpllnx4032.mpl.michelin.com/10.216.104.82) as user dpmugbl0 with version V6R2019x.93173
+[2019/10/08-16:59:37.006] [info] [main] [bee]	 [args: java --key processName indexingserver-sxibg0 --key hostname mpllnx4032.mpl.michelin.com --key installName cvdefault --key id 247016361 --ppid 42755 --configuration config:///version.xml --configuration config:///mercury.xml --key logToRunDir true ; directory: /busapps/dpmu/gbl0/3DSpaceIndex/linux_a64/cv/data/run/indexingserver-sxibg0 ; architecture: amd64-linux ; kernel: "Linux version 3.10.0-1062.1.2.el7.x86_64 (mockbuild@x86-vm-27.build.eng.bos.redhat.com) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-39) (GCC) ) #1 SMP Mon Sep 16 14:19:51 EDT 2019"]
+[2019/10/08-16:59:37.050] [info] [main] [bee]	Loading root config file: config:///version.xml
+[2019/10/08-16:59:37.079] [info] [main] [bee]	Loading root config file: config:///mercury.xml
+Updating logging configuration
+[2019/10/08-16:59:38.073] [info] [main] [exa.log]	Setting master level info
+**********************************************************
+[2019/10/08-16:59:38.074] [info] [main] [bee.directory]	Directory updated, reloading
+[2019/10/08-16:59:38.075] [info] [main] [directory]	Loading directory
+[2019/10/08-16:59:38.503] [info] [main] [bee.directory]	Directory loaded
+[2019/10/08-16:59:38.503] [info] [main] [bee]	Configuration loaded, starting runtime
+[2019/10/08-16:59:38.503] [info] [main] [directory]	Loading directory
+[2019/10/08-16:59:38.573] [info] [main] [bee.directory]	Directory loaded
+[2019/10/08-16:59:38.752] [info] [main] [org.eclipse.jetty.util.log]	Logging initialized @3593ms to org.eclipse.jetty.util.log.Slf4jLog
+[2019/10/08-16:59:38.756] [info] [main] [bee.directory]	Configuring server 'resourceshare'
+[2019/10/08-16:59:39.221] [info] [main] [bee.directory]	Mounting servlet 'com.exalead.ds.share2.http.ShareFLIS' on '/*'
+[2019/10/08-16:59:39.249] [info] [main] [bee.directory]	Configuring server 'default'
+[2019/10/08-16:59:39.263] [info] [main] [bee.directory]	Mounting servlet 'com.exalead.cloudview.indexing.IndexingServer' on '/indexingserver/sxibg0/*'
+[2019/10/08-16:59:39.263] [info] [main] [bee.directory]	Mounting FLIS servlet 'com.exalead.cloudview.indexing.analysis.AnalyzerTesterService' on '/analyzer-tester-sxibg0/*'
+[2019/10/08-16:59:39.265] [info] [main] [bee.directory]	Mounting servlet 'com.exalead.cloudview.indexing.index.IndexBuilderService' on '/index6builder/sxibg0/0/*'
+[2019/10/08-16:59:39.265] [info] [main] [bee.directory]	Mounting FLIS servlet 'com.exalead.cloudview.indexing.index.BuildGroupManagerService' on '/index6/buildgroupmanager/sxibg0/*'
+[2019/10/08-16:59:39.267] [info] [main] [bee.directory]	Mounting servlet 'com.exalead.dictionary.build.DictionaryBuilderService' on '/dictionary/builder/*'
+[2019/10/08-16:59:39.267] [info] [main] [bee.directory]	Mounting Bee servlet 'com.exalead.search.suggest.SuggestManager' on '/suggestmanager/*'
+[2019/10/08-16:59:39.288] [info] [main] [bee.directory]	Mounting FLIS servlet 'com.exalead.cloudview.indexing.realtime.RealTimeAlertingMatchingService' on '/rta-matching-sxibg0/*'
+[2019/10/08-16:59:39.290] [info] [main] [bee.directory]	Mounting servlet 'com.exalead.bee.JavaRuntimeServlet' on '/java/*'
+[2019/10/08-16:59:39.290] [info] [main] [bee.directory]	Mounting servlet 'com.exalead.bee.services.ProfilingServlet' on '/profiler/*'
+[2019/10/08-16:59:39.290] [info] [main] [bee.directory]	Mounting servlet 'com.exalead.bee.services.IsAliveServlet' on '/isAlive/*'
+[2019/10/08-16:59:39.290] [info] [main] [bee.directory]	Mounting Bee servlet 'com.exalead.bee.services.Log4EService' on '/log4e/mpllnx4032.mpl.michelin.com-cvdefault/indexingserver-sxibg0/*'
+[2019/10/08-16:59:39.294] [info] [main] [bee.directory]	Mounting Bee servlet 'com.exalead.bee.services.BeegistryUpdater' on '/beegistry/mpllnx4032.mpl.michelin.com-cvdefault/indexingserver-sxibg0/*'
+[2019/10/08-16:59:39.307] [info] [main] [bee.directory]	Configuring homepage
+[2019/10/08-16:59:39.477] [info] [main] [bee.directory]	Starting server 'resourceshare': service 'resourceshareservice'
+[2019/10/08-16:59:39.478] [info] [main] [bee.directory]	Starting server 'resourceshare': HTTP server on port 16014
+[ShutdownMonitor] Not enabled (port < 0): -1
+[2019/10/08-16:59:39.480] [info] [main] [org.eclipse.jetty.server.Server]	jetty-9.4.10.v20180503; built: 2018-05-03T15:56:21.710Z; git: daa59876e6f384329b122929e70a80934569428c; jvm 1.8.0_152-b16
+[2019/10/08-16:59:39.585] [info] [main] [org.eclipse.jetty.server.session]	DefaultSessionIdManager workerName=node0
+[2019/10/08-16:59:39.585] [info] [main] [org.eclipse.jetty.server.session]	No SessionScavenger set, using defaults
+[2019/10/08-16:59:39.587] [info] [main] [org.eclipse.jetty.server.session]	node0 Scavenging every 660000ms
+[2019/10/08-16:59:39.676] [warn] [main] [org.eclipse.jetty.security.SecurityHandler]	ServletContext@o.e.j.s.ServletContextHandler@4d5b6aac{/,null,STARTING} has uncovered http methods for path: /
+[2019/10/08-16:59:39.699] [info] [main] [org.eclipse.jetty.server.handler.ContextHandler]	Started o.e.j.s.ServletContextHandler@4d5b6aac{/,null,AVAILABLE}
+[2019/10/08-16:59:39.762] [info] [main] [org.eclipse.jetty.server.AbstractConnector]	Started 16014@197b7822{HTTP/1.1,[http/1.1]}{0.0.0.0:16014}
+[2019/10/08-16:59:39.762] [info] [main] [org.eclipse.jetty.server.Server]	Started @4605ms
+[2019/10/08-16:59:39.762] [info] [main] [bee.directory]	Starting server 'resourceshare_slave': service 'resourceshare'
+[2019/10/08-16:59:39.762] [info] [main] [resourceshare]	Starting ResourceShare
+[2019/10/08-16:59:39.800] [info] [main] [resourceshare]	Check update of group  plugins at serial 1570546739068
+[2019/10/08-16:59:39.800] [info] [main] [resourceshare]	Syncing groups
+[2019/10/08-16:59:39.955] [info] [main] [resourceshare]	Master is not yet up on http://mpllnx4032.mpl.michelin.com:16007/resourcemanager (Connection refused (Connection refused)), waiting ...
+[2019/10/08-16:59:40.842] [info] [620557167@jtp-resourceshare-1] [datashare]	share: Started datashare session on plugins
+[2019/10/08-16:59:40.957] [info] [main] [resourceshare]	Master is not yet up on http://mpllnx4032.mpl.michelin.com:16007/resourcemanager (Connection refused (Connection refused)), waiting ...
+[2019/10/08-16:59:42.875] [info] [2125062626@jtp-resourceshare-0] [datashare]	share: Started datashare session on plugins
+[2019/10/08-16:59:45.701] [info] [620557167@jtp-resourceshare-1] [exa.io.datashare]	share: Switching DataShare to version 10
+[2019/10/08-16:59:45.701] [info] [620557167@jtp-resourceshare-1] [exa.io.datashare]	share: Garbage collecting datashare version 8
+[2019/10/08-16:59:45.705] [info] [620557167@jtp-resourceshare-1] [datashare]	share: Committed datashare session
+[2019/10/08-16:59:45.732] [info] [main] [resourceshare]	Successfully synced groups
+[2019/10/08-16:59:45.737] [info] [main] [resourceshare]	Loading plugins
+[2019/10/08-16:59:45.737] [info] [main] [exa.plugins]	Refreshing plugins list
+[2019/10/08-16:59:45.737] [info] [main] [plugins]	Listing plugins
+[2019/10/08-16:59:45.738] [info] [main] [plugins]	NGRESOURCEPATH=/busapps/dpmu/gbl0/3DSpaceIndex/linux_a64/cv/data/bin/../resource/all-arch:/busapps/dpmu/gbl0/3DSpaceIndex/linux_a64/cv//resource//all-arch:/busapps/dpmu/gbl0/3DSpaceIndex/linux_a64/cv//resource//amd64-linux
+[2019/10/08-16:59:45.738] [info] [main] [plugins]	scanning builtin plugins in /busapps/dpmu/gbl0/3DSpaceIndex/linux_a64/cv/data/bin/../resource/all-arch/builtin_plugins_deployed
+[2019/10/08-16:59:45.872] [info] [main] [bee.directory]	Starting server 'default': service 'services.indexingserver.sxibg0'
+[2019/10/08-16:59:45.903] [info] [main] [indexingserver]	Management WormFS for sxibg0 is file:/busapps/dpmu/gbl0/3DSpaceIndex/linux_a64/cv/data/build/index-unit/sxibg0/management/
+[2019/10/08-16:59:45.940] [info] [main] [indexingserver]	WormFS for sxibg0 is file:/busapps/dpmu/gbl0/3DSpaceIndex/linux_a64/cv/data/build/index-unit/sxibg0/slots/
+[2019/10/08-16:59:45.941] [info] [main] [indexingserver]	Temporary WormFS for sxibg0 is file:/busapps/dpmu/gbl0/3DSpaceIndex/linux_a64/cv/data/tmp/sxibg0/0/
+[2019/10/08-16:59:46.138] [info] [main] [index.builder]	slice 0: Setting builder UUID to '1570546514973'
+[2019/10/08-16:59:46.179] [info] [main] [index.builder]	slice 0: Slice 0: Active generation: 0
+[2019/10/08-16:59:46.209] [info] [main] [replication.manager]	Starting control thread for 0/sxii0
+[2019/10/08-16:59:46.261] [info] [ReplicaControlThread 0/sxii0] [replication.manager]	slice 0: inst sxii0: starting instance init sequence
+[2019/10/08-16:59:46.326] [info] [main] [bg-manager]	Using BasicSlicePartitionFunction
+[2019/10/08-16:59:46.328] [info] [main] [bg-manager]	Using ContiguousDidAllocationPolicy
+[2019/10/08-16:59:46.476] [info] [main] [dih]	Starting...
+[2019/10/08-16:59:46.477] [info] [main] [dih]	Initial creation
+[2019/10/08-16:59:46.477] [info] [main] [dih]	Adding slice 0
+[2019/10/08-16:59:46.480] [info] [main] [dih]	Started
+[2019/10/08-16:59:46.513] [info] [ReplicaControlThread 0/sxii0] [replication.manager]	slice 0: inst sxii0: initialized instance: enqueued 3 files for gen=0
+[2019/10/08-16:59:46.513] [info] [ReplicaControlThread 0/sxii0] [replication.manager]	slice 0: inst sxii0: instance initialized, entering wait loop
+[2019/10/08-16:59:46.723] [info] [main] [exa.indexing.status.sxibg0]	No sources status for now
+[2019/10/08-16:59:46.923] [info] [SchemaUpdater-sxibg0-31] [schema.updater]	Checking for schema update for GCT version '12'
+[2019/10/08-16:59:46.951] [info] [main] [bee.directory]	Starting server 'default': service 'services.analyzer-tester-sxibg0'
+[2019/10/08-16:59:46.952] [info] [main] [analysis.test]	Started analyzer tester service - /analyzer-tester-sxibg0
+[2019/10/08-16:59:46.952] [info] [main] [bee.directory]	Starting server 'default': service 'services.dictionary.builder'
+[2019/10/08-16:59:46.982] [info] [main] [exa.dictionary.gc]	GC started on deleted dictionaries...
+[2019/10/08-16:59:46.982] [info] [main] [exa.dictionary.gc]	GC on deleted dictionaries done: checked 0 entries (0 deleted, 2 kept) in 0ms
+[2019/10/08-16:59:46.982] [info] [main] [bee.directory]	Starting server 'default': service 'suggestmanager'
+[2019/10/08-16:59:47.001] [info] [SchemaUpdater-sxibg0-38] [schema.updater.slice.0]	Starting schema update ... 
+[2019/10/08-16:59:47.024] [info] [main] [suggest.manager]	SuggestManager config updated
+[2019/10/08-16:59:47.024] [info] [main] [bee.directory]	Starting server 'default': service 'services.rta-matching-sxibg0'
+[2019/10/08-16:59:47.034] [info] [SchemaUpdater-sxibg0-38] [schema.updater.slice.0]	No update were performed
+[2019/10/08-16:59:47.036] [info] [main] [alerting.realtime.matching]	Reloaded '0' matchers definitions
+[2019/10/08-16:59:47.036] [info] [main] [bee.directory]	Starting server 'default': HTTP server on port 16013
+[ShutdownMonitor] Not enabled (port < 0): -1
+[2019/10/08-16:59:47.036] [info] [main] [org.eclipse.jetty.server.Server]	jetty-9.4.10.v20180503; built: 2018-05-03T15:56:21.710Z; git: daa59876e6f384329b122929e70a80934569428c; jvm 1.8.0_152-b16
+[2019/10/08-16:59:47.037] [info] [main] [org.eclipse.jetty.server.session]	DefaultSessionIdManager workerName=node0
+[2019/10/08-16:59:47.037] [info] [main] [org.eclipse.jetty.server.session]	No SessionScavenger set, using defaults
+[2019/10/08-16:59:47.037] [info] [main] [org.eclipse.jetty.server.session]	node0 Scavenging every 600000ms
+[2019/10/08-16:59:47.037] [warn] [main] [org.eclipse.jetty.security.SecurityHandler]	ServletContext@o.e.j.s.ServletContextHandler@44828f6b{/,resource:/exa/bee/net/http2/htdocs,STARTING} has uncovered http methods for path: /
+[2019/10/08-16:59:47.045] [info] [main] [org.eclipse.jetty.server.handler.ContextHandler]	Started o.e.j.s.ServletContextHandler@44828f6b{/,resource:/exa/bee/net/http2/htdocs,AVAILABLE}
+[2019/10/08-16:59:47.046] [info] [main] [org.eclipse.jetty.server.AbstractConnector]	Started 16013@269f4bad{HTTP/1.1,[http/1.1]}{0.0.0.0:16013}
+[2019/10/08-16:59:47.046] [info] [main] [org.eclipse.jetty.server.Server]	Started @11889ms
+[2019/10/08-16:59:47.047] [info] [main] [bee]	Runtime is started
+[2019/10/08-16:59:47.047] [info] [SchemaUpdater-sxibg0-31] [schema.updater]	Completed schema update of 1 slices in 124 ms
+[2019/10/08-16:59:47.649] [info] [58890945@jtp-default-1] [GL.index.replication]	slice 0: inst sxii0: [0] slice=0 instance=sxii0 is ready for reload
+[2019/10/09-00:00:00.014] [info] [1060519157@jtp-default-0] [exa.log.rotation]	Rotating standard log
+Log4NG: rotating logs now

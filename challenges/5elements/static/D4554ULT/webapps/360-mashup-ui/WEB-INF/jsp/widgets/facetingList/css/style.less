@@ -1,0 +1,110 @@
+.mashup {
+	
+	.exa-faceting-list {
+		text-align:left;
+		font-size: 11px;
+		
+		border-top: 1px solid @cblock-border;
+		
+		&:first-child {
+			border-top: 0px;
+		}
+		
+		h3 {
+			cursor:pointer;
+			color: @cblock;
+			.linear-gradient(@cblock-bg-alt + #070707, @cblock-bg-alt - #070707);
+			border: 1px solid @cblock-border;
+			border-width: 0 0 1px 0;
+			margin: 0 0 2px 0;
+			padding-left: 5px;
+
+			line-height: 25px;
+			font-size: 11px;
+			
+			&:first-child {
+				border-top: 0px;
+			}
+			&:hover {
+				.linear-gradient(@cblock-bg-alt - #070707, @cblock-bg-alt + #070707);
+				text-decoration: underline;
+			}
+			.collapsable {
+				margin-right:2px;
+				background-image:url(../img/sprite_collapse_dark_grey.png);
+				background-repeat:no-repeat;
+				background-position:0 -15px;
+				width:15px;
+				height:15px;
+				vertical-align:text-top;
+				
+				display:inline-block;
+				/* IE6 display inline block */ 
+				zoom:1;
+				*display:inline;
+			}
+			.collapsed {
+				background-position:0 0;
+			}
+		}
+		
+		.exa-pagination {
+			color: @cblock;
+			.linear-gradient(@cblock-bg-alt + #070707, @cblock-bg-alt - #070707);
+			border: 1px solid @cblock-border;
+			border-width: 1px 0 1px 0;			
+			padding:2px 5px;
+		}
+	}
+	
+	.exa-faceting-list-input {
+		margin:0 10px;
+		
+		input {
+			width:100%;
+			margin-left:-3px;
+		}
+	}
+	 
+	.exa-faceting-list-li {
+		padding:0 4px;
+		color: @ctext-weaker;
+				
+		&:hover {
+			background-color: @clink;
+			color: @ctext-inverted;
+			.exa-faceting-list-li-a {
+				color: @ctext-inverted;
+			}
+		}
+	}
+		
+	.exa-faceting-list-li-a {
+		display:block;
+		color: @ctext-weak;
+	
+		&:hover {
+			text-decoration: none;
+		}
+	}	
+	.exa-faceting-list-li-aggr {
+		float:right;
+		font-size: 9px;
+		height: 14px;
+		line-height: 14px;
+		margin: 2px 0;
+		padding: 0 10px;
+		color:@ctext-weaker;
+		border: 1px solid darken(@cblock-bg-alt, 10%);
+		.linear-gradient(@cblock-bg-alt + #0F0F0F, @cblock-bg-alt);
+		.border-radius(7px);
+	}
+	
+	.exa-faceting-list-li-refined {
+		background-color: lighten(@clink, 40%);
+		color: darken(@clink, 5%);
+		.exa-faceting-list-li-a {
+			color: darken(@clink, 5%);
+		}
+	}
+}

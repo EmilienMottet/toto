@@ -1,0 +1,52 @@
+[2019/10/30-00:00:00.045] [info] [667957103@jtp-default-0] [exa.log.rotation]	Rotating additional logs
+[2019/10/30-03:00:00.289] [info] [Waiting next query] [exa.search.api]	Slow query ! 218459
+[2019/10/30-03:00:00.622] [warn] [140308330944256] [search.snippet.builder]	G52288: S52352: No language facet id set, will process with unknown language
+[2019/10/30-03:00:00.623] [warn] [140308330944256] [search.snippet.builder]	G52288: S52352: No language facet id set, will process with unknown language
+[2019/10/30-03:00:00.623] [warn] [140308330944256] [search.snippet.builder]	G52288: S52352: No language facet id set, will process with unknown language
+[2019/10/30-03:00:00.623] [warn] [140308330944256] [search.snippet.builder]	G52288: S52352: No language facet id set, will process with unknown language
+[2019/10/30-03:00:00.623] [warn] [140308330944256] [search.snippet.builder]	G52288: S52352: No language facet id set, will process with unknown language
+[2019/10/30-03:00:00.623] [warn] [140308330944256] [search.snippet.builder]	G52288: S52352: No language facet id set, will process with unknown language
+[2019/10/30-03:00:00.623] [warn] [140308330944256] [search.snippet.builder]	G52288: S52352: No language facet id set, will process with unknown language
+[2019/10/30-03:00:00.623] [warn] [140308330944256] [search.snippet.builder]	G52288: S52352: No language facet id set, will process with unknown language
+[2019/10/30-03:00:00.623] [warn] [140308330944256] [search.snippet.builder]	G52288: S52352: No language facet id set, will process with unknown language
+[2019/10/30-03:00:00.624] [warn] [140308330944256] [search.snippet.builder]	G52288: S52352: No language facet id set, will process with unknown language
+[2019/10/30-03:00:00.624] [warn] [140308330944256] [search.snippet.builder]	G52288: S52352: No language facet id set, will process with unknown language
+[2019/10/30-03:00:00.624] [warn] [140308330944256] [search.snippet.builder]	G52288: S52352: No language facet id set, will process with unknown language
+[2019/10/30-03:00:00.624] [warn] [140308330944256] [search.snippet.builder]	G52288: S52352: No language facet id set, will process with unknown language
+[2019/10/30-03:00:00.624] [warn] [140308330944256] [search.snippet.builder]	G52288: S52352: No language facet id set, will process with unknown language
+[2019/10/30-03:00:00.624] [warn] [140308330944256] [search.snippet.builder]	G52288: S52352: No language facet id set, will process with unknown language
+[2019/10/30-03:00:00.624] [warn] [140308330944256] [search.snippet.builder]	G52288: S52352: No language facet id set, will process with unknown language
+[2019/10/30-03:00:00.624] [warn] [140308330944256] [search.snippet.builder]	G52288: S52352: No language facet id set, will process with unknown language
+[2019/10/30-03:00:00.624] [warn] [140308330944256] [search.snippet.builder]	G52288: S52352: No language facet id set, will process with unknown language
+[2019/10/30-03:00:00.624] [warn] [140308330944256] [search.snippet.builder]	G52288: S52352: No language facet id set, will process with unknown language
+[2019/10/30-03:00:00.625] [warn] [140308330944256] [search.snippet.builder]	G52288: S52352: No language facet id set, will process with unknown language
+[2019/10/30-03:00:00.625] [warn] [140308330944256] [search.snippet.builder]	G52288: S52352: No language facet id set, will process with unknown language
+[2019/10/30-03:00:00.625] [warn] [140308330944256] [search.snippet.builder]	G52288: S52352: No language facet id set, will process with unknown language
+[2019/10/30-03:00:00.625] [warn] [140308330944256] [search.snippet.builder]	G52288: S52352: No language facet id set, will process with unknown language
+[2019/10/30-03:00:00.625] [warn] [140308330944256] [search.snippet.builder]	G52288: S52352: No language facet id set, will process with unknown language
+[2019/10/30-03:00:00.625] [warn] [140308330944256] [search.snippet.builder]	G52288: S52352: No language facet id set, will process with unknown language
+[2019/10/30-03:00:00.625] [warn] [140308330944256] [search.snippet.builder]	G52288: S52352: No language facet id set, will process with unknown language
+[2019/10/30-03:00:00.625] [warn] [140308330944256] [search.snippet.builder]	G52288: S52352: No language facet id set, will process with unknown language
+[2019/10/30-03:00:00.626] [warn] [140308330944256] [search.snippet.builder]	G52288: S52352: No language facet id set, will process with unknown language
+[2019/10/30-03:00:00.626] [warn] [140308330944256] [search.snippet.builder]	G52288: S52352: No language facet id set, will process with unknown language
+[2019/10/30-03:00:00.626] [warn] [140308330944256] [search.snippet.builder]	G52288: S52352: No language facet id set, will process with unknown language
+[2019/10/30-03:00:00.626] [warn] [140308330944256] [search.snippet.builder]	G52288: S52352: No language facet id set, will process with unknown language
+[2019/10/30-03:00:00.627] [warn] [140308330944256] [search.snippet.builder]	G52288: S52352: No language facet id set, will process with unknown language
+[2019/10/30-03:00:00.627] [warn] [140308330944256] [search.snippet.builder]	G52288: S52352: No language facet id set, will process with unknown language
+[2019/10/30-03:00:00.627] [warn] [140308330944256] [search.snippet.builder]	G52288: S52352: No language facet id set, will process with unknown language
+[2019/10/30-03:00:00.627] [warn] [140308330944256] [search.snippet.builder]	G52288: S52352: No language facet id set, will process with unknown language
+[2019/10/30-03:00:00.627] [warn] [140308330944256] [search.snippet.builder]	G52288: S52352: No language facet id set, will process with unknown language
+[2019/10/30-03:00:00.627] [warn] [140308330944256] [search.snippet.builder]	G52288: S52352: No language facet id set, will process with unknown language
+[2019/10/30-03:00:00.627] [warn] [140308330944256] [search.snippet.builder]	G52288: S52352: No language facet id set, will process with unknown language
+[2019/10/30-03:00:00.627] [warn] [140308330944256] [search.snippet.builder]	G52288: S52352: No language facet id set, will process with unknown language
+[2019/10/30-03:00:00.630] [info] [Processing query ST 52288 collapsing=&group=&hf=-1&limits=max_fetched_hits%3A0%2Cmax_fetched_hits_per_slice%3A0%2Cmax_kept_hits%3A0%2Chits_sampling%3A100&logic=sxisl&of=flea&q=availability%3Aaclfts&relevance=false&rt=disabled& ...[74 chars remaining]] [exa.search.runnerpool]	Release a runner that served 2 queries during 86400054s when having 0 working runner
+[2019/10/30-03:00:00.630] [info] [Processing query ST 52288 collapsing=&group=&hf=-1&limits=max_fetched_hits%3A0%2Cmax_fetched_hits_per_slice%3A0%2Cmax_kept_hits%3A0%2Chits_sampling%3A100&logic=sxisl&of=flea&q=availability%3Aaclfts&relevance=false&rt=disabled& ...[74 chars remaining]] [exa.search.runnerpool]	Dropping runner for logic sxisl: pool is destroyed
+[2019/10/30-03:00:00.860] [info] [1664544741@jtp-resourceshare-29] [datashare]	share: Started datashare session on autosuggest_OnPremise_securedSuggest_ds6w_58_label
+[2019/10/30-03:00:00.944] [info] [893124786@jtp-resourceshare-34] [exa.io.datashare]	share: Switching DataShare to version 21
+[2019/10/30-03:00:00.945] [info] [893124786@jtp-resourceshare-34] [exa.io.datashare]	share: Garbage collecting datashare version 20
+[2019/10/30-03:00:00.946] [info] [893124786@jtp-resourceshare-34] [datashare]	share: Committed datashare session
+[2019/10/30-03:00:01.340] [info] [ReportingConsumer-31] [reporting.file-publisher]	Reporting file rotation to: /busdata/dpmu/gbl0/data/cv/bin/../run/searchserver-ss0/search-reporting/search.csv.20191029.00000
+[2019/10/30-03:00:01.341] [info] [ReportingConsumer-31] [reporting.file-publisher]	delete file /busdata/dpmu/gbl0/data/cv/bin/../run/searchserver-ss0/search-reporting/search.csv.20191016.00000
+[2019/10/30-15:20:04.179] [info] [Preprocessing for query empty] [exa.search.runnerpool]	Created a new runner for logic sxisl ( 0 idle runner and 0 working runner) in 105ms
+[2019/10/31-00:00:00.025] [info] [667957103@jtp-default-0] [exa.log.rotation]	Rotating standard log
+Log4NG: rotating logs now

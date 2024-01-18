@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><bee:Hive xmlns:bee="exa:exa.bee">
+  <bee:include filename="config:///15/run/global.xml"/>
+  <bee:include filename="config:///15/run/directory.xml"/>
+  <bee:key name="index6.replication.0.builderPN" value="/index6builder/sxibg0/0"/>
+  <bee:key name="index6.replication.0.replicas.sxii0.PN" value="/index6/sxibg0/0/sxii0"/>
+  <bee:key name="index6.schema" value="sximodel"/>
+  <bee:key name="dictionary" value="/dictionary/ss0"/>
+  <bee:key name="notAlivePath" value="${runDir}/${processName}/notalive"/>
+  <bee:key name="services.indexingserver.sxibg0">
+    <IndexingServer xmlns="exa:com.exalead.cloudview.indexing" bee:key="" buildGroup="sxibg0" nslices="1" papiPort="16003"/>
+  </bee:key>
+  <bee:key name="resourceshareservice">
+    <ShareFLIS xmlns="exa:com.exalead.ds.share2.http" bee:key="" rootUrl="data:///build/resourceshare/indexingserver-sxibg0"/>
+  </bee:key>
+  <bee:key name="resourceshare">
+    <ResourceShare xmlns="exa:com.exalead.mercury.common" bee:key="" myUrl="http://mpllnx4032.mpl.michelin.com:16014/" role="analyzer" rootUrl="data:///build/resourceshare/indexingserver-sxibg0"/>
+  </bee:key>
+  <bee:key name="services.analyzer-tester-sxibg0">
+    <AnalyzerTesterService xmlns="exa:com.exalead.cloudview.indexing.analysis" bee:key="" buildGroup="sxibg0"/>
+  </bee:key>
+  <bee:key name="services.index6builder.sxibg0.0">
+    <IndexBuilderService xmlns="exa:com.exalead.cloudview.indexing.index" bee:key="" buildGroup="sxibg0" indexingConfig="sxiic" slice="0"/>
+  </bee:key>
+  <bee:key name="services.index6.buildgroupmanager.sxibg0">
+    <BuildGroupManagerService xmlns="exa:com.exalead.cloudview.indexing.index" bee:key="" buildGroup="sxibg0" indexingConfig="sxiic"/>
+  </bee:key>
+  <bee:key name="services.dictionary.builder">
+    <DictionaryBuilderService xmlns="exa:com.exalead.dictionary.build" bee:key=""/>
+  </bee:key>
+  <bee:key name="suggestmanager">
+    <SuggestManager xmlns="exa:com.exalead.search.suggest" bee:key="" name="suggestmanager"/>
+  </bee:key>
+  <bee:key name="services.rta-matching-sxibg0">
+    <RealTimeAlertingMatchingService xmlns="exa:com.exalead.cloudview.indexing.realtime" bee:key="" buildGroup="sxibg0"/>
+  </bee:key>
+  <bee:key name="java">
+    <JavaRuntimeServlet xmlns="jexa:com.exalead.bee" bee:key=""/>
+  </bee:key>
+  <bee:key name="profiler">
+    <ProfilingServlet xmlns="jexa:com.exalead.bee.services" bee:key=""/>
+  </bee:key>
+  <bee:key name="isAlive">
+    <IsAliveServlet xmlns="jexa:com.exalead.bee.services" bee:key=""/>
+  </bee:key>
+  <bee:key name="log4e">
+    <Log4EService xmlns="jexa:com.exalead.bee.services" bee:key=""/>
+  </bee:key>
+  <bee:key name="beegistryUpdate">
+    <BeegistryUpdater xmlns="jexa:com.exalead.bee.services" bee:key=""/>
+  </bee:key>
+  <DirectoryLoader xmlns="jexa:com.exalead.bee" bee:key="mainjava"/>
+</bee:Hive>

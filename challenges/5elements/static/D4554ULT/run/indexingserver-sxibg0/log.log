@@ -1,0 +1,50 @@
+[2019/11/06-00:00:00.024] [info] [535172125@jtp-default-25] [exa.log.rotation]	Rotating additional logs
+[2019/11/06-03:00:00.005] [info] [535172125@jtp-default-25] [suggest.manager]	Scheduling build job for suggest OnPremise_securedSuggest_ds6w_58_label
+[2019/11/06-03:00:00.005] [info] [pool-1-thread-1] [suggest.build.OnPremise_securedSuggest_ds6w_58_label]	Building suggest OnPremise_securedSuggest_ds6w_58_label
+[2019/11/06-03:00:00.356] [info] [pool-1-thread-1] [GL.suggest]	[0] build starting
+[2019/11/06-03:00:00.357] [info] [pool-1-thread-1] [suggest.build.OnPremise_securedSuggest_ds6w_58_label]	Exporting suggest entries...
+[2019/11/06-03:00:01.152] [info] [pool-1-thread-1] [suggest.stream.builder]	processing slice 0 of sxibg0
+[2019/11/06-03:00:01.154] [info] [pool-1-thread-1] [index.generations]	Starting...
+[2019/11/06-03:00:01.345] [info] [pool-1-thread-1] [index.generations]	Switch to generation '48194' done in 190.732ms
+[2019/11/06-03:00:01.396] [info] [pool-1-thread-1] [suggest.stream.builder]	exported 75 hits for slice 0 of sxibg0
+[2019/11/06-03:00:01.401] [info] [pool-1-thread-1] [suggest.stream.builder]	total exported hit count 75
+[2019/11/06-03:00:01.428] [info] [pool-1-thread-1] [suggest.build.OnPremise_securedSuggest_ds6w_58_label]	Suggest entries exported (1071 ms, 75 entries, 0 truncated, 0 dropped)
+[2019/11/06-03:00:01.433] [info] [pool-1-thread-1] [suggest.build.OnPremise_securedSuggest_ds6w_58_label]	Sorting suggest entries...
+[2019/11/06-03:00:01.493] [info] [pool-1-thread-1] [suggest.build.OnPremise_securedSuggest_ds6w_58_label]	Suggest entries sorted (60 ms)
+[2019/11/06-03:00:01.615] [info] [pool-1-thread-1] [suggest.build.OnPremise_securedSuggest_ds6w_58_label]	Compiling entries...
+[2019/11/06-03:00:01.676] [info] [pool-1-thread-1] [suggest.build.OnPremise_securedSuggest_ds6w_58_label]	Entries compiled (61 ms)
+[2019/11/06-03:00:01.677] [info] [pool-1-thread-1] [suggest.build.OnPremise_securedSuggest_ds6w_58_label]	Building lookup structure...
+[2019/11/06-03:00:01.685] [info] [pool-1-thread-1] [suggest.build.OnPremise_securedSuggest_ds6w_58_label]	Lookup structure built (8 ms)
+[2019/11/06-03:00:01.703] [info] [pool-1-thread-1] [suggest.build.OnPremise_securedSuggest_ds6w_58_label]	OnPremise_securedSuggest_ds6w_58_label successfully built (56 entries compiled in 1329 ms)
+[2019/11/06-03:00:01.703] [info] [pool-1-thread-1] [GL.suggest]	[0] Suggest OnPremise_securedSuggest_ds6w_58_label successfully built
+[2019/11/06-03:00:02.177] [info] [pool-1-thread-1] [suggest.build.OnPremise_securedSuggest_ds6w_58_label]	OnPremise_securedSuggest_ds6w_58_label successfully published
+[2019/11/06-08:24:37.486] [info] [535172125@jtp-default-25] [bee.runtime]	Exiting on StopRuntime request
+[2019/11/06-08:24:37.489] [info] [shutdown-18370] [jaxb]	JAXB cache contains :SGLoader@null__com.exalead.mercury.mami.resources.v10 (creation=126ms, hits=8292)
+[2019/11/06-08:24:37.489] [info] [shutdown-18370] [jaxb]	JAXB cache contains :sun.misc.Launcher$AppClassLoader@764c12b6__com.exalead.mercury.mami.resources.v10 (creation=1308ms, hits=19)
+[2019/11/06-08:24:37.489] [info] [shutdown-18370] [jaxb]	JAXB cache contains :SGLoader@null__com.exalead.mercury.mami.search.v20 (creation=1132ms, hits=4)
+[2019/11/06-08:24:37.489] [info] [shutdown-18370] [jaxb]	JAXB cache contains :sun.misc.Launcher$AppClassLoader@764c12b6__com.exalead.mercury.mami.indexing.v10:com.exalead.indexing.analysis.v10 (creation=1807ms, hits=5237)
+[2019/11/06-08:24:37.489] [info] [shutdown-18370] [jaxb]	JAXB cache contains :sun.misc.Launcher$AppClassLoader@764c12b6__com.exalead.mercury.mami.search.v20 (creation=4263ms, hits=1)
+[2019/11/06-08:24:37.489] [info] [shutdown-18370] [jaxb]	JAXB cache contains :SGLoader@null__exa.bee (creation=307ms, hits=1381)
+[2019/11/06-08:24:37.489] [info] [shutdown-18370] [jaxb]	JAXB cache contains :sun.misc.Launcher$AppClassLoader@764c12b6__com.exalead.mercury.mami.master.v10 (creation=2341ms, hits=1838)
+[2019/11/06-08:24:38.490] [info] [shutdown-18370] [bee.directory]	Stopping server 'default': HTTP server
+[2019/11/06-08:24:38.588] [info] [shutdown-18370] [org.eclipse.jetty.server.AbstractConnector]	Stopped 16013@36fcf6c0{HTTP/1.1,[http/1.1]}{0.0.0.0:16013}
+[2019/11/06-08:24:38.594] [info] [shutdown-18370] [org.eclipse.jetty.server.handler.ContextHandler]	Stopped o.e.j.s.ServletContextHandler@4aaae508{/,resource:/exa/bee/net/http2/htdocs,UNAVAILABLE}
+[2019/11/06-08:24:38.604] [info] [shutdown-18370] [org.eclipse.jetty.server.session]	node0 Stopped scavenging
+[2019/11/06-08:24:38.752] [warn] [shutdown-18370] [com.exalead.jetty.RegularSynchronizationQueuedThreadPool]	1 threads could not be stopped
+[2019/11/06-08:24:38.754] [info] [shutdown-18370] [bee.directory]	Stopping server 'default': service 'services.rta-matching-sxibg0'
+[2019/11/06-08:24:38.755] [info] [shutdown-18370] [bee.directory]	Stopping server 'default': service 'suggestmanager'
+[2019/11/06-08:24:38.755] [info] [shutdown-18370] [bee.directory]	Stopping server 'default': service 'services.dictionary.builder'
+[2019/11/06-08:24:38.767] [info] [shutdown-18370] [bee.directory]	Stopping server 'default': service 'services.analyzer-tester-sxibg0'
+[2019/11/06-08:24:38.767] [info] [shutdown-18370] [analysis.test]	Stopped analyzer tester service - /analyzer-tester-sxibg0
+[2019/11/06-08:24:38.767] [info] [shutdown-18370] [bee.directory]	Stopping server 'default': service 'services.indexingserver.sxibg0'
+[2019/11/06-08:24:38.810] [info] [ReplicaControlThread 0/sxii0] [replication.manager]	slice 0: inst sxii0: instance was stopped
+[2019/11/06-08:24:38.821] [info] [shutdown-18370] [bee.directory]	Stopping server 'resourceshare_slave': service 'resourceshare'
+[2019/11/06-08:24:38.821] [info] [shutdown-18370] [bee.directory]	Stopping server 'resourceshare': HTTP server
+[2019/11/06-08:24:38.835] [info] [shutdown-18370] [org.eclipse.jetty.server.AbstractConnector]	Stopped 16014@611889f4{HTTP/1.1,[http/1.1]}{0.0.0.0:16014}
+[2019/11/06-08:24:38.835] [info] [shutdown-18370] [org.eclipse.jetty.server.handler.ContextHandler]	Stopped o.e.j.s.ServletContextHandler@a2431d0{/,null,UNAVAILABLE}
+[2019/11/06-08:24:38.837] [info] [shutdown-18370] [org.eclipse.jetty.server.session]	node0 Stopped scavenging
+[2019/11/06-08:24:38.842] [info] [shutdown-18370] [bee.directory]	Stopping server 'resourceshare': service 'resourceshareservice'
+[2019/11/06-08:24:38.842] [info] [shutdown-18370] [bee.directory]	Directory stopped
+[2019/11/06-08:24:38.842] [info] [shutdown-18370] [bee]	Runtime stopped
+[2019/11/06-08:24:38.842] [fatal] [shutdown-18370] [bee]	Exiting process
+Exiting process now (Queen.java)

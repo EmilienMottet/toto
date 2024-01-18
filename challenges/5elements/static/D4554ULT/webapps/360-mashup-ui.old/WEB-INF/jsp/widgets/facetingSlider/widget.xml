@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<Widget name="Slider" group="Navigation/Facet Panel" premium="true">
+
+	<Description>This widget displays a slider based on a CloudView virtual expression.</Description>
+	
+	<Preview>
+		<![CDATA[
+			<img src="/resources/widgets/facetingSlider/img/slider.png" />
+		]]>
+	</Preview>
+	
+	<Dependencies>
+ 		<Trigger position="self" className="com.exalead.cv360.searchui.view.widgets.triggers.AutoRangeWidgetTrigger" />
+	</Dependencies>
+	
+	<Includes>
+		<Include type="js" path="/resources/jquery-ui-1.11.4.custom/jquery-ui.min.js" />
+		<Include type="css" path="/resources/jquery-ui-1.11.4.custom/jquery-ui.min.css" />
+		<Include type="js" path="/resources/javascript/buildUrl.js" />		
+		<Include type="css" path="/resources/css/exa/common.less" />
+		<Include type="css" path="css/style.less" />
+	</Includes>
+
+	<Platforms>
+		<Platform type="web" supported="true" />
+		<Platform type="mobile" supported="true" />
+	</Platforms>
+
+	<SupportWidgetsId arity="ZERO" />
+	<SupportFeedsId arity="MANY" />
+	
+	<OptionsGroup name="General">
+		<Option id="expression" name="Expression" arity="ONE">
+			<Description>Specifies the CloudView virtual expression used to create the slider. For example, document_file_size/1000</Description>
+			<Functions>
+				<ContextMenu>Fields()</ContextMenu>
+			</Functions>
+		</Option>
+		<Option id="pattern" name="Display pattern" arity="ONE">
+			<Description>Use %{MIN} and %{MAX} to display the min and max values of the slider scale.</Description>
+		</Option>
+		<Option id="step" name="Interval" arity="ONE">
+			<Description>Sets the interval between values.</Description>
+		</Option>
+	</OptionsGroup>
+	
+
+	<OptionsGroup name="Advanced">
+		<Option id="forceRefineOnFeeds" name="Force refinement for feeds" arity="ZERO_OR_MANY">
+			<Description>Forces refinements on the specified feeds.</Description>
+			<Functions>
+				<ContextMenu>Feeds()</ContextMenu>
+				<ContextMenu>COMMON_emptyOnChange()</ContextMenu>
+			</Functions>
+		</Option>
+	</OptionsGroup>
+	
+	<DefaultValues>
+		<DefaultValue name="pattern"><![CDATA[Between <b>%{MIN}</b> and <b>%{MAX}</b>]]></DefaultValue>
+		<DefaultValue name="step">1</DefaultValue>
+	</DefaultValues>
+
+</Widget>

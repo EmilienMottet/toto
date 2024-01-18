@@ -1,0 +1,20 @@
+[2019/10/15-00:00:00.009] [info] [1821215584@jtp-default-1] [exa.log.rotation]	Rotating additional logs
+[2019/10/15-04:00:00.190] [info] [Waiting next query] [exa.search.api]	Slow query ! 171209
+[2019/10/15-04:00:00.629] [warn] [140107775006464] [search.snippet.builder]	G704: S768: No language facet id set, will process with unknown language
+[2019/10/15-04:00:00.631] [info] [Processing query ST 704 collapsing=&group=&hf=-1&limits=max_fetched_hits%3A0%2Cmax_fetched_hits_per_slice%3A0%2Cmax_kept_hits%3A0%2Chits_sampling%3A100&logic=sxisl&of=flea&q=availability%3Aaclfts&relevance=false&rt=disabled& ...[74 chars remaining]] [exa.search.runnerpool]	Release a runner that served 2 queries during 86400059s when having 0 working runner
+[2019/10/15-04:00:00.631] [info] [Processing query ST 704 collapsing=&group=&hf=-1&limits=max_fetched_hits%3A0%2Cmax_fetched_hits_per_slice%3A0%2Cmax_kept_hits%3A0%2Chits_sampling%3A100&logic=sxisl&of=flea&q=availability%3Aaclfts&relevance=false&rt=disabled& ...[74 chars remaining]] [exa.search.runnerpool]	Dropping runner for logic sxisl: pool is destroyed
+[2019/10/15-04:00:01.026] [info] [1933913858@jtp-resourceshare-47] [datashare]	share: Started datashare session on autosuggest_OnPremise_securedSuggest_ds6w_58_label
+[2019/10/15-04:00:01.132] [info] [1100066130@jtp-resourceshare-53] [exa.io.datashare]	share: Switching DataShare to version 6
+[2019/10/15-04:00:01.132] [info] [1100066130@jtp-resourceshare-53] [exa.io.datashare]	share: Garbage collecting datashare version 5
+[2019/10/15-04:00:01.134] [info] [1100066130@jtp-resourceshare-53] [datashare]	share: Committed datashare session
+[2019/10/15-04:00:01.207] [info] [ReportingConsumer-183] [reporting.file-publisher]	Reporting file rotation to: /busdata/dpmu/gbl0/data/cv/bin/../run/searchserver-ss0/search-reporting/search.csv.20191014.00000
+[2019/10/15-04:27:39.836] [info] [248051158@jtp-resourceshare-44] [datashare]	share: Started datashare session on dictionary-sxidict
+[2019/10/15-04:27:39.912] [info] [248051158@jtp-resourceshare-44] [exa.io.datashare]	share: Switching DataShare to version 5
+[2019/10/15-04:27:39.930] [info] [248051158@jtp-resourceshare-44] [exa.io.datashare]	share: Garbage collecting datashare version 4
+[2019/10/15-04:27:40.115] [info] [248051158@jtp-resourceshare-44] [datashare]	share: Committed datashare session
+[2019/10/15-16:58:17.790] [info] [248051158@jtp-resourceshare-44] [datashare]	share: Started datashare session on dictionary-sxidict
+[2019/10/15-16:58:17.873] [info] [121011197@jtp-resourceshare-61] [exa.io.datashare]	share: Switching DataShare to version 6
+[2019/10/15-16:58:17.885] [info] [121011197@jtp-resourceshare-61] [exa.io.datashare]	share: Garbage collecting datashare version 5
+[2019/10/15-16:58:18.015] [info] [121011197@jtp-resourceshare-61] [datashare]	share: Committed datashare session
+[2019/10/16-00:00:00.013] [info] [1821215584@jtp-default-1] [exa.log.rotation]	Rotating standard log
+Log4NG: rotating logs now

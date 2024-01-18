@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<Widget name="Multi Input Search Form" group="Search Forms">
+
+	<Description>Configurable Search Form that can display more than a single input field.</Description>
+
+	<Preview>
+		<![CDATA[
+			<div style="width: 310px; margin: 0px auto;">
+			<div style="padding: 2px;">
+				Query: <input type="text" value="" style="width: 100px;" />
+				Location: <input type="text" value="" style="width: 100px;" />
+			</div>
+
+			<div style="padding: 2px;">
+				Query: <input type="text" value="" style="width: 100px;" />
+				Location: <input type="text" value="" style="width: 100px;" />
+			</div>
+
+			<div style="padding: 2px 5px 2px 2px; text-align: right;">
+				<input type="button" value="Search" style="width: 50px;" />
+			</div>
+			</div>
+		]]>
+	</Preview>
+
+	<Includes>
+		<Include type="css" path="css/style.less" />
+	</Includes>
+
+	<Dependencies>
+		<Widget name="searchForm" /> <!-- Include jquery.suggest.js -->
+	</Dependencies>
+
+	<SupportWidgetsId arity="ZERO" />
+	<SupportFeedsId arity="ZERO" />
+	
+	<Interactions>
+		<Interaction type="in" id="exa.io.GeoInterface">
+			<Description>Restrict the search in this area</Description>
+			<Option id="geoDataInputName" name="Input parameter" arity="ONE">
+				<Description>Specifies the geographic Parameter Name associated with the input submitted for the entry box.</Description>
+				<Functions>
+					<ContextMenu>PageParameters()</ContextMenu>
+					<ContextMenu>COMMON_emptyOnChange()</ContextMenu>
+				</Functions>
+			</Option>
+			<Option id="geoMetaName" name="Geographical index field" arity="ONE">
+				<Description>Specifies the name of the geographic index field to search with.</Description>
+				<Functions>
+					<ContextMenu>Metas()</ContextMenu>
+					<ContextMenu>COMMON_emptyOnChange()</ContextMenu>
+				</Functions>
+			</Option>
+		</Interaction>
+	</Interactions>
+
+	<OptionsGroup name="General">
+		<OptionComposite id="inputFields" name="Input parameters" arity="ZERO_OR_MANY" glue="##">
+			<Description>Parameter Name associated with the input submitted for the entry box. Each input parameter can have a Display name and a Suggest service URL associated.</Description>
+			<Option id="name" name="Name">
+				<Functions>
+					<ContextMenu>COMMON_emptyOnChange()</ContextMenu>
+					<ContextMenu>PageParameters()</ContextMenu>
+					<Check>isEmpty</Check>
+					<Display>PARAMETER_doResize({ width: 10 })</Display>
+				</Functions>
+			</Option>
+			<Option id="displayName" name="Display name">
+				<Functions>
+					<Display>PARAMETER_doResize({ width: 30 })</Display>
+				</Functions>
+			</Option>
+			<Option id="suggestUrl" name="Suggest Service URL">
+				<Description>Example: http://host:10010/search-api/suggest</Description>
+				<Functions>
+					<ContextMenu>COMMON_emptyOnChange()</ContextMenu>
+					<ContextMenu>SuggestServices()</ContextMenu>
+					<Display>PARAMETER_doResize({ width: 60 })</Display>
+				</Functions>
+			</Option>
+		</OptionComposite>
+
+		<OptionComposite id="defaultValues" name="Default values" arity="ZERO_OR_MANY" glue="##">
+			<Description>Specifies the name of the input parameter and a default value or a list of default values to create a SELECT.</Description>
+			<Option id="inputName">
+				<Placeholder>name</Placeholder>
+				<Functions>
+					<ContextMenu>COMMON_emptyOnChange()</ContextMenu>
+					<ContextMenu>PageParameters()</ContextMenu>
+					<Display>PARAMETER_doResize({ width: 10 })</Display>
+				</Functions>
+			</Option>
+			<Option id="inputValue">
+				<Placeholder>value,value2</Placeholder>
+				<Functions>
+					<Display>PARAMETER_doResize({ width: 90 })</Display>
+				</Functions>
+			</Option>
+		</OptionComposite>
+	
+		<Option id="defaultValuesSeparator" name="Default values separator" arity="ONE">
+			<Description>Specifies the separator to use between values.</Description>		
+		</Option>
+
+		<Option id="nbInputByRow" name="Inputs by row" arity="ONE">
+			<Description>Specifies the number of inputs to display by row.</Description>
+			<Functions>
+				<Check>isInteger</Check>
+			</Functions>
+		</Option>
+
+		<Option id="focus" name="Auto focus" arity="ONE">
+			<Description>Places the text input caret on search field upon document load.</Description>
+			<Values>
+				<Value>false</Value>
+				<Value>true</Value>
+			</Values>
+		</Option>
+
+		<Option id="inputSize" name="Input size" arity="ONE">
+			<Description>Specifies the width of the input fields. You must enter an integer.</Description>
+			<Functions>
+				<Check>isInteger</Check>
+			</Functions>
+		</Option>
+
+		<Option id="buttonName" name="Button label" arity="ONE">
+			<Description>Specifies the label of the form submit button.</Description>
+		</Option>
+
+		<OptionComposite id="action" name="Search actions" arity="ZERO_OR_MANY" glue="##">
+			<Option id="label" name="Action's label">
+				<Description>Specifies the label that will be displayed above your search form for this action.</Description>
+				<Functions>
+					<ContextMenu>I18N()</ContextMenu>
+				</Functions>
+			</Option>
+			<Option id="name" name="Action's name">
+				<Description>Specifies the name of a page or an absolute URL, corresponding to the form action. If empty, the form will be submitted to the current page.</Description>
+				<Functions>
+					<ContextMenu>COMMON_getAvailablePagesName()</ContextMenu>
+					<ContextMenu>COMMON_emptyOnChange()</ContextMenu>
+				</Functions>
+			</Option>
+		</OptionComposite>
+
+		<Option id="keepRefinements" name="Enable search with refines" arity="ONE">
+			<Description>Allows you to keep your refinements while searching.</Description>
+			<Values>
+				<Value>false</Value>
+				<Value>true</Value>
+			</Values>
+			<Functions>
+				<Display>ToggleDisplay({ valueToMatch: 'true', showOptions: ['keepRefinementsDefaultState'] })</Display>
+			</Functions>
+		</Option>
+		<Option id="keepRefinementsDefaultState" name="Search with refines by default" arity="ZERO_OR_ONE">
+			<Description>Specifies whether the 'search with refines' option should be enabled by default or not.</Description>
+			<Values>
+				<Value>false</Value>
+				<Value>true</Value>
+			</Values>
+		</Option>
+	</OptionsGroup>
+
+	<OptionsGroup name="Geolocation">
+		<Option id="geoEnable" name="Enable geolocation" arity="ONE">
+			<Description>
+				<![CDATA[
+					Injects the position of the user in the search form.<br />
+					Warning: This option requires a browser that supports HTML5 Geolocation specification.<br />
+					It will not work for older browsers and for Internet Explorer.
+				]]>			
+			</Description>
+			<Values>
+				<Value>false</Value>
+				<Value>true</Value>
+			</Values>
+			<Functions>
+				<Display>PARAMETER_doHide('true', [], ['geoLatitude', 'geoLongitude', 'geoMaximumAge'], true, false)</Display>
+			</Functions>
+		</Option>
+		<Option id="geoLatitude" name="Latitude parameter" arity="ONE">
+			<Description>Parameter name associated with the user latitude.</Description>
+			<Functions>
+				<ContextMenu>PageParameters()</ContextMenu>
+				<ContextMenu>COMMON_emptyOnChange()</ContextMenu>
+			</Functions>
+		</Option>
+		<Option id="geoLongitude" name="Longitude parameter" arity="ONE">
+			<Description>Parameter name associated with the user longitude.</Description>
+			<Functions>
+				<ContextMenu>PageParameters()</ContextMenu>
+				<ContextMenu>COMMON_emptyOnChange()</ContextMenu>
+			</Functions>
+		</Option>
+		<Option id="geoMaximumAge" name="Maximum age" arity="ONE">
+			<Description>Accepts a cached position whose age is no greater than the specified time in milliseconds. If 0 then the answer is not cached.</Description>
+			<Functions>
+				<Check>isInteger</Check>
+			</Functions>
+		</Option>
+	</OptionsGroup>
+
+	<DefaultValues>
+		<DefaultValue name="defaultValuesSeparator">,</DefaultValue>
+		<DefaultValue name="nbInputByRow">2</DefaultValue>
+		<DefaultValue name="focus">true</DefaultValue>
+		<DefaultValue name="inputSize">300</DefaultValue>
+		<DefaultValue name="buttonName">Search</DefaultValue>
+		<DefaultValue name="keepRefinements">false</DefaultValue>
+		<DefaultValue name="keepRefinementsDefaultState">false</DefaultValue>
+
+		<DefaultValue name="geoEnable">false</DefaultValue>
+		<DefaultValue name="geoLatitude">lat</DefaultValue>
+		<DefaultValue name="geoLongitude">lon</DefaultValue>
+		<DefaultValue name="geoMaximumAge">5000</DefaultValue>
+	</DefaultValues>
+</Widget>

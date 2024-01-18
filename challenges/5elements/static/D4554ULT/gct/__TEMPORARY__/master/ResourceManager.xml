@@ -1,0 +1,5 @@
+<res:ResourceManagerConfig resourceDir="data:///build/resources" version="1570546452000" xmlns:res="exa:com.exalead.mercury.mami.resources.v10" xmlns:bee="exa:exa.bee" xmlns:config="exa:exa.bee.config">
+    <res:ResourceGroup name="SXIConsolidationServerRules" roles="consolidation" waitOnSync="false">
+        <res:Resource name="ConsolidationServerRules____global__" type="raw"/>
+    </res:ResourceGroup>
+</res:ResourceManagerConfig>

@@ -1,0 +1,10 @@
+title: "The 5th element"
+description: "explore everythings"
+hint: "Download the zip and find the file with the given information (info in html with opacity 0) find . -name \"*.txt\" | grep Flag ==> The flag inside is vaulted with ansible-vault (the key is : leeloo) ==> ansible-vault decrypt"
+template: "wh3r3_15_4z1z.html"
+css: "./static/wh3r3_15_4z1z-style.css"
+javascript: "./static/wh3r3_15_4z1z-script.js"
+encoding_script: "./5th-generator.sh"
+static_file:
+  - "./static/wh3r3_15_4z1z.jpg"
+  - "./static/wh3r3_15_4z1z.zip"

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><bee:Hive xmlns:bee="exa:exa.bee">
+  <bee:include filename="config:///2/run/global.xml"/>
+  <bee:include filename="config:///2/run/directory.xml"/>
+  <AppenderSpec xmlns="exa:exa.bee" bee:key="log4e.GLcomponent.APPEND.1" classId="exa.log.RollingFileAppender">
+    <KeyValue key="logDir" value="${runDir}"/>
+    <KeyValue key="baseName" value="global"/>
+  </AppenderSpec>
+  <AppenderSpec xmlns="exa:exa.bee" bee:key="log4e.GL.APPEND.1" classId="exa.log.append.GlobalLogAppender">
+    <KeyValue key="publicName" value="/GL"/>
+  </AppenderSpec>
+  <bee:key name="directoryService"/>
+  <bee:key name="mami.deploy">
+    <MercuryDeploymentManager xmlns="exa:com.exalead.mercury.mami.deploy" bee:key=""/>
+  </bee:key>
+  <bee:key name="mami.crawl">
+    <CrawlManager xmlns="exa:com.exalead.mercury.mami.crawl" bee:key=""/>
+  </bee:key>
+  <bee:key name="mami.fetch">
+    <FetchManager xmlns="exa:com.exalead.mercury.mami.fetch" bee:key=""/>
+  </bee:key>
+  <bee:key name="exascript"/>
+  <bee:key name="profiler"/>
+  <bee:key name="dynamicData"/>
+  <bee:key name="log4e"/>
+  <bee:key name="beegistryUpdate"/>
+  <bee:key name="services.GL">
+    <GlobalLog xmlns="exa:exa.log.server" bee:key=""/>
+    <bee:key name="lastLogSize" value="100"/>
+    <bee:key name="enableGlobalLogEntryStore" value="true"/>
+    <bee:key name="entriesStoreRootPath" value="${dataDir}/tmp/globallogs/"/>
+  </bee:key>
+  <DirectoryPoolsReloader xmlns="exa:exa.bee" bee:key="directoryPoolsReloader"/>
+  <Sequence xmlns="exa:exa.bee" bee:key="main">
+    <bee:DirectoryLoader/>
+  </Sequence>
+</bee:Hive>

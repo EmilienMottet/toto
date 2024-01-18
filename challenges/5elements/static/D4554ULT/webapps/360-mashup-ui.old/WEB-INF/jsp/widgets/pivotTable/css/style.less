@@ -1,0 +1,85 @@
+.mashup {
+	#multidim-table {
+		thead th, tbody th  {
+			white-space:nowrap;
+			font-weight:bold;
+			color:black;
+			min-width:15px;
+			
+			a {
+				color:black;
+				
+				&:hover {
+					text-decoration:underline;
+				}
+			}
+		}
+		
+		thead th {
+			text-align:center;
+			
+			&.space-header  {
+				display:none;
+			}
+		}
+		
+		tbody th {
+			text-align:left;
+			
+			&.row-header-0 {
+				padding-left:0px;
+			}
+			&.row-header-1 {
+				padding-left:12px;
+			}
+			&.row-header-2 {
+				padding-left:18px;
+			}
+			&.row-header-3 {
+				padding-left:27px;
+			}
+			&.row-header-4 {
+				padding-left:36px;
+			}
+			&.row-header-5 {
+				padding-left:45px;
+			}
+			&.row-header-6 {
+				padding-left:54px;
+			}
+		}
+		
+		tbody td {
+			text-align:center;
+			
+			&.space-cell  {
+				display:none;
+			}
+		}
+			
+		span.more, span.less {
+			cursor:pointer;
+	        background-image:url(../images/sprite_collapse_dark_grey.png);
+	        background-repeat:no-repeat;
+	        background-position:0 -15px;
+	        width:10px;
+	        height:15px;
+		}
+		span.more {
+	        background-position:0 0;
+		}	
+		span.less {
+			background-position:0 -15px;
+		}
+		
+		span.neutral {
+        	width:10px;
+	        height:15px;
+	        margin-left:5px;
+		}
+		
+		.hidden {
+			display:none;
+		}
+	}
+}

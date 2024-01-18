@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<Widget name="Inverted Data Table" group="Tables" premium="true">
+
+	<Description>In this type of table, each column represents a facet value and each row displays an associated aggregation value.</Description>
+	
+	<Preview>
+		<![CDATA[
+			<img src="/resources/widgets/dataTableInverted/images/preview.png" alt="Inverted Data Table" />
+		]]>
+	</Preview>
+
+	<SupportWidgetsId arity="ZERO" />
+	<SupportFeedsId arity="MANY" />
+	<SupportI18N supported="false" />
+
+	<OptionsGroup name="General">
+		<Option id="title" name="Widget Title" isEvaluated="true">
+			<Description>Widget title. If blank, no title is displayed.</Description>
+		</Option>
+		<Option id="facetPageName" name="Destination page on click" isUrlEncoded="true" isEvaluated="true">
+			<Description>Indicates the URL that should be accessed for a refinement option. If blank, you stay on the same page.</Description>
+			<Functions>
+				<ContextMenu>Pages()</ContextMenu>
+			</Functions>
+		</Option>
+		<Option id="facetName" name="Facet name" arity="ONE">
+			<Description>Specifies the facet to display in the column headers.</Description>			
+			<Functions>
+				<ContextMenu>COMMON_emptyOnChange()</ContextMenu>
+				<ContextMenu>Facets()</ContextMenu>
+			</Functions>
+		</Option>
+		<Option id="sortMode" name="Sort categories by" arity="ONE">
+			<Description>
+				<![CDATA[
+					Sorts the categories using the selected method. Selecting anything but 'default' impacts performance.<br />
+					<ul>
+						<li>'default' requires no processing.</li>
+						<li>'shuffle', 'desc*', 'score*' and 'count*' impact performance on the server side.</li>
+					</ul>
+				]]>
+			</Description>
+			<Values>
+				<Value>default</Value>
+				<Value>description-asc</Value>
+				<Value>description-desc</Value>
+				<Value>score-asc</Value>
+				<Value>score-desc</Value>
+				<Value>count-asc</Value>
+				<Value>count-desc</Value>
+				<Value>range-asc</Value>
+				<Value>range-desc</Value>
+				<Value>shuffle</Value>
+			</Values>
+		</Option>
+		<Option id="iterMode" name="Iteration mode" arity="ONE">
+			<Description>
+				<![CDATA[
+					Determines what data is displayed:
+					<ul>
+						<li>'all' visits the first child of each node before processing its siblings,</li>
+						<li>'leaves' iterates recursively, returning the end nodes,</li>
+						<li>'flat' returns only the first level.</li>
+					</ul>
+				]]>
+			</Description>
+			<Values>
+				<Value>flat</Value>
+				<Value>leaves</Value>
+				<Value>all</Value>
+			</Values>
+		</Option>
+	</OptionsGroup>
+
+	<OptionsGroup name="Column">
+		<Option id="displayTitle" name="Display title column">
+			<Description>Enables the display of the "title" column.</Description>
+			<Values>
+				<Value>false</Value>
+				<Value>true</Value>
+			</Values>
+		</Option>
+		<Option id="displayTotal" name="Display total column">
+			<Description>Enables the display of the "total" column.</Description>
+			<Values>
+				<Value>false</Value>
+				<Value>true</Value>
+			</Values>
+		</Option>
+	</OptionsGroup>
+
+	<OptionsGroup name="Row">
+		<Option id="nameDescription" name="Facet row title" isEvaluated="true">
+			<Description>Name of the column containing facet titles.</Description>
+		</Option>
+		<Option id="totalDescription" name="Total row title" isEvaluated="true">
+			<Description>Name of the column containing facet totals.</Description>
+		</Option>
+		<OptionComposite id="rows" name="Rows" arity="MANY">
+			<Option id="data" name="Value">
+				<Functions>
+					<ContextMenu>Aggregations('facetName')</ContextMenu>
+					<ContextMenu>COMMON_emptyOnChange()</ContextMenu>
+				</Functions>
+			</Option>
+			<Option id="title" name="Title">
+				<Functions>
+					<ContextMenu>COMMON_getI18N('${', '}')</ContextMenu>
+				</Functions>
+			</Option>
+			<Option id="percentage" name="Display percentage">
+				<Description>Displays the value as a percentage.</Description>
+				<Values>
+					<Value>false</Value>
+					<Value>true</Value>
+				</Values>
+			</Option>
+		</OptionComposite>
+	</OptionsGroup>
+
+	<OptionsGroup name="Advanced">
+		<Option id="noResultsJspPathHit" name="JSP path to use if no results" arity="ONE">
+			<Description>If there are no results, the widget is either hidden using a trigger, or a message is displayed using the content of a JSP file.</Description>
+			<Functions>
+				<Check>isJspPath</Check>
+			</Functions>
+		</Option>
+		<Option id="forceRefineOnFeeds" name="Force refinement for feeds" arity="ZERO_OR_MANY">
+			<Description>Forces refinements on the specified feeds.</Description>
+			<Functions>
+				<ContextMenu>Feeds()</ContextMenu>
+				<ContextMenu>COMMON_emptyOnChange()</ContextMenu>
+			</Functions>
+		</Option>
+	</OptionsGroup>
+
+	<DefaultValues>
+		<DefaultValue name="iterMode">flat</DefaultValue>
+		<DefaultValue name="displayTitle">true</DefaultValue>
+		<DefaultValue name="displayTotal">true</DefaultValue>
+		<DefaultValue name="totalDescription">Total</DefaultValue>
+		<DefaultValue name="noResultsJspPathHit">/WEB-INF/jsp/commons/noFacets.jsp</DefaultValue>
+		<DefaultValue name="rows">count##Count##false</DefaultValue>
+		<DefaultValue name="rows">count##% Count##true</DefaultValue>
+		<DefaultValue name="rows">score##Score##false</DefaultValue>
+		<DefaultValue name="rows">score##% Score##true</DefaultValue>
+	</DefaultValues>
+</Widget>

@@ -1,0 +1,162 @@
+.mashup {
+	
+	.exa-table {
+		border-collapse:collapse;
+		background-color:#FFF;
+		margin:0;
+		padding:0;
+		width:100%;
+		border:solid 1px #CCC;
+	}
+	
+	.exa-table-td {
+		border:solid 1px #CCC;
+		padding:5px;
+	}
+	
+	.exa-table-th {
+		padding:5px 10px;
+		border:solid 1px #CCC;
+		.linear-gradient(@cblock-bg-alt + #070707, @cblock-bg-alt - #070707);
+		white-space: nowrap;
+	}
+	
+	.exa-table-th-sortable {
+		cursor:pointer;
+	}
+	
+	.exa-table-row-odd {
+		background-color:#FAFAFA;
+	}
+	
+	/* ADVANCED TABLE */
+	
+	.exa-advancedtable {
+		background-color:#FFF;
+		width:100%;
+	}
+	
+	.exa-formatterlegend,
+	.exa-toolbar {
+		background-color:#EAEAEA;
+		text-align:left;
+		border:solid 1px #CCC;
+		border-width:1px 1px 0 1px;
+	}
+	.exa-toolbar .exa-button{
+		border-width:0 1px 0 0;
+	}
+	
+	.exa-toolbar-save-btn {
+		background-image: url('../../images/exa/sprite_settings.png');		
+		background-repeat:no-repeat;
+		display:inline-block;
+		width: 25px;
+		height:25px;
+		vertical-align:middle;
+		background-position:0 0;	
+	}
+	
+	.exa-button-disabled .exa-toolbar-save-btn {
+		background-position:0 bottom;
+	}
+	
+	.exa-toolbar-filter-btn {
+		background-image: url('../../images/exa/sprite_columnfilter.png');		
+		background-repeat:no-repeat;
+		display:inline-block;
+		width: 25px;
+		height:25px;
+		vertical-align:middle;
+		background-position:0 0;
+	}
+	
+	/* Formatter form */
+	.exa-formatterform {
+		padding:10px;
+		text-align:left;
+		border:solid 1px #CCC;
+		border-width:1px 1px 0 1px;
+	}
+	
+	.exa-formatterform-error select,
+	.exa-formatterform-error input {
+		border:1px solid #F85A5A;
+		background-color:#FFF9F9;
+	}
+	
+	.exa-formatterform-block {
+		margin:1px;
+		background-color:#EAF7FF;
+		color:#036DAA;
+		height:30px;
+		line-height:30px;
+		padding:0 10px;
+		float:left;
+	}
+	
+	.exa-formatterform-block span {
+		margin-right:10px;
+	}
+	
+	.exa-formatterform-rule {
+		overflow:hidden;/* force the div to take the height of its children */
+		padding:0 10px 10px 10px;
+		margin-bottom:10px;
+		border-bottom:1px solid #CCC;
+	}
+	
+	.exa-formatterform-conditions-block {
+		position:relative;
+		margin:1px;
+		padding:10px; 
+		overflow:hidden;/* force the div to take the height of its children */
+		background-color:#EAF7FF;
+		color:#036DAA;
+	}
+	
+	.exa-formatterform-condition {
+		overflow:hidden;/* force the div to take the height of its children */
+		margin:2px 0;
+	}
+	.exa-formatterform-condition-block {	
+		background-color:#FFF;
+		color:#777;
+	}
+	.exa-formatterform-condition-block input {	
+		width:65px;
+	}
+	
+	.exa-formatterform-block input,
+	.exa-formatterform-block select {
+		vertical-align:baseline;
+	}
+	
+	.exa-formatterform-remove {
+		background-image:url('../../images/exa/btn_delete.png');
+		width:32px;
+		height:32px;
+		background-position:left top;
+	}
+	.exa-formatterform-remove:hover {
+		background-position:left bottom;
+	}
+	
+	.exa-formatterlegend-element {
+		position:relative;
+		padding-left:30px;
+		line-height:30px;
+	}
+	
+	.exa-formatterlegend {
+		background-color:#F8F8F8;
+	}
+	
+	.exa-formatterlegend-element div {
+		vertical-align: text-bottom;
+		height:16px;
+		width:16px;
+		display:inline-block;
+		margin-right:2px;
+	}
+}

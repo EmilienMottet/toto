@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<Widget name="Logout" group="Security">
+
+	<Preview>
+		<![CDATA[
+			<span style="font-size:30px; color:#DDD;">Logout</span>
+		]]>
+	</Preview>
+
+	<Platforms>
+		<Platform type="web" supported="true" />
+	</Platforms>
+
+	<SupportWidgetsId arity="ZERO" />
+	<SupportFeedsId arity="ZERO" />
+
+	<OptionsGroup name="General">
+		<Option id="template" name="Template path" arity="ONE">
+			<Description>Template to use for the logout link.</Description>
+		</Option>
+	</OptionsGroup>
+
+	<DefaultValues>
+		<DefaultValue name="template">/WEB-INF/jsp/connect/logout.jsp</DefaultValue>
+	</DefaultValues>
+
+</Widget>

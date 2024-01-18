@@ -1,0 +1,96 @@
+<conso:ConsolidationConfigList version="1570546491000" xmlns:bee="exa:exa.bee" xmlns:edit="exa:com.exalead.editor.v10" xmlns:index="exa:com.exalead.mercury.mami.indexing.v10" xmlns:conso="exa:com.exalead.mercury.mami.consolidation.v10" xmlns:config="exa:exa.bee.config">
+    <conso:ConsolidationConfig name="cc0_standard" nbThreads="2" maxNativeMemoryConsumptionThreshold="enabled" maxNativeMemoryConsumptionInMB="2048">
+        <conso:TransformationProcessorConfigList/>
+        <conso:AggregationProcessorConfigList/>
+        <conso:AggregationForwardProcessorConfigList>
+            <conso:AggregationForwardProcessorConfig triggerIndexing="true" pushAPIServer="bg0"/>
+        </conso:AggregationForwardProcessorConfigList>
+        <conso:CommitTriggerConditions>
+            <index:InactivityCommitTriggerCondition numberOfTasks="1" inactivityTimeS="60"/>
+            <index:NumberOfTasksBasedCommitTriggerCondition nbTasks="50000"/>
+        </conso:CommitTriggerConditions>
+        <conso:AggregationTriggerConditions/>
+    </conso:ConsolidationConfig>
+    <conso:ConsolidationConfig name="sxiconsolidation0" nbThreads="2" maxNativeMemoryConsumptionThreshold="enabled" maxNativeMemoryConsumptionInMB="2048">
+        <conso:TransformationProcessorConfigList>
+            <conso:CustomJavaTransformationProcessor classId="com.exalead.drive.consobox.transformation.CADAwareParentChildrenExtractor" pluginName="erconnector-drive-extensions" name="ImmutableXCVExtractor" description="Drive CADAware Parent Children" enabled="true" mime="text/x-jar" perfMonitored="false" context="create/update">
+                <conso:config>
+                    <bee:KeyValue key="Verbose" value="false" type="boolean" description="If checked, processor will trace in debug mode"/>
+                    <bee:KeyValue key="OriginalPointedMetaName" value="originalpointed" type="string" description=""/>
+                    <bee:KeyValue key="DefaultFsIdMetaName" value="label" type="string" description=""/>
+                    <bee:KeyValue key="FsIdMetaName" value="fsid" type="string" description=""/>
+                    <bee:KeyValue key="UseFileNameOnly" value="true" type="boolean" description=""/>
+                    <bee:KeyValue key="RemoveWhiteSpaces" value="false" type="boolean" description=""/>
+                    <bee:KeyValue key="GenerateLinks" value="false" type="boolean" description="If checked, then parent / children will be linked in consolidation box"/>
+                    <bee:KeyValue key="FsChildrenIdsMetaName" value="fschildrenids" type="string" description=""/>
+                    <bee:KeyValue key="OriginalLocationMetaName" value="originallocation" type="string" description=""/>
+                    <bee:KeyValue key="XcvPartName" value="xcvconvert" type="string" description=""/>
+                </conso:config>
+            </conso:CustomJavaTransformationProcessor>
+        </conso:TransformationProcessorConfigList>
+        <conso:AggregationProcessorConfigList>
+            <conso:CustomJavaAggregationProcessor classId="com.exalead.papi.enovia.commons.consolidation.CopyMetasAggregationProcessor" pluginName="erconnector-drive-extensions" name="ImmutableXCVCopyMetas" enabled="true" mime="text/x-jar" perfMonitored="false" context="create/update">
+                <conso:config>
+                    <bee:KeyValue key="Type" value="eno:bo:document"/>
+                    <bee:KeyValue key="MetaMode" value="Include" type="enum:Include,Exclude" description="The copy meta mode option, Include means you only copy metas with names specified, Exclude mean copy all metas except the configured metas"/>
+                    <bee:KeyValue key="Path" value="xcvconvert"/>
+                    <bee:KeyValue key="SkipIfExists" value="true" type="boolean" description="If checked the meta will not be overwritten on processed document"/>
+                    <bee:KeyValue key="IncludeParts" value="false" type="boolean" description="If checked parts are aggregated"/>
+                    <bee:KeyValue key="MetaNames">
+                        <bee:KeyValue key="0" value="fsid" type="string"/>
+                        <bee:KeyValue key="1" value="fschildrenids" type="string"/>
+                        <bee:KeyValue key="2" value="originallocation" type="string"/>
+                        <bee:KeyValue key="3" value="originalpointed" type="string"/>
+                    </bee:KeyValue>
+                </conso:config>
+            </conso:CustomJavaAggregationProcessor>
+            <conso:CustomJavaAggregationProcessor classId="com.exalead.papi.enovia.commons.consolidation.CopyMetasAggregationProcessor" pluginName="erconnector-drive-extensions" name="ImmutableXCVCopyMetas2" enabled="true" mime="text/x-jar" perfMonitored="false" context="create/update">
+                <conso:config>
+                    <bee:KeyValue key="Type" value="eno:bo:DriveFile"/>
+                    <bee:KeyValue key="MetaMode" value="Include" type="enum:Include,Exclude" description="The copy meta mode option, Include means you only copy metas with names specified, Exclude mean copy all metas except the configured metas"/>
+                    <bee:KeyValue key="Path" value="xcvconvert"/>
+                    <bee:KeyValue key="SkipIfExists" value="true" type="boolean" description="If checked the meta will not be overwritten on processed document"/>
+                    <bee:KeyValue key="IncludeParts" value="false" type="boolean" description="If checked parts are aggregated"/>
+                    <bee:KeyValue key="MetaNames">
+                        <bee:KeyValue key="0" value="fsid" type="string"/>
+                        <bee:KeyValue key="1" value="fschildrenids" type="string"/>
+                        <bee:KeyValue key="2" value="originallocation" type="string"/>
+                        <bee:KeyValue key="3" value="originalpointed" type="string"/>
+                    </bee:KeyValue>
+                </conso:config>
+            </conso:CustomJavaAggregationProcessor>
+            <conso:CustomJavaAggregationProcessor classId="com.exalead.papi.enovia.commons.consolidation.CalculatePathAggregationProcessor" name="ImmutableGetFolderPath" description="Get path" enabled="true" mime="text/x-jar" perfMonitored="false" context="create/update">
+                <conso:config>
+                    <bee:KeyValue key="Separator" value="/" type="string" description=""/>
+                    <bee:KeyValue key="GraphPath" value="(-eno:from[eno:co:Drive Content].eno:to[eno:bo:DriveFolder])*"/>
+                    <bee:KeyValue key="TargetMeta" value="drivefolderpath"/>
+                    <bee:KeyValue key="LowerCase" value="true" type="boolean" description=""/>
+                    <bee:KeyValue key="Verbose" value="false" type="boolean" description=""/>
+                    <bee:KeyValue key="Types">
+                        <bee:KeyValue key="0" value="eno:bo:DriveFile" type="string"/>
+                        <bee:KeyValue key="1" value="eno:bo:Document" type="string"/>
+                    </bee:KeyValue>
+                    <bee:KeyValue key="Metas" description="">
+                        <bee:KeyValue key="0">
+                            <bee:KeyValue key="Type" value="eno:bo:DriveFolder" type="string" description=""/>
+                            <bee:KeyValue key="MetaName" value="label" type="string" description=""/>
+                        </bee:KeyValue>
+                    </bee:KeyValue>
+                </conso:config>
+            </conso:CustomJavaAggregationProcessor>
+        </conso:AggregationProcessorConfigList>
+        <conso:AggregationForwardProcessorConfigList>
+            <conso:AggregationForwardProcessorConfig triggerIndexing="true" pushAPIServer="sxibg0"/>
+        </conso:AggregationForwardProcessorConfigList>
+        <conso:CommitTriggerConditions>
+            <index:InactivityCommitTriggerCondition numberOfTasks="1" inactivityTimeS="30"/>
+            <index:NumberOfTasksBasedCommitTriggerCondition nbTasks="50000"/>
+            <index:SizeBasedCommitTriggerCondition maxSizeMB="2048"/>
+            <index:PeriodicCommitTriggerCondition delayS="300"/>
+        </conso:CommitTriggerConditions>
+        <conso:AggregationTriggerConditions>
+            <index:PeriodicCommitTriggerCondition delayS="30"/>
+            <index:NumberOfTasksBasedCommitTriggerCondition nbTasks="50000"/>
+        </conso:AggregationTriggerConditions>
+    </conso:ConsolidationConfig>
+</conso:ConsolidationConfigList>

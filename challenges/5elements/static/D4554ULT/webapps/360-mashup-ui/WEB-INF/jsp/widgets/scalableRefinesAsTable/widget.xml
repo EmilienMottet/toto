@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<Widget name="Data Table (Huge Datasets)" group="Tables" premium="true">
+
+	<Description>This type of table displays N columns showing facet aggregation functions (these are defined in the Search Logic) and pagination possibilities to define the number of items displayed per page.</Description>
+
+	<Preview>
+		<![CDATA[
+			<img src="/resources/widgets/scalableRefinesAsTable/images/preview.png" alt="Data Table" />
+		]]>
+	</Preview>
+
+	<Includes>
+		<Include type="css" path="css/style.less" />
+		<Include type="js" path="js/jquery.dataTables.js" />
+		<Include type="js" path="js/jquery.dataTables.init.js" />
+	</Includes>
+
+	<SupportWidgetsId arity="ZERO" />
+	<SupportFeedsId arity="MANY" />
+	<SupportI18N supported="true" />
+
+	<OptionsGroup name="General">
+		<Option id="title" name="Widget Title" isEvaluated="true">
+			<Description>Widget title. If blank, no title is displayed.</Description>
+		</Option>
+		<Option id="facetPageName" name="Destination page on click" isUrlEncoded="true" isEvaluated="true">
+			<Description>Indicates the URL that must be accessed for a refinement option. If blank, you stay on the same page.</Description>
+			<Functions>
+				<ContextMenu>Pages()</ContextMenu>
+			</Functions>
+		</Option>
+		<Option id="facetName" name="Facet name" arity="ONE">
+			<Description>Specifies the facet to display in the row headers.</Description>			
+			<Functions>
+				<ContextMenu>COMMON_emptyOnChange()</ContextMenu>
+				<ContextMenu>NormalFacets()</ContextMenu>
+			</Functions>
+		</Option>
+		<OptionComposite id="sortMode" name="Sort categories by" arity="ONE" glue="##">
+			<Description>Sorts the categories using the selected method.</Description>
+			<Option id="mode" name="Mode">
+				<Functions>
+					<ContextMenu>COMMON_add("Default sort", ['description'])</ContextMenu>
+					<ContextMenu>Aggregations('facetName')</ContextMenu>
+					<ContextMenu>COMMON_emptyOnChange()</ContextMenu>
+				</Functions>
+			</Option>
+			<Option id="order" name="Order">
+				<Values>
+					<Value>asc</Value>
+					<Value>desc</Value>
+				</Values>
+			</Option>
+		</OptionComposite>
+		<Option id="iterMode" name="Iteration mode" arity="ONE">
+			<Description>
+				<![CDATA[
+					Determines what data is displayed:
+					<ul>
+						<li>'all' visits the first child of each node before processing its siblings,</li>
+						<li>'leaves' iterates recursively, returning the end nodes,</li>
+						<li>'flat' returns only the first level.</li>
+					</ul>
+				]]>
+			</Description>
+			<Values>
+				<Value>flat</Value>
+				<Value>leaves</Value>
+				<Value>all</Value>
+			</Values>
+		</Option>
+		<Option id="itemCountPerPage" name="Number of items per page" arity="ONE">
+			<Description>
+				Specifies the number of items to be displayed per page. 
+			</Description>
+			<Functions>
+				<Check>isInteger</Check>
+			</Functions>
+		</Option>
+		<Option id="clientSideFilter" name="User filter" arity="ONE">
+			<Description>
+				Allows the user to filter the content of the table dynamically.
+			</Description>
+			<Values>
+				<Value>false</Value>
+				<Value>true</Value>
+			</Values>
+		</Option>
+	</OptionsGroup>
+
+	<OptionsGroup name="Column">
+		<Option id="nameDescription" name="Facet column title">
+			<Description>Name of the column containing facet titles.</Description>
+			<Functions>
+				<ContextMenu>COMMON_getI18N('${', '}')</ContextMenu>
+			</Functions>
+		</Option>
+		<Option id="totalDescription" name="Total column title">
+			<Description>Name of the column containing facet totals.</Description>
+			<Functions>
+				<ContextMenu>COMMON_getI18N('${', '}')</ContextMenu>
+			</Functions>
+		</Option>
+		<OptionComposite id="columns" name="Columns" arity="MANY">
+			<Option id="data" name="Value">
+				<Functions>
+					<ContextMenu>Aggregations('facetName')</ContextMenu>
+					<ContextMenu>COMMON_emptyOnChange()</ContextMenu>
+				</Functions>
+			</Option>
+			<Option id="title" name="Title">
+				<Functions>
+					<ContextMenu>COMMON_getI18N('${', '}')</ContextMenu>
+				</Functions>
+			</Option>
+			<Option id="percentage" name="Display percentage">
+				<Description>Displays the value as a percentage.</Description>
+				<Values>
+					<Value>false</Value>
+					<Value>true</Value>
+				</Values>
+			</Option>
+		</OptionComposite>
+	</OptionsGroup>
+
+	<OptionsGroup name="Row">
+		<Option id="displayTitle" name="Display title row" isEvaluated="true">
+			<Description>Enables the display of the "title" row.</Description>
+			<Values>
+				<Value>false</Value>
+				<Value>true</Value>
+			</Values>
+		</Option>
+		<Option id="displayTotal" name="Display total row" isEvaluated="true">
+			<Description>Enables the display of the "total" row.</Description>
+			<Values>
+				<Value>false</Value>
+				<Value>true</Value>
+			</Values>
+		</Option>
+	</OptionsGroup>
+
+	<OptionsGroup name="Advanced">
+		<Option id="noResultsJspPathHit" name="JSP path to use if no results" arity="ONE">
+			<Description>If there are no results, the widget is either hidden using a trigger, or a message is displayed using the content of a JSP file.</Description>
+			<Functions>
+				<Check>isJspPath</Check>
+			</Functions>
+		</Option>
+		<Option id="forceRefineOnFeeds" name="Force refinement for feeds" arity="ZERO_OR_MANY">
+			<Description>Forces refinements on the specified feeds.</Description>
+			<Functions>
+				<ContextMenu>Feeds()</ContextMenu>
+				<ContextMenu>COMMON_emptyOnChange()</ContextMenu>
+			</Functions>
+		</Option>
+	</OptionsGroup>
+
+	<DefaultValues>
+		<DefaultValue name="sortMode">description##asc</DefaultValue>
+		<DefaultValue name="iterMode">flat</DefaultValue>
+		<DefaultValue name="itemCountPerPage">20</DefaultValue>
+		<DefaultValue name="clientSideFilter">false</DefaultValue>
+		<DefaultValue name="nameDescription">Description</DefaultValue>
+		<DefaultValue name="totalDescription">Total</DefaultValue>
+		<DefaultValue name="columns">count##Count##false</DefaultValue>
+		<DefaultValue name="columns">count##% Count##true</DefaultValue>
+		<DefaultValue name="columns">score##Score##false</DefaultValue>
+		<DefaultValue name="columns">score##% Score##true</DefaultValue>
+		<DefaultValue name="displayTitle">true</DefaultValue>
+		<DefaultValue name="displayTotal">true</DefaultValue>
+		<DefaultValue name="noResultsJspPathHit">/WEB-INF/jsp/commons/noFacets.jsp</DefaultValue>
+	</DefaultValues>
+</Widget>

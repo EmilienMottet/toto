@@ -1,0 +1,400 @@
+[2019/10/08-16:55:09.102] [info] [main] [exa.log]	Setting master level info
+**********************************************************
+[2019/10/08-16:55:09.107] [info] [main] [bee]	Process 35007 starting on mpllnx4032.mpl.michelin.com (mpllnx4032.mpl.michelin.com/10.216.104.82) as user dpmugbl0 with version V6R2019x.93173
+[2019/10/08-16:55:09.107] [info] [main] [bee]	 [args: java --key processName index6-sxibg0-sxii0 --key hostname mpllnx4032.mpl.michelin.com --key installName cvdefault --key id -1319852298 --ppid 34954 --configuration config:///version.xml --configuration config:///mercury.xml --key logToRunDir true ; directory: /busapps/dpmu/gbl0/3DSpaceIndex/linux_a64/cv/data/run/index6-sxibg0-sxii0 ; architecture: amd64-linux ; kernel: "Linux version 3.10.0-1062.1.2.el7.x86_64 (mockbuild@x86-vm-27.build.eng.bos.redhat.com) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-39) (GCC) ) #1 SMP Mon Sep 16 14:19:51 EDT 2019"]
+[2019/10/08-16:55:09.146] [info] [main] [bee]	Loading root config file: config:///version.xml
+[2019/10/08-16:55:09.173] [info] [main] [bee]	Loading root config file: config:///mercury.xml
+Updating logging configuration
+[2019/10/08-16:55:10.412] [info] [main] [exa.log]	Setting master level info
+**********************************************************
+[2019/10/08-16:55:10.412] [info] [main] [bee.directory]	Directory updated, reloading
+[2019/10/08-16:55:10.413] [info] [main] [directory]	Loading directory
+[2019/10/08-16:55:10.680] [info] [main] [bee.directory]	Directory loaded
+[2019/10/08-16:55:10.680] [info] [main] [bee]	Configuration loaded, starting runtime
+[2019/10/08-16:55:10.680] [info] [main] [directory]	Loading directory
+[2019/10/08-16:55:10.736] [info] [main] [bee.directory]	Directory loaded
+[2019/10/08-16:55:10.839] [info] [main] [org.eclipse.jetty.util.log]	Logging initialized @3724ms to org.eclipse.jetty.util.log.Slf4jLog
+[2019/10/08-16:55:10.859] [info] [main] [bee.directory]	Configuring server 'default'
+[2019/10/08-16:55:11.274] [info] [main] [bee.directory]	Mounting servlet 'com.exalead.cloudview.indexing.index.IndexClientService' on '/index6/sxibg0/0/sxii0/*'
+[2019/10/08-16:55:11.305] [info] [main] [bee.directory]	Mounting servlet 'com.exalead.bee.JavaRuntimeServlet' on '/java/*'
+[2019/10/08-16:55:11.305] [info] [main] [bee.directory]	Mounting servlet 'com.exalead.bee.services.ProfilingServlet' on '/profiler/*'
+[2019/10/08-16:55:11.305] [info] [main] [bee.directory]	Mounting servlet 'com.exalead.bee.services.IsAliveServlet' on '/isAlive/*'
+[2019/10/08-16:55:11.305] [info] [main] [bee.directory]	Mounting Bee servlet 'com.exalead.bee.services.Log4EService' on '/log4e/mpllnx4032.mpl.michelin.com-cvdefault/index6-sxibg0-sxii0/*'
+[2019/10/08-16:55:11.359] [info] [main] [bee.directory]	Mounting Bee servlet 'com.exalead.bee.services.BeegistryUpdater' on '/beegistry/mpllnx4032.mpl.michelin.com-cvdefault/index6-sxibg0-sxii0/*'
+[2019/10/08-16:55:11.361] [info] [main] [bee.directory]	Configuring homepage
+[2019/10/08-16:55:11.499] [info] [main] [bee.directory]	Starting server 'default': service 'services.index6.sxibg0.0.sxii0'
+[2019/10/08-16:55:11.671] [info] [main] [index.client]	slice 0: inst sxii0: Found indexDir: file:/busapps/dpmu/gbl0/3DSpaceIndex/linux_a64/cv/data/build/index-unit/sxibg0/slots/index/0
+[2019/10/08-16:55:11.671] [info] [main] [index.client]	slice 0: inst sxii0: Found tickAddr: 0.0.0.0:16017
+[2019/10/08-16:55:11.673] [info] [main] [index.client]	slice 0: inst sxii0: Setting assigned builder UUID to 0
+[2019/10/08-16:55:11.701] [info] [Downloader 0/sxii0 16] [replication.client.downloadthread]	slice 0: inst sxii0: Starting download thread
+[2019/10/08-16:55:11.712] [info] [Downloader 0/sxii0 17] [replication.client.downloadthread]	slice 0: inst sxii0: Starting download thread
+[2019/10/08-16:55:11.714] [info] [main] [index.generations]	slice 0: inst sxii0: Starting...
+[2019/10/08-16:55:11.769] [info] [main] [bee.directory]	Starting server 'default': HTTP server on port 16016
+[ShutdownMonitor] Not enabled (port < 0): -1
+[2019/10/08-16:55:11.771] [info] [main] [org.eclipse.jetty.server.Server]	jetty-9.4.10.v20180503; built: 2018-05-03T15:56:21.710Z; git: daa59876e6f384329b122929e70a80934569428c; jvm 1.8.0_152-b16
+[2019/10/08-16:55:11.778] [info] [Initializer 0/sxii0] [index.client]	slice 0: inst sxii0: Telling manager that we're started
+[2019/10/08-16:55:11.916] [info] [main] [org.eclipse.jetty.server.session]	DefaultSessionIdManager workerName=node0
+[2019/10/08-16:55:11.916] [info] [main] [org.eclipse.jetty.server.session]	No SessionScavenger set, using defaults
+[2019/10/08-16:55:11.918] [info] [main] [org.eclipse.jetty.server.session]	node0 Scavenging every 600000ms
+[2019/10/08-16:55:11.975] [info] [Initializer 0/sxii0] [index.client]	slice 0: inst sxii0: failed to signal manager that we started, switching on last generation: Connection refused (Connection refused)
+[2019/10/08-16:55:11.975] [info] [Initializer 0/sxii0] [index.client]	slice 0: inst sxii0: mounting index at generation 0
+[2019/10/08-16:55:11.975] [info] [Initializer 0/sxii0] [index.client]	slice 0: inst sxii0: generation 0, nothing to mount
+[2019/10/08-16:55:11.975] [info] [Initializer 0/sxii0] [index.client]	slice 0: inst sxii0: Starting tick search server
+[2019/10/08-16:55:11.975] [info] [140176705070848] [exa.tick.server]	slice 0: inst sxii0: slice 0: Binding server
+[2019/10/08-16:55:11.975] [info] [140176705070848] [exa.tick.server]	slice 0: inst sxii0: slice 0: Starting processing thread
+[2019/10/08-16:55:11.976] [info] [140176705070848] [exa.tick.server]	slice 0: inst sxii0: slice 0: Starting server
+[2019/10/08-16:55:11.987] [info] [140178204010240] [exa.tick.server]	Running accept
+[2019/10/08-16:55:11.996] [warn] [main] [org.eclipse.jetty.security.SecurityHandler]	ServletContext@o.e.j.s.ServletContextHandler@437da279{/,resource:/exa/bee/net/http2/htdocs,STARTING} has uncovered http methods for path: /
+[2019/10/08-16:55:12.013] [info] [main] [org.eclipse.jetty.server.handler.ContextHandler]	Started o.e.j.s.ServletContextHandler@437da279{/,resource:/exa/bee/net/http2/htdocs,AVAILABLE}
+[2019/10/08-16:55:12.040] [info] [main] [org.eclipse.jetty.server.AbstractConnector]	Started 16016@2f0270b2{HTTP/1.1,[http/1.1]}{0.0.0.0:16016}
+[2019/10/08-16:55:12.041] [info] [main] [org.eclipse.jetty.server.Server]	Started @4927ms
+[2019/10/08-16:55:12.041] [info] [main] [bee]	Runtime is started
+[2019/10/08-16:55:15.241] [info] [Downloader 0/sxii0 16] [replication.client.downloadthread]	slice 0: inst sxii0: Replication manager is unreachable... waiting
+[2019/10/08-16:55:32.881] [info] [268084911@jtp-default-1] [bee.runtime]	Exiting on StopRuntime request
+[2019/10/08-16:55:33.885] [info] [shutdown-29] [bee.directory]	Stopping server 'default': HTTP server
+[2019/10/08-16:55:33.896] [info] [shutdown-29] [org.eclipse.jetty.server.AbstractConnector]	Stopped 16016@2f0270b2{HTTP/1.1,[http/1.1]}{0.0.0.0:16016}
+[2019/10/08-16:55:33.898] [info] [shutdown-29] [org.eclipse.jetty.server.handler.ContextHandler]	Stopped o.e.j.s.ServletContextHandler@437da279{/,resource:/exa/bee/net/http2/htdocs,UNAVAILABLE}
+[2019/10/08-16:55:33.898] [info] [shutdown-29] [org.eclipse.jetty.server.session]	node0 Stopped scavenging
+[2019/10/08-16:55:33.899] [info] [shutdown-29] [bee.directory]	Stopping server 'default': service 'services.index6.sxibg0.0.sxii0'
+[2019/10/08-16:55:33.899] [info] [shutdown-29] [index.client]	slice 0: inst sxii0: Stopping...
+[2019/10/08-16:55:33.899] [info] [shutdown-29] [index.client]	slice 0: inst sxii0: Waiting for initializer thread
+[2019/10/08-16:55:33.899] [info] [shutdown-29] [index.client]	slice 0: inst sxii0: stopping search server
+[2019/10/08-16:55:33.899] [info] [140176675297024] [exa.tick.server]	slice 0: inst sxii0: slice 0: Stopping server
+[2019/10/08-16:55:34.134] [info] [shutdown-29] [index.client]	slice 0: inst sxii0: stopping downloaders
+[2019/10/08-16:55:34.159] [info] [shutdown-29] [index.client]	slice 0: inst sxii0: stopping generation server
+[2019/10/08-16:55:34.159] [info] [shutdown-29] [index.client]	slice 0: inst sxii0: Stopped.
+[2019/10/08-16:55:34.159] [info] [shutdown-29] [bee.directory]	Directory stopped
+[2019/10/08-16:55:34.159] [info] [shutdown-29] [bee]	Runtime stopped
+[2019/10/08-16:55:34.160] [fatal] [shutdown-29] [bee]	Exiting process
+Exiting process now (Queen.java)
+[2019/10/08-16:55:43.557] [info] [main] [exa.log]	Setting master level info
+**********************************************************
+[2019/10/08-16:55:43.563] [info] [main] [bee]	Process 35850 starting on mpllnx4032.mpl.michelin.com (mpllnx4032.mpl.michelin.com/10.216.104.82) as user dpmugbl0 with version V6R2019x.93173
+[2019/10/08-16:55:43.563] [info] [main] [bee]	 [args: java --key processName index6-sxibg0-sxii0 --key hostname mpllnx4032.mpl.michelin.com --key installName cvdefault --key id -1319852298 --ppid 35799 --configuration config:///version.xml --configuration config:///mercury.xml --key logToRunDir true ; directory: /busapps/dpmu/gbl0/3DSpaceIndex/linux_a64/cv/data/run/index6-sxibg0-sxii0 ; architecture: amd64-linux ; kernel: "Linux version 3.10.0-1062.1.2.el7.x86_64 (mockbuild@x86-vm-27.build.eng.bos.redhat.com) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-39) (GCC) ) #1 SMP Mon Sep 16 14:19:51 EDT 2019"]
+[2019/10/08-16:55:43.625] [info] [main] [bee]	Loading root config file: config:///version.xml
+[2019/10/08-16:55:43.658] [info] [main] [bee]	Loading root config file: config:///mercury.xml
+Updating logging configuration
+[2019/10/08-16:55:44.680] [info] [main] [exa.log]	Setting master level info
+**********************************************************
+[2019/10/08-16:55:44.681] [info] [main] [bee.directory]	Directory updated, reloading
+[2019/10/08-16:55:44.682] [info] [main] [directory]	Loading directory
+[2019/10/08-16:55:44.881] [info] [main] [bee.directory]	Directory loaded
+[2019/10/08-16:55:44.881] [info] [main] [bee]	Configuration loaded, starting runtime
+[2019/10/08-16:55:44.881] [info] [main] [directory]	Loading directory
+[2019/10/08-16:55:44.956] [info] [main] [bee.directory]	Directory loaded
+[2019/10/08-16:55:45.050] [info] [main] [org.eclipse.jetty.util.log]	Logging initialized @3314ms to org.eclipse.jetty.util.log.Slf4jLog
+[2019/10/08-16:55:45.060] [info] [main] [bee.directory]	Configuring server 'default'
+[2019/10/08-16:55:45.235] [info] [main] [bee.directory]	Mounting servlet 'com.exalead.cloudview.indexing.index.IndexClientService' on '/index6/sxibg0/0/sxii0/*'
+[2019/10/08-16:55:45.244] [info] [main] [bee.directory]	Mounting servlet 'com.exalead.bee.JavaRuntimeServlet' on '/java/*'
+[2019/10/08-16:55:45.245] [info] [main] [bee.directory]	Mounting servlet 'com.exalead.bee.services.ProfilingServlet' on '/profiler/*'
+[2019/10/08-16:55:45.245] [info] [main] [bee.directory]	Mounting servlet 'com.exalead.bee.services.IsAliveServlet' on '/isAlive/*'
+[2019/10/08-16:55:45.245] [info] [main] [bee.directory]	Mounting Bee servlet 'com.exalead.bee.services.Log4EService' on '/log4e/mpllnx4032.mpl.michelin.com-cvdefault/index6-sxibg0-sxii0/*'
+[2019/10/08-16:55:45.261] [info] [main] [bee.directory]	Mounting Bee servlet 'com.exalead.bee.services.BeegistryUpdater' on '/beegistry/mpllnx4032.mpl.michelin.com-cvdefault/index6-sxibg0-sxii0/*'
+[2019/10/08-16:55:45.262] [info] [main] [bee.directory]	Configuring homepage
+[2019/10/08-16:55:45.340] [info] [main] [bee.directory]	Starting server 'default': service 'services.index6.sxibg0.0.sxii0'
+[2019/10/08-16:55:45.411] [info] [Downloader 0/sxii0 16] [replication.client.downloadthread]	slice 0: inst sxii0: Starting download thread
+[2019/10/08-16:55:45.411] [info] [main] [index.client]	slice 0: inst sxii0: Found indexDir: file:/busapps/dpmu/gbl0/3DSpaceIndex/linux_a64/cv/data/build/index-unit/sxibg0/slots/index/0
+[2019/10/08-16:55:45.411] [info] [main] [index.client]	slice 0: inst sxii0: Found tickAddr: 0.0.0.0:16017
+[2019/10/08-16:55:45.412] [info] [main] [index.client]	slice 0: inst sxii0: Setting assigned builder UUID to 1570546514973
+[2019/10/08-16:55:45.417] [info] [main] [index.generations]	slice 0: inst sxii0: Starting...
+[2019/10/08-16:55:45.422] [info] [Downloader 0/sxii0 17] [replication.client.downloadthread]	slice 0: inst sxii0: Starting download thread
+[2019/10/08-16:55:45.541] [info] [main] [bee.directory]	Starting server 'default': HTTP server on port 16016
+[ShutdownMonitor] Not enabled (port < 0): -1
+[2019/10/08-16:55:45.543] [info] [main] [org.eclipse.jetty.server.Server]	jetty-9.4.10.v20180503; built: 2018-05-03T15:56:21.710Z; git: daa59876e6f384329b122929e70a80934569428c; jvm 1.8.0_152-b16
+[2019/10/08-16:55:45.612] [info] [Initializer 0/sxii0] [index.client]	slice 0: inst sxii0: Telling manager that we're started
+[2019/10/08-16:55:45.841] [info] [main] [org.eclipse.jetty.server.session]	DefaultSessionIdManager workerName=node0
+[2019/10/08-16:55:45.841] [info] [main] [org.eclipse.jetty.server.session]	No SessionScavenger set, using defaults
+[2019/10/08-16:55:45.843] [info] [main] [org.eclipse.jetty.server.session]	node0 Scavenging every 660000ms
+[2019/10/08-16:55:45.930] [info] [Initializer 0/sxii0] [index.client]	slice 0: inst sxii0: failed to signal manager that we started, switching on last generation: Connection refused (Connection refused)
+[2019/10/08-16:55:45.931] [info] [Initializer 0/sxii0] [index.client]	slice 0: inst sxii0: mounting index at generation 0
+[2019/10/08-16:55:45.931] [info] [Initializer 0/sxii0] [index.client]	slice 0: inst sxii0: generation 0, nothing to mount
+[2019/10/08-16:55:45.931] [info] [Initializer 0/sxii0] [index.client]	slice 0: inst sxii0: Starting tick search server
+[2019/10/08-16:55:45.931] [info] [140046703589120] [exa.tick.server]	slice 0: inst sxii0: slice 0: Binding server
+[2019/10/08-16:55:45.931] [info] [140046703589120] [exa.tick.server]	slice 0: inst sxii0: slice 0: Starting processing thread
+[2019/10/08-16:55:45.932] [info] [140046703589120] [exa.tick.server]	slice 0: inst sxii0: slice 0: Starting server
+[2019/10/08-16:55:45.950] [info] [140048347907840] [exa.tick.server]	Running accept
+[2019/10/08-16:55:45.960] [warn] [main] [org.eclipse.jetty.security.SecurityHandler]	ServletContext@o.e.j.s.ServletContextHandler@21282ed8{/,resource:/exa/bee/net/http2/htdocs,STARTING} has uncovered http methods for path: /
+[2019/10/08-16:55:45.980] [info] [main] [org.eclipse.jetty.server.handler.ContextHandler]	Started o.e.j.s.ServletContextHandler@21282ed8{/,resource:/exa/bee/net/http2/htdocs,AVAILABLE}
+[2019/10/08-16:55:46.055] [info] [main] [org.eclipse.jetty.server.AbstractConnector]	Started 16016@88ea656{HTTP/1.1,[http/1.1]}{0.0.0.0:16016}
+[2019/10/08-16:55:46.055] [info] [main] [org.eclipse.jetty.server.Server]	Started @4321ms
+[2019/10/08-16:55:46.056] [info] [main] [bee]	Runtime is started
+[2019/10/08-16:55:50.140] [info] [Downloader 0/sxii0 16] [replication.client.downloadthread]	slice 0: inst sxii0: Replication manager is unreachable... waiting
+[2019/10/08-16:56:54.072] [info] [390689829@jtp-default-1] [bee.runtime]	Exiting on StopRuntime request
+[2019/10/08-16:56:54.074] [info] [shutdown-33] [jaxb]	JAXB cache contains :SGLoader@null__exa.bee (creation=374ms, hits=3)
+[2019/10/08-16:56:55.076] [info] [shutdown-33] [bee.directory]	Stopping server 'default': HTTP server
+[2019/10/08-16:56:55.085] [info] [shutdown-33] [org.eclipse.jetty.server.AbstractConnector]	Stopped 16016@88ea656{HTTP/1.1,[http/1.1]}{0.0.0.0:16016}
+[2019/10/08-16:56:55.089] [info] [shutdown-33] [org.eclipse.jetty.server.handler.ContextHandler]	Stopped o.e.j.s.ServletContextHandler@21282ed8{/,resource:/exa/bee/net/http2/htdocs,UNAVAILABLE}
+[2019/10/08-16:56:55.090] [info] [shutdown-33] [org.eclipse.jetty.server.session]	node0 Stopped scavenging
+[2019/10/08-16:56:55.090] [info] [shutdown-33] [bee.directory]	Stopping server 'default': service 'services.index6.sxibg0.0.sxii0'
+[2019/10/08-16:56:55.091] [info] [shutdown-33] [index.client]	slice 0: inst sxii0: Stopping...
+[2019/10/08-16:56:55.091] [info] [shutdown-33] [index.client]	slice 0: inst sxii0: Waiting for initializer thread
+[2019/10/08-16:56:55.091] [info] [shutdown-33] [index.client]	slice 0: inst sxii0: stopping search server
+[2019/10/08-16:56:55.092] [info] [140046132836096] [exa.tick.server]	slice 0: inst sxii0: slice 0: Stopping server
+[2019/10/08-16:56:55.100] [info] [shutdown-33] [index.client]	slice 0: inst sxii0: stopping downloaders
+[2019/10/08-16:56:55.217] [info] [shutdown-33] [index.client]	slice 0: inst sxii0: stopping generation server
+[2019/10/08-16:56:55.217] [info] [shutdown-33] [index.client]	slice 0: inst sxii0: Stopped.
+[2019/10/08-16:56:55.217] [info] [shutdown-33] [bee.directory]	Directory stopped
+[2019/10/08-16:56:55.217] [info] [shutdown-33] [bee]	Runtime stopped
+[2019/10/08-16:56:55.217] [fatal] [shutdown-33] [bee]	Exiting process
+Exiting process now (Queen.java)
+[2019/10/08-16:57:05.037] [info] [main] [exa.log]	Setting master level info
+**********************************************************
+[2019/10/08-16:57:05.041] [info] [main] [bee]	Process 37856 starting on mpllnx4032.mpl.michelin.com (mpllnx4032.mpl.michelin.com/10.216.104.82) as user dpmugbl0 with version V6R2019x.93173
+[2019/10/08-16:57:05.041] [info] [main] [bee]	 [args: java --key processName index6-sxibg0-sxii0 --key hostname mpllnx4032.mpl.michelin.com --key installName cvdefault --key id -1319852298 --ppid 37802 --configuration config:///version.xml --configuration config:///mercury.xml --key logToRunDir true ; directory: /busapps/dpmu/gbl0/3DSpaceIndex/linux_a64/cv/data/run/index6-sxibg0-sxii0 ; architecture: amd64-linux ; kernel: "Linux version 3.10.0-1062.1.2.el7.x86_64 (mockbuild@x86-vm-27.build.eng.bos.redhat.com) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-39) (GCC) ) #1 SMP Mon Sep 16 14:19:51 EDT 2019"]
+[2019/10/08-16:57:05.102] [info] [main] [bee]	Loading root config file: config:///version.xml
+[2019/10/08-16:57:05.159] [info] [main] [bee]	Loading root config file: config:///mercury.xml
+Updating logging configuration
+[2019/10/08-16:57:06.379] [info] [main] [exa.log]	Setting master level info
+**********************************************************
+[2019/10/08-16:57:06.380] [info] [main] [bee.directory]	Directory updated, reloading
+[2019/10/08-16:57:06.381] [info] [main] [directory]	Loading directory
+[2019/10/08-16:57:06.704] [info] [main] [bee.directory]	Directory loaded
+[2019/10/08-16:57:06.704] [info] [main] [bee]	Configuration loaded, starting runtime
+[2019/10/08-16:57:06.704] [info] [main] [directory]	Loading directory
+[2019/10/08-16:57:06.806] [info] [main] [bee.directory]	Directory loaded
+[2019/10/08-16:57:06.882] [info] [main] [org.eclipse.jetty.util.log]	Logging initialized @4336ms to org.eclipse.jetty.util.log.Slf4jLog
+[2019/10/08-16:57:06.886] [info] [main] [bee.directory]	Configuring server 'default'
+[2019/10/08-16:57:07.278] [info] [main] [bee.directory]	Mounting servlet 'com.exalead.cloudview.indexing.index.IndexClientService' on '/index6/sxibg0/0/sxii0/*'
+[2019/10/08-16:57:07.307] [info] [main] [bee.directory]	Mounting servlet 'com.exalead.bee.JavaRuntimeServlet' on '/java/*'
+[2019/10/08-16:57:07.307] [info] [main] [bee.directory]	Mounting servlet 'com.exalead.bee.services.ProfilingServlet' on '/profiler/*'
+[2019/10/08-16:57:07.307] [info] [main] [bee.directory]	Mounting servlet 'com.exalead.bee.services.IsAliveServlet' on '/isAlive/*'
+[2019/10/08-16:57:07.307] [info] [main] [bee.directory]	Mounting Bee servlet 'com.exalead.bee.services.Log4EService' on '/log4e/mpllnx4032.mpl.michelin.com-cvdefault/index6-sxibg0-sxii0/*'
+[2019/10/08-16:57:07.342] [info] [main] [bee.directory]	Mounting Bee servlet 'com.exalead.bee.services.BeegistryUpdater' on '/beegistry/mpllnx4032.mpl.michelin.com-cvdefault/index6-sxibg0-sxii0/*'
+[2019/10/08-16:57:07.347] [info] [main] [bee.directory]	Configuring homepage
+[2019/10/08-16:57:07.470] [info] [main] [bee.directory]	Starting server 'default': service 'services.index6.sxibg0.0.sxii0'
+[2019/10/08-16:57:07.532] [info] [Downloader 0/sxii0 16] [replication.client.downloadthread]	slice 0: inst sxii0: Starting download thread
+[2019/10/08-16:57:07.532] [info] [main] [index.client]	slice 0: inst sxii0: Found indexDir: file:/busapps/dpmu/gbl0/3DSpaceIndex/linux_a64/cv/data/build/index-unit/sxibg0/slots/index/0
+[2019/10/08-16:57:07.532] [info] [main] [index.client]	slice 0: inst sxii0: Found tickAddr: 0.0.0.0:16017
+[2019/10/08-16:57:07.533] [info] [main] [index.client]	slice 0: inst sxii0: Setting assigned builder UUID to 1570546514973
+[2019/10/08-16:57:07.538] [info] [main] [index.generations]	slice 0: inst sxii0: Starting...
+[2019/10/08-16:57:07.542] [info] [Downloader 0/sxii0 17] [replication.client.downloadthread]	slice 0: inst sxii0: Starting download thread
+[2019/10/08-16:57:07.572] [info] [main] [bee.directory]	Starting server 'default': HTTP server on port 16016
+[2019/10/08-16:57:07.574] [info] [Initializer 0/sxii0] [index.client]	slice 0: inst sxii0: Telling manager that we're started
+[ShutdownMonitor] Not enabled (port < 0): -1
+[2019/10/08-16:57:07.574] [info] [main] [org.eclipse.jetty.server.Server]	jetty-9.4.10.v20180503; built: 2018-05-03T15:56:21.710Z; git: daa59876e6f384329b122929e70a80934569428c; jvm 1.8.0_152-b16
+[2019/10/08-16:57:07.595] [info] [main] [org.eclipse.jetty.server.session]	DefaultSessionIdManager workerName=node0
+[2019/10/08-16:57:07.596] [info] [main] [org.eclipse.jetty.server.session]	No SessionScavenger set, using defaults
+[2019/10/08-16:57:07.598] [info] [main] [org.eclipse.jetty.server.session]	node0 Scavenging every 600000ms
+[2019/10/08-16:57:07.627] [warn] [main] [org.eclipse.jetty.security.SecurityHandler]	ServletContext@o.e.j.s.ServletContextHandler@21282ed8{/,resource:/exa/bee/net/http2/htdocs,STARTING} has uncovered http methods for path: /
+[2019/10/08-16:57:07.643] [info] [Initializer 0/sxii0] [index.client]	slice 0: inst sxii0: failed to signal manager that we started, switching on last generation: Connection refused (Connection refused)
+[2019/10/08-16:57:07.644] [info] [Initializer 0/sxii0] [index.client]	slice 0: inst sxii0: mounting index at generation 0
+[2019/10/08-16:57:07.644] [info] [Initializer 0/sxii0] [index.client]	slice 0: inst sxii0: generation 0, nothing to mount
+[2019/10/08-16:57:07.644] [info] [Initializer 0/sxii0] [index.client]	slice 0: inst sxii0: Starting tick search server
+[2019/10/08-16:57:07.644] [info] [main] [org.eclipse.jetty.server.handler.ContextHandler]	Started o.e.j.s.ServletContextHandler@21282ed8{/,resource:/exa/bee/net/http2/htdocs,AVAILABLE}
+[2019/10/08-16:57:07.644] [info] [140403018839808] [exa.tick.server]	slice 0: inst sxii0: slice 0: Binding server
+[2019/10/08-16:57:07.644] [info] [140403018839808] [exa.tick.server]	slice 0: inst sxii0: slice 0: Starting processing thread
+[2019/10/08-16:57:07.645] [info] [140403018839808] [exa.tick.server]	slice 0: inst sxii0: slice 0: Starting server
+[2019/10/08-16:57:07.651] [info] [140404158899968] [exa.tick.server]	Running accept
+[2019/10/08-16:57:07.666] [info] [main] [org.eclipse.jetty.server.AbstractConnector]	Started 16016@5b1669c0{HTTP/1.1,[http/1.1]}{0.0.0.0:16016}
+[2019/10/08-16:57:07.667] [info] [main] [org.eclipse.jetty.server.Server]	Started @5121ms
+[2019/10/08-16:57:07.667] [info] [main] [bee]	Runtime is started
+[2019/10/08-16:57:09.631] [info] [Downloader 0/sxii0 16] [replication.client.downloadthread]	slice 0: inst sxii0: Replication manager is unreachable... waiting
+[2019/10/08-16:57:26.164] [info] [390689829@jtp-default-1] [bee.runtime]	Exiting on StopRuntime request
+[2019/10/08-16:57:27.173] [info] [shutdown-29] [bee.directory]	Stopping server 'default': HTTP server
+[2019/10/08-16:57:27.207] [info] [shutdown-29] [org.eclipse.jetty.server.AbstractConnector]	Stopped 16016@5b1669c0{HTTP/1.1,[http/1.1]}{0.0.0.0:16016}
+[2019/10/08-16:57:27.209] [info] [shutdown-29] [org.eclipse.jetty.server.handler.ContextHandler]	Stopped o.e.j.s.ServletContextHandler@21282ed8{/,resource:/exa/bee/net/http2/htdocs,UNAVAILABLE}
+[2019/10/08-16:57:27.210] [info] [shutdown-29] [org.eclipse.jetty.server.session]	node0 Stopped scavenging
+[2019/10/08-16:57:27.214] [info] [shutdown-29] [bee.directory]	Stopping server 'default': service 'services.index6.sxibg0.0.sxii0'
+[2019/10/08-16:57:27.221] [info] [shutdown-29] [index.client]	slice 0: inst sxii0: Stopping...
+[2019/10/08-16:57:27.221] [info] [shutdown-29] [index.client]	slice 0: inst sxii0: Waiting for initializer thread
+[2019/10/08-16:57:27.221] [info] [shutdown-29] [index.client]	slice 0: inst sxii0: stopping search server
+[2019/10/08-16:57:27.221] [info] [140402549204736] [exa.tick.server]	slice 0: inst sxii0: slice 0: Stopping server
+[2019/10/08-16:57:27.269] [info] [shutdown-29] [index.client]	slice 0: inst sxii0: stopping downloaders
+[2019/10/08-16:57:27.429] [info] [shutdown-29] [index.client]	slice 0: inst sxii0: stopping generation server
+[2019/10/08-16:57:27.430] [info] [shutdown-29] [index.client]	slice 0: inst sxii0: Stopped.
+[2019/10/08-16:57:27.430] [info] [shutdown-29] [bee.directory]	Directory stopped
+[2019/10/08-16:57:27.430] [info] [shutdown-29] [bee]	Runtime stopped
+[2019/10/08-16:57:27.430] [fatal] [shutdown-29] [bee]	Exiting process
+Exiting process now (Queen.java)
+[2019/10/08-16:58:08.198] [info] [main] [exa.log]	Setting master level info
+**********************************************************
+[2019/10/08-16:58:08.258] [info] [main] [bee]	Process 39888 starting on mpllnx4032.mpl.michelin.com (mpllnx4032.mpl.michelin.com/10.216.104.82) as user dpmugbl0 with version V6R2019x.93173
+[2019/10/08-16:58:08.258] [info] [main] [bee]	 [args: java --key processName index6-sxibg0-sxii0 --key hostname mpllnx4032.mpl.michelin.com --key installName cvdefault --key id -1319852298 --ppid 39847 --configuration config:///version.xml --configuration config:///mercury.xml --key logToRunDir true ; directory: /busapps/dpmu/gbl0/3DSpaceIndex/linux_a64/cv/data/run/index6-sxibg0-sxii0 ; architecture: amd64-linux ; kernel: "Linux version 3.10.0-1062.1.2.el7.x86_64 (mockbuild@x86-vm-27.build.eng.bos.redhat.com) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-39) (GCC) ) #1 SMP Mon Sep 16 14:19:51 EDT 2019"]
+[2019/10/08-16:58:08.273] [info] [main] [bee]	Loading root config file: config:///version.xml
+[2019/10/08-16:58:08.322] [info] [main] [bee]	Loading root config file: config:///mercury.xml
+Updating logging configuration
+[2019/10/08-16:58:09.618] [info] [main] [exa.log]	Setting master level info
+**********************************************************
+[2019/10/08-16:58:09.619] [info] [main] [bee.directory]	Directory updated, reloading
+[2019/10/08-16:58:09.620] [info] [main] [directory]	Loading directory
+[2019/10/08-16:58:09.964] [info] [main] [bee.directory]	Directory loaded
+[2019/10/08-16:58:09.964] [info] [main] [bee]	Configuration loaded, starting runtime
+[2019/10/08-16:58:09.964] [info] [main] [directory]	Loading directory
+[2019/10/08-16:58:09.991] [info] [main] [bee.directory]	Directory loaded
+[2019/10/08-16:58:10.136] [info] [main] [org.eclipse.jetty.util.log]	Logging initialized @3503ms to org.eclipse.jetty.util.log.Slf4jLog
+[2019/10/08-16:58:10.142] [info] [main] [bee.directory]	Configuring server 'default'
+[2019/10/08-16:58:10.547] [info] [main] [bee.directory]	Mounting servlet 'com.exalead.cloudview.indexing.index.IndexClientService' on '/index6/sxibg0/0/sxii0/*'
+[2019/10/08-16:58:10.552] [info] [main] [bee.directory]	Mounting servlet 'com.exalead.bee.JavaRuntimeServlet' on '/java/*'
+[2019/10/08-16:58:10.552] [info] [main] [bee.directory]	Mounting servlet 'com.exalead.bee.services.ProfilingServlet' on '/profiler/*'
+[2019/10/08-16:58:10.552] [info] [main] [bee.directory]	Mounting servlet 'com.exalead.bee.services.IsAliveServlet' on '/isAlive/*'
+[2019/10/08-16:58:10.552] [info] [main] [bee.directory]	Mounting Bee servlet 'com.exalead.bee.services.Log4EService' on '/log4e/mpllnx4032.mpl.michelin.com-cvdefault/index6-sxibg0-sxii0/*'
+[2019/10/08-16:58:10.621] [info] [main] [bee.directory]	Mounting Bee servlet 'com.exalead.bee.services.BeegistryUpdater' on '/beegistry/mpllnx4032.mpl.michelin.com-cvdefault/index6-sxibg0-sxii0/*'
+[2019/10/08-16:58:10.622] [info] [main] [bee.directory]	Configuring homepage
+[2019/10/08-16:58:10.897] [info] [main] [bee.directory]	Starting server 'default': service 'services.index6.sxibg0.0.sxii0'
+[2019/10/08-16:58:11.094] [info] [Downloader 0/sxii0 16] [replication.client.downloadthread]	slice 0: inst sxii0: Starting download thread
+[2019/10/08-16:58:11.098] [info] [main] [index.client]	slice 0: inst sxii0: Found indexDir: file:/busapps/dpmu/gbl0/3DSpaceIndex/linux_a64/cv/data/build/index-unit/sxibg0/slots/index/0
+[2019/10/08-16:58:11.098] [info] [main] [index.client]	slice 0: inst sxii0: Found tickAddr: 0.0.0.0:16017
+[2019/10/08-16:58:11.100] [info] [main] [index.client]	slice 0: inst sxii0: Setting assigned builder UUID to 1570546514973
+[2019/10/08-16:58:11.104] [info] [main] [index.generations]	slice 0: inst sxii0: Starting...
+[2019/10/08-16:58:11.131] [info] [Downloader 0/sxii0 17] [replication.client.downloadthread]	slice 0: inst sxii0: Starting download thread
+[2019/10/08-16:58:11.182] [info] [main] [bee.directory]	Starting server 'default': HTTP server on port 16016
+[ShutdownMonitor] Not enabled (port < 0): -1
+[2019/10/08-16:58:11.185] [info] [main] [org.eclipse.jetty.server.Server]	jetty-9.4.10.v20180503; built: 2018-05-03T15:56:21.710Z; git: daa59876e6f384329b122929e70a80934569428c; jvm 1.8.0_152-b16
+[2019/10/08-16:58:11.191] [info] [Initializer 0/sxii0] [index.client]	slice 0: inst sxii0: Telling manager that we're started
+[2019/10/08-16:58:11.312] [info] [main] [org.eclipse.jetty.server.session]	DefaultSessionIdManager workerName=node0
+[2019/10/08-16:58:11.313] [info] [main] [org.eclipse.jetty.server.session]	No SessionScavenger set, using defaults
+[2019/10/08-16:58:11.314] [info] [main] [org.eclipse.jetty.server.session]	node0 Scavenging every 600000ms
+[2019/10/08-16:58:11.342] [warn] [main] [org.eclipse.jetty.security.SecurityHandler]	ServletContext@o.e.j.s.ServletContextHandler@21282ed8{/,resource:/exa/bee/net/http2/htdocs,STARTING} has uncovered http methods for path: /
+[2019/10/08-16:58:11.369] [info] [main] [org.eclipse.jetty.server.handler.ContextHandler]	Started o.e.j.s.ServletContextHandler@21282ed8{/,resource:/exa/bee/net/http2/htdocs,AVAILABLE}
+[2019/10/08-16:58:11.374] [info] [Initializer 0/sxii0] [index.client]	slice 0: inst sxii0: failed to signal manager that we started, switching on last generation: Connection refused (Connection refused)
+[2019/10/08-16:58:11.374] [info] [Initializer 0/sxii0] [index.client]	slice 0: inst sxii0: mounting index at generation 0
+[2019/10/08-16:58:11.374] [info] [Initializer 0/sxii0] [index.client]	slice 0: inst sxii0: generation 0, nothing to mount
+[2019/10/08-16:58:11.374] [info] [Initializer 0/sxii0] [index.client]	slice 0: inst sxii0: Starting tick search server
+[2019/10/08-16:58:11.375] [info] [140238572803840] [exa.tick.server]	slice 0: inst sxii0: slice 0: Binding server
+[2019/10/08-16:58:11.375] [info] [140238572803840] [exa.tick.server]	slice 0: inst sxii0: slice 0: Starting processing thread
+[2019/10/08-16:58:11.375] [info] [140238572803840] [exa.tick.server]	slice 0: inst sxii0: slice 0: Starting server
+[2019/10/08-16:58:11.380] [info] [140239809648384] [exa.tick.server]	Running accept
+[2019/10/08-16:58:11.385] [info] [main] [org.eclipse.jetty.server.AbstractConnector]	Started 16016@5b1669c0{HTTP/1.1,[http/1.1]}{0.0.0.0:16016}
+[2019/10/08-16:58:11.385] [info] [main] [org.eclipse.jetty.server.Server]	Started @4753ms
+[2019/10/08-16:58:11.386] [info] [main] [bee]	Runtime is started
+[2019/10/08-16:58:16.719] [info] [Downloader 0/sxii0 16] [replication.client.downloadthread]	slice 0: inst sxii0: Replication manager is unreachable... waiting
+[2019/10/08-16:58:33.795] [info] [390689829@jtp-default-1] [bee.runtime]	Exiting on StopRuntime request
+[2019/10/08-16:58:34.800] [info] [shutdown-29] [bee.directory]	Stopping server 'default': HTTP server
+[2019/10/08-16:58:34.811] [info] [shutdown-29] [org.eclipse.jetty.server.AbstractConnector]	Stopped 16016@5b1669c0{HTTP/1.1,[http/1.1]}{0.0.0.0:16016}
+[2019/10/08-16:58:34.814] [info] [shutdown-29] [org.eclipse.jetty.server.handler.ContextHandler]	Stopped o.e.j.s.ServletContextHandler@21282ed8{/,resource:/exa/bee/net/http2/htdocs,UNAVAILABLE}
+[2019/10/08-16:58:34.814] [info] [shutdown-29] [org.eclipse.jetty.server.session]	node0 Stopped scavenging
+[2019/10/08-16:58:34.815] [info] [shutdown-29] [bee.directory]	Stopping server 'default': service 'services.index6.sxibg0.0.sxii0'
+[2019/10/08-16:58:34.817] [info] [shutdown-29] [index.client]	slice 0: inst sxii0: Stopping...
+[2019/10/08-16:58:34.817] [info] [shutdown-29] [index.client]	slice 0: inst sxii0: Waiting for initializer thread
+[2019/10/08-16:58:34.817] [info] [shutdown-29] [index.client]	slice 0: inst sxii0: stopping search server
+[2019/10/08-16:58:34.817] [info] [140238543030016] [exa.tick.server]	slice 0: inst sxii0: slice 0: Stopping server
+[2019/10/08-16:58:34.996] [info] [shutdown-29] [index.client]	slice 0: inst sxii0: stopping downloaders
+[2019/10/08-16:58:35.061] [info] [shutdown-29] [index.client]	slice 0: inst sxii0: stopping generation server
+[2019/10/08-16:58:35.061] [info] [shutdown-29] [index.client]	slice 0: inst sxii0: Stopped.
+[2019/10/08-16:58:35.061] [info] [shutdown-29] [bee.directory]	Directory stopped
+[2019/10/08-16:58:35.062] [info] [shutdown-29] [bee]	Runtime stopped
+[2019/10/08-16:58:35.062] [fatal] [shutdown-29] [bee]	Exiting process
+Exiting process now (Queen.java)
+[2019/10/08-16:58:53.146] [info] [main] [exa.log]	Setting master level info
+**********************************************************
+[2019/10/08-16:58:53.151] [info] [main] [bee]	Process 41359 starting on mpllnx4032.mpl.michelin.com (mpllnx4032.mpl.michelin.com/10.216.104.82) as user dpmugbl0 with version V6R2019x.93173
+[2019/10/08-16:58:53.151] [info] [main] [bee]	 [args: java --key processName index6-sxibg0-sxii0 --key hostname mpllnx4032.mpl.michelin.com --key installName cvdefault --key id -1319852298 --ppid 41316 --configuration config:///version.xml --configuration config:///mercury.xml --key logToRunDir true ; directory: /busapps/dpmu/gbl0/3DSpaceIndex/linux_a64/cv/data/run/index6-sxibg0-sxii0 ; architecture: amd64-linux ; kernel: "Linux version 3.10.0-1062.1.2.el7.x86_64 (mockbuild@x86-vm-27.build.eng.bos.redhat.com) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-39) (GCC) ) #1 SMP Mon Sep 16 14:19:51 EDT 2019"]
+[2019/10/08-16:58:53.163] [info] [main] [bee]	Loading root config file: config:///version.xml
+[2019/10/08-16:58:53.190] [info] [main] [bee]	Loading root config file: config:///mercury.xml
+Updating logging configuration
+[2019/10/08-16:58:54.410] [info] [main] [exa.log]	Setting master level info
+**********************************************************
+[2019/10/08-16:58:54.410] [info] [main] [bee.directory]	Directory updated, reloading
+[2019/10/08-16:58:54.412] [info] [main] [directory]	Loading directory
+[2019/10/08-16:58:54.733] [info] [main] [bee.directory]	Directory loaded
+[2019/10/08-16:58:54.733] [info] [main] [bee]	Configuration loaded, starting runtime
+[2019/10/08-16:58:54.733] [info] [main] [directory]	Loading directory
+[2019/10/08-16:58:54.776] [info] [main] [bee.directory]	Directory loaded
+[2019/10/08-16:58:54.885] [info] [main] [org.eclipse.jetty.util.log]	Logging initialized @3330ms to org.eclipse.jetty.util.log.Slf4jLog
+[2019/10/08-16:58:54.890] [info] [main] [bee.directory]	Configuring server 'default'
+[2019/10/08-16:58:55.240] [info] [main] [bee.directory]	Mounting servlet 'com.exalead.cloudview.indexing.index.IndexClientService' on '/index6/sxibg0/0/sxii0/*'
+[2019/10/08-16:58:55.246] [info] [main] [bee.directory]	Mounting servlet 'com.exalead.bee.JavaRuntimeServlet' on '/java/*'
+[2019/10/08-16:58:55.246] [info] [main] [bee.directory]	Mounting servlet 'com.exalead.bee.services.ProfilingServlet' on '/profiler/*'
+[2019/10/08-16:58:55.247] [info] [main] [bee.directory]	Mounting servlet 'com.exalead.bee.services.IsAliveServlet' on '/isAlive/*'
+[2019/10/08-16:58:55.247] [info] [main] [bee.directory]	Mounting Bee servlet 'com.exalead.bee.services.Log4EService' on '/log4e/mpllnx4032.mpl.michelin.com-cvdefault/index6-sxibg0-sxii0/*'
+[2019/10/08-16:58:55.363] [info] [main] [bee.directory]	Mounting Bee servlet 'com.exalead.bee.services.BeegistryUpdater' on '/beegistry/mpllnx4032.mpl.michelin.com-cvdefault/index6-sxibg0-sxii0/*'
+[2019/10/08-16:58:55.392] [info] [main] [bee.directory]	Configuring homepage
+[2019/10/08-16:58:55.505] [info] [main] [bee.directory]	Starting server 'default': service 'services.index6.sxibg0.0.sxii0'
+[2019/10/08-16:58:55.685] [info] [Downloader 0/sxii0 16] [replication.client.downloadthread]	slice 0: inst sxii0: Starting download thread
+[2019/10/08-16:58:55.699] [info] [main] [index.client]	slice 0: inst sxii0: Found indexDir: file:/busapps/dpmu/gbl0/3DSpaceIndex/linux_a64/cv/data/build/index-unit/sxibg0/slots/index/0
+[2019/10/08-16:58:55.699] [info] [main] [index.client]	slice 0: inst sxii0: Found tickAddr: 0.0.0.0:16017
+[2019/10/08-16:58:55.702] [info] [main] [index.client]	slice 0: inst sxii0: Setting assigned builder UUID to 1570546514973
+[2019/10/08-16:58:55.709] [info] [main] [index.generations]	slice 0: inst sxii0: Starting...
+[2019/10/08-16:58:55.710] [info] [Downloader 0/sxii0 17] [replication.client.downloadthread]	slice 0: inst sxii0: Starting download thread
+[2019/10/08-16:58:55.841] [info] [main] [bee.directory]	Starting server 'default': HTTP server on port 16016
+[ShutdownMonitor] Not enabled (port < 0): -1
+[2019/10/08-16:58:55.843] [info] [main] [org.eclipse.jetty.server.Server]	jetty-9.4.10.v20180503; built: 2018-05-03T15:56:21.710Z; git: daa59876e6f384329b122929e70a80934569428c; jvm 1.8.0_152-b16
+[2019/10/08-16:58:55.859] [info] [Initializer 0/sxii0] [index.client]	slice 0: inst sxii0: Telling manager that we're started
+[2019/10/08-16:58:55.913] [info] [main] [org.eclipse.jetty.server.session]	DefaultSessionIdManager workerName=node0
+[2019/10/08-16:58:55.913] [info] [main] [org.eclipse.jetty.server.session]	No SessionScavenger set, using defaults
+[2019/10/08-16:58:55.915] [info] [main] [org.eclipse.jetty.server.session]	node0 Scavenging every 660000ms
+[2019/10/08-16:58:56.007] [warn] [main] [org.eclipse.jetty.security.SecurityHandler]	ServletContext@o.e.j.s.ServletContextHandler@21282ed8{/,resource:/exa/bee/net/http2/htdocs,STARTING} has uncovered http methods for path: /
+[2019/10/08-16:58:56.031] [info] [Initializer 0/sxii0] [index.client]	slice 0: inst sxii0: failed to signal manager that we started, switching on last generation: Connection refused (Connection refused)
+[2019/10/08-16:58:56.031] [info] [Initializer 0/sxii0] [index.client]	slice 0: inst sxii0: mounting index at generation 0
+[2019/10/08-16:58:56.031] [info] [Initializer 0/sxii0] [index.client]	slice 0: inst sxii0: generation 0, nothing to mount
+[2019/10/08-16:58:56.031] [info] [Initializer 0/sxii0] [index.client]	slice 0: inst sxii0: Starting tick search server
+[2019/10/08-16:58:56.031] [info] [140393379874560] [exa.tick.server]	slice 0: inst sxii0: slice 0: Binding server
+[2019/10/08-16:58:56.031] [info] [140393379874560] [exa.tick.server]	slice 0: inst sxii0: slice 0: Starting processing thread
+[2019/10/08-16:58:56.031] [info] [140393379874560] [exa.tick.server]	slice 0: inst sxii0: slice 0: Starting server
+[2019/10/08-16:58:56.036] [info] [main] [org.eclipse.jetty.server.handler.ContextHandler]	Started o.e.j.s.ServletContextHandler@21282ed8{/,resource:/exa/bee/net/http2/htdocs,AVAILABLE}
+[2019/10/08-16:58:56.055] [info] [140395233969920] [exa.tick.server]	Running accept
+[2019/10/08-16:58:56.059] [info] [main] [org.eclipse.jetty.server.AbstractConnector]	Started 16016@5b1669c0{HTTP/1.1,[http/1.1]}{0.0.0.0:16016}
+[2019/10/08-16:58:56.059] [info] [main] [org.eclipse.jetty.server.Server]	Started @4506ms
+[2019/10/08-16:58:56.060] [info] [main] [bee]	Runtime is started
+[2019/10/08-16:59:02.733] [info] [Downloader 0/sxii0 16] [replication.client.downloadthread]	slice 0: inst sxii0: Replication manager is unreachable... waiting
+[2019/10/08-16:59:21.623] [info] [390689829@jtp-default-1] [bee.runtime]	Exiting on StopRuntime request
+[2019/10/08-16:59:22.629] [info] [shutdown-29] [bee.directory]	Stopping server 'default': HTTP server
+[2019/10/08-16:59:22.634] [info] [shutdown-29] [org.eclipse.jetty.server.AbstractConnector]	Stopped 16016@5b1669c0{HTTP/1.1,[http/1.1]}{0.0.0.0:16016}
+[2019/10/08-16:59:22.636] [info] [shutdown-29] [org.eclipse.jetty.server.handler.ContextHandler]	Stopped o.e.j.s.ServletContextHandler@21282ed8{/,resource:/exa/bee/net/http2/htdocs,UNAVAILABLE}
+[2019/10/08-16:59:22.636] [info] [shutdown-29] [org.eclipse.jetty.server.session]	node0 Stopped scavenging
+[2019/10/08-16:59:22.737] [info] [shutdown-29] [bee.directory]	Stopping server 'default': service 'services.index6.sxibg0.0.sxii0'
+[2019/10/08-16:59:22.738] [info] [shutdown-29] [index.client]	slice 0: inst sxii0: Stopping...
+[2019/10/08-16:59:22.738] [info] [shutdown-29] [index.client]	slice 0: inst sxii0: Waiting for initializer thread
+[2019/10/08-16:59:22.738] [info] [shutdown-29] [index.client]	slice 0: inst sxii0: stopping search server
+[2019/10/08-16:59:22.738] [info] [140392880129792] [exa.tick.server]	slice 0: inst sxii0: slice 0: Stopping server
+[2019/10/08-16:59:23.133] [info] [shutdown-29] [index.client]	slice 0: inst sxii0: stopping downloaders
+[2019/10/08-16:59:23.152] [info] [shutdown-29] [index.client]	slice 0: inst sxii0: stopping generation server
+[2019/10/08-16:59:23.152] [info] [shutdown-29] [index.client]	slice 0: inst sxii0: Stopped.
+[2019/10/08-16:59:23.152] [info] [shutdown-29] [bee.directory]	Directory stopped
+[2019/10/08-16:59:23.152] [info] [shutdown-29] [bee]	Runtime stopped
+[2019/10/08-16:59:23.152] [fatal] [shutdown-29] [bee]	Exiting process
+Exiting process now (Queen.java)
+[2019/10/08-16:59:37.000] [info] [main] [exa.log]	Setting master level info
+**********************************************************
+[2019/10/08-16:59:37.015] [info] [main] [bee]	Process 42811 starting on mpllnx4032.mpl.michelin.com (mpllnx4032.mpl.michelin.com/10.216.104.82) as user dpmugbl0 with version V6R2019x.93173
+[2019/10/08-16:59:37.015] [info] [main] [bee]	 [args: java --key processName index6-sxibg0-sxii0 --key hostname mpllnx4032.mpl.michelin.com --key installName cvdefault --key id -1319852298 --ppid 42755 --configuration config:///version.xml --configuration config:///mercury.xml --key logToRunDir true ; directory: /busapps/dpmu/gbl0/3DSpaceIndex/linux_a64/cv/data/run/index6-sxibg0-sxii0 ; architecture: amd64-linux ; kernel: "Linux version 3.10.0-1062.1.2.el7.x86_64 (mockbuild@x86-vm-27.build.eng.bos.redhat.com) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-39) (GCC) ) #1 SMP Mon Sep 16 14:19:51 EDT 2019"]
+[2019/10/08-16:59:37.037] [info] [main] [bee]	Loading root config file: config:///version.xml
+[2019/10/08-16:59:37.106] [info] [main] [bee]	Loading root config file: config:///mercury.xml
+Updating logging configuration
+[2019/10/08-16:59:38.682] [info] [main] [exa.log]	Setting master level info
+**********************************************************
+[2019/10/08-16:59:38.683] [info] [main] [bee.directory]	Directory updated, reloading
+[2019/10/08-16:59:38.684] [info] [main] [directory]	Loading directory
+[2019/10/08-16:59:39.045] [info] [main] [bee.directory]	Directory loaded
+[2019/10/08-16:59:39.045] [info] [main] [bee]	Configuration loaded, starting runtime
+[2019/10/08-16:59:39.045] [info] [main] [directory]	Loading directory
+[2019/10/08-16:59:39.138] [info] [main] [bee.directory]	Directory loaded
+[2019/10/08-16:59:39.298] [info] [main] [org.eclipse.jetty.util.log]	Logging initialized @4126ms to org.eclipse.jetty.util.log.Slf4jLog
+[2019/10/08-16:59:39.303] [info] [main] [bee.directory]	Configuring server 'default'
+[2019/10/08-16:59:39.513] [info] [main] [bee.directory]	Mounting servlet 'com.exalead.cloudview.indexing.index.IndexClientService' on '/index6/sxibg0/0/sxii0/*'
+[2019/10/08-16:59:39.519] [info] [main] [bee.directory]	Mounting servlet 'com.exalead.bee.JavaRuntimeServlet' on '/java/*'
+[2019/10/08-16:59:39.519] [info] [main] [bee.directory]	Mounting servlet 'com.exalead.bee.services.ProfilingServlet' on '/profiler/*'
+[2019/10/08-16:59:39.519] [info] [main] [bee.directory]	Mounting servlet 'com.exalead.bee.services.IsAliveServlet' on '/isAlive/*'
+[2019/10/08-16:59:39.520] [info] [main] [bee.directory]	Mounting Bee servlet 'com.exalead.bee.services.Log4EService' on '/log4e/mpllnx4032.mpl.michelin.com-cvdefault/index6-sxibg0-sxii0/*'
+[2019/10/08-16:59:39.536] [info] [main] [bee.directory]	Mounting Bee servlet 'com.exalead.bee.services.BeegistryUpdater' on '/beegistry/mpllnx4032.mpl.michelin.com-cvdefault/index6-sxibg0-sxii0/*'
+[2019/10/08-16:59:39.538] [info] [main] [bee.directory]	Configuring homepage
+[2019/10/08-16:59:39.616] [info] [main] [bee.directory]	Starting server 'default': service 'services.index6.sxibg0.0.sxii0'
+[2019/10/08-16:59:39.729] [info] [Downloader 0/sxii0 16] [replication.client.downloadthread]	slice 0: inst sxii0: Starting download thread
+[2019/10/08-16:59:39.735] [info] [main] [index.client]	slice 0: inst sxii0: Found indexDir: file:/busapps/dpmu/gbl0/3DSpaceIndex/linux_a64/cv/data/build/index-unit/sxibg0/slots/index/0
+[2019/10/08-16:59:39.735] [info] [main] [index.client]	slice 0: inst sxii0: Found tickAddr: 0.0.0.0:16017
+[2019/10/08-16:59:39.737] [info] [main] [index.client]	slice 0: inst sxii0: Setting assigned builder UUID to 1570546514973
+[2019/10/08-16:59:39.741] [info] [main] [index.generations]	slice 0: inst sxii0: Starting...
+[2019/10/08-16:59:39.746] [info] [Downloader 0/sxii0 17] [replication.client.downloadthread]	slice 0: inst sxii0: Starting download thread
+[2019/10/08-16:59:39.779] [info] [main] [bee.directory]	Starting server 'default': HTTP server on port 16016
+[ShutdownMonitor] Not enabled (port < 0): -1
+[2019/10/08-16:59:39.781] [info] [main] [org.eclipse.jetty.server.Server]	jetty-9.4.10.v20180503; built: 2018-05-03T15:56:21.710Z; git: daa59876e6f384329b122929e70a80934569428c; jvm 1.8.0_152-b16
+[2019/10/08-16:59:39.789] [info] [Initializer 0/sxii0] [index.client]	slice 0: inst sxii0: Telling manager that we're started
+[2019/10/08-16:59:39.852] [info] [main] [org.eclipse.jetty.server.session]	DefaultSessionIdManager workerName=node0
+[2019/10/08-16:59:39.853] [info] [main] [org.eclipse.jetty.server.session]	No SessionScavenger set, using defaults
+[2019/10/08-16:59:39.855] [info] [main] [org.eclipse.jetty.server.session]	node0 Scavenging every 660000ms
+[2019/10/08-16:59:39.915] [warn] [main] [org.eclipse.jetty.security.SecurityHandler]	ServletContext@o.e.j.s.ServletContextHandler@21282ed8{/,resource:/exa/bee/net/http2/htdocs,STARTING} has uncovered http methods for path: /
+[2019/10/08-16:59:39.937] [info] [Initializer 0/sxii0] [index.client]	slice 0: inst sxii0: failed to signal manager that we started, switching on last generation: Connection refused (Connection refused)
+[2019/10/08-16:59:39.938] [info] [Initializer 0/sxii0] [index.client]	slice 0: inst sxii0: mounting index at generation 0
+[2019/10/08-16:59:39.938] [info] [Initializer 0/sxii0] [index.client]	slice 0: inst sxii0: generation 0, nothing to mount
+[2019/10/08-16:59:39.938] [info] [Initializer 0/sxii0] [index.client]	slice 0: inst sxii0: Starting tick search server
+[2019/10/08-16:59:39.938] [info] [139993010521856] [exa.tick.server]	slice 0: inst sxii0: slice 0: Binding server
+[2019/10/08-16:59:39.938] [info] [139993010521856] [exa.tick.server]	slice 0: inst sxii0: slice 0: Starting processing thread
+[2019/10/08-16:59:39.938] [info] [139993010521856] [exa.tick.server]	slice 0: inst sxii0: slice 0: Starting server
+[2019/10/08-16:59:39.941] [info] [main] [org.eclipse.jetty.server.handler.ContextHandler]	Started o.e.j.s.ServletContextHandler@21282ed8{/,resource:/exa/bee/net/http2/htdocs,AVAILABLE}
+[2019/10/08-16:59:39.949] [info] [139993386129152] [exa.tick.server]	Running accept
+[2019/10/08-16:59:39.963] [info] [main] [org.eclipse.jetty.server.AbstractConnector]	Started 16016@5b1669c0{HTTP/1.1,[http/1.1]}{0.0.0.0:16016}
+[2019/10/08-16:59:39.963] [info] [main] [org.eclipse.jetty.server.Server]	Started @4792ms
+[2019/10/08-16:59:39.964] [info] [main] [bee]	Runtime is started
+[2019/10/08-16:59:46.517] [info] [Downloader 0/sxii0 16] [replication.client.downloadthread]	slice 0: inst sxii0: Replication manager is unreachable... waiting
+[2019/10/09-00:00:00.045] [info] [390689829@jtp-default-1] [exa.log.rotation]	Rotating standard log
+Log4NG: rotating logs now

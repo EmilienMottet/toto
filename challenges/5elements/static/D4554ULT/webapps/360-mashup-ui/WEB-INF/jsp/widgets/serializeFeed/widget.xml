@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<Widget name="Serialize Feed" group="Miscellaneous">
+
+	<Description>Serializes a ResultFeed in your page.</Description>
+
+	<SupportWidgetsId arity="ZERO" />
+	<SupportFeedsId arity="MANY" />
+
+	<Platforms>
+		<Platform type="web" supported="true" />
+		<Platform type="mobile" supported="true" />
+	</Platforms>
+
+	<DefaultValues>
+		<DefaultValue name="varSerialize">jsonFeeds</DefaultValue>
+		<DefaultValue name="serializeFacets">true</DefaultValue>
+		<DefaultValue name="serializeHits">true</DefaultValue>
+	</DefaultValues>
+
+	<OptionsGroup name="General">
+		<Option id="varSerialize" name="Variable name" arity="ONE">
+			<Description>Specifies the JavaScript variable name that will be used to store the serialized feeds.</Description>
+		</Option>
+		<Option id="serializeFacets" name="Serialize facets" arity="ZERO_OR_ONE">
+			<Values>
+				<Value>false</Value>
+				<Value>true</Value>
+			</Values>
+		</Option>
+		<Option id="serializeHits" name="Serialize hits" arity="ZERO_OR_ONE">
+			<Values>
+				<Value>false</Value>
+				<Value>true</Value>
+			</Values>
+		</Option>
+	</OptionsGroup>
+	<OptionsGroup name="JavaScript">
+		<Option id="jsRules" name="JavaScript" arity="ZERO_OR_ONE">
+			<Functions>
+				<Display>SetType('code', 'js')</Display>
+			</Functions>
+		</Option>
+	</OptionsGroup>
+	<OptionsGroup name="CSS" />
+</Widget>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<Widget name="Language Selector" group="Miscellaneous">
+
+	<Description>Provides the user with the possibility of switching the application language.</Description>
+
+	<Preview>
+		<![CDATA[
+			<img src="/resources/widgets/languageSelector/preview.png" alt="Language Selector" />
+		]]>
+	</Preview>
+
+	<Includes>
+		<Include type="css" path="/resources/css/jquery.select7.css" />
+		<Include type="js" path="/resources/javascript/jquery.select7.js" />
+	</Includes>
+
+	<SupportWidgetsId arity="ZERO" />
+	<SupportFeedsId arity="ZERO" />
+
+	<OptionsGroup name="General">
+		<Option id="languages" name="Languages" arity="MANY">
+			<Description>List of available languages for the Mashup UI.</Description>
+		</Option>
+		<Option id="visibleOptionCount" name="Visible options count" arity="ONE">
+			<Description>Specifies the number of options visible at a time when the select field is opened.</Description>
+			<Functions>
+				<Check>isInteger</Check>
+			</Functions>
+		</Option>
+		<Option id="selectSize" name="Select size" arity="ONE">
+			<Description>Specifies the width of the select field. You must enter an integer.</Description>
+			<Functions>
+				<Check>isInteger</Check>
+			</Functions>
+		</Option>
+	</OptionsGroup>
+
+	<DefaultValues>
+		<DefaultValue name="languages">fr</DefaultValue>
+		<DefaultValue name="languages">en</DefaultValue>
+		<DefaultValue name="visibleOptionCount">5</DefaultValue>
+		<DefaultValue name="selectSize">150</DefaultValue>
+	</DefaultValues>
+</Widget>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<Widget name="Button" group="Form Controls">
+	<Description>Provides an HTML button to submit form information.</Description>
+
+	<Preview>
+		<![CDATA[
+			<img src="/resources/widgets/formButton/img/preview.png" alt="Button Preview" />
+		]]>
+	</Preview>
+
+	<Includes>
+		<Include type="js" path="/resources/javascript/jquery.validate.js" />
+	</Includes>
+
+	<Dependencies>
+		<Widget name="formForm" />
+	</Dependencies>
+
+	<SupportFeedsId arity="ZERO_OR_MANY" />
+
+	<OptionsGroup name="General">
+		<Option id="value" name="Button label" arity="ONE" isEvaluated="true">
+			<Description>Defines the button label.</Description>
+		</Option>
+		<Option id="type" name="Type" arity="ONE">
+			<Description>This attribute specifies the type of control to create.</Description>
+			<Values>
+				<Value>submit</Value>
+				<Value>button</Value>
+				<Value>reset</Value>
+			</Values>
+		</Option>
+		<Option id="inputwidth" name="Width" arity="ONE">
+			<Description>Specifies the width of the button.</Description>
+			<Functions>
+				<Check>isInteger</Check>
+			</Functions>
+		</Option>
+		<Option id="widthFormat" name="width format">
+			<Description>Specifies the width format of the button (pixels or page percentage).</Description>
+			<Values>
+				<Value>px</Value>
+				<Value>%</Value>
+			</Values>
+		</Option>
+		<Option id="onclick" name="onClick" arity="ZERO_OR_ONE">
+			<Description>Specifies the client onclick event.</Description>
+			<Functions>
+				<Display>PARAMETER_doResize({ minHeight: 3 })</Display>
+			</Functions>
+		</Option>
+	</OptionsGroup>
+
+	<DefaultValues>
+		<DefaultValue name="type">submit</DefaultValue>
+		<DefaultValue name="inputwidth">100</DefaultValue>
+		<DefaultValue name="widthFormat">px</DefaultValue>
+	</DefaultValues>
+</Widget>

@@ -1,0 +1,12 @@
+<TRules xmlns="exa:com.exalead.mot.components.transducer">
+  <TRule name="over-indexing" >
+        <MatchAnnotation kind="identifier"/>
+        <Seq>
+                <Annotation kind="NORMALIZE"/>
+      <Iter min="1" max="10">
+                <Noblank/>
+                  <Annotation kind="NORMALIZE"/>
+                </Iter>
+              </Seq>
+    </TRule>
+</TRules>

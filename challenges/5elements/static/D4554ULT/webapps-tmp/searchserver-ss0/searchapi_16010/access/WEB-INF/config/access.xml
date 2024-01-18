@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<AccessDefinition>
+	<ApplicationDefinition>
+		<OptionsGroup name="Reporting">
+			<Description>Before enabling a reporter, make sure it is correctly configured in the 'Administration Console > Reporting' menu.</Description>
+			<Option id="reportingEnabled" name="Enable reporting">
+				<Description>Enables reporting for the Mashup API.</Description>
+				<Values>
+					<Value>false</Value>
+					<Value>true</Value>
+				</Values>
+				<Functions>
+					<Display>ToggleDisplay({ valueToMatch: 'true', showOptions: ['reporterName'] })</Display>
+				</Functions>
+			</Option>
+			<Option id="reporterName" name="Reporter">
+				<Description>Specifies the reporter to use for the Mashup API reporting. Choose the default 'mashup-api-reporting' reporter, unless you want to use a custom reporter. It collects data relative to feeds, subfeeds and triggers execution. This reporter allows you to understand explicitly the feed execution process, with subfeeds and triggers and to identify possible problematic issues.</Description>
+				<Functions>
+					<ContextMenu>Reporters()</ContextMenu>
+					<ContextMenu>emptyOnChange()</ContextMenu>
+				</Functions>
+			</Option>
+		</OptionsGroup>
+
+		<OptionsGroup name="Concurrency policies">
+			<Option id="threadPoolSize" name="Thread pool size" arity="ONE">
+				<Description>Specifies the number of threads for the Mashup API.</Description>
+				<Functions>
+					<Check>isInteger</Check>
+				</Functions>
+			</Option>
+		</OptionsGroup>
+
+		<!-- Synchronized with confgen, not used by the MashupBuilder -->
+		<DefaultValues>
+			<DefaultValue name="reporterName">mashup-api-reporting</DefaultValue>
+		</DefaultValues>
+	</ApplicationDefinition>
+</AccessDefinition>

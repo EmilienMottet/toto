@@ -1,0 +1,1 @@
+[2019-11-04 10:27:03,781] [WARN ] [main] [org.eclipse.jetty.security.SecurityHandler] ServletContext@o.e.j.w.WebAppContext@2f7a7219{/perf-ui,file:///busdata/dpmu/gbl0/data/cv/webapps-tmp/gateway/adminui_16001/perf-ui/,STARTING,@16001}{/busdata/dpmu/gbl0/data/cv/webapps-tmp/gateway/adminui_16001/perf-ui} has uncovered http methods for path: /

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+	<display-name>access</display-name>
+
+	<!-- Boostrap the application -->
+	<listener>
+		<listener-class>com.exalead.access.config.AccessContext</listener-class>
+	</listener>
+
+	<!-- Sets configuration -->
+	<context-param>
+		<param-name>serviceType</param-name>
+		<param-value>access-api</param-value>
+	</context-param>
+
+	<!-- Serve Feeds requests -->
+	<servlet>
+		<servlet-name>feed</servlet-name>
+		<servlet-class>com.exalead.access.service.FeedServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>feed</servlet-name>
+		<url-pattern>/*</url-pattern>
+	</servlet-mapping>
+
+	<!-- Serve Admin requests -->
+	<servlet>
+		<servlet-name>admin</servlet-name>
+		<servlet-class>com.exalead.access.service.AccessAdminServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>admin</servlet-name>
+		<url-pattern>/admin/*</url-pattern>
+	</servlet-mapping>
+</web-app>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Widget xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Explain Query" group="Debug" compositeWidget="false" xsi:noNamespaceSchemaLocation="urn:360:com.exalead.cv360.searchui.definition.v10.widget">
+    <Dependencies/>
+    
+    <Description>Display a graphical representation of Index6 queries. 'debug' must contain 'ast' (or 'all') in feed advanced parameters.</Description>
+    
+    <Includes>
+    	<Include type="css" path="css/style.css" />
+    	<Include type="js" path="javascript/explainquery.js" />
+    	<Include type="js" path="javascript/jit-yc.js" />
+    </Includes>
+    
+    <Platforms>
+        <Platform type="web" supported="true"/>
+    </Platforms>
+    
+  	<Preview/>
+  	
+  	<Keywords>
+		<Keyword>debug</Keyword>
+		<Keyword>ast</Keyword>
+	</Keywords>
+  	  	
+    <SupportFeedsId arity="ONE"/>
+    
+    <SupportI18N supported="false"/>
+    
+    <SupportWidgetsId arity="ZERO"/>
+    
+  	<OptionsGroup name="General">
+		<Option id="title" name="Widget Title" isEvaluated="true">
+			<Description>Widget title. If blank, no name is displayed.</Description>
+		</Option>
+	</OptionsGroup>
+	
+  	<OptionsGroup name="Configuration">
+  	  <Option id="expandedByDefault" name="Expanded by default" arity="ONE">
+        <Description>Defines whether the query is to be explained by default.</Description>
+	    <Values>
+		  <Value>true</Value>
+		  <Value>false</Value>
+	    </Values>
+      </Option>
+      <Option id="displayOptionsArgs" name="Display node arguments" arity="ONE">
+        <Description>Defines whether to display arguments for each node (arguments correspond to node-specific information, e.g. 'word' for #alphanum).</Description>
+	    <Values>
+		  <Value>true</Value>
+		  <Value>false</Value>
+	    </Values>
+      </Option>
+      <Option id="displayOptionsOpts" name="Display node options" arity="ONE">
+        <Description>Defines whether to display options for each node.</Description>
+	    <Values>
+		  <Value>true</Value>
+		  <Value>false</Value>
+	    </Values>
+      </Option>
+      <Option id="displayOptionsContribCounts" name="Display node contributed counts" arity="ONE">
+        <Description>Defines whether to display the number of query-matching dids that match each node.</Description>
+	    <Values>
+		  <Value>true</Value>
+		  <Value>false</Value>
+	    </Values>
+      </Option>
+      <Option id="displayOptionsEstCounts" name="Display node estimated counts" arity="ONE">
+        <Description>Defines whether to display the estimated counts for each node.</Description>
+	    <Values>
+		  <Value>false</Value>
+		  <Value>true</Value>
+	    </Values>
+      </Option>
+      <Option id="displayOptionsLWFromContribution" name="Show match flow" arity="ONE">
+        <Description>If activated, the edge width will reflect the number of results matched by the node.</Description>
+	    <Values>
+		  <Value>true</Value>
+		  <Value>false</Value>
+	    </Values>
+      </Option>
+ 	</OptionsGroup>
+
+    <DefaultValues>
+		<DefaultValue name="title">Query explanation</DefaultValue>
+		<DefaultValue name="expandedByDefault">false</DefaultValue>
+		<DefaultValue name="displayOptionsArgs">true</DefaultValue>
+		<DefaultValue name="displayOptionsPos">true</DefaultValue>
+		<DefaultValue name="displayOptionsOpts">true</DefaultValue>
+		<DefaultValue name="displayOptionsRankings">true</DefaultValue>
+	</DefaultValues>
+</Widget>

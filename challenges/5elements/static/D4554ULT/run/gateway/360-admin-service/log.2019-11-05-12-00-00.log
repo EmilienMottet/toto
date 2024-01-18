@@ -1,0 +1,5 @@
+[2019-11-04 10:27:30,488] [INFO ] [main] [org.eclipse.jetty.annotations.AnnotationConfiguration] Scanning elapsed time=102ms
+[2019-11-04 10:27:30,492] [WARN ] [main] [org.eclipse.jetty.security.SecurityHandler] ServletContext@o.e.j.w.WebAppContext@63716833{/360-admin-service,file:///busdata/dpmu/gbl0/data/cv/webapps-tmp/gateway/gateway_16011/360-admin-service/,STARTING,@16011}{/busdata/dpmu/gbl0/data/cv/webapps-tmp/gateway/gateway_16011/360-admin-service} has uncovered http methods for path: /
+[2019-11-04 10:27:30,533] [INFO ] [main] [com.exalead.cv360.admin.ConfigurationService] Configuration Staging Repository: /busdata/dpmu/gbl0/data/cv/bin/../gct/staging
+[2019-11-04 10:27:31,267] [INFO ] [main] [org.reflections.Reflections] Reflections took 624 ms to scan 14 urls, producing 2 keys and 19 values 
+[2019-11-04 10:27:31,327] [INFO ] [main] [org.eclipse.jetty.server.handler.ContextHandler] Started o.e.j.w.WebAppContext@63716833{/360-admin-service,file:///busdata/dpmu/gbl0/data/cv/webapps-tmp/gateway/gateway_16011/360-admin-service/,AVAILABLE,@16011}{/busdata/dpmu/gbl0/data/cv/webapps-tmp/gateway/gateway_16011/360-admin-service}

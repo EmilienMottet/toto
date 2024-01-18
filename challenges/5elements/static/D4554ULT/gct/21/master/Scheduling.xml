@@ -1,0 +1,14 @@
+<master:SchedulingConfig version="1570546452000" xmlns:bee="exa:exa.bee" xmlns:cdesc="exa:com.exalead.mercury.component.config.descriptor" xmlns:secs="exa:com.exalead.security.sources.common" xmlns:config="exa:exa.bee.config" xmlns:master="exa:com.exalead.mercury.mami.master.v10">
+    <master:JobConfigGroup name="full_compact0">
+        <master:DispatchJobConfig name="launch_full_compact">
+            <bee:DispatchMessage serviceName="/mami/indexing" messageName="fullCompactIndex">
+                <bee:messageContent>
+                    <bee:KeyValue key="buildGroup" value="sxibg0"/>
+                </bee:messageContent>
+            </bee:DispatchMessage>
+        </master:DispatchJobConfig>
+    </master:JobConfigGroup>
+    <master:TriggerConfigGroup name="full_compact0">
+        <master:CronTriggerConfig cronExpression="00 00 00 ? * SUN" name="launch_full_compact" startTime="0" endTime="0" jobGroupName="full_compact0" jobName="launch_full_compact"/>
+    </master:TriggerConfigGroup>
+</master:SchedulingConfig>

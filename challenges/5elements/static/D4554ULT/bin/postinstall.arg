@@ -1,0 +1,6 @@
+%{JAVA_HOME}/bin/java
+-classpath
+%{NG_RECURSIVE_CLASSPATH}
+com.exalead.mercury.confgen.Configurator
+--generators=resource:///setup/ConfigGenerators.xml
+--gateway=http://__LOCAL__:16011

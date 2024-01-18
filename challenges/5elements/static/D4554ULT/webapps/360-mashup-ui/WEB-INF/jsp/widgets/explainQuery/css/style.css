@@ -1,0 +1,102 @@
+div.explainQuery {
+	width:100%;
+}
+
+div.toggleExplain {
+	text-align:center;
+}
+
+.explainQuery .debugqueryastdrawdiv {
+	position:relative;
+    width:100%;
+    height:600px;
+    border: 0px;
+    top:0px;
+    left:0px;
+    overflow:hidden;
+    background-color:#ffffff;
+	padding: 0px;
+  	margin: 0px;
+	cursor: move;
+}
+
+.explainQuery .debugqueryastdrawdiv .astbutton {
+	position:absolute;
+	cursor: pointer;
+	cursor: hand;
+    width:20px;
+    height:20px;
+    z-index:2;
+    overflow:visible;
+	padding: 0px;
+  	margin: 0px;
+  	user-select: none;
+}
+
+.explainQuery .debugqueryastdrawdiv .astbutton span {
+	display: none;
+}
+
+.explainQuery .debugqueryastdrawdiv .astbutton:hover span {
+    display:block;
+    position:absolute;
+    border-radius: 6px;
+    top:0px; 
+    right:25px; 
+    width:100px;
+	padding:3px;
+    border:1px solid #a19871;
+    background-color:#f4e6ab; 
+    color:#0a0a0a;
+    text-align:center;
+}
+
+.explainQuery .debugqueryastdrawdiv .astclosebutton {
+    top:5px;
+    right:5px;
+	background:url('../img/explainQueryClose.png') no-repeat top left;
+}
+
+.explainQuery .debugqueryastdrawdiv .astincdistbutton {
+    top:30px;
+    right:5px;
+	background:url('../img/explainQueryIncDist.png') no-repeat top left;
+}
+
+.explainQuery .debugqueryastdrawdiv .astdecdistbutton {
+    top:55px;
+    right:5px;
+	background:url('../img/explainQueryDecDist.png') no-repeat top left;
+}
+
+.debugqueryastnodeelem {
+  text-indent:0px;
+  font-family:verdana;
+  font-size:10px;
+  border:0px;
+  padding: 0px;
+  margin: 0px;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  background-color:transparent;
+}
+
+table.debugqueryastnodeelem  {
+  border: 1px solid #0a0a0a;
+  border-radius: 6px;
+  background:#c0c0c0;
+}
+
+th.debugqueryastnodeelem {
+  text-align:center;
+}
+
+td.debugqueryastnodeelem {
+  border-top: 1px solid #0a0a0a;
+}
+
+ul.debugqueryastnodeelem {
+  list-style-type: none;
+}

@@ -1,0 +1,415 @@
+[2019/10/15-00:00:00.046] [info] [1704397274@jtp-default-26] [exa.log.rotation]	Rotating additional logs
+[2019/10/15-00:10:00.000] [info] [DefaultQuartzScheduler_Worker-4] [exa.scheduling]	Triggering scheduled generation of static application report job for application 'null'
+[2019/10/15-00:10:00.004] [info] [353337437@jtp-gateway-7722] [reporting.manager]	Generating static application report
+[2019/10/15-00:10:00.005] [info] [1863207185@jtp-default-21] [exa.reporting.sqlite.server]	rotating collection: queries
+[2019/10/15-00:10:00.019] [info] [1863207185@jtp-default-21] [exa.reporting.sqlite.server]	rotating collection: opendocs
+[2019/10/15-00:10:00.029] [info] [pool-1-thread-1] [reporting.manager]	Generating static report for application undefined_appid
+[2019/10/15-00:10:00.035] [info] [984016193@jtp-resourcemanager-5] [resourcemanager]	Add an internal resource undefined_appid in group staticreport_undefined_appid
+[2019/10/15-00:10:00.104] [info] [984016193@jtp-resourcemanager-5] [resourcemanager]	Comitting prepared version of resource: undefined_appid
+[2019/10/15-00:10:00.108] [info] [984016193@jtp-resourcemanager-5] [resourcemanager]	Publishing group staticreport_undefined_appid
+[2019/10/15-00:10:00.108] [info] [984016193@jtp-resourcemanager-5] [resourcemanager]	Building resource undefined_appid
+[2019/10/15-00:10:00.110] [info] [984016193@jtp-resourcemanager-5] [resourcemanager]	Resource undefined_appid (version 6) successfully compiled
+[2019/10/15-00:10:00.110] [info] [984016193@jtp-resourcemanager-5] [resourcemanager]	Will publish to: resourceshare.urls.gateway.gateway -> http://mpllnx4032.mpl.michelin.com:16008/
+[2019/10/15-00:10:00.111] [info] [917845832@jtp-resourceshare-118] [datashare]	share: Started datashare session on staticreport_undefined_appid
+[2019/10/15-00:10:00.112] [info] [984016193@jtp-resourcemanager-5] [resourcemanager]	Publishing undefined_appid...
+[2019/10/15-00:10:00.138] [info] [1449891440@jtp-resourceshare-117] [exa.io.datashare]	share: Switching DataShare to version 7
+[2019/10/15-00:10:00.138] [info] [1449891440@jtp-resourceshare-117] [exa.io.datashare]	share: Garbage collecting datashare version 6
+[2019/10/15-00:10:00.139] [info] [1449891440@jtp-resourceshare-117] [datashare]	share: Committed datashare session
+[2019/10/15-00:10:00.139] [info] [984016193@jtp-resourcemanager-5] [resourcemanager]	staticreport_undefined_appid sucessfully published
+[2019/10/15-00:10:00.144] [info] [pool-1-thread-1] [reporting.manager]	Generating static report for application default
+[2019/10/15-00:10:00.156] [info] [984016193@jtp-resourcemanager-5] [resourcemanager]	Add an internal resource default in group staticreport_default
+[2019/10/15-00:10:00.212] [info] [984016193@jtp-resourcemanager-5] [resourcemanager]	Comitting prepared version of resource: default
+[2019/10/15-00:10:00.215] [info] [984016193@jtp-resourcemanager-5] [resourcemanager]	Publishing group staticreport_default
+[2019/10/15-00:10:00.215] [info] [984016193@jtp-resourcemanager-5] [resourcemanager]	Building resource default
+[2019/10/15-00:10:00.216] [info] [984016193@jtp-resourcemanager-5] [resourcemanager]	Resource default (version 6) successfully compiled
+[2019/10/15-00:10:00.216] [info] [984016193@jtp-resourcemanager-5] [resourcemanager]	Will publish to: resourceshare.urls.gateway.gateway -> http://mpllnx4032.mpl.michelin.com:16008/
+[2019/10/15-00:10:00.222] [info] [1449891440@jtp-resourceshare-117] [datashare]	share: Started datashare session on staticreport_default
+[2019/10/15-00:10:00.223] [info] [984016193@jtp-resourcemanager-5] [resourcemanager]	Publishing default...
+[2019/10/15-00:10:00.255] [info] [917845832@jtp-resourceshare-118] [exa.io.datashare]	share: Switching DataShare to version 7
+[2019/10/15-00:10:00.256] [info] [917845832@jtp-resourceshare-118] [exa.io.datashare]	share: Garbage collecting datashare version 6
+[2019/10/15-00:10:00.256] [info] [917845832@jtp-resourceshare-118] [datashare]	share: Committed datashare session
+[2019/10/15-00:10:00.256] [info] [984016193@jtp-resourcemanager-5] [resourcemanager]	staticreport_default sucessfully published
+[2019/10/15-04:00:00.001] [info] [DefaultQuartzScheduler_Worker-4] [exa.scheduling]	Triggering scheduled build of suggest 'OnPremise_securedSuggest_ds6w_58_label'
+[2019/10/15-04:00:00.011] [info] [984016193@jtp-resourcemanager-5] [resourcemanager]	Add an internal resource OnPremise_securedSuggest_ds6w_58_label in group autosuggest_OnPremise_securedSuggest_ds6w_58_label
+[2019/10/15-04:00:01.007] [info] [984016193@jtp-resourcemanager-5] [resourcemanager]	Comitting prepared version of resource: OnPremise_securedSuggest_ds6w_58_label
+[2019/10/15-04:00:01.012] [info] [984016193@jtp-resourcemanager-5] [resourcemanager]	Publishing group autosuggest_OnPremise_securedSuggest_ds6w_58_label
+[2019/10/15-04:00:01.012] [info] [984016193@jtp-resourcemanager-5] [resourcemanager]	Building resource OnPremise_securedSuggest_ds6w_58_label
+[2019/10/15-04:00:01.019] [info] [984016193@jtp-resourcemanager-5] [resourcemanager]	Resource OnPremise_securedSuggest_ds6w_58_label (version 5) successfully compiled
+[2019/10/15-04:00:01.019] [info] [984016193@jtp-resourcemanager-5] [resourcemanager]	Will publish to: resourceshare.urls.searcher.searchserver-ss0 -> http://mpllnx4032.mpl.michelin.com:16024/
+[2019/10/15-04:00:01.027] [info] [984016193@jtp-resourcemanager-5] [resourcemanager]	Will publish to: resourceshare.urls.gateway.gateway -> http://mpllnx4032.mpl.michelin.com:16008/
+[2019/10/15-04:00:01.029] [info] [731782147@jtp-resourceshare-127] [datashare]	share: Started datashare session on autosuggest_OnPremise_securedSuggest_ds6w_58_label
+[2019/10/15-04:00:01.032] [info] [984016193@jtp-resourcemanager-5] [resourcemanager]	Publishing OnPremise_securedSuggest_ds6w_58_label...
+[2019/10/15-04:00:01.138] [info] [650154766@jtp-resourceshare-130] [exa.io.datashare]	share: Switching DataShare to version 6
+[2019/10/15-04:00:01.139] [info] [650154766@jtp-resourceshare-130] [exa.io.datashare]	share: Garbage collecting datashare version 5
+[2019/10/15-04:00:01.140] [info] [650154766@jtp-resourceshare-130] [datashare]	share: Committed datashare session
+[2019/10/15-04:00:01.142] [info] [984016193@jtp-resourcemanager-5] [resourcemanager]	autosuggest_OnPremise_securedSuggest_ds6w_58_label sucessfully published
+[2019/10/15-04:27:39.803] [info] [984016193@jtp-resourcemanager-5] [resourcemanager]	Add an internal resource sxidict in group dictionary-sxidict
+[2019/10/15-04:27:39.820] [info] [984016193@jtp-resourcemanager-5] [resourcemanager]	Comitting prepared version of resource: sxidict
+[2019/10/15-04:27:39.824] [info] [984016193@jtp-resourcemanager-5] [resourcemanager]	Publishing group dictionary-sxidict
+[2019/10/15-04:27:39.824] [info] [984016193@jtp-resourcemanager-5] [resourcemanager]	Building resource sxidict
+[2019/10/15-04:27:39.828] [info] [984016193@jtp-resourcemanager-5] [resourcemanager]	Resource sxidict (version 4) successfully compiled
+[2019/10/15-04:27:39.828] [info] [984016193@jtp-resourcemanager-5] [resourcemanager]	Will publish to: resourceshare.urls.gateway.gateway -> http://mpllnx4032.mpl.michelin.com:16008/
+[2019/10/15-04:27:39.830] [info] [650154766@jtp-resourceshare-130] [datashare]	share: Started datashare session on dictionary-sxidict
+[2019/10/15-04:27:39.830] [info] [984016193@jtp-resourcemanager-5] [resourcemanager]	Will publish to: resourceshare.urls.analyzer.indexingserver-sxibg0 -> http://mpllnx4032.mpl.michelin.com:16014/
+[2019/10/15-04:27:39.833] [info] [984016193@jtp-resourcemanager-5] [resourcemanager]	Will publish to: resourceshare.urls.searcher.searchserver-ss0 -> http://mpllnx4032.mpl.michelin.com:16024/
+[2019/10/15-04:27:39.838] [info] [984016193@jtp-resourcemanager-5] [resourcemanager]	Publishing sxidict...
+[2019/10/15-04:27:39.908] [info] [1730436125@jtp-resourceshare-133] [exa.io.datashare]	share: Switching DataShare to version 5
+[2019/10/15-04:27:39.908] [info] [1730436125@jtp-resourceshare-133] [exa.io.datashare]	share: Garbage collecting datashare version 4
+[2019/10/15-04:27:39.910] [info] [1730436125@jtp-resourceshare-133] [datashare]	share: Committed datashare session
+[2019/10/15-04:27:40.115] [info] [984016193@jtp-resourcemanager-5] [resourcemanager]	dictionary-sxidict sucessfully published
+[2019/10/15-10:59:00.847] [info] [219273] [connectors]	Creating SimpleXMLConnectorConfig
+[2019/10/15-10:59:00.852] [info] [219273] [connectors]	Creating SimpleXMLConnectorConfig
+[2019/10/15-10:59:01.367] [info] [744085023@jtp-gateway-8351] [com.exalead.mercury.component.config]	Use new instance of com.exalead.enovia.er.connector.config.query.ERConnectorUIQueryConfig because default instance is invalid: com.exalead.config.bean.MandatoryKeyMissingException: key not found: BusinessObjects.0.Name
+[2019/10/15-10:59:01.457] [info] [744085023@jtp-gateway-8351] [com.exalead.mercury.component.config]	Use new instance of com.exalead.enovia.er.connector.config.query.ERConnectorUIQueryConfig because default instance is invalid: com.exalead.config.bean.MandatoryKeyMissingException: key not found: BusinessObjects.0.Name
+[2019/10/15-10:59:02.222] [info] [1874307833@jtp-gateway-8352] [mami.indexing]	GetConnectorTypeList: 14 connector types, exa=0ms, java=2605ms
+[2019/10/15-10:59:02.561] [info] [1874307833@jtp-gateway-8352] [com.exalead.papi.enovia.commons.ConnectorsEnvironment]	Properties file './config/connectors.properties' does not exist creating default one
+[2019/10/15-10:59:02.566] [info] [1874307833@jtp-gateway-8352] [com.exalead.papi.enovia.commons.ConnectorsEnvironment]	Default properties file './config/connectors.properties' created
+[2019/10/15-10:59:22.608] [info] [744085023@jtp-gateway-8351] [SecurityHost]	Loading security sources
+[2019/10/15-15:59:28.111] [info] [913683812@jtp-gateway-8641] [exa.mami.master]	Receiving users list (1 entries) from mu0
+[2019/10/15-16:01:27.889] [warn] [442588816@jtp-gateway-8645] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-16:01:27.978] [warn] [442588816@jtp-gateway-8645] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-16:04:27.896] [warn] [2096597852@jtp-gateway-8646] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-16:04:27.986] [warn] [2096597852@jtp-gateway-8646] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-16:07:27.905] [warn] [824538234@jtp-gateway-8650] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-16:07:27.994] [warn] [824538234@jtp-gateway-8650] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-16:10:27.913] [warn] [785174939@jtp-gateway-8654] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-16:10:28.004] [warn] [785174939@jtp-gateway-8654] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-16:13:27.922] [warn] [2057540109@jtp-gateway-8657] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-16:13:28.013] [warn] [2057540109@jtp-gateway-8657] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-16:16:27.930] [warn] [2037623378@jtp-gateway-8659] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-16:16:28.023] [warn] [2037623378@jtp-gateway-8659] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-16:19:27.938] [warn] [1304608144@jtp-gateway-8661] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-16:19:28.030] [warn] [1304608144@jtp-gateway-8661] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-16:22:27.946] [warn] [747319890@jtp-gateway-8664] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-16:22:28.037] [warn] [747319890@jtp-gateway-8664] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-16:25:27.960] [warn] [986630804@jtp-gateway-8667] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-16:25:28.047] [warn] [986630804@jtp-gateway-8667] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-16:28:27.968] [warn] [294163828@jtp-gateway-8670] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-16:28:28.055] [warn] [294163828@jtp-gateway-8670] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-16:31:27.977] [warn] [2050248027@jtp-gateway-8674] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-16:31:28.065] [warn] [2050248027@jtp-gateway-8674] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-16:34:27.985] [warn] [356285014@jtp-gateway-8677] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-16:34:28.074] [warn] [356285014@jtp-gateway-8677] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-16:37:27.996] [warn] [771552714@jtp-gateway-8679] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-16:37:28.083] [warn] [771552714@jtp-gateway-8679] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-16:40:28.006] [warn] [971746190@jtp-gateway-8682] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-16:40:28.094] [warn] [971746190@jtp-gateway-8682] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-16:43:28.015] [warn] [1878182402@jtp-gateway-8686] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-16:43:28.102] [warn] [1878182402@jtp-gateway-8686] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-16:46:28.023] [warn] [370179643@jtp-gateway-8687] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-16:46:28.116] [warn] [370179643@jtp-gateway-8687] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-16:49:28.031] [warn] [737225242@jtp-gateway-8690] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-16:49:28.125] [warn] [737225242@jtp-gateway-8690] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-16:52:28.040] [warn] [422118678@jtp-gateway-8693] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-16:52:28.134] [warn] [422118678@jtp-gateway-8693] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-16:55:28.049] [warn] [741884941@jtp-gateway-8696] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-16:55:28.144] [warn] [741884941@jtp-gateway-8696] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-16:58:17.740] [info] [984016193@jtp-resourcemanager-5] [resourcemanager]	Add an internal resource sxidict in group dictionary-sxidict
+[2019/10/15-16:58:17.762] [info] [984016193@jtp-resourcemanager-5] [resourcemanager]	Comitting prepared version of resource: sxidict
+[2019/10/15-16:58:17.774] [info] [984016193@jtp-resourcemanager-5] [resourcemanager]	Publishing group dictionary-sxidict
+[2019/10/15-16:58:17.774] [info] [984016193@jtp-resourcemanager-5] [resourcemanager]	Building resource sxidict
+[2019/10/15-16:58:17.778] [info] [984016193@jtp-resourcemanager-5] [resourcemanager]	Resource sxidict (version 5) successfully compiled
+[2019/10/15-16:58:17.778] [info] [984016193@jtp-resourcemanager-5] [resourcemanager]	Will publish to: resourceshare.urls.gateway.gateway -> http://mpllnx4032.mpl.michelin.com:16008/
+[2019/10/15-16:58:17.781] [info] [907238030@jtp-resourceshare-134] [datashare]	share: Started datashare session on dictionary-sxidict
+[2019/10/15-16:58:17.782] [info] [984016193@jtp-resourcemanager-5] [resourcemanager]	Will publish to: resourceshare.urls.analyzer.indexingserver-sxibg0 -> http://mpllnx4032.mpl.michelin.com:16014/
+[2019/10/15-16:58:17.786] [info] [984016193@jtp-resourcemanager-5] [resourcemanager]	Will publish to: resourceshare.urls.searcher.searchserver-ss0 -> http://mpllnx4032.mpl.michelin.com:16024/
+[2019/10/15-16:58:17.794] [info] [984016193@jtp-resourcemanager-5] [resourcemanager]	Publishing sxidict...
+[2019/10/15-16:58:17.870] [info] [650154766@jtp-resourceshare-130] [exa.io.datashare]	share: Switching DataShare to version 6
+[2019/10/15-16:58:17.870] [info] [650154766@jtp-resourceshare-130] [exa.io.datashare]	share: Garbage collecting datashare version 5
+[2019/10/15-16:58:17.872] [info] [650154766@jtp-resourceshare-130] [datashare]	share: Committed datashare session
+[2019/10/15-16:58:18.016] [info] [984016193@jtp-resourcemanager-5] [resourcemanager]	dictionary-sxidict sucessfully published
+[2019/10/15-16:58:28.056] [warn] [1265756557@jtp-gateway-8699] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-16:58:28.153] [warn] [1265756557@jtp-gateway-8699] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-17:01:28.069] [warn] [1770971342@jtp-gateway-8702] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-17:01:28.162] [warn] [1770971342@jtp-gateway-8702] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-17:04:28.080] [warn] [328263340@jtp-gateway-8706] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-17:04:28.174] [warn] [328263340@jtp-gateway-8706] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-17:07:28.087] [warn] [1302448151@jtp-gateway-8709] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-17:07:28.182] [warn] [1302448151@jtp-gateway-8709] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-17:10:28.096] [warn] [543964107@jtp-gateway-8711] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-17:10:28.190] [warn] [543964107@jtp-gateway-8711] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-17:13:28.104] [warn] [39080647@jtp-gateway-8714] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-17:13:28.206] [warn] [39080647@jtp-gateway-8714] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-17:16:28.113] [warn] [1680312001@jtp-gateway-8717] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-17:16:28.215] [warn] [1680312001@jtp-gateway-8717] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-17:19:28.124] [warn] [33720084@jtp-gateway-8721] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-17:19:28.231] [warn] [33720084@jtp-gateway-8721] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-17:22:28.132] [warn] [1227865594@jtp-gateway-8722] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-17:22:28.241] [warn] [1227865594@jtp-gateway-8722] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-17:25:28.140] [warn] [176270795@jtp-gateway-8725] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-17:25:28.249] [warn] [176270795@jtp-gateway-8725] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-17:28:28.148] [warn] [177737994@jtp-gateway-8728] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-17:28:28.258] [warn] [177737994@jtp-gateway-8728] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-17:31:28.156] [warn] [2064439230@jtp-gateway-8731] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-17:31:28.271] [warn] [2064439230@jtp-gateway-8731] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-17:34:28.166] [warn] [762590136@jtp-gateway-8735] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-17:34:28.285] [warn] [762590136@jtp-gateway-8735] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-17:37:28.176] [warn] [201729583@jtp-gateway-8736] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-17:37:28.303] [warn] [201729583@jtp-gateway-8736] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-17:40:28.186] [warn] [559191765@jtp-gateway-8740] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-17:40:28.313] [warn] [559191765@jtp-gateway-8740] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-17:43:28.194] [warn] [634740255@jtp-gateway-8743] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-17:43:28.324] [warn] [634740255@jtp-gateway-8743] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-17:46:28.203] [warn] [1372305494@jtp-gateway-8747] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-17:46:28.333] [warn] [1372305494@jtp-gateway-8747] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-17:49:28.215] [warn] [414336588@jtp-gateway-8748] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-17:49:28.345] [warn] [414336588@jtp-gateway-8748] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-17:52:28.224] [warn] [90509750@jtp-gateway-8751] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-17:52:28.355] [warn] [90509750@jtp-gateway-8751] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-17:55:28.233] [warn] [1438745361@jtp-gateway-8754] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-17:55:28.363] [warn] [1438745361@jtp-gateway-8754] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-17:58:28.248] [warn] [791471850@jtp-gateway-8757] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-17:58:28.372] [warn] [791471850@jtp-gateway-8757] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-18:01:28.257] [warn] [453366887@jtp-gateway-8760] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-18:01:28.380] [warn] [453366887@jtp-gateway-8760] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-18:04:28.265] [warn] [670587386@jtp-gateway-8763] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-18:04:28.403] [warn] [670587386@jtp-gateway-8763] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-18:07:28.273] [warn] [1335647894@jtp-gateway-8766] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-18:07:28.414] [warn] [1335647894@jtp-gateway-8766] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-18:10:28.282] [warn] [1036138964@jtp-gateway-8770] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-18:10:28.421] [warn] [1036138964@jtp-gateway-8770] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-18:13:28.294] [warn] [953974133@jtp-gateway-8773] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-18:13:28.430] [warn] [953974133@jtp-gateway-8773] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-18:16:28.305] [warn] [316585470@jtp-gateway-8775] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-18:16:28.441] [warn] [316585470@jtp-gateway-8775] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-18:19:28.313] [warn] [509733042@jtp-gateway-8778] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-18:19:28.450] [warn] [509733042@jtp-gateway-8778] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-18:22:28.322] [warn] [1757082442@jtp-gateway-8782] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-18:22:28.459] [warn] [1757082442@jtp-gateway-8782] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-18:25:28.339] [warn] [1757082442@jtp-gateway-8782] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-18:25:28.469] [warn] [1895107386@jtp-gateway-8784] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-18:28:28.346] [warn] [1936643804@jtp-gateway-8786] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-18:28:28.477] [warn] [1936643804@jtp-gateway-8786] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-18:31:28.354] [warn] [392816127@jtp-gateway-8789] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-18:31:28.485] [warn] [392816127@jtp-gateway-8789] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-18:34:28.363] [warn] [73130768@jtp-gateway-8792] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-18:34:28.493] [warn] [73130768@jtp-gateway-8792] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-18:37:28.371] [warn] [2110768634@jtp-gateway-8796] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-18:37:28.501] [warn] [2110768634@jtp-gateway-8796] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-18:40:28.379] [warn] [70263054@jtp-gateway-8798] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-18:40:28.509] [warn] [70263054@jtp-gateway-8798] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-18:43:28.395] [warn] [645183766@jtp-gateway-8801] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-18:43:28.517] [warn] [645183766@jtp-gateway-8801] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-18:46:28.410] [warn] [563330651@jtp-gateway-8805] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-18:46:28.526] [warn] [563330651@jtp-gateway-8805] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-18:49:28.419] [warn] [1515587886@jtp-gateway-8808] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-18:49:28.535] [warn] [1515587886@jtp-gateway-8808] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-18:52:28.430] [warn] [88810991@jtp-gateway-8811] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-18:52:28.550] [warn] [88810991@jtp-gateway-8811] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-18:55:28.437] [warn] [2090745359@jtp-gateway-8813] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-18:55:28.559] [warn] [2090745359@jtp-gateway-8813] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-18:58:28.445] [warn] [1942937674@jtp-gateway-8815] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-18:58:28.568] [warn] [1942937674@jtp-gateway-8815] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-19:01:28.453] [warn] [1270073328@jtp-gateway-8818] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-19:01:28.578] [warn] [1270073328@jtp-gateway-8818] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-19:04:28.461] [warn] [653102521@jtp-gateway-8821] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-19:04:28.588] [warn] [653102521@jtp-gateway-8821] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-19:07:28.470] [warn] [1842351449@jtp-gateway-8824] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-19:07:28.596] [warn] [1842351449@jtp-gateway-8824] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-19:10:28.479] [warn] [458550096@jtp-gateway-8827] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-19:10:28.605] [warn] [458550096@jtp-gateway-8827] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-19:13:28.487] [warn] [2105131858@jtp-gateway-8831] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-19:13:28.614] [warn] [2105131858@jtp-gateway-8831] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-19:16:28.495] [warn] [1453235417@jtp-gateway-8833] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-19:16:28.622] [warn] [1453235417@jtp-gateway-8833] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-19:19:28.503] [warn] [113527679@jtp-gateway-8836] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-19:19:28.638] [warn] [113527679@jtp-gateway-8836] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-19:22:28.512] [warn] [377959840@jtp-gateway-8840] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-19:22:28.646] [warn] [377959840@jtp-gateway-8840] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-19:25:28.522] [warn] [938436211@jtp-gateway-8843] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-19:25:28.654] [warn] [938436211@jtp-gateway-8843] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-19:28:28.529] [warn] [1112185440@jtp-gateway-8844] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-19:28:28.662] [warn] [1112185440@jtp-gateway-8844] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-19:31:28.537] [warn] [98346994@jtp-gateway-8847] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-19:31:28.671] [warn] [98346994@jtp-gateway-8847] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-19:34:28.546] [warn] [1109874563@jtp-gateway-8850] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-19:34:28.679] [warn] [1109874563@jtp-gateway-8850] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-19:37:28.555] [warn] [1134633079@jtp-gateway-8853] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-19:37:28.688] [warn] [1134633079@jtp-gateway-8853] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-19:40:28.563] [warn] [732502079@jtp-gateway-8856] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-19:40:28.697] [warn] [732502079@jtp-gateway-8856] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-19:43:28.571] [warn] [911383635@jtp-gateway-8859] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-19:43:28.705] [warn] [911383635@jtp-gateway-8859] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-19:46:28.580] [warn] [1823637035@jtp-gateway-8861] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-19:46:28.715] [warn] [1823637035@jtp-gateway-8861] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-19:49:28.587] [warn] [524386938@jtp-gateway-8865] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-19:49:28.723] [warn] [524386938@jtp-gateway-8865] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-19:52:28.596] [warn] [1874797784@jtp-gateway-8869] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-19:52:28.732] [warn] [1874797784@jtp-gateway-8869] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-19:55:28.604] [warn] [136173268@jtp-gateway-8872] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-19:55:28.740] [warn] [136173268@jtp-gateway-8872] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-19:58:28.613] [warn] [136173268@jtp-gateway-8872] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-19:58:28.753] [warn] [608533227@jtp-gateway-8874] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-20:01:28.629] [warn] [2051742565@jtp-gateway-8876] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-20:01:28.769] [warn] [2051742565@jtp-gateway-8876] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-20:04:28.642] [warn] [1339757774@jtp-gateway-8879] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-20:04:28.778] [warn] [1339757774@jtp-gateway-8879] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-20:07:28.651] [warn] [2188786@jtp-gateway-8883] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-20:07:28.788] [warn] [2188786@jtp-gateway-8883] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-20:10:28.659] [warn] [1659295974@jtp-gateway-8885] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-20:10:28.797] [warn] [1659295974@jtp-gateway-8885] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-20:13:28.670] [warn] [94722255@jtp-gateway-8888] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-20:13:28.806] [warn] [94722255@jtp-gateway-8888] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-20:16:28.680] [warn] [1367072620@jtp-gateway-8892] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-20:16:28.816] [warn] [1367072620@jtp-gateway-8892] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-20:19:28.689] [warn] [278531064@jtp-gateway-8895] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-20:19:28.828] [warn] [278531064@jtp-gateway-8895] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-20:22:28.699] [warn] [1848550512@jtp-gateway-8897] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-20:22:28.838] [warn] [1848550512@jtp-gateway-8897] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-20:25:28.707] [warn] [1662055777@jtp-gateway-8899] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-20:25:28.847] [warn] [1662055777@jtp-gateway-8899] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-20:28:28.714] [warn] [1538003806@jtp-gateway-8903] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-20:28:28.854] [warn] [1538003806@jtp-gateway-8903] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-20:31:28.724] [warn] [1680693982@jtp-gateway-8905] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-20:31:28.863] [warn] [1680693982@jtp-gateway-8905] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-20:34:28.734] [warn] [1006714455@jtp-gateway-8909] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-20:34:28.875] [warn] [1006714455@jtp-gateway-8909] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-20:37:28.742] [warn] [1863016241@jtp-gateway-8910] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-20:37:28.883] [warn] [1863016241@jtp-gateway-8910] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-20:40:28.750] [warn] [1790332506@jtp-gateway-8913] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-20:40:28.891] [warn] [1790332506@jtp-gateway-8913] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-20:43:28.758] [warn] [1688311466@jtp-gateway-8916] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-20:43:28.901] [warn] [1688311466@jtp-gateway-8916] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-20:46:28.767] [warn] [1025302571@jtp-gateway-8919] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-20:46:28.910] [warn] [1025302571@jtp-gateway-8919] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-20:49:28.776] [warn] [678336568@jtp-gateway-8922] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-20:49:28.918] [warn] [678336568@jtp-gateway-8922] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-20:52:28.784] [warn] [2116586400@jtp-gateway-8925] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-20:52:28.928] [warn] [2116586400@jtp-gateway-8925] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-20:55:28.793] [warn] [1245205262@jtp-gateway-8929] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-20:55:28.936] [warn] [1245205262@jtp-gateway-8929] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-20:58:28.805] [warn] [103842308@jtp-gateway-8931] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-20:58:28.945] [warn] [103842308@jtp-gateway-8931] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-21:01:28.814] [warn] [1856109109@jtp-gateway-8934] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-21:01:28.957] [warn] [1856109109@jtp-gateway-8934] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-21:04:28.822] [warn] [124362811@jtp-gateway-8937] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-21:04:28.967] [warn] [124362811@jtp-gateway-8937] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-21:07:28.834] [warn] [703354523@jtp-gateway-8941] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-21:07:28.976] [warn] [703354523@jtp-gateway-8941] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-21:10:28.842] [warn] [406889267@jtp-gateway-8942] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-21:10:28.984] [warn] [406889267@jtp-gateway-8942] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-21:13:28.849] [warn] [1704431249@jtp-gateway-8945] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-21:13:28.993] [warn] [1704431249@jtp-gateway-8945] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-21:16:28.857] [warn] [59066008@jtp-gateway-8948] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-21:16:29.002] [warn] [59066008@jtp-gateway-8948] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-21:19:28.865] [warn] [1979379111@jtp-gateway-8951] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-21:19:29.011] [warn] [1979379111@jtp-gateway-8951] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-21:22:28.872] [warn] [739485480@jtp-gateway-8954] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-21:22:29.019] [warn] [739485480@jtp-gateway-8954] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-21:25:28.880] [warn] [1851577979@jtp-gateway-8957] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-21:25:29.027] [warn] [1851577979@jtp-gateway-8957] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-21:28:28.887] [warn] [1466869617@jtp-gateway-8961] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-21:28:29.035] [warn] [1466869617@jtp-gateway-8961] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-21:31:28.896] [warn] [1112262199@jtp-gateway-8963] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-21:31:29.043] [warn] [1112262199@jtp-gateway-8963] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-21:34:28.905] [warn] [1022525774@jtp-gateway-8966] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-21:34:29.050] [warn] [1022525774@jtp-gateway-8966] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-21:37:28.913] [warn] [797714244@jtp-gateway-8970] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-21:37:29.058] [warn] [797714244@jtp-gateway-8970] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-21:40:28.922] [warn] [839920320@jtp-gateway-8973] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-21:40:29.066] [warn] [839920320@jtp-gateway-8973] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-21:43:28.931] [warn] [76157319@jtp-gateway-8974] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-21:43:29.074] [warn] [76157319@jtp-gateway-8974] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-21:46:28.938] [warn] [1295027487@jtp-gateway-8977] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-21:46:29.083] [warn] [1295027487@jtp-gateway-8977] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-21:49:28.946] [warn] [2129363978@jtp-gateway-8980] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-21:49:29.091] [warn] [2129363978@jtp-gateway-8980] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-21:52:28.954] [warn] [397230312@jtp-gateway-8983] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-21:52:29.100] [warn] [397230312@jtp-gateway-8983] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-21:55:28.962] [warn] [540101762@jtp-gateway-8986] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-21:55:29.109] [warn] [540101762@jtp-gateway-8986] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-21:58:28.970] [warn] [187771755@jtp-gateway-8989] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-21:58:29.117] [warn] [187771755@jtp-gateway-8989] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-22:01:28.978] [warn] [1865773325@jtp-gateway-8992] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-22:01:29.125] [warn] [1865773325@jtp-gateway-8992] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-22:04:28.986] [warn] [1649542168@jtp-gateway-8996] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-22:04:29.134] [warn] [1649542168@jtp-gateway-8996] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-22:07:28.995] [warn] [1256096098@jtp-gateway-8998] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-22:07:29.143] [warn] [1256096098@jtp-gateway-8998] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-22:10:29.002] [warn] [48385003@jtp-gateway-9001] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-22:10:29.151] [warn] [48385003@jtp-gateway-9001] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-22:13:29.011] [warn] [1172536187@jtp-gateway-9005] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-22:13:29.159] [warn] [1172536187@jtp-gateway-9005] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-22:16:29.020] [warn] [404349420@jtp-gateway-9007] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-22:16:29.168] [warn] [404349420@jtp-gateway-9007] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-22:19:29.031] [warn] [1399745763@jtp-gateway-9009] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-22:19:29.178] [warn] [1399745763@jtp-gateway-9009] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-22:22:29.040] [warn] [1050266320@jtp-gateway-9012] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-22:22:29.189] [warn] [1050266320@jtp-gateway-9012] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-22:25:29.049] [warn] [919701647@jtp-gateway-9015] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-22:25:29.197] [warn] [919701647@jtp-gateway-9015] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-22:28:29.057] [warn] [292090322@jtp-gateway-9018] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-22:28:29.205] [warn] [292090322@jtp-gateway-9018] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-22:31:29.066] [warn] [898581785@jtp-gateway-9020] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-22:31:29.214] [warn] [898581785@jtp-gateway-9020] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-22:34:29.075] [warn] [1620373638@jtp-gateway-9024] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-22:34:29.223] [warn] [1620373638@jtp-gateway-9024] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-22:37:29.083] [warn] [197422236@jtp-gateway-9027] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-22:37:29.232] [warn] [197422236@jtp-gateway-9027] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-22:40:29.091] [warn] [45391117@jtp-gateway-9031] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-22:40:29.240] [warn] [45391117@jtp-gateway-9031] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-22:43:29.099] [warn] [1341888049@jtp-gateway-9034] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-22:43:29.249] [warn] [1341888049@jtp-gateway-9034] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-22:46:29.106] [warn] [146832499@jtp-gateway-9035] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-22:46:29.257] [warn] [146832499@jtp-gateway-9035] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-22:49:29.115] [warn] [1532812165@jtp-gateway-9038] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-22:49:29.264] [warn] [1532812165@jtp-gateway-9038] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-22:52:29.123] [warn] [672115815@jtp-gateway-9041] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-22:52:29.275] [warn] [672115815@jtp-gateway-9041] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-22:55:29.131] [warn] [539248035@jtp-gateway-9044] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-22:55:29.285] [warn] [539248035@jtp-gateway-9044] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-22:58:29.140] [warn] [62168229@jtp-gateway-9047] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-22:58:29.294] [warn] [62168229@jtp-gateway-9047] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-23:01:29.149] [warn] [2022014083@jtp-gateway-9050] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-23:01:29.310] [warn] [2022014083@jtp-gateway-9050] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-23:04:29.157] [warn] [1899893214@jtp-gateway-9051] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-23:04:29.318] [warn] [1899893214@jtp-gateway-9051] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-23:07:29.165] [warn] [1750250537@jtp-gateway-9057] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-23:07:29.327] [warn] [1750250537@jtp-gateway-9057] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-23:10:29.175] [warn] [755862964@jtp-gateway-9060] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-23:10:29.334] [warn] [755862964@jtp-gateway-9060] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-23:13:29.183] [warn] [340200192@jtp-gateway-9062] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-23:13:29.343] [warn] [340200192@jtp-gateway-9062] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-23:16:29.191] [warn] [976946991@jtp-gateway-9066] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-23:16:29.352] [warn] [976946991@jtp-gateway-9066] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-23:19:29.199] [warn] [296718478@jtp-gateway-9069] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-23:19:29.362] [warn] [296718478@jtp-gateway-9069] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-23:22:29.207] [warn] [1532279385@jtp-gateway-9068] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-23:22:29.371] [warn] [1532279385@jtp-gateway-9068] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-23:25:29.215] [warn] [572560561@jtp-gateway-9073] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-23:25:29.382] [warn] [572560561@jtp-gateway-9073] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-23:28:29.225] [warn] [679451491@jtp-gateway-9076] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-23:28:29.391] [warn] [679451491@jtp-gateway-9076] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-23:31:29.232] [warn] [140771132@jtp-gateway-9079] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-23:31:29.401] [warn] [140771132@jtp-gateway-9079] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-23:34:29.242] [warn] [353813753@jtp-gateway-9082] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-23:34:29.408] [warn] [353813753@jtp-gateway-9082] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-23:37:29.253] [warn] [110542767@jtp-gateway-9086] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-23:37:29.416] [warn] [110542767@jtp-gateway-9086] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-23:40:29.261] [warn] [192439318@jtp-gateway-9087] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-23:40:29.425] [warn] [192439318@jtp-gateway-9087] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-23:43:29.269] [warn] [1731042028@jtp-gateway-9091] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-23:43:29.433] [warn] [1731042028@jtp-gateway-9091] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-23:46:29.277] [warn] [1966321308@jtp-gateway-9094] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-23:46:29.441] [warn] [1966321308@jtp-gateway-9094] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-23:49:29.285] [warn] [642734579@jtp-gateway-9098] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-23:49:29.451] [warn] [642734579@jtp-gateway-9098] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-23:52:29.293] [warn] [1426992381@jtp-gateway-9099] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-23:52:29.460] [warn] [1426992381@jtp-gateway-9099] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-23:55:29.301] [warn] [623108491@jtp-gateway-9102] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-23:55:29.468] [warn] [623108491@jtp-gateway-9102] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-23:58:29.308] [warn] [1260843093@jtp-gateway-9105] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/15-23:58:29.475] [warn] [1260843093@jtp-gateway-9105] [exa.mami.master]	licensing: Too many users for type find
+[2019/10/16-00:00:00.001] [info] [DefaultQuartzScheduler_Worker-3] [exa.scheduling]	Triggering scheduled rotation job of schema 'mashup-api'
+[2019/10/16-00:00:00.002] [info] [DefaultQuartzScheduler_Worker-1] [exa.scheduling]	Triggering scheduled rotation job of schema 'mashup-ui'
+[2019/10/16-00:00:00.002] [info] [DefaultQuartzScheduler_Worker-7] [exa.scheduling]	Triggering scheduled rotation job of schema 'suggests'
+[2019/10/16-00:00:00.002] [info] [DefaultQuartzScheduler_Worker-6] [exa.scheduling]	Triggering scheduled rotation job of schema 'queries'
+[2019/10/16-00:00:00.002] [info] [DefaultQuartzScheduler_Worker-5] [exa.scheduling]	Triggering scheduled rotation job of schema 'opendocs'
+[2019/10/16-00:00:00.002] [info] [DefaultQuartzScheduler_Worker-4] [exa.logging]	Rotating logs (scheduled)
+[2019/10/16-00:00:00.003] [info] [27952664@jtp-default-24] [exa.reporting.sqlite.server]	rotating collection: mashup-api
+[2019/10/16-00:00:00.003] [info] [1863207185@jtp-default-21] [exa.reporting.sqlite.server]	rotating collection: suggests
+[2019/10/16-00:00:00.014] [info] [1851978955@jtp-default-27] [exa.reporting.sqlite.server]	rotating collection: opendocs
+[2019/10/16-00:00:00.019] [info] [1811908348@jtp-default-28] [exa.reporting.sqlite.server]	rotating collection: queries
+[2019/10/16-00:00:00.026] [info] [99162236@jtp-default-29] [exa.reporting.sqlite.server]	rotating collection: mashup-ui
+[2019/10/16-00:00:00.051] [info] [1851978955@jtp-default-27] [exa.log.rotation]	Rotating standard log
+Log4NG: rotating logs now

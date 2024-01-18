@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<Widget name="Navigation Header" group="Navigation">
+
+	<Description>A simple, informational, header that displays the number of results, the current page, etc.</Description>
+
+	<Includes>
+		<Include type="css" path="css/style.less" />
+	</Includes>
+
+	<Platforms>
+		<Platform type="mobile" supported="true" />
+		<Platform type="web" supported="true" />
+	</Platforms>
+
+	<Preview>
+		<![CDATA[
+			<img src="/resources/widgets/navigationHeader/images/preview.png" alt="Navigation header" />
+		]]>
+	</Preview>
+
+	<SupportWidgetsId arity="ZERO" />
+	<SupportFeedsId arity="MANY" />
+	<SupportI18N supported="true" />
+
+	<OptionsGroup name="General">
+		<Option id="title" name="Widget title" isEvaluated="true">
+			<Description>Widget title. If blank, no name is displayed.</Description>
+		</Option>
+		<Option id="headerMesssage" name="Header message" isEvaluated="true">
+			<Description>Lets you specify a custom message that will be displayed using the same style as your own navigation bar.</Description>
+		</Option>
+		<Option id="jspPath" name="Header JSP template" arity="ONE">
+			<Description>
+				<![CDATA[
+					Specifies the Navigation header JSP template.<br />
+					Change this if you do not want to use the original template.<br />
+					Templates are located in /templates/.
+				]]>
+			</Description>
+			<Functions>
+				<Check>isJspPath</Check>
+				<ContextMenu>JAVA_listFiles('templates/', '*.jsp', 'JSP base templates')</ContextMenu>
+				<ContextMenu>COMMON_emptyOnChange()</ContextMenu>
+			</Functions>
+		</Option>
+		<OptionComposite id="sortableMetas" name="Sortable fields list" arity="ZERO_OR_MANY">
+			<Description>Specifies the display name, the field of the sort and the default sort order.</Description>
+			<Option id="displayName" isEvaluated="true">
+				<Placeholder>Display name</Placeholder>
+				<Functions>
+					<Display>SetWidth(45)</Display>
+				</Functions>
+			</Option>
+			<Option id="metaName">
+				<Placeholder>Sort name, memory or virtual fields</Placeholder>
+				<Functions>
+					<ContextMenu>Sorts()</ContextMenu>
+					<ContextMenu>Fields()</ContextMenu>
+					<ContextMenu>emptyOnChange()</ContextMenu>
+					<Display>SetWidth(45)</Display>
+				</Functions>
+			</Option>
+			<Option id="defaultOrder">
+				<Values>
+					<Value>desc</Value>
+					<Value>asc</Value>
+				</Values>
+				<Functions>
+					<Display>SetWidth(10)</Display>
+				</Functions>
+			</Option>
+		</OptionComposite>
+	</OptionsGroup>
+
+	<OptionsGroup name="Hits per page">
+		<Description>You need to configure the "per page" parameter of your feed with the parameter used below.</Description>
+		<Option id="perPageParameterName" name="Parameter name" arity="ZERO_OR_ONE">
+			<Description>Specifies the name of the parameter to use for the per page value.</Description>
+			<Functions>
+				<ContextMenu>PageParameters()</ContextMenu>
+				<ContextMenu>emptyOnChange()</ContextMenu>
+			</Functions>
+		</Option>
+		<Option id="perPageChoices" name="Per page choices" arity="ZERO_OR_MANY">
+			<Description>Specifies one or several values available for the user.</Description>
+			<Functions>
+				<Check>isInteger</Check>
+			</Functions>
+		</Option>
+	</OptionsGroup>
+
+	<OptionsGroup name="Spell Check Suggestion">
+		<Option id="spellSuggestionEnable" name="Enable">
+			<Description>Displays a suggested spelling correction for the given term (if available).</Description>
+			<Values>
+				<Value>false</Value>
+				<Value>true</Value>
+			</Values>
+			<Functions>
+				<Display>PARAMETER_doHide('true', [], ['spellSuggestionQueryParameter', 'spellSuggestionResultNumber', 'spellSuggestionText'], true, false)</Display>
+			</Functions>
+		</Option>
+		<Option id="spellSuggestionQueryParameter" name="Query parameter" arity="ONE">
+			<Description>Specifies the name of the query parameter for the suggested searches.</Description>
+			<Functions>
+				<ContextMenu>PageParameters()</ContextMenu>
+			</Functions>
+		</Option>
+		<Option id="spellSuggestionResultNumber" name="Max number of suggestion">
+			<Description>Specifies the maximum number of suggestion to display.</Description>		
+			<Functions>
+				<Check>isInteger</Check>
+			</Functions>
+		</Option>
+		<Option id="spellSuggestionText" name="Suggestions message" arity="ONE" isEvaluated="true">
+			<Description>Specifies the suggestion message to display. Choose a variable from the 'Value' column.</Description>		
+		</Option>
+	</OptionsGroup>
+	<OptionsGroup name="Advanced">
+		<Option id="templateBasePath" name="Base path of the JSP templates" arity="ONE">
+			<Description>You can replace the relative path (default: templates/) by an absolute path like /WEB-INF/jsp/mydirectory/.</Description>
+			<Values>
+				<Value>templates/</Value>
+			</Values>
+			<Functions>
+				<Check>isDirectory</Check>
+			</Functions>
+		</Option>
+	</OptionsGroup>
+
+	<DefaultValues>
+		<DefaultValue name="jspPath">default.jsp</DefaultValue>
+		<DefaultValue name="spellSuggestionEnable">false</DefaultValue>
+		<DefaultValue name="spellSuggestionQueryParameter">q</DefaultValue>
+		<DefaultValue name="spellSuggestionText">${i18n['suggestion.didYouMean']}</DefaultValue>
+	</DefaultValues>
+</Widget>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<Widget name="Alert Manager" group="Collaborative">
+
+	<Description>
+	<![CDATA[
+This widget allows logged users to execute, edit and delete their alerts. It contains the queries saved as alerts by the user.
+
+<i><u>Note:</u> users need to be logged-in in order to be able to manage alerts as they are associated to their profile.</i>
+	]]>
+	</Description>
+
+	<Preview>
+	<![CDATA[
+		<img src="/resources/widgets/alertingManager/img/preview.png" />
+	]]>
+	</Preview>
+
+	<Dependencies>
+		<Widget name="alerting" />
+	</Dependencies>
+	
+	<Platforms>
+		<Platform type="web" supported="true" />
+		<Platform type="mobile" supported="true" />
+	</Platforms>
+
+	<Includes>		
+		<Include type="js" path="/resources/javascript/exa/util/util.js" />
+		<Include type="js" path="/resources/javascript/exa/util/Context.js" />
+		<Include type="js" path="js/alerting.js" />
+		<Include type="css" path="css/alerting.less" />		
+	</Includes>
+
+	<SupportWidgetsId arity="ZERO" />
+	<SupportFeedsId arity="ZERO" />
+	<SupportI18N supported="true" />
+	
+	<OptionsGroup name="General">
+		<Option id="title" name="Widget Title" isEvaluated="true">
+			<Description>Widget title. If blank, no title is displayed.</Description>
+		</Option>
+	</OptionsGroup>
+	
+</Widget>

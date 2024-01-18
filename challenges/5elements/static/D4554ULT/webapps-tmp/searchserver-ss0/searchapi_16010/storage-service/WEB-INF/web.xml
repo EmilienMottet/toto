@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  
+  <display-name>storage</display-name>
+  <description>RESTful Storage Service - Cloudview 360</description>
+  
+  <!-- Declare the servlets -->
+<!--	<servlet>
+		<servlet-name>debug</servlet-name>
+		<servlet-class>com.exalead.cv360.storage.service.controller.DebugController</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+-->
+	<servlet>
+		<servlet-name>storage</servlet-name>
+		<servlet-class>com.exalead.cv360.storage.service.controller.RestStorageController</servlet-class>
+		<load-on-startup>2</load-on-startup>
+	</servlet>
+	
+  <servlet>
+    <servlet-name>admin-handler</servlet-name>
+    <servlet-class>com.exalead.cv360.storage.service.StorageAdminService</servlet-class>
+    <load-on-startup>3</load-on-startup>
+  </servlet>
+	
+	<!-- Map urls to the declared servlets -->
+  <!-- 
+  <servlet-mapping>
+    <servlet-name>debug</servlet-name>
+    <url-pattern>/debug/*</url-pattern>
+  </servlet-mapping>
+  -->
+  <servlet-mapping>
+    <servlet-name>admin-handler</servlet-name>
+    <url-pattern>/admin/*</url-pattern>
+  </servlet-mapping>
+  
+	<servlet-mapping>
+		<servlet-name>storage</servlet-name>
+		<url-pattern>/</url-pattern>
+	</servlet-mapping>
+	
+	<!-- Listeners -->
+	<listener>
+		<listener-class>com.exalead.cv360.storage.service.listeners.DocumentCache</listener-class>
+	</listener>
+	<listener>
+		<listener-class>com.exalead.cv360.storage.service.listeners.OnContextChanged</listener-class>
+	</listener>
+	  
+</web-app>

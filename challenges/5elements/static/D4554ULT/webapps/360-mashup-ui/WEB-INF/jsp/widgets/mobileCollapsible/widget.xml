@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<Widget name="Collapsible content" group="Layout/Collapsible" premium="true">
+
+	<Description>Creates a collapsible block of content.</Description>
+	
+	<Includes>
+		<Include type="css" path="css/style.less" />
+	</Includes>
+
+	<Platforms>
+		<Platform type="mobile" supported="true" />
+	</Platforms>
+
+	<SupportWidgetsId arity="ZERO_OR_MANY" />
+
+	<OptionsGroup name="General">
+		<Option id="title" name="Widget title" arity="ONE">
+			<Description>Specifies the content header that will be used as a link.</Description>
+		</Option>
+		<Option id="collapsed" name="Collapsed by default" arity="ONE">
+			<Description>Collapses the content by default when the page loads.</Description>
+			<Values>
+				<Value>false</Value>
+				<Value>true</Value>
+			</Values>
+		</Option>
+	</OptionsGroup>
+
+	<DefaultValues>
+		<DefaultValue name="header">Header</DefaultValue>
+		<DefaultValue name="collapsed">true</DefaultValue>
+	</DefaultValues>
+</Widget>

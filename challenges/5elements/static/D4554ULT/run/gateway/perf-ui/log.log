@@ -1,0 +1,5 @@
+[2019-11-06 08:24:38,922] [INFO ] [shutdown-69669] [jrds.webapp.StartListener] Application jrds will stop
+[2019-11-06 08:24:38,925] [INFO ] [shutdown-69669] [jrds.store.RrdDbStoreFactory] Average wait time: 0.11599374682559052 ms
+[2019-11-06 08:24:38,927] [INFO ] [shutdown-69669] [jrds.StoreOpener] Average wait time: NaN ms
+[2019-11-06 08:24:38,928] [INFO ] [shutdown-69669] [jrds.webapp.StartListener] Application jrds stopped
+[2019-11-06 08:24:38,928] [INFO ] [shutdown-69669] [org.eclipse.jetty.server.handler.ContextHandler] Stopped o.e.j.w.WebAppContext@2f7a7219{/perf-ui,null,UNAVAILABLE,@16001}{/busdata/dpmu/gbl0/data/cv/webapps-tmp/gateway/adminui_16001/perf-ui}

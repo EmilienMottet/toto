@@ -1,0 +1,50 @@
+[2019/10/29-00:00:00.041] [info] [667957103@jtp-default-0] [exa.log.rotation]	Rotating additional logs
+[2019/10/29-03:00:00.353] [info] [Waiting next query] [exa.search.api]	Slow query ! 259165
+[2019/10/29-03:00:00.558] [info] [Preprocessing for query collapsing=&group=&hf=-1&limits=max_fetched_hits%3A0%2Cmax_fetched_hits_per_slice%3A0%2Cmax_kept_hits%3A0%2Chits_sampling%3A100&logic=sxisl&of=flea&q=availability%3Aaclfts&relevance=false&rt=disabled& ...[74 chars remaining]] [exa.search.runnerpool]	Created a new runner for logic sxisl ( 0 idle runner and 0 working runner) in 57ms
+[2019/10/29-03:00:00.737] [warn] [140308990863104] [search.snippet.builder]	G52160: S52224: No language facet id set, will process with unknown language
+[2019/10/29-03:00:00.737] [warn] [140308990863104] [search.snippet.builder]	G52160: S52224: No language facet id set, will process with unknown language
+[2019/10/29-03:00:00.737] [warn] [140308990863104] [search.snippet.builder]	G52160: S52224: No language facet id set, will process with unknown language
+[2019/10/29-03:00:00.737] [warn] [140308990863104] [search.snippet.builder]	G52160: S52224: No language facet id set, will process with unknown language
+[2019/10/29-03:00:00.737] [warn] [140308990863104] [search.snippet.builder]	G52160: S52224: No language facet id set, will process with unknown language
+[2019/10/29-03:00:00.738] [warn] [140308990863104] [search.snippet.builder]	G52160: S52224: No language facet id set, will process with unknown language
+[2019/10/29-03:00:00.738] [warn] [140308990863104] [search.snippet.builder]	G52160: S52224: No language facet id set, will process with unknown language
+[2019/10/29-03:00:00.738] [warn] [140308990863104] [search.snippet.builder]	G52160: S52224: No language facet id set, will process with unknown language
+[2019/10/29-03:00:00.738] [warn] [140308990863104] [search.snippet.builder]	G52160: S52224: No language facet id set, will process with unknown language
+[2019/10/29-03:00:00.738] [warn] [140308990863104] [search.snippet.builder]	G52160: S52224: No language facet id set, will process with unknown language
+[2019/10/29-03:00:00.738] [warn] [140308990863104] [search.snippet.builder]	G52160: S52224: No language facet id set, will process with unknown language
+[2019/10/29-03:00:00.738] [warn] [140308990863104] [search.snippet.builder]	G52160: S52224: No language facet id set, will process with unknown language
+[2019/10/29-03:00:00.738] [warn] [140308990863104] [search.snippet.builder]	G52160: S52224: No language facet id set, will process with unknown language
+[2019/10/29-03:00:00.739] [warn] [140308990863104] [search.snippet.builder]	G52160: S52224: No language facet id set, will process with unknown language
+[2019/10/29-03:00:00.739] [warn] [140308990863104] [search.snippet.builder]	G52160: S52224: No language facet id set, will process with unknown language
+[2019/10/29-03:00:00.739] [warn] [140308990863104] [search.snippet.builder]	G52160: S52224: No language facet id set, will process with unknown language
+[2019/10/29-03:00:00.739] [warn] [140308990863104] [search.snippet.builder]	G52160: S52224: No language facet id set, will process with unknown language
+[2019/10/29-03:00:00.739] [warn] [140308990863104] [search.snippet.builder]	G52160: S52224: No language facet id set, will process with unknown language
+[2019/10/29-03:00:00.739] [warn] [140308990863104] [search.snippet.builder]	G52160: S52224: No language facet id set, will process with unknown language
+[2019/10/29-03:00:00.739] [warn] [140308990863104] [search.snippet.builder]	G52160: S52224: No language facet id set, will process with unknown language
+[2019/10/29-03:00:00.740] [warn] [140308990863104] [search.snippet.builder]	G52160: S52224: No language facet id set, will process with unknown language
+[2019/10/29-03:00:00.740] [warn] [140308990863104] [search.snippet.builder]	G52160: S52224: No language facet id set, will process with unknown language
+[2019/10/29-03:00:00.740] [warn] [140308990863104] [search.snippet.builder]	G52160: S52224: No language facet id set, will process with unknown language
+[2019/10/29-03:00:00.740] [warn] [140308990863104] [search.snippet.builder]	G52160: S52224: No language facet id set, will process with unknown language
+[2019/10/29-03:00:00.740] [warn] [140308990863104] [search.snippet.builder]	G52160: S52224: No language facet id set, will process with unknown language
+[2019/10/29-03:00:00.740] [warn] [140308990863104] [search.snippet.builder]	G52160: S52224: No language facet id set, will process with unknown language
+[2019/10/29-03:00:00.740] [warn] [140308990863104] [search.snippet.builder]	G52160: S52224: No language facet id set, will process with unknown language
+[2019/10/29-03:00:00.740] [warn] [140308990863104] [search.snippet.builder]	G52160: S52224: No language facet id set, will process with unknown language
+[2019/10/29-03:00:00.741] [warn] [140308990863104] [search.snippet.builder]	G52160: S52224: No language facet id set, will process with unknown language
+[2019/10/29-03:00:00.741] [warn] [140308990863104] [search.snippet.builder]	G52160: S52224: No language facet id set, will process with unknown language
+[2019/10/29-03:00:00.741] [warn] [140308990863104] [search.snippet.builder]	G52160: S52224: No language facet id set, will process with unknown language
+[2019/10/29-03:00:00.741] [warn] [140308990863104] [search.snippet.builder]	G52160: S52224: No language facet id set, will process with unknown language
+[2019/10/29-03:00:00.741] [warn] [140308990863104] [search.snippet.builder]	G52160: S52224: No language facet id set, will process with unknown language
+[2019/10/29-03:00:00.741] [warn] [140308990863104] [search.snippet.builder]	G52160: S52224: No language facet id set, will process with unknown language
+[2019/10/29-03:00:00.741] [warn] [140308990863104] [search.snippet.builder]	G52160: S52224: No language facet id set, will process with unknown language
+[2019/10/29-03:00:00.741] [warn] [140308990863104] [search.snippet.builder]	G52160: S52224: No language facet id set, will process with unknown language
+[2019/10/29-03:00:00.741] [warn] [140308990863104] [search.snippet.builder]	G52160: S52224: No language facet id set, will process with unknown language
+[2019/10/29-03:00:00.742] [warn] [140308990863104] [search.snippet.builder]	G52160: S52224: No language facet id set, will process with unknown language
+[2019/10/29-03:00:00.742] [warn] [140308990863104] [search.snippet.builder]	G52160: S52224: No language facet id set, will process with unknown language
+[2019/10/29-03:00:00.868] [info] [ReportingConsumer-31] [reporting.file-publisher]	Reporting file rotation to: /busdata/dpmu/gbl0/data/cv/bin/../run/searchserver-ss0/search-reporting/search.csv.20191028.00000
+[2019/10/29-03:00:00.868] [info] [ReportingConsumer-31] [reporting.file-publisher]	delete file /busdata/dpmu/gbl0/data/cv/bin/../run/searchserver-ss0/search-reporting/search.csv.20191015.00000
+[2019/10/29-03:00:01.125] [info] [554868033@jtp-resourceshare-20] [datashare]	share: Started datashare session on autosuggest_OnPremise_securedSuggest_ds6w_58_label
+[2019/10/29-03:00:01.247] [info] [331364902@jtp-resourceshare-30] [exa.io.datashare]	share: Switching DataShare to version 20
+[2019/10/29-03:00:01.248] [info] [331364902@jtp-resourceshare-30] [exa.io.datashare]	share: Garbage collecting datashare version 19
+[2019/10/29-03:00:01.249] [info] [331364902@jtp-resourceshare-30] [datashare]	share: Committed datashare session
+[2019/10/30-00:00:00.045] [info] [667957103@jtp-default-0] [exa.log.rotation]	Rotating standard log
+Log4NG: rotating logs now

@@ -1,0 +1,353 @@
+<CloudviewDeploymentInternalConfig xmlns="exa:com.exalead.mercury.mami.deploy.v10" version="1570546452425" enableServiceList="true" collapseIndexSlices="true" collapseSearchServers="false" collapseMaster="false" debug="false">
+ <ProcessInternalConfig xmlns="exa:exa.bee.deploy.v10" name="crawler-.*" runtime="exascript" httpMinThreads="5" httpMaxThreads="500" httpMaxStopTime="100" httpMaxGETQuerySize="32768" httpMaxFormPOSTQuerySize="10000000" httpMaxIdleTimeMS="86400000" httpAcceptorThreads="1" httpAcceptQueueSize="1200">
+  <params>
+   <KeyValue xmlns="exa:exa.bee" key="stopTimeout" value="600000">
+   </KeyValue>
+  </params>
+  <args>
+   <StringValue xmlns="exa:exa.bee" value="-mlock"/>
+   <StringValue xmlns="exa:exa.bee" value="-buddySize"/>
+   <StringValue xmlns="exa:exa.bee" value="19"/>
+   <StringValue xmlns="exa:exa.bee" value="-allocSize"/>
+   <StringValue xmlns="exa:exa.bee" value="19"/>
+  </args>
+  <envOverride>
+  </envOverride>
+  <envAppend>
+  </envAppend>
+  <envPrepend>
+  </envPrepend>
+ </ProcessInternalConfig>
+ <ProcessInternalConfig xmlns="exa:exa.bee.deploy.v10" runtime="exascript" exaBinary="mercury.bin" httpMinThreads="5" httpMaxThreads="500" httpMaxStopTime="100" httpMaxGETQuerySize="32768" httpMaxFormPOSTQuerySize="10000000" httpMaxIdleTimeMS="86400000" httpAcceptorThreads="1" httpAcceptQueueSize="1200">
+  <params>
+  </params>
+  <args>
+   <StringValue xmlns="exa:exa.bee" value="-mlock"/>
+   <StringValue xmlns="exa:exa.bee" value="-buddySize"/>
+   <StringValue xmlns="exa:exa.bee" value="19"/>
+   <StringValue xmlns="exa:exa.bee" value="-allocSize"/>
+   <StringValue xmlns="exa:exa.bee" value="19"/>
+  </args>
+  <envOverride>
+  </envOverride>
+  <envAppend>
+  </envAppend>
+  <envPrepend>
+  </envPrepend>
+ </ProcessInternalConfig>
+ <ProcessInternalConfig xmlns="exa:exa.bee.deploy.v10" runtime="dotnet" httpMinThreads="5" httpMaxThreads="500" httpMaxStopTime="100" httpMaxGETQuerySize="32768" httpMaxFormPOSTQuerySize="10000000" httpMaxIdleTimeMS="86400000" httpAcceptorThreads="1" httpAcceptQueueSize="1200">
+  <params>
+  </params>
+  <args>
+  </args>
+  <envOverride>
+  </envOverride>
+  <envAppend>
+  </envAppend>
+  <envPrepend>
+  </envPrepend>
+ </ProcessInternalConfig>
+ <ProcessInternalConfig xmlns="exa:exa.bee.deploy.v10" name="searchserver.*" runtime="java" httpMinThreads="5" httpMaxThreads="500" httpMaxStopTime="100" httpMaxGETQuerySize="32768" httpMaxFormPOSTQuerySize="10000000" httpMaxIdleTimeMS="300000" httpAcceptorThreads="1" httpAcceptQueueSize="1200">
+  <params>
+   <KeyValue xmlns="exa:exa.bee" key="killIfNotResponding" value="true">
+   </KeyValue>
+  </params>
+  <args>
+   <StringValue xmlns="exa:exa.bee" value="-Dfile.encoding=UTF-8"/>
+   <StringValue xmlns="exa:exa.bee" value="-XX:+UseParallelGC"/>
+   <StringValue xmlns="exa:exa.bee" value="-Xms32m"/>
+   <StringValue xmlns="exa:exa.bee" value="-Djava.awt.headless=true"/>
+   <StringValue xmlns="exa:exa.bee" value="-XX:+HeapDumpOnOutOfMemoryError"/>
+   <StringValue xmlns="exa:exa.bee" value="-Dhttp.keepAlive=true"/>
+   <StringValue xmlns="exa:exa.bee" value="-Dhttp.maxConnections=32"/>
+   <StringValue xmlns="exa:exa.bee" value="-Dmmap_threshold=262144"/>
+   <StringValue xmlns="exa:exa.bee" value="-XX:OnOutOfMemoryError=kill -9 %p"/>
+   <StringValue xmlns="exa:exa.bee" value="-Xmx2048m"/>
+  </args>
+  <envOverride>
+  </envOverride>
+  <envAppend>
+  </envAppend>
+  <envPrepend>
+  </envPrepend>
+ </ProcessInternalConfig>
+ <ProcessInternalConfig xmlns="exa:exa.bee.deploy.v10" name="index6.*" runtime="java" httpMinThreads="5" httpMaxThreads="500" httpMaxStopTime="100" httpMaxGETQuerySize="32768" httpMaxFormPOSTQuerySize="10000000" httpMaxIdleTimeMS="86400000" httpAcceptorThreads="1" httpAcceptQueueSize="1200">
+  <params>
+   <KeyValue xmlns="exa:exa.bee" key="killIfNotResponding" value="true">
+   </KeyValue>
+  </params>
+  <args>
+   <StringValue xmlns="exa:exa.bee" value="-Dfile.encoding=UTF-8"/>
+   <StringValue xmlns="exa:exa.bee" value="-XX:+UseParallelGC"/>
+   <StringValue xmlns="exa:exa.bee" value="-Xms32m"/>
+   <StringValue xmlns="exa:exa.bee" value="-Djava.awt.headless=true"/>
+   <StringValue xmlns="exa:exa.bee" value="-XX:+HeapDumpOnOutOfMemoryError"/>
+   <StringValue xmlns="exa:exa.bee" value="-Dhttp.keepAlive=true"/>
+   <StringValue xmlns="exa:exa.bee" value="-Dhttp.maxConnections=32"/>
+   <StringValue xmlns="exa:exa.bee" value="-Dmmap_threshold=262144"/>
+   <StringValue xmlns="exa:exa.bee" value="-XX:OnOutOfMemoryError=kill -9 %p"/>
+   <StringValue xmlns="exa:exa.bee" value="-Xmx128m"/>
+  </args>
+  <envOverride>
+  </envOverride>
+  <envAppend>
+  </envAppend>
+  <envPrepend>
+  </envPrepend>
+ </ProcessInternalConfig>
+ <ProcessInternalConfig xmlns="exa:exa.bee.deploy.v10" name="indexingserver-.*" runtime="java" httpMinThreads="5" httpMaxThreads="500" httpMaxStopTime="100" httpMaxGETQuerySize="32768" httpMaxFormPOSTQuerySize="10000000" httpMaxIdleTimeMS="86400000" httpAcceptorThreads="1" httpAcceptQueueSize="1200">
+  <params>
+  </params>
+  <args>
+   <StringValue xmlns="exa:exa.bee" value="-Dfile.encoding=UTF-8"/>
+   <StringValue xmlns="exa:exa.bee" value="-XX:+UseParallelGC"/>
+   <StringValue xmlns="exa:exa.bee" value="-Xms512M"/>
+   <StringValue xmlns="exa:exa.bee" value="-Djava.awt.headless=true"/>
+   <StringValue xmlns="exa:exa.bee" value="-XX:+HeapDumpOnOutOfMemoryError"/>
+   <StringValue xmlns="exa:exa.bee" value="-Dhttp.keepAlive=true"/>
+   <StringValue xmlns="exa:exa.bee" value="-Dhttp.maxConnections=32"/>
+   <StringValue xmlns="exa:exa.bee" value="-Dmmap_threshold=262144"/>
+   <StringValue xmlns="exa:exa.bee" value="-XX:OnOutOfMemoryError=kill -9 %p"/>
+   <StringValue xmlns="exa:exa.bee" value="-Xmx2048m"/>
+  </args>
+  <envOverride>
+  </envOverride>
+  <envAppend>
+  </envAppend>
+  <envPrepend>
+  </envPrepend>
+ </ProcessInternalConfig>
+ <ProcessInternalConfig xmlns="exa:exa.bee.deploy.v10" name="wormfuse" runtime="java" httpMinThreads="5" httpMaxThreads="500" httpMaxStopTime="100" httpMaxGETQuerySize="32768" httpMaxFormPOSTQuerySize="10000000" httpMaxIdleTimeMS="86400000" httpAcceptorThreads="1" httpAcceptQueueSize="1200">
+  <params>
+  </params>
+  <args>
+   <StringValue xmlns="exa:exa.bee" value="-Dfile.encoding=UTF-8"/>
+   <StringValue xmlns="exa:exa.bee" value="-XX:+UseParallelGC"/>
+   <StringValue xmlns="exa:exa.bee" value="-Xms32m"/>
+   <StringValue xmlns="exa:exa.bee" value="-Djava.awt.headless=true"/>
+   <StringValue xmlns="exa:exa.bee" value="-XX:+HeapDumpOnOutOfMemoryError"/>
+   <StringValue xmlns="exa:exa.bee" value="-Dhttp.keepAlive=true"/>
+   <StringValue xmlns="exa:exa.bee" value="-Dhttp.maxConnections=32"/>
+   <StringValue xmlns="exa:exa.bee" value="-Dmmap_threshold=262144"/>
+   <StringValue xmlns="exa:exa.bee" value="-XX:OnOutOfMemoryError=kill -9 %p"/>
+   <StringValue xmlns="exa:exa.bee" value="-Xmx2048m"/>
+  </args>
+  <envOverride>
+  </envOverride>
+  <envAppend>
+  </envAppend>
+  <envPrepend>
+  </envPrepend>
+ </ProcessInternalConfig>
+ <ProcessInternalConfig xmlns="exa:exa.bee.deploy.v10" name="consolidationserver-.*" runtime="java" httpMinThreads="5" httpMaxThreads="500" httpMaxStopTime="100" httpMaxGETQuerySize="32768" httpMaxFormPOSTQuerySize="10000000" httpMaxIdleTimeMS="86400000" httpAcceptorThreads="1" httpAcceptQueueSize="1200">
+  <params>
+  </params>
+  <args>
+   <StringValue xmlns="exa:exa.bee" value="-Dfile.encoding=UTF-8"/>
+   <StringValue xmlns="exa:exa.bee" value="-XX:+UseParallelGC"/>
+   <StringValue xmlns="exa:exa.bee" value="-Xms32m"/>
+   <StringValue xmlns="exa:exa.bee" value="-Djava.awt.headless=true"/>
+   <StringValue xmlns="exa:exa.bee" value="-XX:+HeapDumpOnOutOfMemoryError"/>
+   <StringValue xmlns="exa:exa.bee" value="-Dhttp.keepAlive=true"/>
+   <StringValue xmlns="exa:exa.bee" value="-Dhttp.maxConnections=32"/>
+   <StringValue xmlns="exa:exa.bee" value="-Dmmap_threshold=262144"/>
+   <StringValue xmlns="exa:exa.bee" value="-XX:OnOutOfMemoryError=kill -9 %p"/>
+   <StringValue xmlns="exa:exa.bee" value="-Xmx4096m"/>
+   <StringValue xmlns="exa:exa.bee" value="-Dcom.sun.xml.bind.v2.bytecode.ClassTailor.noOptimize=true"/>
+  </args>
+  <envOverride>
+  </envOverride>
+  <envAppend>
+  </envAppend>
+  <envPrepend>
+  </envPrepend>
+ </ProcessInternalConfig>
+ <ProcessInternalConfig xmlns="exa:exa.bee.deploy.v10" name="consolidationserverV2-.*" runtime="java" httpMinThreads="5" httpMaxThreads="500" httpMaxStopTime="100" httpMaxGETQuerySize="32768" httpMaxFormPOSTQuerySize="10000000" httpMaxIdleTimeMS="86400000" httpAcceptorThreads="1" httpAcceptQueueSize="1200">
+  <params>
+  </params>
+  <args>
+   <StringValue xmlns="exa:exa.bee" value="-Dfile.encoding=UTF-8"/>
+   <StringValue xmlns="exa:exa.bee" value="-XX:+UseParallelGC"/>
+   <StringValue xmlns="exa:exa.bee" value="-Xms32m"/>
+   <StringValue xmlns="exa:exa.bee" value="-Djava.awt.headless=true"/>
+   <StringValue xmlns="exa:exa.bee" value="-XX:+HeapDumpOnOutOfMemoryError"/>
+   <StringValue xmlns="exa:exa.bee" value="-Dhttp.keepAlive=true"/>
+   <StringValue xmlns="exa:exa.bee" value="-Dhttp.maxConnections=32"/>
+   <StringValue xmlns="exa:exa.bee" value="-Dmmap_threshold=262144"/>
+   <StringValue xmlns="exa:exa.bee" value="-XX:OnOutOfMemoryError=kill -9 %p"/>
+   <StringValue xmlns="exa:exa.bee" value="-Xmx4096m"/>
+   <StringValue xmlns="exa:exa.bee" value="-Dcom.sun.xml.bind.v2.bytecode.ClassTailor.noOptimize=true"/>
+  </args>
+  <envOverride>
+  </envOverride>
+  <envAppend>
+  </envAppend>
+  <envPrepend>
+  </envPrepend>
+ </ProcessInternalConfig>
+ <ProcessInternalConfig xmlns="exa:exa.bee.deploy.v10" name="gateway" runtime="java" httpMinThreads="5" httpMaxThreads="500" httpMaxStopTime="100" httpMaxGETQuerySize="32768" httpMaxFormPOSTQuerySize="10000000" httpMaxIdleTimeMS="86400000" httpAcceptorThreads="1" httpAcceptQueueSize="1200">
+  <params>
+   <KeyValue xmlns="exa:exa.bee" key="killIfNotResponding" value="true">
+   </KeyValue>
+  </params>
+  <args>
+   <StringValue xmlns="exa:exa.bee" value="-Dfile.encoding=UTF-8"/>
+   <StringValue xmlns="exa:exa.bee" value="-XX:+UseParallelGC"/>
+   <StringValue xmlns="exa:exa.bee" value="-Xms32m"/>
+   <StringValue xmlns="exa:exa.bee" value="-Djava.awt.headless=true"/>
+   <StringValue xmlns="exa:exa.bee" value="-XX:+HeapDumpOnOutOfMemoryError"/>
+   <StringValue xmlns="exa:exa.bee" value="-Dhttp.keepAlive=true"/>
+   <StringValue xmlns="exa:exa.bee" value="-Dhttp.maxConnections=32"/>
+   <StringValue xmlns="exa:exa.bee" value="-Dmmap_threshold=262144"/>
+   <StringValue xmlns="exa:exa.bee" value="-XX:OnOutOfMemoryError=kill -9 %p"/>
+   <StringValue xmlns="exa:exa.bee" value="-Xmx2048m"/>
+  </args>
+  <envOverride>
+  </envOverride>
+  <envAppend>
+  </envAppend>
+  <envPrepend>
+  </envPrepend>
+ </ProcessInternalConfig>
+ <ProcessInternalConfig xmlns="exa:exa.bee.deploy.v10" name="connectors.*" runtime="java" httpMinThreads="5" httpMaxThreads="500" httpMaxStopTime="100" httpMaxGETQuerySize="32768" httpMaxFormPOSTQuerySize="10000000" httpMaxIdleTimeMS="86400000" httpAcceptorThreads="1" httpAcceptQueueSize="1200">
+  <params>
+  </params>
+  <args>
+   <StringValue xmlns="exa:exa.bee" value="-Dfile.encoding=UTF-8"/>
+   <StringValue xmlns="exa:exa.bee" value="-XX:+UseParallelGC"/>
+   <StringValue xmlns="exa:exa.bee" value="-Xms32m"/>
+   <StringValue xmlns="exa:exa.bee" value="-Djava.awt.headless=true"/>
+   <StringValue xmlns="exa:exa.bee" value="-XX:+HeapDumpOnOutOfMemoryError"/>
+   <StringValue xmlns="exa:exa.bee" value="-Dhttp.keepAlive=true"/>
+   <StringValue xmlns="exa:exa.bee" value="-Dhttp.maxConnections=32"/>
+   <StringValue xmlns="exa:exa.bee" value="-Dmmap_threshold=262144"/>
+   <StringValue xmlns="exa:exa.bee" value="-XX:OnOutOfMemoryError=kill -9 %p"/>
+   <StringValue xmlns="exa:exa.bee" value="-Xmx512m"/>
+  </args>
+  <envOverride>
+  </envOverride>
+  <envAppend>
+  </envAppend>
+  <envPrepend>
+  </envPrepend>
+ </ProcessInternalConfig>
+ <ProcessInternalConfig xmlns="exa:exa.bee.deploy.v10" name="convert.*" runtime="java" httpMinThreads="5" httpMaxThreads="500" httpMaxStopTime="100" httpMaxGETQuerySize="32768" httpMaxFormPOSTQuerySize="10000000" httpMaxIdleTimeMS="86400000" httpAcceptorThreads="1" httpAcceptQueueSize="1200">
+  <params>
+   <KeyValue xmlns="exa:exa.bee" key="killIfNotResponding" value="true">
+   </KeyValue>
+  </params>
+  <args>
+   <StringValue xmlns="exa:exa.bee" value="-Dfile.encoding=UTF-8"/>
+   <StringValue xmlns="exa:exa.bee" value="-XX:+UseParallelGC"/>
+   <StringValue xmlns="exa:exa.bee" value="-Xms32m"/>
+   <StringValue xmlns="exa:exa.bee" value="-Djava.awt.headless=true"/>
+   <StringValue xmlns="exa:exa.bee" value="-XX:+HeapDumpOnOutOfMemoryError"/>
+   <StringValue xmlns="exa:exa.bee" value="-Dhttp.keepAlive=true"/>
+   <StringValue xmlns="exa:exa.bee" value="-Dhttp.maxConnections=32"/>
+   <StringValue xmlns="exa:exa.bee" value="-Dmmap_threshold=262144"/>
+   <StringValue xmlns="exa:exa.bee" value="-XX:OnOutOfMemoryError=kill -9 %p"/>
+   <StringValue xmlns="exa:exa.bee" value="-Xmx128m"/>
+   <StringValue xmlns="exa:exa.bee" value="-Dulimit.core=0"/>
+  </args>
+  <envOverride>
+  </envOverride>
+  <envAppend>
+  </envAppend>
+  <envPrepend>
+   <KeyValue xmlns="exa:exa.bee" key="CONVERTLOADDYNAMICMODULES" value="1">
+   </KeyValue>
+  </envPrepend>
+ </ProcessInternalConfig>
+ <ProcessInternalConfig xmlns="exa:exa.bee.deploy.v10" name="replayserver.*" runtime="java" httpMinThreads="5" httpMaxThreads="500" httpMaxStopTime="100" httpMaxGETQuerySize="32768" httpMaxFormPOSTQuerySize="10000000" httpMaxIdleTimeMS="86400000" httpAcceptorThreads="1" httpAcceptQueueSize="1200">
+  <params>
+  </params>
+  <args>
+   <StringValue xmlns="exa:exa.bee" value="-Dfile.encoding=UTF-8"/>
+   <StringValue xmlns="exa:exa.bee" value="-XX:+UseParallelGC"/>
+   <StringValue xmlns="exa:exa.bee" value="-Xms32m"/>
+   <StringValue xmlns="exa:exa.bee" value="-Djava.awt.headless=true"/>
+   <StringValue xmlns="exa:exa.bee" value="-XX:+HeapDumpOnOutOfMemoryError"/>
+   <StringValue xmlns="exa:exa.bee" value="-Dhttp.keepAlive=true"/>
+   <StringValue xmlns="exa:exa.bee" value="-Dhttp.maxConnections=32"/>
+   <StringValue xmlns="exa:exa.bee" value="-Dmmap_threshold=262144"/>
+   <StringValue xmlns="exa:exa.bee" value="-XX:OnOutOfMemoryError=kill -9 %p"/>
+   <StringValue xmlns="exa:exa.bee" value="-Xmx1024m"/>
+  </args>
+  <envOverride>
+  </envOverride>
+  <envAppend>
+  </envAppend>
+  <envPrepend>
+  </envPrepend>
+ </ProcessInternalConfig>
+ <ProcessInternalConfig xmlns="exa:exa.bee.deploy.v10" name="interconnectorserver.*" runtime="java" httpMinThreads="5" httpMaxThreads="500" httpMaxStopTime="100" httpMaxGETQuerySize="32768" httpMaxFormPOSTQuerySize="10000000" httpMaxIdleTimeMS="86400000" httpAcceptorThreads="1" httpAcceptQueueSize="1200">
+  <params>
+  </params>
+  <args>
+   <StringValue xmlns="exa:exa.bee" value="-Dfile.encoding=UTF-8"/>
+   <StringValue xmlns="exa:exa.bee" value="-XX:+UseParallelGC"/>
+   <StringValue xmlns="exa:exa.bee" value="-Xms32m"/>
+   <StringValue xmlns="exa:exa.bee" value="-Djava.awt.headless=true"/>
+   <StringValue xmlns="exa:exa.bee" value="-XX:+HeapDumpOnOutOfMemoryError"/>
+   <StringValue xmlns="exa:exa.bee" value="-Dhttp.keepAlive=true"/>
+   <StringValue xmlns="exa:exa.bee" value="-Dhttp.maxConnections=32"/>
+   <StringValue xmlns="exa:exa.bee" value="-Dmmap_threshold=262144"/>
+   <StringValue xmlns="exa:exa.bee" value="-XX:OnOutOfMemoryError=kill -9 %p"/>
+   <StringValue xmlns="exa:exa.bee" value="-Xmx1024m"/>
+  </args>
+  <envOverride>
+  </envOverride>
+  <envAppend>
+  </envAppend>
+  <envPrepend>
+  </envPrepend>
+ </ProcessInternalConfig>
+ <ProcessInternalConfig xmlns="exa:exa.bee.deploy.v10" runtime="java" httpMinThreads="5" httpMaxThreads="500" httpMaxStopTime="100" httpMaxGETQuerySize="32768" httpMaxFormPOSTQuerySize="10000000" httpMaxIdleTimeMS="86400000" httpAcceptorThreads="1" httpAcceptQueueSize="1200">
+  <params>
+  </params>
+  <args>
+   <StringValue xmlns="exa:exa.bee" value="-Dfile.encoding=UTF-8"/>
+   <StringValue xmlns="exa:exa.bee" value="-XX:+UseParallelGC"/>
+   <StringValue xmlns="exa:exa.bee" value="-Xms32m"/>
+   <StringValue xmlns="exa:exa.bee" value="-Djava.awt.headless=true"/>
+   <StringValue xmlns="exa:exa.bee" value="-XX:+HeapDumpOnOutOfMemoryError"/>
+   <StringValue xmlns="exa:exa.bee" value="-Dhttp.keepAlive=true"/>
+   <StringValue xmlns="exa:exa.bee" value="-Dhttp.maxConnections=32"/>
+   <StringValue xmlns="exa:exa.bee" value="-Dmmap_threshold=262144"/>
+   <StringValue xmlns="exa:exa.bee" value="-XX:OnOutOfMemoryError=kill -9 %p"/>
+   <StringValue xmlns="exa:exa.bee" value="-Xmx300m"/>
+  </args>
+  <envOverride>
+  </envOverride>
+  <envAppend>
+  </envAppend>
+  <envPrepend>
+  </envPrepend>
+ </ProcessInternalConfig>
+ <ServerCiphers xmlns="exa:exa.bee.deploy.v10">
+  <Include name="TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA"/>
+  <Include name="TLS_RSA_WITH_AES_128_CBC_SHA"/>
+  <Include name="TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA"/>
+  <Include name="TLS_RSA_WITH_AES_128_CBC_SHA256"/>
+  <Include name="TLS_RSA_WITH_AES_128_GCM_SHA256"/>
+  <Include name="TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256"/>
+  <Include name="TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256"/>
+  <Include name="TLS_RSA_WITH_AES_256_CBC_SHA"/>
+  <Include name="TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA"/>
+  <Include name="TLS_RSA_WITH_AES_256_CBC_SHA256"/>
+  <Include name="TLS_RSA_WITH_AES_256_GCM_SHA384"/>
+  <Include name="TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384"/>
+  <Include name="TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384"/>
+ </ServerCiphers>
+ <ServerCryptographicProtocols xmlns="exa:exa.bee.deploy.v10">
+  <IncludeProtocol name="TLSv1.2"/>
+  <IncludeProtocol name="TLSv1.1"/>
+  <IncludeProtocol name="TLSv1"/>
+ </ServerCryptographicProtocols>
+
+ <TickInternalParameters bufferRecyclingMaxSize="1000" bufferRecyclingMaxLifeSpan="64"/>
+ <SearchInternalParameters fullHitsContextMaxLifeSpan="1000" rankedSearchFullHitsRecyclingMaxSize="500" fullHitMetasRecyclingMaxSize="50000" messagesAllocatorMaxSizeMB="2000" messagesAllocatorMaxLifeSpan="1000" workerThreadMaxQueries="100" runnerMaxLifeSpan="300" runnerMaxQueries="1000" runnerKeepAtLeastWhenIdle="3" runnerKeepAtLeastWhenInBurst="5" runnerDestroyIdleAfter="60"/>
+
+ <globalBeegistryKeys>
+ </globalBeegistryKeys>
+</CloudviewDeploymentInternalConfig>

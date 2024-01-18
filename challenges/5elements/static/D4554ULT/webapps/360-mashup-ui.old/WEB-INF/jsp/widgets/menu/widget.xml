@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Widget xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" compositeWidget="false" group="Navigation" name="menu" premium="true">
+
+	<Includes>
+		<Include location="header" path="css/style.less" type="css" />
+		<Include location="header" path="js/menu.js" type="js" />
+	</Includes>
+
+	<Preview> &lt;img src=&quot;/resources/widgets/menu/images/preview.png&quot; /&gt; </Preview>
+
+	<Platforms>
+		<Platform supported="true" type="web" />
+	</Platforms>
+
+	<SupportFeedsId arity="ZERO" consumeFeed="true" />
+	<SupportI18N supported="true" />
+	<SupportWidgetsId arity="ZERO_OR_MANY" />
+
+	<DefaultValues>
+		<DefaultValue name="logoImageUrl">images/logo.png</DefaultValue>
+		<DefaultValue name="logoLinkUrl"></DefaultValue>
+		<DefaultValue name="logoAlt"></DefaultValue>
+		<DefaultValue name="compass">false</DefaultValue>
+		<DefaultValue name="compassOnly">false</DefaultValue>
+	</DefaultValues>
+
+	<OptionsGroup name="Left items">
+		<OptionComposite glue="##" arity="ZERO_OR_MANY" isEvaluated="true" isHighlighted="true" isUrlEncoded="false" isXmlEscaped="false" id="menuitems" name="Menu item">
+			<Option id="label" name="Label" arity="ONE">
+				<Description>Specifies the label that will be displayed for this menu item.</Description>
+			</Option>
+			<Option id="target" name="Target" arity="ONE">
+				<Description>Specifies the link to create for this menu item.</Description>
+				<Functions>
+					<ContextMenu>Pages()</ContextMenu>
+					<ContextMenu>PageParameters()</ContextMenu>
+				</Functions>
+			</Option>
+			<Option id="group" name="Group">
+				<Description>If a group is specified, the menu item will be displayed in a drop-down list with 'group' as label.</Description>
+			</Option>
+			<Functions>
+				<Display>SetDisplayMode('list')</Display>
+			</Functions>
+		</OptionComposite>
+	</OptionsGroup>
+	<OptionsGroup name="Right items">
+		<OptionComposite glue="##" arity="ZERO_OR_MANY" isEvaluated="true" isHighlighted="true" isUrlEncoded="false" isXmlEscaped="false" id="menurightitems" name="Menu item">
+			<Option id="label" name="Label" arity="ONE">
+				<Description>Specifies the label that will be displayed for this menu item.</Description>
+			</Option>
+			<Option id="target" name="Target" arity="ONE">
+				<Description>Specifies the link to create for this menu item.</Description>
+				<Functions>
+					<ContextMenu>Pages()</ContextMenu>
+					<ContextMenu>PageParameters()</ContextMenu>
+				</Functions>
+			</Option>
+			<Option id="group" name="Group">
+				<Description>If a group is specified, the menu item will be displayed in a drop-down list with 'group' as label.</Description>
+			</Option>
+			<Functions>
+				<Display>SetDisplayMode('list')</Display>
+			</Functions>
+		</OptionComposite>
+	</OptionsGroup>
+	<OptionsGroup name="Logo">
+		<Option id="logoImageUrl" name="Image URL" arity="ONE">
+			<Description>
+                <![CDATA[
+                    <p>Specifies the URL of the image to display.<br/>
+                    The URL can be</p>
+                    <ul>
+                      <li>relative (Example: /resources/logo/images/cvlogo_medium.png is rewritten to /mashup-ui/resources/logo/images/cvlogo_big.png)</li>
+                      <li>or absolute (http://...).</li>
+                    </ul>
+                ]]>
+			</Description>
+			<Values>
+				<Value>images/3DS/exalead_logo.png</Value>
+			</Values>
+		</Option>
+		<Option id="logoLinkUrl" name="Image link">
+			<Description>Specifies the page to access when you click on the image. If blank, no link is displayed.</Description>
+			<Functions>
+				<ContextMenu>Pages()</ContextMenu>
+			</Functions>
+		</Option>
+		<Option id="logoAlt" name="Alternative text" isEvaluated="true">
+			<Description>Alternative text for semantic purpose and disabled people.</Description>
+		</Option>
+	</OptionsGroup>
+	<OptionsGroup name="3DS">
+		<Option arity="ZERO_OR_ONE" isEvaluated="false" isHighlighted="true" isUrlEncoded="false" isXmlEscaped="false" id="compass" name="3DS Compass">
+			<Description>Use compass to represent menu items.</Description>
+			<Values>
+				<Value>false</Value>
+				<Value>true</Value>
+			</Values>
+		</Option>
+		<Option arity="ZERO_OR_ONE" isEvaluated="false" isHighlighted="true" isUrlEncoded="false" isXmlEscaped="false" id="compassOnly" name="Use compass only">
+			<Description>Only use compass to represent menu items.</Description>
+			<Values>
+				<Value>false</Value>
+				<Value>true</Value>
+			</Values>
+		</Option>
+	</OptionsGroup>
+</Widget>

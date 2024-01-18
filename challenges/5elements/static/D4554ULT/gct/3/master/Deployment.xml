@@ -1,0 +1,63 @@
+<DeploymentConfig xmlns="exa:exa.bee.deploy.v10" version="1570546421120" hostAgentPort="0">
+ <Host hostname="mpllnx4032.mpl.michelin.com" install="cvdefault" hostAgentPort="16009">
+  <PortRange startPort="16000" lastPort="16099"/>
+  <Role name="Indexing">
+   <RoleAttribute name="buildGroup" value="bg0"/>
+   <RoleAttribute name="papiPort" value="16002"/>
+   <RoleAttribute name="nbSlices" value="1"/>
+   <RoleAttribute name="storageUri" value="data:///#aggregated=true"/>
+  </Role>
+  <Role name="Index">
+   <RoleAttribute name="buildGroup" value="bg0"/>
+   <RoleAttribute name="instance" value="i0"/>
+   <RoleAttribute name="runtimeConfig" value="system_io_caching"/>
+   <RoleAttribute name="useSharedDir" value="true"/>
+  </Role>
+  <Role name="Master">
+  </Role>
+  <Role name="Gateway">
+   <RoleAttribute name="gatewayPort" value="16011"/>
+  </Role>
+  <Role name="Converter">
+   <RoleAttribute name="instance" value="c0"/>
+  </Role>
+  <Role name="DictionaryBuilder">
+  </Role>
+  <Role name="ResourceBuilder">
+  </Role>
+  <Role name="ConnectorServer">
+   <RoleAttribute name="type" value="java"/>
+   <RoleAttribute name="instance" value="java0"/>
+  </Role>
+  <Role name="SearchServer">
+   <RoleAttribute name="instance" value="ss0"/>
+   <RoleAttribute name="apiPort" value="16010"/>
+   <RoleAttribute name="uiPort" value="16000"/>
+  </Role>
+  <Role name="SearchAPI">
+   <RoleAttribute name="searchServerInstance" value="ss0"/>
+   <RoleAttribute name="apiConfig" value="sapi0"/>
+  </Role>
+  <Role name="AdminUI">
+   <RoleAttribute name="adminUIPort" value="16001"/>
+  </Role>
+  <Role name="MashupAPI">
+   <RoleAttribute name="instance" value="ac0"/>
+   <RoleAttribute name="searchServerInstance" value="ss0"/>
+   <RoleAttribute name="applicationId" value="default"/>
+  </Role>
+  <Role name="MashupUI">
+   <RoleAttribute name="instance" value="mu0"/>
+   <RoleAttribute name="context" value="/mashup-ui"/>
+   <RoleAttribute name="searchServerInstance" value="ss0"/>
+   <RoleAttribute name="storageservice" value="sts0"/>
+   <RoleAttribute name="applicationId" value="default"/>
+  </Role>
+  <Role name="StorageService">
+   <RoleAttribute name="instance" value="sts0"/>
+   <RoleAttribute name="searchServerInstance" value="ss0"/>
+  </Role>
+  <Role name="BusinessConsole">
+  </Role>
+ </Host>
+</DeploymentConfig>

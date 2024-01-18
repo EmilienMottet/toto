@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<Widget name="Chart Switcher" group="Visualizations/Charts" premium="true">
+
+	<Description>This widget can contain many Chart widgets configured for different categories, and the user can select which one to display. (Only supports 360 official charting widgets).</Description>
+
+	<Platforms>
+		<Platform type="web" supported="true" />
+		<Platform type="mobile" supported="true" />
+	</Platforms>
+
+	<Includes>
+		<Include type="css" path="/resources/css/jquery.select7.css" />
+		<Include type="js" path="/resources/javascript/jquery.select7.js" />
+		<Include type="css" path="css/style.less" />
+		<Include type="js" path="js/multipleCharts.js" />
+	</Includes>
+
+	<SupportWidgetsId arity="MANY">
+		<WidgetId>pieChart</WidgetId>
+		<WidgetId>lineChart</WidgetId>
+		<WidgetId>stackedColumnChart</WidgetId>
+		<WidgetId>timeChart</WidgetId>
+		<WidgetId>tableChart</WidgetId>
+		<WidgetId>spiderChart</WidgetId>
+	</SupportWidgetsId>
+
+	<SupportFeedsId arity="ZERO" />
+	<SupportI18N supported="true" />
+
+	<OptionsGroup name="General">
+		<Option id="title" name="Widget Title" isEvaluated="true">
+			<Description>Widget title. If blank, no name is displayed.</Description>
+		</Option>			
+	</OptionsGroup>
+
+	<DefaultValues>
+		<DefaultValue name="height">350</DefaultValue>
+	</DefaultValues>
+
+	<OptionsGroup name="Style">
+		<Option id="width" name="Width">
+			<Description>Specifies the width of the widget (pixels). You must enter an integer.</Description>			
+			<Functions>
+				<Check>isInteger</Check>
+			</Functions>
+		</Option>
+		<Option id="height" name="Height" arity="ONE">
+			<Description>Specifies the height of the widget (pixels). You must enter an integer.</Description>		
+			<Functions>
+				<Check>isInteger</Check>
+			</Functions>
+		</Option>
+	</OptionsGroup>
+
+	<OptionsGroup name="Advanced">
+		<Option id="noResultsJspPathHit" name="JSP path to use if no results" arity="ONE">
+			<Description>If there are no results, the widget is either hidden using a trigger, or a message is displayed using the content of a JSP file.</Description>
+			<Functions>
+				<Check>isJspPath</Check>
+			</Functions>
+			<Values>
+				<Value>/WEB-INF/jsp/commons/noFacets.jsp</Value>
+			</Values>
+		</Option>
+	</OptionsGroup>
+</Widget>

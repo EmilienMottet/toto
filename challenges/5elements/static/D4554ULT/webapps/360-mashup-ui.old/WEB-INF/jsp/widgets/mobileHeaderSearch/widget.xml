@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<Widget name="Header Search Form" group="Search Forms" premium="true">
+
+	<Description>A search form with a header-style display.</Description>
+
+	<Preview>
+		<![CDATA[
+			<img src="/resources/widgets/mobileHeaderSearch/preview.png" alt="Header Search Form" />
+		]]>
+	</Preview>
+
+	<Platforms>
+		<Platform type="mobile" supported="true" />
+	</Platforms>
+
+	<Includes>
+		<Include type="css" path="css/style.less" />
+	</Includes>
+
+	<SupportWidgetsId arity="ZERO" />
+	<SupportFeedsId arity="ZERO" />
+
+	<OptionsGroup name="General">
+		<Option id="inputName" name="Input parameter" arity="ONE">
+			<Description>Specifies the Parameter Name associated with the input submitted for the entry box.</Description>
+			<Functions>
+				<ContextMenu>PageParameters()</ContextMenu>
+				<ContextMenu>COMMON_emptyOnChange()</ContextMenu>
+			</Functions>
+		</Option>
+		<Option id="searchLabel" name="Search label">
+			<Description>Label of the form's submit button.</Description>
+		</Option>
+		<Option id="action" name="Action" arity="ZERO_OR_ONE">
+			<Description>Specifies the page on which query results are displayed. If empty, query results are displayed on the current page.</Description> 
+			<Functions>
+				<ContextMenu>Pages()</ContextMenu>
+				<ContextMenu>COMMON_emptyOnChange()</ContextMenu>
+			</Functions>
+		</Option>
+	</OptionsGroup>
+
+	<OptionsGroup name="Icon">
+		<Option id="iconEnable" name="Enable icon" arity="ONE">
+			<Description>Adds an icon on the top-left corner of the widget.</Description>
+			<Values>
+				<Value>false</Value>
+				<Value>true</Value>
+			</Values>
+			<Functions>
+				<Display>PARAMETER_doHide('true', [], ['iconSrc', 'iconUrl'], true, false)</Display>
+			</Functions>
+		</Option>
+		<Option id="iconSrc" name="Icon URL" arity="ZERO_OR_ONE" isEvaluated="true">
+			<Description>
+				<![CDATA[
+					Specifies the URL of the logo to display.<br />
+					The URL can be:<br />
+					<ul>
+					  <li>relative (Example: /resources/logo/images/cvlogo_medium.png is rewritten to /mashup-ui/resources/logo/images/cvlogo_big.png)</li>
+					  <li>or absolute (http://...).</li>
+					</ul>
+				]]>
+			</Description>
+		</Option>
+		<Option id="iconUrl" name="Icon link" arity="ZERO_OR_ONE" isEvaluated="true">
+			<Description>Specifies the page to access when you click on the image. If blank, no link is displayed.</Description>
+			<Functions>
+				<ContextMenu>Pages()</ContextMenu>
+				<ContextMenu>COMMON_emptyOnChange()</ContextMenu>
+			</Functions>
+		</Option>
+	</OptionsGroup>
+
+	<OptionsGroup name="Geolocation">
+		<Option id="geoEnable" name="Enable geolocation" arity="ONE">
+			<Description>Injects the position of the user in the search form</Description>
+			<Values>
+				<Value>false</Value>
+				<Value>true</Value>
+			</Values>
+			<Functions>
+				<Display>PARAMETER_doHide('true', [], ['geoLatitude', 'geoLongitude', 'geoMaximumAge'], true, false)</Display>
+			</Functions>
+		</Option>
+		<Option id="geoLatitude" name="Latitude parameter" arity="ONE">
+			<Description>Parameter name associated with the user latitude.</Description>
+			<Functions>
+				<ContextMenu>PageParameters()</ContextMenu>
+				<ContextMenu>COMMON_emptyOnChange()</ContextMenu>
+			</Functions>
+		</Option>
+		<Option id="geoLongitude" name="Longitude parameter" arity="ONE">
+			<Description>Parameter name associated with the user longitude.</Description>
+			<Functions>
+				<ContextMenu>PageParameters()</ContextMenu>
+				<ContextMenu>COMMON_emptyOnChange()</ContextMenu>
+			</Functions>
+		</Option>
+		<Option id="geoMaximumAge" name="Maximum age" arity="ONE">
+			<Description>Accepts a cached position whose age is no greater than the specified time in milliseconds. If 0 then the answer is not cached.</Description>
+			<Functions>
+				<Check>isInteger</Check>
+			</Functions>
+		</Option>
+	</OptionsGroup>
+
+	<DefaultValues>
+		<DefaultValue name="inputName">q</DefaultValue>
+		<DefaultValue name="searchLabel">Search...</DefaultValue>
+		<DefaultValue name="geoEnable">false</DefaultValue>
+		<DefaultValue name="geoLatitude">lat</DefaultValue>
+		<DefaultValue name="geoLongitude">lon</DefaultValue>
+		<DefaultValue name="geoMaximumAge">5000</DefaultValue>
+	</DefaultValues>
+</Widget>

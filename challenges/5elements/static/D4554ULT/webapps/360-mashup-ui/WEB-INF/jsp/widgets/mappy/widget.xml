@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<Widget name="Mappy" group="Visualizations/Maps" premium="true">
+
+	<Description>Shows your results as pins on a Mappy Map, with automatic centering and zoom levels for your result set.</Description>
+
+	<Preview>
+	<![CDATA[
+		<img src="/resources/widgets/mappy/images/mappy.jpg" />
+	]]>
+	</Preview>
+
+	<Includes>
+		<Include type="js" path="/resources/javascript/jquery.spinner.js" />
+		<Include type="js" path="js/mappy.js" />
+		<Include type="css" path="css/style.less" />
+	</Includes>
+
+	<SupportWidgetsId arity="ZERO" />
+	<SupportFeedsId arity="MANY" />
+
+	<OptionsGroup name="General">
+		<Option id="title" name="Widget Title" isEvaluated="true">
+			<Description>Widget title. If blank, no name is displayed.</Description>
+		</Option>
+
+		<Option id="mappyLogin" name="Mappy API login" arity="ONE">
+			<Description>Mappy API Login.</Description>
+		</Option>
+		<Option id="mappyPassword" name="Mappy API password" arity="ONE">
+			<Description>Mappy API Password</Description>
+			<Functions>
+				<Display>PARAMETER_isPassword()</Display>
+			</Functions>
+		</Option>
+		<Option id="location" name="Location Meta">
+			<Description>
+			<![CDATA[
+					Meta name(s) to use for the hit position with expected format :
+					<ul>
+						<li>Location : "meta_of_type_point"</li>
+						<li>Latitude + Longitude : "meta_latitude,meta_longitude"</li>
+					</ul>
+				]]></Description>
+			<Functions>
+				<ContextMenu>Metas()</ContextMenu>
+			</Functions>
+		</Option>
+		<Option id="messagePopup" name="Message popup" isXmlEscaped="true" isEvaluated="true">
+			<Description>
+				<![CDATA[
+					Defines the message that will be displayed in the bubble of the pin selection.<br />
+					This message can contain HTML code.<br />
+					If you need some logic, try the 'popup template path' option below this option.
+				]]>			
+			</Description>
+			<Functions>
+				<ContextMenu>Pages()</ContextMenu>
+			</Functions>
+		</Option>
+		<Option id="popupTemplatePath" name="Popup template path" isEvaluated="true">
+			<Description>
+				<![CDATA[
+					JSP template shown in the popup.<br />
+					You can use JSTL functions to add logics in it.<br />
+					An example can be found at:<br />
+					<span style="white-space:nowrap;">/WEB-INF/jsp/widgets/gmapV3/messagePopup/example_entries.jsp</span>
+				]]>			
+			</Description>
+			<Functions>
+				<ContextMenu>Pages()</ContextMenu>
+				<Check>isJspPath</Check>
+			</Functions>
+		</Option>
+		<Option id="mappyDecoration" name="Popup default style">
+			<Description>Uses Mappy default style for the popup.</Description>
+			<Values>
+				<Value>false</Value>
+				<Value>true</Value>
+			</Values>
+		</Option>
+	</OptionsGroup>
+
+	<OptionsGroup name="Proxy">
+		<Option id="proxyHost" name="Proxy host">
+			<Description>HTTP Proxy to use for fetching the Mappy credentials.</Description>
+		</Option>
+		<Option id="proxyPort" name="Proxy port">
+			<Description>HTTP Proxy port to use for fetching the Mappy credentials.</Description>
+		</Option>
+		<Option id="proxyUser" name="Proxy user">
+			<Description>HTTP Proxy user to use for fetching the Mappy credentials.(optional)</Description>
+		</Option>
+		<Option id="proxyPwd" name="Proxy password">
+			<Description>HTTP Proxy password to use for fetching the Mappy credentials.(optional)</Description>
+			<Functions>
+				<Display>PARAMETER_isPassword()</Display>
+			</Functions>
+		</Option>
+	</OptionsGroup>
+
+	<OptionsGroup name="Toolbar options">
+		<Option id="showMiniMap" name="Show mini map">
+			<Description>
+				<![CDATA[
+					If false, the mini map will not be displayed. Otherwise the mini map will be displayed based on the value:
+					<ul>
+						<li>lt: Left Top</li>
+						<li>rt: Right Top</li>
+						<li>lb: Left Bottom</li>
+						<li>rb: Right Bottom</li>
+					</ul>
+				]]>
+			</Description>
+			<Values>
+				<Value>false</Value>
+				<Value>lt</Value>
+				<Value>rt</Value>
+				<Value>lb</Value>
+				<Value>rb</Value>
+			</Values>
+		</Option>
+		<Option id="showToolbar" name="Show toolbar">
+			<Description>
+				<![CDATA[
+					If false, the toolbar will not be displayed. Otherwise the toolbar will be displayed based on the value:
+					<ul>
+						<li>lt: Left Top</li>
+						<li>rt: Right Top</li>
+						<li>lb: Left Bottom</li>
+						<li>rb: Right Bottom</li>
+					</ul>
+				]]>
+			</Description>
+			<Values>
+				<Value>false</Value>
+				<Value>lt</Value>
+				<Value>rt</Value>
+				<Value>lb</Value>
+				<Value>rb</Value>
+			</Values>
+			<Functions>
+				<Display>PARAMETER_doHide('false', ['showIconMiniMap', 'showIconMove', 'showIconMouseWheelZoom', 'showIconSelection', 'showIconZoom', 'showIconSlider'], [], true, false)</Display>
+			</Functions>
+		</Option>
+		<Option id="showIconMiniMap" name="Display Mini map icon">
+			<Description>
+				<![CDATA[
+					Adds an icon in the toolbar which opens the mini map. It will be opened at the desired position based on the value:
+					<ul>
+						<li>lt: Left Top</li>
+						<li>rt: Right Top</li>
+						<li>lb: Left Bottom</li>
+						<li>rb: Right Bottom</li>
+					</ul>
+				]]>
+			</Description>
+			<Values>
+				<Value>false</Value>
+				<Value>lt</Value>
+				<Value>rt</Value>
+				<Value>lb</Value>
+				<Value>rb</Value>
+			</Values>
+		</Option>
+		<Option id="showIconMove" name="Display Move icon">
+			<Description>Adds an icon in the toolbar which allows you to move the mini map.</Description>
+			<Values>
+				<Value>false</Value>
+				<Value>true</Value>
+			</Values>
+		</Option>
+		<Option id="showIconMouseWheelZoom" name="Display Disable Mouse Zoom icon">
+			<Description>Adds an icon in the toolbar which allows you to zoom by scrolling with the mouse.</Description>		
+			<Values>
+				<Value>true</Value>
+				<Value>false</Value>
+			</Values>
+		</Option>
+		<Option id="showIconSelection" name="Display Rectangle Selection icon">
+			<Description>Adds an icon in the toolbar which allows you to zoom on a rectangle selection.</Description>		
+			<Values>
+				<Value>false</Value>
+				<Value>true</Value>
+			</Values>
+		</Option>
+		<Option id="showIconZoom" name="Display Zoom icons">
+			<Description>Add zoom icons (+/-) near the slider in the toolbar.</Description>
+			<Values>
+				<Value>false</Value>
+				<Value>true</Value>
+			</Values>
+		</Option>
+		<Option id="showIconSlider" name="Display Slider icon">
+			<Description>Adds a slider to zoom in the map.</Description>
+			<Values>
+				<Value>false</Value>
+				<Value>true</Value>
+			</Values>
+		</Option>
+		<Option id="disableScrollWheelZoom" name="Disable mouse zoom">
+			<Description>Disables the use of the mouse wheel to zoom.</Description>
+			<Values>
+				<Value>false</Value>
+				<Value>true</Value>
+			</Values>
+		</Option>
+		<Option id="disableDraggable" name="Disable drag navigation">
+			<Description>Disables the possibility to move on the map by mouse dragging.</Description>
+			<Values>
+				<Value>true</Value>
+				<Value>false</Value>
+			</Values>
+		</Option>
+	</OptionsGroup>
+
+	<OptionsGroup name="Markers">
+		<Option id="hitUrl" name="Hit URL" isUrlEncoded="true" isEvaluated="true">
+			<Description>Specifies the link to create for each icon. </Description>
+			<Functions>
+				<ContextMenu>Pages()</ContextMenu>
+			</Functions>
+		</Option>
+		<Option id="iconLabel" name="Marker label" isEvaluated="true">
+			<Description>Specifies the tooltip text of the marker (pinpoint). </Description>		
+		</Option>
+		<Option id="iconUrl" name="Marker image URL" isEvaluated="true">
+			<Description>
+				<![CDATA[
+					If blank, the icon URL will be http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=%{indexMarker}|#3279BE|#FFF<br />
+					%{indexMarker} is a magic variable which will be replaced by an incremental number.
+				]]>
+			</Description>
+			<Functions>
+				<ContextMenu>COMMON_add('Javascript', ['%{indexMarker}'])</ContextMenu>
+			</Functions>
+		</Option>
+		<Option id="hitPins" name="Integrate in &quot;Display Hits&quot;" >
+			<Description>Appends markers to hits.</Description>
+			<Values>
+				<Value>false</Value>
+				<Value>true</Value>
+			</Values>
+			<Functions>
+				<Display>PARAMETER_doHide('true', [], ['appendMarker'], true, false)</Display>
+			</Functions>
+		</Option>
+		<Option id="markerBGColor" name="Pin background color">
+			<Description>Defines the default Mappy pin background color. If blank, the Mappy default is used.</Description>
+		</Option>
+		<Option id="markerFGColor" name="Pin foreground color">
+			<Description>Defines the default Mappy pin foreground color. If blank, the Mappy default is used.</Description>
+		</Option>
+		<Option id="iconAnchorX" name="AnchorX icon">
+			<Description>Specifies the pixel relative to the top left corner of the icon image to which this icon is anchored in the map.</Description>
+			<Functions>
+				<Check>isInteger</Check>
+			</Functions>
+		</Option>
+		<Option id="iconAnchorY" name="AnchorY icon">
+			<Description>Specifies the pixel relative to the top left corner of the icon image to which this icon is anchored in the map.</Description>
+			<Functions>
+				<Check>isInteger</Check>
+			</Functions>
+		</Option>
+		<Option id="popUpAnchorX" name="popUpAnchorX">
+			<Description>Specifies the pixel relative to the top left corner of the icon image to which the info window is anchored in this icon.</Description>
+			<Functions>
+				<Check>isInteger</Check>
+			</Functions>
+		</Option>
+		<Option id="popUpAnchorY" name="popUpAnchorY">
+			<Description>Specifies the pixel relative to the top left corner of the icon image to which the info window is anchored in this icon.</Description>
+			<Functions>
+				<Check>isInteger</Check>
+			</Functions>
+		</Option>
+		<Option id="sizeHeight" name="Height">
+			<Description>Specifies the  height of the foreground image of the icon (pixel).</Description>
+			<Functions>
+				<Check>isInteger</Check>
+			</Functions>
+		</Option>
+		<Option id="sizeWidth" name="Width">
+			<Description>Specifies the width of the foreground image of the icon (pixel).</Description>
+			<Functions>
+				<Check>isInteger</Check>
+			</Functions>
+		</Option>
+		<Option id="appendMarker" name="Append marker location (advanced)">
+			<Description>
+				<![CDATA[
+					Specifies the CSS path where the marker will be appended in the hit display.<br />
+					Generally, the default value does not need to be changed for the standard hit display widget.
+				]]>			
+			 </Description>
+		</Option>
+	</OptionsGroup>
+
+	<OptionsGroup name="Style">
+		<Option id="width" name="Width">
+			<Description>Specifies the width of the map. You must enter an integer.</Description>
+			<Functions>
+				<Check>isInteger</Check>
+			</Functions>
+		</Option>
+		<Option id="height" name="Height" arity="ONE">
+			<Description>Specifies the height of the map. You must enter an integer.</Description>
+			<Functions>
+				<Check>isInteger</Check>
+			</Functions>
+		</Option>
+	</OptionsGroup>
+	
+	<DefaultValues>
+		<DefaultValue name="mappyDecoration">true</DefaultValue>
+		<DefaultValue name="showMiniMap">false</DefaultValue>
+		<DefaultValue name="showToolbar">lt</DefaultValue>
+		<DefaultValue name="showIconMiniMap">lt</DefaultValue>
+		<DefaultValue name="showIconMove">true</DefaultValue>
+		<DefaultValue name="showIconMouseWheelZoom">true</DefaultValue>
+		<DefaultValue name="showIconSelection">true</DefaultValue>
+		<DefaultValue name="showIconZoom">true</DefaultValue>
+		<DefaultValue name="showIconSlider">true</DefaultValue>
+		<DefaultValue name="disableScrollWheelZoom">true</DefaultValue>
+		<DefaultValue name="disableDraggable">true</DefaultValue>
+		<DefaultValue name="hitPins">true</DefaultValue>
+		<DefaultValue name="markerBGColor">#4572A7</DefaultValue>
+		<DefaultValue name="markerFGColor">#FFFFFF</DefaultValue>
+		<DefaultValue name="iconAnchorX">10</DefaultValue>
+		<DefaultValue name="iconAnchorY">31</DefaultValue>
+		<DefaultValue name="popUpAnchorX">10</DefaultValue>
+		<DefaultValue name="popUpAnchorY">0</DefaultValue>
+		<DefaultValue name="sizeHeight">31</DefaultValue>
+		<DefaultValue name="sizeWidth">21</DefaultValue>
+		<DefaultValue name="appendMarker">div.${entry:cleanId(entry)} div.hitInfo, table.${entry:cleanId(entry)} div.hitInfo, tr.${entry:cleanId(entry)} td:first, li.${entry:cleanId(entry)} h3</DefaultValue>
+		<DefaultValue name="height">350</DefaultValue>
+	</DefaultValues>
+</Widget>

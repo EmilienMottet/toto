@@ -1,0 +1,5 @@
+#! /bin/sh
+DATA=$(cd $(dirname $0)/.. && pwd)
+. $DATA/bin/ngstart.env
+$DATA/bin/cvcommand :$NGHOSTAGENTPORT ken $@
+ 
