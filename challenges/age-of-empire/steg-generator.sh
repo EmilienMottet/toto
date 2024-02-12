@@ -8,9 +8,9 @@ fi
 
 FLAG=$1
 PASSPHRASE="trololo"
-IMAGE_PATH="static/AG3_0F_3MP1R3_II.jpeg"
+IMAGE_PATH="static/not-encoded-AG3_0F_3MP1R3_II.jpeg"
 FLAG_FILE="flag.txt"
-OUTPUT_IMAGE="output.jpeg"
+OUTPUT_IMAGE="static/AG3_0F_3MP1R3_II.jpeg"
 
 # Create a temporary file containing the flag
 echo "$FLAG" > "$FLAG_FILE"
@@ -25,4 +25,4 @@ rm "$FLAG_FILE"
 echo "Flag hidden in '$OUTPUT_IMAGE' successfully."
 
 # Echo the path to the encoded image
-echo "Path to the encoded image: $(pwd)/$OUTPUT_IMAGE"
+echo "$(pwd)/$OUTPUT_IMAGE"
