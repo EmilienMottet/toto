@@ -68,7 +68,7 @@ def generate_challenge(current_config: Dict, next_config: Optional[Dict], config
         flag = result.stdout.strip()
 
     # Prepare context for rendering templates
-    context = {"flag": flag, "chall_name": name, "user_agent": "{{user_agent}}"}
+    context = {"flag": flag, "chall_name": name, "user_agent": "{{user_agent}}", "target_name": "MICHELIN", "data": "{{data}}"}
 
     # Render and save CSS file
     css_content = render_template(os.path.join(config_dir, current_config["css"]), context)
