@@ -7,22 +7,22 @@ if [ -z "$1" ]; then
 fi
 
 FLAG=$1
-PASSPHRASE="trololo"
-IMAGE_PATH="static/AG3_0F_3MP1R3_II.jpeg"
-FLAG_FILE="flag.txt"
-OUTPUT_IMAGE="output.jpeg"
+VAULT_PASSWORD="leeloo" # Password for ansible-vault
 
-# Create a temporary file containing the flag
+# Get the directory of the current script
+SCRIPT_DIR=$(dirname "$BASH_SOURCE")
+FLAG_FILE="$SCRIPT_DIR/static/D4554ULT/gct/5/master/SearchFlag.txt"
+ZIP_FILE="$SCRIPT_DIR/static/wh3r3_15_4z1z.zip"
+
+# Create the file with the flag
 echo "$FLAG" > "$FLAG_FILE"
 
-# Use steghide to embed the flag into the image
-steghide embed -ef "$FLAG_FILE" -cf "$IMAGE_PATH" -p "$PASSPHRASE" -sf "$OUTPUT_IMAGE"
+# Encrypt the file with ansible-vault
+ansible-vault encrypt "$FLAG_FILE" --vault-password-file <(echo "$VAULT_PASSWORD")
 
-# Cleanup: Remove the temporary flag file
-rm "$FLAG_FILE"
+# Zip the directory structure
+rm -f "$ZIP_FILE"
+zip -9 -r "$ZIP_FILE" "$SCRIPT_DIR/static/D4554ULT"
 
-# Output the path of the encoded image
-echo "Flag hidden in '$OUTPUT_IMAGE' successfully."
-
-# Echo the path to the encoded image
-echo "Path to the encoded image: $(pwd)/$OUTPUT_IMAGE"
+# Output only the path of the created zip file
+echo "$ZIP_FILE"
