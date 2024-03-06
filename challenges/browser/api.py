@@ -8,8 +8,10 @@ def create_router(templates: Jinja2Templates):
     async def route_header_flag(request: Request):
         data = {"request": request}
         my_header = request.headers.get('user-agent')
-        if "{{user_agent}}" in my_header.lower():
+        if "michelin" in my_header.lower():
             my_header = "{{flag}}"
+        else:
+            my_header = "michelin"
         data["user_agent"] = my_header
         var = templates.TemplateResponse("{{chall_name}}", data)
         return var
