@@ -18,14 +18,16 @@ def clean_build_directory(build_path: str) -> None:
         shutil.rmtree(build_path)
     os.makedirs(build_path, exist_ok=True)
 
-def dummy_url_for(endpoint: str, path: str) -> str:
-    """
-    Dummy 'url_for' function to mimic URL generation in templates.
-    """
-    if endpoint != 'static':
-        raise InvalidEndpointError(f"Invalid endpoint '{endpoint}' used in dummy_url_for.")
+def dummy_url_for_with_sub_path(sub_path):
+    def dummy_url_for(endpoint: str, path: str) -> str:
+        """
+        Dummy 'url_for' function to mimic URL generation in templates.
+        """
+        if not 'static' in endpoint :
+            raise InvalidEndpointError(f"Invalid endpoint '{endpoint}' used in dummy_url_for.")
 
-    return "{{ url_for('"+endpoint+"', path='"+path+"') }}"
+        return "{{ url_for('"+endpoint+ "_" + sub_path +"', path='"+path+"') }}"
+    return dummy_url_for
 
 def render_template(template_path: str, context: Dict[str, str]) -> str:
     """
@@ -37,7 +39,7 @@ def render_template(template_path: str, context: Dict[str, str]) -> str:
     """
     env = Environment(loader=FileSystemLoader('.'))
     template = env.get_template(template_path)
-    context['url_for'] = dummy_url_for  # Add the dummy 'url_for' to the context
+    context['url_for'] = dummy_url_for_with_sub_path(context["sub_path"])  # Add the dummy 'url_for' to the context
     return template.render(context)
 
 def generate_challenge(current_config: Dict, next_config: Optional[Dict], config_dir: str, index: int, path: str) -> None:
@@ -68,7 +70,7 @@ def generate_challenge(current_config: Dict, next_config: Optional[Dict], config
         flag = result.stdout.strip()
 
     # Prepare context for rendering templates
-    context = {"flag": flag, "chall_name": name, "user_agent": "{{user_agent}}", "target_name": "MICHELIN", "data": "{{data}}"}
+    context = {"flag": flag, "chall_name": name, "user_agent": "{{user_agent}}", "target_name": "MICHELIN", "data": "{{data}}", "sub_path": path}
 
     # Render and save CSS file
     css_content = render_template(os.path.join(config_dir, current_config["css"]), context)
