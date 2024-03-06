@@ -1,5 +1,6 @@
-from fastapi import APIRouter, Request, Depends, FastAPI
+from fastapi import APIRouter, Request, Depends
 from fastapi.templating import Jinja2Templates
+from datetime import datetime, timedelta
 import random
 
 equations = {}
@@ -25,32 +26,6 @@ def generate_random_equation():
     return equation
 
 
-app = FastAPI()
-@app.post("/challenges/{{chall_name}}")
-def resolve_challenge(body: bytes = Depends(get_body)):
-    # return templates.TemplateResponse("readme.html", {"request": request, "id": id})
-    # return the template response where the template is from the user parameter
-    # retrieve the variable result from the request object
-    # result = request.get('result')
-    # print(request.body())
-    current_timestamp = datetime.now()
-    for entry in equations.copy():
-        if current_timestamp - entry > timedelta(seconds=5):
-            equations.pop(entry)
-
-    payload = body.decode("utf-8")
-    try:
-        result = int(payload.split("=")[1].strip())
-        print(payload)
-        for entry in equations.copy():
-            if result == equations[entry]:
-                return {"message": "{{flag}} omgbbq!!!"}
-        print(f"No result found for {payload}")
-    except Exception as e:
-        print(e)
-    return {"message": "4r3 y0u 53r10u5?"}
-
-
 def create_router(templates: Jinja2Templates):
     router = APIRouter()
     @router.get("/challenges/{{chall_name}}")
@@ -65,8 +40,34 @@ def create_router(templates: Jinja2Templates):
         print(eval((random_equation)))
         equations[current_timestamp] = eval((random_equation))
         data['data'] = f"{random_equation} = ???"
-        var = templates.TemplateResponse(challenge, data)
+        var = templates.TemplateResponse("{{chall_name}}", data)
         return var
+
+    @router.post("/challenges/{{chall_name}}")
+    def resolve_challenge(body: bytes = Depends(get_body)):
+        # return templates.TemplateResponse("readme.html", {"request": request, "id": id})
+        # return the template response where the template is from the user parameter
+        # retrieve the variable result from the request object
+        # result = request.get('result')
+        # print(request.body())
+        current_timestamp = datetime.now()
+        for entry in equations.copy():
+            if current_timestamp - entry > timedelta(seconds=5):
+                equations.pop(entry)
+
+        payload = body.decode("utf-8")
+        try:
+            result = int(payload.split("=")[1].strip())
+            print(payload)
+            for entry in equations.copy():
+                if result == equations[entry]:
+                    return {"message": "{{flag}} omgbbq!!!"}
+            print(f"No result found for {payload}")
+        except Exception as e:
+            print(e)
+        return {"message": "4r3 y0u 53r10u5?"}
+
+
 
     return router
 
