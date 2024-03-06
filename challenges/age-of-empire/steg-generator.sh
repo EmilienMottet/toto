@@ -14,7 +14,9 @@ FLAG_FILE="$SCRIPT_DIR/flag.txt"
 OUTPUT_IMAGE="$SCRIPT_DIR/static/AG3_0F_3MP1R3_II.jpeg"
 
 # Create a temporary file containing the flag
-echo "$FLAG" > "$FLAG_FILE"
+echo "https://fr.wikipedia.org/wiki/Sept_collines_de_Rome" > "$FLAG_FILE"
+echo "$FLAG" | tr 'A-Za-z' 'H-ZA-Gh-za-g' >> "$FLAG_FILE"
+
 
 # Use steghide to embed the flag into the image
 rm -f "$OUTPUT_IMAGE"
