@@ -1,6 +1,7 @@
 import uvicorn
 from os import getenv
 
+
 # Import the `configure_azure_monitor()` function from the
 # `azure.monitor.opentelemetry` package.
 from azure.monitor.opentelemetry import configure_azure_monitor
@@ -12,4 +13,4 @@ configure_azure_monitor(
 
 if __name__ == "__main__":
     port = int(getenv("PORT", 8000))
-    uvicorn.run("api:app", host="0.0.0.0", port=port, reload=True, proxy_headers=True, forwarded_allow_ips="*")
+    uvicorn.run("api:app", host="0.0.0.0", port=port, reload=True, proxy_headers=True, forwarded_allow_ips="*", log_level="info")

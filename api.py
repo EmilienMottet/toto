@@ -15,9 +15,25 @@ import os
 from paths_config import PATHS
 import importlib
 import glob
+from opentelemetry.instrumentation.fastapi import FastAPIInstrumentor
+from opentelemetry import trace
+from opentelemetry.trace import (
+    get_tracer_provider,
+)
+from opentelemetry.propagate import extract
+from logging import getLogger, INFO
+
+tracer = trace.get_tracer(__name__,
+                          tracer_provider=get_tracer_provider())
+
+logger = getLogger(__name__)
+
 
 
 app = FastAPI()
+
+FastAPIInstrumentor.instrument_app(app)
+
 app.mount("/static", StaticFiles(directory="static"), name="static_base")
 base_templates = Jinja2Templates(directory="templates")
 
@@ -51,7 +67,7 @@ for path in PATHS.keys():
     static_dir = os.path.join(BUILD_DIR, path, "static")
 
     # Create an APIRouter instance
-    router = FastAPI()
+    router = APIRouter()
     # Mount static files to the router
     router.mount("/static", StaticFiles(directory=static_dir), name="static_" + path)
     
