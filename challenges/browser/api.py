@@ -11,7 +11,7 @@ def create_router(templates: Jinja2Templates):
         if "{{user_agent}}" in my_header.lower():
             my_header = "{{flag}}"
         data["user_agent"] = my_header
-        var = templates.TemplateResponse(challenge, data)
+        var = templates.TemplateResponse("{{chall_name}}", data)
         return var
 
     return router
