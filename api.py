@@ -88,6 +88,7 @@ for path, elements in routers.items():
     challenge_route = create_challenge_route(templates)
     router.get("/challenges/{challenge}")(challenge_route)
     router.post("/challenges/{challenge}")(challenge_route)
+    router.put("/challenges/{challenge}")(challenge_route)
 
     # Include the router in the main application with a path prefix
     app.mount(f"/{path}",router)
