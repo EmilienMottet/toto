@@ -1,6 +1,6 @@
 import requests
 
-url = "http://0.0.0.0:8000/challenges/06-us3r-4g3n7-15-4n-1n73rn4710n4l-574nd4rd.html"
+url = "https://challenges-devoxx.azurewebsites.net/dev/challenges/5_us3r-4g3n7-15-4n-1n73rn4710n4l-574nd4rd.html"
 response = requests.request("PUT", url)
 
 identifier = response.json()["id"]
@@ -29,7 +29,7 @@ def recherche_dichotomique():
             'number': milieu
         }
         print(f" Milieu is {milieu}")
-        req = requests.post("http://0.0.0.0:8000/challenges/06-us3r-4g3n7-15-4n-1n73rn4710n4l-574nd4rd.html", data=data)
+        req = requests.post("https://challenges-devoxx.azurewebsites.net/dev/challenges/5_us3r-4g3n7-15-4n-1n73rn4710n4l-574nd4rd.html", data=data)
         content = str(req.content)
         print(f"{content}")
         if 'high' in content:
