@@ -8,14 +8,16 @@ fi
 
 FLAG=$1
 PASSPHRASE="trololo"
-IMAGE_PATH="static/not-encoded-AG3_0F_3MP1R3_II.jpeg"
-FLAG_FILE="flag.txt"
-OUTPUT_IMAGE="static/AG3_0F_3MP1R3_II.jpeg"
+SCRIPT_DIR=$(dirname "$BASH_SOURCE")
+IMAGE_PATH="$SCRIPT_DIR/static/not-encoded-AG3_0F_3MP1R3_II.jpeg"
+FLAG_FILE="$SCRIPT_DIR/flag.txt"
+OUTPUT_IMAGE="$SCRIPT_DIR/static/AG3_0F_3MP1R3_II.jpeg"
 
 # Create a temporary file containing the flag
 echo "$FLAG" > "$FLAG_FILE"
 
 # Use steghide to embed the flag into the image
+rm -f "$OUTPUT_IMAGE"
 steghide embed -ef "$FLAG_FILE" -cf "$IMAGE_PATH" -p "$PASSPHRASE" -sf "$OUTPUT_IMAGE"
 
 # Cleanup: Remove the temporary flag file
