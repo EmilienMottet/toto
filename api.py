@@ -53,8 +53,7 @@ for path in PATHS.keys():
     # Create an APIRouter instance
     router = FastAPI()
     # Mount static files to the router
-    router.mount("/static", StaticFiles(directory=static_dir), name="static")
-    
+    router.mount("/static", StaticFiles(directory=static_dir), name="static_" + path)
     
     router_directory = os.path.join(BUILD_DIR, path, "api")
     router_modules = find_router_modules(router_directory)
@@ -88,7 +87,8 @@ for path, elements in routers.items():
 
     challenge_route = create_challenge_route(templates)
     router.get("/challenges/{challenge}")(challenge_route)
-    
+    router.post("/challenges/{challenge}")(challenge_route)
+
     # Include the router in the main application with a path prefix
     app.mount(f"/{path}",router)
 
