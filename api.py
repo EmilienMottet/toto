@@ -75,8 +75,14 @@ for path in PATHS.keys():
 
 def create_challenge_route(templates: Jinja2Templates):
     async def challenge(request: Request, challenge: str):
-        data = {"request": request}
-        return templates.TemplateResponse(challenge, data)
+        try:
+            data = {"request": request}
+            return templates.TemplateResponse(challenge, data)
+        except Exception as e:
+            print(e)
+            return base_templates.TemplateResponse('404.html', {'request': request})
+
+
     return challenge
 
 # Add routes to each router
