@@ -132,7 +132,7 @@ const timeline = [
 		year: 2024,
 		month: 02,
 		month_name: "February 2024",
-		title: "Best PFE within Michelin? We are looking for awesome talents like you!"
+		title: "Best JOB within Michelin? We are looking for awesome talents like you!"
 		// that would have been too easy right? ;) Where can it be? (hint: it's not in the HTTP body)
 	}
 ];
