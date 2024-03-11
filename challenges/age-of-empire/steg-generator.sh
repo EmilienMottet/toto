@@ -22,6 +22,9 @@ echo "$FLAG" | tr 'A-Za-z' 'H-ZA-Gh-za-g' >> "$FLAG_FILE"
 rm -f "$OUTPUT_IMAGE"
 steghide embed -ef "$FLAG_FILE" -cf "$IMAGE_PATH" -p "$PASSPHRASE" -sf "$OUTPUT_IMAGE"
 
+# Write metadata description
+exiftool -overwrite_original -ImageDescription="passphrase:${PASSPHRASE}" "$OUTPUT_IMAGE"
+
 # Cleanup: Remove the temporary flag file
 rm "$FLAG_FILE"
 
