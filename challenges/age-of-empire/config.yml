@@ -6,4 +6,4 @@ css: "./static/AG3_0F_3MP1R3_II-style.css"
 javascript: "./static/AG3_0F_3MP1R3_II-script.js"
 encoding_script: "./steg-generator.sh"
 static_file:
-  - "./static/AG3_0F_3MP1R3_II.jpeg"
+  - "./static/not-encoded-AG3_0F_3MP1R3_II.jpeg"
