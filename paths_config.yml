@@ -12,7 +12,7 @@ PATHS:
     #
     - ./challenges/plus_or_minus/config.yml
     #
-    - ./challenges/5elements/config.yml
+    # - ./challenges/5elements/config.yml
     #
     - ./challenges/final-1/config.yml
   ops:
@@ -28,7 +28,7 @@ PATHS:
     #
     - ./challenges/age-of-empire/config.yml
     #
-    - ./challenges/5elements/config.yml
+    # - ./challenges/5elements/config.yml
     #
     - ./challenges/final-2/config.yml
   sec:
@@ -42,7 +42,7 @@ PATHS:
     #
     - ./challenges/imb-encoding/config.yml
     #
-    - ./challenges/5elements/config.yml
+    # - ./challenges/5elements/config.yml
     #
     - ./challenges/age-of-empire/config.yml
     #
