@@ -1,1 +1,0 @@
-<AlertingConfig xmlns="exa:com.exalead.cloudview.alerting.v10" dbConnectionString="jdbc:sqlite:${dataDir}/alerting/db.sql"/>

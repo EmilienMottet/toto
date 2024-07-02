@@ -1,4 +1,0 @@
-[2019/10/13-00:00:00.061] [info] [364995643@jtp-default-5] [exa.log.rotation]	Rotating additional logs
-[2019/10/13-00:00:00.153] [info] [364995643@jtp-default-5] [index.generations]	slice 0: inst sxii0: Switch to generation '7616' done in 12.416ms
-[2019/10/14-00:00:00.060] [info] [364995643@jtp-default-5] [exa.log.rotation]	Rotating standard log
-Log4NG: rotating logs now

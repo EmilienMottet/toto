@@ -1,3 +1,0 @@
-#timestamp;apiclient_ip;query_service;query_querystring;query_output;answer_status;answer_blacklisted;answer_nhits;time_total;query_full
-"2019/10/24 11:16:59.989";"10.139.251.236";"OnPremise_securedSuggest_ds6w_58_label";"MFD";"json";"0";"0";"0";"3209";""
-"2019/10/24 12:57:47.208";"10.139.251.236";"OnPremise_securedSuggest_ds6w_58_label";"bourdilleau";"json";"0";"0";"0";"3824";""

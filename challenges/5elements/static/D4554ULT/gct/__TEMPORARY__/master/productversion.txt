@@ -1,2 +1,0 @@
-#Wed Oct 09 09:07:45 CEST 2019
-version=V6R2019x.R2.99035

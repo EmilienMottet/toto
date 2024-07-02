@@ -1,4 +1,0 @@
-${NGINSTALLDIR}/${NGARCH}/bin/exa
--b
-${NGINSTALLDIR}/${NGARCH}/bin/mercury.bin
-com.exalead.mercury.cache.migrateCache

@@ -1,3 +1,0 @@
-file:///busdata/dpmu/gbl0/data/cv/bin/../webapps/360-mashup-ui
-1570546393000
-/mashup-ui

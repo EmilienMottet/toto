@@ -1,7 +1,0 @@
-#timestamp;apiclient_ip;query_service;query_querystring;query_output;answer_status;answer_blacklisted;answer_nhits;time_total;query_full
-"2019/10/17 09:04:47.688";"10.139.251.236";"OnPremise_securedSuggest_ds6w_58_label";"mass-72342975-00000025";"json";"0";"0";"0";"48343";""
-"2019/10/17 09:05:58.406";"10.139.251.236";"OnPremise_securedSuggest_ds6w_58_label";"mass-72342975-00000026";"json";"0";"0";"0";"11297";""
-"2019/10/17 09:26:53.942";"10.139.251.236";"OnPremise_securedSuggest_ds6w_58_label";"mass-72342975-00000026";"json";"0";"0";"0";"3493";""
-"2019/10/17 09:36:11.143";"10.139.251.236";"OnPremise_securedSuggest_ds6w_58_label";"prvd-72342975-00000002";"json";"0";"0";"0";"11716";""
-"2019/10/17 09:36:36.053";"10.139.251.236";"OnPremise_securedSuggest_ds6w_58_label";"pvd";"json";"0";"0";"0";"3956";""
-"2019/10/17 09:51:16.680";"10.139.251.236";"OnPremise_securedSuggest_ds6w_58_label";"prvd-72342975-00000001";"json";"0";"0";"0";"7413";""

@@ -1,1 +1,0 @@
-<LoggingConfig xmlns="exa:com.exalead.mercury.mami.master.v10"><LoggingLevel level="info"/><GlobalLoggerConfig maxSize="10000" enableGlobalLogEntryStore="false"/></LoggingConfig>

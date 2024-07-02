@@ -1,5 +1,0 @@
-[2019-11-06 08:24:38,728] [INFO ] [shutdown-3468] [org.eclipse.jetty.server.handler.ContextHandler.mashup_ui] Destroying Spring FrameworkServlet '360-search-ui'
-[2019-11-06 08:24:38,735] [INFO ] [shutdown-3468] [org.apache.tiles.access.TilesAccess] Removing TilesContext for context: org.springframework.web.servlet.view.tiles3.SpringWildcardServletTilesApplicationContext
-[2019-11-06 08:24:38,765] [INFO ] [shutdown-3468] [org.eclipse.jetty.server.handler.ContextHandler.mashup_ui] Closing Spring root WebApplicationContext
-[2019-11-06 08:24:38,770] [INFO ] [shutdown-3468] [com.exalead.cv360.searchui.services.UserLicenseManager] Stopping UsersChecking Thread for instance name: mu0
-[2019-11-06 08:24:38,771] [INFO ] [shutdown-3468] [org.eclipse.jetty.server.handler.ContextHandler] Stopped o.e.j.w.WebAppContext@75b6dd5b{/mashup-ui,null,UNAVAILABLE,@16000}{/360-mashup-ui}

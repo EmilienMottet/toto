@@ -1,1 +1,0 @@
-[2019-11-06 08:24:38,937] [INFO ] [shutdown-69669] [org.eclipse.jetty.server.handler.ContextHandler] Stopped o.e.j.w.WebAppContext@71c5b236{/admin,null,UNAVAILABLE,@16001}{/busdata/dpmu/gbl0/data/cv/webapps-tmp/gateway/adminui_16001/admin}

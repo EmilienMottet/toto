@@ -1,1 +1,0 @@
-[2019-11-06 08:24:38,903] [INFO ] [shutdown-3468] [org.eclipse.jetty.server.handler.ContextHandler] Stopped o.e.j.w.WebAppContext@5d12a356{/storage-service,null,UNAVAILABLE,@16010}{/busdata/dpmu/gbl0/data/cv/webapps-tmp/searchserver-ss0/searchapi_16010/storage-service}

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding='UTF-8'?>
-<Widget name="Sub-feed Access" group="Miscellaneous" premium="true">
-
-	<Description>A wrapper that consumes a feed. Consequently, in hit widgets you can access sub-feeds which are not available at the top-level.</Description>
-
-	<SupportWidgetsId arity="ZERO_OR_MANY" label="For each hit" />
-	<SupportFeedsId arity="ONE" />
-
-</Widget>

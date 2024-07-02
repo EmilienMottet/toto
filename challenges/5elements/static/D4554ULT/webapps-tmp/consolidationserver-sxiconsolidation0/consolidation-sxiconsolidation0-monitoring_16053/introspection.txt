@@ -1,3 +1,0 @@
-libpath:/consolidation-monitoring.war
-1567701616000
-/introspection

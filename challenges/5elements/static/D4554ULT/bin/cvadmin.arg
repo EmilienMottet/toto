@@ -1,8 +1,0 @@
-%{JAVA_HOME}/bin/java
--Dfile.encoding=UTF-8
--classpath
-%{NG_RECURSIVE_CLASSPATH}
-com.exalead.cvconsole.CVConsole
---commandsFile
-${NGINSTALLDIR}/resource/all-arch/cvconsole/cvconsole.xml
-cvadmin
