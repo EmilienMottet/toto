@@ -165,6 +165,14 @@ def add_solution_to_file(flag:str,path_name:str,index:int,current_config:Dict)->
     with open('./solution.md','a') as file:
         file.write(f"{solution}\n")
 
+def add_api_main_to_build(build_dir:str)->None:
+    api_file='./api.py'
+    main_file='./main.py'
+    templates_dir='./templates'
+    shutil.copy(api_file, build_dir)
+    shutil.copy(main_file, build_dir)
+    shutil.copytree(templates_dir,build_dir+'/templates')
+    print("les fichiers API, MAIN et le dossier de templates ont été copiés")
 
 def prepare_static_files(build_dir: str, paths: Dict[str, list]) -> None:
     """
@@ -192,6 +200,7 @@ def prepare_static_files(build_dir: str, paths: Dict[str, list]) -> None:
 
             flag=generate_challenge(current_config, next_config, config_dir, index, path_name)
             add_solution_to_file(flag,path_name,index,current_config)
+    add_api_main_to_build(build_dir)
 
 if __name__ == "__main__":
     BUILD_DIR = "./build"
