@@ -1,0 +1,7 @@
+            - name: Vercel Action
+  # You may pin to the exact commit or the version.
+  # uses: amondnet/vercel-action@16e87c0a08142b0d0d33b76aeaf20823c381b9b9
+  uses: amondnet/vercel-action@v25
+  with:
+    # Vercel token
+    vercel-token: Kw2y45KugdS7jjbHkCkM7vOG
