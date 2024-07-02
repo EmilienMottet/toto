@@ -1,6 +1,7 @@
 ## create a simple FastAPI app and run it
 ## run with: uvicorn main:app --reload
 
+import yaml
 import inspect
 from fastapi import Body, Depends, FastAPI, HTTPException, Request, APIRouter
 from fastapi.responses import HTMLResponse
@@ -12,9 +13,12 @@ from datetime import datetime, timedelta
 import time
 from prometheus_fastapi_instrumentator import Instrumentator
 import os
-from paths_config import PATHS
+# from ex_paths_config import PATHS
 import importlib
 import glob
+
+with open('paths_config.yml', 'r') as file:
+    PATHS = yaml.safe_load(file)["PATHS"]
 
 app = FastAPI()
 
@@ -53,7 +57,7 @@ for path in PATHS.keys():
     # Create an APIRouter instance
     router = APIRouter()
     # Mount static files to the router
-    router.mount("/static", StaticFiles(directory=static_dir), name="static_" + path)
+    router.mount("/statics", StaticFiles(directory=static_dir), name="static_" + path)
     
     router_directory = os.path.join(BUILD_DIR, path, "api")
     router_modules = find_router_modules(router_directory)

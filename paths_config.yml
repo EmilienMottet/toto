@@ -1,0 +1,49 @@
+PATHS:
+  dev:
+    - ./challenges/terminal_js/config.yml
+    #  
+    - ./challenges/run-xor-js/config.yml
+    #
+    - ./challenges/mario-css/config.yml
+    #
+    - ./challenges/quick-solving/config.yml
+    #
+    - ./challenges/browser/config.yml
+    #
+    - ./challenges/plus_or_minus/config.yml
+    #
+    - ./challenges/5elements/config.yml
+    #
+    - ./challenges/final-1/config.yml
+  ops:
+    - ./challenges/terminal_js/config.yml
+    #
+    - ./challenges/browser/config.yml
+    #
+    - ./challenges/mario-css/config.yml
+    #
+    - ./challenges/imb-encoding/config.yml
+    #
+    - ./challenges/java-class/config.yml
+    #
+    - ./challenges/age-of-empire/config.yml
+    #
+    - ./challenges/5elements/config.yml
+    #
+    - ./challenges/final-2/config.yml
+  sec:
+    - ./challenges/terminal_js/config.yml
+    #
+    - ./challenges/mario-css/config.yml
+    #
+    - ./challenges/browser/config.yml
+    #
+    - ./challenges/java-class/config.yml
+    #
+    - ./challenges/imb-encoding/config.yml
+    #
+    - ./challenges/5elements/config.yml
+    #
+    - ./challenges/age-of-empire/config.yml
+    #
+    - ./challenges/final-3/config.yml
