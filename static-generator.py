@@ -3,7 +3,6 @@ import yaml
 import uvicorn
 import os
 from os import getenv
-from paths_config import PATHS
 from typing import Optional, Dict
 from jinja2 import Environment, FileSystemLoader
 import shutil
@@ -42,7 +41,7 @@ def render_template(template_path: str, context: Dict[str, str]) -> str:
     context['url_for'] = dummy_url_for_with_sub_path(context["sub_path"])  # Add the dummy 'url_for' to the context
     return template.render(context)
 
-def generate_challenge(current_config: Dict, next_config: Optional[Dict], config_dir: str, index: int, path: str) -> None:
+def generate_challenge(current_config: Dict, next_config: Optional[Dict], config_dir: str, index: int, path: str) -> Optional[str]:
     """
     Generates a challenge based on the given configuration.
     Renders and saves CSS and JavaScript files using templates, and copies the HTML template file.
@@ -100,6 +99,7 @@ def generate_challenge(current_config: Dict, next_config: Optional[Dict], config
             source_file = os.path.join(config_dir, static_file)
             destination_file = os.path.join(BUILD_DIR, path, static_file)
             shutil.copy(source_file, destination_file)
+    return flag
 
 def handle_last_challenge(config: Dict) -> None:
     """
@@ -119,6 +119,7 @@ def read_challenge_config(file_path: str) -> Dict:
     :return: Dictionary containing the configuration.
     """
     full_path = file_path
+    print(full_path)
     with open(full_path, 'r') as file:
         return yaml.safe_load(file)
 
@@ -134,6 +135,36 @@ def save_rendered_content(content: str, output_path: str) -> None:
     with open(output_path, 'w') as file:
         file.write(content)
 
+def generate_solution_file()->None:
+    start_solution="""
+# Intro
+
+### Epreuve: `/`
+- **Next**: `/challenges/0_ch00Z3-uR-PASS.html`
+- **Hint**: Check the CSS and find the file.
+
+### Epreuve: `/challenges/0-ch00Z3-uR-PASS.html`
+- **Next**: Path chosen
+- **Hint**: Clic on the chosen track (you might inspect the link and use the href)
+
+    """
+    with open('./solution.md','w') as file:
+        file.write(start_solution)
+
+def add_solution_to_file(flag:str,path_name:str,index:int,current_config:Dict)-> None:
+    if flag:
+        solution=f"""
+    ### Epreuve: `/{path_name.lower()}/challenges/{index}_{current_config["template"]}`
+- **Next**: `/{path_name.lower()}/challenges/{flag}`
+- **Hint**: {current_config["hint"]}.
+""" 
+    else:
+        solution= f"""### Epreuve: `/{path_name.lower()}/challenges/{index}_{current_config["template"]}`
+- **Hint**: {current_config["hint"]}.
+"""
+    with open('./solution.md','a') as file:
+        file.write(f"{solution}\n")
+
 
 def prepare_static_files(build_dir: str, paths: Dict[str, list]) -> None:
     """
@@ -142,8 +173,12 @@ def prepare_static_files(build_dir: str, paths: Dict[str, list]) -> None:
     """
     # Clean the build directory first
     clean_build_directory(build_dir)
+    generate_solution_file()
 
-    for path_name, challenges in paths.items():
+
+    for path_name, challenges in paths["PATHS"].items():
+        with open('./solution.md','a') as file:
+            file.write(f"## {path_name} Track `/{path_name.lower()}`:\n")
         for index, challenge_config_file in enumerate(challenges):
             config_path = challenge_config_file
             config_dir = os.path.dirname(config_path)
@@ -155,8 +190,11 @@ def prepare_static_files(build_dir: str, paths: Dict[str, list]) -> None:
                 next_config_path = next_challenge_config_file
                 next_config = read_challenge_config(next_config_path)
 
-            generate_challenge(current_config, next_config, config_dir, index, path_name)
+            flag=generate_challenge(current_config, next_config, config_dir, index, path_name)
+            add_solution_to_file(flag,path_name,index,current_config)
 
 if __name__ == "__main__":
     BUILD_DIR = "./build"
+    with open('paths_config.yml', 'r') as file:
+        PATHS = yaml.safe_load(file)
     prepare_static_files(BUILD_DIR, PATHS)
