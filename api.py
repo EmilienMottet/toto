@@ -39,7 +39,6 @@ def load_routers(directory, module_names):
     """Charger dynamiquement les routeurs à partir des noms de modules."""
     routers = []
     for module_name in module_names:
-        print(module,module_name)
         module = importlib.import_module(f"{directory}.{module_name}")
         if hasattr(module, "router"):
             routers.append(module.router)
@@ -57,11 +56,11 @@ for path in PATHS.keys():
     # Create an APIRouter instance
     router = APIRouter()
     # Mount static files to the router
-    router.mount("/statics", StaticFiles(directory=static_dir), name="static_" + path)
+    router.mount("/static", StaticFiles(directory=static_dir), name="static_" + path)
     
     router_directory = os.path.join(BUILD_DIR, path, "api")
     router_modules = find_router_modules(router_directory)
-    api_routers = load_routers(f"build.{ path }.api", router_modules)
+    api_routers = load_routers(f"{ path }.api", router_modules)
 
     # Create a Jinja2Templates instance
     templates = Jinja2Templates(directory=template_dir)
