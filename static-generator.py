@@ -172,13 +172,15 @@ def add_api_main_to_build(build_dir:str)->None:
     main_file='./main.py'
     vercel_file='./vercel.json'
     templates_dir='./templates'
+    static_dir='./static'
     shutil.copy(api_file, build_dir)
     shutil.copy(vercel_file, build_dir)
     shutil.copy(requirement_file, build_dir)
     shutil.copy(path_config_file, build_dir)
     shutil.copy(main_file, build_dir)
     shutil.copytree(templates_dir,build_dir+'/templates')
-    print("les fichiers API, MAIN, etc... et le dossier de templates ont été copiés")
+    shutil.copytree(static_dir,build_dir+'/static')
+    print("les fichiers API, MAIN, etc... et les dossiers de templates/static ont été copiés")
 
 def prepare_static_files(build_dir: str, paths: Dict[str, list]) -> None:
     """
