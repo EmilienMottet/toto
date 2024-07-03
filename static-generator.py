@@ -167,12 +167,16 @@ def add_solution_to_file(flag:str,path_name:str,index:int,current_config:Dict)->
 
 def add_api_main_to_build(build_dir:str)->None:
     api_file='./api.py'
+    requirement_file='./requirements.txt'
+    path_config_file='./paths_config.yml'
     main_file='./main.py'
     templates_dir='./templates'
     shutil.copy(api_file, build_dir)
+    shutil.copy(requirement_file, build_dir)
+    shutil.copy(path_config_file, build_dir)
     shutil.copy(main_file, build_dir)
     shutil.copytree(templates_dir,build_dir+'/templates')
-    print("les fichiers API, MAIN et le dossier de templates ont été copiés")
+    print("les fichiers API, MAIN, etc... et le dossier de templates ont été copiés")
 
 def prepare_static_files(build_dir: str, paths: Dict[str, list]) -> None:
     """
