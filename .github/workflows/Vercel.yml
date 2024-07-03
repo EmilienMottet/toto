@@ -58,6 +58,5 @@ jobs:
         env:
           VERCEL_TOKEN: ${{ secrets.Vercel_Raph }}
         run: |
-          cd ..
           npm install -g vercel
           vercel --prod --yes --token=$VERCEL_TOKEN --cwd=build
