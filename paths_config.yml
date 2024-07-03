@@ -1,3 +1,6 @@
+INITIAL:
+  - ./challenges/readme/config.yml
+  - ./challenges/choose-path/config.yml
 PATHS:
   dev:
     - ./challenges/terminal_js/config.yml

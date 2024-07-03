@@ -1,11 +1,9 @@
 import subprocess
-import yaml
-import uvicorn
 import os
-from os import getenv
 from typing import Optional, Dict
-from jinja2 import Environment, FileSystemLoader
 import shutil
+import yaml #pylint: disable=import-error
+from jinja2 import Environment, FileSystemLoader #pylint: disable=import-error
 
 def clean_build_directory(build_path: str) -> None:
     """
@@ -41,7 +39,7 @@ def render_template(template_path: str, context: Dict[str, str]) -> str:
     context['url_for'] = dummy_url_for_with_sub_path(context["sub_path"])  # Add the dummy 'url_for' to the context
     return template.render(context)
 
-def generate_challenge(current_config: Dict, next_config: Optional[Dict], config_dir: str, index: int, path: str) -> Optional[str]:
+def generate_challenge(current_config: Dict, next_config: Optional[Dict], config_dir: str, index: int, path: Optional[str]) -> None:
     """
     Generates a challenge based on the given configuration.
     Renders and saves CSS and JavaScript files using templates, and copies the HTML template file.
@@ -68,38 +66,39 @@ def generate_challenge(current_config: Dict, next_config: Optional[Dict], config
         )
         flag = result.stdout.strip()
 
+
     # Prepare context for rendering templates
-    context = {"flag": flag, "chall_name": name, "user_agent": "{{user_agent}}", "target_name": "MICHELIN", "data": "{{data}}", "sub_path": path}
+    context = {"flag": flag, "chall_name": name, "user_agent": "{{user_agent}}", "target_name": "MICHELIN", "data": "{{data}}", "sub_path": path or "initial"}
 
     # Render and save CSS file
     css_content = render_template(os.path.join(config_dir, current_config["css"]), context)
-    css_output_path = os.path.join(BUILD_DIR, path, current_config["css"])
+    css_output_path = os.path.join(BUILD_DIR, path, current_config["css"]) if path else os.path.join(BUILD_DIR, current_config["css"])
     save_rendered_content(css_content, css_output_path)
 
     # Render and save api file
     if "api" in current_config:
         api_content = render_template(os.path.join(config_dir, current_config["api"]), context)
         api_name = name.replace(".html",".py")
-        api_output_path = os.path.join(BUILD_DIR, path,"api" , api_name)
+        api_output_path = os.path.join(BUILD_DIR, path,"api" , api_name) if path else os.path.join(BUILD_DIR,"api" , api_name)
         save_rendered_content(api_content, api_output_path)
 
     # Render and save JavaScript file
+    print(current_config)
     js_content = render_template(os.path.join(config_dir, current_config["javascript"]), context)
-    js_output_path = os.path.join(BUILD_DIR, path, current_config["javascript"])
+    js_output_path = os.path.join(BUILD_DIR, path, current_config["javascript"]) if path else  os.path.join(BUILD_DIR, current_config["javascript"])
     save_rendered_content(js_content, js_output_path)
 
     # Copy HTML template file
     html_template_path = os.path.join(config_dir, current_config["template"])
     html_content = render_template(html_template_path, context)
-    html_output_path = os.path.join(BUILD_DIR, path, 'template', f"{index}_{current_config['template']}")
+    html_output_path = os.path.join(BUILD_DIR, path, 'template', f"{index}_{current_config['template']}") if path else os.path.join(BUILD_DIR, 'template', f"{index}_{current_config['template']}")
     save_rendered_content(html_content,html_output_path)
 
     if "static_file" in current_config:
         for static_file in current_config["static_file"]:
             source_file = os.path.join(config_dir, static_file)
-            destination_file = os.path.join(BUILD_DIR, path, static_file)
+            destination_file = os.path.join(BUILD_DIR, path, static_file) if path else os.path.join(BUILD_DIR, static_file)
             shutil.copy(source_file, destination_file)
-    return flag
 
 def handle_last_challenge(config: Dict) -> None:
     """
@@ -119,8 +118,8 @@ def read_challenge_config(file_path: str) -> Dict:
     :return: Dictionary containing the configuration.
     """
     full_path = file_path
-    print(full_path)
-    with open(full_path, 'r') as file:
+
+    with open(full_path, 'r',encoding='utf-8') as file:
         return yaml.safe_load(file)
 
 
@@ -132,40 +131,14 @@ def save_rendered_content(content: str, output_path: str) -> None:
     :param output_path: The file path to save the content to.
     """
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
-    with open(output_path, 'w') as file:
+    with open(output_path, 'w',encoding='utf-8') as file:
         file.write(content)
 
-def generate_solution_file()->None:
-    start_solution="""
-# Intro
-
-### Epreuve: `/`
-- **Next**: `/challenges/0_ch00Z3-uR-PASS.html`
-- **Hint**: Check the CSS and find the file.
-
-### Epreuve: `/challenges/0-ch00Z3-uR-PASS.html`
-- **Next**: Path chosen
-- **Hint**: Clic on the chosen track (you might inspect the link and use the href)
-
-    """
-    with open('./solution.md','w') as file:
-        file.write(start_solution)
-
-def add_solution_to_file(flag:str,path_name:str,index:int,current_config:Dict)-> None:
-    if flag:
-        solution=f"""
-    ### Epreuve: `/{path_name.lower()}/challenges/{index}_{current_config["template"]}`
-- **Next**: `/{path_name.lower()}/challenges/{flag}`
-- **Hint**: {current_config["hint"]}.
-""" 
-    else:
-        solution= f"""### Epreuve: `/{path_name.lower()}/challenges/{index}_{current_config["template"]}`
-- **Hint**: {current_config["hint"]}.
-"""
-    with open('./solution.md','a') as file:
-        file.write(f"{solution}\n")
 
 def add_api_main_to_build(build_dir:str)->None:
+    """
+    In order that the build is totally operational, api.py and other files must be included in build
+    """
     api_file='./api.py'
     requirement_file='./requirements.txt'
     path_config_file='./paths_config.yml'
@@ -189,12 +162,20 @@ def prepare_static_files(build_dir: str, paths: Dict[str, list]) -> None:
     """
     # Clean the build directory first
     clean_build_directory(build_dir)
-    generate_solution_file()
+    challenges_dir="/challenges/"
+    for index,challenges_init in enumerate(paths["INITIAL"]):
+        config_path = challenges_init
+        config_dir = os.path.dirname(config_path)
+        current_config = read_challenge_config(config_path)
 
+        next_config: Optional[Dict] = None
+        if index + 1 < len(paths["INITIAL"]):
+            next_challenge_config_file = paths["INITIAL"][index + 1]
+            next_config_path = next_challenge_config_file
+            next_config = read_challenge_config(next_config_path)
+        generate_challenge(current_config, next_config, config_dir,index, "initial")
 
     for path_name, challenges in paths["PATHS"].items():
-        with open('./solution.md','a') as file:
-            file.write(f"## {path_name} Track `/{path_name.lower()}`:\n")
         for index, challenge_config_file in enumerate(challenges):
             config_path = challenge_config_file
             config_dir = os.path.dirname(config_path)
@@ -205,13 +186,11 @@ def prepare_static_files(build_dir: str, paths: Dict[str, list]) -> None:
                 next_challenge_config_file = challenges[index + 1]
                 next_config_path = next_challenge_config_file
                 next_config = read_challenge_config(next_config_path)
-
-            flag=generate_challenge(current_config, next_config, config_dir, index, path_name)
-            add_solution_to_file(flag,path_name,index,current_config)
+            generate_challenge(current_config, next_config, config_dir,len(paths["INITIAL"])+index, path_name)
     add_api_main_to_build(build_dir)
 
 if __name__ == "__main__":
     BUILD_DIR = "./build"
-    with open('paths_config.yml', 'r') as file:
+    with open('paths_config.yml', 'r', encoding='utf-8') as file:
         PATHS = yaml.safe_load(file)
     prepare_static_files(BUILD_DIR, PATHS)

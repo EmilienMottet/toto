@@ -1,0 +1,6 @@
+title: "readme"
+description: "Ou qu'il est le premier flag ?"
+hint: "Check the CSS and find the file."
+template: "readme.html"
+css: "./static/readme.css"
+javascript: "./static/readme.js"
