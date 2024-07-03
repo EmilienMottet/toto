@@ -170,8 +170,10 @@ def add_api_main_to_build(build_dir:str)->None:
     requirement_file='./requirements.txt'
     path_config_file='./paths_config.yml'
     main_file='./main.py'
+    vercel_file='./vercel.json'
     templates_dir='./templates'
     shutil.copy(api_file, build_dir)
+    shutil.copy(vercel_file, build_dir)
     shutil.copy(requirement_file, build_dir)
     shutil.copy(path_config_file, build_dir)
     shutil.copy(main_file, build_dir)
