@@ -56,7 +56,7 @@ for path in PATHS.keys():
     # Create an APIRouter instance
     router = APIRouter()
     # Mount static files to the router
-    router.mount("/statics", StaticFiles(directory=static_dir), name="static_" + path)
+    router.mount("/static", StaticFiles(directory=static_dir), name="static_" + path)
     
     router_directory = os.path.join(BUILD_DIR, path, "api")
     router_modules = find_router_modules(router_directory)
