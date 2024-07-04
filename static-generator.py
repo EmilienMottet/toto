@@ -66,9 +66,17 @@ def generate_challenge(current_config: Dict, next_config: Optional[Dict], config
         )
         flag = result.stdout.strip()
 
-
+    first_path_chall_config = [valeurs[0] for cle,valeurs in PATHS["PATHS"].items()]
+    first_path_chall_list=[]
+    for config_file in first_path_chall_config:
+        with open(config_file,'r',encoding='utf-8') as file:
+            config=yaml.safe_load(file)
+        first_path_chall_list.append(f"{index + 1}_{config['template']}")
     # Prepare context for rendering templates
-    context = {"flag": flag, "chall_name": name, "user_agent": "{{user_agent}}", "target_name": "MICHELIN", "data": "{{data}}", "sub_path": path or "initial"}
+    context = {"flag": flag, "chall_name": name, "user_agent": "{{user_agent}}",
+                "target_name": "MICHELIN", "data": "{{data}}", "sub_path": path or "initial",
+                "PATH": PATHS, "first_path_chall":first_path_chall_list
+               }
 
     # Render and save CSS file
     css_content = render_template(os.path.join(config_dir, current_config["css"]), context)
@@ -83,7 +91,6 @@ def generate_challenge(current_config: Dict, next_config: Optional[Dict], config
         save_rendered_content(api_content, api_output_path)
 
     # Render and save JavaScript file
-    print(current_config)
     js_content = render_template(os.path.join(config_dir, current_config["javascript"]), context)
     js_output_path = os.path.join(BUILD_DIR, path, current_config["javascript"]) if path else  os.path.join(BUILD_DIR, current_config["javascript"])
     save_rendered_content(js_content, js_output_path)
@@ -179,6 +186,7 @@ def prepare_static_files(build_dir: str, paths: Dict[str, list]) -> None:
         for index, challenge_config_file in enumerate(challenges):
             config_path = challenge_config_file
             config_dir = os.path.dirname(config_path)
+            print(config_dir)
             current_config = read_challenge_config(config_path)
 
             next_config: Optional[Dict] = None
