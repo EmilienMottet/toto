@@ -1,6 +1,6 @@
 ## create a simple FastAPI app and run it
 ## run with: uvicorn main:app --reload
-import yaml
+import yaml #pylint : disable=E0401
 import inspect
 from fastapi import Body, Depends, FastAPI, HTTPException, Request, APIRouter
 from fastapi.responses import HTMLResponse
@@ -17,14 +17,17 @@ import importlib
 import glob
 
 with open('paths_config.yml', 'r') as file:
-    PATHS = yaml.safe_load(file)["PATHS"]
+    data = yaml.safe_load(file)
+    INITIAL= data["INITIAL"]
+    PATHS = data["PATHS"]
+BUILD_DIR = "."
 
 app = FastAPI()
 
-app.mount("/static", StaticFiles(directory="static"), name="static_base")
-base_templates = Jinja2Templates(directory="templates")
-
-BUILD_DIR = "."
+app.mount("/static", StaticFiles(directory=os.path.join(BUILD_DIR,"initial","static")), name="static_initial")
+app.mount("/static_common", StaticFiles(directory=os.path.join(BUILD_DIR,"static")), name="static")
+base_templates = Jinja2Templates(directory=os.path.join(BUILD_DIR,"initial","template"))
+error_template = Jinja2Templates(directory=os.path.join(BUILD_DIR,"templates"))
 
 target_name = os.getenv("TARGET_NAME", 'michelin')
 display_name = os.getenv("DISPLAY_NAME", 'Michelin')
@@ -83,7 +86,7 @@ def create_challenge_route(templates: Jinja2Templates):
             return templates.TemplateResponse(challenge, data)
         except Exception as e:
             print(e)
-            return base_templates.TemplateResponse('404.html', {'request': request})
+            return error_template.TemplateResponse('404.html', {'request': request})
 
 
     return challenge
@@ -95,9 +98,9 @@ for path, elements in routers.items():
 
 
     challenge_route = create_challenge_route(templates)
-    router.get("/challenges/{challenge}")(challenge_route)
-    router.post("/challenges/{challenge}")(challenge_route)
-    router.put("/challenges/{challenge}")(challenge_route)
+    router.get("/{challenge}")(challenge_route)
+    router.post("/{challenge}")(challenge_route)
+    router.put("/{challenge}")(challenge_route)
 
     # Include the router in the main application with a path prefix
     app.mount(f"/{path}",router)
@@ -107,16 +110,16 @@ for path, elements in routers.items():
 @app.get("/")
 def read_root(request: Request):
     data = {"request": request, "target_name":target_name, "display_name": display_name}
-    return base_templates.TemplateResponse("readme.html", data)
+    return base_templates.TemplateResponse("0_readme.html", data)
 
 
-@app.get("/challenges/{challenge}")
+@app.get("/{challenge}")
 def read_root_chall(request: Request, challenge: str):
     try:
         return base_templates.TemplateResponse(challenge, {"request": request})
     except Exception as e:
         print(e)
-        return base_templates.TemplateResponse('404.html', {'request': request})
+        return error_template.TemplateResponse('404.html', {'request': request})
 
 
 
@@ -140,4 +143,5 @@ async def read_item(request: Request, id: str):
 
 @app.exception_handler(404)
 async def not_found_exception_handler(request: Request, exc: HTTPException):
-    return base_templates.TemplateResponse('404.html', {'request': request})
+    print("error 404")
+    return error_template.TemplateResponse('404.html', {'request': request})
