@@ -14,7 +14,7 @@ async def get_body(request: Request):
 
 def create_router(templates: Jinja2Templates):
     router = APIRouter()
-    @router.put("/challenges/{{chall_name}}")
+    @router.put("/{{chall_name}}")
     def generate_number(request: Request):
         current_timestamp = datetime.now()
         for entry in numbers.copy():
@@ -36,7 +36,7 @@ def create_router(templates: Jinja2Templates):
         return return_value
 
 
-    @router.post("/challenges/{{chall_name}}")
+    @router.post("/{{chall_name}}")
     def solve_challenge(body: bytes = Depends(get_body)):
         current_timestamp = datetime.now()
         for entry in numbers.copy():
@@ -60,7 +60,7 @@ def create_router(templates: Jinja2Templates):
 
         if data["id"] in numbers and data["number"] == numbers[data["id"]]["number"]:
             del numbers[data["id"]]
-            return {"message": "You did it! You are a master! Here is your flag: {{flag}}"}
+            return {"message": "You did it! You are a master! Here is your flag: {{sub_path}}/{{flag}}"}
 
         if data["id"] in numbers and data["number"] != numbers[data["id"]]["number"]:
             numbers[data["id"]]["tries"] -= 1

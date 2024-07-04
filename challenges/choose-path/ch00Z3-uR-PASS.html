@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>Choose your Path</title>
   <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
-<link rel="stylesheet" href="./0_ch00Z3-uR-PASS-style.css">
+<link rel="stylesheet" href="{{ url_for('static', path='/ch00Z3-uR-PASS-style.css') }}">
 
 </head>
 <body>
@@ -21,16 +21,16 @@
 </div>
 
 <br/><br/>
-
+{% for path in PATH["PATHS"] %}
 <div style="display: inline-block; width: 30px"></div>
 
 <div class='wrapper'>
   <div role='button' class='retro-btn danger'>
-    <a class='btn' ref="/dev/challenges/0_t3rm1n4l.html">
+    <a class='btn' ref="/{{path}}/{{first_path_chall[loop.index]}}">
       <span class='btn-inner'>
         <span class='content-wrapper'>
           <span class='btn-content'>
-            <span class='btn-content-inner' label="Dev">
+            <span class='btn-content-inner' label="{{path}}">
             </span>
           </span>
         </span>
@@ -38,59 +38,9 @@
     </a>
   </div>
 </div>
+{% endfor %}
 
-<div style="display: inline-block; width: 30px"></div>
-
-<div class='wrapper'>
-  <div role='button' class='retro-btn warning'>
-    <a class='btn' ref="/ops/challenges/0_t3rm1n4l.html"> 
-      <span class='btn-inner'>
-        <span class='content-wrapper'>
-          <span class='btn-content'>
-            <span class='btn-content-inner' label="Ops">
-            </span>
-          </span>
-        </span>
-      </span>
-    </a>
-  </div>
-</div>
-
-<div style="display: inline-block; width: 30px"></div>
-
-<div class='wrapper'>
-  <div role='button' class='retro-btn success'>
-    <a class='btn' ref="/sec/challenges/0_t3rm1n4l.html"> 
-      <span class='btn-inner'>
-        <span class='content-wrapper'>
-          <span class='btn-content'>
-            <span class='btn-content-inner' label="Sec">
-            </span>
-          </span>
-        </span>
-      </span>
-    </a>
-  </div>
-</div>
-
-<!-- <div style="display: inline-block; width: 30px"></div> -->
-<!-- 
-<div class='wrapper'>
-  <div role='button' class='retro-btn info'>
-    <a class='btn' ref="/data/challenges/0_t3rm1n4l.html"> 
-      <span class='btn-inner'>
-        <span class='content-wrapper'>
-          <span class='btn-content'>
-            <span class='btn-content-inner' label="Data">
-            </span>
-          </span>
-        </span>
-      </span>
-    </a>
-  </div>
-</div> -->
-<!-- partial -->
-  <script  src="{{ url_for('static_base', path='/01-ch00Z3-uR-PASS-script.js') }}"></script>
+  <script  src="{{ url_for('static', path='/ch00Z3-uR-PASS-script.js') }}"></script>
 
 </body>
 </html>

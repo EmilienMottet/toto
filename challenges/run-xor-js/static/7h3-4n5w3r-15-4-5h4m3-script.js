@@ -36,7 +36,7 @@ var txt = [
   "  return result;",
   "}",
   "",
-  "const bytes = {{flag}};",
+  "const bytes = /{{sub_path}}/{{flag}};",
   "const decryptedString = bytesToString(bytes);",  
 ]
 

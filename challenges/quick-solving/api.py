@@ -28,7 +28,7 @@ def generate_random_equation():
 
 def create_router(templates: Jinja2Templates):
     router = APIRouter()
-    @router.get("/challenges/{{chall_name}}")
+    @router.get("/{{chall_name}}")
     async def route_equation_flag(request: Request):
         data = {"request": request}
         random_equation = generate_random_equation()
@@ -43,7 +43,7 @@ def create_router(templates: Jinja2Templates):
         var = templates.TemplateResponse("{{chall_name}}", data)
         return var
 
-    @router.post("/challenges/{{chall_name}}")
+    @router.post("/{{chall_name}}")
     def resolve_challenge(body: bytes = Depends(get_body)):
         # return templates.TemplateResponse("readme.html", {"request": request, "id": id})
         # return the template response where the template is from the user parameter
@@ -61,7 +61,7 @@ def create_router(templates: Jinja2Templates):
             print(payload)
             for entry in equations.copy():
                 if result == equations[entry]:
-                    return {"message": "{{flag}} omgbbq!!!"}
+                    return {"message": "/{{sub_path}}/{{flag}} omgbbq!!!"}
             print(f"No result found for {payload}")
         except Exception as e:
             print(e)

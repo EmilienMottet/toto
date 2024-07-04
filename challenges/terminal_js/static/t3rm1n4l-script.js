@@ -25,7 +25,7 @@ $(function() {
     },
     // { 
     //   action: 'type confidential data',
-    //   strings: ["{{ flag }}", 'This is the way'],
+    //   strings: ["/{{sub_path}}/{{ flag }}", 'This is the way'],
     //   postDelay: 2000
     // },    
   ];
