@@ -74,7 +74,7 @@ def generate_challenge(current_config: Dict, next_config: Optional[Dict], config
         first_path_chall_list.append(f"{index + 1}_{config['template']}")
     # Prepare context for rendering templates
     context = {"flag": flag, "chall_name": name, "user_agent": "{{user_agent}}",
-                "target_name": "MICHELIN", "data": "{{data}}", "sub_path": path or "initial",
+                "target_name": "MICHELIN", "display_name":"Michelin", "data": "{{data}}", "sub_path": path or "initial",
                 "PATH": PATHS, "first_path_chall":first_path_chall_list
                }
 
