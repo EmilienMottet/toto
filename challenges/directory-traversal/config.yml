@@ -1,0 +1,8 @@
+title: "d1r-tr4v-3asy"
+description: "Beautiful photos"
+hint: "Allez sur la galerie, cliquez sur une image et mettez l'id dans l'url à 0"
+template: "d1r-tr4v-3asy.html"
+static_files: ["galerie.html"]
+css: "./static/d1r-tr4v-3asy-style.css"
+javascript: "./static/d1r-tr4v-3asy-script.js"
+api: "api.py"

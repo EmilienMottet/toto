@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>Choose your Path</title>
   <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
-<link rel="stylesheet" href="{{ url_for('static', path='/ch00Z3-ur-pass-style.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', path='/ch00z3-ur-pass-style.css') }}">
 
 </head>
 <body>
@@ -26,7 +26,7 @@
 
 <div class='wrapper'>
   <div role='button' class='retro-btn danger'>
-    <a class='btn' ref="/{{path}}/{{first_path_chall[loop.index]}}">
+    <a class='btn' ref="/{{path}}/{{first_path_chall[loop.index-1]}}">
       <span class='btn-inner'>
         <span class='content-wrapper'>
           <span class='btn-content'>
@@ -40,7 +40,7 @@
 </div>
 {% endfor %}
 
-  <script  src="{{ url_for('static', path='/ch00Z3-ur-pass-script.js') }}"></script>
+  <script  src="{{ url_for('static', path='/ch00z3-ur-pass-script.js') }}"></script>
 
 </body>
 </html>

@@ -3,6 +3,8 @@ INITIAL:
   - ./challenges/choose-path/config.yml
 PATHS:
   dev:
+    - ./challenges/directory-traversal/config.yml
+    #
     - ./challenges/terminal_js/config.yml
     #  
     - ./challenges/run-xor-js/config.yml
