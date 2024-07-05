@@ -23,56 +23,66 @@ Par exemple un flag pourrait être : `1_tH15-15-N0t-TH3-B3g1NN1ng.html`
 ### Requirement
 
 - Avoir un compte Vercel. Si vous n'en avez pas, inscrivez-vous sur [vercel.com](vercel.com)
+
+### Easy way to deploy
+
+Clickez sur le bouton : [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FR4ph3uz%2FMichelin-Jeu-de-Piste&project-name=jeu-de-piste&build-command=python%20static-generator.py&output-directory=.%2Fbuild)
+
+### Deploy in other way :
+
+- Créez un token Vercel et mettez le dans les secrets du repo sous le nom `VERCEL_TOKEN`
+
+<details>
+<summary> Detail de la création de Token </summary>
+
+Dans les détails de votre compte : 
+
+![Account settings](./images_readme/Account.PNG "Account")
   
-### Easy way to Deploy
+allez dans token :
 
-Vous pouvez immédiatement lancer le jeu de piste ici : 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fmichelin%2Ftreasure-hunt)
+![Tokens section](./images_readme/Token.PNG "Token")
 
-### Step to deploy locally
+puis créez un token (choisissez le scope et la durée)
 
+![Token Creation](./images_readme/Creation.PNG "Création du token")
 
-## Contributing
+Copiez le token et mettez le dans Settings puis Secret Action
 
-Nous sommes ravis que vous souhaitiez contribuer à notre jeu de piste en ligne ! Voici comment vous y prendre.
+![Section Action](./images_readme/Actions.PNG "Bouton secret d'action")
 
-1. Forkez le Projet : Commencez par forker le repository sur votre propre compte GitHub.
-2. Clonez votre Fork : Clonez votre fork sur votre machine locale.  
-```bash
-git clone https://github.com/utilisateur/Jeu-de-Piste.git
-cd Jeu-de-Piste
-```
-3. Créez une Branche : Créez une nouvelle branche pour votre fonctionnalité ou correction de bug.
-```bash
-git checkout -b ma-nouvelle-branche
-```
-4. Faites vos Modifications : Apportez les modifications nécessaires dans votre branche.
-5. Testez vos Modifications : Assurez-vous que toutes les fonctionnalités sont correctement testées et fonctionnent comme prévu.
-6. Commitez vos Modifications : Commitez vos modifications avec un message de commit clair et concis.
-7. Poussez vers votre Fork : Poussez vos modifications vers votre fork sur GitHub.
-```bash
-    git push origin ma-nouvelle-branche
-```
-8. Ouvrez une Pull Request : Allez sur le repository original et ouvrez une pull request depuis votre fork.
+Créez un nouveau secret :
 
-<!-- 
-### Règles de Contribution
+![Token created](./images_readme/Secret.PNG "Token Vercel")
 
-- Style de Code : Assurez-vous que votre code suit les conventions de style de ce projet.
-- Documentation : Mettez à jour la documentation pour refléter vos modifications si nécessaire. -->
+</details>
 
-### Just add a scenario 
+### Step to deploy on vercel
 
-- Créez votre fichier html dans le dossier `templates/` (eg. `th15-15-fun.html`) - un nom pas facilement trouvable
+- Après un push (ou commit directement sur github) un github action se lance.
+- Vous pouvez retourner sur vercel récupérer un url qui mènera au challenge
+
+### Add a scenario 
+
+- Créez un dossier dans le dossier `templates/` (eg. `fun_chall`)
+- A l'interieur placez le fichier html `Fun-Ch4l1.html`
+- Ajoutez le hichier config.yml qui contiendra
+  - title: "{titre du challenge}"
+  - description: "{description du challenge}"
+  - hint: "{solution du challenge}"
+  - template: "Fun-Ch4l1.html" `//nom du fichier html`
+  - css: "./static/Fun-Ch4l1.css" `//meme nom de fichier mais dans ./static `
+  - javascript: "./static/Fun-Ch4l1.js"
+  - api: "./api.py" `// si nécéssaire pour récuperer un POST/PUT...`
+  - encoding_script: "./encoder.sh" `// permet d'enoder un flag fourni en $1`
 - Rajoutez vos scripts/feuilles de style CSS dans le dossier `static`
 - Faites références dans vos fichiers HTML à vos scripts JS ou feuilles de style de la manière suivante : 
 
 ```html
-<link rel="stylesheet" href="{{ url_for('static', path='/02-th15-15-fun.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', path='/Fun-Ch4l1.css') }}">
 ```
 
-- Ecrivez le fichier `config.yml` en s'inspirant des autres.
-- Ajoutez le nom du fichier dans un des paths de `paths_config.py`
+- Ajoutez le `./challenges/fun_chall/config.yml` dans un des paths de `paths_config.yml`
 
 ## Support
 
