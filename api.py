@@ -12,7 +12,6 @@ from datetime import datetime, timedelta
 import time
 from prometheus_fastapi_instrumentator import Instrumentator
 import os
-# from ex_paths_config import PATHS
 import importlib
 import glob
 
