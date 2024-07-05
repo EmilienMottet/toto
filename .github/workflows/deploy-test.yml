@@ -55,7 +55,7 @@ jobs:
           path: build
 
   deploy:
-    needs: [generate_solution_file, static_generator]
+    needs: [setup, static_generator]
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -71,5 +71,6 @@ jobs:
         env:
           VERCEL_TOKEN: ${{ secrets.Vercel_Raph }}
         run: |
+          cd  build
           npm install -g vercel
           vercel --prod --yes --token $VERCEL_TOKEN
