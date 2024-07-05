@@ -1,19 +1,12 @@
-## create a simple FastAPI app and run it
-## run with: uvicorn main:app --reload
-import yaml #pylint : disable=E0401
-import inspect
-from fastapi import Body, Depends, FastAPI, HTTPException, Request, APIRouter
+import yaml
+import os
+import glob
+import importlib
+
+from fastapi import FastAPI, Request, HTTPException, APIRouter
 from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
-import random
-import uuid
-from datetime import datetime, timedelta
-import time
-from prometheus_fastapi_instrumentator import Instrumentator
-import os
-import importlib
-import glob
 
 with open('paths_config.yml', 'r') as file:
     data = yaml.safe_load(file)
@@ -22,16 +15,15 @@ with open('paths_config.yml', 'r') as file:
 BUILD_DIR = "."
 
 app = FastAPI()
+target_name="MICHELIN"
+display_name="Michelin"
 
 app.mount("/static", StaticFiles(directory=os.path.join(BUILD_DIR,"initial","static")), name="static_initial")
 app.mount("/static_common", StaticFiles(directory=os.path.join(BUILD_DIR,"static")), name="static")
 base_templates = Jinja2Templates(directory=os.path.join(BUILD_DIR,"initial","template"))
 error_template = Jinja2Templates(directory=os.path.join(BUILD_DIR,"templates"))
 
-target_name = os.getenv("TARGET_NAME", 'michelin')
-display_name = os.getenv("DISPLAY_NAME", 'Michelin')
 
-    
 def find_router_modules(directory):
     """Trouver tous les fichiers Python dans le dossier spécifié."""
     module_paths = glob.glob(os.path.join(directory, "*.py"))
@@ -48,7 +40,9 @@ def load_routers(directory, module_names):
 
 # Create a router and a Jinja2Templates instance for each path
 routers = {}
-for path in PATHS.keys():
+key_list=list(PATHS.keys())
+key_list.append("initial")
+for path in key_list:
     # Create the directory path for the templates
     template_dir = os.path.join(BUILD_DIR, path, "template")
 
@@ -59,7 +53,7 @@ for path in PATHS.keys():
     router = APIRouter()
     # Mount static files to the router
     router.mount("/static", StaticFiles(directory=static_dir), name="static_" + path)
-    
+
     router_directory = os.path.join(BUILD_DIR, path, "api")
     router_modules = find_router_modules(router_directory)
     api_routers = load_routers(f"{ path }.api", router_modules)
@@ -69,7 +63,6 @@ for path in PATHS.keys():
 
     for new_router in api_routers:
         router.include_router(new_router(templates))
-
 
 
     # Add the router with templates and static files to the routers dictionary
@@ -91,7 +84,7 @@ def create_challenge_route(templates: Jinja2Templates):
     return challenge
 
 # Add routes to each router
-for path, elements in routers.items():   
+for path, elements in routers.items():
     router = elements["router"]
     templates = elements["templates"]
 
@@ -102,7 +95,10 @@ for path, elements in routers.items():
     router.put("/{challenge}")(challenge_route)
 
     # Include the router in the main application with a path prefix
-    app.mount(f"/{path}",router)
+    if path=="initial":
+        app.mount("/",router)
+    else:
+        app.mount(f"/{path}",router)
 
 
 
@@ -144,3 +140,4 @@ async def read_item(request: Request, id: str):
 async def not_found_exception_handler(request: Request, exc: HTTPException):
     print("error 404")
     return error_template.TemplateResponse('404.html', {'request': request})
+
