@@ -21,10 +21,10 @@ def generate_solution_file()->None:
 # Intro
 
 ### Epreuve: `/`
-- **Next**: `/challenges/0_ch00Z3-uR-PASS.html`
+- **Next**: `/0_ch00Z3-uR-PASS.html`
 - **Hint**: Check the CSS and find the file.
 
-### Epreuve: `/challenges/0-ch00Z3-uR-PASS.html`
+### Epreuve: `/0-ch00Z3-uR-PASS.html`
 - **Next**: Path chosen
 - **Hint**: Clic on the chosen track (you might inspect the link and use the href)
 
@@ -38,12 +38,12 @@ def add_solution_to_file(suivant:str,path_name:str,index:int,current_config:Dict
     """
     if next:
         solution=f"""
-### Epreuve: `/{path_name.lower()}/challenges/{index}_{current_config["template"]}`
-- **Next**: `/{path_name.lower()}/challenges/{suivant}`
+### Epreuve: `/{path_name.lower()}/{index}_{current_config["template"]}`
+- **Next**: `/{path_name.lower()}/{suivant}`
 - **Hint**: {current_config["hint"]}.
 """
     else:
-        solution= f"""### Epreuve: `/{path_name.lower()}/challenges/{index}_{current_config["template"]}`
+        solution= f"""### Epreuve: `/{path_name.lower()}/{index}_{current_config["template"]}`
 - **Hint**: {current_config["hint"]}.
 """
     with open('./solution.md','a') as file:
