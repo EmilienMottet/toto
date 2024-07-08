@@ -2,6 +2,7 @@ import yaml
 import os
 import glob
 import importlib
+import re
 
 from fastapi import FastAPI, Request, HTTPException, APIRouter
 from fastapi.responses import HTMLResponse
@@ -23,6 +24,13 @@ app.mount("/static_common", StaticFiles(directory=os.path.join(BUILD_DIR,"static
 base_templates = Jinja2Templates(directory=os.path.join(BUILD_DIR,"initial","template"))
 error_template = Jinja2Templates(directory=os.path.join(BUILD_DIR,"templates"))
 
+
+
+@app.get("/")
+def read_root(request: Request):
+    first_file = next((f for f in os.listdir(base_templates) if re.search(r"0_", f)), None)
+    data = {"request": request, "target_name":target_name, "display_name": display_name}
+    return base_templates.TemplateResponse(first_file, data)
 
 def find_router_modules(directory):
     """Trouver tous les fichiers Python dans le dossier spécifié."""
@@ -78,9 +86,7 @@ def create_challenge_route(templates: Jinja2Templates):
             return templates.TemplateResponse(challenge, data)
         except Exception as e:
             print(e)
-            return error_template.TemplateResponse('404.html', {'request': request})
-
-
+            return not_found_exception_handler(request,e)
     return challenge
 
 # Add routes to each router
@@ -102,10 +108,6 @@ for path, elements in routers.items():
 
 
 
-@app.get("/")
-def read_root(request: Request):
-    data = {"request": request, "target_name":target_name, "display_name": display_name}
-    return base_templates.TemplateResponse("0_readme.html", data)
 
 
 @app.get("/{challenge}")
@@ -114,7 +116,7 @@ def read_root_chall(request: Request, challenge: str):
         return base_templates.TemplateResponse(challenge, {"request": request})
     except Exception as e:
         print(e)
-        return error_template.TemplateResponse('404.html', {'request': request})
+        return not_found_exception_handler(request,e)
 
 
 
@@ -127,13 +129,7 @@ async def get_body(request: Request):
 def hello_name(name: str):
     return f"Hello {name}"
 
-@app.get("/items/{id}", response_class=HTMLResponse)
-async def read_item(request: Request, id: str):
-    pass
 
-# @app.get("/hello")
-# def hello_name(name: str = "World"):
-#     return f"Hello {name}"
 
 
 @app.exception_handler(404)
