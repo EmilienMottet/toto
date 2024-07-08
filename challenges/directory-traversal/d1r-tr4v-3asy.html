@@ -29,7 +29,7 @@
      %}
      <div class="gallery">
         {% for image in images %}
-        <div class="gallery-item" onclick="viewOtherTab({{ loop.index-1 }})">
+        <div class="gallery-item" onclick="viewOtherTab({{ loop.index }})">
             <img src="{{ image }}" alt="Image">
         </div> 
         {% endfor %}

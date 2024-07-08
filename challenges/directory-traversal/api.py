@@ -11,6 +11,7 @@ async def get_body(request: Request):
 
 
 List_images = [
+        '',
         'https://iili.io/d36prss.jpg',
         'https://iili.io/d36pUzX.jpg',
         'https://iili.io/d36p6qG.jpg',
@@ -41,10 +42,10 @@ def create_router(templates: Jinja2Templates):
             galerie=int(galerie)
         except ValueError:
             galerie=""
-        if galerie=="" or galerie==0:
+        if galerie=="" or galerie<=0 or galerie>len(List_images):
             data=List_images
         else:
-            data=List_images[galerie+1]
+            data=List_images[galerie]
         return galerie_template.TemplateResponse("galerie.html", {"request":request,"data":data})
 
 
