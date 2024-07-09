@@ -141,10 +141,11 @@ def save_rendered_content(content: str, output_path: str) -> None:
         file.write(content)
 
 
-def add_api_main_to_build(build_dir:str)->None:
+def add_other_file_to_build(build_dir:str,paths_type:Dict)->None:
     """
     In order that the build is totally operational, api.py and other files must be included in build
     """
+
     api_file='./api.py'
     requirement_file='./requirements.txt'
     path_config_file='./paths_config.yml'
@@ -152,13 +153,22 @@ def add_api_main_to_build(build_dir:str)->None:
     vercel_file='./vercel.json'
     templates_dir='./templates'
     static_dir='./static'
+
     shutil.copy(api_file, build_dir)
     shutil.copy(vercel_file, build_dir)
     shutil.copy(requirement_file, build_dir)
     shutil.copy(path_config_file, build_dir)
     shutil.copy(main_file, build_dir)
-    shutil.copytree(templates_dir,build_dir+'/templates')
-    shutil.copytree(static_dir,build_dir+'/static')
+
+    shutil.copytree(templates_dir,os.path.join(build_dir,'templates'))
+    shutil.copytree(static_dir,os.path.join(build_dir,'static'))
+
+    # ajoute le favicon dans chaque dossier static pour qu'il soit accessible par les chalenges
+    all_folder_path = list(paths_type)
+    all_folder_path.append("initial")
+    for path_type in all_folder_path:
+        shutil.copy(os.path.join(static_dir,"favicon.ico"),os.path.join(build_dir,path_type,"static"))
+
     print("les fichiers API, MAIN, etc... et les dossiers de templates/static ont été copiés")
 
 def prepare_static_files(build_dir: str, paths: Dict[str, list]) -> None:
@@ -194,7 +204,7 @@ def prepare_static_files(build_dir: str, paths: Dict[str, list]) -> None:
                 next_config_path = next_challenge_config_file
                 next_config = read_challenge_config(next_config_path)
             generate_challenge(current_config, next_config, config_dir,len(paths["INITIAL"])+index, path_name)
-    add_api_main_to_build(build_dir)
+    add_other_file_to_build(build_dir,paths["PATHS"].keys())
 
 if __name__ == "__main__":
     BUILD_DIR = "./build"

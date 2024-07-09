@@ -1,7 +1,7 @@
 title: "Age Of Empire"
 description: "Open your Eyes"
 hint: "Find hidden passphrase in image metadata (example exiftool) and then extract embeded txt in image thanks to passphrase (steghide extract -sf file).Finally decode message (caesar encoding with padding 7)"
-template: "10-AG3_0F_3MP1R3_II.html"
+template: "AG3_0F_3MP1R3_II.html"
 css: "./static/AG3_0F_3MP1R3_II-style.css"
 javascript: "./static/AG3_0F_3MP1R3_II-script.js"
 encoding_script: "./steg-generator.sh"
