@@ -5,7 +5,7 @@ import importlib
 import re
 
 from fastapi import FastAPI, Request, HTTPException, APIRouter
-from fastapi.responses import HTMLResponse
+from fastapi.responses import HTMLResponse, RedirectResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 
@@ -28,9 +28,9 @@ error_template = Jinja2Templates(directory=os.path.join(BUILD_DIR,"templates"))
 
 @app.get("/")
 def read_root(request: Request):
-    first_file = next((f for f in os.listdir(base_templates) if re.search(r"0_", f)), None)
-    data = {"request": request, "target_name":target_name, "display_name": display_name}
-    return base_templates.TemplateResponse(first_file, data)
+    first_file = next((f for f in os.listdir(os.path.join(BUILD_DIR,"initial","template")) if re.search(r"0_", f)), None)
+    donnees = {"request": request, "target_name":target_name, "display_name": display_name}
+    return base_templates.TemplateResponse(first_file, donnees)
 
 def find_router_modules(directory):
     """Trouver tous les fichiers Python dans le dossier spécifié."""
@@ -107,9 +107,6 @@ for path, elements in routers.items():
         app.mount(f"/{path}",router)
 
 
-
-
-
 @app.get("/{challenge}")
 def read_root_chall(request: Request, challenge: str):
     try:
@@ -117,6 +114,8 @@ def read_root_chall(request: Request, challenge: str):
     except Exception as e:
         print(e)
         return not_found_exception_handler(request,e)
+
+
 
 
 
@@ -133,7 +132,7 @@ def hello_name(name: str):
 
 
 @app.exception_handler(404)
-async def not_found_exception_handler(request: Request, exc: HTTPException):
+def not_found_exception_handler(request: Request, exc: HTTPException):
     print("error 404")
     return error_template.TemplateResponse('404.html', {'request': request})
 
