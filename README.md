@@ -26,7 +26,7 @@ Par exemple un flag pourrait être : `1_tH15-15-N0t-TH3-B3g1NN1ng.html`
 
 ### Easy way to deploy
 
-Clickez sur le bouton : [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FR4ph3uz%2FMichelin-Jeu-de-Piste&project-name=jeu-de-piste&build-command=python%20static-generator.py&output-directory=.%2Fbuild)
+Clickez sur le bouton : [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FEmilienMottet%2Ftoto&project-name=jeu-de-piste&build-command=python%20static-generator.py&output-directory=.%2Fbuild)
 
 ### Deploy in other way :
 
