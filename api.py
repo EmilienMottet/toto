@@ -13,7 +13,8 @@ with open('paths_config.yml', 'r') as file:
     data = yaml.safe_load(file)
     INITIAL= data["INITIAL"]
     PATHS = data["PATHS"]
-BUILD_DIR = "."
+
+BUILD_DIR = os.path.dirname(os.path.abspath(__file__))
 
 app = FastAPI()
 target_name="MICHELIN"
